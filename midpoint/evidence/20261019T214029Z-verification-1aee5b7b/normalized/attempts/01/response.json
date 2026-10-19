@@ -1,0 +1,12 @@
+{
+  "code": "\"\"\"Hand-authored harness fixture, derived from the vendored MIT-licensed source.\"\"\"\n\n\ndef units(s):\n    raw = s.encode(\"utf-16-le\", \"surrogatepass\")\n    return [raw[i] + 256 * raw[i + 1] for i in range(0, len(raw), 2)]\n\n\ndef run(a, b, operation=\"distance\", parameter=None):\n    if a is None or b is None:\n        raise ValueError(\"Strings must not be null\")\n    a, b = units(a), units(b)\n    previous = list(range(len(b) + 1))\n    for i, x in enumerate(a):\n        current = [i + 1]\n        for j, y in enumerate(b):\n            current.append(min(current[j] + 1, previous[j + 1] + 1,\n                               previous[j] + (x != y)))\n        previous = current\n    denominator = max(len(a), len(b))\n    distance = previous[-1] / denominator if denominator else 0.0\n    return 1.0 - distance if operation == \"similarity\" else distance\n",
+  "explanation": "Recorded replay fixture",
+  "metadata": {
+    "backend": "replay",
+    "provenance": "synthetic_fixture",
+    "manifest_sha256": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6",
+    "source": "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/fixtures/normalized.py",
+    "sha256": "d033aa3b432ef57f0845b7c5db7108c071f60dfdd17bda207f4a1e335fdd7da0",
+    "usage": null
+  }
+}

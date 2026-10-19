@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "java/pom.xml": "ca119be68660443b0c247214fd3f110321b5c7a6b26d53d6b58369de6dbcad8c",
+    "java/src/main/java/lab/Harness.java": "c3829f80cb6fbc48d2d5dd679d0f21091724c3a712964b7411d8579270b9c4cd",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/JaroWinkler.java": "6a2b933d9f769581d739f82c476ecd3ece0e8cb21b0335a1010caa2e633d0ce5",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/Levenshtein.java": "79d9d78419323834c6717e6dfd8179423409f7b3821e905e1f1f966904244b77",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/NormalizedLevenshtein.java": "c3ddf6a291e222521f291c1eb2b49e108ad814c999b30408af88ab62b5bbde89",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java": "7c5ae3d445181c543919647b59b31e7b99be7b2e4258f85c9db996d8edba41fe",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java": "c3f4e7110a897b93ccde6a5eb52e71b4a1c42ad8cc6e0a63650761a0b12bb4ee",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java": "4b159b1347f153aa6aa114d8946e3d57bbc24f94e5ad56a9dfb0a0dfc7ff28ce",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringDistance.java": "c93dfba3ab27add4cf04a406ab894f2e8b16311fe3f25421d1789d7215defca3",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java": "f64bd4d203179fedc9fd4667c6623b0a312982e9e298b1bddd45eed59f448778",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/JaroWinklerTest.java": "a6173190ca29d7353bd3cfc811632c1fe50d35835a0cf2ce08f8b2952cb62e07",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/LevenshteinTest.java": "8e3bbbc863c3ca0c734605ebd90e5a4671229f5830d3105b7352f7fd987c3e76",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/NormalizedLevenshteinTest.java": "62af21a6b822ec9c278751d0f6d199487c4e328e4d5d1268dc315b821cdd75c4",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/testutil/NullEmptyTests.java": "e08089f50ad5ed77888918a517dc4160988a07e6c8896c93009d94c45d925c51"
+  },
+  "artifacts": {
+    "java/target/classes/info/debatty/java/stringsimilarity/JaroWinkler.class": "3c13f4656c87e4df517f2465c613d5f3a7080096561a561c1df68e92e82841df",
+    "java/target/classes/info/debatty/java/stringsimilarity/Levenshtein.class": "3e312b39991e353f68ac84692d23d59b4ddcfef0377de7bfe9f3565d313ea940",
+    "java/target/classes/info/debatty/java/stringsimilarity/NormalizedLevenshtein.class": "c8922e745fa26e50f15fa83bb3ef944889919d96d81879f9437ccc276de96f67",
+    "java/target/classes/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.class": "b5ea31c6c548ed973d162989e522e8d05c144df849fe495726827a6b865e0a0f",
+    "java/target/classes/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.class": "b4094bceb43d171f34e4cb43a42c84d7b2af9f1d39a35eeacaccdd4a75268e67",
+    "java/target/classes/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.class": "fa2fd2bffc7954cd4c62b4b5841651d54e1fbdbbf3b5017f5f5d78f48c6c8daf",
+    "java/target/classes/info/debatty/java/stringsimilarity/interfaces/StringDistance.class": "16303baf1e329ee753574d49a17e13ea921bc86cd3ebb20ee985dbf1838ae5b8",
+    "java/target/classes/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.class": "b6d5c062ce7f79b50fc93b5a0bbd7d0edb698ec9f3d1e55c879b17f1bcc45653",
+    "java/target/classes/lab/Harness.class": "533372efc001d45679f2096631f1ba3e9223009fa000fb317d2af06595c64ca5",
+    "java/target/classpath.txt": "6ed8366002e0fb05b8fcc6885a7c908adba7c0aa21ef36c12079e14786b402c3"
+  }
+}

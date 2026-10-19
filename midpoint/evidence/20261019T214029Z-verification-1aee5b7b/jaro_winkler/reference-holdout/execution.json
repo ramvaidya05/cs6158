@@ -1,0 +1,126 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-holdout-000",
+      "status": "ok",
+      "value": 0.40740740299224854
+    },
+    {
+      "id": "jaro_winkler-holdout-001",
+      "status": "ok",
+      "value": 0.7777777314186096
+    },
+    {
+      "id": "jaro_winkler-holdout-002",
+      "status": "ok",
+      "value": 0.39682537317276
+    },
+    {
+      "id": "jaro_winkler-holdout-003",
+      "status": "ok",
+      "value": 0.558152973651886
+    },
+    {
+      "id": "jaro_winkler-holdout-004",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-holdout-005",
+      "status": "ok",
+      "value": 0.692307710647583
+    },
+    {
+      "id": "jaro_winkler-holdout-006",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-holdout-007",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-holdout-008",
+      "status": "ok",
+      "value": 0.5714285671710968
+    },
+    {
+      "id": "jaro_winkler-holdout-009",
+      "status": "ok",
+      "value": 0.6126984357833862
+    },
+    {
+      "id": "jaro_winkler-holdout-010",
+      "status": "ok",
+      "value": 0.45277780294418335
+    },
+    {
+      "id": "jaro_winkler-holdout-011",
+      "status": "ok",
+      "value": 0.2750000059604645
+    },
+    {
+      "id": "jaro_winkler-holdout-012",
+      "status": "ok",
+      "value": 0.4237528230462756
+    },
+    {
+      "id": "jaro_winkler-holdout-013",
+      "status": "ok",
+      "value": 0.4650793969631195
+    },
+    {
+      "id": "jaro_winkler-holdout-014",
+      "status": "ok",
+      "value": 0.5952380895614624
+    },
+    {
+      "id": "jaro_winkler-holdout-015",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-holdout-016",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s1 must not be null"
+    },
+    {
+      "id": "jaro_winkler-holdout-017",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s2 must not be null"
+    },
+    {
+      "id": "jaro_winkler-holdout-018",
+      "status": "ok",
+      "value": 0.9976931915563696
+    },
+    {
+      "id": "jaro_winkler-holdout-019",
+      "status": "ok",
+      "value": 0.3333333134651184
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/target/classes:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.127815,
+    "stdout": "[{\"id\":\"jaro_winkler-holdout-000\",\"status\":\"ok\",\"value\":0.40740740299224854},{\"id\":\"jaro_winkler-holdout-001\",\"status\":\"ok\",\"value\":0.7777777314186096},{\"id\":\"jaro_winkler-holdout-002\",\"status\":\"ok\",\"value\":0.39682537317276},{\"id\":\"jaro_winkler-holdout-003\",\"status\":\"ok\",\"value\":0.558152973651886},{\"id\":\"jaro_winkler-holdout-004\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-holdout-005\",\"status\":\"ok\",\"value\":0.692307710647583},{\"id\":\"jaro_winkler-holdout-006\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-holdout-007\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-holdout-008\",\"status\":\"ok\",\"value\":0.5714285671710968},{\"id\":\"jaro_winkler-holdout-009\",\"status\":\"ok\",\"value\":0.6126984357833862},{\"id\":\"jaro_winkler-holdout-010\",\"status\":\"ok\",\"value\":0.45277780294418335},{\"id\":\"jaro_winkler-holdout-011\",\"status\":\"ok\",\"value\":0.2750000059604645},{\"id\":\"jaro_winkler-holdout-012\",\"status\":\"ok\",\"value\":0.4237528230462756},{\"id\":\"jaro_winkler-holdout-013\",\"status\":\"ok\",\"value\":0.4650793969631195},{\"id\":\"jaro_winkler-holdout-014\",\"status\":\"ok\",\"value\":0.5952380895614624},{\"id\":\"jaro_winkler-holdout-015\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-holdout-016\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s1 must not be null\"},{\"id\":\"jaro_winkler-holdout-017\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s2 must not be null\"},{\"id\":\"jaro_winkler-holdout-018\",\"status\":\"ok\",\"value\":0.9976931915563696},{\"id\":\"jaro_winkler-holdout-019\",\"status\":\"ok\",\"value\":0.3333333134651184}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

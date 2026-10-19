@@ -1,0 +1,120 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-holdout-000",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-001",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-002",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-003",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-004",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-005",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-006",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-007",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-008",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-009",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-010",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-011",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-012",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-013",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-014",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-015",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-016",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-017",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-018",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "jaro_winkler-holdout-019",
+      "status": "ok",
+      "value": 0
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.15/bin/python3",
+      "-I",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261019T214029Z-verification-1aee5b7b/jaro_winkler/attempts/00/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.023899,
+    "stdout": "[{\"id\": \"jaro_winkler-holdout-000\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-001\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-002\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-003\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-004\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-005\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-006\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-007\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-008\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-009\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-010\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-011\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-012\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-013\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-014\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-015\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-016\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-017\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-018\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"jaro_winkler-holdout-019\", \"status\": \"ok\", \"value\": 0}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

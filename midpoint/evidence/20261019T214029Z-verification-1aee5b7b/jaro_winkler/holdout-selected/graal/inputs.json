@@ -1,0 +1,162 @@
+[
+  {
+    "id": "jaro_winkler-holdout-000",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude80\u00e9",
+    "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+    "operation": "distance",
+    "parameter": 0.0
+  },
+  {
+    "id": "jaro_winkler-holdout-001",
+    "task": "jaro_winkler",
+    "a": " b\ud83d\ude00CC",
+    "b": "ab\ud83d\ude00CCD\u00e9\ud83d\ude80",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-002",
+    "task": "jaro_winkler",
+    "a": "a\ud83d\ude80",
+    "b": "\ud83d\ude80DC\u00e9\ud83d\ude00DDb\ud83d\ude00\ud83d\ude80",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-003",
+    "task": "jaro_winkler",
+    "a": "a\u0301D\ud83d\ude80\u0301baD\ud83d\ude80",
+    "b": "bCb\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9\ud83d\ude00",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-004",
+    "task": "jaro_winkler",
+    "a": "\u0301\ud83d\ude00",
+    "b": "ab",
+    "operation": "distance",
+    "parameter": 0.7
+  },
+  {
+    "id": "jaro_winkler-holdout-005",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude80\u0301CaD\u0301b\u0301C\ud83d\ude80a",
+    "b": "\u0301",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-006",
+    "task": "jaro_winkler",
+    "a": "\u0301",
+    "b": "\ud83d\ude80Ca\u0301",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-007",
+    "task": "jaro_winkler",
+    "a": "Da\u00e9\u00e9a",
+    "b": "bb\ud83d\ude80\ud83d\ude80b\ud83d\ude00C",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-008",
+    "task": "jaro_winkler",
+    "a": "b\ud83d\ude80 C\ud83d\ude80",
+    "b": "Cb\u0301\u0301aD\u0301",
+    "operation": "distance",
+    "parameter": -1.0
+  },
+  {
+    "id": "jaro_winkler-holdout-009",
+    "task": "jaro_winkler",
+    "a": "aaDC Da",
+    "b": "abC\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-010",
+    "task": "jaro_winkler",
+    "a": "b\u00e9D Dbb\u0301",
+    "b": "CD DC\u00e9C\ud83d\ude00bC\u00e9",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-011",
+    "task": "jaro_winkler",
+    "a": "bD a\u0301a Ca ",
+    "b": "\u0301\u00e9D\ud83d\ude00\ud83d\ude00\u0301\ud83d\ude80D\ud83d\ude00\ud83d\ude00D",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-012",
+    "task": "jaro_winkler",
+    "a": "a\u00e9C\u0301",
+    "b": "aC \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD",
+    "operation": "distance",
+    "parameter": -1.0
+  },
+  {
+    "id": "jaro_winkler-holdout-013",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+    "b": "C \ud83d\ude00\u00e9\ud83d\ude00",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-014",
+    "task": "jaro_winkler",
+    "a": " abbDDb",
+    "b": "\ud83d\ude80\ud83d\ude00 \u00e9 \u00e9 \u00e9\u00e9aDb",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-015",
+    "task": "jaro_winkler",
+    "a": "",
+    "b": "\u00e9\u00e9Da b\ud83d\ude00\u0301\u00e9b",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-016",
+    "task": "jaro_winkler",
+    "a": null,
+    "b": "withheld",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-017",
+    "task": "jaro_winkler",
+    "a": "withheld",
+    "b": null,
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-018",
+    "task": "jaro_winkler",
+    "a": "longcommonprefixA",
+    "b": "longcommonprefixB",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-holdout-019",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude80\ud83d\ude00",
+    "b": "\ud83d\ude00\ud83d\ude80",
+    "operation": "distance",
+    "parameter": null
+  }
+]

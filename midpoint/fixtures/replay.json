@@ -1,0 +1,9 @@
+{
+  "provenance": "synthetic_fixture",
+  "description": "Deliberately wrong candidate followed by hand-authored fixture. Tests orchestration, NOT model translation quality.",
+  "tasks": {
+    "levenshtein": ["broken.py", "levenshtein.py"],
+    "normalized": ["broken.py", "normalized.py"],
+    "jaro_winkler": ["broken.py", "jaro_winkler.py"]
+  }
+}

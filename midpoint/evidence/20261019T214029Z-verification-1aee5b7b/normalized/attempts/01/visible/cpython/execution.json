@@ -1,0 +1,158 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "normalized-visible-000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-002",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-003",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-004",
+      "status": "ok",
+      "value": 0.42857142857142855
+    },
+    {
+      "id": "normalized-visible-005",
+      "status": "ok",
+      "value": 0.2222222222222222
+    },
+    {
+      "id": "normalized-visible-006",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-007",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-009",
+      "status": "ok",
+      "value": 0.08333333333333333
+    },
+    {
+      "id": "normalized-visible-010",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-011",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-012",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-013",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-014",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-015",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-018",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-019",
+      "status": "ok",
+      "value": 0.3333333333333333
+    },
+    {
+      "id": "normalized-visible-020",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-021",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-022",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-023",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-024",
+      "status": "ok",
+      "value": 0.5714285714285714
+    },
+    {
+      "id": "normalized-visible-025",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.15/bin/python3",
+      "-I",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261019T214029Z-verification-1aee5b7b/normalized/attempts/01/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.028999,
+    "stdout": "[{\"id\": \"normalized-visible-000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-001\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-002\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-003\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-004\", \"status\": \"ok\", \"value\": 0.42857142857142855}, {\"id\": \"normalized-visible-005\", \"status\": \"ok\", \"value\": 0.2222222222222222}, {\"id\": \"normalized-visible-006\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-007\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-008\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-009\", \"status\": \"ok\", \"value\": 0.08333333333333333}, {\"id\": \"normalized-visible-010\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-011\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-012\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-013\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-014\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-015\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-018\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-019\", \"status\": \"ok\", \"value\": 0.3333333333333333}, {\"id\": \"normalized-visible-020\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-021\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-022\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-023\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-024\", \"status\": \"ok\", \"value\": 0.5714285714285714}, {\"id\": \"normalized-visible-025\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

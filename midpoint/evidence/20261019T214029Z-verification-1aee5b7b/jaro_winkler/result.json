@@ -1,0 +1,1840 @@
+{
+  "status": "completed",
+  "task": "jaro_winkler",
+  "provenance": "synthetic_fixture",
+  "attempts": [
+    {
+      "attempt": 0,
+      "sha256": "4c498f3f482c6a4504b8a4da34f1d3fb6ae5768e539f8fcddac4fb15d50a2b12",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 8,
+      "total": 52
+    },
+    {
+      "attempt": 1,
+      "sha256": "8b3ae1547f493e9f0bf9b0a486eb235ab1cbb22b7dd73c798ed2bb72c3658d45",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 52,
+      "total": 52
+    }
+  ],
+  "best_attempt": 1,
+  "stop_reason": "visible_pass",
+  "baseline_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 4,
+        "total": 26,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-visible-000",
+          "jaro_winkler-visible-003",
+          "jaro_winkler-visible-021",
+          "jaro_winkler-visible-022"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "jaro_winkler-visible-001",
+              "task": "jaro_winkler",
+              "a": "",
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-001",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-001",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-002",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": "",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-002",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-002",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-004",
+              "task": "jaro_winkler",
+              "a": "kitten",
+              "b": "sitting",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-004",
+              "status": "ok",
+              "value": 0.2539682388305664
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-004",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-005",
+              "task": "jaro_winkler",
+              "a": "My string",
+              "b": "My tsring",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-005",
+              "status": "ok",
+              "value": 0.02592595219612126
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-005",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-006",
+              "task": "jaro_winkler",
+              "a": "aaaa",
+              "b": "aa",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-006",
+              "status": "ok",
+              "value": 0.1333333492279053
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-006",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-007",
+              "task": "jaro_winkler",
+              "a": "ab",
+              "b": "ba",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-007",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-007",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-008",
+              "task": "jaro_winkler",
+              "a": "ABC",
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-008",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-008",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-009",
+              "task": "jaro_winkler",
+              "a": "hello world",
+              "b": "hello  world",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-009",
+              "status": "ok",
+              "value": 0.01388886570930481
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-009",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-010",
+              "task": "jaro_winkler",
+              "a": "\u00e9",
+              "b": "e\u0301",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-010",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-010",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-011",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude00",
+              "b": "",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-011",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-011",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-012",
+              "task": "jaro_winkler",
+              "a": "a\ud83d\ude00b",
+              "b": "ab",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-012",
+              "status": "ok",
+              "value": 0.4166666865348816
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-012",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-013",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude00",
+              "b": "\ud83d\ude03",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-013",
+              "status": "ok",
+              "value": 0.3333333134651184
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-013",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-014",
+              "task": "jaro_winkler",
+              "a": "\u0000a",
+              "b": "a",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-014",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-014",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-015",
+              "task": "jaro_winkler",
+              "a": "\n",
+              "b": "\r\n",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-015",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-015",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-016",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-016",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-016",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-017",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-017",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s2 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-017",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-018",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-018",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-018",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-019",
+              "task": "jaro_winkler",
+              "a": "MARTHA",
+              "b": "MARHTA",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-019",
+              "status": "ok",
+              "value": 0.03888890743255613
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-019",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-020",
+              "task": "jaro_winkler",
+              "a": "",
+              "b": "",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-020",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-020",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-023",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": "abc",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-023",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-023",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-024",
+              "task": "jaro_winkler",
+              "a": "kitten",
+              "b": "sitting",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-024",
+              "status": "ok",
+              "value": 0.7460317611694336
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-024",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-025",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-025",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-025",
+              "status": "ok",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 4,
+        "total": 26,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-visible-000",
+          "jaro_winkler-visible-003",
+          "jaro_winkler-visible-021",
+          "jaro_winkler-visible-022"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "jaro_winkler-visible-001",
+              "task": "jaro_winkler",
+              "a": "",
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-001",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-001",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-002",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": "",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-002",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-002",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-004",
+              "task": "jaro_winkler",
+              "a": "kitten",
+              "b": "sitting",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-004",
+              "status": "ok",
+              "value": 0.2539682388305664
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-004",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-005",
+              "task": "jaro_winkler",
+              "a": "My string",
+              "b": "My tsring",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-005",
+              "status": "ok",
+              "value": 0.02592595219612126
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-005",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-006",
+              "task": "jaro_winkler",
+              "a": "aaaa",
+              "b": "aa",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-006",
+              "status": "ok",
+              "value": 0.1333333492279053
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-006",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-007",
+              "task": "jaro_winkler",
+              "a": "ab",
+              "b": "ba",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-007",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-007",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-008",
+              "task": "jaro_winkler",
+              "a": "ABC",
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-008",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-008",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-009",
+              "task": "jaro_winkler",
+              "a": "hello world",
+              "b": "hello  world",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-009",
+              "status": "ok",
+              "value": 0.01388886570930481
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-009",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-010",
+              "task": "jaro_winkler",
+              "a": "\u00e9",
+              "b": "e\u0301",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-010",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-010",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-011",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude00",
+              "b": "",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-011",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-011",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-012",
+              "task": "jaro_winkler",
+              "a": "a\ud83d\ude00b",
+              "b": "ab",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-012",
+              "status": "ok",
+              "value": 0.4166666865348816
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-012",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-013",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude00",
+              "b": "\ud83d\ude03",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-013",
+              "status": "ok",
+              "value": 0.3333333134651184
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-013",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-014",
+              "task": "jaro_winkler",
+              "a": "\u0000a",
+              "b": "a",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-014",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-014",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-015",
+              "task": "jaro_winkler",
+              "a": "\n",
+              "b": "\r\n",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-015",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-015",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-016",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "abc",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-016",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-016",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-017",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-017",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s2 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-017",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-018",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-018",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-018",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-019",
+              "task": "jaro_winkler",
+              "a": "MARTHA",
+              "b": "MARHTA",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-019",
+              "status": "ok",
+              "value": 0.03888890743255613
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-019",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-020",
+              "task": "jaro_winkler",
+              "a": "",
+              "b": "",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-020",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-020",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-023",
+              "task": "jaro_winkler",
+              "a": "abc",
+              "b": "abc",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-023",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-023",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-024",
+              "task": "jaro_winkler",
+              "a": "kitten",
+              "b": "sitting",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-024",
+              "status": "ok",
+              "value": 0.7460317611694336
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-024",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-visible-025",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-visible-025",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-visible-025",
+              "status": "ok",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    "passed": 8,
+    "total": 52,
+    "all_pass": false
+  },
+  "reserved_output_tokens": 16384,
+  "selected_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 26,
+        "total": 26,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-visible-000",
+          "jaro_winkler-visible-001",
+          "jaro_winkler-visible-002",
+          "jaro_winkler-visible-003",
+          "jaro_winkler-visible-004",
+          "jaro_winkler-visible-005",
+          "jaro_winkler-visible-006",
+          "jaro_winkler-visible-007",
+          "jaro_winkler-visible-008",
+          "jaro_winkler-visible-009",
+          "jaro_winkler-visible-010",
+          "jaro_winkler-visible-011",
+          "jaro_winkler-visible-012",
+          "jaro_winkler-visible-013",
+          "jaro_winkler-visible-014",
+          "jaro_winkler-visible-015",
+          "jaro_winkler-visible-016",
+          "jaro_winkler-visible-017",
+          "jaro_winkler-visible-018",
+          "jaro_winkler-visible-019",
+          "jaro_winkler-visible-020",
+          "jaro_winkler-visible-021",
+          "jaro_winkler-visible-022",
+          "jaro_winkler-visible-023",
+          "jaro_winkler-visible-024",
+          "jaro_winkler-visible-025"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 26,
+        "total": 26,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-visible-000",
+          "jaro_winkler-visible-001",
+          "jaro_winkler-visible-002",
+          "jaro_winkler-visible-003",
+          "jaro_winkler-visible-004",
+          "jaro_winkler-visible-005",
+          "jaro_winkler-visible-006",
+          "jaro_winkler-visible-007",
+          "jaro_winkler-visible-008",
+          "jaro_winkler-visible-009",
+          "jaro_winkler-visible-010",
+          "jaro_winkler-visible-011",
+          "jaro_winkler-visible-012",
+          "jaro_winkler-visible-013",
+          "jaro_winkler-visible-014",
+          "jaro_winkler-visible-015",
+          "jaro_winkler-visible-016",
+          "jaro_winkler-visible-017",
+          "jaro_winkler-visible-018",
+          "jaro_winkler-visible-019",
+          "jaro_winkler-visible-020",
+          "jaro_winkler-visible-021",
+          "jaro_winkler-visible-022",
+          "jaro_winkler-visible-023",
+          "jaro_winkler-visible-024",
+          "jaro_winkler-visible-025"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 52,
+    "total": 52,
+    "all_pass": true
+  },
+  "baseline_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 2,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-holdout-007",
+          "jaro_winkler-holdout-015"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-000",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\u00e9",
+              "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+              "operation": "distance",
+              "parameter": 0.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-000",
+              "status": "ok",
+              "value": 0.40740740299224854
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-000",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-001",
+              "task": "jaro_winkler",
+              "a": " b\ud83d\ude00CC",
+              "b": "ab\ud83d\ude00CCD\u00e9\ud83d\ude80",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-001",
+              "status": "ok",
+              "value": 0.7777777314186096
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-001",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-002",
+              "task": "jaro_winkler",
+              "a": "a\ud83d\ude80",
+              "b": "\ud83d\ude80DC\u00e9\ud83d\ude00DDb\ud83d\ude00\ud83d\ude80",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-002",
+              "status": "ok",
+              "value": 0.39682537317276
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-002",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-003",
+              "task": "jaro_winkler",
+              "a": "a\u0301D\ud83d\ude80\u0301baD\ud83d\ude80",
+              "b": "bCb\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9\ud83d\ude00",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-003",
+              "status": "ok",
+              "value": 0.558152973651886
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-003",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-004",
+              "task": "jaro_winkler",
+              "a": "\u0301\ud83d\ude00",
+              "b": "ab",
+              "operation": "distance",
+              "parameter": 0.7
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-004",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-004",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-005",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\u0301CaD\u0301b\u0301C\ud83d\ude80a",
+              "b": "\u0301",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-005",
+              "status": "ok",
+              "value": 0.692307710647583
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-005",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-006",
+              "task": "jaro_winkler",
+              "a": "\u0301",
+              "b": "\ud83d\ude80Ca\u0301",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-006",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-006",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-008",
+              "task": "jaro_winkler",
+              "a": "b\ud83d\ude80 C\ud83d\ude80",
+              "b": "Cb\u0301\u0301aD\u0301",
+              "operation": "distance",
+              "parameter": -1.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-008",
+              "status": "ok",
+              "value": 0.5714285671710968
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-008",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-009",
+              "task": "jaro_winkler",
+              "a": "aaDC Da",
+              "b": "abC\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-009",
+              "status": "ok",
+              "value": 0.6126984357833862
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-009",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-010",
+              "task": "jaro_winkler",
+              "a": "b\u00e9D Dbb\u0301",
+              "b": "CD DC\u00e9C\ud83d\ude00bC\u00e9",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-010",
+              "status": "ok",
+              "value": 0.45277780294418335
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-010",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-011",
+              "task": "jaro_winkler",
+              "a": "bD a\u0301a Ca ",
+              "b": "\u0301\u00e9D\ud83d\ude00\ud83d\ude00\u0301\ud83d\ude80D\ud83d\ude00\ud83d\ude00D",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-011",
+              "status": "ok",
+              "value": 0.2750000059604645
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-011",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-012",
+              "task": "jaro_winkler",
+              "a": "a\u00e9C\u0301",
+              "b": "aC \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD",
+              "operation": "distance",
+              "parameter": -1.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-012",
+              "status": "ok",
+              "value": 0.4237528230462756
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-012",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-013",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+              "b": "C \ud83d\ude00\u00e9\ud83d\ude00",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-013",
+              "status": "ok",
+              "value": 0.4650793969631195
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-013",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-014",
+              "task": "jaro_winkler",
+              "a": " abbDDb",
+              "b": "\ud83d\ude80\ud83d\ude00 \u00e9 \u00e9 \u00e9\u00e9aDb",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-014",
+              "status": "ok",
+              "value": 0.5952380895614624
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-014",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-016",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "withheld",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-016",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-016",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-017",
+              "task": "jaro_winkler",
+              "a": "withheld",
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-017",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s2 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-017",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-018",
+              "task": "jaro_winkler",
+              "a": "longcommonprefixA",
+              "b": "longcommonprefixB",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-018",
+              "status": "ok",
+              "value": 0.9976931915563696
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-018",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-019",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\ud83d\ude00",
+              "b": "\ud83d\ude00\ud83d\ude80",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-019",
+              "status": "ok",
+              "value": 0.3333333134651184
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-019",
+              "status": "ok",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 2,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-holdout-007",
+          "jaro_winkler-holdout-015"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-000",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\u00e9",
+              "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+              "operation": "distance",
+              "parameter": 0.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-000",
+              "status": "ok",
+              "value": 0.40740740299224854
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-000",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-001",
+              "task": "jaro_winkler",
+              "a": " b\ud83d\ude00CC",
+              "b": "ab\ud83d\ude00CCD\u00e9\ud83d\ude80",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-001",
+              "status": "ok",
+              "value": 0.7777777314186096
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-001",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-002",
+              "task": "jaro_winkler",
+              "a": "a\ud83d\ude80",
+              "b": "\ud83d\ude80DC\u00e9\ud83d\ude00DDb\ud83d\ude00\ud83d\ude80",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-002",
+              "status": "ok",
+              "value": 0.39682537317276
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-002",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-003",
+              "task": "jaro_winkler",
+              "a": "a\u0301D\ud83d\ude80\u0301baD\ud83d\ude80",
+              "b": "bCb\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9\ud83d\ude00",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-003",
+              "status": "ok",
+              "value": 0.558152973651886
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-003",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-004",
+              "task": "jaro_winkler",
+              "a": "\u0301\ud83d\ude00",
+              "b": "ab",
+              "operation": "distance",
+              "parameter": 0.7
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-004",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-004",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-005",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\u0301CaD\u0301b\u0301C\ud83d\ude80a",
+              "b": "\u0301",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-005",
+              "status": "ok",
+              "value": 0.692307710647583
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-005",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-006",
+              "task": "jaro_winkler",
+              "a": "\u0301",
+              "b": "\ud83d\ude80Ca\u0301",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-006",
+              "status": "ok",
+              "value": 1.0
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-006",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-008",
+              "task": "jaro_winkler",
+              "a": "b\ud83d\ude80 C\ud83d\ude80",
+              "b": "Cb\u0301\u0301aD\u0301",
+              "operation": "distance",
+              "parameter": -1.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-008",
+              "status": "ok",
+              "value": 0.5714285671710968
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-008",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-009",
+              "task": "jaro_winkler",
+              "a": "aaDC Da",
+              "b": "abC\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-009",
+              "status": "ok",
+              "value": 0.6126984357833862
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-009",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-010",
+              "task": "jaro_winkler",
+              "a": "b\u00e9D Dbb\u0301",
+              "b": "CD DC\u00e9C\ud83d\ude00bC\u00e9",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-010",
+              "status": "ok",
+              "value": 0.45277780294418335
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-010",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-011",
+              "task": "jaro_winkler",
+              "a": "bD a\u0301a Ca ",
+              "b": "\u0301\u00e9D\ud83d\ude00\ud83d\ude00\u0301\ud83d\ude80D\ud83d\ude00\ud83d\ude00D",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-011",
+              "status": "ok",
+              "value": 0.2750000059604645
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-011",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-012",
+              "task": "jaro_winkler",
+              "a": "a\u00e9C\u0301",
+              "b": "aC \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD",
+              "operation": "distance",
+              "parameter": -1.0
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-012",
+              "status": "ok",
+              "value": 0.4237528230462756
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-012",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-013",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+              "b": "C \ud83d\ude00\u00e9\ud83d\ude00",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-013",
+              "status": "ok",
+              "value": 0.4650793969631195
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-013",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-014",
+              "task": "jaro_winkler",
+              "a": " abbDDb",
+              "b": "\ud83d\ude80\ud83d\ude00 \u00e9 \u00e9 \u00e9\u00e9aDb",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-014",
+              "status": "ok",
+              "value": 0.5952380895614624
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-014",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-016",
+              "task": "jaro_winkler",
+              "a": null,
+              "b": "withheld",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-016",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s1 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-016",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-017",
+              "task": "jaro_winkler",
+              "a": "withheld",
+              "b": null,
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-017",
+              "status": "exception",
+              "type": "NullPointerException",
+              "message": "s2 must not be null"
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-017",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-018",
+              "task": "jaro_winkler",
+              "a": "longcommonprefixA",
+              "b": "longcommonprefixB",
+              "operation": "similarity",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-018",
+              "status": "ok",
+              "value": 0.9976931915563696
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-018",
+              "status": "ok",
+              "value": 0
+            }
+          },
+          {
+            "case": {
+              "id": "jaro_winkler-holdout-019",
+              "task": "jaro_winkler",
+              "a": "\ud83d\ude80\ud83d\ude00",
+              "b": "\ud83d\ude00\ud83d\ude80",
+              "operation": "distance",
+              "parameter": null
+            },
+            "expected": {
+              "id": "jaro_winkler-holdout-019",
+              "status": "ok",
+              "value": 0.3333333134651184
+            },
+            "actual": {
+              "id": "jaro_winkler-holdout-019",
+              "status": "ok",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    "passed": 4,
+    "total": 40,
+    "all_pass": false
+  },
+  "selected_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 20,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-holdout-000",
+          "jaro_winkler-holdout-001",
+          "jaro_winkler-holdout-002",
+          "jaro_winkler-holdout-003",
+          "jaro_winkler-holdout-004",
+          "jaro_winkler-holdout-005",
+          "jaro_winkler-holdout-006",
+          "jaro_winkler-holdout-007",
+          "jaro_winkler-holdout-008",
+          "jaro_winkler-holdout-009",
+          "jaro_winkler-holdout-010",
+          "jaro_winkler-holdout-011",
+          "jaro_winkler-holdout-012",
+          "jaro_winkler-holdout-013",
+          "jaro_winkler-holdout-014",
+          "jaro_winkler-holdout-015",
+          "jaro_winkler-holdout-016",
+          "jaro_winkler-holdout-017",
+          "jaro_winkler-holdout-018",
+          "jaro_winkler-holdout-019"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 20,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "jaro_winkler-holdout-000",
+          "jaro_winkler-holdout-001",
+          "jaro_winkler-holdout-002",
+          "jaro_winkler-holdout-003",
+          "jaro_winkler-holdout-004",
+          "jaro_winkler-holdout-005",
+          "jaro_winkler-holdout-006",
+          "jaro_winkler-holdout-007",
+          "jaro_winkler-holdout-008",
+          "jaro_winkler-holdout-009",
+          "jaro_winkler-holdout-010",
+          "jaro_winkler-holdout-011",
+          "jaro_winkler-holdout-012",
+          "jaro_winkler-holdout-013",
+          "jaro_winkler-holdout-014",
+          "jaro_winkler-holdout-015",
+          "jaro_winkler-holdout-016",
+          "jaro_winkler-holdout-017",
+          "jaro_winkler-holdout-018",
+          "jaro_winkler-holdout-019"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 40,
+    "total": 40,
+    "all_pass": true
+  },
+  "validated": true,
+  "elapsed_seconds": 7.816
+}

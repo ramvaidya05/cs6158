@@ -1,0 +1,63 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-holdout-000",
+        "normalized-holdout-001",
+        "normalized-holdout-002",
+        "normalized-holdout-003",
+        "normalized-holdout-004",
+        "normalized-holdout-005",
+        "normalized-holdout-006",
+        "normalized-holdout-007",
+        "normalized-holdout-008",
+        "normalized-holdout-009",
+        "normalized-holdout-010",
+        "normalized-holdout-011",
+        "normalized-holdout-012",
+        "normalized-holdout-013",
+        "normalized-holdout-014",
+        "normalized-holdout-015",
+        "normalized-holdout-016",
+        "normalized-holdout-017",
+        "normalized-holdout-018",
+        "normalized-holdout-019"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-holdout-000",
+        "normalized-holdout-001",
+        "normalized-holdout-002",
+        "normalized-holdout-003",
+        "normalized-holdout-004",
+        "normalized-holdout-005",
+        "normalized-holdout-006",
+        "normalized-holdout-007",
+        "normalized-holdout-008",
+        "normalized-holdout-009",
+        "normalized-holdout-010",
+        "normalized-holdout-011",
+        "normalized-holdout-012",
+        "normalized-holdout-013",
+        "normalized-holdout-014",
+        "normalized-holdout-015",
+        "normalized-holdout-016",
+        "normalized-holdout-017",
+        "normalized-holdout-018",
+        "normalized-holdout-019"
+      ],
+      "failures": []
+    }
+  },
+  "passed": 40,
+  "total": 40,
+  "all_pass": true
+}

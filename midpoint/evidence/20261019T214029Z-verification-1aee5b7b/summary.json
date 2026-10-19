@@ -1,0 +1,88 @@
+{
+  "provenance": "synthetic_fixture",
+  "interpretation": "Harness acceptance, not LLM performance",
+  "unique_task_cases": 138,
+  "selected_runtime_checks": 276,
+  "upstream_junit_test_methods": 5,
+  "unit_tests_passed": true,
+  "tasks": [
+    {
+      "task": "levenshtein",
+      "attempts": 2,
+      "validated": true,
+      "elapsed_seconds": 8.102,
+      "baseline_visible": {
+        "passed": 8,
+        "total": 52,
+        "all_pass": false
+      },
+      "selected_visible": {
+        "passed": 52,
+        "total": 52,
+        "all_pass": true
+      },
+      "baseline_holdout": {
+        "passed": 2,
+        "total": 40,
+        "all_pass": false
+      },
+      "selected_holdout": {
+        "passed": 40,
+        "total": 40,
+        "all_pass": true
+      }
+    },
+    {
+      "task": "normalized",
+      "attempts": 2,
+      "validated": true,
+      "elapsed_seconds": 7.845,
+      "baseline_visible": {
+        "passed": 8,
+        "total": 52,
+        "all_pass": false
+      },
+      "selected_visible": {
+        "passed": 52,
+        "total": 52,
+        "all_pass": true
+      },
+      "baseline_holdout": {
+        "passed": 6,
+        "total": 40,
+        "all_pass": false
+      },
+      "selected_holdout": {
+        "passed": 40,
+        "total": 40,
+        "all_pass": true
+      }
+    },
+    {
+      "task": "jaro_winkler",
+      "attempts": 2,
+      "validated": true,
+      "elapsed_seconds": 7.816,
+      "baseline_visible": {
+        "passed": 8,
+        "total": 52,
+        "all_pass": false
+      },
+      "selected_visible": {
+        "passed": 52,
+        "total": 52,
+        "all_pass": true
+      },
+      "baseline_holdout": {
+        "passed": 4,
+        "total": 40,
+        "all_pass": false
+      },
+      "selected_holdout": {
+        "passed": 40,
+        "total": 40,
+        "all_pass": true
+      }
+    }
+  ]
+}

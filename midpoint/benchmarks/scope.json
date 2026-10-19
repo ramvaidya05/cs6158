@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "upstream": "https://github.com/tdebatty/java-string-similarity",
+  "commit": "93240df9aab3ecea98b869c9536aa7ebc555b281",
+  "tasks": ["levenshtein", "normalized", "jaro_winkler"],
+  "visible_cases_per_task": 26,
+  "holdout_cases_per_task": 20,
+  "default_holdout_seed": 6158,
+  "exception_mapping": {"NullPointerException": "ValueError"},
+  "comparator": {"absolute_tolerance": 1e-9, "relative_tolerance": 1e-9},
+  "out_of_scope": ["custom object graphs", "mutable argument state", "concurrency", "repository-wide translation"],
+  "holdout_note": "Excluded from model prompts; local processes are not an adversarial isolation boundary. Public demo seeds are not private research holdouts."
+}
