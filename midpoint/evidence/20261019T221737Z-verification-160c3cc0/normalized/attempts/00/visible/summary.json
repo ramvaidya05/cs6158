@@ -1,0 +1,921 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 4,
+      "total": 26,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-visible-000",
+        "normalized-visible-003",
+        "normalized-visible-021",
+        "normalized-visible-022"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-visible-001",
+            "task": "normalized",
+            "a": "",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-001",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-002",
+            "task": "normalized",
+            "a": "abc",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-002",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-004",
+            "task": "normalized",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-004",
+            "status": "ok",
+            "value": 0.42857142857142855
+          },
+          "actual": {
+            "id": "normalized-visible-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-005",
+            "task": "normalized",
+            "a": "My string",
+            "b": "My tsring",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-005",
+            "status": "ok",
+            "value": 0.2222222222222222
+          },
+          "actual": {
+            "id": "normalized-visible-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-006",
+            "task": "normalized",
+            "a": "aaaa",
+            "b": "aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-006",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-007",
+            "task": "normalized",
+            "a": "ab",
+            "b": "ba",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-007",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-008",
+            "task": "normalized",
+            "a": "ABC",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-008",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-009",
+            "task": "normalized",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-009",
+            "status": "ok",
+            "value": 0.08333333333333333
+          },
+          "actual": {
+            "id": "normalized-visible-009",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-010",
+            "task": "normalized",
+            "a": "\u00e9",
+            "b": "e\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-010",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-011",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-011",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-011",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-012",
+            "task": "normalized",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-013",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-014",
+            "task": "normalized",
+            "a": "\u0000a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-014",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-015",
+            "task": "normalized",
+            "a": "\n",
+            "b": "\r\n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-015",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-016",
+            "task": "normalized",
+            "a": null,
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-017",
+            "task": "normalized",
+            "a": "abc",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-018",
+            "task": "normalized",
+            "a": null,
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-018",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-019",
+            "task": "normalized",
+            "a": "MARTHA",
+            "b": "MARHTA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-019",
+            "status": "ok",
+            "value": 0.3333333333333333
+          },
+          "actual": {
+            "id": "normalized-visible-019",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-020",
+            "task": "normalized",
+            "a": "",
+            "b": "",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-020",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-023",
+            "task": "normalized",
+            "a": "abc",
+            "b": "abc",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-023",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-023",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-024",
+            "task": "normalized",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-024",
+            "status": "ok",
+            "value": 0.5714285714285714
+          },
+          "actual": {
+            "id": "normalized-visible-024",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-025",
+            "task": "normalized",
+            "a": null,
+            "b": "",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-025",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-025",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 4,
+      "total": 26,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-visible-000",
+        "normalized-visible-003",
+        "normalized-visible-021",
+        "normalized-visible-022"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-visible-001",
+            "task": "normalized",
+            "a": "",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-001",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-002",
+            "task": "normalized",
+            "a": "abc",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-002",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-004",
+            "task": "normalized",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-004",
+            "status": "ok",
+            "value": 0.42857142857142855
+          },
+          "actual": {
+            "id": "normalized-visible-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-005",
+            "task": "normalized",
+            "a": "My string",
+            "b": "My tsring",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-005",
+            "status": "ok",
+            "value": 0.2222222222222222
+          },
+          "actual": {
+            "id": "normalized-visible-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-006",
+            "task": "normalized",
+            "a": "aaaa",
+            "b": "aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-006",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-007",
+            "task": "normalized",
+            "a": "ab",
+            "b": "ba",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-007",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-008",
+            "task": "normalized",
+            "a": "ABC",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-008",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-009",
+            "task": "normalized",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-009",
+            "status": "ok",
+            "value": 0.08333333333333333
+          },
+          "actual": {
+            "id": "normalized-visible-009",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-010",
+            "task": "normalized",
+            "a": "\u00e9",
+            "b": "e\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-010",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-011",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-011",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-011",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-012",
+            "task": "normalized",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-013",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-014",
+            "task": "normalized",
+            "a": "\u0000a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-014",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-015",
+            "task": "normalized",
+            "a": "\n",
+            "b": "\r\n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-015",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-016",
+            "task": "normalized",
+            "a": null,
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-017",
+            "task": "normalized",
+            "a": "abc",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-018",
+            "task": "normalized",
+            "a": null,
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-018",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-019",
+            "task": "normalized",
+            "a": "MARTHA",
+            "b": "MARHTA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-019",
+            "status": "ok",
+            "value": 0.3333333333333333
+          },
+          "actual": {
+            "id": "normalized-visible-019",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-020",
+            "task": "normalized",
+            "a": "",
+            "b": "",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-020",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-023",
+            "task": "normalized",
+            "a": "abc",
+            "b": "abc",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-023",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-visible-023",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-024",
+            "task": "normalized",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-024",
+            "status": "ok",
+            "value": 0.5714285714285714
+          },
+          "actual": {
+            "id": "normalized-visible-024",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-025",
+            "task": "normalized",
+            "a": null,
+            "b": "",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-025",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-visible-025",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    }
+  },
+  "passed": 8,
+  "total": 52,
+  "all_pass": false
+}

@@ -19,3 +19,12 @@ Reproduce with `python3 scripts/bootstrap.py` followed by
 `python3 scripts/verify.py --archive` from the project root. Each invocation makes
 a new archive; retain prior evidence unchanged. Absolute paths in historical
 logs describe the machine used for that run and are not portable configuration.
+
+## Post-midpoint evidence
+
+See [EXPERIMENT_RESULTS.md](../EXPERIMENT_RESULTS.md) for the reproduced baseline,
+expanded container fixture validation, failed GPT-5.6 Sol requests, the live
+Gemini 3.8 Flash Levenshtein study (`20261019T225222Z-experiment-b8857705`, 3/3
+trials passing every case), an excluded integrity-invalidated attempt of that
+study (`20261019T224716Z-experiment-5942d812`), and a separately labeled synthetic
+environment-remediation experiment. Failed and invalidated runs are retained.

@@ -1,0 +1,63 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "jaro_winkler-holdout-000",
+        "jaro_winkler-holdout-001",
+        "jaro_winkler-holdout-002",
+        "jaro_winkler-holdout-003",
+        "jaro_winkler-holdout-004",
+        "jaro_winkler-holdout-005",
+        "jaro_winkler-holdout-006",
+        "jaro_winkler-holdout-007",
+        "jaro_winkler-holdout-008",
+        "jaro_winkler-holdout-009",
+        "jaro_winkler-holdout-010",
+        "jaro_winkler-holdout-011",
+        "jaro_winkler-holdout-012",
+        "jaro_winkler-holdout-013",
+        "jaro_winkler-holdout-014",
+        "jaro_winkler-holdout-015",
+        "jaro_winkler-holdout-016",
+        "jaro_winkler-holdout-017",
+        "jaro_winkler-holdout-018",
+        "jaro_winkler-holdout-019"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "jaro_winkler-holdout-000",
+        "jaro_winkler-holdout-001",
+        "jaro_winkler-holdout-002",
+        "jaro_winkler-holdout-003",
+        "jaro_winkler-holdout-004",
+        "jaro_winkler-holdout-005",
+        "jaro_winkler-holdout-006",
+        "jaro_winkler-holdout-007",
+        "jaro_winkler-holdout-008",
+        "jaro_winkler-holdout-009",
+        "jaro_winkler-holdout-010",
+        "jaro_winkler-holdout-011",
+        "jaro_winkler-holdout-012",
+        "jaro_winkler-holdout-013",
+        "jaro_winkler-holdout-014",
+        "jaro_winkler-holdout-015",
+        "jaro_winkler-holdout-016",
+        "jaro_winkler-holdout-017",
+        "jaro_winkler-holdout-018",
+        "jaro_winkler-holdout-019"
+      ],
+      "failures": []
+    }
+  },
+  "passed": 40,
+  "total": 40,
+  "all_pass": true
+}

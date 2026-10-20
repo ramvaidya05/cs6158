@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "preflight",
+      "status": "ok",
+      "value": 0.0
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/fixtures/preflight.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.03867,
+    "stdout": "[{\"id\": \"preflight\", \"status\": \"ok\", \"value\": 0.0}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "trial-001/levenshtein/one_shot": "919339d0ed8ff9dfeba7e45a7fafb40f17fe01359e6e1b7a673a25b151d8e5ed",
+  "trial-001/levenshtein/code_repair": "919339d0ed8ff9dfeba7e45a7fafb40f17fe01359e6e1b7a673a25b151d8e5ed",
+  "trial-001/levenshtein/environment_repair": "919339d0ed8ff9dfeba7e45a7fafb40f17fe01359e6e1b7a673a25b151d8e5ed",
+  "trial-002/levenshtein/one_shot": "bdce92670731aedca0815d362886f48eda5dab3d5655b7ff4a05a46c3024635e",
+  "trial-002/levenshtein/code_repair": "bdce92670731aedca0815d362886f48eda5dab3d5655b7ff4a05a46c3024635e",
+  "trial-002/levenshtein/environment_repair": "bdce92670731aedca0815d362886f48eda5dab3d5655b7ff4a05a46c3024635e"
+}

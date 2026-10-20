@@ -1,0 +1,150 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "normalized-visible-000",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-001",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-002",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-003",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-004",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-005",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-006",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-007",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-008",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-009",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-010",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-011",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-012",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-013",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-014",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-015",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-016",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-017",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-018",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-019",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-020",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-021",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-022",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-023",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-024",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-visible-025",
+      "status": "ok",
+      "value": 0
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/runs/20261019T221737Z-verification-160c3cc0/normalized/attempts/00/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.04012,
+    "stdout": "[{\"id\": \"normalized-visible-000\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-001\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-002\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-003\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-004\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-005\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-006\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-007\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-008\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-009\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-010\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-011\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-012\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-013\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-014\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-015\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-016\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-017\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-018\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-019\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-020\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-021\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-022\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-023\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-024\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-visible-025\", \"status\": \"ok\", \"value\": 0}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

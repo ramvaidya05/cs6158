@@ -1,0 +1,11 @@
+{
+  "type": "BackendError",
+  "message": "Model HTTP 429; check access, model compatibility and quota",
+  "kind": "rate_limit",
+  "details": {
+    "http_status": 429,
+    "elapsed_seconds": 0.6158527500228956,
+    "request_id": "req_be4d93ada6c142f0a90831f6288d5f85"
+  },
+  "raw_response": null
+}

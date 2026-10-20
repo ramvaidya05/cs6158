@@ -13,6 +13,8 @@ VERSION = "3.9.9"
 
 
 def main():
+    if sys.version_info < (3, 12):
+        raise SystemExit("Python 3.12+ required. On this Mac use /opt/homebrew/bin/python3.12.")
     local = ROOT / ".tools" / f"apache-maven-{VERSION}" / "bin" / "mvn"
     mvn = os.environ.get("MAVEN_CMD") or shutil.which("mvn")
     if not mvn and not local.exists():

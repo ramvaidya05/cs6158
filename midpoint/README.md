@@ -4,10 +4,14 @@ A small, executable Java-to-Python translation/repair research harness. It has
 separate Migration, Environment, and Testsuite roles, coordinated by a bounded
 controller. Only Migration uses a model; Environment and Testsuite are deterministic.
 
-**Status:** the three-task synthetic replay demonstration runs end to end against
-real upstream Java in CPython and Java-embedded GraalPy. A live-model adapter is
-implemented but has not been tested with a live model. This is not yet evidence
-of improved LLM translation accuracy or a complete autonomous environment agent.
+**Current status:** disposable container execution, frozen evaluation sets, paired
+trial aggregation, and a bounded cache-remediation policy are implemented. The
+expanded fixture check passes 946 runtime checks. A live Levenshtein study with
+Gemini 3.8 Flash (free tier) passed 3/3 trials: every one-shot translation matched
+all 26 visible and 140 withheld cases in both CPython and GraalPy, so no repair was
+needed. An earlier GPT-5.6 Sol attempt returned HTTP 429 and remains unvalidated.
+See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) for the numbers and [EXPERIMENTS.md](EXPERIMENTS.md) for the current workflow.
+The original midpoint replay and its evidence remain below for reproduction.
 
 Start with [DEVELOPER_HANDOFF.md](DEVELOPER_HANDOFF.md) for changes, evidence, and
 the post-midpoint work queue. See [MIDPOINT_REPORT.md](MIDPOINT_REPORT.md) for a
@@ -15,8 +19,10 @@ report draft grounded in the implementation.
 
 ## Run locally
 
-Prerequisites: Python 3.12+ and JDK 21+ on PATH. Tested here on macOS arm64 with
-CPython 3.15.0 and Oracle JDK 25.0.4.1. GraalPy embedding dependencies are pinned
+Prerequisites: Python 3.12+ and JDK 21+ on PATH. On the current Mac use
+`/opt/homebrew/bin/python3.12`; plain `python3` resolves to unsupported 3.9.
+The current host is macOS arm64 with CPython 3.12.14 and Temurin JDK 25.0.1.
+Historical midpoint evidence used CPython 3.15.0 and Oracle JDK 25.0.4.1. GraalPy embedding dependencies are pinned
 to 25.0.0; no standalone `graalpy` or GraalVM JDK installation is required for
 this tested configuration. Other OS/JDK combinations remain untested.
 
@@ -53,7 +59,8 @@ Three dependency-closed tasks from pinned `tdebatty/java-string-similarity`:
 Levenshtein, NormalizedLevenshtein, and JaroWinkler. The commit and unmodified
 source/test checksums are in `vendor/java-string-similarity/SOURCE.json`.
 
-Each task has 26 visible cases and 20 withheld-from-prompt cases. Original Java
+The original demo has 26 visible cases and 20 withheld-from-prompt cases per task.
+The expanded frozen suite is described in [EXPERIMENTS.md](EXPERIMENTS.md). Original Java
 produces expected outputs; the same candidate is evaluated in CPython and in
 GraalPy embedded inside the Java harness. The 138 task/case combinations become
 276 runtime checks, **not 276 independent inputs or 138 translated methods**.
@@ -93,17 +100,19 @@ The bundled replay intentionally returns an always-zero implementation, then a
 hand-authored correct fixture. It proves orchestration and error detection only.
 Its pass-rate increase must never be described as an LLM improvement.
 
-## Run a live model later
+## Run a live model experiment
 
-Astra was used to build the prototype in the IDE; it is not automatically the
-experimental model. Select an accessible model separately. Configure
+GPT-5.6 Sol was selected for the pilot; the IDE assistant is not experimental
+evidence. Configure
 `OPENAI_API_KEY` in the shell using your normal secret-management workflow;
 do not paste credentials into source, the report, or chat.
 
 ```sh
-python3 -m migration_lab run --backend openai \
-  --model YOUR_EXPERIMENT_MODEL --task levenshtein \
-  --max-repairs 5 --allow-local-execution
+python3.12 scripts/build_containers.py
+python3.12 -m migration_lab freeze --output evaluator-private/pilot-v1.json
+python3.12 -m migration_lab experiment --backend openai \
+  --model gpt-5.6-sol --task levenshtein --trials 3 \
+  --suite evaluator-private/pilot-v1.json --max-spend-usd 1 --archive
 ```
 
 The adapter uses the OpenAI Responses API with a strict JSON schema containing
@@ -112,7 +121,7 @@ no model default. The model must support that API and structured output. Add
 `--reasoning-effort` only if that model supports it. A `--max-repairs 0` run is
 one-shot; an iterative run's initial candidate is also a paired one-shot baseline.
 
-Default limits per task: six maximum calls, 8,192 requested output tokens/call,
+Default controller limits per arm: six maximum calls, 8,192 requested output tokens/call,
 49,152 reserved output tokens, 900-second loop budget, and 60 seconds per child
 process. The token budget reserves requested maxima; it is **not a total-token
 or dollar cap**. Input tokens still cost money. The loop deadline is checked
@@ -124,7 +133,7 @@ For your own previously recorded responses:
 ```sh
 python3 -m migration_lab run --backend replay \
   --replay-manifest /absolute/path/to/replay.json \
-  --task levenshtein --allow-local-execution
+  --task levenshtein --execution container
 ```
 
 Use the manifest structure in `fixtures/replay.json`, with provenance
@@ -136,10 +145,9 @@ alongside them. Replay is still not fresh inference.
 
 - **Local subprocesses are not an OS security sandbox.** Only execute trusted,
   reviewed code on this backend. The acknowledgment flag does not add isolation.
-  Container isolation is a prerequisite for unattended execution of untrusted
-  generated code. Child environments exclude API keys, but local code can still
-  access host files/network. Captured output is truncated to 2 MB per stream;
-  disk/memory usage is not fully bounded.
+  Live code now requires the container backend; there is no fallback to local
+  execution. Local replay still exposes host files/network. Output capture stops
+  at 2 MB per stream; other local process resources remain unbounded.
 - GraalPy disables guest filesystem/network IO, host lookup, and thread creation.
   Those restrictions and source hashes do not make CPython safe against hostile
   code or prove absence of evaluator tampering. Hash checks detect ordinary edits;
@@ -147,14 +155,15 @@ alongside them. Replay is still not fresh inference.
 - Existing source, tests, comparator, context pack, and fixtures are hashed in
   each run. Compiled Java is bound to source/POM inputs and checked for stale or
   changed artifacts. Dependency jars are pinned by Maven coordinates, not a
-  complete independently verified supply-chain lockfile.
+  complete independently verified supply-chain lockfile. The container image lock
+  additionally fingerprints the exact dependency jar bytes used to build the images.
 - The context pack is static, source-grounded assistance, not vector RAG. Its
   UTF-16 and binary32 notes are allowed knowledge, not hidden answers. Performance
   comparisons must give equivalent context to baseline and repair conditions.
 - Three familiar algorithms and a public generated split cannot establish
   generalization, lack of training contamination, or superiority over AlphaTrans.
-  No environment-repair policy, object bridge, Commons CLI slice, or rich diagnostic
-  agent is implemented yet.
+  The bounded cache-remediation policy is implemented; an object bridge, Commons
+  CLI slice, and general environment-planning agent remain future work.
 
 ## Troubleshooting
 

@@ -1,0 +1,12 @@
+{
+  "code": "\"\"\"Hand-authored harness fixture, derived from the vendored MIT-licensed source.\"\"\"\nimport struct\n\n\ndef f32(x):\n    return struct.unpack(\"!f\", struct.pack(\"!f\", x))[0]\n\n\ndef units(s):\n    raw = s.encode(\"utf-16-le\", \"surrogatepass\")\n    return [raw[i] + 256 * raw[i + 1] for i in range(0, len(raw), 2)]\n\n\ndef run(a, b, operation=\"distance\", parameter=None):\n    if a is None or b is None:\n        raise ValueError(\"Strings must not be null\")\n    if a == b:\n        similarity = 1.0\n    else:\n        a, b = units(a), units(b)\n        large, small = (a, b) if len(a) > len(b) else (b, a)\n        window = max(len(large) // 2 - 1, 0)\n        indexes = [-1] * len(small)\n        flags = [False] * len(large)\n        for i, char in enumerate(small):\n            for j in range(max(i - window, 0), min(i + window + 1, len(large))):\n                if not flags[j] and char == large[j]:\n                    indexes[i], flags[j] = j, True\n                    break\n        first = [small[i] for i, j in enumerate(indexes) if j != -1]\n        second = [large[j] for j, flag in enumerate(flags) if flag]\n        if not first:\n            similarity = 0.0\n        else:\n            transpositions = sum(x != y for x, y in zip(first, second)) // 2\n            prefix = 0\n            for x, y in zip(small, large):\n                if x != y:\n                    break\n                prefix += 1\n            m = f32(len(first))\n            jaro = f32(f32(f32(m / len(a)) + f32(m / len(b))) +\n                       f32(f32(m - transpositions) / m))\n            similarity = f32(jaro / 3)\n            threshold = 0.7 if parameter is None else parameter\n            if similarity > threshold:\n                similarity += min(0.1, 1.0 / len(large)) * prefix * (1.0 - similarity)\n    return 1.0 - similarity if operation == \"distance\" else similarity\n",
+  "explanation": "Recorded replay fixture",
+  "metadata": {
+    "backend": "replay",
+    "provenance": "synthetic_fixture",
+    "manifest_sha256": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6",
+    "source": "/Users/ram/cs6158/midpoint/fixtures/jaro_winkler.py",
+    "sha256": "8b3ae1547f493e9f0bf9b0a486eb235ab1cbb22b7dd73c798ed2bb72c3658d45",
+    "usage": null
+  }
+}

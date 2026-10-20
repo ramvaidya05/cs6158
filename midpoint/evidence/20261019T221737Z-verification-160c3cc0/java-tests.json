@@ -1,0 +1,23 @@
+[
+  {
+    "name": "info.debatty.java.stringsimilarity.JaroWinklerTest",
+    "tests": "2",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "info.debatty.java.stringsimilarity.LevenshteinTest",
+    "tests": "1",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "info.debatty.java.stringsimilarity.NormalizedLevenshteinTest",
+    "tests": "2",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0"
+  }
+]

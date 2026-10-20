@@ -12,8 +12,16 @@ from .storage import ROOT, save_json
 
 
 class EnvironmentAgent:
-    def __init__(self, timeout=60):
+    def __init__(self, timeout=60, executor=None):
         self.timeout = timeout
+        self.executor = executor
+
+    @property
+    def isolated(self):
+        return bool(self.executor and self.executor.isolated)
+
+    def remediate(self, mode, result):
+        return self.executor.remediate(mode, result) if self.executor else None
 
     def java_command(self):
         verify_build()
@@ -33,7 +41,8 @@ class EnvironmentAgent:
                 "java_harness_built": (ROOT / "java/target/classpath.txt").exists(),
                 "docker_on_path": shutil.which("docker"),
                 "openai_api_key_configured": bool(os.environ.get("OPENAI_API_KEY")),
-                "isolation": "local subprocess; not an OS sandbox",
+                "local_key_file_exists": (ROOT / ".env").is_file(),
+                "isolation": self.executor.identity() if self.executor else "local subprocess; not an OS sandbox",
                 "graalpy_version": "25.0.0"}
 
     def run(self, mode, cases, artifact: Path, candidate=None):
@@ -50,7 +59,9 @@ class EnvironmentAgent:
                 result = {"status": "syntax_error", "rows": [], "detail": str(exc)}
                 save_json(artifact / "execution.json", result)
                 return result
-        if mode == "reference":
+        if self.executor and mode in ("cpython", "graal"):
+            proc = self.executor.run(mode, candidate, json.dumps(cases, ensure_ascii=True), self.timeout)
+        elif mode == "reference":
             command = self.java_command() + ["reference"]
         elif mode == "graal":
             command = self.java_command() + ["graal", str(candidate.resolve())]
@@ -58,16 +69,21 @@ class EnvironmentAgent:
             command = [sys.executable, "-I", str(ROOT / "migration_lab/worker.py"), str(candidate.resolve())]
         else:
             raise ValueError("Unknown execution mode")
-        proc = execute(command, data=json.dumps(cases, ensure_ascii=True), timeout=self.timeout)
+        if not self.executor or mode == "reference":
+            proc = execute(command, data=json.dumps(cases, ensure_ascii=True), timeout=self.timeout)
         rows = []
         detail = ""
         if proc["timed_out"]:
             status = "timeout"
+        elif proc.get("container_state", {}).get("OOMKilled"):
+            status = "memory_limit"
+        elif proc["output_truncated"]:
+            status = "output_limit"
+            detail = "Runner output exceeded capture limit"
+        elif proc["exit_code"] in (125, 126, 127) and self.executor:
+            status = "infrastructure_error"
         elif proc["exit_code"] != 0:
             status = "execution_error"
-        elif proc["output_truncated"]:
-            status = "protocol_error"
-            detail = "Runner output exceeded capture limit"
         else:
             try:
                 rows = json.loads(proc["stdout"])

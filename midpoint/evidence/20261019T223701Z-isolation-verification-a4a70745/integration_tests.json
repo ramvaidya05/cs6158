@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "integration_tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 24.566956,
+  "stdout": "",
+  "stderr": "test_cpu_and_pid_limits_enforced (test_isolation.IsolationTests.test_cpu_and_pid_limits_enforced) ... ok\ntest_disk_limit (test_isolation.IsolationTests.test_disk_limit) ... ok\ntest_external_network_denied (test_isolation.IsolationTests.test_external_network_denied) ... ok\ntest_graal_host_file_and_network_denied (test_isolation.IsolationTests.test_graal_host_file_and_network_denied) ... ok\ntest_host_secret_and_repository_absent (test_isolation.IsolationTests.test_host_secret_and_repository_absent) ... ok\ntest_memory_limit (test_isolation.IsolationTests.test_memory_limit) ... ok\ntest_missing_image_fails_closed (test_isolation.IsolationTests.test_missing_image_fails_closed) ... ok\ntest_process_creation_is_bounded (test_isolation.IsolationTests.test_process_creation_is_bounded) ... ok\ntest_runner_and_candidate_read_only (test_isolation.IsolationTests.test_runner_and_candidate_read_only) ... ok\ntest_time_and_output_limits (test_isolation.IsolationTests.test_time_and_output_limits) ... ok\ntest_trusted_cache_diagnosis_and_bounded_remediation (test_isolation.IsolationTests.test_trusted_cache_diagnosis_and_bounded_remediation) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 24.500s\n\nOK\n",
+  "output_truncated": false
+}

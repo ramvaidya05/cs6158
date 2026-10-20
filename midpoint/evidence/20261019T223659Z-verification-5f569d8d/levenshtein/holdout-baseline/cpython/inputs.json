@@ -1,0 +1,162 @@
+[
+  {
+    "id": "levenshtein-holdout-000",
+    "task": "levenshtein",
+    "a": "\ud83d\ude80\u00e9",
+    "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+    "operation": "distance",
+    "parameter": 0
+  },
+  {
+    "id": "levenshtein-holdout-001",
+    "task": "levenshtein",
+    "a": " b\ud83d\ude00CC",
+    "b": "ab\ud83d\ude00CCD\u00e9\ud83d\ude80",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-002",
+    "task": "levenshtein",
+    "a": "a\ud83d\ude80",
+    "b": "\ud83d\ude80DC\u00e9\ud83d\ude00DDb\ud83d\ude00\ud83d\ude80",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-003",
+    "task": "levenshtein",
+    "a": "a\u0301D\ud83d\ude80\u0301baD\ud83d\ude80",
+    "b": "bCb\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9\ud83d\ude00",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-004",
+    "task": "levenshtein",
+    "a": "\u0301\ud83d\ude00",
+    "b": "ab",
+    "operation": "distance",
+    "parameter": 1
+  },
+  {
+    "id": "levenshtein-holdout-005",
+    "task": "levenshtein",
+    "a": "\ud83d\ude80\u0301CaD\u0301b\u0301C\ud83d\ude80a",
+    "b": "\u0301",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-006",
+    "task": "levenshtein",
+    "a": "\u0301",
+    "b": "\ud83d\ude80Ca\u0301",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-007",
+    "task": "levenshtein",
+    "a": "Da\u00e9\u00e9a",
+    "b": "bb\ud83d\ude80\ud83d\ude80b\ud83d\ude00C",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-008",
+    "task": "levenshtein",
+    "a": "b\ud83d\ude80 C\ud83d\ude80",
+    "b": "Cb\u0301\u0301aD\u0301",
+    "operation": "distance",
+    "parameter": 5
+  },
+  {
+    "id": "levenshtein-holdout-009",
+    "task": "levenshtein",
+    "a": "",
+    "b": "aaDC Da",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-010",
+    "task": "levenshtein",
+    "a": "abC\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9",
+    "b": "b\u00e9D Dbb\u0301",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-011",
+    "task": "levenshtein",
+    "a": "CD DC\u00e9C\ud83d\ude00bC\u00e9",
+    "b": "bD a\u0301a Ca ",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-012",
+    "task": "levenshtein",
+    "a": "\u0301\u00e9D\ud83d\ude00\ud83d\ude00\u0301\ud83d\ude80D\ud83d\ude00\ud83d\ude00D",
+    "b": "a\u00e9C\u0301",
+    "operation": "distance",
+    "parameter": -1
+  },
+  {
+    "id": "levenshtein-holdout-013",
+    "task": "levenshtein",
+    "a": "C \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD\ud83d\ude00",
+    "b": "b\ud83d\ude80\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-014",
+    "task": "levenshtein",
+    "a": "C \ud83d\ude00\u00e9\ud83d\ude00",
+    "b": " abbDDb",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-015",
+    "task": "levenshtein",
+    "a": "\ud83d\ude80\ud83d\ude00 \u00e9 \u00e9 \u00e9\u00e9aDb",
+    "b": "",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-016",
+    "task": "levenshtein",
+    "a": null,
+    "b": "withheld",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-017",
+    "task": "levenshtein",
+    "a": "withheld",
+    "b": null,
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-018",
+    "task": "levenshtein",
+    "a": "longcommonprefixA",
+    "b": "longcommonprefixB",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "levenshtein-holdout-019",
+    "task": "levenshtein",
+    "a": "\ud83d\ude80\ud83d\ude00",
+    "b": "\ud83d\ude00\ud83d\ude80",
+    "operation": "distance",
+    "parameter": null
+  }
+]

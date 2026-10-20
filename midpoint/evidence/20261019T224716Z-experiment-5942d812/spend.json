@@ -1,0 +1,78 @@
+{
+  "limit_usd": 1.0,
+  "accounted_usd": 0.06764625,
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.0790378125,
+      "accounted_usd": 0.02432625,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 3440,
+        "output_tokens": 5627,
+        "thinking_tokens": 4848,
+        "provider_usage": {
+          "promptTokenCount": 3440,
+          "candidatesTokenCount": 779,
+          "totalTokenCount": 9067,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3440
+            }
+          ],
+          "thoughtsTokenCount": 4848,
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.0790378125,
+      "accounted_usd": 0.022845,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 3440,
+        "output_tokens": 5232,
+        "thinking_tokens": 4555,
+        "provider_usage": {
+          "promptTokenCount": 3440,
+          "candidatesTokenCount": 677,
+          "totalTokenCount": 8672,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3440
+            }
+          ],
+          "thoughtsTokenCount": 4555,
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.0790378125,
+      "accounted_usd": 0.020475,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 3440,
+        "output_tokens": 4600,
+        "thinking_tokens": 3955,
+        "provider_usage": {
+          "promptTokenCount": 3440,
+          "candidatesTokenCount": 645,
+          "totalTokenCount": 8040,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3440
+            }
+          ],
+          "thoughtsTokenCount": 3955,
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 4,
+      "total": 26,
+      "status": "completed",
+      "passed_ids": [
+        "levenshtein-visible-000",
+        "levenshtein-visible-003",
+        "levenshtein-visible-023",
+        "levenshtein-visible-024"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "levenshtein-visible-001",
+            "task": "levenshtein",
+            "a": "",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-001",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-002",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-002",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-004",
+            "task": "levenshtein",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-004",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-005",
+            "task": "levenshtein",
+            "a": "My string",
+            "b": "My tsring",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-005",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-006",
+            "task": "levenshtein",
+            "a": "aaaa",
+            "b": "aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-006",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-007",
+            "task": "levenshtein",
+            "a": "ab",
+            "b": "ba",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-007",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-008",
+            "task": "levenshtein",
+            "a": "ABC",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-008",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-009",
+            "task": "levenshtein",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-009",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-009",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-010",
+            "task": "levenshtein",
+            "a": "\u00e9",
+            "b": "e\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-010",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-011",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-011",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-011",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-012",
+            "task": "levenshtein",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-012",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-013",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-013",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-013",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-014",
+            "task": "levenshtein",
+            "a": "\u0000a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-014",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-015",
+            "task": "levenshtein",
+            "a": "\n",
+            "b": "\r\n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-015",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-016",
+            "task": "levenshtein",
+            "a": null,
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-017",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-018",
+            "task": "levenshtein",
+            "a": null,
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-018",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-019",
+            "task": "levenshtein",
+            "a": "MARTHA",
+            "b": "MARHTA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-019",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-019",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-021",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-022",
+            "task": "levenshtein",
+            "a": "",
+            "b": "abcdef",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-022",
+            "status": "ok",
+            "value": 6.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-022",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-025",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 4,
+      "total": 26,
+      "status": "completed",
+      "passed_ids": [
+        "levenshtein-visible-000",
+        "levenshtein-visible-003",
+        "levenshtein-visible-023",
+        "levenshtein-visible-024"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "levenshtein-visible-001",
+            "task": "levenshtein",
+            "a": "",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-001",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-002",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-002",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-004",
+            "task": "levenshtein",
+            "a": "kitten",
+            "b": "sitting",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-004",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-005",
+            "task": "levenshtein",
+            "a": "My string",
+            "b": "My tsring",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-005",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-006",
+            "task": "levenshtein",
+            "a": "aaaa",
+            "b": "aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-006",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-007",
+            "task": "levenshtein",
+            "a": "ab",
+            "b": "ba",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-007",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-008",
+            "task": "levenshtein",
+            "a": "ABC",
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-008",
+            "status": "ok",
+            "value": 3.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-009",
+            "task": "levenshtein",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-009",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-009",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-010",
+            "task": "levenshtein",
+            "a": "\u00e9",
+            "b": "e\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-010",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-011",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00",
+            "b": "",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-011",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-011",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-012",
+            "task": "levenshtein",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-012",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-013",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-013",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-013",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-014",
+            "task": "levenshtein",
+            "a": "\u0000a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-014",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-015",
+            "task": "levenshtein",
+            "a": "\n",
+            "b": "\r\n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-015",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-016",
+            "task": "levenshtein",
+            "a": null,
+            "b": "abc",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-017",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-018",
+            "task": "levenshtein",
+            "a": null,
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-018",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "levenshtein-visible-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-019",
+            "task": "levenshtein",
+            "a": "MARTHA",
+            "b": "MARHTA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "levenshtein-visible-019",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-019",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-021",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-022",
+            "task": "levenshtein",
+            "a": "",
+            "b": "abcdef",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-022",
+            "status": "ok",
+            "value": 6.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-022",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-025",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    }
+  },
+  "passed": 8,
+  "total": 52,
+  "all_pass": false
+}

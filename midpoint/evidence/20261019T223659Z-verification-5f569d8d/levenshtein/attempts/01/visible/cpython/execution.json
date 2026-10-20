@@ -1,0 +1,156 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "levenshtein-visible-000",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "levenshtein-visible-001",
+      "status": "ok",
+      "value": 3
+    },
+    {
+      "id": "levenshtein-visible-002",
+      "status": "ok",
+      "value": 3
+    },
+    {
+      "id": "levenshtein-visible-003",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "levenshtein-visible-004",
+      "status": "ok",
+      "value": 3
+    },
+    {
+      "id": "levenshtein-visible-005",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-006",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-007",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-008",
+      "status": "ok",
+      "value": 3
+    },
+    {
+      "id": "levenshtein-visible-009",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-visible-010",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-011",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-012",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-013",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-visible-014",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-visible-015",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-visible-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "levenshtein-visible-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "levenshtein-visible-018",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "levenshtein-visible-019",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-020",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-visible-021",
+      "status": "ok",
+      "value": 2
+    },
+    {
+      "id": "levenshtein-visible-022",
+      "status": "ok",
+      "value": 6
+    },
+    {
+      "id": "levenshtein-visible-023",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "levenshtein-visible-024",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "levenshtein-visible-025",
+      "status": "ok",
+      "value": -1
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/runs/20261019T223659Z-verification-5f569d8d/levenshtein/attempts/01/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.029655,
+    "stdout": "[{\"id\": \"levenshtein-visible-000\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"levenshtein-visible-001\", \"status\": \"ok\", \"value\": 3}, {\"id\": \"levenshtein-visible-002\", \"status\": \"ok\", \"value\": 3}, {\"id\": \"levenshtein-visible-003\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"levenshtein-visible-004\", \"status\": \"ok\", \"value\": 3}, {\"id\": \"levenshtein-visible-005\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-006\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-007\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-008\", \"status\": \"ok\", \"value\": 3}, {\"id\": \"levenshtein-visible-009\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-visible-010\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-011\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-012\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-013\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-visible-014\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-visible-015\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-visible-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"levenshtein-visible-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"levenshtein-visible-018\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"levenshtein-visible-019\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-020\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-visible-021\", \"status\": \"ok\", \"value\": 2}, {\"id\": \"levenshtein-visible-022\", \"status\": \"ok\", \"value\": 6}, {\"id\": \"levenshtein-visible-023\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"levenshtein-visible-024\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"levenshtein-visible-025\", \"status\": \"ok\", \"value\": -1}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

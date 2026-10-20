@@ -1,0 +1,307 @@
+{
+  "provenance": "synthetic_fixture",
+  "study": "controlled_environment_stress",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "task_pass_rate": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 4,
+            "total": 26,
+            "rate": 0.15384615384615385,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 18,
+            "total": 140,
+            "rate": 0.12857142857142856,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 4,
+            "total": 26,
+            "rate": 0.15384615384615385,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 18,
+            "total": 140,
+            "rate": 0.12857142857142856,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "code_repair": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "task_pass_rate": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    "environment_repair": {
+      "tasks_passing": 1,
+      "admitted_task_trials": 1,
+      "task_pass_rate": 1.0,
+      "descriptive_wilson_95": [
+        0.20654329147389294,
+        1
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 26,
+            "total": 26,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 140,
+            "total": 140,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 26,
+            "total": 26,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 140,
+            "total": 140,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": -12.857142857142856,
+        "graal": -12.857142857142856
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "task_success_delta": 1,
+      "holdout_delta_percentage_points": {
+        "cpython": 87.14285714285714,
+        "graal": 87.14285714285714
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "one_shot",
+      "path": "trial-000/levenshtein/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "attempts": 1,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 18.049,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 4,
+            "total": 26,
+            "rate": 0.15384615384615385,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 18,
+            "total": 140,
+            "rate": 0.12857142857142856,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 4,
+            "total": 26,
+            "rate": 0.15384615384615385,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 18,
+            "total": 140,
+            "rate": 0.12857142857142856,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "path": "trial-000/levenshtein/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Infrastructure preflight failed for graal; see preflight artifacts"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.6905939999851398,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "path": "trial-000/levenshtein/environment_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "code_repairs": 1,
+      "environment_repairs": 1,
+      "elapsed_seconds": 23.963,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 26,
+            "total": 26,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 140,
+            "total": 140,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 26,
+            "total": 26,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 140,
+            "total": 140,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  ],
+  "usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "usage_unknown_calls": 0
+  }
+}

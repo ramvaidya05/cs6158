@@ -1,0 +1,30 @@
+{
+  "status": "error",
+  "task": "levenshtein",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.126
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.77
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.05,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "error": {
+    "type": "BackendError",
+    "message": "Model HTTP 429; check access, model compatibility and quota"
+  },
+  "elapsed_seconds": 6.991666459012777,
+  "validated": false
+}

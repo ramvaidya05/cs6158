@@ -1,0 +1,13 @@
+{
+  "purpose": "Adapter access diagnosis, not a translation-accuracy trial",
+  "model": "gpt-5.6-sol",
+  "status": "error",
+  "kind": "rate_limit",
+  "details": {
+    "http_status": 429,
+    "elapsed_seconds": 0.591482707997784,
+    "provider_code": null,
+    "request_id": "req_57df7cb7505b48b88feccce9bb89a8b3"
+  },
+  "message": "Model HTTP 429; check access, model compatibility and quota"
+}

@@ -1,8 +1,14 @@
 # Environment-in-the-Loop Java-to-Python Translation: Research and Implementation Plan
 
-Prepared 19 October 2026. Updated after midpoint implementation: the runnable prototype is in [midpoint/](./midpoint/README.md). Three-task synthetic replay acceptance passes in CPython and Java-embedded GraalPy. This demonstrates infrastructure, not live-model translation performance; live experiments and autonomous environment repair remain pending. See the [developer handoff](./midpoint/DEVELOPER_HANDOFF.md) and [midpoint report draft](./midpoint/MIDPOINT_REPORT.md) for the current implementation and evidence.
+Prepared 19 October 2026. Updated after midpoint implementation: the runnable prototype is in [midpoint/](./midpoint/README.md). Three-task synthetic replay acceptance passes in CPython and Java-embedded GraalPy. This demonstrates infrastructure, not live-model translation performance; see the checkpoint below for the first live result. See the [developer handoff](./midpoint/DEVELOPER_HANDOFF.md) and [midpoint report draft](./midpoint/MIDPOINT_REPORT.md) for the current implementation and evidence.
 
 The [one-day midpoint plan](./MIDPOINT_TODAY_PLAN.md) records the original scope. The longer milestones below remain a research roadmap, not a statement that every described component is implemented; their original schedule does not apply to today's midpoint target.
+
+Current implementation checkpoint: [isolated experiments and results](midpoint/EXPERIMENT_RESULTS.md).
+Container isolation and bounded cache remediation are now implemented. Live
+GPT-5.6 Sol requests returned HTTP 429. A live Gemini 3.8 Flash study then
+measured Levenshtein translation accuracy: 3/3 one-shot trials passed every
+visible and withheld case in both runtimes. The other two tasks remain unmeasured.
 
 ## 1. Recommended research direction
 

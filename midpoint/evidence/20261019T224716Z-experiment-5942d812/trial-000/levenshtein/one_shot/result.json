@@ -1,0 +1,36 @@
+{
+  "status": "error",
+  "task": "levenshtein",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.093
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 5.857
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 6.152,
+      "attempt": 0
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 57.471,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Protected source/evaluator/context files changed; run invalidated"
+  },
+  "elapsed_seconds": 62.28442920802627,
+  "validated": false
+}

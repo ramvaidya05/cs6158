@@ -1,0 +1,120 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "normalized-holdout-000",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-001",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-002",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-003",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-004",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-005",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-006",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-007",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-008",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-009",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-010",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-011",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-012",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-013",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-014",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-015",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-016",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-017",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-018",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "normalized-holdout-019",
+      "status": "ok",
+      "value": 0
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/runs/20261019T223659Z-verification-5f569d8d/normalized/attempts/00/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.027335,
+    "stdout": "[{\"id\": \"normalized-holdout-000\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-001\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-002\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-003\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-004\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-005\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-006\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-007\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-008\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-009\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-010\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-011\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-012\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-013\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-014\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-015\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-016\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-017\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-018\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"normalized-holdout-019\", \"status\": \"ok\", \"value\": 0}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

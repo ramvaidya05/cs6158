@@ -2,6 +2,15 @@
 
 Updated 19 October 2026. Project root: `midpoint/` within the SWE ML workspace.
 
+> Post-midpoint update: container isolation, a frozen expanded evaluator, paired
+> repeated-trial reporting, and a bounded cache-remediation policy are now
+> implemented. The GPT-5.6 Sol live attempt was blocked by HTTP 429 responses.
+> A Gemini backend was then added, and a live Gemini 3.8 Flash Levenshtein study
+> passed 3/3 trials on every visible and withheld case in both runtimes, with no
+> repair needed. Read [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md)
+> and [EXPERIMENTS.md](EXPERIMENTS.md) for the current checkpoint. The original
+> handoff below is retained as a historical account of the midpoint state.
+
 ## Read this first
 
 The midpoint **infrastructure** is implemented and exercised: a pinned Java

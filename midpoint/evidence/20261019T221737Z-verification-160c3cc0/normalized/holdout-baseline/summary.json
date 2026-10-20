@@ -1,0 +1,715 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 3,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-holdout-009",
+        "normalized-holdout-011",
+        "normalized-holdout-013"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-holdout-000",
+            "task": "normalized",
+            "a": "\ud83d\ude80\u00e9",
+            "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-000",
+            "status": "ok",
+            "value": 0.8888888888888888
+          },
+          "actual": {
+            "id": "normalized-holdout-000",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-001",
+            "task": "normalized",
+            "a": "\u00e9 b",
+            "b": "\ud83d\ude00CC\ud83d\ude00ab\ud83d\ude00CCD",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-001",
+            "status": "ok",
+            "value": 0.07692307692307687
+          },
+          "actual": {
+            "id": "normalized-holdout-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-002",
+            "task": "normalized",
+            "a": "\ud83d\ude80Ca\ud83d\ude80\ud83d\ude80",
+            "b": "C\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-002",
+            "status": "ok",
+            "value": 0.75
+          },
+          "actual": {
+            "id": "normalized-holdout-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-003",
+            "task": "normalized",
+            "a": "Db\ud83d\ude00",
+            "b": "a\u0301D\ud83d\ude80\u0301ba",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-003",
+            "status": "ok",
+            "value": 0.125
+          },
+          "actual": {
+            "id": "normalized-holdout-003",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-004",
+            "task": "normalized",
+            "a": "\ud83d\ude80bC",
+            "b": "b\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-004",
+            "status": "ok",
+            "value": 0.8181818181818182
+          },
+          "actual": {
+            "id": "normalized-holdout-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-005",
+            "task": "normalized",
+            "a": "C\u0301\ud83d\ude00Cab \ud83d\ude80",
+            "b": "CaD\u0301b\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-005",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-holdout-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-006",
+            "task": "normalized",
+            "a": "\ud83d\ude80a",
+            "b": "\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-006",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-holdout-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-007",
+            "task": "normalized",
+            "a": "\u0301",
+            "b": "\ud83d\ude80Ca\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-007",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-holdout-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-008",
+            "task": "normalized",
+            "a": "Da\u00e9\u00e9a",
+            "b": "bb\ud83d\ude80\ud83d\ude80b\ud83d\ude00C",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-008",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-holdout-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-010",
+            "task": "normalized",
+            "a": "\ud83d\ude00a\ud83d\ude80aaDC Daab",
+            "b": "C\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-010",
+            "status": "ok",
+            "value": 0.8
+          },
+          "actual": {
+            "id": "normalized-holdout-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-012",
+            "task": "normalized",
+            "a": "b\u0301CD DC\u00e9C\ud83d\ude00bC",
+            "b": "\u00e9bD a\u0301a C",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-012",
+            "status": "ok",
+            "value": 0.7692307692307693
+          },
+          "actual": {
+            "id": "normalized-holdout-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-014",
+            "task": "normalized",
+            "a": " a\u00e9",
+            "b": "\u0301a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-014",
+            "status": "ok",
+            "value": 0.6666666666666666
+          },
+          "actual": {
+            "id": "normalized-holdout-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-015",
+            "task": "normalized",
+            "a": "C \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD\ud83d\ude00",
+            "b": "b\ud83d\ude80\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-015",
+            "status": "ok",
+            "value": 0.2666666666666667
+          },
+          "actual": {
+            "id": "normalized-holdout-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-016",
+            "task": "normalized",
+            "a": null,
+            "b": "withheld",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-holdout-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-017",
+            "task": "normalized",
+            "a": "withheld",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "normalized-holdout-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-018",
+            "task": "normalized",
+            "a": "longcommonprefixA",
+            "b": "longcommonprefixB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-018",
+            "status": "ok",
+            "value": 0.9411764705882353
+          },
+          "actual": {
+            "id": "normalized-holdout-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-019",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude00",
+            "b": "\ud83d\ude00\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-019",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-holdout-019",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 3,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-holdout-009",
+        "normalized-holdout-011",
+        "normalized-holdout-013"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-holdout-000",
+            "task": "normalized",
+            "a": "\ud83d\ude80\u00e9",
+            "b": " \ud83d\ude80\ud83d\ude00\ud83d\ude80D\ud83d\ude00bC\ud83d\ude00C\u0301\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-000",
+            "status": "ok",
+            "value": 0.8888888888888888
+          },
+          "actual": {
+            "id": "normalized-holdout-000",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-001",
+            "task": "normalized",
+            "a": "\u00e9 b",
+            "b": "\ud83d\ude00CC\ud83d\ude00ab\ud83d\ude00CCD",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-001",
+            "status": "ok",
+            "value": 0.07692307692307687
+          },
+          "actual": {
+            "id": "normalized-holdout-001",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-002",
+            "task": "normalized",
+            "a": "\ud83d\ude80Ca\ud83d\ude80\ud83d\ude80",
+            "b": "C\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-002",
+            "status": "ok",
+            "value": 0.75
+          },
+          "actual": {
+            "id": "normalized-holdout-002",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-003",
+            "task": "normalized",
+            "a": "Db\ud83d\ude00",
+            "b": "a\u0301D\ud83d\ude80\u0301ba",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-003",
+            "status": "ok",
+            "value": 0.125
+          },
+          "actual": {
+            "id": "normalized-holdout-003",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-004",
+            "task": "normalized",
+            "a": "\ud83d\ude80bC",
+            "b": "b\u00e9a \u00e9\ud83d\ude80\ud83d\ude80a\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-004",
+            "status": "ok",
+            "value": 0.8181818181818182
+          },
+          "actual": {
+            "id": "normalized-holdout-004",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-005",
+            "task": "normalized",
+            "a": "C\u0301\ud83d\ude00Cab \ud83d\ude80",
+            "b": "CaD\u0301b\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-005",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-holdout-005",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-006",
+            "task": "normalized",
+            "a": "\ud83d\ude80a",
+            "b": "\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-006",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-holdout-006",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-007",
+            "task": "normalized",
+            "a": "\u0301",
+            "b": "\ud83d\ude80Ca\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-007",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-holdout-007",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-008",
+            "task": "normalized",
+            "a": "Da\u00e9\u00e9a",
+            "b": "bb\ud83d\ude80\ud83d\ude80b\ud83d\ude00C",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-008",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "normalized-holdout-008",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-010",
+            "task": "normalized",
+            "a": "\ud83d\ude00a\ud83d\ude80aaDC Daab",
+            "b": "C\ud83d\ude00\ud83d\ude00\u0301 \u0301D\ud83d\ude00b\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-010",
+            "status": "ok",
+            "value": 0.8
+          },
+          "actual": {
+            "id": "normalized-holdout-010",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-012",
+            "task": "normalized",
+            "a": "b\u0301CD DC\u00e9C\ud83d\ude00bC",
+            "b": "\u00e9bD a\u0301a C",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-012",
+            "status": "ok",
+            "value": 0.7692307692307693
+          },
+          "actual": {
+            "id": "normalized-holdout-012",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-014",
+            "task": "normalized",
+            "a": " a\u00e9",
+            "b": "\u0301a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-014",
+            "status": "ok",
+            "value": 0.6666666666666666
+          },
+          "actual": {
+            "id": "normalized-holdout-014",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-015",
+            "task": "normalized",
+            "a": "C \ud83d\ude00D\u00e9b\ud83d\ude80\ud83d\ude80aD\ud83d\ude00",
+            "b": "b\ud83d\ude80\ud83d\ude80\ud83d\ude00a\u0301\ud83d\ude80 b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-015",
+            "status": "ok",
+            "value": 0.2666666666666667
+          },
+          "actual": {
+            "id": "normalized-holdout-015",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-016",
+            "task": "normalized",
+            "a": null,
+            "b": "withheld",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-016",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s1 must not be null"
+          },
+          "actual": {
+            "id": "normalized-holdout-016",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-017",
+            "task": "normalized",
+            "a": "withheld",
+            "b": null,
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-017",
+            "status": "exception",
+            "type": "NullPointerException",
+            "message": "s2 must not be null"
+          },
+          "actual": {
+            "id": "normalized-holdout-017",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-018",
+            "task": "normalized",
+            "a": "longcommonprefixA",
+            "b": "longcommonprefixB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-018",
+            "status": "ok",
+            "value": 0.9411764705882353
+          },
+          "actual": {
+            "id": "normalized-holdout-018",
+            "status": "ok",
+            "value": 0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-holdout-019",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude00",
+            "b": "\ud83d\ude00\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-holdout-019",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-holdout-019",
+            "status": "ok",
+            "value": 0
+          }
+        }
+      ]
+    }
+  },
+  "passed": 6,
+  "total": 40,
+  "all_pass": false
+}

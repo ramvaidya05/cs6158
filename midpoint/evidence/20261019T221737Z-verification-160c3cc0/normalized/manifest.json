@@ -1,0 +1,90 @@
+{
+  "task": "normalized",
+  "backend": {
+    "backend": "replay",
+    "provenance": "synthetic_fixture",
+    "manifest_sha256": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6"
+  },
+  "max_repairs": 5,
+  "runtimes": [
+    "cpython",
+    "graal"
+  ],
+  "seed": 6158,
+  "timeout_per_process_seconds": 90,
+  "max_loop_seconds": 900,
+  "max_output_tokens_per_call": 8192,
+  "output_token_budget": 49152,
+  "protected_hashes": {
+    "benchmarks/scope.json": "1cc62149bb14bfe078e15427a242a76b1e4dab6a8af7bc05b7954e5478fd78ed",
+    "fixtures/broken.py": "4c498f3f482c6a4504b8a4da34f1d3fb6ae5768e539f8fcddac4fb15d50a2b12",
+    "fixtures/jaro_winkler.py": "8b3ae1547f493e9f0bf9b0a486eb235ab1cbb22b7dd73c798ed2bb72c3658d45",
+    "fixtures/levenshtein.py": "ee4cfab6ed2cfaf02d027672996b89f6caa8be3cb0464aa85766479826b4e14b",
+    "fixtures/normalized.py": "d033aa3b432ef57f0845b7c5db7108c071f60dfdd17bda207f4a1e335fdd7da0",
+    "fixtures/preflight.py": "1ebf7f617ac32f265f7fc9490284e70a1ecbaffb91d3768ef5d99e396fae6b43",
+    "fixtures/replay.json": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6",
+    "java/pom.xml": "ca119be68660443b0c247214fd3f110321b5c7a6b26d53d6b58369de6dbcad8c",
+    "java/src/main/java/lab/Harness.java": "c3829f80cb6fbc48d2d5dd679d0f21091724c3a712964b7411d8579270b9c4cd",
+    "knowledge/java_python_semantics.md": "578c650cdea3ca3d3d2170397adadc1f1aa918a7021963ecb276a67cc0434394",
+    "knowledge/translation_contract.md": "bf513c175ad125ce8cc6ef318733493d15e240beadf067a75eb7d8f761b35ac1",
+    "migration_lab/__init__.py": "aa97dcb5460d8745c7cb9427f59049f727333293b7535302d29b1953ece5a015",
+    "migration_lab/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "migration_lab/backends.py": "a114eadb269760d3b63d67848b9be7612c9b7c8847c6056f3a7906a04cb5ce4c",
+    "migration_lab/benchmark.py": "7acc6d103743c643d379977caf3eb70df266d5c89bb1001da1efd8d991e9640c",
+    "migration_lab/build.py": "06b083727b67ab517a563d8de8d7613cb5a86a23e42b099cbf8a8e9170ee2de8",
+    "migration_lab/cli.py": "9bfaeb1ca369447f1d30a3e654e299e3b746794ee29cffd30dcc2944b3297172",
+    "migration_lab/controller.py": "ab055cecf0af01b3ff9e0b78d461d534e13542f0ee213594e3d24df367c02869",
+    "migration_lab/environment.py": "717c9286add08e6540cbae09bcfc82b2d3b6933e75fe5eb776bb1f80cb2d5501",
+    "migration_lab/evaluation.py": "7b69d58987d7a36fb3dc5edc96cf6ba0613ac940641e4f303d674fb157913bd5",
+    "migration_lab/process.py": "b90e95bde3b4d3e8119c94b67afe6c7b9d0f425a4680f59a75153ba0206f2dc8",
+    "migration_lab/storage.py": "67196d139dc8e54166d95e95e25233c34554f253d7ae9d08d50d265c69b52b72",
+    "migration_lab/translator.py": "ea1cfaf7466c39376b3199cad7d893ba9cf4e97ab8ab6338fc2a941cdb503396",
+    "migration_lab/worker.py": "9c11463e594c6f4d5123eff98b2da3f014bf8b60453b5ddf912e650024ab1f54",
+    "vendor/java-string-similarity/LICENSE.md": "bae2d5f8af7bbb46fca680a3d191522b0cd8b1d5b3d5d72c8d49e785d60a39df",
+    "vendor/java-string-similarity/SOURCE.json": "d44a8548914df7989e0bb5f19180fea4c6d4299550c0990ee56766386aa4421c",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/JaroWinkler.java": "6a2b933d9f769581d739f82c476ecd3ece0e8cb21b0335a1010caa2e633d0ce5",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/Levenshtein.java": "79d9d78419323834c6717e6dfd8179423409f7b3821e905e1f1f966904244b77",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/NormalizedLevenshtein.java": "c3ddf6a291e222521f291c1eb2b49e108ad814c999b30408af88ab62b5bbde89",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java": "7c5ae3d445181c543919647b59b31e7b99be7b2e4258f85c9db996d8edba41fe",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java": "c3f4e7110a897b93ccde6a5eb52e71b4a1c42ad8cc6e0a63650761a0b12bb4ee",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java": "4b159b1347f153aa6aa114d8946e3d57bbc24f94e5ad56a9dfb0a0dfc7ff28ce",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringDistance.java": "c93dfba3ab27add4cf04a406ab894f2e8b16311fe3f25421d1789d7215defca3",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java": "f64bd4d203179fedc9fd4667c6623b0a312982e9e298b1bddd45eed59f448778",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/JaroWinklerTest.java": "a6173190ca29d7353bd3cfc811632c1fe50d35835a0cf2ce08f8b2952cb62e07",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/LevenshteinTest.java": "8e3bbbc863c3ca0c734605ebd90e5a4671229f5830d3105b7352f7fd987c3e76",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/NormalizedLevenshteinTest.java": "62af21a6b822ec9c278751d0f6d199487c4e328e4d5d1268dc315b821cdd75c4",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/testutil/NullEmptyTests.java": "e08089f50ad5ed77888918a517dc4160988a07e6c8896c93009d94c45d925c51"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "python_executable": "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "java": {
+      "command": [
+        "java",
+        "-version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.037175,
+      "stdout": "",
+      "stderr": "openjdk version \"25.0.1\" 2025-10-21 LTS\nOpenJDK Runtime Environment Temurin-25.0.1+8 (build 25.0.1+8-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.1+8 (build 25.0.1+8-LTS, mixed mode, sharing)\n",
+      "output_truncated": false
+    },
+    "maven_on_path": null,
+    "local_maven": true,
+    "java_harness_built": true,
+    "docker_on_path": "/Users/ram/.docker/bin/docker",
+    "openai_api_key_configured": false,
+    "isolation": "local subprocess; not an OS sandbox",
+    "graalpy_version": "25.0.0"
+  },
+  "child_locale": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "UTC"
+  },
+  "holdout_policy": "Public demo cases; excluded from model context; scored after selection only",
+  "budget_note": "Loop deadline checked between calls; final evaluation may run beyond it. Output budget reserves requested maximum per call, not input tokens or dollars."
+}

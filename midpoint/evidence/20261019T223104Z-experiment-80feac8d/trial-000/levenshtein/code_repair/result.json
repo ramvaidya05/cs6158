@@ -1,0 +1,21 @@
+{
+  "status": "error",
+  "task": "levenshtein",
+  "provenance": "synthetic_fixture",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.029
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Infrastructure preflight failed for graal; see preflight artifacts"
+  },
+  "elapsed_seconds": 0.6905939999851398,
+  "validated": false
+}

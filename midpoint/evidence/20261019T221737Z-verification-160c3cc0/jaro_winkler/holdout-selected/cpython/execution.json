@@ -1,0 +1,124 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-holdout-000",
+      "status": "ok",
+      "value": 0.40740740299224854
+    },
+    {
+      "id": "jaro_winkler-holdout-001",
+      "status": "ok",
+      "value": 0.7777777314186096
+    },
+    {
+      "id": "jaro_winkler-holdout-002",
+      "status": "ok",
+      "value": 0.39682537317276
+    },
+    {
+      "id": "jaro_winkler-holdout-003",
+      "status": "ok",
+      "value": 0.558152973651886
+    },
+    {
+      "id": "jaro_winkler-holdout-004",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-holdout-005",
+      "status": "ok",
+      "value": 0.692307710647583
+    },
+    {
+      "id": "jaro_winkler-holdout-006",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-holdout-007",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-holdout-008",
+      "status": "ok",
+      "value": 0.5714285671710968
+    },
+    {
+      "id": "jaro_winkler-holdout-009",
+      "status": "ok",
+      "value": 0.6126984357833862
+    },
+    {
+      "id": "jaro_winkler-holdout-010",
+      "status": "ok",
+      "value": 0.45277780294418335
+    },
+    {
+      "id": "jaro_winkler-holdout-011",
+      "status": "ok",
+      "value": 0.2750000059604645
+    },
+    {
+      "id": "jaro_winkler-holdout-012",
+      "status": "ok",
+      "value": 0.4237528230462756
+    },
+    {
+      "id": "jaro_winkler-holdout-013",
+      "status": "ok",
+      "value": 0.4650793969631195
+    },
+    {
+      "id": "jaro_winkler-holdout-014",
+      "status": "ok",
+      "value": 0.5952380895614624
+    },
+    {
+      "id": "jaro_winkler-holdout-015",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-holdout-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-holdout-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-holdout-018",
+      "status": "ok",
+      "value": 0.9976931915563696
+    },
+    {
+      "id": "jaro_winkler-holdout-019",
+      "status": "ok",
+      "value": 0.3333333134651184
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/runs/20261019T221737Z-verification-160c3cc0/jaro_winkler/final.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.040419,
+    "stdout": "[{\"id\": \"jaro_winkler-holdout-000\", \"status\": \"ok\", \"value\": 0.40740740299224854}, {\"id\": \"jaro_winkler-holdout-001\", \"status\": \"ok\", \"value\": 0.7777777314186096}, {\"id\": \"jaro_winkler-holdout-002\", \"status\": \"ok\", \"value\": 0.39682537317276}, {\"id\": \"jaro_winkler-holdout-003\", \"status\": \"ok\", \"value\": 0.558152973651886}, {\"id\": \"jaro_winkler-holdout-004\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-holdout-005\", \"status\": \"ok\", \"value\": 0.692307710647583}, {\"id\": \"jaro_winkler-holdout-006\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-holdout-007\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-holdout-008\", \"status\": \"ok\", \"value\": 0.5714285671710968}, {\"id\": \"jaro_winkler-holdout-009\", \"status\": \"ok\", \"value\": 0.6126984357833862}, {\"id\": \"jaro_winkler-holdout-010\", \"status\": \"ok\", \"value\": 0.45277780294418335}, {\"id\": \"jaro_winkler-holdout-011\", \"status\": \"ok\", \"value\": 0.2750000059604645}, {\"id\": \"jaro_winkler-holdout-012\", \"status\": \"ok\", \"value\": 0.4237528230462756}, {\"id\": \"jaro_winkler-holdout-013\", \"status\": \"ok\", \"value\": 0.4650793969631195}, {\"id\": \"jaro_winkler-holdout-014\", \"status\": \"ok\", \"value\": 0.5952380895614624}, {\"id\": \"jaro_winkler-holdout-015\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-holdout-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-holdout-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-holdout-018\", \"status\": \"ok\", \"value\": 0.9976931915563696}, {\"id\": \"jaro_winkler-holdout-019\", \"status\": \"ok\", \"value\": 0.3333333134651184}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

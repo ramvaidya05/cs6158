@@ -1,0 +1,24 @@
+{
+  "limit_usd": 1.0,
+  "accounted_usd": 0.7719750000000001,
+  "input_usd_per_million": 4.0,
+  "output_usd_per_million": 20.0,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.257325,
+      "accounted_usd": 0.257325,
+      "usage_known": false
+    },
+    {
+      "reserved_usd": 0.257325,
+      "accounted_usd": 0.257325,
+      "usage_known": false
+    },
+    {
+      "reserved_usd": 0.257325,
+      "accounted_usd": 0.257325,
+      "usage_known": false
+    }
+  ]
+}

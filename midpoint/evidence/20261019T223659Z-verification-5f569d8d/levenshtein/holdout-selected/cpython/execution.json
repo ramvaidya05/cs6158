@@ -1,0 +1,124 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "levenshtein-holdout-000",
+      "status": "ok",
+      "value": 0
+    },
+    {
+      "id": "levenshtein-holdout-001",
+      "status": "ok",
+      "value": 5
+    },
+    {
+      "id": "levenshtein-holdout-002",
+      "status": "ok",
+      "value": 12
+    },
+    {
+      "id": "levenshtein-holdout-003",
+      "status": "ok",
+      "value": 10
+    },
+    {
+      "id": "levenshtein-holdout-004",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-holdout-005",
+      "status": "ok",
+      "value": 12
+    },
+    {
+      "id": "levenshtein-holdout-006",
+      "status": "ok",
+      "value": 4
+    },
+    {
+      "id": "levenshtein-holdout-007",
+      "status": "ok",
+      "value": 10
+    },
+    {
+      "id": "levenshtein-holdout-008",
+      "status": "ok",
+      "value": 5
+    },
+    {
+      "id": "levenshtein-holdout-009",
+      "status": "ok",
+      "value": 7
+    },
+    {
+      "id": "levenshtein-holdout-010",
+      "status": "ok",
+      "value": 11
+    },
+    {
+      "id": "levenshtein-holdout-011",
+      "status": "ok",
+      "value": 10
+    },
+    {
+      "id": "levenshtein-holdout-012",
+      "status": "ok",
+      "value": -1
+    },
+    {
+      "id": "levenshtein-holdout-013",
+      "status": "ok",
+      "value": 11
+    },
+    {
+      "id": "levenshtein-holdout-014",
+      "status": "ok",
+      "value": 7
+    },
+    {
+      "id": "levenshtein-holdout-015",
+      "status": "ok",
+      "value": 14
+    },
+    {
+      "id": "levenshtein-holdout-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "levenshtein-holdout-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"/Users/ram/cs6158/midpoint/migration_lab/worker.py\", line 27, in main\n    value = fn(case[\"a\"], case[\"b\"], case[\"operation\"], case.get(\"parameter\"))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "levenshtein-holdout-018",
+      "status": "ok",
+      "value": 1
+    },
+    {
+      "id": "levenshtein-holdout-019",
+      "status": "ok",
+      "value": 2
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "-I",
+      "/Users/ram/cs6158/midpoint/migration_lab/worker.py",
+      "/Users/ram/cs6158/midpoint/runs/20261019T223659Z-verification-5f569d8d/levenshtein/final.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.025721,
+    "stdout": "[{\"id\": \"levenshtein-holdout-000\", \"status\": \"ok\", \"value\": 0}, {\"id\": \"levenshtein-holdout-001\", \"status\": \"ok\", \"value\": 5}, {\"id\": \"levenshtein-holdout-002\", \"status\": \"ok\", \"value\": 12}, {\"id\": \"levenshtein-holdout-003\", \"status\": \"ok\", \"value\": 10}, {\"id\": \"levenshtein-holdout-004\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-holdout-005\", \"status\": \"ok\", \"value\": 12}, {\"id\": \"levenshtein-holdout-006\", \"status\": \"ok\", \"value\": 4}, {\"id\": \"levenshtein-holdout-007\", \"status\": \"ok\", \"value\": 10}, {\"id\": \"levenshtein-holdout-008\", \"status\": \"ok\", \"value\": 5}, {\"id\": \"levenshtein-holdout-009\", \"status\": \"ok\", \"value\": 7}, {\"id\": \"levenshtein-holdout-010\", \"status\": \"ok\", \"value\": 11}, {\"id\": \"levenshtein-holdout-011\", \"status\": \"ok\", \"value\": 10}, {\"id\": \"levenshtein-holdout-012\", \"status\": \"ok\", \"value\": -1}, {\"id\": \"levenshtein-holdout-013\", \"status\": \"ok\", \"value\": 11}, {\"id\": \"levenshtein-holdout-014\", \"status\": \"ok\", \"value\": 7}, {\"id\": \"levenshtein-holdout-015\", \"status\": \"ok\", \"value\": 14}, {\"id\": \"levenshtein-holdout-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"levenshtein-holdout-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"/Users/ram/cs6158/midpoint/migration_lab/worker.py\\\", line 27, in main\\n    value = fn(case[\\\"a\\\"], case[\\\"b\\\"], case[\\\"operation\\\"], case.get(\\\"parameter\\\"))\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"levenshtein-holdout-018\", \"status\": \"ok\", \"value\": 1}, {\"id\": \"levenshtein-holdout-019\", \"status\": \"ok\", \"value\": 2}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

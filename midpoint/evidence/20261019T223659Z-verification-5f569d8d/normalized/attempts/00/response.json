@@ -1,0 +1,12 @@
+{
+  "code": "\"\"\"Deliberately wrong synthetic candidate; never count this as an LLM response.\"\"\"\n\n\ndef run(a, b, operation=\"distance\", parameter=None):\n    return 0\n",
+  "explanation": "Recorded replay fixture",
+  "metadata": {
+    "backend": "replay",
+    "provenance": "synthetic_fixture",
+    "manifest_sha256": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6",
+    "source": "/Users/ram/cs6158/midpoint/fixtures/broken.py",
+    "sha256": "4c498f3f482c6a4504b8a4da34f1d3fb6ae5768e539f8fcddac4fb15d50a2b12",
+    "usage": null
+  }
+}

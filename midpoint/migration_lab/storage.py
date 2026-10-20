@@ -26,7 +26,7 @@ def new_run(label: str) -> Path:
 
 def protected_hashes():
     paths = []
-    for directory in ("vendor", "java/src", "migration_lab", "knowledge", "benchmarks", "fixtures"):
+    for directory in ("vendor", "java/src", "migration_lab", "knowledge", "benchmarks", "fixtures", "containers", "tests", "integration_tests", "scripts"):
         paths.extend(p for p in (ROOT / directory).rglob("*")
                      if p.is_file() and "__pycache__" not in p.parts)
     paths.append(ROOT / "java/pom.xml")

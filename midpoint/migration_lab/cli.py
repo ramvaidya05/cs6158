@@ -2,7 +2,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from .backends import OpenAIResponsesBackend, ReplayBackend
+from .backends import GeminiBackend, OpenAIResponsesBackend, ReplayBackend
 from .benchmark import TASKS, verify_vendor
 from .controller import run_task
 from .environment import EnvironmentAgent
@@ -13,6 +13,29 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Midpoint Java-to-Python translation lab")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("doctor", help="Inspect local tools; does not install or call a model")
+    freeze_parser = commands.add_parser("freeze", help="Freeze evaluator-only inputs and repeated Java oracle outputs")
+    freeze_parser.add_argument("--output", type=Path, required=True)
+    freeze_parser.add_argument("--seed", type=int)
+    report_parser = commands.add_parser("report", help="Recompute failure-inclusive experiment accuracy")
+    report_parser.add_argument("directory", type=Path)
+    experiment = commands.add_parser("experiment", help="Paired one-shot/code/environment repair trials in containers")
+    experiment.add_argument("--suite", type=Path, required=True)
+    experiment.add_argument("--task", choices=(*TASKS, "all"), default="levenshtein")
+    experiment.add_argument("--trials", type=int, default=3)
+    experiment.add_argument("--backend", choices=("replay", "openai", "gemini"), required=True)
+    experiment.add_argument("--replay-manifest", type=Path)
+    experiment.add_argument("--model")
+    experiment.add_argument("--reasoning-effort", default="medium")
+    experiment.add_argument("--max-repairs", type=int, default=5)
+    experiment.add_argument("--timeout", type=float, default=60)
+    experiment.add_argument("--max-seconds", type=float, default=900)
+    experiment.add_argument("--max-output-tokens", type=int, default=8192)
+    experiment.add_argument("--output-token-budget", type=int, default=49152)
+    experiment.add_argument("--max-spend-usd", type=float, default=1.0)
+    experiment.add_argument("--input-usd-per-million", type=float)
+    experiment.add_argument("--output-usd-per-million", type=float)
+    experiment.add_argument("--fault", choices=("none", "graal-cache"), default="none")
+    experiment.add_argument("--archive", action="store_true")
     for name in ("demo", "run"):
         p = commands.add_parser(name)
         p.add_argument("--task", choices=(*TASKS, "all"), default="all")
@@ -30,8 +53,53 @@ def main(argv=None):
             p.add_argument("--output-token-budget", type=int, default=49152)
             p.add_argument("--allow-local-execution", action="store_true",
                            help="Acknowledge generated code runs without an OS sandbox")
+            p.add_argument("--execution", choices=("container", "local"), default="container")
     args = parser.parse_args(argv)
     try:
+        if args.command == "freeze":
+            from .protocol import freeze
+            print(json.dumps(freeze(args.output, args.seed).identity(), indent=2))
+            return 0
+        if args.command == "report":
+            from .experiments import aggregate
+            print(json.dumps(aggregate(args.directory), indent=2))
+            return 0
+        if args.command == "experiment":
+            from .budget import SpendBudget
+            from .protocol import FrozenSuite
+            from .experiments import run_experiment, archive_run
+            suite = FrozenSuite(args.suite)
+            if args.backend == "replay":
+                if not args.replay_manifest:
+                    parser.error("Replay requires --replay-manifest")
+                backend = ReplayBackend(args.replay_manifest)
+            elif args.backend == "gemini":
+                if not __import__("os").environ.get("GEMINI_API_KEY"):
+                    parser.error("Set GEMINI_API_KEY in the environment")
+                if args.input_usd_per_million is None or args.output_usd_per_million is None:
+                    parser.error("Supply token prices; on the free tier use the paid rates as a safety cap")
+                backend = GeminiBackend(args.model, args.reasoning_effort,
+                    SpendBudget(args.max_spend_usd, args.input_usd_per_million, args.output_usd_per_million))
+            else:
+                from .credentials import load_key
+                load_key()
+                input_rate, output_rate = args.input_usd_per_million, args.output_usd_per_million
+                if args.model == "gpt-5.6-sol":
+                    input_rate = input_rate if input_rate is not None else 4.0
+                    output_rate = output_rate if output_rate is not None else 20.0
+                if input_rate is None or output_rate is None:
+                    parser.error("Supply documented input/output token prices for this model")
+                backend = OpenAIResponsesBackend(args.model, args.reasoning_effort,
+                    SpendBudget(args.max_spend_usd, input_rate, output_rate))
+            path, result = run_experiment(backend, suite, tasks=TASKS if args.task == "all" else (args.task,),
+                trials=args.trials, max_repairs=args.max_repairs, timeout=args.timeout,
+                max_seconds=args.max_seconds, max_output_tokens=args.max_output_tokens,
+                output_token_budget=args.output_token_budget, fault=args.fault)
+            if args.archive:
+                print(f"Archived: {archive_run(path)}")
+            print(f"Artifacts: {path}")
+            print(json.dumps({"arms": result["arms"], "usage": result["usage"]}, indent=2))
+            return 0 if all(r["validated"] for r in result["runs"]) else 1
         if args.command == "doctor":
             result = EnvironmentAgent().doctor()
             result["vendor_verified"] = bool(verify_vendor())
@@ -41,9 +109,14 @@ def main(argv=None):
         if args.command == "demo":
             backend = ReplayBackend(ROOT / "fixtures/replay.json")
         else:
-            if not args.allow_local_execution:
-                parser.error("run requires --allow-local-execution. Review candidate trust; local execution is NOT sandboxed.")
+            if args.execution == "local" and (args.backend == "openai" or not args.allow_local_execution):
+                parser.error("Local execution requires trusted replay and --allow-local-execution; live code requires containers")
+            if args.execution == "container":
+                from .isolation import ContainerExecutor
+                kwargs["environment"] = EnvironmentAgent(args.timeout, ContainerExecutor())
             if args.backend == "openai":
+                from .credentials import load_key
+                load_key()
                 backend = OpenAIResponsesBackend(args.model, args.reasoning_effort)
             else:
                 if not args.replay_manifest:

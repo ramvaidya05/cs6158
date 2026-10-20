@@ -1,0 +1,163 @@
+{
+  "task": "levenshtein",
+  "backend": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.8-flash",
+    "reasoning_effort": "medium",
+    "provenance": "live_model"
+  },
+  "max_repairs": 5,
+  "runtimes": [
+    "cpython",
+    "graal"
+  ],
+  "seed": 6158,
+  "timeout_per_process_seconds": 60,
+  "max_loop_seconds": 900,
+  "max_output_tokens_per_call": 16384,
+  "output_token_budget": 98304,
+  "protected_hashes": {
+    "benchmarks/scope.json": "1cc62149bb14bfe078e15427a242a76b1e4dab6a8af7bc05b7954e5478fd78ed",
+    "containers/Dockerfile.cpython": "76c8193c8ca649327e33a8d8be997f9450b52ee50ca3961b427367e473179f9c",
+    "containers/Dockerfile.graal": "fa482968ee5373a8976591bb351551881cbcc4c6c015de84de283a8c00b494e6",
+    "containers/GuestHarness.java": "4d5828a6b55ecdfc1b4cb53fef53937f7831d415c6ddf0be7c629f081ca06e14",
+    "fixtures/broken.py": "4c498f3f482c6a4504b8a4da34f1d3fb6ae5768e539f8fcddac4fb15d50a2b12",
+    "fixtures/jaro_winkler.py": "8b3ae1547f493e9f0bf9b0a486eb235ab1cbb22b7dd73c798ed2bb72c3658d45",
+    "fixtures/levenshtein.py": "ee4cfab6ed2cfaf02d027672996b89f6caa8be3cb0464aa85766479826b4e14b",
+    "fixtures/normalized.py": "d033aa3b432ef57f0845b7c5db7108c071f60dfdd17bda207f4a1e335fdd7da0",
+    "fixtures/preflight.py": "1ebf7f617ac32f265f7fc9490284e70a1ecbaffb91d3768ef5d99e396fae6b43",
+    "fixtures/replay.json": "60c542c19581b71f0c7be974a4c60ad323233144b8ad1dac241f0c5ff0374ef6",
+    "integration_tests/test_isolation.py": "7d0f0f215af7bb30912621d54ea382474c24bb71ba8c1d4e46ba98f4f613c3d1",
+    "java/pom.xml": "ca119be68660443b0c247214fd3f110321b5c7a6b26d53d6b58369de6dbcad8c",
+    "java/src/main/java/lab/Harness.java": "c3829f80cb6fbc48d2d5dd679d0f21091724c3a712964b7411d8579270b9c4cd",
+    "knowledge/java_python_semantics.md": "578c650cdea3ca3d3d2170397adadc1f1aa918a7021963ecb276a67cc0434394",
+    "knowledge/translation_contract.md": "bf513c175ad125ce8cc6ef318733493d15e240beadf067a75eb7d8f761b35ac1",
+    "migration_lab/__init__.py": "aa97dcb5460d8745c7cb9427f59049f727333293b7535302d29b1953ece5a015",
+    "migration_lab/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "migration_lab/backends.py": "d265c41a158b00eb890b5accd7f932c15ea4e6b259d8221143b94e716ec31e7f",
+    "migration_lab/benchmark.py": "7acc6d103743c643d379977caf3eb70df266d5c89bb1001da1efd8d991e9640c",
+    "migration_lab/budget.py": "20c3d6f7aab56f235c9ec95c159a1104d646de6ab8a123e181daa5bbc1b0943b",
+    "migration_lab/build.py": "06b083727b67ab517a563d8de8d7613cb5a86a23e42b099cbf8a8e9170ee2de8",
+    "migration_lab/cli.py": "e135d8e68f86881063ccbf1f5a1cd6f49c82ca32cf978856c27c09575d433d15",
+    "migration_lab/controller.py": "a016d7a8df831fcffe94e988280a8b5da6a60e84bfc73e73b4f4d27c7094dff7",
+    "migration_lab/credentials.py": "b82c15f23bd1caa1ea2e5b3574140d4e4b206b6fbef60831ec06d3192490a753",
+    "migration_lab/environment.py": "d2fe9275ce5153f5a146d6ac41b980f44a2f05c5bfad97b68c958f066ca5a9a5",
+    "migration_lab/evaluation.py": "7b69d58987d7a36fb3dc5edc96cf6ba0613ac940641e4f303d674fb157913bd5",
+    "migration_lab/experiments.py": "1bf2e07294f210142a656b67589c1a372b49da403371451c40d30dcb89c4e604",
+    "migration_lab/isolation.py": "16933278897c6ed5b27dfa2c99438daa7cc17d14e36a2894904db7969cd7c7f3",
+    "migration_lab/process.py": "238ba13073422850738662062f6975bd8b142ba29ff49748fb72504a848b01b6",
+    "migration_lab/protocol.py": "ecff6bd6bf824bfd8ef4852bfb011ba87c5ec8a8ea9add3890f944377b9cb983",
+    "migration_lab/storage.py": "44f728fc286653de0f6e98381df4b791402a25aae0860d3a94280885d451a5ab",
+    "migration_lab/translator.py": "ea1cfaf7466c39376b3199cad7d893ba9cf4e97ab8ab6338fc2a941cdb503396",
+    "migration_lab/worker.py": "9c11463e594c6f4d5123eff98b2da3f014bf8b60453b5ddf912e650024ab1f54",
+    "scripts/bootstrap.py": "743c9d752ee404a768a089ba102c0c8f29f3b447861c3e232c9646cd5099fb1a",
+    "scripts/build_containers.py": "413ba913633a3423da0119df83142f130c7d27235d7d26e9c96900fe69c19b0f",
+    "scripts/configure_key.py": "34a4d80f555f00da9dfa8802cd004b942c6a5ffb424cf69967ef257bdfe7152b",
+    "scripts/diagnose_model.py": "5ba3258420292293d0a47236cf5dc7cde706461aed97011feba979753a71611f",
+    "scripts/live_pilot.py": "069eeabcc566867626541e1d43072e07c2525e891957f6e33f9f757523a9d4d3",
+    "scripts/verify.py": "ee93fa2cb1c16c01c0ae99ad57b1d042bc1b6124afb4a80a3179873788401725",
+    "scripts/verify_isolation.py": "e59fc4b6c4958b92e322787158c042f060e4dbfaec6dfb4f1736d98a01bcafa6",
+    "tests/test_core.py": "8a1cc77d079e899598c62645bc0f15f2270b529e5cb49792cc138eae15e9b9e1",
+    "tests/test_experiments.py": "edc7756bd7ce20771bea58c8f256ebeda1b0ae4bd1c1cb4601c9eca401142be4",
+    "tests/test_gemini.py": "18e743b9571b9d52767ff0db7855f8b69e051469fe5c002caeaaaa747bfc4e21",
+    "vendor/java-string-similarity/LICENSE.md": "bae2d5f8af7bbb46fca680a3d191522b0cd8b1d5b3d5d72c8d49e785d60a39df",
+    "vendor/java-string-similarity/SOURCE.json": "d44a8548914df7989e0bb5f19180fea4c6d4299550c0990ee56766386aa4421c",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/JaroWinkler.java": "6a2b933d9f769581d739f82c476ecd3ece0e8cb21b0335a1010caa2e633d0ce5",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/Levenshtein.java": "79d9d78419323834c6717e6dfd8179423409f7b3821e905e1f1f966904244b77",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/NormalizedLevenshtein.java": "c3ddf6a291e222521f291c1eb2b49e108ad814c999b30408af88ab62b5bbde89",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java": "7c5ae3d445181c543919647b59b31e7b99be7b2e4258f85c9db996d8edba41fe",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java": "c3f4e7110a897b93ccde6a5eb52e71b4a1c42ad8cc6e0a63650761a0b12bb4ee",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java": "4b159b1347f153aa6aa114d8946e3d57bbc24f94e5ad56a9dfb0a0dfc7ff28ce",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringDistance.java": "c93dfba3ab27add4cf04a406ab894f2e8b16311fe3f25421d1789d7215defca3",
+    "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java": "f64bd4d203179fedc9fd4667c6623b0a312982e9e298b1bddd45eed59f448778",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/JaroWinklerTest.java": "a6173190ca29d7353bd3cfc811632c1fe50d35835a0cf2ce08f8b2952cb62e07",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/LevenshteinTest.java": "8e3bbbc863c3ca0c734605ebd90e5a4671229f5830d3105b7352f7fd987c3e76",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/NormalizedLevenshteinTest.java": "62af21a6b822ec9c278751d0f6d199487c4e328e4d5d1268dc315b821cdd75c4",
+    "vendor/java-string-similarity/src/test/java/info/debatty/java/stringsimilarity/testutil/NullEmptyTests.java": "e08089f50ad5ed77888918a517dc4160988a07e6c8896c93009d94c45d925c51"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "python_executable": "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "java": {
+      "command": [
+        "java",
+        "-version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.09404,
+      "stdout": "",
+      "stderr": "openjdk version \"25.0.1\" 2025-10-21 LTS\nOpenJDK Runtime Environment Temurin-25.0.1+8 (build 25.0.1+8-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.1+8 (build 25.0.1+8-LTS, mixed mode, sharing)\n",
+      "output_truncated": false
+    },
+    "maven_on_path": null,
+    "local_maven": true,
+    "java_harness_built": true,
+    "docker_on_path": "/Users/ram/.docker/bin/docker",
+    "openai_api_key_configured": false,
+    "local_key_file_exists": false,
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:4c5f8a40f216e5985b3988a9b04303f28690d75d18fd634ef3de9e823d0a3a91",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:bf3fed84ec56e80a5428b9cbe5e3be10c34d05d029b8f6dd454569ff71af356c",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    },
+    "graalpy_version": "25.0.0"
+  },
+  "evaluation_suite": {
+    "sha256": "1b67bef9154f6855a64697b81a929780d22dc65dfd0f7c87b85fa3b624877b47",
+    "schema": 1,
+    "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+    "counts": {
+      "levenshtein": {
+        "visible": 26,
+        "holdout": 140
+      },
+      "normalized": {
+        "visible": 26,
+        "holdout": 124
+      },
+      "jaro_winkler": {
+        "visible": 26,
+        "holdout": 131
+      }
+    }
+  },
+  "environment_repairs": false,
+  "child_locale": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "UTC"
+  },
+  "holdout_policy": "Frozen evaluator-only suite; excluded from model context; scored after selection",
+  "budget_note": "Loop deadline checked between calls; final evaluation may run beyond it. Output budget reserves requested maximum per call, not input tokens or dollars."
+}
