@@ -10,6 +10,18 @@ expanded fixture check passes 946 runtime checks. A live Levenshtein study with
 Gemini 3.8 Flash (free tier) passed 3/3 trials: every one-shot translation matched
 all 26 visible and 140 withheld cases in both CPython and GraalPy, so no repair was
 needed. An earlier GPT-5.6 Sol attempt returned HTTP 429 and remains unvalidated.
+On November 11, the fixed three-task expansion produced no candidates because
+of Gemini timeouts/service failures; every admitted trial is retained. Reporting
+now includes per-task accuracy and repair opportunities, and live batches stop
+after repeated provider failures. A separate recorded-Gemini check demonstrated
+autonomous cache recovery and all 332 Levenshtein runtime checks passing, with
+zero new model calls. On November 13, two further fixed batches produced only
+timeouts; the budget and availability guards preserved unrun trials. A new
+synthetic semantic-fault experiment detected 7/7 faults in both runtimes while
+all 946 control checks passed. One fault escaped every visible case and failed
+only withheld cases, exposing a repair-feedback limitation. Current Python tests:
+66 passing. The eight-archive [experiment history](reports/20261113-experiment-history.md)
+is verified and generated without modifying archived evidence.
 See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) for the numbers and [EXPERIMENTS.md](EXPERIMENTS.md) for the current workflow.
 The original midpoint replay and its evidence remain below for reproduction.
 

@@ -1,0 +1,12 @@
+{
+  "code": "import math\n\n\ndef _to_utf16_code_units(s: str):\n    return memoryview(s.encode(\"utf-16-le\", \"surrogatepass\")).cast(\"H\")\n\n\nclass Levenshtein:\n    \"\"\"\n    The Levenshtein distance between two words is the minimum number of\n    single-character edits (insertions, deletions or substitutions) required to\n    change one string into the other.\n    \"\"\"\n\n    def distance(self, s1: str, s2: str, limit: int = 2147483647) -> float:\n        if s1 is None:\n            raise ValueError(\"s1 must not be null\")\n        if s2 is None:\n            raise ValueError(\"s2 must not be null\")\n        if s1 == s2:\n            return 0.0\n\n        u1 = _to_utf16_code_units(s1)\n        u2 = _to_utf16_code_units(s2)\n        len1 = len(u1)\n        len2 = len(u2)\n\n        if len1 == 0:\n            return float(len2)\n        if len2 == 0:\n            return float(len1)\n\n        v0 = list(range(len2 + 1))\n        v1 = [0] * (len2 + 1)\n\n        for i in range(len1):\n            v1[0] = i + 1\n            minv1 = v1[0]\n            c1 = u1[i]\n\n            for j in range(len2):\n                cost = 0 if c1 == u2[j] else 1\n                val = v1[j] + 1\n                v_rem = v0[j + 1] + 1\n                v_sub = v0[j] + cost\n                if v_rem < val:\n                    val = v_rem\n                if v_sub < val:\n                    val = v_sub\n                v1[j + 1] = val\n                if val < minv1:\n                    minv1 = val\n\n            if minv1 >= limit:\n                return float(limit)\n\n            v0, v1 = v1, v0\n\n        return float(v0[len2])\n\n\ndef run(a, b, operation=\"distance\", parameter=None) -> float:\n    limit = 2147483647 if parameter is None else int(parameter)\n    return Levenshtein().distance(a, b, limit)\n",
+  "explanation": "Recorded replay fixture",
+  "metadata": {
+    "backend": "replay",
+    "provenance": "saved_model_response",
+    "manifest_sha256": "7bdbac0095da69cde607bd1c3ef0b595793e3454cddf3e3e9a8dd694cac1e41a",
+    "source": "/Users/ram/cs6158/midpoint/runs/20261112T014615Z-recorded-gemini-stress-f10fc0f9/recorded-input/candidate.py",
+    "sha256": "4992129b8eae19089b7fc65f15c5be9e0db519c47a475068812f2964ebc6945b",
+    "usage": null
+  }
+}

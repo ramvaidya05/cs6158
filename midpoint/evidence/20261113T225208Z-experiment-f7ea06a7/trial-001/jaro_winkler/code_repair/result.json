@@ -1,0 +1,6 @@
+{
+  "status": "not_run",
+  "task": "jaro_winkler",
+  "not_run_reason": "provider_circuit_open",
+  "stop_reason": "budget"
+}

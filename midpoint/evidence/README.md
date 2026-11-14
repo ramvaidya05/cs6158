@@ -28,3 +28,30 @@ Gemini 3.8 Flash Levenshtein study (`20261019T225222Z-experiment-b8857705`, 3/3
 trials passing every case), an excluded integrity-invalidated attempt of that
 study (`20261019T224716Z-experiment-5942d812`), and a separately labeled synthetic
 environment-remediation experiment. Failed and invalidated runs are retained.
+
+November 11 additions:
+
+- `20261111T232307Z-experiment-6d8f99ec`: fixed three-task live Gemini batch;
+  no generated candidates, provider timeouts/503/transport failures and a final
+  budget stop. Every admitted task/trial remains in the report.
+- `20261112T014417Z-gemini-diagnosis-ce6c3e0d`: tiny repository-free generation
+  timeout, with a retained conservative spend reservation.
+- `20261112T014615Z-recorded-gemini-stress-f10fc0f9`: unchanged archived Gemini
+  candidate; healthy and autonomously repaired environments pass all cases;
+  fixed environment fails the injected cache fault. Zero fresh model calls.
+
+Directory timestamps are UTC; the latter two were November 11 in New York.
+
+November 13 additions:
+
+- `20261113T225208Z-experiment-f7ea06a7`: six admitted task/trials, two timeout
+  calls, then a reservation-budget stop; no generated candidates.
+- `20261113T235626Z-experiment-78be7f18`: six admitted task/trials, three timeout
+  calls, then an automatic provider-availability stop; no generated candidates.
+- `20261114T000258Z-semantic-sensitivity-27e8061d`: seven predeclared synthetic
+  mutations detected in both runtimes and 946/946 correct-control checks passing.
+  One mutation escaped visible tests but failed withheld scoring. No model calls.
+
+The [experiment history](../reports/20261113-experiment-history.md) verifies and
+compares all eight translation experiment archives without rewriting them.
+Synthetic sensitivity evidence is separate from translation pass-rate reporting.

@@ -1,0 +1,9 @@
+{
+  "type": "BackendError",
+  "message": "Model transport failed: TimeoutError",
+  "kind": "timeout",
+  "details": {
+    "elapsed_seconds": 120.05589491606224
+  },
+  "raw_response": null
+}

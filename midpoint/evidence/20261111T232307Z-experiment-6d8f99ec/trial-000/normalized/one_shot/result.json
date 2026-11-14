@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "normalized",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.075
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.648
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 4.923,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Model transport failed: TimeoutError"
+  },
+  "elapsed_seconds": 125.06107020797208,
+  "validated": false
+}

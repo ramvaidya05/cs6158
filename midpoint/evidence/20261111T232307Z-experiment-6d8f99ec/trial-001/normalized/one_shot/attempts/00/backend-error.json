@@ -1,0 +1,12 @@
+{
+  "type": "BackendError",
+  "message": "Model HTTP 503; check access, model compatibility and quota",
+  "kind": "http_error",
+  "details": {
+    "http_status": 503,
+    "elapsed_seconds": 4.986669874982908,
+    "provider_code": "UNAVAILABLE",
+    "provider_message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  "raw_response": null
+}

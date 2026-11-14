@@ -57,6 +57,15 @@ repair is retained and stops further repairs while preserving the best checkpoin
 An initial generation failure leaves the paired arms unvalidated. Failures in one
 trial do not abort the rest of the batch. No silent API retries occur.
 
+Live batches now use an availability guard: three consecutive timeout, transport,
+rate-limit, or HTTP 5xx failures open a circuit and stop further requests.
+Authentication, access, quota, dollar-budget, or model-identity failures stop
+immediately. Successful responses reset the consecutive-failure count; invalid
+generated code does not trip this provider-availability rule. Remaining admitted
+arms keep `not_run` results with an explicit reason, and `provider-stop.json`
+records the trigger. Already selected candidates are still scored after selection
+freezes. The guard never retries, changes models, or modifies evaluator settings.
+
 The model name is explicit. Resolved model identity, actual usage, prompts,
 responses, generated code, runtime results, and state transitions are saved. The
 adapter distinguishes authentication/access errors, rate limits, refusal,
@@ -75,21 +84,24 @@ billing limit. The default is $1 for the entire batch, not $1 per task or arm.
 ### Gemini backend
 
 `--backend gemini` calls the Gemini API `generateContent` endpoint with a JSON
-schema response. It reads the key only from `GEMINI_API_KEY` in the process
-environment; keep it outside the repository. `--reasoning-effort` maps to
+schema response. It reads `GEMINI_API_KEY` or the ignored owner-only `.env.gemini`
+created by `python3.12 scripts/configure_key.py --provider gemini`.
+For a memory-only key, use `scripts/live_pilot.py --backend gemini`; its prompt
+disables terminal echo. Never put the key directly in a shell command.
+`--reasoning-effort` maps to
 Gemini's thinking level. Thinking tokens count toward `--max-output-tokens`,
 so allow more headroom than for OpenAI. Prices are always explicit; on the
 free tier, pass the paid list rates so the budget still caps spend if billing
 is enabled.
 
 ```sh
-GEMINI_API_KEY=... python3.12 -m migration_lab experiment \
+python3.12 scripts/live_pilot.py \
   --suite evaluator-private/pilot-v1.json --backend gemini \
   --model gemini-3.8-flash --reasoning-effort medium \
   --input-usd-per-million 0.75 --output-usd-per-million 3.75 \
   --task levenshtein --trials 3 --max-repairs 5 \
   --max-output-tokens 16384 --output-token-budget 98304 \
-  --max-spend-usd 1 --archive
+  --max-spend-usd 1
 ```
 
 Gemini 3.8 Flash prices ($0.75/M input, $3.75/M output through December 31,
@@ -97,6 +109,85 @@ Gemini 3.8 Flash prices ($0.75/M input, $3.75/M output through December 31,
 on October 19, 2026. Do not edit files under `migration_lab/`, `tests/`,
 `scripts/` or other protected folders while a run is in progress; the integrity
 guard will invalidate it.
+
+### Fixed expansion protocol (November 11, 2026)
+
+The next natural study admits three trials of each of the three algorithms,
+using `--task all --trials 3`, the existing frozen suite, Gemini 3.8 Flash with
+medium thinking, 16384 maximum output tokens per call, and 98304 reserved output
+tokens per arm. The entire natural batch has a $0.65 reservation cap. A separate
+controlled cache-fault study admits one trial of each algorithm with the same
+model/configuration, `--fault graal-cache --task all --trials 1`, and a $0.25 cap.
+Neither study extends its trial count in response to observed successes or
+failures. Both reuse byte-identical initial translations within paired arms.
+The frozen pilot suite is now an exposed evaluation set, not a fresh blind holdout.
+
+The cache-fault study tests bounded autonomous recovery using live translations.
+Its deliberately broken fixed-environment arm measures operational failure;
+it must not be interpreted as inferior translation semantics. It is reported
+separately from natural translation results.
+
+The natural batch encountered provider timeouts/HTTP 503 and exhausted its
+reservation budget without generating a candidate. The fresh-model fault batch
+was consequently deferred. A separate, explicitly labeled recorded-response
+study uses the unchanged candidate from trial 0 of the October Gemini archive;
+its copied original response/prompt and hashes preserve provenance. This is an
+environment-recovery check, not an additional independent translation trial.
+
+### Follow-up protocol (November 13, 2026)
+
+Admit three trials each of `normalized` and `jaro_winkler` before generation,
+using `scripts/live_pilot.py --tasks normalized jaro_winkler --trials 3`.
+Keep Gemini 3.8 Flash, medium thinking, the original frozen suite, 16384 output
+tokens per call, and 98304 reserved output tokens per arm. The batch reserves
+at most $0.20, within the remaining $1 Gemini allowance after all earlier Gemini
+attempts (including the integrity-invalid run and unknown-usage failures).
+The provider-availability guard is active. No extra trials are added based on
+success or failure; remaining admitted trials stay recorded if the budget or
+availability policy stops the batch.
+
+After that batch's two timeouts and budget stop, the user authorized an additional
+$1 reservation for a new batch of the same six task/trials. Its model, thinking,
+token limits, frozen suite, and provider-failure policy are unchanged. The two
+batches remain separate records; new attempts do not replace earlier failures.
+
+## Inspect archived results without changing them
+
+`report` prints recomputed results without rewriting the archived `summary.json`.
+For an archive with `checksums.json`, it first verifies the complete file inventory
+and every recorded checksum. `catalog` verifies multiple experiment archives,
+rejects duplicate content, and keeps each batch's accuracy separate:
+
+```sh
+python3.12 -m migration_lab catalog evidence/*-experiment-* \
+  --output reports/experiment-history.md
+```
+
+Include separately named recorded-response experiment directories explicitly when
+needed. Catalog output must be outside the input archives and must be a new file.
+Use `--format json` for the complete per-task results and experiment accounting.
+The index includes failed and integrity-invalid experiments, flags uncompleted
+trials, and does not pool model accuracies. Standalone adapter diagnostics are
+outside its experiment accounting; conservative reservations are not measured
+provider charges. Checksums detect changes relative to the saved manifest; they
+do not prove independent authenticity of an archive.
+
+## Check evaluator sensitivity with synthetic faults
+
+```sh
+python3.12 scripts/verify_semantics.py --suite evaluator-private/pilot-v1.json
+```
+
+This freezes seven explicit source-semantic mutations of the hand-authored
+fixtures before execution, verifies the correct fixtures as controls, and scores
+every mutation in both containers. It archives the mutation definitions,
+candidate hashes, frozen inputs, runtime outputs, and per-split mismatch counts.
+A runtime failure is not credited as a semantic detection. Surviving mutations
+remain recorded; the command does not alter tests or start a model repair loop.
+This measures sensitivity to selected faults, never LLM accuracy. In the first
+run, fractional JaroWinkler transpositions escaped all visible cases but failed
+30 withheld cases per runtime. Keep that limitation separate from code-repair
+effectiveness and do not feed those withheld failures into the current protocol.
 
 ## What the accuracy numbers mean
 
@@ -112,6 +203,14 @@ guard will invalidate it.
 - **Effort:** attempts, code/environment repairs, input/output tokens, model calls,
   usage-unknown calls, and elapsed time. The initial generation cost is counted
   once under one-shot; repair arms report incremental calls.
+
+`summary.json` also reports `by_task`, completion counts, pass rates among
+completed task/trials, and `repair_opportunities`. A repair opportunity requires
+an evaluated initial translation with visible failures; a transport/setup failure
+is not a code-repair opportunity. Paired deltas retain the operational denominator
+and flag whether both arms completed. Full recovery counts require both a repair
+opportunity and a final pass on all visible/withheld cases in both runtimes.
+Zero opportunities provides no evidence of code-repair effectiveness.
 
 Wilson intervals are descriptive across the admitted task/trials. Cases, runtimes,
 and methods within a library are correlated; neither those intervals nor a small

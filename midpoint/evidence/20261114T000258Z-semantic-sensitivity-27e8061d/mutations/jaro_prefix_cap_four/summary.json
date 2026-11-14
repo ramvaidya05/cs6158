@@ -1,0 +1,2163 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 109,
+      "total": 157,
+      "status": "completed",
+      "passed_ids": [
+        "jaro_winkler-visible-000",
+        "jaro_winkler-visible-001",
+        "jaro_winkler-visible-002",
+        "jaro_winkler-visible-003",
+        "jaro_winkler-visible-004",
+        "jaro_winkler-visible-005",
+        "jaro_winkler-visible-006",
+        "jaro_winkler-visible-007",
+        "jaro_winkler-visible-008",
+        "jaro_winkler-visible-010",
+        "jaro_winkler-visible-011",
+        "jaro_winkler-visible-012",
+        "jaro_winkler-visible-013",
+        "jaro_winkler-visible-014",
+        "jaro_winkler-visible-015",
+        "jaro_winkler-visible-016",
+        "jaro_winkler-visible-017",
+        "jaro_winkler-visible-018",
+        "jaro_winkler-visible-019",
+        "jaro_winkler-visible-020",
+        "jaro_winkler-visible-021",
+        "jaro_winkler-visible-022",
+        "jaro_winkler-visible-023",
+        "jaro_winkler-visible-024",
+        "jaro_winkler-visible-025",
+        "jaro_winkler-evaluation-0000",
+        "jaro_winkler-evaluation-0001",
+        "jaro_winkler-evaluation-0002",
+        "jaro_winkler-evaluation-0003",
+        "jaro_winkler-evaluation-0004",
+        "jaro_winkler-evaluation-0005",
+        "jaro_winkler-evaluation-0006",
+        "jaro_winkler-evaluation-0007",
+        "jaro_winkler-evaluation-0008",
+        "jaro_winkler-evaluation-0009",
+        "jaro_winkler-evaluation-0010",
+        "jaro_winkler-evaluation-0011",
+        "jaro_winkler-evaluation-0012",
+        "jaro_winkler-evaluation-0013",
+        "jaro_winkler-evaluation-0014",
+        "jaro_winkler-evaluation-0015",
+        "jaro_winkler-evaluation-0016",
+        "jaro_winkler-evaluation-0017",
+        "jaro_winkler-evaluation-0022",
+        "jaro_winkler-evaluation-0023",
+        "jaro_winkler-evaluation-0029",
+        "jaro_winkler-evaluation-0030",
+        "jaro_winkler-evaluation-0031",
+        "jaro_winkler-evaluation-0033",
+        "jaro_winkler-evaluation-0034",
+        "jaro_winkler-evaluation-0035",
+        "jaro_winkler-evaluation-0037",
+        "jaro_winkler-evaluation-0039",
+        "jaro_winkler-evaluation-0040",
+        "jaro_winkler-evaluation-0041",
+        "jaro_winkler-evaluation-0042",
+        "jaro_winkler-evaluation-0043",
+        "jaro_winkler-evaluation-0045",
+        "jaro_winkler-evaluation-0046",
+        "jaro_winkler-evaluation-0047",
+        "jaro_winkler-evaluation-0049",
+        "jaro_winkler-evaluation-0051",
+        "jaro_winkler-evaluation-0053",
+        "jaro_winkler-evaluation-0054",
+        "jaro_winkler-evaluation-0055",
+        "jaro_winkler-evaluation-0057",
+        "jaro_winkler-evaluation-0059",
+        "jaro_winkler-evaluation-0061",
+        "jaro_winkler-evaluation-0063",
+        "jaro_winkler-evaluation-0065",
+        "jaro_winkler-evaluation-0066",
+        "jaro_winkler-evaluation-0067",
+        "jaro_winkler-evaluation-0069",
+        "jaro_winkler-evaluation-0071",
+        "jaro_winkler-evaluation-0073",
+        "jaro_winkler-evaluation-0075",
+        "jaro_winkler-evaluation-0076",
+        "jaro_winkler-evaluation-0077",
+        "jaro_winkler-evaluation-0079",
+        "jaro_winkler-evaluation-0081",
+        "jaro_winkler-evaluation-0082",
+        "jaro_winkler-evaluation-0083",
+        "jaro_winkler-evaluation-0085",
+        "jaro_winkler-evaluation-0087",
+        "jaro_winkler-evaluation-0088",
+        "jaro_winkler-evaluation-0089",
+        "jaro_winkler-evaluation-0091",
+        "jaro_winkler-evaluation-0093",
+        "jaro_winkler-evaluation-0095",
+        "jaro_winkler-evaluation-0096",
+        "jaro_winkler-evaluation-0097",
+        "jaro_winkler-evaluation-0099",
+        "jaro_winkler-evaluation-0101",
+        "jaro_winkler-evaluation-0103",
+        "jaro_winkler-evaluation-0105",
+        "jaro_winkler-evaluation-0107",
+        "jaro_winkler-evaluation-0109",
+        "jaro_winkler-evaluation-0111",
+        "jaro_winkler-evaluation-0113",
+        "jaro_winkler-evaluation-0114",
+        "jaro_winkler-evaluation-0115",
+        "jaro_winkler-evaluation-0117",
+        "jaro_winkler-evaluation-0119",
+        "jaro_winkler-evaluation-0121",
+        "jaro_winkler-evaluation-0123",
+        "jaro_winkler-evaluation-0125",
+        "jaro_winkler-evaluation-0127",
+        "jaro_winkler-evaluation-0128",
+        "jaro_winkler-evaluation-0129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "jaro_winkler-visible-009",
+            "task": "jaro_winkler",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-visible-009",
+            "status": "ok",
+            "value": 0.01388886570930481
+          },
+          "actual": {
+            "id": "jaro_winkler-visible-009",
+            "status": "ok",
+            "value": 0.018518487612406376
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0018",
+            "task": "jaro_winkler",
+            "a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0018",
+            "status": "ok",
+            "value": 0.00016276072710752487
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0018",
+            "status": "ok",
+            "value": 0.009765643626451492
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0019",
+            "task": "jaro_winkler",
+            "a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0019",
+            "status": "ok",
+            "value": 0.9998372392728925
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0019",
+            "status": "ok",
+            "value": 0.9902343563735485
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0020",
+            "task": "jaro_winkler",
+            "a": "longcommonprefixABC",
+            "b": "longcommonprefixACB",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0020",
+            "status": "ok",
+            "value": 0.0018467212978162673
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0020",
+            "status": "ok",
+            "value": 0.013850409733621727
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0021",
+            "task": "jaro_winkler",
+            "a": "longcommonprefixABC",
+            "b": "longcommonprefixACB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0021",
+            "status": "ok",
+            "value": 0.9981532787021837
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0021",
+            "status": "ok",
+            "value": 0.9861495902663783
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0024",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": -1.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0024",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0024",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0025",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0025",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0025",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0026",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.699999999
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0026",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0026",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0027",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0027",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0027",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0028",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.700000001
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0028",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0028",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0032",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d",
+            "b": "\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tB\ud83d\ude00\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0032",
+            "status": "ok",
+            "value": 0.009440819422403934
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0032",
+            "status": "ok",
+            "value": 0.04405715730455184
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0036",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude00",
+            "b": "\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\u0000b9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0036",
+            "status": "ok",
+            "value": 0.007848565515718997
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0036",
+            "status": "ok",
+            "value": 0.015697131031437883
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0038",
+            "task": "jaro_winkler",
+            "a": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u0301a0\ud83d\ude00",
+            "b": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u4e2da0\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0038",
+            "status": "ok",
+            "value": 0.001446753740310669
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0038",
+            "status": "ok",
+            "value": 0.012731432914733887
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0044",
+            "task": "jaro_winkler",
+            "a": "B09\ud83d\ude80\u00009b\u0000\u0000\u0000 B\ud83d\ude00\u0000\u0301\u00e9\u0301AB9\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9",
+            "b": "B09\ud83d\ude80\u00009b\u0000\u0000\u0000 B\ud83d\ude00\u0000\u0301\u00e9\u0301ABb\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0044",
+            "status": "ok",
+            "value": 0.011684298515319824
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0044",
+            "status": "ok",
+            "value": 0.024926503499348995
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0048",
+            "task": "jaro_winkler",
+            "a": "b9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\nA A\u4e2d0\ud83d\ude80\n\u4e2d90bA\u0301\ud83d\ude00\u0301b\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b\t\u4e2d\n\ud83d\ude00a",
+            "b": "b9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\nA A\u4e2d0\u4e2d\n\u4e2d90bA\u0301\ud83d\ude00\u0301b\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b\t\u4e2d\n\ud83d\ude00a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0048",
+            "status": "ok",
+            "value": 0.044440679252147675
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0048",
+            "status": "ok",
+            "value": 0.07016949355602264
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0050",
+            "task": "jaro_winkler",
+            "a": "\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa",
+            "b": "\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAba\u0000\u00e90aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0050",
+            "status": "ok",
+            "value": 0.02529845725406299
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0050",
+            "status": "ok",
+            "value": 0.06505317579616199
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0052",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u00009Bb\u4e2d",
+            "b": "\u4e2d\u00009BbB",
+            "operation": "distance",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0052",
+            "status": "ok",
+            "value": 0.05555558204650879
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0052",
+            "status": "ok",
+            "value": 0.06666669845581052
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0056",
+            "task": "jaro_winkler",
+            "a": "\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\ta0 \u0301AB\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\tb\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude0009Aa\u4e2db A0\u0000",
+            "b": "\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\tB0 \u0301AB\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\tb\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude0009Aa\u4e2db A0\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0056",
+            "status": "ok",
+            "value": 0.02476205860359082
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0056",
+            "status": "ok",
+            "value": 0.03219067618466809
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0058",
+            "task": "jaro_winkler",
+            "a": "\n A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A",
+            "b": "\n A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\ud83d\ude80\ud83d\ude00A",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0058",
+            "status": "ok",
+            "value": 0.0014446195909532111
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0058",
+            "status": "ok",
+            "value": 0.015890815500485655
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0060",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u03019b\u4e2d\n\t",
+            "b": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u00009b\u4e2d\n\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0060",
+            "status": "ok",
+            "value": 0.005102034126009292
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0060",
+            "status": "ok",
+            "value": 0.020408136504037055
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0062",
+            "task": "jaro_winkler",
+            "a": "\u0301B\u4e2db\u0301\t0 9\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2dBa\n\ud83d\ude809",
+            "b": "\u0301B\u4e2db\u0301\t0\ud83d\ude809\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2dBa\n\ud83d\ude809",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0062",
+            "status": "ok",
+            "value": 0.11985843589431366
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0062",
+            "status": "ok",
+            "value": 0.13145763936795685
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0064",
+            "task": "jaro_winkler",
+            "a": "\u00e9\u4e2d\u4e2d0a0 \u4e2da\u4e2d9b0\ud83d\ude80a\ud83d\ude00A",
+            "b": "\u00e9\u4e2d\u4e2d0a0 9a\u4e2d9b0\ud83d\ude80a\ud83d\ude00A",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0064",
+            "status": "ok",
+            "value": 0.033856555035239766
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0064",
+            "status": "ok",
+            "value": 0.04232069379404968
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0068",
+            "task": "jaro_winkler",
+            "a": "  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dBA\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80\u0301\u00e9\ud83d\ude00\u0000\u4e2dB\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\t\u0000Aa\u00e9",
+            "b": "  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dBA\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80\u0301\u00e9\ud83d\ude00\u0000\u4e2dB\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\tbAa\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0068",
+            "status": "ok",
+            "value": 0.0006121830506757853
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0068",
+            "status": "ok",
+            "value": 0.009488837285475338
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0070",
+            "task": "jaro_winkler",
+            "a": "\u0000B9\na0\u00e9bB00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n",
+            "b": "\u0000B9\na0\u00e9bA00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0070",
+            "status": "ok",
+            "value": 0.018518567085266113
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0070",
+            "status": "ok",
+            "value": 0.02314820885658264
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0072",
+            "task": "jaro_winkler",
+            "a": "\u0000a\u00e99b\u4e2d BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb",
+            "b": "\u0000a\u00e99b\u4e2d BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d90\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0072",
+            "status": "ok",
+            "value": 0.003950627644856763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0072",
+            "status": "ok",
+            "value": 0.013497977786594006
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0074",
+            "task": "jaro_winkler",
+            "a": "\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da B\tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80",
+            "b": "\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da  \tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0074",
+            "status": "ok",
+            "value": 0.0164891458474673
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0074",
+            "status": "ok",
+            "value": 0.0329782916949346
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0078",
+            "task": "jaro_winkler",
+            "a": "9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\u00e9\ud83d\ude80 B\u00e9 ",
+            "b": "9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\ud83d\ude80\ud83d\ude80 B\u00e9 ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0078",
+            "status": "ok",
+            "value": 0.022253131866455056
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0078",
+            "status": "ok",
+            "value": 0.058414471149444536
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0080",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b9 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "b": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b\u0000 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0080",
+            "status": "ok",
+            "value": 0.055098594451437166
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0080",
+            "status": "ok",
+            "value": 0.0826478916771558
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0084",
+            "task": "jaro_winkler",
+            "a": "\t\t\ud83d\ude00A\tBb\ud83d\ude00\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00\ud83d\ude80\n\ud83d\ude80\tbA9a0b9Ba\u0000b\u4e2d0BA",
+            "b": "\t\t\ud83d\ude00A\tBb\ud83d\ude80\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00\ud83d\ude80\n\ud83d\ude80\tbA9a0b9Ba\u0000b\u4e2d0BA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0084",
+            "status": "ok",
+            "value": 0.024187160750566927
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0084",
+            "status": "ok",
+            "value": 0.026605876825623542
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0086",
+            "task": "jaro_winkler",
+            "a": "\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0000",
+            "b": "\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0086",
+            "status": "ok",
+            "value": 0.003944777525388243
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0086",
+            "status": "ok",
+            "value": 0.03550299772849452
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0090",
+            "task": "jaro_winkler",
+            "a": "\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301b\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t",
+            "b": "\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301\u0000\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0090",
+            "status": "ok",
+            "value": 0.0077915707150021385
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0090",
+            "status": "ok",
+            "value": 0.016070114599691876
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0092",
+            "task": "jaro_winkler",
+            "a": "a9\u0000\tAB\ud83d\ude80\tA\ud83d\ude80\u4e2dBb\u0000bB0b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a\t\ud83d\ude00 \n\u00e9",
+            "b": "a9\u0000\tAB\ud83d\ude80\tAb\u4e2dBb\u0000bB0b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a\t\ud83d\ude00 \n\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0092",
+            "status": "ok",
+            "value": 0.11316948965804219
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0092",
+            "status": "ok",
+            "value": 0.12394753629214139
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0094",
+            "task": "jaro_winkler",
+            "a": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000bB\u00000\u4e2daB",
+            "b": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000\nB\u00000\u4e2daB",
+            "operation": "distance",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0094",
+            "status": "ok",
+            "value": 0.009641864083030027
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0094",
+            "status": "ok",
+            "value": 0.024793364784934324
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0098",
+            "task": "jaro_winkler",
+            "a": "B0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301\ud83d\ude80aB\u00e9\n0bbb9\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude00",
+            "b": "B0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301AaB\u00e9\n0bbb9\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0098",
+            "status": "ok",
+            "value": 0.08247086984008112
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0098",
+            "status": "ok",
+            "value": 0.11054605957287456
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0100",
+            "task": "jaro_winkler",
+            "a": "B\u0000\nba\u0301\t09\u0000a9\ta\u00e9\tA\u03019\t\t \ud83d\ude80\n\ud83d\ude00A\u0301\u00e990 b\ud83d\ude00AB0\n",
+            "b": "B\u0000\nba\u0301\t09\u0000a9\ta\u00e9\tA\u03019\t\t \ud83d\ude80\n\ud83d\ude00A\u0301\u00e9900b\ud83d\ude00AB0\n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0100",
+            "status": "ok",
+            "value": 0.008461534976959229
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0100",
+            "status": "ok",
+            "value": 0.03807690739631653
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0102",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u0301\u4e2d\n\u0000\u0000\u0301aB0aB\ud83d\ude80\n\u0301\u03010\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t",
+            "b": "\u4e2d\u0301\u4e2d\n\u0000\u0000\u0301aB0aB\ud83d\ude80\n\u0301\u03010\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \t\n\u4e2d\tb\ud83d\ude00\t\t\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0102",
+            "status": "ok",
+            "value": 0.006236216196647049
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0102",
+            "status": "ok",
+            "value": 0.0299338377439059
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0104",
+            "task": "jaro_winkler",
+            "a": "  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a  0\ud83d\ude00\u00e9\t",
+            "b": "  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a \t0\ud83d\ude00\u00e9\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0104",
+            "status": "ok",
+            "value": 0.011184970537821415
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0104",
+            "status": "ok",
+            "value": 0.04287572039498222
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0106",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "b": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\ud83d\ude80a\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0106",
+            "status": "ok",
+            "value": 0.00805986023718308
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0106",
+            "status": "ok",
+            "value": 0.03595937644281699
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0108",
+            "task": "jaro_winkler",
+            "a": "9\u00e99\u4e2da99B\u4e2d0b\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "b": "9\u00e99\u4e2da99B\u4e2dAb\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0108",
+            "status": "ok",
+            "value": 0.05746705234050753
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0108",
+            "status": "ok",
+            "value": 0.06310107707977297
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0110",
+            "task": "jaro_winkler",
+            "a": "\n\u00e9bb\ud83d\ude80Bb0A\ud83d\ude00\u0000",
+            "b": "\n\u00e9bb\ud83d\ude80Bb9A\ud83d\ude00\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0110",
+            "status": "ok",
+            "value": 0.01972388762694144
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0110",
+            "status": "ok",
+            "value": 0.03550299772849452
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0112",
+            "task": "jaro_winkler",
+            "a": " 0\u00e9 \u4e2d\u00e9\n0B\ud83d\ude809\u4e2d\u03010999\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000a",
+            "b": " 0\u00e9 \u4e2d\u00e9\n B\ud83d\ude809\u4e2d\u03010999\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000a",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0112",
+            "status": "ok",
+            "value": 0.013989645056426525
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0112",
+            "status": "ok",
+            "value": 0.0147259421646595
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0116",
+            "task": "jaro_winkler",
+            "a": "0aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a  ",
+            "b": "0aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u0000b\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a  ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0116",
+            "status": "ok",
+            "value": 0.023062402787415892
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0116",
+            "status": "ok",
+            "value": 0.05381227317063708
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0118",
+            "task": "jaro_winkler",
+            "a": "00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBaA\t\ud83d\ude00\u0000\n \u00e9b\n",
+            "b": "00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBAA\t\ud83d\ude00\u0000\n \u00e9b\n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0118",
+            "status": "ok",
+            "value": 0.00673399368921912
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0118",
+            "status": "ok",
+            "value": 0.01775325608975964
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0120",
+            "task": "jaro_winkler",
+            "a": "Ab\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BB\u00e9b\u03010\u0301A\ud83d\ude00",
+            "b": "Ab\u0301AA\ud83d\ude00AB\n\u00e9B \t  9\ud83d\ude80BB\u00e9b\u03010\u0301A\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0120",
+            "status": "ok",
+            "value": 0.010305188853165226
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0120",
+            "status": "ok",
+            "value": 0.01981767087147157
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0122",
+            "task": "jaro_winkler",
+            "a": "B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t\u0000\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 \u0000\u4e2d",
+            "b": "B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t0\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 \u0000\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0122",
+            "status": "ok",
+            "value": 0.02717945575714109
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0122",
+            "status": "ok",
+            "value": 0.06115377545356748
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0124",
+            "task": "jaro_winkler",
+            "a": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "b": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A\t9\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0124",
+            "status": "ok",
+            "value": 0.05508024215698237
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0124",
+            "status": "ok",
+            "value": 0.08736865997314458
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0126",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80\t\u00e9AB\u00e9b\ud83d\ude00\u0000 \u4e2d\u0301\n\t B B",
+            "b": "\ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nb\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80\t\u00e9AB\u00e9b\ud83d\ude00\u0000 \u4e2d\u0301\n\t B B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0126",
+            "status": "ok",
+            "value": 0.008742583374823254
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0126",
+            "status": "ok",
+            "value": 0.02028279342959005
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0130",
+            "task": "jaro_winkler",
+            "a": "\nab \u000099\ud83d\ude00\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "b": "\nab \u0000999\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0130",
+            "status": "ok",
+            "value": 0.0589299843861506
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0130",
+            "status": "ok",
+            "value": 0.06823471876291132
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 109,
+      "total": 157,
+      "status": "completed",
+      "passed_ids": [
+        "jaro_winkler-visible-000",
+        "jaro_winkler-visible-001",
+        "jaro_winkler-visible-002",
+        "jaro_winkler-visible-003",
+        "jaro_winkler-visible-004",
+        "jaro_winkler-visible-005",
+        "jaro_winkler-visible-006",
+        "jaro_winkler-visible-007",
+        "jaro_winkler-visible-008",
+        "jaro_winkler-visible-010",
+        "jaro_winkler-visible-011",
+        "jaro_winkler-visible-012",
+        "jaro_winkler-visible-013",
+        "jaro_winkler-visible-014",
+        "jaro_winkler-visible-015",
+        "jaro_winkler-visible-016",
+        "jaro_winkler-visible-017",
+        "jaro_winkler-visible-018",
+        "jaro_winkler-visible-019",
+        "jaro_winkler-visible-020",
+        "jaro_winkler-visible-021",
+        "jaro_winkler-visible-022",
+        "jaro_winkler-visible-023",
+        "jaro_winkler-visible-024",
+        "jaro_winkler-visible-025",
+        "jaro_winkler-evaluation-0000",
+        "jaro_winkler-evaluation-0001",
+        "jaro_winkler-evaluation-0002",
+        "jaro_winkler-evaluation-0003",
+        "jaro_winkler-evaluation-0004",
+        "jaro_winkler-evaluation-0005",
+        "jaro_winkler-evaluation-0006",
+        "jaro_winkler-evaluation-0007",
+        "jaro_winkler-evaluation-0008",
+        "jaro_winkler-evaluation-0009",
+        "jaro_winkler-evaluation-0010",
+        "jaro_winkler-evaluation-0011",
+        "jaro_winkler-evaluation-0012",
+        "jaro_winkler-evaluation-0013",
+        "jaro_winkler-evaluation-0014",
+        "jaro_winkler-evaluation-0015",
+        "jaro_winkler-evaluation-0016",
+        "jaro_winkler-evaluation-0017",
+        "jaro_winkler-evaluation-0022",
+        "jaro_winkler-evaluation-0023",
+        "jaro_winkler-evaluation-0029",
+        "jaro_winkler-evaluation-0030",
+        "jaro_winkler-evaluation-0031",
+        "jaro_winkler-evaluation-0033",
+        "jaro_winkler-evaluation-0034",
+        "jaro_winkler-evaluation-0035",
+        "jaro_winkler-evaluation-0037",
+        "jaro_winkler-evaluation-0039",
+        "jaro_winkler-evaluation-0040",
+        "jaro_winkler-evaluation-0041",
+        "jaro_winkler-evaluation-0042",
+        "jaro_winkler-evaluation-0043",
+        "jaro_winkler-evaluation-0045",
+        "jaro_winkler-evaluation-0046",
+        "jaro_winkler-evaluation-0047",
+        "jaro_winkler-evaluation-0049",
+        "jaro_winkler-evaluation-0051",
+        "jaro_winkler-evaluation-0053",
+        "jaro_winkler-evaluation-0054",
+        "jaro_winkler-evaluation-0055",
+        "jaro_winkler-evaluation-0057",
+        "jaro_winkler-evaluation-0059",
+        "jaro_winkler-evaluation-0061",
+        "jaro_winkler-evaluation-0063",
+        "jaro_winkler-evaluation-0065",
+        "jaro_winkler-evaluation-0066",
+        "jaro_winkler-evaluation-0067",
+        "jaro_winkler-evaluation-0069",
+        "jaro_winkler-evaluation-0071",
+        "jaro_winkler-evaluation-0073",
+        "jaro_winkler-evaluation-0075",
+        "jaro_winkler-evaluation-0076",
+        "jaro_winkler-evaluation-0077",
+        "jaro_winkler-evaluation-0079",
+        "jaro_winkler-evaluation-0081",
+        "jaro_winkler-evaluation-0082",
+        "jaro_winkler-evaluation-0083",
+        "jaro_winkler-evaluation-0085",
+        "jaro_winkler-evaluation-0087",
+        "jaro_winkler-evaluation-0088",
+        "jaro_winkler-evaluation-0089",
+        "jaro_winkler-evaluation-0091",
+        "jaro_winkler-evaluation-0093",
+        "jaro_winkler-evaluation-0095",
+        "jaro_winkler-evaluation-0096",
+        "jaro_winkler-evaluation-0097",
+        "jaro_winkler-evaluation-0099",
+        "jaro_winkler-evaluation-0101",
+        "jaro_winkler-evaluation-0103",
+        "jaro_winkler-evaluation-0105",
+        "jaro_winkler-evaluation-0107",
+        "jaro_winkler-evaluation-0109",
+        "jaro_winkler-evaluation-0111",
+        "jaro_winkler-evaluation-0113",
+        "jaro_winkler-evaluation-0114",
+        "jaro_winkler-evaluation-0115",
+        "jaro_winkler-evaluation-0117",
+        "jaro_winkler-evaluation-0119",
+        "jaro_winkler-evaluation-0121",
+        "jaro_winkler-evaluation-0123",
+        "jaro_winkler-evaluation-0125",
+        "jaro_winkler-evaluation-0127",
+        "jaro_winkler-evaluation-0128",
+        "jaro_winkler-evaluation-0129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "jaro_winkler-visible-009",
+            "task": "jaro_winkler",
+            "a": "hello world",
+            "b": "hello  world",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-visible-009",
+            "status": "ok",
+            "value": 0.01388886570930481
+          },
+          "actual": {
+            "id": "jaro_winkler-visible-009",
+            "status": "ok",
+            "value": 0.018518487612406376
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0018",
+            "task": "jaro_winkler",
+            "a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0018",
+            "status": "ok",
+            "value": 0.00016276072710752487
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0018",
+            "status": "ok",
+            "value": 0.009765643626451492
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0019",
+            "task": "jaro_winkler",
+            "a": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0019",
+            "status": "ok",
+            "value": 0.9998372392728925
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0019",
+            "status": "ok",
+            "value": 0.9902343563735485
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0020",
+            "task": "jaro_winkler",
+            "a": "longcommonprefixABC",
+            "b": "longcommonprefixACB",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0020",
+            "status": "ok",
+            "value": 0.0018467212978162673
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0020",
+            "status": "ok",
+            "value": 0.013850409733621727
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0021",
+            "task": "jaro_winkler",
+            "a": "longcommonprefixABC",
+            "b": "longcommonprefixACB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0021",
+            "status": "ok",
+            "value": 0.9981532787021837
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0021",
+            "status": "ok",
+            "value": 0.9861495902663783
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0024",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": -1.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0024",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0024",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0025",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0025",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0025",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0026",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.699999999
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0026",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0026",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0027",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0027",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0027",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0028",
+            "task": "jaro_winkler",
+            "a": "commonprefixabcdefgh",
+            "b": "commonprefixabcedfgh",
+            "operation": "similarity",
+            "parameter": 0.700000001
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0028",
+            "status": "ok",
+            "value": 0.9958333373069763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0028",
+            "status": "ok",
+            "value": 0.9866666793823242
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0032",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d",
+            "b": "\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tB\ud83d\ude00\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0032",
+            "status": "ok",
+            "value": 0.009440819422403934
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0032",
+            "status": "ok",
+            "value": 0.04405715730455184
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0036",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude00",
+            "b": "\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\u0000b9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0036",
+            "status": "ok",
+            "value": 0.007848565515718997
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0036",
+            "status": "ok",
+            "value": 0.015697131031437883
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0038",
+            "task": "jaro_winkler",
+            "a": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u0301a0\ud83d\ude00",
+            "b": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u4e2da0\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0038",
+            "status": "ok",
+            "value": 0.001446753740310669
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0038",
+            "status": "ok",
+            "value": 0.012731432914733887
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0044",
+            "task": "jaro_winkler",
+            "a": "B09\ud83d\ude80\u00009b\u0000\u0000\u0000 B\ud83d\ude00\u0000\u0301\u00e9\u0301AB9\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9",
+            "b": "B09\ud83d\ude80\u00009b\u0000\u0000\u0000 B\ud83d\ude00\u0000\u0301\u00e9\u0301ABb\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0044",
+            "status": "ok",
+            "value": 0.011684298515319824
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0044",
+            "status": "ok",
+            "value": 0.024926503499348995
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0048",
+            "task": "jaro_winkler",
+            "a": "b9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\nA A\u4e2d0\ud83d\ude80\n\u4e2d90bA\u0301\ud83d\ude00\u0301b\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b\t\u4e2d\n\ud83d\ude00a",
+            "b": "b9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\nA A\u4e2d0\u4e2d\n\u4e2d90bA\u0301\ud83d\ude00\u0301b\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b\t\u4e2d\n\ud83d\ude00a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0048",
+            "status": "ok",
+            "value": 0.044440679252147675
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0048",
+            "status": "ok",
+            "value": 0.07016949355602264
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0050",
+            "task": "jaro_winkler",
+            "a": "\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa",
+            "b": "\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAba\u0000\u00e90aa",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0050",
+            "status": "ok",
+            "value": 0.02529845725406299
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0050",
+            "status": "ok",
+            "value": 0.06505317579616199
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0052",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u00009Bb\u4e2d",
+            "b": "\u4e2d\u00009BbB",
+            "operation": "distance",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0052",
+            "status": "ok",
+            "value": 0.05555558204650879
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0052",
+            "status": "ok",
+            "value": 0.06666669845581052
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0056",
+            "task": "jaro_winkler",
+            "a": "\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\ta0 \u0301AB\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\tb\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude0009Aa\u4e2db A0\u0000",
+            "b": "\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\tB0 \u0301AB\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\tb\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude0009Aa\u4e2db A0\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0056",
+            "status": "ok",
+            "value": 0.02476205860359082
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0056",
+            "status": "ok",
+            "value": 0.03219067618466809
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0058",
+            "task": "jaro_winkler",
+            "a": "\n A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A",
+            "b": "\n A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\ud83d\ude80\ud83d\ude00A",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0058",
+            "status": "ok",
+            "value": 0.0014446195909532111
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0058",
+            "status": "ok",
+            "value": 0.015890815500485655
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0060",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u03019b\u4e2d\n\t",
+            "b": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u00009b\u4e2d\n\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0060",
+            "status": "ok",
+            "value": 0.005102034126009292
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0060",
+            "status": "ok",
+            "value": 0.020408136504037055
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0062",
+            "task": "jaro_winkler",
+            "a": "\u0301B\u4e2db\u0301\t0 9\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2dBa\n\ud83d\ude809",
+            "b": "\u0301B\u4e2db\u0301\t0\ud83d\ude809\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2dBa\n\ud83d\ude809",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0062",
+            "status": "ok",
+            "value": 0.11985843589431366
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0062",
+            "status": "ok",
+            "value": 0.13145763936795685
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0064",
+            "task": "jaro_winkler",
+            "a": "\u00e9\u4e2d\u4e2d0a0 \u4e2da\u4e2d9b0\ud83d\ude80a\ud83d\ude00A",
+            "b": "\u00e9\u4e2d\u4e2d0a0 9a\u4e2d9b0\ud83d\ude80a\ud83d\ude00A",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0064",
+            "status": "ok",
+            "value": 0.033856555035239766
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0064",
+            "status": "ok",
+            "value": 0.04232069379404968
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0068",
+            "task": "jaro_winkler",
+            "a": "  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dBA\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80\u0301\u00e9\ud83d\ude00\u0000\u4e2dB\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\t\u0000Aa\u00e9",
+            "b": "  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dBA\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80\u0301\u00e9\ud83d\ude00\u0000\u4e2dB\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\tbAa\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0068",
+            "status": "ok",
+            "value": 0.0006121830506757853
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0068",
+            "status": "ok",
+            "value": 0.009488837285475338
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0070",
+            "task": "jaro_winkler",
+            "a": "\u0000B9\na0\u00e9bB00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n",
+            "b": "\u0000B9\na0\u00e9bA00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0070",
+            "status": "ok",
+            "value": 0.018518567085266113
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0070",
+            "status": "ok",
+            "value": 0.02314820885658264
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0072",
+            "task": "jaro_winkler",
+            "a": "\u0000a\u00e99b\u4e2d BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb",
+            "b": "\u0000a\u00e99b\u4e2d BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d90\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0072",
+            "status": "ok",
+            "value": 0.003950627644856763
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0072",
+            "status": "ok",
+            "value": 0.013497977786594006
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0074",
+            "task": "jaro_winkler",
+            "a": "\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da B\tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80",
+            "b": "\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da  \tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0074",
+            "status": "ok",
+            "value": 0.0164891458474673
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0074",
+            "status": "ok",
+            "value": 0.0329782916949346
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0078",
+            "task": "jaro_winkler",
+            "a": "9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\u00e9\ud83d\ude80 B\u00e9 ",
+            "b": "9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\ud83d\ude80\ud83d\ude80 B\u00e9 ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0078",
+            "status": "ok",
+            "value": 0.022253131866455056
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0078",
+            "status": "ok",
+            "value": 0.058414471149444536
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0080",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b9 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "b": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b\u0000 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0080",
+            "status": "ok",
+            "value": 0.055098594451437166
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0080",
+            "status": "ok",
+            "value": 0.0826478916771558
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0084",
+            "task": "jaro_winkler",
+            "a": "\t\t\ud83d\ude00A\tBb\ud83d\ude00\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00\ud83d\ude80\n\ud83d\ude80\tbA9a0b9Ba\u0000b\u4e2d0BA",
+            "b": "\t\t\ud83d\ude00A\tBb\ud83d\ude80\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00\ud83d\ude80\n\ud83d\ude80\tbA9a0b9Ba\u0000b\u4e2d0BA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0084",
+            "status": "ok",
+            "value": 0.024187160750566927
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0084",
+            "status": "ok",
+            "value": 0.026605876825623542
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0086",
+            "task": "jaro_winkler",
+            "a": "\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0000",
+            "b": "\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0086",
+            "status": "ok",
+            "value": 0.003944777525388243
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0086",
+            "status": "ok",
+            "value": 0.03550299772849452
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0090",
+            "task": "jaro_winkler",
+            "a": "\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301b\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t",
+            "b": "\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301\u0000\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0090",
+            "status": "ok",
+            "value": 0.0077915707150021385
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0090",
+            "status": "ok",
+            "value": 0.016070114599691876
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0092",
+            "task": "jaro_winkler",
+            "a": "a9\u0000\tAB\ud83d\ude80\tA\ud83d\ude80\u4e2dBb\u0000bB0b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a\t\ud83d\ude00 \n\u00e9",
+            "b": "a9\u0000\tAB\ud83d\ude80\tAb\u4e2dBb\u0000bB0b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a\t\ud83d\ude00 \n\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0092",
+            "status": "ok",
+            "value": 0.11316948965804219
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0092",
+            "status": "ok",
+            "value": 0.12394753629214139
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0094",
+            "task": "jaro_winkler",
+            "a": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000bB\u00000\u4e2daB",
+            "b": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000\nB\u00000\u4e2daB",
+            "operation": "distance",
+            "parameter": 0.7
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0094",
+            "status": "ok",
+            "value": 0.009641864083030027
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0094",
+            "status": "ok",
+            "value": 0.024793364784934324
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0098",
+            "task": "jaro_winkler",
+            "a": "B0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301\ud83d\ude80aB\u00e9\n0bbb9\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude00",
+            "b": "B0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301AaB\u00e9\n0bbb9\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0098",
+            "status": "ok",
+            "value": 0.08247086984008112
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0098",
+            "status": "ok",
+            "value": 0.11054605957287456
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0100",
+            "task": "jaro_winkler",
+            "a": "B\u0000\nba\u0301\t09\u0000a9\ta\u00e9\tA\u03019\t\t \ud83d\ude80\n\ud83d\ude00A\u0301\u00e990 b\ud83d\ude00AB0\n",
+            "b": "B\u0000\nba\u0301\t09\u0000a9\ta\u00e9\tA\u03019\t\t \ud83d\ude80\n\ud83d\ude00A\u0301\u00e9900b\ud83d\ude00AB0\n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0100",
+            "status": "ok",
+            "value": 0.008461534976959229
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0100",
+            "status": "ok",
+            "value": 0.03807690739631653
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0102",
+            "task": "jaro_winkler",
+            "a": "\u4e2d\u0301\u4e2d\n\u0000\u0000\u0301aB0aB\ud83d\ude80\n\u0301\u03010\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t",
+            "b": "\u4e2d\u0301\u4e2d\n\u0000\u0000\u0301aB0aB\ud83d\ude80\n\u0301\u03010\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \t\n\u4e2d\tb\ud83d\ude00\t\t\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0102",
+            "status": "ok",
+            "value": 0.006236216196647049
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0102",
+            "status": "ok",
+            "value": 0.0299338377439059
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0104",
+            "task": "jaro_winkler",
+            "a": "  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a  0\ud83d\ude00\u00e9\t",
+            "b": "  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a \t0\ud83d\ude00\u00e9\t",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0104",
+            "status": "ok",
+            "value": 0.011184970537821415
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0104",
+            "status": "ok",
+            "value": 0.04287572039498222
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0106",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "b": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\ud83d\ude80a\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0106",
+            "status": "ok",
+            "value": 0.00805986023718308
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0106",
+            "status": "ok",
+            "value": 0.03595937644281699
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0108",
+            "task": "jaro_winkler",
+            "a": "9\u00e99\u4e2da99B\u4e2d0b\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "b": "9\u00e99\u4e2da99B\u4e2dAb\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0108",
+            "status": "ok",
+            "value": 0.05746705234050753
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0108",
+            "status": "ok",
+            "value": 0.06310107707977297
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0110",
+            "task": "jaro_winkler",
+            "a": "\n\u00e9bb\ud83d\ude80Bb0A\ud83d\ude00\u0000",
+            "b": "\n\u00e9bb\ud83d\ude80Bb9A\ud83d\ude00\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0110",
+            "status": "ok",
+            "value": 0.01972388762694144
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0110",
+            "status": "ok",
+            "value": 0.03550299772849452
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0112",
+            "task": "jaro_winkler",
+            "a": " 0\u00e9 \u4e2d\u00e9\n0B\ud83d\ude809\u4e2d\u03010999\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000a",
+            "b": " 0\u00e9 \u4e2d\u00e9\n B\ud83d\ude809\u4e2d\u03010999\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000a",
+            "operation": "distance",
+            "parameter": 0.9
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0112",
+            "status": "ok",
+            "value": 0.013989645056426525
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0112",
+            "status": "ok",
+            "value": 0.0147259421646595
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0116",
+            "task": "jaro_winkler",
+            "a": "0aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a  ",
+            "b": "0aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u0000b\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a  ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0116",
+            "status": "ok",
+            "value": 0.023062402787415892
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0116",
+            "status": "ok",
+            "value": 0.05381227317063708
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0118",
+            "task": "jaro_winkler",
+            "a": "00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBaA\t\ud83d\ude00\u0000\n \u00e9b\n",
+            "b": "00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBAA\t\ud83d\ude00\u0000\n \u00e9b\n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0118",
+            "status": "ok",
+            "value": 0.00673399368921912
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0118",
+            "status": "ok",
+            "value": 0.01775325608975964
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0120",
+            "task": "jaro_winkler",
+            "a": "Ab\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BB\u00e9b\u03010\u0301A\ud83d\ude00",
+            "b": "Ab\u0301AA\ud83d\ude00AB\n\u00e9B \t  9\ud83d\ude80BB\u00e9b\u03010\u0301A\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0120",
+            "status": "ok",
+            "value": 0.010305188853165226
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0120",
+            "status": "ok",
+            "value": 0.01981767087147157
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0122",
+            "task": "jaro_winkler",
+            "a": "B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t\u0000\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 \u0000\u4e2d",
+            "b": "B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t0\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 \u0000\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0122",
+            "status": "ok",
+            "value": 0.02717945575714109
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0122",
+            "status": "ok",
+            "value": 0.06115377545356748
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0124",
+            "task": "jaro_winkler",
+            "a": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "b": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A\t9\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0124",
+            "status": "ok",
+            "value": 0.05508024215698237
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0124",
+            "status": "ok",
+            "value": 0.08736865997314458
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0126",
+            "task": "jaro_winkler",
+            "a": "\ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80\t\u00e9AB\u00e9b\ud83d\ude00\u0000 \u4e2d\u0301\n\t B B",
+            "b": "\ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nb\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80\t\u00e9AB\u00e9b\ud83d\ude00\u0000 \u4e2d\u0301\n\t B B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0126",
+            "status": "ok",
+            "value": 0.008742583374823254
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0126",
+            "status": "ok",
+            "value": 0.02028279342959005
+          }
+        },
+        {
+          "case": {
+            "id": "jaro_winkler-evaluation-0130",
+            "task": "jaro_winkler",
+            "a": "\nab \u000099\ud83d\ude00\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "b": "\nab \u0000999\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "operation": "distance",
+            "parameter": 0.0
+          },
+          "expected": {
+            "id": "jaro_winkler-evaluation-0130",
+            "status": "ok",
+            "value": 0.0589299843861506
+          },
+          "actual": {
+            "id": "jaro_winkler-evaluation-0130",
+            "status": "ok",
+            "value": 0.06823471876291132
+          }
+        }
+      ]
+    }
+  },
+  "passed": 218,
+  "total": 314,
+  "all_pass": false
+}

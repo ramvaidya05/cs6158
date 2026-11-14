@@ -1,4 +1,96 @@
-# Experiment checkpoint — October 19, 2026
+# Experiment checkpoint — November 13, 2026
+
+## November 13: continued trials and evaluator sensitivity
+
+Two new fixed batches each admitted three NormalizedLevenshtein and three
+JaroWinkler task/trials with unchanged Gemini 3.8 Flash settings and the original
+frozen suite. The [remaining-allowance batch](evidence/20261113T225208Z-experiment-f7ea06a7/summary.json)
+made two requests that timed out and then stopped at its $0.20 reservation cap.
+After the user approved an additional $1, the [newly funded batch](evidence/20261113T235626Z-experiment-78be7f18/summary.json)
+made three requests that timed out, triggering the three-failure availability
+guard. In each batch, seven arm records ended in error and eleven remained
+explicitly unrun. No candidates were produced, so neither batch supplies a new
+semantic accuracy estimate. Retained conservative reservations are $0.161652
+and $0.243631 respectively; actual usage/charges are unknown.
+
+The [verified experiment history](reports/20261113-experiment-history.md)
+now covers all eight translation experiment archives, including failed and
+integrity-invalidated runs. Its [JSON report](reports/20261113-experiment-history.json)
+contains per-task details and accounting. Report inspection no longer overwrites
+archived summaries; checksum verification rejects modified, missing, extra, or
+escaping files, and duplicate archives cannot be counted twice. All **66 Python
+tests pass**, including the reporting integrity tests.
+
+A separate [semantic sensitivity experiment](evidence/20261114T000258Z-semantic-sensitivity-27e8061d/summary.json)
+froze seven deliberate fixture mutations before scoring them in both containers.
+All three correct controls passed **946/946 runtime checks**. All **7/7 mutations
+were detected in both runtimes**. Mismatch counts below are per runtime and were
+identical in CPython and GraalPy:
+
+| Synthetic fault | Visible mismatches | Withheld mismatches |
+| --- | ---: | ---: |
+| Levenshtein uses Unicode code points | 2 | 48 |
+| Levenshtein ignores its limit | 4 | 31 |
+| NormalizedLevenshtein uses code points | 2 | 92 |
+| Normalization divides by the shorter length | 13 | 65 |
+| JaroWinkler replaces binary32 arithmetic with binary64 | 8 | 103 |
+| JaroWinkler caps its prefix at four | 1 | 47 |
+| JaroWinkler uses fractional rather than integer transpositions | 0 | 30 |
+
+The last mutation exposes an important feedback limitation: a candidate can pass
+every visible case yet fail the withheld score. That failure must not feed back
+into the same trial's repair prompts. The frozen suite and prompts were not
+changed after observing these results. Any stronger visible-test protocol must
+be a separately versioned future study. Mutation detection measures evaluator
+sensitivity to these seven selected faults, not model translation accuracy,
+general test completeness, or effectiveness of live code repair. No model calls
+were made in this experiment.
+
+## November 11 checkpoint
+
+The reporting pipeline now separates algorithm results, operational pass rates,
+completion rates, visible-failure repair opportunities, full recoveries, and
+withheld-case regressions. The live runner accepts Gemini credentials through a
+hidden, memory-only prompt; optional local credentials use a separate ignored
+owner-only file. At this checkpoint, **61 Python tests and 11 actual Docker
+isolation tests passed.**
+
+The [expanded Gemini attempt](evidence/20261111T232307Z-experiment-6d8f99ec/summary.json)
+admitted three trials each of Levenshtein, NormalizedLevenshtein, and JaroWinkler
+before generation, with the existing model/configuration and frozen pilot suite.
+No candidate was produced: four requests timed out at 120 seconds, two returned
+HTTP 503 `UNAVAILABLE` with a high-demand explanation, two failed at transport,
+and the ninth initial request was blocked by the $0.65 reservation cap. All nine
+initial task/trials and their paired arms remain unvalidated. **No new semantic
+accuracy estimate is available.** The $0.642397 retained reservation is unknown
+usage accounting, not measured cost or a claim that charges occurred.
+
+A non-generating model metadata request authenticated successfully. A separate
+[tiny generation diagnosis](evidence/20261112T014417Z-gemini-diagnosis-ce6c3e0d/result.json)
+also timed out after 20 seconds, retaining a $0.004933 reservation. Together these
+support a generation-availability problem; the exact cause of each timeout is
+unknown. No model switch or hidden retry was made.
+
+This failure motivated an implemented, tested availability guard: three consecutive
+transient provider failures stop new requests, while authentication/access/quota,
+budget, and model-identity failures stop immediately. Future batches preserve
+unrun admitted trials and save the stop evidence. This policy was added **after**
+the archived failed batch; the historical records have not been changed.
+
+The [recorded Gemini recovery study](evidence/20261112T014615Z-recorded-gemini-stress-f10fc0f9/summary.json)
+then reused the unchanged Levenshtein candidate from trial 0 of the October live
+archive, with original prompt/response copies and verified hashes. It made **zero
+model calls**. The healthy one-shot arm passed all 26 visible and 140 withheld
+inputs in each runtime. Under the same deliberately unwritable GraalPy cache,
+the fixed-environment arm failed preflight; the environment agent independently
+selected one allowlisted cache correction, repeated its probe, and passed all
+332 runtime checks with the unchanged candidate. This establishes bounded
+operational recovery on recorded model-generated code, not fresh translation
+accuracy or code-repair improvement. The planned fresh-model, three-task fault
+study remains deferred because generation was unavailable.
+
+The results below remain the earlier October checkpoint and are retained for
+comparison.
 
 Execution isolation, accuracy aggregation, and a bounded environment-remediation
 policy are implemented and tested. **Live translation accuracy is now measured
@@ -115,10 +207,13 @@ protected file.
 
 ## Next empirical step
 
-Run the same frozen protocol for NormalizedLevenshtein and JaroWinkler, and add
-trials until some initial candidates fail, so the repair arms have something to
-measure. Report the same model configuration and paired initial/final scores,
-including genuine failed repairs and unchanged successes.
+When generation is available, run a newly admitted fixed-size batch for
+NormalizedLevenshtein and JaroWinkler with the same model/configuration. Keep the
+failed batch in the cumulative operational record. Do not extend trials until a
+desired repair opportunity or improvement appears. Report zero opportunities
+when all initial candidates pass; use harder, independently frozen subjects to
+study genuine code repair. The current expanded pilot suite is exposed, not a
+fresh blind holdout.
 
 See [EXPERIMENTS.md](EXPERIMENTS.md) for commands, denominator definitions,
 resource accounting, isolation details, and current limitations.

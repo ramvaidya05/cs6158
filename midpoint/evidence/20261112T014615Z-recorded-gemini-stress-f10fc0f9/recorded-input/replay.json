@@ -1,0 +1,15 @@
+{
+  "provenance": "saved_model_response",
+  "tasks": {
+    "levenshtein": [
+      "candidate.py"
+    ]
+  },
+  "origin_archive": "20261019T225222Z-experiment-b8857705",
+  "origin_trial": 0,
+  "original_response_sha256": "99016c6d3c0928b5c7f4dfee1b95b1234763b4e45f1b6d872d046e6a3079c401",
+  "original_prompt_sha256": "8f773bb9264ca7732c7982da8850bb2f42a1c8abed967f009ecf4563a0ab1793",
+  "candidate_sha256": "4992129b8eae19089b7fc65f15c5be9e0db519c47a475068812f2964ebc6945b",
+  "selection_rule": "First admitted trial from the existing validated Gemini Levenshtein pilot; no new model inference.",
+  "purpose": "Controlled environment recovery on an unchanged recorded live-model translation."
+}

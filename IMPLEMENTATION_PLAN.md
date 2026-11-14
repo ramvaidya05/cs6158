@@ -9,6 +9,17 @@ Container isolation and bounded cache remediation are now implemented. Live
 GPT-5.6 Sol requests returned HTTP 429. A live Gemini 3.8 Flash study then
 measured Levenshtein translation accuracy: 3/3 one-shot trials passed every
 visible and withheld case in both runtimes. The other two tasks remain unmeasured.
+The November 11 fixed three-task expansion was retained as unvalidated after
+provider timeouts/HTTP 503; no new accuracy claim is made. Per-task reporting,
+repair-opportunity accounting, and a bounded provider-availability stop policy
+are implemented. Controlled recovery on a recorded Gemini candidate passed all
+332 Levenshtein runtime checks after one autonomous cache correction.
+November 13 follow-up: two further fixed live batches timed out; automatic budget
+and availability stops preserved unrun trials. Read-only archive reporting and
+a seven-fault synthetic evaluator study are implemented. All seven faults were
+detected, but fractional JaroWinkler transpositions escaped the visible split and
+failed only withheld cases. This motivates a separately versioned future visible
+protocol, not retroactive changes to the existing scores or prompts.
 
 ## 1. Recommended research direction
 

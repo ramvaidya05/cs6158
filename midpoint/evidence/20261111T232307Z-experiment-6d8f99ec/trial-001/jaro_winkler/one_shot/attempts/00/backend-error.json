@@ -1,0 +1,9 @@
+{
+  "type": "BackendError",
+  "message": "Model transport failed: URLError",
+  "kind": "transport",
+  "details": {
+    "elapsed_seconds": 0.0013784170150756836
+  },
+  "raw_response": null
+}
