@@ -22,7 +22,7 @@
     <plugin><groupId>org.codehaus.mojo</groupId><artifactId>build-helper-maven-plugin</artifactId><version>3.6.0</version>
       <executions>
         <execution><id>upstream-source</id><phase>generate-sources</phase><goals><goal>add-source</goal></goals>
-          <configuration><sources><source>${project.basedir}/../vendor/java-string-similarity/src/main/java</source></sources></configuration></execution>
+          <configuration><sources><source>${project.basedir}/../vendor/java-string-similarity/src/main/java</source><source>${project.basedir}/../vendor/commons-cli/src/main/java</source></sources></configuration></execution>
         <execution><id>upstream-tests</id><phase>generate-test-sources</phase><goals><goal>add-test-source</goal></goals>
           <configuration><sources><source>${project.basedir}/../vendor/java-string-similarity/src/test/java</source></sources></configuration></execution>
       </executions>

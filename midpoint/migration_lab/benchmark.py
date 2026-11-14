@@ -4,6 +4,7 @@ import random
 from .storage import ROOT, sha256
 
 TASKS = ("levenshtein", "normalized", "jaro_winkler")
+ALL_TASKS = (*TASKS, "commons_cli")
 SOURCE_DIR = ROOT / "vendor/java-string-similarity/src/main/java/info/debatty/java/stringsimilarity"
 SOURCES = {"levenshtein": ["Levenshtein.java"],
            "normalized": ["Levenshtein.java", "NormalizedLevenshtein.java"],
@@ -20,6 +21,9 @@ def verify_vendor():
 
 
 def cases(task, split="visible", seed=6158):
+    if task == "commons_cli":
+        from .cli_task import cases as cli_cases
+        return cli_cases(split, seed)
     if task not in TASKS or split not in ("visible", "holdout"):
         raise ValueError("Unknown task or split")
     rows = []

@@ -16,7 +16,7 @@ from migration_lab.storage import sha256, save_json
 def main():
     verify_build()
     lock = {"schema": 1, "images": {}, "inputs": {}}
-    sources = [ROOT / "migration_lab/worker.py", *sorted((ROOT / "containers").glob("*"))]
+    sources = [ROOT / "migration_lab/scenarios.py", ROOT / "migration_lab/guest_driver.py", ROOT / "benchmarks/commons_cli.json", ROOT / "migration_lab/worker.py", *sorted((ROOT / "containers").glob("*"))]
     jars = [Path(p) for p in (ROOT / "java/target/classpath.txt").read_text().strip().split(os.pathsep)]
     for path in sources + jars:
         lock["inputs"][str(path.relative_to(ROOT))] = sha256(path)
@@ -24,6 +24,9 @@ def main():
         with tempfile.TemporaryDirectory(prefix="migration-image-") as tmp:
             context = Path(tmp)
             shutil.copy2(ROOT / f"containers/Dockerfile.{mode}", context / "Dockerfile")
+            for name in ("scenarios.py", "guest_driver.py"):
+                shutil.copy2(ROOT / "migration_lab" / name, context / name)
+            shutil.copy2(ROOT / "benchmarks/commons_cli.json", context / "commons_cli.json")
             if mode == "cpython":
                 shutil.copy2(ROOT / "migration_lab/worker.py", context / "worker.py")
             else:

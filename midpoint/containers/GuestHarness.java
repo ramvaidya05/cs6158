@@ -27,27 +27,9 @@ public final class GuestHarness {
                     .out(System.err).err(System.err).build()) {
                 ctx.getBindings("python").putMember("_source", candidate);
                 ctx.getBindings("python").putMember("_cases_json", JSON.writeValueAsString(cases));
-                Value result = ctx.eval("python", """
-                    import json, math, traceback
-                    _scope = {'__name__': 'candidate'}
-                    try:
-                        exec(compile(_source, 'candidate.py', 'exec'), _scope)
-                        _fn = _scope['run']
-                    except Exception:
-                        raise
-                    _rows = []
-                    for _case in json.loads(_cases_json):
-                        _row = {'id': _case['id']}
-                        try:
-                            _v = _fn(_case['a'], _case['b'], _case['operation'], _case.get('parameter'))
-                            if isinstance(_v, bool) or not isinstance(_v, (int, float)) or not math.isfinite(_v):
-                                raise TypeError('run must return a finite number, not bool')
-                            _row.update(status='ok', value=_v)
-                        except Exception as _exc:
-                            _row.update(status='exception', type=type(_exc).__name__, message=str(_exc), trace=traceback.format_exc(limit=8))
-                        _rows.append(_row)
-                    json.dumps(_rows, allow_nan=False)
-                    """);
+                ctx.getBindings("python").putMember("_contract_json", Files.readString(Path.of("/runner/commons_cli.json")));
+                ctx.eval("python", Files.readString(Path.of("/runner/scenarios.py")));
+                Value result = ctx.eval("python", Files.readString(Path.of("/runner/guest_driver.py")));
                 System.out.println(result.asString());
             }
     }

@@ -50,10 +50,20 @@ class EnvironmentAgent:
         save_json(artifact / "inputs.json", cases)
         if not cases:
             raise ValueError("Refusing zero-test run")
+        stateful = any(c.get("task") == "commons_cli" for c in cases)
+        if stateful:
+            from .cli_task import contract, verify_source
+            from .scenarios import validate_cases
+            verify_source()
+            validate_cases(cases, contract())
         if candidate is not None:
             try:
                 tree = ast.parse(candidate.read_text(encoding="utf-8"), filename="candidate.py")
-                if not any(isinstance(n, ast.FunctionDef) and n.name == "run" for n in tree.body):
+                if stateful:
+                    names = {n.name for n in tree.body if isinstance(n, ast.ClassDef)}
+                    if not set(contract()["classes"]) <= names:
+                        raise SyntaxError("Candidate must define the four contract classes")
+                elif not any(isinstance(n, ast.FunctionDef) and n.name == "run" for n in tree.body):
                     raise SyntaxError("Candidate must define top-level function run")
             except (SyntaxError, UnicodeError) as exc:
                 result = {"status": "syntax_error", "rows": [], "detail": str(exc)}
@@ -64,7 +74,7 @@ class EnvironmentAgent:
         elif mode == "reference":
             command = self.java_command() + ["reference"]
         elif mode == "graal":
-            command = self.java_command() + ["graal", str(candidate.resolve())]
+            command = self.java_command() + ["graal", str(candidate.resolve()), str(ROOT / "migration_lab/scenarios.py"), str(ROOT / "migration_lab/guest_driver.py"), str(ROOT / "benchmarks/commons_cli.json")]
         elif mode == "cpython":
             command = [sys.executable, "-I", str(ROOT / "migration_lab/worker.py"), str(candidate.resolve())]
         else:
@@ -94,6 +104,9 @@ class EnvironmentAgent:
                 for r in rows:
                     if r.get("status") not in ("ok", "exception"):
                         raise ValueError("Unknown row status")
+                if stateful:
+                    from .scenarios import validate_rows
+                    validate_rows(rows, cases)
                 status = "completed"
             except (ValueError, KeyError, TypeError) as exc:
                 status, detail, rows = "protocol_error", str(exc), []

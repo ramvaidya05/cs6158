@@ -1,0 +1,2490 @@
+[
+  {
+    "id": "commons_cli-visible-000-metadata-alias",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "hasOption",
+        "args": [
+          "--visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "isRequired",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-001-empty",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-002-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-v",
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-003-long",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-verbose",
+            "--visible-output",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-004-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-output=visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-005-empty-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-output="
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-006-repeated-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-007-terminator",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--",
+            "-v",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-008-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-009-stop-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-010-stop-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-011-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-012-missing-argument",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-013-missing-before-option",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-014-negative-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-123"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-015-attached-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-ovisible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-016-burst",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-vovisible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-017-reuse-parser",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "next"
+      },
+      {
+        "op": "call",
+        "on": "next",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-018-required-missing",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-visible-019-required-present",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "visible-output"
+        ]
+      }
+    ]
+  }
+]

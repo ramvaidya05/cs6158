@@ -4,6 +4,9 @@ from .storage import save_json
 
 
 def equivalent(expected, actual):
+    if isinstance(expected.get("trace"), list):
+        from .scenarios import strict_equal
+        return actual.get("status") == "ok" and strict_equal(expected["trace"], actual.get("trace"))
     if expected["status"] != actual.get("status"):
         return False
     if expected["status"] == "exception":
@@ -43,7 +46,11 @@ class TestsuiteAgent:
                         passed += 1
                         passed_ids.append(case["id"])
                     else:
-                        failures.append({"case": case, "expected": expected, "actual": actual})
+                        failure = {"case": case, "expected": expected, "actual": actual}
+                        if case.get("task") == "commons_cli":
+                            from .scenarios import first_difference
+                            failure["first_difference"] = first_difference(expected, actual)
+                        failures.append(failure)
             else:
                 failures = [{"kind": observed["status"], "detail": observed.get("detail", ""),
                              "stderr": observed.get("process", {}).get("stderr", "")[-6000:]}]

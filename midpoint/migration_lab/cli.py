@@ -3,7 +3,7 @@ import json
 import sys
 from pathlib import Path
 from .backends import GeminiBackend, OpenAIResponsesBackend, ReplayBackend
-from .benchmark import TASKS, verify_vendor
+from .benchmark import TASKS, ALL_TASKS, verify_vendor
 from .controller import run_task
 from .environment import EnvironmentAgent
 from .storage import ROOT, new_run, save_json
@@ -16,11 +16,12 @@ def main(argv=None):
     freeze_parser = commands.add_parser("freeze", help="Freeze evaluator-only inputs and repeated Java oracle outputs")
     freeze_parser.add_argument("--output", type=Path, required=True)
     freeze_parser.add_argument("--seed", type=int)
+    freeze_parser.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
     report_parser = commands.add_parser("report", help="Recompute failure-inclusive experiment accuracy")
     report_parser.add_argument("directory", type=Path)
     experiment = commands.add_parser("experiment", help="Paired one-shot/code/environment repair trials in containers")
     experiment.add_argument("--suite", type=Path, required=True)
-    experiment.add_argument("--task", choices=(*TASKS, "all"), default="levenshtein")
+    experiment.add_argument("--task", choices=(*ALL_TASKS, "all"), default="levenshtein")
     experiment.add_argument("--trials", type=int, default=3)
     experiment.add_argument("--backend", choices=("replay", "openai", "gemini"), required=True)
     experiment.add_argument("--replay-manifest", type=Path)
@@ -38,7 +39,7 @@ def main(argv=None):
     experiment.add_argument("--archive", action="store_true")
     for name in ("demo", "run"):
         p = commands.add_parser(name)
-        p.add_argument("--task", choices=(*TASKS, "all"), default="all")
+        p.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
         p.add_argument("--runtimes", choices=("cpython", "graal"), nargs="+", default=["cpython", "graal"])
         p.add_argument("--max-repairs", type=int, default=5)
         p.add_argument("--timeout", type=float, default=60)
@@ -58,7 +59,7 @@ def main(argv=None):
     try:
         if args.command == "freeze":
             from .protocol import freeze
-            print(json.dumps(freeze(args.output, args.seed).identity(), indent=2))
+            print(json.dumps(freeze(args.output, args.seed, tasks=TASKS if args.task == "all" else (args.task,)).identity(), indent=2))
             return 0
         if args.command == "report":
             from .experiments import aggregate
@@ -91,7 +92,7 @@ def main(argv=None):
                     parser.error("Supply documented input/output token prices for this model")
                 backend = OpenAIResponsesBackend(args.model, args.reasoning_effort,
                     SpendBudget(args.max_spend_usd, input_rate, output_rate))
-            path, result = run_experiment(backend, suite, tasks=TASKS if args.task == "all" else (args.task,),
+            path, result = run_experiment(backend, suite, tasks=tuple(suite.identity()["counts"]) if args.task == "all" else (args.task,),
                 trials=args.trials, max_repairs=args.max_repairs, timeout=args.timeout,
                 max_seconds=args.max_seconds, max_output_tokens=args.max_output_tokens,
                 output_token_budget=args.output_token_budget, fault=args.fault)

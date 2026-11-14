@@ -162,8 +162,10 @@ alongside them. Replay is still not fresh inference.
   comparisons must give equivalent context to baseline and repair conditions.
 - Three familiar algorithms and a public generated split cannot establish
   generalization, lack of training contamination, or superiority over AlphaTrans.
-  The bounded cache-remediation policy is implemented; an object bridge, Commons
-  CLI slice, and general environment-planning agent remain future work.
+  The bounded cache-remediation policy and a scoped Commons CLI operation-sequence
+  adapter are implemented. A general object bridge, whole-repository translation,
+  and general environment-planning agent remain future work. See the Commons CLI
+  milestone in [EXPERIMENTS.md](EXPERIMENTS.md) for scope and qualification commands.
 
 ## Troubleshooting
 
