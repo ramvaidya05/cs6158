@@ -1,4 +1,41 @@
-# Experiment checkpoint — November 13, 2026
+# Experiment checkpoint — November 15, 2026
+
+## Integrated Commons CLI and experiment framework
+
+Partner commit `a7791ae` was integrated with the experiment branch. All **85
+combined Python tests**, **five upstream Java tests**, and **11 real Docker
+isolation tests** pass. Both candidate images were rebuilt with the stateful
+runner. Commons CLI qualification now defaults to containers, and the secure
+live pilot entry point accepts the Commons CLI task.
+
+The [isolated Commons CLI qualification](evidence/20261115T182047Z-commons-cli-qualification-46ae0253/summary.json)
+reproduced the partner's local result in both containers: the broken fixture
+passed 38/40 visible and 114/120 withheld runtime checks; the synthetic repair
+passed all 40 visible and 120 withheld checks. This closes the earlier container
+verification gap without claiming live translation accuracy.
+
+The [combined isolation regression](evidence/20261115T182050Z-isolation-verification-4ee64300/summary.json)
+also passed all **946 string runtime checks**. Because the shared comparator
+gained stateful trace support, its hash changed. A new string suite was frozen
+using the old seed, and every input and Java reference answer was verified equal
+to the original suite. New suite SHA-256:
+`20bbb4caa97487cc5facc6afc3ef75b9a1b50f8723386651a9d7b3c12ac58aef`.
+Historical suites and archives were not rewritten; new live results belong to
+the integrated protocol, even though the string input/answer data is identical.
+
+The [first live Commons CLI attempt](evidence/20261115T182158Z-experiment-a0ba9f7f/summary.json)
+admitted one trial with the same Gemini 3.8 Flash medium-thinking configuration,
+16384 maximum output tokens per call, and a $0.35 batch cap within the previously
+approved allowance. The sole request returned HTTP 503 `UNAVAILABLE` with a
+high-demand explanation after 6.15 seconds. No candidate or repair was produced;
+all three arm outcomes remain unvalidated. The retained $0.222775 reservation
+represents unknown usage, not measured charges. No additional retry was made.
+
+The remaining empirical work is a successful live baseline/repair study,
+independent Commons CLI semantic coverage beyond renamed templates, and a
+matched environment-fault comparison. A broader AlphaTrans comparison remains
+premature. The [updated archive index](reports/20261115-experiment-history.md)
+preserves all nine translation experiment archives separately.
 
 ## November 13: continued trials and evaluator sensitivity
 
@@ -217,3 +254,37 @@ fresh blind holdout.
 
 See [EXPERIMENTS.md](EXPERIMENTS.md) for commands, denominator definitions,
 resource accounting, isolation details, and current limitations.
+
+## Commons CLI stateful milestone — November 13, 2026 (local time)
+
+Implemented a pinned Commons CLI 1.9.0 slice with four classes, 15 methods, and
+three constructors. The host owns operation-sequence validation, Java oracle
+execution, Python dispatch, exact trace comparison, bounded candidate selection,
+and post-selection holdout scoring. The model supplies the candidate module only.
+This is a scoped stateful adapter, not whole-repository translation.
+
+Qualification evidence is archived in
+[`evidence/20261114T025603Z-commons-cli-qualification-29b69468/summary.json`](evidence/20261114T025603Z-commons-cli-qualification-29b69468/summary.json).
+Full inputs, repeated oracle traces, candidate sources, visible feedback, selection,
+and holdout observations accompany it, with checksums.
+
+- All **73 Python unit tests** passed, including 19 new contract/trace tests.
+- The Java Maven test run passed; its upstream JUnit coverage remains the original
+  string library, not Commons CLI upstream tests.
+- The deliberately broken fixture passed **38/40 visible runtime checks** and
+  **114/120 holdout runtime checks**. Its parser-reuse alias error was detected.
+- After one synthetic replay repair, the selected fixture passed **40/40 visible**
+  and **120/120 holdout** checks across CPython and GraalPy.
+- All three original string-task acceptance runs still passed, totaling **276
+  selected runtime checks** on their public demo visible/holdout sets.
+- The updated guest-only Java container entry point compiled successfully with
+  Java 21 compatibility. Docker was unavailable, so updated container images and
+  their runtime behavior have not been verified here.
+
+These results establish adapter/controller qualification using hand-written
+fixtures. They do **not** measure LLM translation accuracy or repair effectiveness.
+The 60 holdout sequences vary names and values across the same 20 templates;
+independent semantic test expansion remains necessary. The scope uses Commons CLI
+1.9.0 and is not matched to AlphaTrans. No paid model calls were made for this
+milestone. See [EXPERIMENTS.md](EXPERIMENTS.md#commons-cli-milestone-stateful-qualification)
+for commands and remaining research work.

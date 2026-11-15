@@ -1,5 +1,15 @@
 # Midpoint evidence
 
+November 15 integration archives:
+
+- `20261115T182047Z-commons-cli-qualification-46ae0253`: first verification of
+  the partner's stateful fixture/repair flow in both rebuilt containers; all
+  40 visible and 120 withheld final checks pass.
+- `20261115T182050Z-isolation-verification-4ee64300`: 85 unit tests, 11 Docker
+  isolation tests, and 946 string fixture checks pass after integration.
+- `20261115T182158Z-experiment-a0ba9f7f`: one live Commons CLI initial request,
+  HTTP 503, no generated candidate; paired outcomes remain unvalidated.
+
 `20261019T214029Z-verification-1aee5b7b/` is the completed acceptance archive.
 Its summary records three synthetic replay tasks, 138 task/case combinations,
 276 passing final runtime checks, and five passing upstream JUnit test methods.

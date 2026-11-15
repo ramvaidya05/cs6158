@@ -1,0 +1,63 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "passed": 20,
+      "total": 20,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present"
+      ],
+      "failures": []
+    }
+  },
+  "passed": 40,
+  "total": 40,
+  "all_pass": true
+}

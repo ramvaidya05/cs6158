@@ -1,5 +1,12 @@
 # Environment-in-the-Loop Translation — midpoint prototype
 
+**November 15 integration:** Commons CLI and the experiment branch are combined.
+Both rebuilt container runtimes pass stateful qualification (160 final checks)
+and the expanded string fixtures (946 checks). All 85 Python tests, five Java
+tests, and 11 isolation tests pass. The first live Commons CLI request returned
+HTTP 503; no new live accuracy or repair effectiveness is claimed. See the latest
+[results](EXPERIMENT_RESULTS.md) and [archive index](reports/20261115-experiment-history.md).
+
 A small, executable Java-to-Python translation/repair research harness. It has
 separate Migration, Environment, and Testsuite roles, coordinated by a bounded
 controller. Only Migration uses a model; Environment and Testsuite are deterministic.
@@ -174,8 +181,10 @@ alongside them. Replay is still not fresh inference.
   comparisons must give equivalent context to baseline and repair conditions.
 - Three familiar algorithms and a public generated split cannot establish
   generalization, lack of training contamination, or superiority over AlphaTrans.
-  The bounded cache-remediation policy is implemented; an object bridge, Commons
-  CLI slice, and general environment-planning agent remain future work.
+  The bounded cache-remediation policy and a scoped Commons CLI operation-sequence
+  adapter are implemented. A general object bridge, whole-repository translation,
+  and general environment-planning agent remain future work. See the Commons CLI
+  milestone in [EXPERIMENTS.md](EXPERIMENTS.md) for scope and qualification commands.
 
 ## Troubleshooting
 

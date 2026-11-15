@@ -1,0 +1,39 @@
+{
+  "provenance": "synthetic_fixture",
+  "interpretation": "Adapter/controller qualification, not model translation accuracy",
+  "scope": "Commons CLI 1.9.0 four-class API slice; authored scenarios, not upstream CLI JUnit",
+  "holdout_limitation": "New names/values using the same 20 scenario templates; not independent semantic coverage",
+  "suite": {
+    "sha256": "04e13443ce399c9ebaad11aa3e11d7666d5ebbc3a4fba2866aeaf840f7d8c52b",
+    "schema": 2,
+    "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+    "counts": {
+      "commons_cli": {
+        "visible": 20,
+        "holdout": 60
+      }
+    }
+  },
+  "attempts": 2,
+  "validated": true,
+  "baseline_visible": {
+    "passed": 38,
+    "total": 40,
+    "all_pass": false
+  },
+  "selected_visible": {
+    "passed": 40,
+    "total": 40,
+    "all_pass": true
+  },
+  "baseline_holdout": {
+    "passed": 114,
+    "total": 120,
+    "all_pass": false
+  },
+  "selected_holdout": {
+    "passed": 120,
+    "total": 120,
+    "all_pass": true
+  }
+}

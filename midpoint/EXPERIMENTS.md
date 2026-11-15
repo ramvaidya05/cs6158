@@ -1,5 +1,17 @@
 # Translation accuracy and bounded environment repair
 
+November 15 integration: the partner's stateful Commons CLI changes and the
+experiment/reporting branch are combined. `scripts/verify_cli.py --archive` now
+qualifies fixtures in containers by default; `--execution local` is available
+only for explicit trusted-fixture diagnostics. `scripts/live_pilot.py --task
+commons_cli` selects the new task, and `--task all` uses the tasks in the supplied
+frozen suite. Rebuild Java and both images after pulling these changes.
+
+The integrated comparator has a new hash. Do not edit old suite hashes to bypass
+validation. Create a new protocol artifact and retain historical archives. The
+integrated string suite used the original seed and was checked for exact equality
+of all inputs and reference answers; its new identity is recorded in the results.
+
 Use Python 3.12 or newer. On this Mac, `python3` resolves to 3.9;
 `/opt/homebrew/bin/python3.12` is the working interpreter. Docker Desktop must be
 running. The Java reference remains a trusted local process; generated Python
@@ -280,3 +292,73 @@ broader environment actions, and resumable interrupted batches remain future wor
 
 Implementation references: [Docker run controls](https://docs.docker.com/reference/cli/docker/container/run/)
 and [Responses structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses).
+
+## Commons CLI milestone: stateful qualification
+
+The next slice is now implemented: Commons CLI **1.9.0**, pinned from its Maven
+source artifact with per-file hashes, through `Option`, `Options`, `DefaultParser`,
+and `CommandLine`. This is a new benchmark version, **not an AlphaTrans-matched
+comparison**. The exact constructors, methods, types, and scope exclusions live in
+`benchmarks/commons_cli.json`.
+
+The evaluator owns a typed operation sequence. It constructs objects, preserves
+handles, calls only declared methods, and records a snapshot after each operation.
+The Java oracle uses explicit dispatch into the unmodified pinned library. CPython
+and GraalPy use the same Python adapter. Comparisons require exact typed values,
+ordered lists, canonical object aliases, and exception types; exception messages
+are excluded. Sequences stop at the first exception. Repair feedback reports the
+first differing operation, which is an observable mismatch, not source-line fault
+localization. Missing API classes and malformed or truncated traces fail validation.
+
+There are 20 visible scenarios and 60 holdout sequences. Scenarios cover option
+metadata, aliases, short/long arguments, repeated values, Unicode values, missing
+arguments, unknown options, required options, stop behavior, and parser reuse.
+The holdout uses new names/values across the same 20 templates: it checks parameter
+variation, **not independent semantic generalization**. These are project-authored
+scenarios; Commons CLI upstream JUnit reuse is not yet implemented.
+
+From `midpoint/`, qualify the integration without model calls:
+
+```sh
+python3 scripts/bootstrap.py
+python3 -m unittest discover -s tests -v
+python3 scripts/verify_cli.py --archive
+```
+
+The qualification script freezes repeated Java observations, runs the deliberately
+broken state-reuse fixture, then replays the hand-written corrected fixture through
+the existing bounded repair controller. It checks both CPython and GraalPy, selects
+using visible results only, and scores holdout after selection. Its artifacts are
+labelled `synthetic_fixture`. The result is harness qualification, never LLM accuracy.
+Local subprocess execution here is for these trusted fixtures only.
+
+To prepare a fresh experiment protocol and run the existing three paired arms:
+
+```sh
+python3 -m migration_lab freeze --task commons_cli \
+  --output evaluator-private/commons-cli-v1.json
+python3 scripts/build_containers.py
+python3 -m migration_lab experiment --task commons_cli \
+  --suite evaluator-private/commons-cli-v1.json --backend replay \
+  --replay-manifest fixtures/replay.json --trials 1 --archive
+```
+
+This last command still uses synthetic replay. Live backend experiments require
+explicit model configuration, budgets, and working containers as documented above.
+Changed runner inputs require rebuilding images. The new images include only the
+trusted dispatch modules, contract metadata, and runtime dependencies; they contain
+no Commons CLI implementation or reference outputs. Docker was unavailable for the
+local milestone verification, so the updated images still need build/runtime tests.
+Existing `all` defaults for demos/freezing retain the three string tasks; select
+`commons_cli` explicitly. Experiment `--task all` uses the tasks in its frozen suite.
+Schema-2 suites bind the CLI source, contract, adapters, and generator fingerprints;
+source/runner/comparator changes require a fresh suite. Historical evidence remains
+historical evidence and must not be relabelled as results from the new protocol.
+
+Remaining research work: expand independent semantic tests and negative fixtures;
+run live paired trials; add source-guided test construction and counterexample
+minimization; then introduce dependency-ordered multi-module translation. Current
+context uses a conservative, manually pinned source-name closure, not a general
+symbol resolver. The candidate is still one module. Whole-repository migration,
+formal equivalence, general environment planning, and a measured gain over a fixed
+LLM baseline are not claimed by this milestone.

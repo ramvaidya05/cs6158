@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "task": "commons_cli",
+  "version": "commons-cli-operations-v1",
+  "source_artifact": "commons-cli:commons-cli:1.9.0",
+  "max_operations": 128,
+  "classes": {
+    "Option": {
+      "constructor": {
+        "args": [
+          "string",
+          "string",
+          "bool",
+          "string"
+        ]
+      },
+      "methods": {
+        "getOpt": {
+          "args": [],
+          "returns": "string?"
+        },
+        "getLongOpt": {
+          "args": [],
+          "returns": "string?"
+        },
+        "hasArg": {
+          "args": [],
+          "returns": "bool"
+        },
+        "isRequired": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setRequired": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "getValue": {
+          "args": [],
+          "returns": "string?"
+        },
+        "getValues": {
+          "args": [],
+          "returns": "strings?"
+        }
+      }
+    },
+    "Options": {
+      "constructor": {
+        "args": []
+      },
+      "methods": {
+        "addOption": {
+          "args": [
+            "Option"
+          ],
+          "returns": "Options"
+        },
+        "hasOption": {
+          "args": [
+            "string"
+          ],
+          "returns": "bool"
+        },
+        "getRequiredOptions": {
+          "args": [],
+          "returns": "strings"
+        }
+      }
+    },
+    "DefaultParser": {
+      "constructor": {
+        "args": [
+          "bool"
+        ]
+      },
+      "methods": {
+        "parse": {
+          "args": [
+            "Options",
+            "strings",
+            "bool"
+          ],
+          "returns": "CommandLine"
+        }
+      }
+    },
+    "CommandLine": {
+      "methods": {
+        "hasOption": {
+          "args": [
+            "string"
+          ],
+          "returns": "bool"
+        },
+        "getOptionValue": {
+          "args": [
+            "string"
+          ],
+          "returns": "string?"
+        },
+        "getOptionValues": {
+          "args": [
+            "string"
+          ],
+          "returns": "strings?"
+        },
+        "getArgs": {
+          "args": [],
+          "returns": "strings"
+        }
+      }
+    }
+  },
+  "exception_map": {
+    "ValueError": "IllegalArgumentException"
+  },
+  "comparison": "Exact typed operation trace; stop at first exception; messages excluded; object results use canonical first handle",
+  "source_files": [
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Char.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLine.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLineParser.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Option.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionValidator.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Options.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/ParseException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Util.java"
+  ],
+  "dependency_analysis": "Conservative source-name closure, manually scoped API; not full symbol resolution or arbitrary repository analysis",
+  "excluded": [
+    "OptionGroup public API",
+    "HelpFormatter",
+    "Properties defaults",
+    "typed value conversion",
+    "arbitrary object graphs",
+    "full repository translation"
+  ],
+  "candidate_scope": "One Python source module; tests, adapters, oracle, contract, and environment are controller-owned"
+}

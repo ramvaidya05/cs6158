@@ -1,5 +1,12 @@
 # Environment-in-the-Loop Java-to-Python Translation: Research and Implementation Plan
 
+November 15 integration checkpoint: partner Commons CLI support and the bounded
+experiment framework are combined. Rebuilt containers pass both stateful and
+string qualification; 85 Python tests, five Java tests, and 11 isolation tests
+pass. A live Commons CLI attempt was archived after HTTP 503 with no candidate.
+Next priorities are live-generation availability and independently expanded
+stateful semantic scenarios, followed by measured code/environment repair.
+
 Prepared 19 October 2026. Updated after midpoint implementation: the runnable prototype is in [midpoint/](./midpoint/README.md). Three-task synthetic replay acceptance passes in CPython and Java-embedded GraalPy. This demonstrates infrastructure, not live-model translation performance; see the checkpoint below for the first live result. See the [developer handoff](./midpoint/DEVELOPER_HANDOFF.md) and [midpoint report draft](./midpoint/MIDPOINT_REPORT.md) for the current implementation and evidence.
 
 The [one-day midpoint plan](./MIDPOINT_TODAY_PLAN.md) records the original scope. The longer milestones below remain a research roadmap, not a statement that every described component is implemented; their original schedule does not apply to today's midpoint target.

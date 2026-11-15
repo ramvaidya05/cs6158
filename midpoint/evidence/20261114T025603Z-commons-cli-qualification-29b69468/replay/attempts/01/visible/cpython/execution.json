@@ -1,0 +1,1681 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "commons_cli-visible-000-metadata-alias",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "v"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "visible-verbose"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-001-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-002-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-003-long",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-004-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-005-empty-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            ""
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-006-repeated-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80",
+            "second"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-007-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "-v",
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-008-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-009-stop-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-010-stop-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "--unknown",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-011-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-012-missing-argument",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-013-missing-before-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-014-negative-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "-123"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "-123"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-015-attached-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-016-burst",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-017-reuse-parser",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "next"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-018-required-missing",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-019-required-present",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        }
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.15/bin/python3",
+      "-I",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/migration_lab/worker.py",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261114T025603Z-commons-cli-qualification-29b69468/replay/attempts/01/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.02807,
+    "stdout": "[{\"id\": \"commons_cli-visible-000-metadata-alias\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": \"v\"}, {\"step\": 7, \"status\": \"ok\", \"value\": \"visible-verbose\"}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": true}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"commons_cli-visible-001-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-002-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": true}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-003-long\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": true}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-004-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-005-empty-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": \"\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-006-repeated-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\", \"second\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-007-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"-v\", \"visible-value-\\ud83d\\ude80\"]}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-008-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": true}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-009-stop-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\", \"-v\"]}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-010-stop-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"--unknown\", \"-v\"]}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-011-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"exception\", \"type\": \"UnrecognizedOptionException\"}]}, {\"id\": \"commons_cli-visible-012-missing-argument\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"exception\", \"type\": \"MissingArgumentException\"}]}, {\"id\": \"commons_cli-visible-013-missing-before-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"exception\", \"type\": \"MissingArgumentException\"}]}, {\"id\": \"commons_cli-visible-014-negative-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": \"-123\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"-123\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-015-attached-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": false}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-016-burst\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": true}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"visible-value-\\ud83d\\ude80\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": []}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-017-reuse-parser\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"next\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}, {\"step\": 10, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"commons_cli-visible-018-required-missing\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": [\"o\"]}, {\"step\": 9, \"status\": \"exception\", \"type\": \"MissingOptionException\"}]}, {\"id\": \"commons_cli-visible-019-required-present\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": \"visible-value-\\ud83d\\ude80\"}]}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

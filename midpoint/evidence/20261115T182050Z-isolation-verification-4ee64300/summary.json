@@ -1,0 +1,44 @@
+{
+  "provenance": "synthetic_fixture",
+  "suite": {
+    "sha256": "20bbb4caa97487cc5facc6afc3ef75b9a1b50f8723386651a9d7b3c12ac58aef",
+    "schema": 1,
+    "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+    "counts": {
+      "levenshtein": {
+        "visible": 26,
+        "holdout": 140
+      },
+      "normalized": {
+        "visible": 26,
+        "holdout": 124
+      },
+      "jaro_winkler": {
+        "visible": 26,
+        "holdout": 131
+      }
+    }
+  },
+  "tests": {
+    "tests": true,
+    "integration_tests": true
+  },
+  "fixtures": {
+    "levenshtein": {
+      "passed": 332,
+      "total": 332,
+      "all_pass": true
+    },
+    "normalized": {
+      "passed": 300,
+      "total": 300,
+      "all_pass": true
+    },
+    "jaro_winkler": {
+      "passed": 314,
+      "total": 314,
+      "all_pass": true
+    }
+  },
+  "passed": true
+}

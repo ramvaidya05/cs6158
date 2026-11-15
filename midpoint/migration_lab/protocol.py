@@ -3,7 +3,7 @@ import json
 import random
 import secrets
 from pathlib import Path
-from .benchmark import TASKS, cases, verify_vendor
+from .benchmark import TASKS, ALL_TASKS, cases, verify_vendor
 from .environment import EnvironmentAgent
 from .evaluation import TestsuiteAgent
 from .storage import ROOT, save_json, sha256
@@ -47,7 +47,9 @@ def evaluation_cases(task, seed, count=100):
     return rows
 
 
-def freeze(path, seed=None):
+def freeze(path, seed=None, tasks=TASKS):
+    if not tasks or len(set(tasks)) != len(tasks) or any(t not in ALL_TASKS for t in tasks):
+        raise ValueError("Unsupported or duplicate tasks")
     path = Path(path)
     if path.exists():
         raise ValueError("Refusing to overwrite a frozen evaluation suite")
@@ -56,11 +58,17 @@ def freeze(path, seed=None):
                "comparator_sha256": sha256(ROOT / "migration_lab/evaluation.py"),
                "generator_sha256": sha256(Path(__file__)),
                "policy": "Evaluator only; all paired selections freeze before holdout scoring"}
+    if tasks != TASKS:
+        payload["schema"] = 2
+        payload["task_identities"] = {}
+        if "commons_cli" in tasks:
+            from .cli_task import identity
+            payload["task_identities"]["commons_cli"] = identity()
     tester = TestsuiteAgent(EnvironmentAgent())
     evidence = path.parent / (path.stem + "-oracle")
-    for task in TASKS:
+    for task in tasks:
         payload["tasks"][task] = {}
-        for split, rows in (("visible", cases(task)), ("holdout", evaluation_cases(task, seed))):
+        for split, rows in (("visible", cases(task)), ("holdout", cases(task, "holdout", seed) if task == "commons_cli" else evaluation_cases(task, seed))):
             reference = tester.reference(rows, evidence / task / split)
             repeated = tester.reference(rows, evidence / task / (split + "-repeat"))
             if reference != repeated:
@@ -82,7 +90,26 @@ class FrozenSuite:
         payload = json.loads(self.path.read_text())
         if payload["source"] != verify_vendor() or payload["comparator_sha256"] != sha256(ROOT / "migration_lab/evaluation.py"):
             raise RuntimeError("Source/comparator differs from frozen evaluation protocol")
-        for task in TASKS:
+        if payload.get("schema") not in (1, 2):
+            raise ValueError("Unsupported suite schema")
+        if payload["schema"] == 2 and payload["generator_sha256"] != sha256(Path(__file__)):
+            raise RuntimeError("Suite generator differs from frozen protocol")
+        selected = TASKS if payload["schema"] == 1 else tuple(payload["tasks"])
+        if not selected or any(t not in ALL_TASKS for t in selected):
+            raise ValueError("Invalid suite tasks")
+        if "commons_cli" in selected:
+            from .cli_task import identity, contract
+            from .scenarios import validate_cases, validate_rows
+            if payload.get("task_identities", {}).get("commons_cli") != identity():
+                raise RuntimeError("Stateful task implementation differs from frozen protocol")
+            entries = payload["tasks"]["commons_cli"]
+            for entry in entries.values():
+                validate_cases(entry["cases"], contract())
+                validate_rows(entry["reference"], entry["cases"])
+            visible = {json.dumps(c["operations"], sort_keys=True) for c in entries["visible"]["cases"]}
+            if any(json.dumps(c["operations"], sort_keys=True) in visible for c in entries["holdout"]["cases"]):
+                raise ValueError("Visible and holdout scenarios overlap")
+        for task in selected:
             for split in ("visible", "holdout"):
                 entry = payload["tasks"][task][split]
                 rows = entry["cases"]

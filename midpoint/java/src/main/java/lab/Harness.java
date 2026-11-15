@@ -37,15 +37,16 @@ public final class Harness {
         JsonNode cases = JSON.readTree(System.in);
         if (!cases.isArray() || cases.isEmpty()) throw new IllegalArgumentException("Nonempty cases array required");
         if (args[0].equals("reference")) {
-            List<ObjectNode> rows = new ArrayList<>();
+            List<Object> rows = new ArrayList<>();
             for (JsonNode c : cases) {
+                if (c.path("task").asText().equals("commons_cli")) { rows.add(CliScenario.run(c)); continue; }
                 ObjectNode r = JSON.createObjectNode().put("id", c.get("id").asText());
                 try { r.put("status", "ok").put("value", reference(c)); }
                 catch (NullPointerException e) { r.put("status", "exception").put("type", "NullPointerException").put("message", e.getMessage()); }
                 rows.add(r);
             }
             System.out.println(JSON.writeValueAsString(rows));
-        } else if (args[0].equals("graal") && args.length == 2) {
+        } else if (args[0].equals("graal") && args.length == 5) {
             String candidate = Files.readString(Path.of(args[1]), StandardCharsets.UTF_8);
             // No host lookup, process creation, sockets, or guest filesystem access.
             // OS-level isolation is still required for hostile code and CPU/memory control.
@@ -56,27 +57,9 @@ public final class Harness {
                     .out(System.err).err(System.err).build()) {
                 ctx.getBindings("python").putMember("_source", candidate);
                 ctx.getBindings("python").putMember("_cases_json", JSON.writeValueAsString(cases));
-                Value result = ctx.eval("python", """
-                    import json, math, traceback
-                    _scope = {'__name__': 'candidate'}
-                    try:
-                        exec(compile(_source, 'candidate.py', 'exec'), _scope)
-                        _fn = _scope['run']
-                    except Exception:
-                        raise
-                    _rows = []
-                    for _case in json.loads(_cases_json):
-                        _row = {'id': _case['id']}
-                        try:
-                            _v = _fn(_case['a'], _case['b'], _case['operation'], _case.get('parameter'))
-                            if isinstance(_v, bool) or not isinstance(_v, (int, float)) or not math.isfinite(_v):
-                                raise TypeError('run must return a finite number, not bool')
-                            _row.update(status='ok', value=_v)
-                        except Exception as _exc:
-                            _row.update(status='exception', type=type(_exc).__name__, message=str(_exc), trace=traceback.format_exc(limit=8))
-                        _rows.append(_row)
-                    json.dumps(_rows, allow_nan=False)
-                    """);
+                ctx.getBindings("python").putMember("_contract_json", Files.readString(Path.of(args[4])));
+                ctx.eval("python", Files.readString(Path.of(args[2])));
+                Value result = ctx.eval("python", Files.readString(Path.of(args[3])));
                 System.out.println(result.asString());
             }
         } else throw new IllegalArgumentException("Unknown mode");

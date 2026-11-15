@@ -1,0 +1,21 @@
+{
+  "evaluation-suite.json": "fed47e4b155a99d78f777ee460165b1384caea95ec79a38b84ff850c8be77da2",
+  "experiment.json": "eb130d0674c1374f3f7e21122a2202a1bf1267c064c1a7b3e19d9a73dd956a38",
+  "selections-frozen.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "spend.json": "0caa0f023dce88fa338612925f66b56ea35fd4d9b7fe2bdd59a0917c9f5e2fa7",
+  "summary.json": "d2b1e48634caf0b350174af71b399610a6dcece60777a3ff70b090401f04b226",
+  "trial-000/commons_cli/code_repair/result.json": "1b8b3f34396a7da13327c5711d93ab46e4f4a687fd9be27a5f3de9b306a1db2e",
+  "trial-000/commons_cli/environment_repair/result.json": "9683f144577301fe48e0923710000d0eb2167b8d3a03056fdca3baa4e2435d52",
+  "trial-000/commons_cli/one_shot/attempts/00/backend-error.json": "6db70da25e1fc7b235b2df9fc37b02f4d63f6265e44d24f5ca6f054524012284",
+  "trial-000/commons_cli/one_shot/attempts/00/prompt.txt": "461c81ebff4523651056ed3ccb70913a1878dcf25b78ade8fdc5172baff9ab7e",
+  "trial-000/commons_cli/one_shot/manifest.json": "914e85636e0377615d1267a7512a9d7e0728084e4ae923c478592f49d23102a1",
+  "trial-000/commons_cli/one_shot/preflight/cpython/execution.json": "7a1965b63d92a098d1b8d479d6c2d8a29c08e80e21c42f5190ecd80876d68d32",
+  "trial-000/commons_cli/one_shot/preflight/cpython/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "trial-000/commons_cli/one_shot/preflight/graal/execution.json": "1f877bbe0da034de00d5ba62f1be761158df27f99a15115a1252f6a714a22b01",
+  "trial-000/commons_cli/one_shot/preflight/graal/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "trial-000/commons_cli/one_shot/reference-repeat/execution.json": "e11e18d6ccbfed958c42f79beaade7d7e98ccfcc3ffda1b2edfb08de743fc7c7",
+  "trial-000/commons_cli/one_shot/reference-repeat/inputs.json": "5a5d2cbd61e1571b9215b6e8b5aec343b9a66d7285e5e081f0343cba332259c4",
+  "trial-000/commons_cli/one_shot/reference-visible/execution.json": "ecb308cacc3329bb8cda8618c53c2ba28f98f8aba6202cc10b8c98e6d11f807a",
+  "trial-000/commons_cli/one_shot/reference-visible/inputs.json": "5a5d2cbd61e1571b9215b6e8b5aec343b9a66d7285e5e081f0343cba332259c4",
+  "trial-000/commons_cli/one_shot/result.json": "44854ebb5ceb170538f6f97dc9b7d74cdff290a82ecd0101ac87c76bcedb50c6"
+}

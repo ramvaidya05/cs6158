@@ -2,6 +2,12 @@
 
 Updated 19 October 2026. Project root: `midpoint/` within the SWE ML workspace.
 
+> November 15 integration: partner commit `a7791ae` is combined with the
+> experiment branch. Both stateful container images build and run successfully.
+> 85 Python, five Java, and 11 isolation tests pass; string fixtures pass 946
+> checks and the corrected Commons CLI fixture passes 160 checks in containers.
+> Read the latest [results](EXPERIMENT_RESULTS.md) before the historical notes.
+
 > November 13 update: two more fixed live batches timed out and stopped within
 > their budget/availability rules; no new semantic accuracy was measured.
 > Read-only, checksum-verified reporting now covers eight experiment archives
