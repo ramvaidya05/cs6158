@@ -3,7 +3,7 @@ import json
 import os
 import unittest
 from unittest.mock import patch
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from migration_lab.backends import BackendError, GeminiBackend
 from migration_lab.budget import SpendBudget
 
@@ -80,6 +80,21 @@ class GeminiAdapter(unittest.TestCase):
         with self.assertRaises(BackendError) as cm:
             self.call(reply('{"code":"x","explanation":""}', version='other'), backend)
         self.assertEqual(cm.exception.kind, 'model_changed')
+
+    def test_timeout_retains_reservation_without_exposing_transport_details(self):
+        for error in (TimeoutError('secret-sentinel'), URLError(TimeoutError('secret-sentinel'))):
+            budget = SpendBudget(1, .75, 3.75)
+            with patch('urllib.request.urlopen', side_effect=error), self.assertRaises(BackendError) as cm:
+                GeminiBackend('test', budget=budget).generate('x', 0, 'prompt')
+            self.assertEqual(cm.exception.kind, 'timeout')
+            self.assertNotIn('secret-sentinel', str(cm.exception.details) + str(cm.exception))
+            self.assertGreater(budget.record()['accounted_usd'], 0)
+            self.assertFalse(budget.entries[0]['usage_known'])
+
+    def test_incomplete_output_retains_normalized_usage_for_reporting(self):
+        with self.assertRaises(BackendError) as cm:
+            self.call(reply('{}', finish='MAX_TOKENS'))
+        self.assertEqual(cm.exception.raw_response['usage']['output_tokens'], 25)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "jaro_winkler",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.038
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.989
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.314,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Model transport failed: URLError"
+  },
+  "elapsed_seconds": 5.394133958034217,
+  "validated": false
+}

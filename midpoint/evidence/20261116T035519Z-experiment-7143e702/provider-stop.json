@@ -1,0 +1,10 @@
+{
+  "reason": "provider_unavailable",
+  "trigger_kind": "timeout",
+  "consecutive_failures": 3,
+  "http_status": null,
+  "policy": {
+    "consecutive_failure_limit": 3,
+    "automatic_retries": 0
+  }
+}

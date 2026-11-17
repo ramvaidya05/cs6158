@@ -2,6 +2,29 @@
 
 Updated 19 October 2026. Project root: `midpoint/` within the SWE ML workspace.
 
+> November 15 integration: partner commit `a7791ae` is combined with the
+> experiment branch. Both stateful container images build and run successfully.
+> 85 Python, five Java, and 11 isolation tests pass; string fixtures pass 946
+> checks and the corrected Commons CLI fixture passes 160 checks in containers.
+> Read the latest [results](EXPERIMENT_RESULTS.md) before the historical notes.
+
+> November 13 update: two more fixed live batches timed out and stopped within
+> their budget/availability rules; no new semantic accuracy was measured.
+> Read-only, checksum-verified reporting now covers eight experiment archives
+> (66 Python tests pass). The separate synthetic sensitivity study detected
+> all seven faults in both runtimes, with 946/946 correct-control checks passing.
+> Fractional JaroWinkler transpositions were detected only by withheld cases;
+> preserve that feedback boundary. Results and commands are in
+> [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) and [EXPERIMENTS.md](EXPERIMENTS.md).
+
+> November 11 update: per-task accuracy/repair-opportunity reporting, secure
+> Gemini pilot entry points, and a provider-availability circuit breaker are
+> implemented (61 Python tests; 11 Docker isolation tests pass). The expanded
+> three-task live batch encountered timeouts/HTTP 503 and remains unvalidated.
+> A separately labeled recorded-Gemini stress check recovered autonomously from
+> the cache fault and passed all 332 runtime checks without new model calls.
+> See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) for the retained evidence.
+
 > Post-midpoint update: container isolation, a frozen expanded evaluator, paired
 > repeated-trial reporting, and a bounded cache-remediation policy are now
 > implemented. The GPT-5.6 Sol live attempt was blocked by HTTP 429 responses.

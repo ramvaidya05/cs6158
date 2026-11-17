@@ -1,0 +1,2292 @@
+{
+  "provenance": "live_model",
+  "study": "natural_translation",
+  "measurement_status": "no_completed_evaluations",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 9,
+      "completed_task_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": null,
+      "descriptive_wilson_95": [
+        0,
+        0.2991527535509594
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        }
+      }
+    },
+    "code_repair": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 9,
+      "completed_task_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": null,
+      "descriptive_wilson_95": [
+        0,
+        0.2991527535509594
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        }
+      }
+    },
+    "environment_repair": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 9,
+      "completed_task_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": null,
+      "descriptive_wilson_95": [
+        0,
+        0.2991527535509594
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 234,
+            "rate": 0.0,
+            "unvalidated": 234
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 1185,
+            "rate": 0.0,
+            "unvalidated": 1185
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "normalized",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "normalized",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "normalized",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "comparable": false,
+      "repair_eligible": false,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "one_shot",
+      "path": "trial-000/levenshtein/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.48649933398701,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "path": "trial-000/levenshtein/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.1472986249718815,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "path": "trial-000/levenshtein/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06996833300217986,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "normalized",
+      "arm": "one_shot",
+      "path": "trial-000/normalized/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.06107020797208,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "normalized",
+      "arm": "code_repair",
+      "path": "trial-000/normalized/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.14603141695261002,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "path": "trial-000/normalized/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.0704258750192821,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "jaro_winkler",
+      "arm": "one_shot",
+      "path": "trial-000/jaro_winkler/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.54342279199045,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "path": "trial-000/jaro_winkler/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.1486811669310555,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "path": "trial-000/jaro_winkler/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06950262503232807,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "levenshtein",
+      "arm": "one_shot",
+      "path": "trial-001/levenshtein/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.23633904196322,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "path": "trial-001/levenshtein/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.15258300001733005,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "path": "trial-001/levenshtein/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06989716598764062,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "normalized",
+      "arm": "one_shot",
+      "path": "trial-001/normalized/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model HTTP 503; check access, model compatibility and quota"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 10.945502582937479,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "normalized",
+      "arm": "code_repair",
+      "path": "trial-001/normalized/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.1677967079449445,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "path": "trial-001/normalized/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.07484020793344826,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "jaro_winkler",
+      "arm": "one_shot",
+      "path": "trial-001/jaro_winkler/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: URLError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 5.394133958034217,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "path": "trial-001/jaro_winkler/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.11512974998913705,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "path": "trial-001/jaro_winkler/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.11555354204028845,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "levenshtein",
+      "arm": "one_shot",
+      "path": "trial-002/levenshtein/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: URLError"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 9.922681291005574,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "levenshtein",
+      "arm": "code_repair",
+      "path": "trial-002/levenshtein/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.15880333306267858,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "levenshtein",
+      "arm": "environment_repair",
+      "path": "trial-002/levenshtein/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.09572791692335159,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 140,
+            "rate": 0.0,
+            "unvalidated": 140
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "normalized",
+      "arm": "one_shot",
+      "path": "trial-002/normalized/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model HTTP 503; check access, model compatibility and quota"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 13.322302000015043,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "normalized",
+      "arm": "code_repair",
+      "path": "trial-002/normalized/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.11468829098157585,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "normalized",
+      "arm": "environment_repair",
+      "path": "trial-002/normalized/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06999300001189113,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 124,
+            "rate": 0.0,
+            "unvalidated": 124
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "jaro_winkler",
+      "arm": "one_shot",
+      "path": "trial-002/jaro_winkler/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Experiment dollar reservation budget exhausted"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 5.154280457994901,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "jaro_winkler",
+      "arm": "code_repair",
+      "path": "trial-002/jaro_winkler/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.10095437499694526,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "jaro_winkler",
+      "arm": "environment_repair",
+      "path": "trial-002/jaro_winkler/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "visible_all_pass": null,
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.08860391704365611,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 26,
+            "rate": 0.0,
+            "unvalidated": 26
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 131,
+            "rate": 0.0,
+            "unvalidated": 131
+          }
+        }
+      }
+    }
+  ],
+  "repair_opportunities": {
+    "admitted_initials": 9,
+    "completed_initials": 0,
+    "initials_with_visible_failures": 0,
+    "initials_passing_visible": 0,
+    "arms": {
+      "code_repair": {
+        "eligible_pairs_completed": 0,
+        "eligible_pairs_fully_recovered": 0,
+        "pairs_with_holdout_regression": 0
+      },
+      "environment_repair": {
+        "eligible_pairs_completed": 0,
+        "eligible_pairs_fully_recovered": 0,
+        "pairs_with_holdout_regression": 0
+      }
+    },
+    "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+  },
+  "by_task": {
+    "jaro_winkler": {
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            }
+          }
+        },
+        "code_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            }
+          }
+        },
+        "environment_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 393,
+                "rate": 0.0,
+                "unvalidated": 393
+              }
+            }
+          }
+        }
+      },
+      "repair_opportunities": {
+        "admitted_initials": 3,
+        "completed_initials": 0,
+        "initials_with_visible_failures": 0,
+        "initials_passing_visible": 0,
+        "arms": {
+          "code_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          },
+          "environment_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          }
+        },
+        "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+      }
+    },
+    "levenshtein": {
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            }
+          }
+        },
+        "code_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            }
+          }
+        },
+        "environment_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 420,
+                "rate": 0.0,
+                "unvalidated": 420
+              }
+            }
+          }
+        }
+      },
+      "repair_opportunities": {
+        "admitted_initials": 3,
+        "completed_initials": 0,
+        "initials_with_visible_failures": 0,
+        "initials_passing_visible": 0,
+        "arms": {
+          "code_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          },
+          "environment_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          }
+        },
+        "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+      }
+    },
+    "normalized": {
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            }
+          }
+        },
+        "code_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            }
+          }
+        },
+        "environment_repair": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": null,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 0,
+                "total": 78,
+                "rate": 0.0,
+                "unvalidated": 78
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 372,
+                "rate": 0.0,
+                "unvalidated": 372
+              }
+            }
+          }
+        }
+      },
+      "repair_opportunities": {
+        "admitted_initials": 3,
+        "completed_initials": 0,
+        "initials_with_visible_failures": 0,
+        "initials_passing_visible": 0,
+        "arms": {
+          "code_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          },
+          "environment_repair": {
+            "eligible_pairs_completed": 0,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          }
+        },
+        "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 8,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "usage_unknown_calls": 8
+  }
+}

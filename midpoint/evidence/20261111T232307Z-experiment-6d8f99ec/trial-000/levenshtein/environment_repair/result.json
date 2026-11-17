@@ -1,0 +1,10 @@
+{
+  "status": "error",
+  "task": "levenshtein",
+  "validated": false,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Initial generation failed; paired arm remains unvalidated"
+  },
+  "elapsed_seconds": 0.06996833300217986
+}

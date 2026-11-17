@@ -1,0 +1,7 @@
+{
+  "type": "BackendError",
+  "message": "Experiment dollar reservation budget exhausted",
+  "kind": "budget",
+  "details": {},
+  "raw_response": null
+}

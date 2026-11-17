@@ -1,0 +1,210 @@
+[
+  {
+    "id": "jaro_winkler-visible-000",
+    "task": "jaro_winkler",
+    "a": "",
+    "b": "",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-001",
+    "task": "jaro_winkler",
+    "a": "",
+    "b": "abc",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-002",
+    "task": "jaro_winkler",
+    "a": "abc",
+    "b": "",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-003",
+    "task": "jaro_winkler",
+    "a": "abc",
+    "b": "abc",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-004",
+    "task": "jaro_winkler",
+    "a": "kitten",
+    "b": "sitting",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-005",
+    "task": "jaro_winkler",
+    "a": "My string",
+    "b": "My tsring",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-006",
+    "task": "jaro_winkler",
+    "a": "aaaa",
+    "b": "aa",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-007",
+    "task": "jaro_winkler",
+    "a": "ab",
+    "b": "ba",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-008",
+    "task": "jaro_winkler",
+    "a": "ABC",
+    "b": "abc",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-009",
+    "task": "jaro_winkler",
+    "a": "hello world",
+    "b": "hello  world",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-010",
+    "task": "jaro_winkler",
+    "a": "\u00e9",
+    "b": "e\u0301",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-011",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude00",
+    "b": "",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-012",
+    "task": "jaro_winkler",
+    "a": "a\ud83d\ude00b",
+    "b": "ab",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-013",
+    "task": "jaro_winkler",
+    "a": "\ud83d\ude00",
+    "b": "\ud83d\ude03",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-014",
+    "task": "jaro_winkler",
+    "a": "\u0000a",
+    "b": "a",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-015",
+    "task": "jaro_winkler",
+    "a": "\n",
+    "b": "\r\n",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-016",
+    "task": "jaro_winkler",
+    "a": null,
+    "b": "abc",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-017",
+    "task": "jaro_winkler",
+    "a": "abc",
+    "b": null,
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-018",
+    "task": "jaro_winkler",
+    "a": null,
+    "b": null,
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-019",
+    "task": "jaro_winkler",
+    "a": "MARTHA",
+    "b": "MARHTA",
+    "operation": "distance",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-020",
+    "task": "jaro_winkler",
+    "a": "",
+    "b": "",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-021",
+    "task": "jaro_winkler",
+    "a": "",
+    "b": "abc",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-022",
+    "task": "jaro_winkler",
+    "a": "abc",
+    "b": "",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-023",
+    "task": "jaro_winkler",
+    "a": "abc",
+    "b": "abc",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-024",
+    "task": "jaro_winkler",
+    "a": "kitten",
+    "b": "sitting",
+    "operation": "similarity",
+    "parameter": null
+  },
+  {
+    "id": "jaro_winkler-visible-025",
+    "task": "jaro_winkler",
+    "a": null,
+    "b": "",
+    "operation": "similarity",
+    "parameter": null
+  }
+]

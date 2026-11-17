@@ -1,0 +1,2783 @@
+{
+  "status": "completed",
+  "task": "commons_cli",
+  "provenance": "synthetic_fixture",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.041
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 5.087
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.447,
+      "attempt": 0
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 5.447,
+      "attempt": 0
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 10.977,
+      "attempt": 0,
+      "accepted": true
+    },
+    {
+      "phase": "code_repair",
+      "elapsed_seconds": 10.984,
+      "attempt": 1
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 10.985,
+      "attempt": 1
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 16.381,
+      "attempt": 1,
+      "accepted": true
+    },
+    {
+      "phase": "selection_frozen",
+      "elapsed_seconds": 16.383
+    },
+    {
+      "phase": "evaluate_holdout",
+      "elapsed_seconds": 16.39
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 0,
+      "sha256": "12581d77086a6793edaedc928805cd0282aba26afb7197f2ffde7dc544d35972",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 38,
+      "total": 40
+    },
+    {
+      "attempt": 1,
+      "sha256": "89d4382abfaa75070b5dc6fb143a89f049bb2c2081d0c132a22d4e206a99ee27",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 40,
+      "total": 40
+    }
+  ],
+  "best_attempt": 1,
+  "stop_reason": "visible_pass",
+  "reserved_output_tokens": 16384,
+  "baseline_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 19,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-017-reuse-parser"
+            },
+            "actual": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 19,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-017-reuse-parser"
+            },
+            "actual": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "passed": 38,
+    "total": 40,
+    "all_pass": false
+  },
+  "selected_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 20,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 20,
+        "total": 20,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 40,
+    "total": 40,
+    "all_pass": true
+  },
+  "baseline_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 57,
+        "total": 60,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-holdout-000-metadata-alias",
+          "commons_cli-holdout-001-empty",
+          "commons_cli-holdout-002-short",
+          "commons_cli-holdout-003-long",
+          "commons_cli-holdout-004-equals",
+          "commons_cli-holdout-005-empty-value",
+          "commons_cli-holdout-006-repeated-value",
+          "commons_cli-holdout-007-terminator",
+          "commons_cli-holdout-008-positional",
+          "commons_cli-holdout-009-stop-positional",
+          "commons_cli-holdout-010-stop-unknown",
+          "commons_cli-holdout-011-unknown",
+          "commons_cli-holdout-012-missing-argument",
+          "commons_cli-holdout-013-missing-before-option",
+          "commons_cli-holdout-014-negative-value",
+          "commons_cli-holdout-015-attached-short",
+          "commons_cli-holdout-016-burst",
+          "commons_cli-holdout-018-required-missing",
+          "commons_cli-holdout-019-required-present",
+          "commons_cli-holdout-020-metadata-alias",
+          "commons_cli-holdout-021-empty",
+          "commons_cli-holdout-022-short",
+          "commons_cli-holdout-023-long",
+          "commons_cli-holdout-024-equals",
+          "commons_cli-holdout-025-empty-value",
+          "commons_cli-holdout-026-repeated-value",
+          "commons_cli-holdout-027-terminator",
+          "commons_cli-holdout-028-positional",
+          "commons_cli-holdout-029-stop-positional",
+          "commons_cli-holdout-030-stop-unknown",
+          "commons_cli-holdout-031-unknown",
+          "commons_cli-holdout-032-missing-argument",
+          "commons_cli-holdout-033-missing-before-option",
+          "commons_cli-holdout-034-negative-value",
+          "commons_cli-holdout-035-attached-short",
+          "commons_cli-holdout-036-burst",
+          "commons_cli-holdout-038-required-missing",
+          "commons_cli-holdout-039-required-present",
+          "commons_cli-holdout-040-metadata-alias",
+          "commons_cli-holdout-041-empty",
+          "commons_cli-holdout-042-short",
+          "commons_cli-holdout-043-long",
+          "commons_cli-holdout-044-equals",
+          "commons_cli-holdout-045-empty-value",
+          "commons_cli-holdout-046-repeated-value",
+          "commons_cli-holdout-047-terminator",
+          "commons_cli-holdout-048-positional",
+          "commons_cli-holdout-049-stop-positional",
+          "commons_cli-holdout-050-stop-unknown",
+          "commons_cli-holdout-051-unknown",
+          "commons_cli-holdout-052-missing-argument",
+          "commons_cli-holdout-053-missing-before-option",
+          "commons_cli-holdout-054-negative-value",
+          "commons_cli-holdout-055-attached-short",
+          "commons_cli-holdout-056-burst",
+          "commons_cli-holdout-058-required-missing",
+          "commons_cli-holdout-059-required-present"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h266323042006614-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h266323042006614-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h266323042006614-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h277439775389153-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h277439775389153-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h277439775389153-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h211172155399241-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h211172155399241-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h211172155399241-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 57,
+        "total": 60,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-holdout-000-metadata-alias",
+          "commons_cli-holdout-001-empty",
+          "commons_cli-holdout-002-short",
+          "commons_cli-holdout-003-long",
+          "commons_cli-holdout-004-equals",
+          "commons_cli-holdout-005-empty-value",
+          "commons_cli-holdout-006-repeated-value",
+          "commons_cli-holdout-007-terminator",
+          "commons_cli-holdout-008-positional",
+          "commons_cli-holdout-009-stop-positional",
+          "commons_cli-holdout-010-stop-unknown",
+          "commons_cli-holdout-011-unknown",
+          "commons_cli-holdout-012-missing-argument",
+          "commons_cli-holdout-013-missing-before-option",
+          "commons_cli-holdout-014-negative-value",
+          "commons_cli-holdout-015-attached-short",
+          "commons_cli-holdout-016-burst",
+          "commons_cli-holdout-018-required-missing",
+          "commons_cli-holdout-019-required-present",
+          "commons_cli-holdout-020-metadata-alias",
+          "commons_cli-holdout-021-empty",
+          "commons_cli-holdout-022-short",
+          "commons_cli-holdout-023-long",
+          "commons_cli-holdout-024-equals",
+          "commons_cli-holdout-025-empty-value",
+          "commons_cli-holdout-026-repeated-value",
+          "commons_cli-holdout-027-terminator",
+          "commons_cli-holdout-028-positional",
+          "commons_cli-holdout-029-stop-positional",
+          "commons_cli-holdout-030-stop-unknown",
+          "commons_cli-holdout-031-unknown",
+          "commons_cli-holdout-032-missing-argument",
+          "commons_cli-holdout-033-missing-before-option",
+          "commons_cli-holdout-034-negative-value",
+          "commons_cli-holdout-035-attached-short",
+          "commons_cli-holdout-036-burst",
+          "commons_cli-holdout-038-required-missing",
+          "commons_cli-holdout-039-required-present",
+          "commons_cli-holdout-040-metadata-alias",
+          "commons_cli-holdout-041-empty",
+          "commons_cli-holdout-042-short",
+          "commons_cli-holdout-043-long",
+          "commons_cli-holdout-044-equals",
+          "commons_cli-holdout-045-empty-value",
+          "commons_cli-holdout-046-repeated-value",
+          "commons_cli-holdout-047-terminator",
+          "commons_cli-holdout-048-positional",
+          "commons_cli-holdout-049-stop-positional",
+          "commons_cli-holdout-050-stop-unknown",
+          "commons_cli-holdout-051-unknown",
+          "commons_cli-holdout-052-missing-argument",
+          "commons_cli-holdout-053-missing-before-option",
+          "commons_cli-holdout-054-negative-value",
+          "commons_cli-holdout-055-attached-short",
+          "commons_cli-holdout-056-burst",
+          "commons_cli-holdout-058-required-missing",
+          "commons_cli-holdout-059-required-present"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h266323042006614-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h266323042006614-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h266323042006614-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h266323042006614-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h277439775389153-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h277439775389153-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h277439775389153-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-037-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h277439775389153-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "h211172155399241-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "h211172155399241-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "h211172155399241-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "actual": {
+              "id": "commons_cli-holdout-057-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "h211172155399241-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 7,
+              "expected": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              "actual": {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "passed": 114,
+    "total": 120,
+    "all_pass": false
+  },
+  "selected_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 60,
+        "total": 60,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-holdout-000-metadata-alias",
+          "commons_cli-holdout-001-empty",
+          "commons_cli-holdout-002-short",
+          "commons_cli-holdout-003-long",
+          "commons_cli-holdout-004-equals",
+          "commons_cli-holdout-005-empty-value",
+          "commons_cli-holdout-006-repeated-value",
+          "commons_cli-holdout-007-terminator",
+          "commons_cli-holdout-008-positional",
+          "commons_cli-holdout-009-stop-positional",
+          "commons_cli-holdout-010-stop-unknown",
+          "commons_cli-holdout-011-unknown",
+          "commons_cli-holdout-012-missing-argument",
+          "commons_cli-holdout-013-missing-before-option",
+          "commons_cli-holdout-014-negative-value",
+          "commons_cli-holdout-015-attached-short",
+          "commons_cli-holdout-016-burst",
+          "commons_cli-holdout-017-reuse-parser",
+          "commons_cli-holdout-018-required-missing",
+          "commons_cli-holdout-019-required-present",
+          "commons_cli-holdout-020-metadata-alias",
+          "commons_cli-holdout-021-empty",
+          "commons_cli-holdout-022-short",
+          "commons_cli-holdout-023-long",
+          "commons_cli-holdout-024-equals",
+          "commons_cli-holdout-025-empty-value",
+          "commons_cli-holdout-026-repeated-value",
+          "commons_cli-holdout-027-terminator",
+          "commons_cli-holdout-028-positional",
+          "commons_cli-holdout-029-stop-positional",
+          "commons_cli-holdout-030-stop-unknown",
+          "commons_cli-holdout-031-unknown",
+          "commons_cli-holdout-032-missing-argument",
+          "commons_cli-holdout-033-missing-before-option",
+          "commons_cli-holdout-034-negative-value",
+          "commons_cli-holdout-035-attached-short",
+          "commons_cli-holdout-036-burst",
+          "commons_cli-holdout-037-reuse-parser",
+          "commons_cli-holdout-038-required-missing",
+          "commons_cli-holdout-039-required-present",
+          "commons_cli-holdout-040-metadata-alias",
+          "commons_cli-holdout-041-empty",
+          "commons_cli-holdout-042-short",
+          "commons_cli-holdout-043-long",
+          "commons_cli-holdout-044-equals",
+          "commons_cli-holdout-045-empty-value",
+          "commons_cli-holdout-046-repeated-value",
+          "commons_cli-holdout-047-terminator",
+          "commons_cli-holdout-048-positional",
+          "commons_cli-holdout-049-stop-positional",
+          "commons_cli-holdout-050-stop-unknown",
+          "commons_cli-holdout-051-unknown",
+          "commons_cli-holdout-052-missing-argument",
+          "commons_cli-holdout-053-missing-before-option",
+          "commons_cli-holdout-054-negative-value",
+          "commons_cli-holdout-055-attached-short",
+          "commons_cli-holdout-056-burst",
+          "commons_cli-holdout-057-reuse-parser",
+          "commons_cli-holdout-058-required-missing",
+          "commons_cli-holdout-059-required-present"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 60,
+        "total": 60,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-holdout-000-metadata-alias",
+          "commons_cli-holdout-001-empty",
+          "commons_cli-holdout-002-short",
+          "commons_cli-holdout-003-long",
+          "commons_cli-holdout-004-equals",
+          "commons_cli-holdout-005-empty-value",
+          "commons_cli-holdout-006-repeated-value",
+          "commons_cli-holdout-007-terminator",
+          "commons_cli-holdout-008-positional",
+          "commons_cli-holdout-009-stop-positional",
+          "commons_cli-holdout-010-stop-unknown",
+          "commons_cli-holdout-011-unknown",
+          "commons_cli-holdout-012-missing-argument",
+          "commons_cli-holdout-013-missing-before-option",
+          "commons_cli-holdout-014-negative-value",
+          "commons_cli-holdout-015-attached-short",
+          "commons_cli-holdout-016-burst",
+          "commons_cli-holdout-017-reuse-parser",
+          "commons_cli-holdout-018-required-missing",
+          "commons_cli-holdout-019-required-present",
+          "commons_cli-holdout-020-metadata-alias",
+          "commons_cli-holdout-021-empty",
+          "commons_cli-holdout-022-short",
+          "commons_cli-holdout-023-long",
+          "commons_cli-holdout-024-equals",
+          "commons_cli-holdout-025-empty-value",
+          "commons_cli-holdout-026-repeated-value",
+          "commons_cli-holdout-027-terminator",
+          "commons_cli-holdout-028-positional",
+          "commons_cli-holdout-029-stop-positional",
+          "commons_cli-holdout-030-stop-unknown",
+          "commons_cli-holdout-031-unknown",
+          "commons_cli-holdout-032-missing-argument",
+          "commons_cli-holdout-033-missing-before-option",
+          "commons_cli-holdout-034-negative-value",
+          "commons_cli-holdout-035-attached-short",
+          "commons_cli-holdout-036-burst",
+          "commons_cli-holdout-037-reuse-parser",
+          "commons_cli-holdout-038-required-missing",
+          "commons_cli-holdout-039-required-present",
+          "commons_cli-holdout-040-metadata-alias",
+          "commons_cli-holdout-041-empty",
+          "commons_cli-holdout-042-short",
+          "commons_cli-holdout-043-long",
+          "commons_cli-holdout-044-equals",
+          "commons_cli-holdout-045-empty-value",
+          "commons_cli-holdout-046-repeated-value",
+          "commons_cli-holdout-047-terminator",
+          "commons_cli-holdout-048-positional",
+          "commons_cli-holdout-049-stop-positional",
+          "commons_cli-holdout-050-stop-unknown",
+          "commons_cli-holdout-051-unknown",
+          "commons_cli-holdout-052-missing-argument",
+          "commons_cli-holdout-053-missing-before-option",
+          "commons_cli-holdout-054-negative-value",
+          "commons_cli-holdout-055-attached-short",
+          "commons_cli-holdout-056-burst",
+          "commons_cli-holdout-057-reuse-parser",
+          "commons_cli-holdout-058-required-missing",
+          "commons_cli-holdout-059-required-present"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 120,
+    "total": 120,
+    "all_pass": true
+  },
+  "validated": true,
+  "elapsed_seconds": 27.077
+}

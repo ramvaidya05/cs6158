@@ -1,0 +1,10 @@
+[
+  {
+    "id": "levenshtein-visible-004",
+    "task": "levenshtein",
+    "a": "kitten",
+    "b": "sitting",
+    "operation": "distance",
+    "parameter": null
+  }
+]

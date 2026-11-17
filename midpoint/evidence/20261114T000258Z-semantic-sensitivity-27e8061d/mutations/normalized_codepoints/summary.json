@@ -1,0 +1,3897 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 56,
+      "total": 150,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-visible-000",
+        "normalized-visible-001",
+        "normalized-visible-002",
+        "normalized-visible-003",
+        "normalized-visible-004",
+        "normalized-visible-005",
+        "normalized-visible-006",
+        "normalized-visible-007",
+        "normalized-visible-008",
+        "normalized-visible-009",
+        "normalized-visible-010",
+        "normalized-visible-011",
+        "normalized-visible-014",
+        "normalized-visible-015",
+        "normalized-visible-016",
+        "normalized-visible-017",
+        "normalized-visible-018",
+        "normalized-visible-019",
+        "normalized-visible-020",
+        "normalized-visible-021",
+        "normalized-visible-022",
+        "normalized-visible-023",
+        "normalized-visible-024",
+        "normalized-visible-025",
+        "normalized-evaluation-0000",
+        "normalized-evaluation-0001",
+        "normalized-evaluation-0002",
+        "normalized-evaluation-0003",
+        "normalized-evaluation-0004",
+        "normalized-evaluation-0005",
+        "normalized-evaluation-0006",
+        "normalized-evaluation-0007",
+        "normalized-evaluation-0008",
+        "normalized-evaluation-0009",
+        "normalized-evaluation-0014",
+        "normalized-evaluation-0015",
+        "normalized-evaluation-0016",
+        "normalized-evaluation-0017",
+        "normalized-evaluation-0018",
+        "normalized-evaluation-0019",
+        "normalized-evaluation-0020",
+        "normalized-evaluation-0021",
+        "normalized-evaluation-0022",
+        "normalized-evaluation-0023",
+        "normalized-evaluation-0031",
+        "normalized-evaluation-0037",
+        "normalized-evaluation-0048",
+        "normalized-evaluation-0056",
+        "normalized-evaluation-0057",
+        "normalized-evaluation-0059",
+        "normalized-evaluation-0089",
+        "normalized-evaluation-0092",
+        "normalized-evaluation-0094",
+        "normalized-evaluation-0103",
+        "normalized-evaluation-0109",
+        "normalized-evaluation-0120"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-visible-012",
+            "task": "normalized",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-013",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 1.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0010",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0010",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0010",
+            "status": "ok",
+            "value": 1.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0011",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0011",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0011",
+            "status": "ok",
+            "value": 0.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0012",
+            "task": "normalized",
+            "a": "a\ud83d\ude80b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0012",
+            "status": "ok",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0013",
+            "task": "normalized",
+            "a": "a\ud83d\ude80b",
+            "b": "ab",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0013",
+            "status": "ok",
+            "value": 0.6666666666666667
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0024",
+            "task": "normalized",
+            "a": "9\u4e2d \ud83d\ude80\u4e2db\u00009B\u0301\ud83d\ude80\u00e9b\u03010\u4e2d\u4e2d0 a\u0000\u0000\u03019",
+            "b": "\ud83d\ude800\u00e9A\u0000\u00e9a\u0000A\u00e9\t9\nB\t\ud83d\ude80\u00e9bB9\u4e2d\u0000\t\u0000\u4e2dBa\n b\t\u00e9aA\u00e9\u0000\nB\n\ud83d\ude8009\ud83d\ude80b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0024",
+            "status": "ok",
+            "value": 0.27083333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0024",
+            "status": "ok",
+            "value": 0.2727272727272727
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0025",
+            "task": "normalized",
+            "a": "A\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d\u0301\ud83d\ude00\ud83d\ude80\u00e9 \u0000\u0000A\t\ud83d\ude80a",
+            "b": "A\ud83d\ude80BbBB\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d\u0301\ud83d\ude00\ud83d\ude80\u00e9 \u0000\u0000A\t\ud83d\ude80a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0025",
+            "status": "ok",
+            "value": 0.0625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0025",
+            "status": "ok",
+            "value": 0.04
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0026",
+            "task": "normalized",
+            "a": "\ud83d\ude00\ud83d\ude00 \t\n \u4e2d\tb\n\u00e9\u4e2d0aBB\u4e2d",
+            "b": "\t\u4e2d\t\tA\ud83d\ude80\ud83d\ude00\ud83d\ude80\n\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0026",
+            "status": "ok",
+            "value": 0.10526315789473684
+          },
+          "actual": {
+            "id": "normalized-evaluation-0026",
+            "status": "ok",
+            "value": 0.17647058823529416
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0027",
+            "task": "normalized",
+            "a": "B\ud83d\ude00\u00e9\u0301a\u0000\u4e2db\u4e2d\u4e2da\u4e2d\tA\nB\u0000B",
+            "b": "B\ud83d\ude00\u00e9\u0301a\u0000\u4e2db\u4e2d\u4e2da\u4e2d\tA\n\ud83d\ude00\u0000B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0027",
+            "status": "ok",
+            "value": 0.1
+          },
+          "actual": {
+            "id": "normalized-evaluation-0027",
+            "status": "ok",
+            "value": 0.05555555555555555
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0028",
+            "task": "normalized",
+            "a": "\u00009b\ud83d\ude00 \ud83d\ude00\n\u0301A\ud83d\ude00\u00e9\u0301  b\u4e2da\ud83d\ude80b\ud83d\ude00\u00e9\u4e2dAAA\u00e9B9 \u0000\ud83d\ude00\ud83d\ude00b 9\u4e2d\ud83d\ude80A",
+            "b": "\ud83d\ude80\u4e2d\u00e9\u00e9\ud83d\ude00\u0301A\u00e9\u00e9\ud83d\ude80\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0028",
+            "status": "ok",
+            "value": 0.19565217391304346
+          },
+          "actual": {
+            "id": "normalized-evaluation-0028",
+            "status": "ok",
+            "value": 0.1578947368421053
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0029",
+            "task": "normalized",
+            "a": "B AB\ud83d\ude00b\tBA\t\n\u0301A\u0301\n B\u00e9\u00009\u4e2d9A\u4e2d\ud83d\ude80\ud83d\ude80\t\ud83d\ude00\n\u0301Aa\u00e9Ab\u4e2d\u0000\u0301b\ud83d\ude80b\u0301",
+            "b": "B AB\ud83d\ude00b\tBA\t\n\u0301A\u0301\n B\u00e9\u00009\u4e2d9\u00e9\u4e2d\ud83d\ude80\ud83d\ude80\t\ud83d\ude00\n\u0301Aa\u00e9Ab\u4e2d\u0000\u0301b\ud83d\ude80b\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0029",
+            "status": "ok",
+            "value": 0.02127659574468085
+          },
+          "actual": {
+            "id": "normalized-evaluation-0029",
+            "status": "ok",
+            "value": 0.023809523809523808
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0030",
+            "task": "normalized",
+            "a": "9\ud83d\ude80A0\nB0\tbb\u0000a\t\u00e9\ud83d\ude00A9\ud83d\ude000b\u4e2d\ud83d\ude80\u0000\n0\t0\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude000\u0000",
+            "b": "\u0301\u0000\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0030",
+            "status": "ok",
+            "value": 0.04225352112676062
+          },
+          "actual": {
+            "id": "normalized-evaluation-0030",
+            "status": "ok",
+            "value": 0.031746031746031744
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0032",
+            "task": "normalized",
+            "a": "0\u00000\u030190\n\u00e9\u0301 \u4e2d0",
+            "b": "A0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0032",
+            "status": "ok",
+            "value": 0.20833333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0032",
+            "status": "ok",
+            "value": 0.23809523809523814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0033",
+            "task": "normalized",
+            "a": "\u0000a \u0301a0\ud83d\ude00\u00e9\u4e2d\ud83d\ude80\tA\t\u4e2d\na aa9\u4e2d\ud83d\ude80B\n\u4e2d\u0000\nAbb99\t9\u0000\u4e2db",
+            "b": "\u0000a \u0301a0\ud83d\ude00\u00e9\u4e2d\ud83d\ude80\tA\t\u4e2d\na aa9\u4e2d\ud83d\ude80B\n\u4e2d\u0000\nAbb99 9\u0000\u4e2db",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0033",
+            "status": "ok",
+            "value": 0.025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0033",
+            "status": "ok",
+            "value": 0.02702702702702703
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0034",
+            "task": "normalized",
+            "a": "b\u4e2d\u00e9\u0301\u0000\u4e2d\u0000BA9b\tA\u0000\n\ud83d\ude000\ud83d\ude80\u4e2d\u4e2d\ud83d\ude80a0\u00e9\u0000 \u00000\ud83d\ude80A \nA\u0000\ud83d\ude000\u0301 \u0000ab\u0000aa\u0000a\ud83d\ude009\t0\u0301\u0301\ud83d\ude009a\u4e2db",
+            "b": "9\u00e9\ud83d\ude800a0\u0000b\u4e2d\u0301\u0000\u00e9\u00e99\u0000\u00e99\u0000\t\ud83d\ude809b\u4e2d \u00e9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0034",
+            "status": "ok",
+            "value": 0.1875
+          },
+          "actual": {
+            "id": "normalized-evaluation-0034",
+            "status": "ok",
+            "value": 0.17543859649122806
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0035",
+            "task": "normalized",
+            "a": "\ud83d\ude00AB90\ud83d\ude80\u4e2d9\ud83d\ude00 ",
+            "b": "\ud83d\ude00bB90\ud83d\ude80\u4e2d9\ud83d\ude00 ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0035",
+            "status": "ok",
+            "value": 0.07692307692307693
+          },
+          "actual": {
+            "id": "normalized-evaluation-0035",
+            "status": "ok",
+            "value": 0.1
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0036",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude80\u0301A0 9\ud83d\ude80\t\n\nBaBA\u0301\u4e2d\ud83d\ude00\u0301bA\u00e9\n\ud83d\ude80A\u0301b\ud83d\ude80a \n\taa9\n\u0301A\t\u03019\u00e9a\ud83d\ude0090",
+            "b": "\u0000\ud83d\ude80\u4e2d\u4e2dAba0\t\u0000\u00e99\u4e2d\u0000\ud83d\ude00\nb0\u0301bb\ud83d\ude00\n\u4e2d\u00e9\ud83d\ude80a\u0000",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0036",
+            "status": "ok",
+            "value": 0.2075471698113207
+          },
+          "actual": {
+            "id": "normalized-evaluation-0036",
+            "status": "ok",
+            "value": 0.17391304347826086
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0038",
+            "task": "normalized",
+            "a": "a\u00e9B\u00e9",
+            "b": " 0\t\u0301\t\u00e9\u0301A\t\t\u0000A9 \u0301b\u00e9\t\n\ud83d\ude00 \u0000B\ud83d\ude80a\ud83d\ude80a\n9\u0301\u4e2d\u4e2d\n\nb\ud83d\ude00AaB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0038",
+            "status": "ok",
+            "value": 0.046511627906976716
+          },
+          "actual": {
+            "id": "normalized-evaluation-0038",
+            "status": "ok",
+            "value": 0.05128205128205132
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0039",
+            "task": "normalized",
+            "a": "0\ud83d\ude00\ud83d\ude009\t\t\u4e2d\u0000\u0000a\u0301\ud83d\ude80 a\t0B09\ud83d\ude80\u00009b\u0000",
+            "b": "0\ud83d\ude00\ud83d\ude009\t\t\u4e2d\u0000\u0000a\u0301\ud83d\ude80 a\t0B09\u0000\u00009b\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0039",
+            "status": "ok",
+            "value": 0.07142857142857142
+          },
+          "actual": {
+            "id": "normalized-evaluation-0039",
+            "status": "ok",
+            "value": 0.041666666666666664
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0040",
+            "task": "normalized",
+            "a": "B\ud83d\ude00\u0000\u0301\u00e9\u0301AB9\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9\ud83d\ude00\u00000b\u4e2d\u4e2d9\nA\naAB\u4e2da \u0301A\n \u0000 \u0000a\ud83d\ude80\t\u0000\tB\u0301\u0000",
+            "b": "\u00e9\t\u4e2d\t\u4e2d0\u00e9\t\u0301\u4e2d9\t\u0301  \u00e9\ud83d\ude80\u0301A\u0301a\u00000\ud83d\ude00\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0040",
+            "status": "ok",
+            "value": 0.21052631578947367
+          },
+          "actual": {
+            "id": "normalized-evaluation-0040",
+            "status": "ok",
+            "value": 0.2222222222222222
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0041",
+            "task": "normalized",
+            "a": "\u4e2da \u00e9\ud83d\ude80B\n\ud83d\ude00\u4e2d\u0301\u00e9\u4e2d99B\u4e2d a\t9 \tb0B\u0301\u0301\t\na9\u4e2d0\u0000bbB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u03010",
+            "b": "\u4e2da \u00e9\ud83d\ude80B\n\ud83d\ude00\u4e2d\u0301\u00e9\u4e2d99B\u4e2d aB9 \tb0B\u0301\u0301\t\na9\u4e2d0\u0000bbB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u03010",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0041",
+            "status": "ok",
+            "value": 0.0196078431372549
+          },
+          "actual": {
+            "id": "normalized-evaluation-0041",
+            "status": "ok",
+            "value": 0.020833333333333332
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0042",
+            "task": "normalized",
+            "a": "\ud83d\ude000",
+            "b": "\ud83d\ude809\u00e9\ud83d\ude00\t9b\u0000\u00e9\t9\u0301\u0000\u4e2dAB9\ud83d\ude80B\ud83d\ude00a9\u0000\u0000B\ud83d\ude80\ud83d\ude00\u4e2d0a0b\nb \ud83d\ude80\tb9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\n",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0042",
+            "status": "ok",
+            "value": 0.0461538461538461
+          },
+          "actual": {
+            "id": "normalized-evaluation-0042",
+            "status": "ok",
+            "value": 0.036363636363636376
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0043",
+            "task": "normalized",
+            "a": " A\u4e2d0\ud83d\ude80\n\u4e2d90",
+            "b": " AA0\ud83d\ude80\n\u4e2d90",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0043",
+            "status": "ok",
+            "value": 0.1
+          },
+          "actual": {
+            "id": "normalized-evaluation-0043",
+            "status": "ok",
+            "value": 0.1111111111111111
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0044",
+            "task": "normalized",
+            "a": "\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b",
+            "b": "\u4e2d\n\ud83d\ude00a9\u4e2d9 \u00e9b09 \u0301\u4e2d\u4e2d \t\ud83d\ude00A\u0000A\ud83d\ude00\u00e9a\na90\n\n0 \ud83d\ude00a\u4e2d\u4e2d\u4e2d\ud83d\ude80 A\ud83d\ude80\ud83d\ude80Ab \u4e2d\u0301\taa\u4e2dA\u00e900\u4e2d9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0044",
+            "status": "ok",
+            "value": 0.16923076923076918
+          },
+          "actual": {
+            "id": "normalized-evaluation-0044",
+            "status": "ok",
+            "value": 0.18965517241379315
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0045",
+            "task": "normalized",
+            "a": "\u0301\u0301\t\n\t\u0000\u00e9\u4e2dAb\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u03010\u4e2dB\tab",
+            "b": "\u0301\u0301\t\n\t\u0000\u00e9bAb\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u03010\u4e2dB\tab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0045",
+            "status": "ok",
+            "value": 0.02
+          },
+          "actual": {
+            "id": "normalized-evaluation-0045",
+            "status": "ok",
+            "value": 0.02127659574468085
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0046",
+            "task": "normalized",
+            "a": "Aa0\ud83d\ude00bB\u00000\n\u03019\u0301\n\t\u00e9\u00e9A\u4e2d\u00e9\u00e9 B\u00e9b\n\u00e9ab AABA\u0301b\na\u4e2d\ud83d\ude80\u0301\t\ud83d\ude80\ud83d\ude00\u00e9\u0000a\ud83d\ude80\tB\u0000bAB\u0000b\u00000a\ud83d\ude80A \u00e9A",
+            "b": "\t\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0046",
+            "status": "ok",
+            "value": 0.02898550724637683
+          },
+          "actual": {
+            "id": "normalized-evaluation-0046",
+            "status": "ok",
+            "value": 0.031746031746031744
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0047",
+            "task": "normalized",
+            "a": "\ud83d\ude00bBB\u00e9\u0301\ud83d\ude80\u4e2da\u4e2d\u00009Bb\u4e2d\u0301BB0B99\u4e2dAA\u4e2d\u03010A0\u0000\ud83d\ude80bA\u0000\u0301\nB\t\u0000\u4e2d",
+            "b": "\ud83d\ude00bBB\u00e9\u4e2d\ud83d\ude80\u4e2da\u4e2d\u00009Bb\u4e2d\u0301BB0B99\u4e2dAA\u4e2d\u03010A0\u0000\ud83d\ude80bA\u0000\u0301\nB\t\u0000\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0047",
+            "status": "ok",
+            "value": 0.022727272727272728
+          },
+          "actual": {
+            "id": "normalized-evaluation-0047",
+            "status": "ok",
+            "value": 0.024390243902439025
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0049",
+            "task": "normalized",
+            "a": "\u00e9a\t\u0301\ud83d\ude00baBAa\u00e9 \u0000\u00e9\ud83d\ude80\u4e2db\t\u4e2d\u0000\u00e9\u0000\n99\u00e9\u03010\ud83d\ude80\ud83d\ude00\na0b\u0000 9\n 0\u0000\ud83d\ude00",
+            "b": "\u00e9a\t\u0301\ud83d\ude00baBAa\u00e9 \u0000\u00e9\ud83d\ude80\u4e2db\t\u4e2d\u0000\u00e9\u0000\n99\u00e9\ud83d\ude800\ud83d\ude80\ud83d\ude00\na0b\u0000 9\n 0\u0000\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0049",
+            "status": "ok",
+            "value": 0.041666666666666664
+          },
+          "actual": {
+            "id": "normalized-evaluation-0049",
+            "status": "ok",
+            "value": 0.023809523809523808
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0050",
+            "task": "normalized",
+            "a": "9\u4e2d\u0000Ba\u0000 \ud83d\ude00a\t\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\ta0 \u0301",
+            "b": "B\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0050",
+            "status": "ok",
+            "value": 0.23529411764705888
+          },
+          "actual": {
+            "id": "normalized-evaluation-0050",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0051",
+            "task": "normalized",
+            "a": "\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude00",
+            "b": "\u4e2d\t9\ud83d\ude00\t\u0301Aa9a\u03010B\nA\t\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0051",
+            "status": "ok",
+            "value": 0.05263157894736842
+          },
+          "actual": {
+            "id": "normalized-evaluation-0051",
+            "status": "ok",
+            "value": 0.058823529411764705
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0052",
+            "task": "normalized",
+            "a": "a\u4e2db A0\u00000B",
+            "b": "A\u0000\u0000\u4e2d0\t\t\n\u00e99A\u4e2d A\u03019\u00e9\tA\u03010aA9\u0301\u0000\ud83d\ude00\nA\u0000\ta",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0052",
+            "status": "ok",
+            "value": 0.1515151515151515
+          },
+          "actual": {
+            "id": "normalized-evaluation-0052",
+            "status": "ok",
+            "value": 0.15625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0053",
+            "task": "normalized",
+            "a": "\tAa\u4e2d\n0b\ud83d\ude80A \u00e9\nB\t \u4e2d\t0BA\u4e2d\ud83d\ude00\nA9 \ud83d\ude80\u0301",
+            "b": "\tAa\u4e2d\n0b\ud83d\ude80A \u00e9\nB\n \u4e2d\t0BA\u4e2d\ud83d\ude00\nA9 \ud83d\ude80\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0053",
+            "status": "ok",
+            "value": 0.03225806451612903
+          },
+          "actual": {
+            "id": "normalized-evaluation-0053",
+            "status": "ok",
+            "value": 0.03571428571428571
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0054",
+            "task": "normalized",
+            "a": "A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A",
+            "b": "\t \ud83d\ude00BB\u00e9\t\u0301\t\ud83d\ude80\u00e9\u0301\ud83d\ude80A\u0000\tA\ud83d\ude80\ud83d\ude809bbb\u0000\t\u0000b\u0000\t\ud83d\ude00\u00e9\u00e9\ta\u0301aB\u0301Ba\nA b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0054",
+            "status": "ok",
+            "value": 0.1964285714285714
+          },
+          "actual": {
+            "id": "normalized-evaluation-0054",
+            "status": "ok",
+            "value": 0.17307692307692313
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0055",
+            "task": "normalized",
+            "a": "a BA \ud83d\ude80\u0000\u0000\ta\n\u0301a ",
+            "b": "a\tBA \ud83d\ude80\u0000\u0000\ta\n\u0301a ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0055",
+            "status": "ok",
+            "value": 0.06666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0055",
+            "status": "ok",
+            "value": 0.07142857142857142
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0058",
+            "task": "normalized",
+            "a": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u03019b\u4e2d\n\t",
+            "b": " \u0000\ud83d\ude80\n\n\nB\u0301\n\u4e2dA\ud83d\ude009\ud83d\ude00\n\u4e2d9\u4e2daa\u0301A\ud83d\ude00\u4e2d\nB\u00e9\ud83d\ude80\ta\u0301aa",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0058",
+            "status": "ok",
+            "value": 0.21052631578947367
+          },
+          "actual": {
+            "id": "normalized-evaluation-0058",
+            "status": "ok",
+            "value": 0.21212121212121215
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0060",
+            "task": "normalized",
+            "a": "\u4e2db\u0301\t0 9\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2d",
+            "b": "a\n\ud83d\ude809\ud83d\ude80A\ud83d\ude80\t\tB\u00e9Ba 9b\u00e9\tB9\u0301B\u4e2dBa9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0060",
+            "status": "ok",
+            "value": 0.06896551724137934
+          },
+          "actual": {
+            "id": "normalized-evaluation-0060",
+            "status": "ok",
+            "value": 0.1785714285714286
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0061",
+            "task": "normalized",
+            "a": "\u0301B\u4e2d 0\t\u0301\ud83d\ude00\ud83d\ude80B\u0301\n\u0000\u00e9\t\u4e2d\u0301 \t\u4e2d\ud83d\ude00 9ba\u00000\t \u4e2dB\ud83d\ude000\t\u0301bbA b\tb\ud83d\ude80\t\u0000\ud83d\ude00b\u00e9",
+            "b": "\u0301B\u4e2d 0\t\u0301\ud83d\ude00\ud83d\ude80B\u0301\n\u0000\u00e9\t\u4e2d\u0301a\t\u4e2d\ud83d\ude00 9ba\u00000\t \u4e2dB\ud83d\ude000\t\u0301bbA b\tb\ud83d\ude80\t\u0000\ud83d\ude00b\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0061",
+            "status": "ok",
+            "value": 0.018518518518518517
+          },
+          "actual": {
+            "id": "normalized-evaluation-0061",
+            "status": "ok",
+            "value": 0.020833333333333332
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0062",
+            "task": "normalized",
+            "a": " \u4e2da\u4e2d9b0\ud83d\ude80a\ud83d\ude00A\u0301B99bb \ud83d\ude000A\u0301 B\t\nBA9\u00e9A09\t",
+            "b": "\ud83d\ude00A\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0062",
+            "status": "ok",
+            "value": 0.10810810810810811
+          },
+          "actual": {
+            "id": "normalized-evaluation-0062",
+            "status": "ok",
+            "value": 0.05882352941176472
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0063",
+            "task": "normalized",
+            "a": "\u0301Aa0b\u00e9\ud83d\ude000 0\u00e9\ud83d\ude80\ud83d\ude80A\u00e9 \u0000\u4e2da\ud83d\ude80\ud83d\ude809\nb 9\ud83d\ude80a0\ud83d\ude800b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A",
+            "b": "\u0301Aa0b\u00e9\ud83d\ude000 0\u00e9\ud83d\ude80\ud83d\ude80A\u00e9 \n\u4e2da\ud83d\ude80\ud83d\ude809\nb 9\ud83d\ude80a0\ud83d\ude800b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0063",
+            "status": "ok",
+            "value": 0.016129032258064516
+          },
+          "actual": {
+            "id": "normalized-evaluation-0063",
+            "status": "ok",
+            "value": 0.018867924528301886
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0064",
+            "task": "normalized",
+            "a": "B\u0000B\ud83d\ude80a\u00e9\u00e9b9\u4e2d\u00e9\u4e2d\ud83d\ude800b\u0301\u00e9\u00e9AA\u4e2d\u0000\ud83d\ude80\u0301\u00e9A\t\u0000\u00e9\nA \ud83d\ude80B\ud83d\ude80\ud83d\ude00a\t  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dB",
+            "b": "\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0064",
+            "status": "ok",
+            "value": 0.15517241379310343
+          },
+          "actual": {
+            "id": "normalized-evaluation-0064",
+            "status": "ok",
+            "value": 0.11764705882352944
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0065",
+            "task": "normalized",
+            "a": "\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\t\u0000Aa\u00e9\ud83d\ude80b\t\t\ud83d\ude80B9a",
+            "b": "\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80\ta\t\u0000Aa\u00e9\ud83d\ude80b\t\t\ud83d\ude80B9a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0065",
+            "status": "ok",
+            "value": 0.02702702702702703
+          },
+          "actual": {
+            "id": "normalized-evaluation-0065",
+            "status": "ok",
+            "value": 0.03225806451612903
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0066",
+            "task": "normalized",
+            "a": "0\ud83d\ude80\u4e2d\ud83d\ude80bB",
+            "b": "\u4e2d\u4e2dA0\u00e9\ud83d\ude80\ud83d\ude00 aba\n\u0301A\ud83d\ude80\nB\u4e2d\u0301 b  \u00e9\n\u00e9b\t9\n\u00e9\ud83d\ude00a B\u00e9b\n  \u00e9B\u4e2d\ud83d\ude00\u0301\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0066",
+            "status": "ok",
+            "value": 0.13725490196078427
+          },
+          "actual": {
+            "id": "normalized-evaluation-0066",
+            "status": "ok",
+            "value": 0.10869565217391308
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0067",
+            "task": "normalized",
+            "a": "A\ud83d\ude00bA\n\u0000\u0000AB\ud83d\ude00B\u00e9\n\u0000\u00e9\u0000\ud83d\ude80A\u4e2db9b\n\ud83d\ude80ba\ud83d\ude80\n\u03019\n\u4e2d\u0000\t\t\ud83d\ude80\u00e99a\n\ud83d\ude80\ud83d\ude00A\t\u4e2d\t\t\u4e2d\n 9\u0301\n9\u4e2d\u4e2d\u00e9",
+            "b": "A\ud83d\ude00bA\n\u0000\u0000AB\ud83d\ude00B\u0000\n\u0000\u00e9\u0000\ud83d\ude80A\u4e2db9b\n\ud83d\ude80ba\ud83d\ude80\n\u03019\n\u4e2d\u0000\t\t\ud83d\ude80\u00e99a\n\ud83d\ude80\ud83d\ude00A\t\u4e2d\t\t\u4e2d\n 9\u0301\n9\u4e2d\u4e2d\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0067",
+            "status": "ok",
+            "value": 0.015384615384615385
+          },
+          "actual": {
+            "id": "normalized-evaluation-0067",
+            "status": "ok",
+            "value": 0.017543859649122806
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0068",
+            "task": "normalized",
+            "a": "9\na0\u00e9bB00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n0A0A\t\taa",
+            "b": "\u0000BB\ud83d\ude80\ud83d\ude00bbB \ud83d\ude00\u4e2d\ud83d\ude00\ud83d\ude00Ba\ud83d\ude80\u00e9 b\ud83d\ude00  BaAB\n\u0301\u00000\ud83d\ude80\u0301\ud83d\ude80 0\u0301\u0000\t\u00e9b9a\u00e99\u0000a\u00e99b\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0068",
+            "status": "ok",
+            "value": 0.22033898305084743
+          },
+          "actual": {
+            "id": "normalized-evaluation-0068",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0069",
+            "task": "normalized",
+            "a": "BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb\n9a\nAA\t\ud83d\ude00\ud83d\ude00\ud83d\ude80\u4e2d\u0301\ud83d\ude80\ud83d\ude80\tb\ud83d\ude00\n\ud83d\ude80",
+            "b": "BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000A\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb\n9a\nAA\t\ud83d\ude00\ud83d\ude00\ud83d\ude80\u4e2d\u0301\ud83d\ude80\ud83d\ude80\tb\ud83d\ude00\n\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0069",
+            "status": "ok",
+            "value": 0.015625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0069",
+            "status": "ok",
+            "value": 0.01818181818181818
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0070",
+            "task": "normalized",
+            "a": "\u4e2db\t\ud83d\ude80\ud83d\ude009B0\u0000\u0000\u0000\u0000\ud83d\ude00A\u4e2dbAbB9\u4e2da\t90a\n\nbA b\u00009 A 9\u03019B\ud83d\ude800\ud83d\ude00\ud83d\ude00A\ud83d\ude00B\ud83d\ude00\ud83d\ude80 \u0000",
+            "b": "B\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da B\tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80\t \u4e2db\u4e2d\t0 \u0301009\n\n9\u00e90AA\u0301\u00e9a\u4e2d0\u00e9\n\ud83d\ude00BAA\u0301a",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0070",
+            "status": "ok",
+            "value": 0.11475409836065575
+          },
+          "actual": {
+            "id": "normalized-evaluation-0070",
+            "status": "ok",
+            "value": 0.1578947368421053
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0071",
+            "task": "normalized",
+            "a": "9\ud83d\ude80B\u0000b\ud83d\ude00a \tb\tb\u4e2dAA9\n\t9\u03010\u0000\u0301\u0301\u0000\u0000\u0000\ud83d\ude00  \ud83d\ude80B\u00e9\u0000\u00e9\ud83d\ude80",
+            "b": "9\ud83d\ude80B\u0000b\ud83d\ude00a \tb\tb\u4e2dAA9\na9\u03010\u0000\u0301\u0301\u0000\u0000\u0000\ud83d\ude00  \ud83d\ude80B\u00e9\u0000\u00e9\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0071",
+            "status": "ok",
+            "value": 0.024390243902439025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0071",
+            "status": "ok",
+            "value": 0.027777777777777776
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0072",
+            "task": "normalized",
+            "a": "A\u0000\n9\ud83d\ude80aa",
+            "b": "\n\u00e99A\u00e90\ud83d\ude00\u4e2d\ud83d\ude80b\ud83d\ude00b\ud83d\ude00B\ud83d\ude809\u0301B\ud83d\ude809\u0301\u00e9\u4e2d\ud83d\ude80a\u4e2dB9\u0000\u0000\u00e9\t\ud83d\ude80\ud83d\ude80\u00e9\t0 \u0000 0AABb\ud83d\ude80\u00e9\u4e2dB\u0000\ud83d\ude00A\u00e9\ud83d\ude00\ud83d\ude80\na\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0072",
+            "status": "ok",
+            "value": 0.08450704225352113
+          },
+          "actual": {
+            "id": "normalized-evaluation-0072",
+            "status": "ok",
+            "value": 0.08620689655172409
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0073",
+            "task": "normalized",
+            "a": "9\u4e2dbb\u0000\u0000\ud83d\ude000\ud83d\ude80\u4e2d\tB0\u0000\u0301 A\u0301\n9\ud83d\ude000B\u00e9 \u4e2da\n\ud83d\ude80\t 9\ud83d\ude00b9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\u00e9\ud83d\ude80 B\u00e9 \n\ud83d\ude80A\ud83d\ude00\n90B",
+            "b": "9\u4e2dbb\u0000\u0000\ud83d\ude000\ud83d\ude80\u4e2d\tB0\u0000\u0301 A\u0301\n9\ud83d\ude000B\u00e9 \u4e2da\n\ud83d\ude80\t 9\ud83d\ude00b9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\n\ud83d\ude80 B\u00e9 \n\ud83d\ude80A\ud83d\ude00\n90B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0073",
+            "status": "ok",
+            "value": 0.0136986301369863
+          },
+          "actual": {
+            "id": "normalized-evaluation-0073",
+            "status": "ok",
+            "value": 0.015625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0074",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude00Ba\ud83d\ude00\ud83d\ude00\u00e9\u0301 \u00e9\u0000B\ud83d\ude00\u0301b\u4e2daB0\ud83d\ude000",
+            "b": "\u03019bbB9\n00b\t\u00e9 \t\u4e2dB9\ud83d\ude00\u4e2daA\u4e2d\u4e2dB\ud83d\ude00\ud83d\ude00\ud83d\ude000\n0b\tBbA\n\u0301aA",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0074",
+            "status": "ok",
+            "value": 0.2325581395348837
+          },
+          "actual": {
+            "id": "normalized-evaluation-0074",
+            "status": "ok",
+            "value": 0.20512820512820518
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0075",
+            "task": "normalized",
+            "a": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b9 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "b": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b\u0000 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0075",
+            "status": "ok",
+            "value": 0.02040816326530612
+          },
+          "actual": {
+            "id": "normalized-evaluation-0075",
+            "status": "ok",
+            "value": 0.021739130434782608
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0076",
+            "task": "normalized",
+            "a": "0ab\n 0A\u4e2d\u00e9 A9a\ud83d\ude00\u00e9A\u0000\u0000\u0301 \n\ud83d\ude00 \u4e2d\u00e9b\u00e9b\u03010\ud83d\ude00\u4e2d\u0000\u0301\nb\ud83d\ude00\ud83d\ude80\ud83d\ude80\ud83d\ude00",
+            "b": "\u030100\nBa\n \ud83d\ude80b0A9\ud83d\ude80B",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0076",
+            "status": "ok",
+            "value": 0.17021276595744683
+          },
+          "actual": {
+            "id": "normalized-evaluation-0076",
+            "status": "ok",
+            "value": 0.17500000000000004
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0077",
+            "task": "normalized",
+            "a": "\u4e2db0\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "b": "\u4e2d\u00e90\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0077",
+            "status": "ok",
+            "value": 0.030303030303030304
+          },
+          "actual": {
+            "id": "normalized-evaluation-0077",
+            "status": "ok",
+            "value": 0.03333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0078",
+            "task": "normalized",
+            "a": " \u4e2dBb\ud83d\ude80ABb\u0000",
+            "b": "AA",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0078",
+            "status": "ok",
+            "value": 0.09999999999999998
+          },
+          "actual": {
+            "id": "normalized-evaluation-0078",
+            "status": "ok",
+            "value": 0.11111111111111116
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0079",
+            "task": "normalized",
+            "a": "\u0301A9\u0301\n\tAB0AA\u4e2d0\ta  \u0000\nbab\u0000 \ud83d\ude00\ud83d\ude00\ud83d\ude00\u00e9\n0\u0000\ud83d\ude00\ud83d\ude80\u0000\u0000\u4e2d\nbb0\ud83d\ude00\u4e2d\u4e2d\tAa\n\u00000A\nAa9\ud83d\ude80 Bbb",
+            "b": "\u0301A9\u0301\n\tAB0AA\u4e2d0\ta  \u0000\nbab\u0000 \ud83d\ude00\ud83d\ude00\ud83d\ude00\u00e9\n0\u0000B\ud83d\ude80\u0000\u0000\u4e2d\nbb0\ud83d\ude00\u4e2d\u4e2d\tAa\n\u00000A\nAa9\ud83d\ude80 Bbb",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0079",
+            "status": "ok",
+            "value": 0.030303030303030304
+          },
+          "actual": {
+            "id": "normalized-evaluation-0079",
+            "status": "ok",
+            "value": 0.01694915254237288
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0080",
+            "task": "normalized",
+            "a": "9\ud83d\ude00\u00e9\u03019\nA\t\u0000\t9A",
+            "b": "a b\u00000\u0301\u00e9\u0301a\t\u4e2d\ud83d\ude80\u00e9b \t\n\u4e2db0\u0301\u4e2d\n \t\t\ud83d\ude00A\tBb\ud83d\ude00\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0080",
+            "status": "ok",
+            "value": 0.1428571428571429
+          },
+          "actual": {
+            "id": "normalized-evaluation-0080",
+            "status": "ok",
+            "value": 0.14814814814814814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0081",
+            "task": "normalized",
+            "a": "bA9a0b9Ba\u0000b\u4e2d0BA\ud83d\ude00A\ud83d\ude80\u0000b99aAb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d 0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d",
+            "b": "bA9a0b9Ba\u0000b\u4e2d0BA\ud83d\ude00A\ud83d\ude80\u0000b99aBb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d 0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0081",
+            "status": "ok",
+            "value": 0.014285714285714285
+          },
+          "actual": {
+            "id": "normalized-evaluation-0081",
+            "status": "ok",
+            "value": 0.016129032258064516
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0082",
+            "task": "normalized",
+            "a": "0\u00e99\u00e9a\ud83d\ude00\t00B\ud83d\ude00\u0301\u0301\u00e9\u0301\u0301A\u00e99\ud83d\ude00\t\n9\u4e2d",
+            "b": "A\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0000\u00e9\u4e2d\u0000\u0301\n \ud83d\ude00\u00e9\ud83d\ude80\u4e2d\u0301Aa\nA\n\u00009\u0000aA\ud83d\ude00\u4e2d\n0\ud83d\ude80B\u00e9\u00e9\nB\ud83d\ude80a ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0082",
+            "status": "ok",
+            "value": 0.2264150943396226
+          },
+          "actual": {
+            "id": "normalized-evaluation-0082",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0083",
+            "task": "normalized",
+            "a": "9a\u4e2d\u00e9a \tB\u4e2d\n B\u0301\u4e2d\n\nb\ud83d\ude80\t\u0301\ud83d\ude000B\ud83d\ude00A 90 \ud83d\ude00\u00e9\ud83d\ude809\u4e2da0B9\ud83d\ude00 \u4e2d\ud83d\ude80\ud83d\ude00Ab\n\u0000\u03019",
+            "b": "9a\u4e2d\u00e9a \tB\u4e2d\n B\u0301\u4e2d\n\nb\ud83d\ude80\t\u0301\ud83d\ude000B\ud83d\ude00A 90 \ud83d\ude00\u00e9\ud83d\ude809\u4e2da0B9\ud83d\ude00 \u4e2d\ud83d\ude80\ud83d\ude00Ab\n\u0000\u0301A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0083",
+            "status": "ok",
+            "value": 0.017543859649122806
+          },
+          "actual": {
+            "id": "normalized-evaluation-0083",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0084",
+            "task": "normalized",
+            "a": "\ud83d\ude00BBb\u00e9\ud83d\ude80a\u0000\ud83d\ude00\ta\ud83d\ude00\ud83d\ude80\u00e9B\tAa 0ba \u0301\u0301BB\ud83d\ude00Ba\n\n\n0 A\ud83d\ude80 a\u0000\u4e2d\u4e2d\u0301a\ud83d\ude000A",
+            "b": "B\u0000\u4e2d99\ud83d\ude009\ud83d\ude80\u00000\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301b\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t9\u0000bA\u00e9\n",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0084",
+            "status": "ok",
+            "value": 0.12727272727272732
+          },
+          "actual": {
+            "id": "normalized-evaluation-0084",
+            "status": "ok",
+            "value": 0.14
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0085",
+            "task": "normalized",
+            "a": "b\ud83d\ude00\u0000\n\u4e2d\u0301",
+            "b": "b\ud83d\ude00\u0000A\u4e2d\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0085",
+            "status": "ok",
+            "value": 0.14285714285714285
+          },
+          "actual": {
+            "id": "normalized-evaluation-0085",
+            "status": "ok",
+            "value": 0.16666666666666666
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0086",
+            "task": "normalized",
+            "a": "A\u0301\t\u0000AB\n \ud83d\ude8000\n9\t\u0000\ud83d\ude00\ta9\u0000\tAB\ud83d\ude80\tA\ud83d\ude80\u4e2dBb\u0000bB",
+            "b": "b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0086",
+            "status": "ok",
+            "value": 0.20833333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0086",
+            "status": "ok",
+            "value": 0.17948717948717952
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0087",
+            "task": "normalized",
+            "a": "\ud83d\ude00 \n\u00e9bb\ud83d\ude80a\ud83d\ude009\u00e9\t\na\u000009A\n\u0000\ud83d\ude00A\t\t\u00e9\u00e99aBbBa\u00e9\u0301\u0301 09\tb\n\ud83d\ude00\u0301a\t 00\u4e2dA\u4e2d\u0000B \tbb\ud83d\ude80",
+            "b": "\ud83d\ude00 \n\u00e9bb\ud83d\ude80a\ud83d\ude009\u00e9\t\na\u000009A\n\u0000\ud83d\ude00A\t\t\u00e9\u00e99aBbBa\u00e9\u0301\u0301 09\tb\n\ud83d\ude00\u0301a\t 00\u4e2dA\u4e2d\tB \tbb\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0087",
+            "status": "ok",
+            "value": 0.015625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0087",
+            "status": "ok",
+            "value": 0.017241379310344827
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0088",
+            "task": "normalized",
+            "a": "\n\u0000bB\u00000\u4e2daB \nb\u00e9A\u4e2dB0b\u4e2dA\t\u0301\u00e9\u0301Ab\u0301\t\u03010\u0301\ud83d\ude00",
+            "b": "\t\u4e2d\u00e9a0\ud83d\ude00\t0\ud83d\ude00aB \ud83d\ude80\u00e9aaba\tB0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0088",
+            "status": "ok",
+            "value": 0.2727272727272727
+          },
+          "actual": {
+            "id": "normalized-evaluation-0088",
+            "status": "ok",
+            "value": 0.2564102564102564
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0090",
+            "task": "normalized",
+            "a": "\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude000A\t\ud83d\ude00a0b\na b\ud83d\ude80\u0000A",
+            "b": "\u0000 a\ud83d\ude00b\na\t\u00e9\ud83d\ude00\t9\tA\u00e9a\t\u00e9\u00e9\u00e90\u0301B\ud83d\ude00b \t\u0000\u4e2dB0A\t\ud83d\ude00a\u03010\ud83d\ude00\u0000BB\u4e2d\u0000B\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0090",
+            "status": "ok",
+            "value": 0.1923076923076923
+          },
+          "actual": {
+            "id": "normalized-evaluation-0090",
+            "status": "ok",
+            "value": 0.17391304347826086
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0091",
+            "task": "normalized",
+            "a": "9b\u0301\ud83d\ude00 \u00e9",
+            "b": "9b\u0301a \u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0091",
+            "status": "ok",
+            "value": 0.2857142857142857
+          },
+          "actual": {
+            "id": "normalized-evaluation-0091",
+            "status": "ok",
+            "value": 0.16666666666666666
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0093",
+            "task": "normalized",
+            "a": "B\u0301\u0301\u0301\ud83d\ude00\u4e2d\u0000\u4e2d0\ud83d\ude80\ud83d\ude80\u00e9A\u00e9A\u0000\u00000\ud83d\ude80",
+            "b": "B\u0301\u0301\u0301\ud83d\ude00\u4e2d\u0000\u4e2d0\ud83d\ude80\ud83d\ude80\u00e9A\u00e9A\u000090\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0093",
+            "status": "ok",
+            "value": 0.043478260869565216
+          },
+          "actual": {
+            "id": "normalized-evaluation-0093",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0095",
+            "task": "normalized",
+            "a": "\u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80A9  BA0A\u00e9\ud83d\ude00a\u00e9AA9A",
+            "b": "\u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80A9  BA0A \ud83d\ude00a\u00e9AA9A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0095",
+            "status": "ok",
+            "value": 0.019230769230769232
+          },
+          "actual": {
+            "id": "normalized-evaluation-0095",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0096",
+            "task": "normalized",
+            "a": "\nB B\u0000\ud83d\ude00 \u00e9\nA \t\t\u0301bAb\t\ud83d\ude000\u0000\nbb \u00e9b\u0301 A9b9\t\u0301\u0000b0",
+            "b": "a\ud83d\ude00B\u0301bB  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a  0\ud83d\ude00\u00e9\t\u0000\t\u00e9\u00e9\u0301a\ud83d\ude00\ud83d\ude00\ud83d\ude80\u0000 B",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0096",
+            "status": "ok",
+            "value": 0.24489795918367352
+          },
+          "actual": {
+            "id": "normalized-evaluation-0096",
+            "status": "ok",
+            "value": 0.19047619047619047
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0097",
+            "task": "normalized",
+            "a": "A\u00e9Aa\ud83d\ude000\u0000\u0301\t0\t\u4e2da\u0000\u4e2d9\u4e2d\u0301B\u00e9 0ABB\t\ud83d\ude80\t\t\tbA\ud83d\ude80ab\ud83d\ude00BB\u0301ab\ud83d\ude00\u00e9b\tB\u00e9B\ud83d\ude80\ud83d\ude80\ud83d\ude80 \ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b  ",
+            "b": "A\u00e9Aa\ud83d\ude000\u0000\u0301\t0\t\u4e2da\u0000\u4e2d9\u4e2d\u0301B\u00e9 0ABB\t\ud83d\ude80\t\t\tbA\ud83d\ude80ab\ud83d\ude00BB\u0301ab\ud83d\ude00\u00e9b\tB\u00e9B\ud83d\ude800\ud83d\ude80 \ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b  ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0097",
+            "status": "ok",
+            "value": 0.02666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0097",
+            "status": "ok",
+            "value": 0.015625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0098",
+            "task": "normalized",
+            "a": "a\n\n\t\u4e2d9A",
+            "b": "B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a\u00e9\ud83d\ude809\u00e9\ud83d\ude80\u0000\u00e99\t0\n\u0000\u0000",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0098",
+            "status": "ok",
+            "value": 0.061224489795918324
+          },
+          "actual": {
+            "id": "normalized-evaluation-0098",
+            "status": "ok",
+            "value": 0.0714285714285714
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0099",
+            "task": "normalized",
+            "a": "\u0301\u0301\n0\ud83d\ude80\u00e9\u4e2d\u00e9A ab B",
+            "b": "\u0301\u0301\n0\ud83d\ude80\u0000\u4e2d\u00e9A ab B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0099",
+            "status": "ok",
+            "value": 0.06666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0099",
+            "status": "ok",
+            "value": 0.07142857142857142
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0100",
+            "task": "normalized",
+            "a": "aBAB\ud83d\ude809B\u00e9\u00e9\u00e9\ud83d\ude80A\t\u00e9a\ud83d\ude80 \u0301A9\ud83d\ude80\u0301\n\u0301 \ud83d\ude00\u4e2d\u0000\u0301",
+            "b": "\t\t\u00e9\u0301\u0301\u0000\n\ud83d\ude80\u0301\t a\tb\u4e2d0a\nA B\ud83d\ude80A\u0000\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0100",
+            "status": "ok",
+            "value": 0.17647058823529416
+          },
+          "actual": {
+            "id": "normalized-evaluation-0100",
+            "status": "ok",
+            "value": 0.1724137931034483
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0101",
+            "task": "normalized",
+            "a": "\u0000A\t\ud83d\ude80\u03010\nB\u00e9B\u4e2d \ud83d\ude809 \u0000B\ud83d\ude80a",
+            "b": "\u00009\t\ud83d\ude80\u03010\nB\u00e9B\u4e2d \ud83d\ude809 \u0000B\ud83d\ude80a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0101",
+            "status": "ok",
+            "value": 0.045454545454545456
+          },
+          "actual": {
+            "id": "normalized-evaluation-0101",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0102",
+            "task": "normalized",
+            "a": "9\u00e99\u4e2da99B\u4e2d0b\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "b": "AB00\u00e90b \u00e9\ud83d\ude00A\u00e9aaa 9A",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0102",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-evaluation-0102",
+            "status": "ok",
+            "value": 0.2075471698113207
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0104",
+            "task": "normalized",
+            "a": "\ud83d\ude809\n\t\ud83d\ude00\u0000\n\ud83d\ude80\t\ud83d\ude80b \u4e2daA\ud83d\ude80B A\u00e90\u0000\t\u0000\tAbbB\u00e9\u4e2d90BAB\ud83d\ude00\u00e9Bb\ud83d\ude00\n",
+            "b": "BA\u0301 \t\ud83d\ude80 A\t \u0000A\u4e2d\u0301\n\u4e2d\u0000AbAaA\u00e9\n\u00e9\u03019A\n\u00e9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0104",
+            "status": "ok",
+            "value": 0.22448979591836737
+          },
+          "actual": {
+            "id": "normalized-evaluation-0104",
+            "status": "ok",
+            "value": 0.23809523809523814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0105",
+            "task": "normalized",
+            "a": "b\ud83d\ude80Bb0A\ud83d\ude00\u0000\t9A\t a\u00000 \u0301A",
+            "b": "0\ud83d\ude80Bb0A\ud83d\ude00\u0000\t9A\t a\u00000 \u0301A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0105",
+            "status": "ok",
+            "value": 0.047619047619047616
+          },
+          "actual": {
+            "id": "normalized-evaluation-0105",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0106",
+            "task": "normalized",
+            "a": "9\ud83d\ude00a\u4e2d\u00e9B  A",
+            "b": "\tAA9\n\t \nbB\u00e9A\n  \n\t\u0000\u00009\u0000\u00e9\u0000\ud83d\ude00\nBb\ud83d\ude00\u4e2d b\n B\ud83d\ude00\t 0\u00e9 \u4e2d\u00e9\n0B\ud83d\ude809\u4e2d\u0301099",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0106",
+            "status": "ok",
+            "value": 0.125
+          },
+          "actual": {
+            "id": "normalized-evaluation-0106",
+            "status": "ok",
+            "value": 0.11538461538461542
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0107",
+            "task": "normalized",
+            "a": "\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000aA ",
+            "b": "\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d\u00e9\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000aA ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0107",
+            "status": "ok",
+            "value": 0.020833333333333332
+          },
+          "actual": {
+            "id": "normalized-evaluation-0107",
+            "status": "ok",
+            "value": 0.022727272727272728
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0108",
+            "task": "normalized",
+            "a": " \tB9 99\u4e2d\t\ud83d\ude00a0bb\u0000\ud83d\ude80A\u0000\ud83d\ude80ABB\n\u0301\u0000  A\u0000\u0000BAb\u0000\u00e9\u00e9 \ud83d\ude80\ud83d\ude00",
+            "b": " \ud83d\ude000\nb9\u4e2d\u00e9a\t\tB\n\u00e90\ud83d\ude00AaA\u0301\ud83d\ude00\n\u00e9\u00e90b\u0301B\ud83d\ude00A\ud83d\ude000\u4e2d\u030109\u0000BB\ud83d\ude000 BBBaA\u0000\nA\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0108",
+            "status": "ok",
+            "value": 0.19298245614035092
+          },
+          "actual": {
+            "id": "normalized-evaluation-0108",
+            "status": "ok",
+            "value": 0.17647058823529416
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0110",
+            "task": "normalized",
+            "a": "\u0000\ud83d\ude00A\u0301b\u0301 \u00e9ba\u0301\u0301\ud83d\ude00\u4e2d\ud83d\ude00\u00e99aa\t\u00e9\ud83d\ude00a9A\nA\u4e2dBa\nB0\ud83d\ude00B0b\u0000\t\u4e2d 90\u00e9\u0301\ud83d\ude000\ud83d\ude00\u00e99a\u00e9\u4e2d0\ud83d\ude80\ud83d\ude00",
+            "b": "0\ud83d\ude00b\n\u0000A\ud83d\ude800\t9\u0000\u03010\n\u4e2dA\tA\u0301a\ud83d\ude00\ud83d\ude009\u0000 \u4e2d ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0110",
+            "status": "ok",
+            "value": 0.2153846153846154
+          },
+          "actual": {
+            "id": "normalized-evaluation-0110",
+            "status": "ok",
+            "value": 0.1785714285714286
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0111",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude8090aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a   b  \n\u0000\u4e2d\ud83d\ude80\n\u00e9\t\n\ud83d\ude00\u4e2dB",
+            "b": "\ud83d\ude80\ud83d\ude8090aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a   b  \n\u0000\u4e2d\ud83d\ude80\n\u00e9\t\n\n\u4e2dB",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0111",
+            "status": "ok",
+            "value": 0.029411764705882353
+          },
+          "actual": {
+            "id": "normalized-evaluation-0111",
+            "status": "ok",
+            "value": 0.01639344262295082
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0112",
+            "task": "normalized",
+            "a": "\ud83d\ude00\u4e2d\nba9 \na0\t\n\u00e9\nbb \ud83d\ude00\tB\u00e9\ud83d\ude809a\u0301\ud83d\ude800\u00e90\u0000 BaBbBBB\u0301\u030190B",
+            "b": "B9A\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0112",
+            "status": "ok",
+            "value": 0.04255319148936165
+          },
+          "actual": {
+            "id": "normalized-evaluation-0112",
+            "status": "ok",
+            "value": 0.046511627906976716
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0113",
+            "task": "normalized",
+            "a": "\u4e2daAB\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBaA\t\ud83d\ude00\u0000\n \u00e9b",
+            "b": "\u4e2daAB\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u00e9BaA\t\ud83d\ude00\u0000\n \u00e9b",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0113",
+            "status": "ok",
+            "value": 0.02040816326530612
+          },
+          "actual": {
+            "id": "normalized-evaluation-0113",
+            "status": "ok",
+            "value": 0.022222222222222223
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0114",
+            "task": "normalized",
+            "a": "a09B \u4e2d\t\t\ud83d\ude80\u0000\u0000b\ud83d\ude80\u4e2d",
+            "b": "\n9B0B\u0000\n\ud83d\ude00A\n\u0301bBb \ud83d\ude8090\n \t\u0000\u4e2d\ud83d\ude00\ud83d\ude80B9\n\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0114",
+            "status": "ok",
+            "value": 0.17647058823529416
+          },
+          "actual": {
+            "id": "normalized-evaluation-0114",
+            "status": "ok",
+            "value": 0.1724137931034483
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0115",
+            "task": "normalized",
+            "a": "\u0301b\u00e9b\u0000A\u0301\ud83d\ude00\u0000a0\ud83d\ude809a9\u0301b\u00e9\u0301\n\ud83d\ude00Aa\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BB\u00e9b\u03010",
+            "b": "\u0301b\u00e9b\u0000A\u0301\ud83d\ude00\u0000a0\ud83d\ude809a9\u0301b\u00e9\u0301\n\ud83d\ude00Aa\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BA\u00e9b\u03010",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0115",
+            "status": "ok",
+            "value": 0.018518518518518517
+          },
+          "actual": {
+            "id": "normalized-evaluation-0115",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0116",
+            "task": "normalized",
+            "a": "9\u00e9A\ud83d\ude00BAb\n \ud83d\ude8099\t9\ud83d\ude80\u0301\u0000a\u0000a\u0301\u00e99\u0000\u0301\u4e2d\t0B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t\u0000\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 ",
+            "b": "0\ud83d\ude00\n\u0301\ud83d\ude00Ab\ud83d\ude809\u0301\u0000\u00009\u4e2d\n\u0000BBB\u00e9\u0000\n9\n\tBAB\n\u0301A9A a\ud83d\ude809B0a\u0301 \u0301\u4e2d99",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0116",
+            "status": "ok",
+            "value": 0.21739130434782605
+          },
+          "actual": {
+            "id": "normalized-evaluation-0116",
+            "status": "ok",
+            "value": 0.22580645161290325
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0117",
+            "task": "normalized",
+            "a": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "b": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A\t9\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0117",
+            "status": "ok",
+            "value": 0.02
+          },
+          "actual": {
+            "id": "normalized-evaluation-0117",
+            "status": "ok",
+            "value": 0.021739130434782608
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0118",
+            "task": "normalized",
+            "a": "bB\u0301\u00e9",
+            "b": "\u00e9\t\ud83d\ude00b\u0301\t\u00e9a\ud83d\ude80\ud83d\ude00\u03010 B\u03010\nA\u03010",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0118",
+            "status": "ok",
+            "value": 0.13043478260869568
+          },
+          "actual": {
+            "id": "normalized-evaluation-0118",
+            "status": "ok",
+            "value": 0.15000000000000002
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0119",
+            "task": "normalized",
+            "a": "\ud83d\ude009\ud83d\ude00\tb\u0000 \ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80",
+            "b": "\ud83d\ude009\ud83d\ude00\tb\u0000 \ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00B\u00e99\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0119",
+            "status": "ok",
+            "value": 0.018867924528301886
+          },
+          "actual": {
+            "id": "normalized-evaluation-0119",
+            "status": "ok",
+            "value": 0.023255813953488372
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0121",
+            "task": "normalized",
+            "a": "\n9B\n\n0\u00e99\ud83d\ude80\t\n \tA\n\u0000\n00\t\n\ud83d\ude80\u4e2da\n\ud83d\ude00a\t\t\u0000 AA\u4e2da\u000000",
+            "b": "\n9BB\n0\u00e99\ud83d\ude80\t\n \tA\n\u0000\n00\t\n\ud83d\ude80\u4e2da\n\ud83d\ude00a\t\t\u0000 AA\u4e2da\u000000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0121",
+            "status": "ok",
+            "value": 0.024390243902439025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0121",
+            "status": "ok",
+            "value": 0.02631578947368421
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0122",
+            "task": "normalized",
+            "a": "\u00e9bb\u4e2d\u4e2d\nb\ud83d\ude80\ud83d\ude80\ud83d\ude00\ud83d\ude80AaB\u0000b\u00e9B99BB",
+            "b": "\ud83d\ude00\n\u00009\u4e2d ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0122",
+            "status": "ok",
+            "value": 0.15384615384615385
+          },
+          "actual": {
+            "id": "normalized-evaluation-0122",
+            "status": "ok",
+            "value": 0.13636363636363635
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0123",
+            "task": "normalized",
+            "a": "\nab \u000099\ud83d\ude00\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "b": "\nab \u0000999\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0123",
+            "status": "ok",
+            "value": 0.07692307692307693
+          },
+          "actual": {
+            "id": "normalized-evaluation-0123",
+            "status": "ok",
+            "value": 0.041666666666666664
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 56,
+      "total": 150,
+      "status": "completed",
+      "passed_ids": [
+        "normalized-visible-000",
+        "normalized-visible-001",
+        "normalized-visible-002",
+        "normalized-visible-003",
+        "normalized-visible-004",
+        "normalized-visible-005",
+        "normalized-visible-006",
+        "normalized-visible-007",
+        "normalized-visible-008",
+        "normalized-visible-009",
+        "normalized-visible-010",
+        "normalized-visible-011",
+        "normalized-visible-014",
+        "normalized-visible-015",
+        "normalized-visible-016",
+        "normalized-visible-017",
+        "normalized-visible-018",
+        "normalized-visible-019",
+        "normalized-visible-020",
+        "normalized-visible-021",
+        "normalized-visible-022",
+        "normalized-visible-023",
+        "normalized-visible-024",
+        "normalized-visible-025",
+        "normalized-evaluation-0000",
+        "normalized-evaluation-0001",
+        "normalized-evaluation-0002",
+        "normalized-evaluation-0003",
+        "normalized-evaluation-0004",
+        "normalized-evaluation-0005",
+        "normalized-evaluation-0006",
+        "normalized-evaluation-0007",
+        "normalized-evaluation-0008",
+        "normalized-evaluation-0009",
+        "normalized-evaluation-0014",
+        "normalized-evaluation-0015",
+        "normalized-evaluation-0016",
+        "normalized-evaluation-0017",
+        "normalized-evaluation-0018",
+        "normalized-evaluation-0019",
+        "normalized-evaluation-0020",
+        "normalized-evaluation-0021",
+        "normalized-evaluation-0022",
+        "normalized-evaluation-0023",
+        "normalized-evaluation-0031",
+        "normalized-evaluation-0037",
+        "normalized-evaluation-0048",
+        "normalized-evaluation-0056",
+        "normalized-evaluation-0057",
+        "normalized-evaluation-0059",
+        "normalized-evaluation-0089",
+        "normalized-evaluation-0092",
+        "normalized-evaluation-0094",
+        "normalized-evaluation-0103",
+        "normalized-evaluation-0109",
+        "normalized-evaluation-0120"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "normalized-visible-012",
+            "task": "normalized",
+            "a": "a\ud83d\ude00b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-012",
+            "status": "ok",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-visible-013",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-visible-013",
+            "status": "ok",
+            "value": 1.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0010",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0010",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0010",
+            "status": "ok",
+            "value": 1.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0011",
+            "task": "normalized",
+            "a": "\ud83d\ude00",
+            "b": "\ud83d\ude03",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0011",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0011",
+            "status": "ok",
+            "value": 0.0
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0012",
+            "task": "normalized",
+            "a": "a\ud83d\ude80b",
+            "b": "ab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0012",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0012",
+            "status": "ok",
+            "value": 0.3333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0013",
+            "task": "normalized",
+            "a": "a\ud83d\ude80b",
+            "b": "ab",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0013",
+            "status": "ok",
+            "value": 0.5
+          },
+          "actual": {
+            "id": "normalized-evaluation-0013",
+            "status": "ok",
+            "value": 0.6666666666666667
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0024",
+            "task": "normalized",
+            "a": "9\u4e2d \ud83d\ude80\u4e2db\u00009B\u0301\ud83d\ude80\u00e9b\u03010\u4e2d\u4e2d0 a\u0000\u0000\u03019",
+            "b": "\ud83d\ude800\u00e9A\u0000\u00e9a\u0000A\u00e9\t9\nB\t\ud83d\ude80\u00e9bB9\u4e2d\u0000\t\u0000\u4e2dBa\n b\t\u00e9aA\u00e9\u0000\nB\n\ud83d\ude8009\ud83d\ude80b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0024",
+            "status": "ok",
+            "value": 0.27083333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0024",
+            "status": "ok",
+            "value": 0.2727272727272727
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0025",
+            "task": "normalized",
+            "a": "A\ud83d\ude80Bb\ud83d\ude00B\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d\u0301\ud83d\ude00\ud83d\ude80\u00e9 \u0000\u0000A\t\ud83d\ude80a",
+            "b": "A\ud83d\ude80BbBB\u4e2d\ud83d\ude00\u00e9\ud83d\ude00\tBB\u4e2d\u0301\ud83d\ude00\ud83d\ude80\u00e9 \u0000\u0000A\t\ud83d\ude80a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0025",
+            "status": "ok",
+            "value": 0.0625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0025",
+            "status": "ok",
+            "value": 0.04
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0026",
+            "task": "normalized",
+            "a": "\ud83d\ude00\ud83d\ude00 \t\n \u4e2d\tb\n\u00e9\u4e2d0aBB\u4e2d",
+            "b": "\t\u4e2d\t\tA\ud83d\ude80\ud83d\ude00\ud83d\ude80\n\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0026",
+            "status": "ok",
+            "value": 0.10526315789473684
+          },
+          "actual": {
+            "id": "normalized-evaluation-0026",
+            "status": "ok",
+            "value": 0.17647058823529416
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0027",
+            "task": "normalized",
+            "a": "B\ud83d\ude00\u00e9\u0301a\u0000\u4e2db\u4e2d\u4e2da\u4e2d\tA\nB\u0000B",
+            "b": "B\ud83d\ude00\u00e9\u0301a\u0000\u4e2db\u4e2d\u4e2da\u4e2d\tA\n\ud83d\ude00\u0000B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0027",
+            "status": "ok",
+            "value": 0.1
+          },
+          "actual": {
+            "id": "normalized-evaluation-0027",
+            "status": "ok",
+            "value": 0.05555555555555555
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0028",
+            "task": "normalized",
+            "a": "\u00009b\ud83d\ude00 \ud83d\ude00\n\u0301A\ud83d\ude00\u00e9\u0301  b\u4e2da\ud83d\ude80b\ud83d\ude00\u00e9\u4e2dAAA\u00e9B9 \u0000\ud83d\ude00\ud83d\ude00b 9\u4e2d\ud83d\ude80A",
+            "b": "\ud83d\ude80\u4e2d\u00e9\u00e9\ud83d\ude00\u0301A\u00e9\u00e9\ud83d\ude80\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0028",
+            "status": "ok",
+            "value": 0.19565217391304346
+          },
+          "actual": {
+            "id": "normalized-evaluation-0028",
+            "status": "ok",
+            "value": 0.1578947368421053
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0029",
+            "task": "normalized",
+            "a": "B AB\ud83d\ude00b\tBA\t\n\u0301A\u0301\n B\u00e9\u00009\u4e2d9A\u4e2d\ud83d\ude80\ud83d\ude80\t\ud83d\ude00\n\u0301Aa\u00e9Ab\u4e2d\u0000\u0301b\ud83d\ude80b\u0301",
+            "b": "B AB\ud83d\ude00b\tBA\t\n\u0301A\u0301\n B\u00e9\u00009\u4e2d9\u00e9\u4e2d\ud83d\ude80\ud83d\ude80\t\ud83d\ude00\n\u0301Aa\u00e9Ab\u4e2d\u0000\u0301b\ud83d\ude80b\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0029",
+            "status": "ok",
+            "value": 0.02127659574468085
+          },
+          "actual": {
+            "id": "normalized-evaluation-0029",
+            "status": "ok",
+            "value": 0.023809523809523808
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0030",
+            "task": "normalized",
+            "a": "9\ud83d\ude80A0\nB0\tbb\u0000a\t\u00e9\ud83d\ude00A9\ud83d\ude000b\u4e2d\ud83d\ude80\u0000\n0\t0\ud83d\ude80b\u00e9\n\u0000\u00e9\u00e909\u030190B \ud83d\ude00B\ud83d\ude000\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude000\u0000",
+            "b": "\u0301\u0000\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0030",
+            "status": "ok",
+            "value": 0.04225352112676062
+          },
+          "actual": {
+            "id": "normalized-evaluation-0030",
+            "status": "ok",
+            "value": 0.031746031746031744
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0032",
+            "task": "normalized",
+            "a": "0\u00000\u030190\n\u00e9\u0301 \u4e2d0",
+            "b": "A0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0032",
+            "status": "ok",
+            "value": 0.20833333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0032",
+            "status": "ok",
+            "value": 0.23809523809523814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0033",
+            "task": "normalized",
+            "a": "\u0000a \u0301a0\ud83d\ude00\u00e9\u4e2d\ud83d\ude80\tA\t\u4e2d\na aa9\u4e2d\ud83d\ude80B\n\u4e2d\u0000\nAbb99\t9\u0000\u4e2db",
+            "b": "\u0000a \u0301a0\ud83d\ude00\u00e9\u4e2d\ud83d\ude80\tA\t\u4e2d\na aa9\u4e2d\ud83d\ude80B\n\u4e2d\u0000\nAbb99 9\u0000\u4e2db",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0033",
+            "status": "ok",
+            "value": 0.025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0033",
+            "status": "ok",
+            "value": 0.02702702702702703
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0034",
+            "task": "normalized",
+            "a": "b\u4e2d\u00e9\u0301\u0000\u4e2d\u0000BA9b\tA\u0000\n\ud83d\ude000\ud83d\ude80\u4e2d\u4e2d\ud83d\ude80a0\u00e9\u0000 \u00000\ud83d\ude80A \nA\u0000\ud83d\ude000\u0301 \u0000ab\u0000aa\u0000a\ud83d\ude009\t0\u0301\u0301\ud83d\ude009a\u4e2db",
+            "b": "9\u00e9\ud83d\ude800a0\u0000b\u4e2d\u0301\u0000\u00e9\u00e99\u0000\u00e99\u0000\t\ud83d\ude809b\u4e2d \u00e9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0034",
+            "status": "ok",
+            "value": 0.1875
+          },
+          "actual": {
+            "id": "normalized-evaluation-0034",
+            "status": "ok",
+            "value": 0.17543859649122806
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0035",
+            "task": "normalized",
+            "a": "\ud83d\ude00AB90\ud83d\ude80\u4e2d9\ud83d\ude00 ",
+            "b": "\ud83d\ude00bB90\ud83d\ude80\u4e2d9\ud83d\ude00 ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0035",
+            "status": "ok",
+            "value": 0.07692307692307693
+          },
+          "actual": {
+            "id": "normalized-evaluation-0035",
+            "status": "ok",
+            "value": 0.1
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0036",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude80\u0301A0 9\ud83d\ude80\t\n\nBaBA\u0301\u4e2d\ud83d\ude00\u0301bA\u00e9\n\ud83d\ude80A\u0301b\ud83d\ude80a \n\taa9\n\u0301A\t\u03019\u00e9a\ud83d\ude0090",
+            "b": "\u0000\ud83d\ude80\u4e2d\u4e2dAba0\t\u0000\u00e99\u4e2d\u0000\ud83d\ude00\nb0\u0301bb\ud83d\ude00\n\u4e2d\u00e9\ud83d\ude80a\u0000",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0036",
+            "status": "ok",
+            "value": 0.2075471698113207
+          },
+          "actual": {
+            "id": "normalized-evaluation-0036",
+            "status": "ok",
+            "value": 0.17391304347826086
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0038",
+            "task": "normalized",
+            "a": "a\u00e9B\u00e9",
+            "b": " 0\t\u0301\t\u00e9\u0301A\t\t\u0000A9 \u0301b\u00e9\t\n\ud83d\ude00 \u0000B\ud83d\ude80a\ud83d\ude80a\n9\u0301\u4e2d\u4e2d\n\nb\ud83d\ude00AaB",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0038",
+            "status": "ok",
+            "value": 0.046511627906976716
+          },
+          "actual": {
+            "id": "normalized-evaluation-0038",
+            "status": "ok",
+            "value": 0.05128205128205132
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0039",
+            "task": "normalized",
+            "a": "0\ud83d\ude00\ud83d\ude009\t\t\u4e2d\u0000\u0000a\u0301\ud83d\ude80 a\t0B09\ud83d\ude80\u00009b\u0000",
+            "b": "0\ud83d\ude00\ud83d\ude009\t\t\u4e2d\u0000\u0000a\u0301\ud83d\ude80 a\t0B09\u0000\u00009b\u0000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0039",
+            "status": "ok",
+            "value": 0.07142857142857142
+          },
+          "actual": {
+            "id": "normalized-evaluation-0039",
+            "status": "ok",
+            "value": 0.041666666666666664
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0040",
+            "task": "normalized",
+            "a": "B\ud83d\ude00\u0000\u0301\u00e9\u0301AB9\nB9B\n\t\u4e2d\u00e90\u00e9a\n\u0301\u00e9\ud83d\ude00\u00000b\u4e2d\u4e2d9\nA\naAB\u4e2da \u0301A\n \u0000 \u0000a\ud83d\ude80\t\u0000\tB\u0301\u0000",
+            "b": "\u00e9\t\u4e2d\t\u4e2d0\u00e9\t\u0301\u4e2d9\t\u0301  \u00e9\ud83d\ude80\u0301A\u0301a\u00000\ud83d\ude00\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0040",
+            "status": "ok",
+            "value": 0.21052631578947367
+          },
+          "actual": {
+            "id": "normalized-evaluation-0040",
+            "status": "ok",
+            "value": 0.2222222222222222
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0041",
+            "task": "normalized",
+            "a": "\u4e2da \u00e9\ud83d\ude80B\n\ud83d\ude00\u4e2d\u0301\u00e9\u4e2d99B\u4e2d a\t9 \tb0B\u0301\u0301\t\na9\u4e2d0\u0000bbB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u03010",
+            "b": "\u4e2da \u00e9\ud83d\ude80B\n\ud83d\ude00\u4e2d\u0301\u00e9\u4e2d99B\u4e2d aB9 \tb0B\u0301\u0301\t\na9\u4e2d0\u0000bbB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u03010",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0041",
+            "status": "ok",
+            "value": 0.0196078431372549
+          },
+          "actual": {
+            "id": "normalized-evaluation-0041",
+            "status": "ok",
+            "value": 0.020833333333333332
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0042",
+            "task": "normalized",
+            "a": "\ud83d\ude000",
+            "b": "\ud83d\ude809\u00e9\ud83d\ude00\t9b\u0000\u00e9\t9\u0301\u0000\u4e2dAB9\ud83d\ude80B\ud83d\ude00a9\u0000\u0000B\ud83d\ude80\ud83d\ude00\u4e2d0a0b\nb \ud83d\ude80\tb9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\n",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0042",
+            "status": "ok",
+            "value": 0.0461538461538461
+          },
+          "actual": {
+            "id": "normalized-evaluation-0042",
+            "status": "ok",
+            "value": 0.036363636363636376
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0043",
+            "task": "normalized",
+            "a": " A\u4e2d0\ud83d\ude80\n\u4e2d90",
+            "b": " AA0\ud83d\ude80\n\u4e2d90",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0043",
+            "status": "ok",
+            "value": 0.1
+          },
+          "actual": {
+            "id": "normalized-evaluation-0043",
+            "status": "ok",
+            "value": 0.1111111111111111
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0044",
+            "task": "normalized",
+            "a": "\u00e9A\u0000a\u0000a\ud83d\ude8000\u0301\u0000A\tA\u00e9a\u0000b",
+            "b": "\u4e2d\n\ud83d\ude00a9\u4e2d9 \u00e9b09 \u0301\u4e2d\u4e2d \t\ud83d\ude00A\u0000A\ud83d\ude00\u00e9a\na90\n\n0 \ud83d\ude00a\u4e2d\u4e2d\u4e2d\ud83d\ude80 A\ud83d\ude80\ud83d\ude80Ab \u4e2d\u0301\taa\u4e2dA\u00e900\u4e2d9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0044",
+            "status": "ok",
+            "value": 0.16923076923076918
+          },
+          "actual": {
+            "id": "normalized-evaluation-0044",
+            "status": "ok",
+            "value": 0.18965517241379315
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0045",
+            "task": "normalized",
+            "a": "\u0301\u0301\t\n\t\u0000\u00e9\u4e2dAb\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u03010\u4e2dB\tab",
+            "b": "\u0301\u0301\t\n\t\u0000\u00e9bAb\nB\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u03010\u4e2dB\tab",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0045",
+            "status": "ok",
+            "value": 0.02
+          },
+          "actual": {
+            "id": "normalized-evaluation-0045",
+            "status": "ok",
+            "value": 0.02127659574468085
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0046",
+            "task": "normalized",
+            "a": "Aa0\ud83d\ude00bB\u00000\n\u03019\u0301\n\t\u00e9\u00e9A\u4e2d\u00e9\u00e9 B\u00e9b\n\u00e9ab AABA\u0301b\na\u4e2d\ud83d\ude80\u0301\t\ud83d\ude80\ud83d\ude00\u00e9\u0000a\ud83d\ude80\tB\u0000bAB\u0000b\u00000a\ud83d\ude80A \u00e9A",
+            "b": "\t\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0046",
+            "status": "ok",
+            "value": 0.02898550724637683
+          },
+          "actual": {
+            "id": "normalized-evaluation-0046",
+            "status": "ok",
+            "value": 0.031746031746031744
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0047",
+            "task": "normalized",
+            "a": "\ud83d\ude00bBB\u00e9\u0301\ud83d\ude80\u4e2da\u4e2d\u00009Bb\u4e2d\u0301BB0B99\u4e2dAA\u4e2d\u03010A0\u0000\ud83d\ude80bA\u0000\u0301\nB\t\u0000\u4e2d",
+            "b": "\ud83d\ude00bBB\u00e9\u4e2d\ud83d\ude80\u4e2da\u4e2d\u00009Bb\u4e2d\u0301BB0B99\u4e2dAA\u4e2d\u03010A0\u0000\ud83d\ude80bA\u0000\u0301\nB\t\u0000\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0047",
+            "status": "ok",
+            "value": 0.022727272727272728
+          },
+          "actual": {
+            "id": "normalized-evaluation-0047",
+            "status": "ok",
+            "value": 0.024390243902439025
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0049",
+            "task": "normalized",
+            "a": "\u00e9a\t\u0301\ud83d\ude00baBAa\u00e9 \u0000\u00e9\ud83d\ude80\u4e2db\t\u4e2d\u0000\u00e9\u0000\n99\u00e9\u03010\ud83d\ude80\ud83d\ude00\na0b\u0000 9\n 0\u0000\ud83d\ude00",
+            "b": "\u00e9a\t\u0301\ud83d\ude00baBAa\u00e9 \u0000\u00e9\ud83d\ude80\u4e2db\t\u4e2d\u0000\u00e9\u0000\n99\u00e9\ud83d\ude800\ud83d\ude80\ud83d\ude00\na0b\u0000 9\n 0\u0000\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0049",
+            "status": "ok",
+            "value": 0.041666666666666664
+          },
+          "actual": {
+            "id": "normalized-evaluation-0049",
+            "status": "ok",
+            "value": 0.023809523809523808
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0050",
+            "task": "normalized",
+            "a": "9\u4e2d\u0000Ba\u0000 \ud83d\ude00a\t\u00e9\ud83d\ude00\u4e2d\u0000\u0301B\t\u0000\ud83d\ude80 \t9b9\ud83d\ude00\ta0 \u0301",
+            "b": "B\u03019\nb\ud83d\ude80\n\u0301\ud83d\ude80 9a\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0050",
+            "status": "ok",
+            "value": 0.23529411764705888
+          },
+          "actual": {
+            "id": "normalized-evaluation-0050",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0051",
+            "task": "normalized",
+            "a": "\u4e2d\t9\ud83d\ude00\t\u0301Aa\u0000a\u03010B\nA\t\ud83d\ude00",
+            "b": "\u4e2d\t9\ud83d\ude00\t\u0301Aa9a\u03010B\nA\t\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0051",
+            "status": "ok",
+            "value": 0.05263157894736842
+          },
+          "actual": {
+            "id": "normalized-evaluation-0051",
+            "status": "ok",
+            "value": 0.058823529411764705
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0052",
+            "task": "normalized",
+            "a": "a\u4e2db A0\u00000B",
+            "b": "A\u0000\u0000\u4e2d0\t\t\n\u00e99A\u4e2d A\u03019\u00e9\tA\u03010aA9\u0301\u0000\ud83d\ude00\nA\u0000\ta",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0052",
+            "status": "ok",
+            "value": 0.1515151515151515
+          },
+          "actual": {
+            "id": "normalized-evaluation-0052",
+            "status": "ok",
+            "value": 0.15625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0053",
+            "task": "normalized",
+            "a": "\tAa\u4e2d\n0b\ud83d\ude80A \u00e9\nB\t \u4e2d\t0BA\u4e2d\ud83d\ude00\nA9 \ud83d\ude80\u0301",
+            "b": "\tAa\u4e2d\n0b\ud83d\ude80A \u00e9\nB\n \u4e2d\t0BA\u4e2d\ud83d\ude00\nA9 \ud83d\ude80\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0053",
+            "status": "ok",
+            "value": 0.03225806451612903
+          },
+          "actual": {
+            "id": "normalized-evaluation-0053",
+            "status": "ok",
+            "value": 0.03571428571428571
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0054",
+            "task": "normalized",
+            "a": "A\n\ud83d\ude80\u0301\nB9\u0000\u4e2dAbb\u0000\u0000b\ud83d\ude80BAB\t\u4e2d\u0301 \u4e2d9\t0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A",
+            "b": "\t \ud83d\ude00BB\u00e9\t\u0301\t\ud83d\ude80\u00e9\u0301\ud83d\ude80A\u0000\tA\ud83d\ude80\ud83d\ude809bbb\u0000\t\u0000b\u0000\t\ud83d\ude00\u00e9\u00e9\ta\u0301aB\u0301Ba\nA b",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0054",
+            "status": "ok",
+            "value": 0.1964285714285714
+          },
+          "actual": {
+            "id": "normalized-evaluation-0054",
+            "status": "ok",
+            "value": 0.17307692307692313
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0055",
+            "task": "normalized",
+            "a": "a BA \ud83d\ude80\u0000\u0000\ta\n\u0301a ",
+            "b": "a\tBA \ud83d\ude80\u0000\u0000\ta\n\u0301a ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0055",
+            "status": "ok",
+            "value": 0.06666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0055",
+            "status": "ok",
+            "value": 0.07142857142857142
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0058",
+            "task": "normalized",
+            "a": "\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80\t\ud83d\ude009\u0301\u03019b\u4e2d\n\t",
+            "b": " \u0000\ud83d\ude80\n\n\nB\u0301\n\u4e2dA\ud83d\ude009\ud83d\ude00\n\u4e2d9\u4e2daa\u0301A\ud83d\ude00\u4e2d\nB\u00e9\ud83d\ude80\ta\u0301aa",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0058",
+            "status": "ok",
+            "value": 0.21052631578947367
+          },
+          "actual": {
+            "id": "normalized-evaluation-0058",
+            "status": "ok",
+            "value": 0.21212121212121215
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0060",
+            "task": "normalized",
+            "a": "\u4e2db\u0301\t0 9\u00e9\u4e2dBB0 \u4e2dA\t\u00e9\n\t\t\ud83d\ude80 a bB\u0000\u4e2d",
+            "b": "a\n\ud83d\ude809\ud83d\ude80A\ud83d\ude80\t\tB\u00e9Ba 9b\u00e9\tB9\u0301B\u4e2dBa9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0060",
+            "status": "ok",
+            "value": 0.06896551724137934
+          },
+          "actual": {
+            "id": "normalized-evaluation-0060",
+            "status": "ok",
+            "value": 0.1785714285714286
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0061",
+            "task": "normalized",
+            "a": "\u0301B\u4e2d 0\t\u0301\ud83d\ude00\ud83d\ude80B\u0301\n\u0000\u00e9\t\u4e2d\u0301 \t\u4e2d\ud83d\ude00 9ba\u00000\t \u4e2dB\ud83d\ude000\t\u0301bbA b\tb\ud83d\ude80\t\u0000\ud83d\ude00b\u00e9",
+            "b": "\u0301B\u4e2d 0\t\u0301\ud83d\ude00\ud83d\ude80B\u0301\n\u0000\u00e9\t\u4e2d\u0301a\t\u4e2d\ud83d\ude00 9ba\u00000\t \u4e2dB\ud83d\ude000\t\u0301bbA b\tb\ud83d\ude80\t\u0000\ud83d\ude00b\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0061",
+            "status": "ok",
+            "value": 0.018518518518518517
+          },
+          "actual": {
+            "id": "normalized-evaluation-0061",
+            "status": "ok",
+            "value": 0.020833333333333332
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0062",
+            "task": "normalized",
+            "a": " \u4e2da\u4e2d9b0\ud83d\ude80a\ud83d\ude00A\u0301B99bb \ud83d\ude000A\u0301 B\t\nBA9\u00e9A09\t",
+            "b": "\ud83d\ude00A\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0062",
+            "status": "ok",
+            "value": 0.10810810810810811
+          },
+          "actual": {
+            "id": "normalized-evaluation-0062",
+            "status": "ok",
+            "value": 0.05882352941176472
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0063",
+            "task": "normalized",
+            "a": "\u0301Aa0b\u00e9\ud83d\ude000 0\u00e9\ud83d\ude80\ud83d\ude80A\u00e9 \u0000\u4e2da\ud83d\ude80\ud83d\ude809\nb 9\ud83d\ude80a0\ud83d\ude800b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A",
+            "b": "\u0301Aa0b\u00e9\ud83d\ude000 0\u00e9\ud83d\ude80\ud83d\ude80A\u00e9 \n\u4e2da\ud83d\ude80\ud83d\ude809\nb 9\ud83d\ude80a0\ud83d\ude800b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0063",
+            "status": "ok",
+            "value": 0.016129032258064516
+          },
+          "actual": {
+            "id": "normalized-evaluation-0063",
+            "status": "ok",
+            "value": 0.018867924528301886
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0064",
+            "task": "normalized",
+            "a": "B\u0000B\ud83d\ude80a\u00e9\u00e9b9\u4e2d\u00e9\u4e2d\ud83d\ude800b\u0301\u00e9\u00e9AA\u4e2d\u0000\ud83d\ude80\u0301\u00e9A\t\u0000\u00e9\nA \ud83d\ude80B\ud83d\ude80\ud83d\ude00a\t  \u0000\ud83d\ude00\u4e2daA\n\u4e2d\na\u4e2dB",
+            "b": "\ud83d\ude80\ud83d\ude00b\ud83d\ude00\u0301\n\t\u4e2d\u0301\u0301B\u0301\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0064",
+            "status": "ok",
+            "value": 0.15517241379310343
+          },
+          "actual": {
+            "id": "normalized-evaluation-0064",
+            "status": "ok",
+            "value": 0.11764705882352944
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0065",
+            "task": "normalized",
+            "a": "\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80 a\t\u0000Aa\u00e9\ud83d\ude80b\t\t\ud83d\ude80B9a",
+            "b": "\ud83d\ude00ba a\u0000aa\u00e9\ud83d\ude00\t\u0000 a\ud83d\ude80\ud83d\ude80\ta\t\u0000Aa\u00e9\ud83d\ude80b\t\t\ud83d\ude80B9a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0065",
+            "status": "ok",
+            "value": 0.02702702702702703
+          },
+          "actual": {
+            "id": "normalized-evaluation-0065",
+            "status": "ok",
+            "value": 0.03225806451612903
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0066",
+            "task": "normalized",
+            "a": "0\ud83d\ude80\u4e2d\ud83d\ude80bB",
+            "b": "\u4e2d\u4e2dA0\u00e9\ud83d\ude80\ud83d\ude00 aba\n\u0301A\ud83d\ude80\nB\u4e2d\u0301 b  \u00e9\n\u00e9b\t9\n\u00e9\ud83d\ude00a B\u00e9b\n  \u00e9B\u4e2d\ud83d\ude00\u0301\u0301",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0066",
+            "status": "ok",
+            "value": 0.13725490196078427
+          },
+          "actual": {
+            "id": "normalized-evaluation-0066",
+            "status": "ok",
+            "value": 0.10869565217391308
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0067",
+            "task": "normalized",
+            "a": "A\ud83d\ude00bA\n\u0000\u0000AB\ud83d\ude00B\u00e9\n\u0000\u00e9\u0000\ud83d\ude80A\u4e2db9b\n\ud83d\ude80ba\ud83d\ude80\n\u03019\n\u4e2d\u0000\t\t\ud83d\ude80\u00e99a\n\ud83d\ude80\ud83d\ude00A\t\u4e2d\t\t\u4e2d\n 9\u0301\n9\u4e2d\u4e2d\u00e9",
+            "b": "A\ud83d\ude00bA\n\u0000\u0000AB\ud83d\ude00B\u0000\n\u0000\u00e9\u0000\ud83d\ude80A\u4e2db9b\n\ud83d\ude80ba\ud83d\ude80\n\u03019\n\u4e2d\u0000\t\t\ud83d\ude80\u00e99a\n\ud83d\ude80\ud83d\ude00A\t\u4e2d\t\t\u4e2d\n 9\u0301\n9\u4e2d\u4e2d\u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0067",
+            "status": "ok",
+            "value": 0.015384615384615385
+          },
+          "actual": {
+            "id": "normalized-evaluation-0067",
+            "status": "ok",
+            "value": 0.017543859649122806
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0068",
+            "task": "normalized",
+            "a": "9\na0\u00e9bB00 \u4e2db\n\u00009\ud83d\ude00a\n\ud83d\ude80\n0A0A\t\taa",
+            "b": "\u0000BB\ud83d\ude80\ud83d\ude00bbB \ud83d\ude00\u4e2d\ud83d\ude00\ud83d\ude00Ba\ud83d\ude80\u00e9 b\ud83d\ude00  BaAB\n\u0301\u00000\ud83d\ude80\u0301\ud83d\ude80 0\u0301\u0000\t\u00e9b9a\u00e99\u0000a\u00e99b\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0068",
+            "status": "ok",
+            "value": 0.22033898305084743
+          },
+          "actual": {
+            "id": "normalized-evaluation-0068",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0069",
+            "task": "normalized",
+            "a": "BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000\u4e2d\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb\n9a\nAA\t\ud83d\ude00\ud83d\ude00\ud83d\ude80\u4e2d\u0301\ud83d\ude80\ud83d\ude80\tb\ud83d\ude00\n\ud83d\ude80",
+            "b": "BA\n\u4e2d\n\u00e9\u00e9a\n0\na\u4e2d\n9B\n\ud83d\ude00\u0301\t \u0000A\n\u4e2d00\ud83d\ude80\u0000Ba\u0301\t\u4e2dbb\n9a\nAA\t\ud83d\ude00\ud83d\ude00\ud83d\ude80\u4e2d\u0301\ud83d\ude80\ud83d\ude80\tb\ud83d\ude00\n\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0069",
+            "status": "ok",
+            "value": 0.015625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0069",
+            "status": "ok",
+            "value": 0.01818181818181818
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0070",
+            "task": "normalized",
+            "a": "\u4e2db\t\ud83d\ude80\ud83d\ude009B0\u0000\u0000\u0000\u0000\ud83d\ude00A\u4e2dbAbB9\u4e2da\t90a\n\nbA b\u00009 A 9\u03019B\ud83d\ude800\ud83d\ude00\ud83d\ude00A\ud83d\ude00B\ud83d\ude00\ud83d\ude80 \u0000",
+            "b": "B\u00e9 \t\u4e2dA\n0B\t\t\u00e9\u0301\u4e2da B\tB\u0000\u0000\u0000\u4e2d\ud83d\ude80\ud83d\ude80\t \u4e2db\u4e2d\t0 \u0301009\n\n9\u00e90AA\u0301\u00e9a\u4e2d0\u00e9\n\ud83d\ude00BAA\u0301a",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0070",
+            "status": "ok",
+            "value": 0.11475409836065575
+          },
+          "actual": {
+            "id": "normalized-evaluation-0070",
+            "status": "ok",
+            "value": 0.1578947368421053
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0071",
+            "task": "normalized",
+            "a": "9\ud83d\ude80B\u0000b\ud83d\ude00a \tb\tb\u4e2dAA9\n\t9\u03010\u0000\u0301\u0301\u0000\u0000\u0000\ud83d\ude00  \ud83d\ude80B\u00e9\u0000\u00e9\ud83d\ude80",
+            "b": "9\ud83d\ude80B\u0000b\ud83d\ude00a \tb\tb\u4e2dAA9\na9\u03010\u0000\u0301\u0301\u0000\u0000\u0000\ud83d\ude00  \ud83d\ude80B\u00e9\u0000\u00e9\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0071",
+            "status": "ok",
+            "value": 0.024390243902439025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0071",
+            "status": "ok",
+            "value": 0.027777777777777776
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0072",
+            "task": "normalized",
+            "a": "A\u0000\n9\ud83d\ude80aa",
+            "b": "\n\u00e99A\u00e90\ud83d\ude00\u4e2d\ud83d\ude80b\ud83d\ude00b\ud83d\ude00B\ud83d\ude809\u0301B\ud83d\ude809\u0301\u00e9\u4e2d\ud83d\ude80a\u4e2dB9\u0000\u0000\u00e9\t\ud83d\ude80\ud83d\ude80\u00e9\t0 \u0000 0AABb\ud83d\ude80\u00e9\u4e2dB\u0000\ud83d\ude00A\u00e9\ud83d\ude00\ud83d\ude80\na\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0072",
+            "status": "ok",
+            "value": 0.08450704225352113
+          },
+          "actual": {
+            "id": "normalized-evaluation-0072",
+            "status": "ok",
+            "value": 0.08620689655172409
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0073",
+            "task": "normalized",
+            "a": "9\u4e2dbb\u0000\u0000\ud83d\ude000\ud83d\ude80\u4e2d\tB0\u0000\u0301 A\u0301\n9\ud83d\ude000B\u00e9 \u4e2da\n\ud83d\ude80\t 9\ud83d\ude00b9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\u00e9\ud83d\ude80 B\u00e9 \n\ud83d\ude80A\ud83d\ude00\n90B",
+            "b": "9\u4e2dbb\u0000\u0000\ud83d\ude000\ud83d\ude80\u4e2d\tB0\u0000\u0301 A\u0301\n9\ud83d\ude000B\u00e9 \u4e2da\n\ud83d\ude80\t 9\ud83d\ude00b9 \u4e2d9bA\t\ud83d\ude80b\u0000\n\u00e9 a\u4e2d\u00e9\n\ud83d\ude80 B\u00e9 \n\ud83d\ude80A\ud83d\ude00\n90B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0073",
+            "status": "ok",
+            "value": 0.0136986301369863
+          },
+          "actual": {
+            "id": "normalized-evaluation-0073",
+            "status": "ok",
+            "value": 0.015625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0074",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude00Ba\ud83d\ude00\ud83d\ude00\u00e9\u0301 \u00e9\u0000B\ud83d\ude00\u0301b\u4e2daB0\ud83d\ude000",
+            "b": "\u03019bbB9\n00b\t\u00e9 \t\u4e2dB9\ud83d\ude00\u4e2daA\u4e2d\u4e2dB\ud83d\ude00\ud83d\ude00\ud83d\ude000\n0b\tBbA\n\u0301aA",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0074",
+            "status": "ok",
+            "value": 0.2325581395348837
+          },
+          "actual": {
+            "id": "normalized-evaluation-0074",
+            "status": "ok",
+            "value": 0.20512820512820518
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0075",
+            "task": "normalized",
+            "a": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b9 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "b": "\u4e2d\u0000\u03019\u4e2dA\n9\n\t\u4e2d\u4e2d\u0000A\ud83d\ude00\u00e9\u0000b\u0000 A b\u0000\ud83d\ude00A\nb\u4e2d\n\ud83d\ude80a\u0000bAaA\u00e9\u00000\u0301\t\n0bA",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0075",
+            "status": "ok",
+            "value": 0.02040816326530612
+          },
+          "actual": {
+            "id": "normalized-evaluation-0075",
+            "status": "ok",
+            "value": 0.021739130434782608
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0076",
+            "task": "normalized",
+            "a": "0ab\n 0A\u4e2d\u00e9 A9a\ud83d\ude00\u00e9A\u0000\u0000\u0301 \n\ud83d\ude00 \u4e2d\u00e9b\u00e9b\u03010\ud83d\ude00\u4e2d\u0000\u0301\nb\ud83d\ude00\ud83d\ude80\ud83d\ude80\ud83d\ude00",
+            "b": "\u030100\nBa\n \ud83d\ude80b0A9\ud83d\ude80B",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0076",
+            "status": "ok",
+            "value": 0.17021276595744683
+          },
+          "actual": {
+            "id": "normalized-evaluation-0076",
+            "status": "ok",
+            "value": 0.17500000000000004
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0077",
+            "task": "normalized",
+            "a": "\u4e2db0\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "b": "\u4e2d\u00e90\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0077",
+            "status": "ok",
+            "value": 0.030303030303030304
+          },
+          "actual": {
+            "id": "normalized-evaluation-0077",
+            "status": "ok",
+            "value": 0.03333333333333333
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0078",
+            "task": "normalized",
+            "a": " \u4e2dBb\ud83d\ude80ABb\u0000",
+            "b": "AA",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0078",
+            "status": "ok",
+            "value": 0.09999999999999998
+          },
+          "actual": {
+            "id": "normalized-evaluation-0078",
+            "status": "ok",
+            "value": 0.11111111111111116
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0079",
+            "task": "normalized",
+            "a": "\u0301A9\u0301\n\tAB0AA\u4e2d0\ta  \u0000\nbab\u0000 \ud83d\ude00\ud83d\ude00\ud83d\ude00\u00e9\n0\u0000\ud83d\ude00\ud83d\ude80\u0000\u0000\u4e2d\nbb0\ud83d\ude00\u4e2d\u4e2d\tAa\n\u00000A\nAa9\ud83d\ude80 Bbb",
+            "b": "\u0301A9\u0301\n\tAB0AA\u4e2d0\ta  \u0000\nbab\u0000 \ud83d\ude00\ud83d\ude00\ud83d\ude00\u00e9\n0\u0000B\ud83d\ude80\u0000\u0000\u4e2d\nbb0\ud83d\ude00\u4e2d\u4e2d\tAa\n\u00000A\nAa9\ud83d\ude80 Bbb",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0079",
+            "status": "ok",
+            "value": 0.030303030303030304
+          },
+          "actual": {
+            "id": "normalized-evaluation-0079",
+            "status": "ok",
+            "value": 0.01694915254237288
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0080",
+            "task": "normalized",
+            "a": "9\ud83d\ude00\u00e9\u03019\nA\t\u0000\t9A",
+            "b": "a b\u00000\u0301\u00e9\u0301a\t\u4e2d\ud83d\ude80\u00e9b \t\n\u4e2db0\u0301\u4e2d\n \t\t\ud83d\ude00A\tBb\ud83d\ude00\t\u0301\t\ud83d\ude80\ud83d\ude80\n\u00e9\n\ud83d\ude00A\u00e99 \t\ud83d\ude80aAa\u00e9A\ud83d\ude00\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0080",
+            "status": "ok",
+            "value": 0.1428571428571429
+          },
+          "actual": {
+            "id": "normalized-evaluation-0080",
+            "status": "ok",
+            "value": 0.14814814814814814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0081",
+            "task": "normalized",
+            "a": "bA9a0b9Ba\u0000b\u4e2d0BA\ud83d\ude00A\ud83d\ude80\u0000b99aAb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d 0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d",
+            "b": "bA9a0b9Ba\u0000b\u4e2d0BA\ud83d\ude00A\ud83d\ude80\u0000b99aBb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d 0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0081",
+            "status": "ok",
+            "value": 0.014285714285714285
+          },
+          "actual": {
+            "id": "normalized-evaluation-0081",
+            "status": "ok",
+            "value": 0.016129032258064516
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0082",
+            "task": "normalized",
+            "a": "0\u00e99\u00e9a\ud83d\ude00\t00B\ud83d\ude00\u0301\u0301\u00e9\u0301\u0301A\u00e99\ud83d\ude00\t\n9\u4e2d",
+            "b": "A\t\ud83d\ude00\u00e9\t\ud83d\ude800A\u0301\ud83d\ude00\u0000\u00e9\u4e2d\u0000\u0301\n \ud83d\ude00\u00e9\ud83d\ude80\u4e2d\u0301Aa\nA\n\u00009\u0000aA\ud83d\ude00\u4e2d\n0\ud83d\ude80B\u00e9\u00e9\nB\ud83d\ude80a ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0082",
+            "status": "ok",
+            "value": 0.2264150943396226
+          },
+          "actual": {
+            "id": "normalized-evaluation-0082",
+            "status": "ok",
+            "value": 0.19999999999999996
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0083",
+            "task": "normalized",
+            "a": "9a\u4e2d\u00e9a \tB\u4e2d\n B\u0301\u4e2d\n\nb\ud83d\ude80\t\u0301\ud83d\ude000B\ud83d\ude00A 90 \ud83d\ude00\u00e9\ud83d\ude809\u4e2da0B9\ud83d\ude00 \u4e2d\ud83d\ude80\ud83d\ude00Ab\n\u0000\u03019",
+            "b": "9a\u4e2d\u00e9a \tB\u4e2d\n B\u0301\u4e2d\n\nb\ud83d\ude80\t\u0301\ud83d\ude000B\ud83d\ude00A 90 \ud83d\ude00\u00e9\ud83d\ude809\u4e2da0B9\ud83d\ude00 \u4e2d\ud83d\ude80\ud83d\ude00Ab\n\u0000\u0301A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0083",
+            "status": "ok",
+            "value": 0.017543859649122806
+          },
+          "actual": {
+            "id": "normalized-evaluation-0083",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0084",
+            "task": "normalized",
+            "a": "\ud83d\ude00BBb\u00e9\ud83d\ude80a\u0000\ud83d\ude00\ta\ud83d\ude00\ud83d\ude80\u00e9B\tAa 0ba \u0301\u0301BB\ud83d\ude00Ba\n\n\n0 A\ud83d\ude80 a\u0000\u4e2d\u4e2d\u0301a\ud83d\ude000A",
+            "b": "B\u0000\u4e2d99\ud83d\ude009\ud83d\ude80\u00000\u0301\u4e2da \u4e2d\u0000A\u0000\u0000A\u4e2d\u0301\u4e2d\t \u00e9\nbb \u0301b\ud83d\ude80B\u00e9 a\ud83d\ude00\u4e2d\ud83d\ude00A0B\t9\u0000bA\u00e9\n",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0084",
+            "status": "ok",
+            "value": 0.12727272727272732
+          },
+          "actual": {
+            "id": "normalized-evaluation-0084",
+            "status": "ok",
+            "value": 0.14
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0085",
+            "task": "normalized",
+            "a": "b\ud83d\ude00\u0000\n\u4e2d\u0301",
+            "b": "b\ud83d\ude00\u0000A\u4e2d\u0301",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0085",
+            "status": "ok",
+            "value": 0.14285714285714285
+          },
+          "actual": {
+            "id": "normalized-evaluation-0085",
+            "status": "ok",
+            "value": 0.16666666666666666
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0086",
+            "task": "normalized",
+            "a": "A\u0301\t\u0000AB\n \ud83d\ude8000\n9\t\u0000\ud83d\ude00\ta9\u0000\tAB\ud83d\ude80\tA\ud83d\ude80\u4e2dBb\u0000bB",
+            "b": "b \t\u0000\u0000\u0000b9\ud83d\ude00\ud83d\ude80\u0000 \ud83d\ude80\u0000\u4e2dA90ba  A\ud83d\ude80\ud83d\ude80\ud83d\ude80a\n\n\ud83d\ude00\u0000\u4e2d\ud83d\ude80\u03010\ud83d\ude80B\u0301a",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0086",
+            "status": "ok",
+            "value": 0.20833333333333337
+          },
+          "actual": {
+            "id": "normalized-evaluation-0086",
+            "status": "ok",
+            "value": 0.17948717948717952
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0087",
+            "task": "normalized",
+            "a": "\ud83d\ude00 \n\u00e9bb\ud83d\ude80a\ud83d\ude009\u00e9\t\na\u000009A\n\u0000\ud83d\ude00A\t\t\u00e9\u00e99aBbBa\u00e9\u0301\u0301 09\tb\n\ud83d\ude00\u0301a\t 00\u4e2dA\u4e2d\u0000B \tbb\ud83d\ude80",
+            "b": "\ud83d\ude00 \n\u00e9bb\ud83d\ude80a\ud83d\ude009\u00e9\t\na\u000009A\n\u0000\ud83d\ude00A\t\t\u00e9\u00e99aBbBa\u00e9\u0301\u0301 09\tb\n\ud83d\ude00\u0301a\t 00\u4e2dA\u4e2d\tB \tbb\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0087",
+            "status": "ok",
+            "value": 0.015625
+          },
+          "actual": {
+            "id": "normalized-evaluation-0087",
+            "status": "ok",
+            "value": 0.017241379310344827
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0088",
+            "task": "normalized",
+            "a": "\n\u0000bB\u00000\u4e2daB \nb\u00e9A\u4e2dB0b\u4e2dA\t\u0301\u00e9\u0301Ab\u0301\t\u03010\u0301\ud83d\ude00",
+            "b": "\t\u4e2d\u00e9a0\ud83d\ude00\t0\ud83d\ude00aB \ud83d\ude80\u00e9aaba\tB0\u4e2d\u0301B\u4e2d\u00e9\tB0A0\n \ud83d\ude00\u00e900\u0301\ud83d\ude80",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0088",
+            "status": "ok",
+            "value": 0.2727272727272727
+          },
+          "actual": {
+            "id": "normalized-evaluation-0088",
+            "status": "ok",
+            "value": 0.2564102564102564
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0090",
+            "task": "normalized",
+            "a": "\u00e9B\u0301\u00e9AA0b\u00e9 \u00e9aa\u0301\u4e2d\u0000\u4e2d\t\ud83d\ude80A\ud83d\ude00\ud83d\ude000 b\n\u4e2d\u00e9\u4e2d\n\u0301\ud83d\ude000A\t\ud83d\ude00a0b\na b\ud83d\ude80\u0000A",
+            "b": "\u0000 a\ud83d\ude00b\na\t\u00e9\ud83d\ude00\t9\tA\u00e9a\t\u00e9\u00e9\u00e90\u0301B\ud83d\ude00b \t\u0000\u4e2dB0A\t\ud83d\ude00a\u03010\ud83d\ude00\u0000BB\u4e2d\u0000B\t",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0090",
+            "status": "ok",
+            "value": 0.1923076923076923
+          },
+          "actual": {
+            "id": "normalized-evaluation-0090",
+            "status": "ok",
+            "value": 0.17391304347826086
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0091",
+            "task": "normalized",
+            "a": "9b\u0301\ud83d\ude00 \u00e9",
+            "b": "9b\u0301a \u00e9",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0091",
+            "status": "ok",
+            "value": 0.2857142857142857
+          },
+          "actual": {
+            "id": "normalized-evaluation-0091",
+            "status": "ok",
+            "value": 0.16666666666666666
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0093",
+            "task": "normalized",
+            "a": "B\u0301\u0301\u0301\ud83d\ude00\u4e2d\u0000\u4e2d0\ud83d\ude80\ud83d\ude80\u00e9A\u00e9A\u0000\u00000\ud83d\ude80",
+            "b": "B\u0301\u0301\u0301\ud83d\ude00\u4e2d\u0000\u4e2d0\ud83d\ude80\ud83d\ude80\u00e9A\u00e9A\u000090\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0093",
+            "status": "ok",
+            "value": 0.043478260869565216
+          },
+          "actual": {
+            "id": "normalized-evaluation-0093",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0095",
+            "task": "normalized",
+            "a": "\u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80A9  BA0A\u00e9\ud83d\ude00a\u00e9AA9A",
+            "b": "\u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80A9  BA0A \ud83d\ude00a\u00e9AA9A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0095",
+            "status": "ok",
+            "value": 0.019230769230769232
+          },
+          "actual": {
+            "id": "normalized-evaluation-0095",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0096",
+            "task": "normalized",
+            "a": "\nB B\u0000\ud83d\ude00 \u00e9\nA \t\t\u0301bAb\t\ud83d\ude000\u0000\nbb \u00e9b\u0301 A9b9\t\u0301\u0000b0",
+            "b": "a\ud83d\ude00B\u0301bB  \u00e9\ud83d\ude00 \nb9\u0000\u00e9\t\tA0\u0301\ud83d\ude009a  0\ud83d\ude00\u00e9\t\u0000\t\u00e9\u00e9\u0301a\ud83d\ude00\ud83d\ude00\ud83d\ude80\u0000 B",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0096",
+            "status": "ok",
+            "value": 0.24489795918367352
+          },
+          "actual": {
+            "id": "normalized-evaluation-0096",
+            "status": "ok",
+            "value": 0.19047619047619047
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0097",
+            "task": "normalized",
+            "a": "A\u00e9Aa\ud83d\ude000\u0000\u0301\t0\t\u4e2da\u0000\u4e2d9\u4e2d\u0301B\u00e9 0ABB\t\ud83d\ude80\t\t\tbA\ud83d\ude80ab\ud83d\ude00BB\u0301ab\ud83d\ude00\u00e9b\tB\u00e9B\ud83d\ude80\ud83d\ude80\ud83d\ude80 \ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b  ",
+            "b": "A\u00e9Aa\ud83d\ude000\u0000\u0301\t0\t\u4e2da\u0000\u4e2d9\u4e2d\u0301B\u00e9 0ABB\t\ud83d\ude80\t\t\tbA\ud83d\ude80ab\ud83d\ude00BB\u0301ab\ud83d\ude00\u00e9b\tB\u00e9B\ud83d\ude800\ud83d\ude80 \ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b  ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0097",
+            "status": "ok",
+            "value": 0.02666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0097",
+            "status": "ok",
+            "value": 0.015625
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0098",
+            "task": "normalized",
+            "a": "a\n\n\t\u4e2d9A",
+            "b": "B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a\u00e9\ud83d\ude809\u00e9\ud83d\ude80\u0000\u00e99\t0\n\u0000\u0000",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0098",
+            "status": "ok",
+            "value": 0.061224489795918324
+          },
+          "actual": {
+            "id": "normalized-evaluation-0098",
+            "status": "ok",
+            "value": 0.0714285714285714
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0099",
+            "task": "normalized",
+            "a": "\u0301\u0301\n0\ud83d\ude80\u00e9\u4e2d\u00e9A ab B",
+            "b": "\u0301\u0301\n0\ud83d\ude80\u0000\u4e2d\u00e9A ab B",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0099",
+            "status": "ok",
+            "value": 0.06666666666666667
+          },
+          "actual": {
+            "id": "normalized-evaluation-0099",
+            "status": "ok",
+            "value": 0.07142857142857142
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0100",
+            "task": "normalized",
+            "a": "aBAB\ud83d\ude809B\u00e9\u00e9\u00e9\ud83d\ude80A\t\u00e9a\ud83d\ude80 \u0301A9\ud83d\ude80\u0301\n\u0301 \ud83d\ude00\u4e2d\u0000\u0301",
+            "b": "\t\t\u00e9\u0301\u0301\u0000\n\ud83d\ude80\u0301\t a\tb\u4e2d0a\nA B\ud83d\ude80A\u0000\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0100",
+            "status": "ok",
+            "value": 0.17647058823529416
+          },
+          "actual": {
+            "id": "normalized-evaluation-0100",
+            "status": "ok",
+            "value": 0.1724137931034483
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0101",
+            "task": "normalized",
+            "a": "\u0000A\t\ud83d\ude80\u03010\nB\u00e9B\u4e2d \ud83d\ude809 \u0000B\ud83d\ude80a",
+            "b": "\u00009\t\ud83d\ude80\u03010\nB\u00e9B\u4e2d \ud83d\ude809 \u0000B\ud83d\ude80a",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0101",
+            "status": "ok",
+            "value": 0.045454545454545456
+          },
+          "actual": {
+            "id": "normalized-evaluation-0101",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0102",
+            "task": "normalized",
+            "a": "9\u00e99\u4e2da99B\u4e2d0b\n\ud83d\ude80\ud83d\ude00\u4e2da\nB\u4e2d\t\u0000\u4e2d9\u03019A\u00e90\u4e2dBb\nA9\ud83d\ude80 aB\u00e9a \ud83d\ude00\ud83d\ude00A\u4e2da\ud83d\ude00\ud83d\ude80aB\t\u0000b",
+            "b": "AB00\u00e90b \u00e9\ud83d\ude00A\u00e9aaa 9A",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0102",
+            "status": "ok",
+            "value": 0.19999999999999996
+          },
+          "actual": {
+            "id": "normalized-evaluation-0102",
+            "status": "ok",
+            "value": 0.2075471698113207
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0104",
+            "task": "normalized",
+            "a": "\ud83d\ude809\n\t\ud83d\ude00\u0000\n\ud83d\ude80\t\ud83d\ude80b \u4e2daA\ud83d\ude80B A\u00e90\u0000\t\u0000\tAbbB\u00e9\u4e2d90BAB\ud83d\ude00\u00e9Bb\ud83d\ude00\n",
+            "b": "BA\u0301 \t\ud83d\ude80 A\t \u0000A\u4e2d\u0301\n\u4e2d\u0000AbAaA\u00e9\n\u00e9\u03019A\n\u00e9",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0104",
+            "status": "ok",
+            "value": 0.22448979591836737
+          },
+          "actual": {
+            "id": "normalized-evaluation-0104",
+            "status": "ok",
+            "value": 0.23809523809523814
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0105",
+            "task": "normalized",
+            "a": "b\ud83d\ude80Bb0A\ud83d\ude00\u0000\t9A\t a\u00000 \u0301A",
+            "b": "0\ud83d\ude80Bb0A\ud83d\ude00\u0000\t9A\t a\u00000 \u0301A",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0105",
+            "status": "ok",
+            "value": 0.047619047619047616
+          },
+          "actual": {
+            "id": "normalized-evaluation-0105",
+            "status": "ok",
+            "value": 0.05263157894736842
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0106",
+            "task": "normalized",
+            "a": "9\ud83d\ude00a\u4e2d\u00e9B  A",
+            "b": "\tAA9\n\t \nbB\u00e9A\n  \n\t\u0000\u00009\u0000\u00e9\u0000\ud83d\ude00\nBb\ud83d\ude00\u4e2d b\n B\ud83d\ude00\t 0\u00e9 \u4e2d\u00e9\n0B\ud83d\ude809\u4e2d\u0301099",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0106",
+            "status": "ok",
+            "value": 0.125
+          },
+          "actual": {
+            "id": "normalized-evaluation-0106",
+            "status": "ok",
+            "value": 0.11538461538461542
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0107",
+            "task": "normalized",
+            "a": "\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d0\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000aA ",
+            "b": "\ud83d\ude800\u0000\ud83d\ude800\ud83d\ude80B\t\u0301B b\u030100\u4e2d\u00e9\n \ud83d\ude80 b  bBBb\u00e9\u0000bB\u00e9bb0B \tA\u0000aA ",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0107",
+            "status": "ok",
+            "value": 0.020833333333333332
+          },
+          "actual": {
+            "id": "normalized-evaluation-0107",
+            "status": "ok",
+            "value": 0.022727272727272728
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0108",
+            "task": "normalized",
+            "a": " \tB9 99\u4e2d\t\ud83d\ude00a0bb\u0000\ud83d\ude80A\u0000\ud83d\ude80ABB\n\u0301\u0000  A\u0000\u0000BAb\u0000\u00e9\u00e9 \ud83d\ude80\ud83d\ude00",
+            "b": " \ud83d\ude000\nb9\u4e2d\u00e9a\t\tB\n\u00e90\ud83d\ude00AaA\u0301\ud83d\ude00\n\u00e9\u00e90b\u0301B\ud83d\ude00A\ud83d\ude000\u4e2d\u030109\u0000BB\ud83d\ude000 BBBaA\u0000\nA\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0108",
+            "status": "ok",
+            "value": 0.19298245614035092
+          },
+          "actual": {
+            "id": "normalized-evaluation-0108",
+            "status": "ok",
+            "value": 0.17647058823529416
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0110",
+            "task": "normalized",
+            "a": "\u0000\ud83d\ude00A\u0301b\u0301 \u00e9ba\u0301\u0301\ud83d\ude00\u4e2d\ud83d\ude00\u00e99aa\t\u00e9\ud83d\ude00a9A\nA\u4e2dBa\nB0\ud83d\ude00B0b\u0000\t\u4e2d 90\u00e9\u0301\ud83d\ude000\ud83d\ude00\u00e99a\u00e9\u4e2d0\ud83d\ude80\ud83d\ude00",
+            "b": "0\ud83d\ude00b\n\u0000A\ud83d\ude800\t9\u0000\u03010\n\u4e2dA\tA\u0301a\ud83d\ude00\ud83d\ude009\u0000 \u4e2d ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0110",
+            "status": "ok",
+            "value": 0.2153846153846154
+          },
+          "actual": {
+            "id": "normalized-evaluation-0110",
+            "status": "ok",
+            "value": 0.1785714285714286
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0111",
+            "task": "normalized",
+            "a": "\ud83d\ude80\ud83d\ude8090aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a   b  \n\u0000\u4e2d\ud83d\ude80\n\u00e9\t\n\ud83d\ude00\u4e2dB",
+            "b": "\ud83d\ude80\ud83d\ude8090aAaBA\nb\ud83d\ude80\nb\tA\n\u030199\u4e2d\tBA \u4e2d\t\u0000b\u00000\t\ud83d\ude00\u0301\na\nB\ud83d\ude80\u00000B\u0000a   b  \n\u0000\u4e2d\ud83d\ude80\n\u00e9\t\n\n\u4e2dB",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0111",
+            "status": "ok",
+            "value": 0.029411764705882353
+          },
+          "actual": {
+            "id": "normalized-evaluation-0111",
+            "status": "ok",
+            "value": 0.01639344262295082
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0112",
+            "task": "normalized",
+            "a": "\ud83d\ude00\u4e2d\nba9 \na0\t\n\u00e9\nbb \ud83d\ude00\tB\u00e9\ud83d\ude809a\u0301\ud83d\ude800\u00e90\u0000 BaBbBBB\u0301\u030190B",
+            "b": "B9A\u4e2d",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0112",
+            "status": "ok",
+            "value": 0.04255319148936165
+          },
+          "actual": {
+            "id": "normalized-evaluation-0112",
+            "status": "ok",
+            "value": 0.046511627906976716
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0113",
+            "task": "normalized",
+            "a": "\u4e2daAB\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u4e2dBaA\t\ud83d\ude00\u0000\n \u00e9b",
+            "b": "\u4e2daAB\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb\u00e9BaA\t\ud83d\ude00\u0000\n \u00e9b",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0113",
+            "status": "ok",
+            "value": 0.02040816326530612
+          },
+          "actual": {
+            "id": "normalized-evaluation-0113",
+            "status": "ok",
+            "value": 0.022222222222222223
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0114",
+            "task": "normalized",
+            "a": "a09B \u4e2d\t\t\ud83d\ude80\u0000\u0000b\ud83d\ude80\u4e2d",
+            "b": "\n9B0B\u0000\n\ud83d\ude00A\n\u0301bBb \ud83d\ude8090\n \t\u0000\u4e2d\ud83d\ude00\ud83d\ude80B9\n\ud83d\ude00",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0114",
+            "status": "ok",
+            "value": 0.17647058823529416
+          },
+          "actual": {
+            "id": "normalized-evaluation-0114",
+            "status": "ok",
+            "value": 0.1724137931034483
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0115",
+            "task": "normalized",
+            "a": "\u0301b\u00e9b\u0000A\u0301\ud83d\ude00\u0000a0\ud83d\ude809a9\u0301b\u00e9\u0301\n\ud83d\ude00Aa\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BB\u00e9b\u03010",
+            "b": "\u0301b\u00e9b\u0000A\u0301\ud83d\ude00\u0000a0\ud83d\ude809a9\u0301b\u00e9\u0301\n\ud83d\ude00Aa\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB\n\u00e9B \t  \t\ud83d\ude80BA\u00e9b\u03010",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0115",
+            "status": "ok",
+            "value": 0.018518518518518517
+          },
+          "actual": {
+            "id": "normalized-evaluation-0115",
+            "status": "ok",
+            "value": 0.02040816326530612
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0116",
+            "task": "normalized",
+            "a": "9\u00e9A\ud83d\ude00BAb\n \ud83d\ude8099\t9\ud83d\ude80\u0301\u0000a\u0000a\u0301\u00e99\u0000\u0301\u4e2d\t0B\u4e2d\u0301\n\ud83d\ude00B \u0000\u0000  \u4e2d\u0301\u4e2d\u0000\u0301BB9B\u4e2d \t\u0000\u0000\u4e2d A \u4e2d\ud83d\ude00\ud83d\ude00\ud83d\ude80 ",
+            "b": "0\ud83d\ude00\n\u0301\ud83d\ude00Ab\ud83d\ude809\u0301\u0000\u00009\u4e2d\n\u0000BBB\u00e9\u0000\n9\n\tBAB\n\u0301A9A a\ud83d\ude809B0a\u0301 \u0301\u4e2d99",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0116",
+            "status": "ok",
+            "value": 0.21739130434782605
+          },
+          "actual": {
+            "id": "normalized-evaluation-0116",
+            "status": "ok",
+            "value": 0.22580645161290325
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0117",
+            "task": "normalized",
+            "a": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "b": "A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A\t9\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d\u0000A\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0117",
+            "status": "ok",
+            "value": 0.02
+          },
+          "actual": {
+            "id": "normalized-evaluation-0117",
+            "status": "ok",
+            "value": 0.021739130434782608
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0118",
+            "task": "normalized",
+            "a": "bB\u0301\u00e9",
+            "b": "\u00e9\t\ud83d\ude00b\u0301\t\u00e9a\ud83d\ude80\ud83d\ude00\u03010 B\u03010\nA\u03010",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0118",
+            "status": "ok",
+            "value": 0.13043478260869568
+          },
+          "actual": {
+            "id": "normalized-evaluation-0118",
+            "status": "ok",
+            "value": 0.15000000000000002
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0119",
+            "task": "normalized",
+            "a": "\ud83d\ude009\ud83d\ude00\tb\u0000 \ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00Bb9\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80",
+            "b": "\ud83d\ude009\ud83d\ude00\tb\u0000 \ud83d\ude00\ud83d\ude00\u4e2d\t\u0301 AB\u0000b\ud83d\ude00a\ud83d\ude80a9\u03019\u0301b a\ud83d\ude00\ud83d\ude00B\u00e99\u4e2d\u0000\u0000\u4e2d\nA\u4e2d\u4e2d\ud83d\ude00\ud83d\ude80",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0119",
+            "status": "ok",
+            "value": 0.018867924528301886
+          },
+          "actual": {
+            "id": "normalized-evaluation-0119",
+            "status": "ok",
+            "value": 0.023255813953488372
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0121",
+            "task": "normalized",
+            "a": "\n9B\n\n0\u00e99\ud83d\ude80\t\n \tA\n\u0000\n00\t\n\ud83d\ude80\u4e2da\n\ud83d\ude00a\t\t\u0000 AA\u4e2da\u000000",
+            "b": "\n9BB\n0\u00e99\ud83d\ude80\t\n \tA\n\u0000\n00\t\n\ud83d\ude80\u4e2da\n\ud83d\ude00a\t\t\u0000 AA\u4e2da\u000000",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0121",
+            "status": "ok",
+            "value": 0.024390243902439025
+          },
+          "actual": {
+            "id": "normalized-evaluation-0121",
+            "status": "ok",
+            "value": 0.02631578947368421
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0122",
+            "task": "normalized",
+            "a": "\u00e9bb\u4e2d\u4e2d\nb\ud83d\ude80\ud83d\ude80\ud83d\ude00\ud83d\ude80AaB\u0000b\u00e9B99BB",
+            "b": "\ud83d\ude00\n\u00009\u4e2d ",
+            "operation": "similarity",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0122",
+            "status": "ok",
+            "value": 0.15384615384615385
+          },
+          "actual": {
+            "id": "normalized-evaluation-0122",
+            "status": "ok",
+            "value": 0.13636363636363635
+          }
+        },
+        {
+          "case": {
+            "id": "normalized-evaluation-0123",
+            "task": "normalized",
+            "a": "\nab \u000099\ud83d\ude00\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "b": "\nab \u0000999\u4e2d\nb\t\u4e2d \ud83d\ude80\u00e9\u0000\u0301\u4e2d9\tB \n",
+            "operation": "distance",
+            "parameter": null
+          },
+          "expected": {
+            "id": "normalized-evaluation-0123",
+            "status": "ok",
+            "value": 0.07692307692307693
+          },
+          "actual": {
+            "id": "normalized-evaluation-0123",
+            "status": "ok",
+            "value": 0.041666666666666664
+          }
+        }
+      ]
+    }
+  },
+  "passed": 112,
+  "total": 300,
+  "all_pass": false
+}

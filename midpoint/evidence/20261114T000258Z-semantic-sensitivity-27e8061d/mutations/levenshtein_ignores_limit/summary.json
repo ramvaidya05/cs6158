@@ -1,0 +1,1687 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 131,
+      "total": 166,
+      "status": "completed",
+      "passed_ids": [
+        "levenshtein-visible-000",
+        "levenshtein-visible-001",
+        "levenshtein-visible-002",
+        "levenshtein-visible-003",
+        "levenshtein-visible-004",
+        "levenshtein-visible-005",
+        "levenshtein-visible-006",
+        "levenshtein-visible-007",
+        "levenshtein-visible-008",
+        "levenshtein-visible-009",
+        "levenshtein-visible-010",
+        "levenshtein-visible-011",
+        "levenshtein-visible-012",
+        "levenshtein-visible-013",
+        "levenshtein-visible-014",
+        "levenshtein-visible-015",
+        "levenshtein-visible-016",
+        "levenshtein-visible-017",
+        "levenshtein-visible-018",
+        "levenshtein-visible-019",
+        "levenshtein-visible-022",
+        "levenshtein-visible-023",
+        "levenshtein-evaluation-0000",
+        "levenshtein-evaluation-0001",
+        "levenshtein-evaluation-0002",
+        "levenshtein-evaluation-0003",
+        "levenshtein-evaluation-0004",
+        "levenshtein-evaluation-0005",
+        "levenshtein-evaluation-0006",
+        "levenshtein-evaluation-0007",
+        "levenshtein-evaluation-0008",
+        "levenshtein-evaluation-0009",
+        "levenshtein-evaluation-0010",
+        "levenshtein-evaluation-0011",
+        "levenshtein-evaluation-0013",
+        "levenshtein-evaluation-0014",
+        "levenshtein-evaluation-0017",
+        "levenshtein-evaluation-0018",
+        "levenshtein-evaluation-0021",
+        "levenshtein-evaluation-0022",
+        "levenshtein-evaluation-0025",
+        "levenshtein-evaluation-0026",
+        "levenshtein-evaluation-0029",
+        "levenshtein-evaluation-0030",
+        "levenshtein-evaluation-0031",
+        "levenshtein-evaluation-0032",
+        "levenshtein-evaluation-0033",
+        "levenshtein-evaluation-0034",
+        "levenshtein-evaluation-0035",
+        "levenshtein-evaluation-0036",
+        "levenshtein-evaluation-0037",
+        "levenshtein-evaluation-0038",
+        "levenshtein-evaluation-0039",
+        "levenshtein-evaluation-0041",
+        "levenshtein-evaluation-0042",
+        "levenshtein-evaluation-0043",
+        "levenshtein-evaluation-0044",
+        "levenshtein-evaluation-0045",
+        "levenshtein-evaluation-0047",
+        "levenshtein-evaluation-0048",
+        "levenshtein-evaluation-0049",
+        "levenshtein-evaluation-0050",
+        "levenshtein-evaluation-0051",
+        "levenshtein-evaluation-0053",
+        "levenshtein-evaluation-0054",
+        "levenshtein-evaluation-0056",
+        "levenshtein-evaluation-0057",
+        "levenshtein-evaluation-0059",
+        "levenshtein-evaluation-0060",
+        "levenshtein-evaluation-0062",
+        "levenshtein-evaluation-0063",
+        "levenshtein-evaluation-0064",
+        "levenshtein-evaluation-0065",
+        "levenshtein-evaluation-0066",
+        "levenshtein-evaluation-0067",
+        "levenshtein-evaluation-0068",
+        "levenshtein-evaluation-0069",
+        "levenshtein-evaluation-0071",
+        "levenshtein-evaluation-0072",
+        "levenshtein-evaluation-0073",
+        "levenshtein-evaluation-0074",
+        "levenshtein-evaluation-0075",
+        "levenshtein-evaluation-0077",
+        "levenshtein-evaluation-0078",
+        "levenshtein-evaluation-0079",
+        "levenshtein-evaluation-0080",
+        "levenshtein-evaluation-0081",
+        "levenshtein-evaluation-0083",
+        "levenshtein-evaluation-0084",
+        "levenshtein-evaluation-0085",
+        "levenshtein-evaluation-0086",
+        "levenshtein-evaluation-0087",
+        "levenshtein-evaluation-0089",
+        "levenshtein-evaluation-0090",
+        "levenshtein-evaluation-0092",
+        "levenshtein-evaluation-0093",
+        "levenshtein-evaluation-0095",
+        "levenshtein-evaluation-0096",
+        "levenshtein-evaluation-0097",
+        "levenshtein-evaluation-0098",
+        "levenshtein-evaluation-0099",
+        "levenshtein-evaluation-0101",
+        "levenshtein-evaluation-0102",
+        "levenshtein-evaluation-0104",
+        "levenshtein-evaluation-0105",
+        "levenshtein-evaluation-0106",
+        "levenshtein-evaluation-0107",
+        "levenshtein-evaluation-0108",
+        "levenshtein-evaluation-0109",
+        "levenshtein-evaluation-0110",
+        "levenshtein-evaluation-0111",
+        "levenshtein-evaluation-0113",
+        "levenshtein-evaluation-0114",
+        "levenshtein-evaluation-0116",
+        "levenshtein-evaluation-0117",
+        "levenshtein-evaluation-0119",
+        "levenshtein-evaluation-0120",
+        "levenshtein-evaluation-0122",
+        "levenshtein-evaluation-0123",
+        "levenshtein-evaluation-0125",
+        "levenshtein-evaluation-0126",
+        "levenshtein-evaluation-0127",
+        "levenshtein-evaluation-0128",
+        "levenshtein-evaluation-0129",
+        "levenshtein-evaluation-0131",
+        "levenshtein-evaluation-0132",
+        "levenshtein-evaluation-0134",
+        "levenshtein-evaluation-0135",
+        "levenshtein-evaluation-0137",
+        "levenshtein-evaluation-0138",
+        "levenshtein-evaluation-0139"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "levenshtein-visible-020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-021",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-024",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-visible-024",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-024",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-025",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0012",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -2147483648
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0012",
+            "status": "ok",
+            "value": -2147483648.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0012",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0015",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": -2147483648
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0015",
+            "status": "ok",
+            "value": -2147483648.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0015",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0016",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0016",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0016",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0019",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0019",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0019",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0020",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0020",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0023",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0023",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0023",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0024",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0024",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0024",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0027",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0027",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0027",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0028",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0028",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0028",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0040",
+            "task": "levenshtein",
+            "a": "9\u4e2d \ud83d\ude80\u4e2db\u00009B\u0301\ud83d\ude80\u00e9b\u03010\u4e2d\u4e2d0 a\u0000\u0000\u03019",
+            "b": "\ud83d\ude800\u00e9A\u0000\u00e9a\u0000A\u00e9\t9\nB\t\ud83d\ude80\u00e9bB9\u4e2d\u0000\t\u0000\u4e2dBa\n b\t\u00e9aA\u00e9\u0000\nB\n\ud83d\ude8009\ud83d\ude80b",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0040",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0040",
+            "status": "ok",
+            "value": 35
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0046",
+            "task": "levenshtein",
+            "a": "\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude000\u0000a\u0301\u0000\ud83d\ude80\u0000\u4e2d\ud83d\ude00\u4e2da0\u0000\u000090\ta",
+            "b": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u0301a0\ud83d\ude00",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0046",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0046",
+            "status": "ok",
+            "value": 35
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0052",
+            "task": "levenshtein",
+            "a": "ba0\t\u0000\u00e99\u4e2d",
+            "b": "0\u0301bb\ud83d\ude00\n\u4e2d\u00e9\ud83d\ude80a\u0000\ud83d\ude00aa\u0000\tAa 9\u0301a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0052",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0052",
+            "status": "ok",
+            "value": 21
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0055",
+            "task": "levenshtein",
+            "a": "B9\nB9B\n\t",
+            "b": "B9\nB\u00e9B\n\t",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0055",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0055",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0058",
+            "task": "levenshtein",
+            "a": "bB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u030100Ba\ud83d\ude000\u00e9\u0301",
+            "b": "\ud83d\ude809\u00e9\ud83d\ude00\t9b\u0000\u00e9\t9\u0301\u0000\u4e2dAB9\ud83d\ude80B\ud83d\ude00a9\u0000\u0000B\ud83d\ude80\ud83d\ude00\u4e2d0a0b\nb \ud83d\ude80\tb9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\n",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0058",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0058",
+            "status": "ok",
+            "value": 55
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0061",
+            "task": "levenshtein",
+            "a": "\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u0301",
+            "b": "\ud83d\ude000\ud83d\ude00b\u03010\u0000\tB\u4e2db\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u0301",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0061",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0061",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0070",
+            "task": "levenshtein",
+            "a": "0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A\u4e2d\ud83d\ude809\t \ud83d\ude00BB\u00e9\t\u0301\t\ud83d\ude80\u00e9\u0301\ud83d\ude80A\u0000\tA\ud83d\ude80\ud83d\ude809bbb\u0000\t\u0000b\u0000",
+            "b": "\ud83d\ude00\u00e9\u00e9\ta\u0301aB\u0301Ba\nA bAa BA \ud83d\ude80\u0000\u0000\ta\n\u0301a A\t\n\u4e2daA\ud83d\ude00aaAA\tAb\u0301\u0000b\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0070",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0070",
+            "status": "ok",
+            "value": 55
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0076",
+            "task": "levenshtein",
+            "a": "b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A0\n B\u0000B\ud83d\ude80a\u00e9\u00e9b9\u4e2d\u00e9\u4e2d\ud83d\ude800",
+            "b": "\u0301\u00e9\u00e9AA\u4e2d\u0000\ud83d\ude80\u0301\u00e9A\t\u0000\u00e9\nA \ud83d\ude80B\ud83d\ude80",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0076",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0076",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0082",
+            "task": "levenshtein",
+            "a": "\nAA\t\ud83d\ude00",
+            "b": "b\ud83d\ude00\n\ud83d\ude809A\u00e9\ud83d\ude80 \u4e2db\t\ud83d\ude80\ud83d\ude009B0\u0000\u0000\u0000\u0000\ud83d\ude00A\u4e2dbAbB9\u4e2da\t90a\n\nbA b\u00009 A 9\u03019B\ud83d\ude800\ud83d\ude00\ud83d\ude00A\ud83d\ude00B\ud83d\ude00\ud83d\ude80 \u0000",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0082",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0082",
+            "status": "ok",
+            "value": 67
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0088",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00\n90B\u4e2d \n\n\u00e9b\ud83d\ude80\ud83d\ude00Ba",
+            "b": "\u00e9\u0000B\ud83d\ude00\u0301b\u4e2daB0\ud83d\ude000\n0\u03019bbB9\n00b\t\u00e9 \t\u4e2dB9\ud83d\ude00\u4e2daA\u4e2d\u4e2dB\ud83d\ude00\ud83d\ude00\ud83d\ude000\n0b\tBbA\n\u0301a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0088",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0088",
+            "status": "ok",
+            "value": 46
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0091",
+            "task": "levenshtein",
+            "a": "\u4e2db0\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "b": "\u4e2d\u00e90\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0091",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0091",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0094",
+            "task": "levenshtein",
+            "a": "99aAb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d",
+            "b": "0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d9B\ud83d\ude80B0\u00e99\u00e9a\ud83d\ude00\t00B\ud83d\ude00\u0301\u0301\u00e9\u0301\u0301A\u00e99\ud83d\ude00\t\n9",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0094",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0094",
+            "status": "ok",
+            "value": 56
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0100",
+            "task": "levenshtein",
+            "a": "A\u00e9\n\u0000\ud83d\ude00ab\ud83d\ude00\u0000\n\u4e2d\u0301\tA\ud83d\ude80\n0",
+            "b": "\u0301\t\u0000AB\n \ud83d\ude8000\n9",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0100",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0100",
+            "status": "ok",
+            "value": 17
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0103",
+            "task": "levenshtein",
+            "a": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000bB\u00000\u4e2daB",
+            "b": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000\nB\u00000\u4e2daB",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0103",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0103",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0112",
+            "task": "levenshtein",
+            "a": "B0aB\ud83d\ude80",
+            "b": "\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0112",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0112",
+            "status": "ok",
+            "value": 38
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0115",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "b": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\ud83d\ude80a\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0115",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0115",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0118",
+            "task": "levenshtein",
+            "a": "00\u00e90b \u00e9\ud83d\ude00A\u00e9aaa 9A\ud83d\ude00a\u0000\u4e2d\t\u4e2d9\ud83d\ude809",
+            "b": "\ud83d\ude00\u0000\n\ud83d\ude80\t\ud83d\ude80b \u4e2daA\ud83d\ude80B A\u00e90\u0000\t\u0000\tAbbB\u00e9\u4e2d90BAB\ud83d\ude00\u00e9Bb\ud83d\ude00\n\ud83d\ude00BBA\u0301 \t\ud83d\ude80 A\t \u0000A\u4e2d\u0301\n\u4e2d\u0000AbAaA\u00e9",
+            "operation": "distance",
+            "parameter": 8
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0118",
+            "status": "ok",
+            "value": 8.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0118",
+            "status": "ok",
+            "value": 59
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0121",
+            "task": "levenshtein",
+            "a": "b\u00e9\u0000bB\u00e9bb0B \tA\u0000aA 0\u00e90 \tB9 99\u4e2d",
+            "b": "b\u00e9\u0000bB\u00e9bb0B \tA\u0000a\ud83d\ude00 0\u00e90 \tB9 99\u4e2d",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0121",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0121",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0124",
+            "task": "levenshtein",
+            "a": "\u0301\nBa\u4e2d\u0000\u4e2dB\t\t\u00e9\ud83d\ude00B\n\u0301\u0301\u4e2d\u0000Aa9\ud83d\ude000\u00e9\ud83d\ude00\ud83d\ude80A\ud83d\ude809\n\u0000 \ud83d\ude80\u4e2d\u0000\u0301",
+            "b": "A\ud83d\ude00\u4e2d\u00e9\u4e2d\u00e9\t\u0000\ud83d\ude00A\u0301b\u0301 \u00e9ba\u0301\u0301\ud83d\ude00\u4e2d\ud83d\ude00\u00e99aa\t\u00e9\ud83d\ude00a9A\nA\u4e2dBa",
+            "operation": "distance",
+            "parameter": 8
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0124",
+            "status": "ok",
+            "value": 8.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0124",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0130",
+            "task": "levenshtein",
+            "a": "A",
+            "b": "\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0130",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0130",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0133",
+            "task": "levenshtein",
+            "a": "a\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB",
+            "b": "a\u0000\u4e2dBAb\u0301A\u00e9\ud83d\ude00AB",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0133",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0133",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0136",
+            "task": "levenshtein",
+            "a": "9\n\tBAB\n\u0301A9A a\ud83d\ude809B0a\u0301 \u0301\u4e2d99\u0000\u03019A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d",
+            "b": "\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude000\tab",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0136",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0136",
+            "status": "ok",
+            "value": 58
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 131,
+      "total": 166,
+      "status": "completed",
+      "passed_ids": [
+        "levenshtein-visible-000",
+        "levenshtein-visible-001",
+        "levenshtein-visible-002",
+        "levenshtein-visible-003",
+        "levenshtein-visible-004",
+        "levenshtein-visible-005",
+        "levenshtein-visible-006",
+        "levenshtein-visible-007",
+        "levenshtein-visible-008",
+        "levenshtein-visible-009",
+        "levenshtein-visible-010",
+        "levenshtein-visible-011",
+        "levenshtein-visible-012",
+        "levenshtein-visible-013",
+        "levenshtein-visible-014",
+        "levenshtein-visible-015",
+        "levenshtein-visible-016",
+        "levenshtein-visible-017",
+        "levenshtein-visible-018",
+        "levenshtein-visible-019",
+        "levenshtein-visible-022",
+        "levenshtein-visible-023",
+        "levenshtein-evaluation-0000",
+        "levenshtein-evaluation-0001",
+        "levenshtein-evaluation-0002",
+        "levenshtein-evaluation-0003",
+        "levenshtein-evaluation-0004",
+        "levenshtein-evaluation-0005",
+        "levenshtein-evaluation-0006",
+        "levenshtein-evaluation-0007",
+        "levenshtein-evaluation-0008",
+        "levenshtein-evaluation-0009",
+        "levenshtein-evaluation-0010",
+        "levenshtein-evaluation-0011",
+        "levenshtein-evaluation-0013",
+        "levenshtein-evaluation-0014",
+        "levenshtein-evaluation-0017",
+        "levenshtein-evaluation-0018",
+        "levenshtein-evaluation-0021",
+        "levenshtein-evaluation-0022",
+        "levenshtein-evaluation-0025",
+        "levenshtein-evaluation-0026",
+        "levenshtein-evaluation-0029",
+        "levenshtein-evaluation-0030",
+        "levenshtein-evaluation-0031",
+        "levenshtein-evaluation-0032",
+        "levenshtein-evaluation-0033",
+        "levenshtein-evaluation-0034",
+        "levenshtein-evaluation-0035",
+        "levenshtein-evaluation-0036",
+        "levenshtein-evaluation-0037",
+        "levenshtein-evaluation-0038",
+        "levenshtein-evaluation-0039",
+        "levenshtein-evaluation-0041",
+        "levenshtein-evaluation-0042",
+        "levenshtein-evaluation-0043",
+        "levenshtein-evaluation-0044",
+        "levenshtein-evaluation-0045",
+        "levenshtein-evaluation-0047",
+        "levenshtein-evaluation-0048",
+        "levenshtein-evaluation-0049",
+        "levenshtein-evaluation-0050",
+        "levenshtein-evaluation-0051",
+        "levenshtein-evaluation-0053",
+        "levenshtein-evaluation-0054",
+        "levenshtein-evaluation-0056",
+        "levenshtein-evaluation-0057",
+        "levenshtein-evaluation-0059",
+        "levenshtein-evaluation-0060",
+        "levenshtein-evaluation-0062",
+        "levenshtein-evaluation-0063",
+        "levenshtein-evaluation-0064",
+        "levenshtein-evaluation-0065",
+        "levenshtein-evaluation-0066",
+        "levenshtein-evaluation-0067",
+        "levenshtein-evaluation-0068",
+        "levenshtein-evaluation-0069",
+        "levenshtein-evaluation-0071",
+        "levenshtein-evaluation-0072",
+        "levenshtein-evaluation-0073",
+        "levenshtein-evaluation-0074",
+        "levenshtein-evaluation-0075",
+        "levenshtein-evaluation-0077",
+        "levenshtein-evaluation-0078",
+        "levenshtein-evaluation-0079",
+        "levenshtein-evaluation-0080",
+        "levenshtein-evaluation-0081",
+        "levenshtein-evaluation-0083",
+        "levenshtein-evaluation-0084",
+        "levenshtein-evaluation-0085",
+        "levenshtein-evaluation-0086",
+        "levenshtein-evaluation-0087",
+        "levenshtein-evaluation-0089",
+        "levenshtein-evaluation-0090",
+        "levenshtein-evaluation-0092",
+        "levenshtein-evaluation-0093",
+        "levenshtein-evaluation-0095",
+        "levenshtein-evaluation-0096",
+        "levenshtein-evaluation-0097",
+        "levenshtein-evaluation-0098",
+        "levenshtein-evaluation-0099",
+        "levenshtein-evaluation-0101",
+        "levenshtein-evaluation-0102",
+        "levenshtein-evaluation-0104",
+        "levenshtein-evaluation-0105",
+        "levenshtein-evaluation-0106",
+        "levenshtein-evaluation-0107",
+        "levenshtein-evaluation-0108",
+        "levenshtein-evaluation-0109",
+        "levenshtein-evaluation-0110",
+        "levenshtein-evaluation-0111",
+        "levenshtein-evaluation-0113",
+        "levenshtein-evaluation-0114",
+        "levenshtein-evaluation-0116",
+        "levenshtein-evaluation-0117",
+        "levenshtein-evaluation-0119",
+        "levenshtein-evaluation-0120",
+        "levenshtein-evaluation-0122",
+        "levenshtein-evaluation-0123",
+        "levenshtein-evaluation-0125",
+        "levenshtein-evaluation-0126",
+        "levenshtein-evaluation-0127",
+        "levenshtein-evaluation-0128",
+        "levenshtein-evaluation-0129",
+        "levenshtein-evaluation-0131",
+        "levenshtein-evaluation-0132",
+        "levenshtein-evaluation-0134",
+        "levenshtein-evaluation-0135",
+        "levenshtein-evaluation-0137",
+        "levenshtein-evaluation-0138",
+        "levenshtein-evaluation-0139"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "levenshtein-visible-020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-020",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-021",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-021",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-024",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-visible-024",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-024",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-visible-025",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-visible-025",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0012",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -2147483648
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0012",
+            "status": "ok",
+            "value": -2147483648.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0012",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0015",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": -2147483648
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0015",
+            "status": "ok",
+            "value": -2147483648.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0015",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0016",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0016",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0016",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0019",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0019",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0019",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0020",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0020",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0020",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0023",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0023",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0023",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0024",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0024",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0024",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0027",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80a",
+            "b": "a",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0027",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0027",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0028",
+            "task": "levenshtein",
+            "a": "abc",
+            "b": "xyz",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0028",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0028",
+            "status": "ok",
+            "value": 3
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0040",
+            "task": "levenshtein",
+            "a": "9\u4e2d \ud83d\ude80\u4e2db\u00009B\u0301\ud83d\ude80\u00e9b\u03010\u4e2d\u4e2d0 a\u0000\u0000\u03019",
+            "b": "\ud83d\ude800\u00e9A\u0000\u00e9a\u0000A\u00e9\t9\nB\t\ud83d\ude80\u00e9bB9\u4e2d\u0000\t\u0000\u4e2dBa\n b\t\u00e9aA\u00e9\u0000\nB\n\ud83d\ude8009\ud83d\ude80b",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0040",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0040",
+            "status": "ok",
+            "value": 35
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0046",
+            "task": "levenshtein",
+            "a": "\tb9A\u00e9\u0301\u4e2d\u0301\u4e2d b\u00e9AB\n\ud83d\ude000\u0000a\u0301\u0000\ud83d\ude80\u0000\u4e2d\ud83d\ude00\u4e2da0\u0000\u000090\ta",
+            "b": "\u00e9A0\u00000\u030190\n\u00e9\u0301 \u4e2d0bA0\ud83d\ude80\u00e9a9ABab\nb0\ud83d\ude80\u0000 99\ud83d\ude80\u4e2d\u4e2d0\u0000a \u0301a0\ud83d\ude00",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0046",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0046",
+            "status": "ok",
+            "value": 35
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0052",
+            "task": "levenshtein",
+            "a": "ba0\t\u0000\u00e99\u4e2d",
+            "b": "0\u0301bb\ud83d\ude00\n\u4e2d\u00e9\ud83d\ude80a\u0000\ud83d\ude00aa\u0000\tAa 9\u0301a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0052",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0052",
+            "status": "ok",
+            "value": 21
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0055",
+            "task": "levenshtein",
+            "a": "B9\nB9B\n\t",
+            "b": "B9\nB\u00e9B\n\t",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0055",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0055",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0058",
+            "task": "levenshtein",
+            "a": "bB\ud83d\ude00ABA\n\u0301\u4e2dB\u0301\u030100Ba\ud83d\ude000\u00e9\u0301",
+            "b": "\ud83d\ude809\u00e9\ud83d\ude00\t9b\u0000\u00e9\t9\u0301\u0000\u4e2dAB9\ud83d\ude80B\ud83d\ude00a9\u0000\u0000B\ud83d\ude80\ud83d\ude00\u4e2d0a0b\nb \ud83d\ude80\tb9\u4e2d \u4e2d\u4e2d\u0000\ud83d\ude800 \ud83d\ude80ba\u0301A\ud83d\ude80b\n",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0058",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0058",
+            "status": "ok",
+            "value": 55
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0061",
+            "task": "levenshtein",
+            "a": "\ud83d\ude000\ud83d\ude00b\u03010\u0000\tBAb\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u0301",
+            "b": "\ud83d\ude000\ud83d\ude00b\u03010\u0000\tB\u4e2db\ud83d\ude00\u0000\u00e90aa\u4e2d a0aBA\u03010\t0\u0301",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0061",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0061",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0070",
+            "task": "levenshtein",
+            "a": "0\u0000\u00e9BB\tB0B\ud83d\ude809\u4e2da\u03010b\u00e9\u0301bA\u0000Ba\u0000\ud83d\ude00A\u4e2d\ud83d\ude809\t \ud83d\ude00BB\u00e9\t\u0301\t\ud83d\ude80\u00e9\u0301\ud83d\ude80A\u0000\tA\ud83d\ude80\ud83d\ude809bbb\u0000\t\u0000b\u0000",
+            "b": "\ud83d\ude00\u00e9\u00e9\ta\u0301aB\u0301Ba\nA bAa BA \ud83d\ude80\u0000\u0000\ta\n\u0301a A\t\n\u4e2daA\ud83d\ude00aaAA\tAb\u0301\u0000b\ud83d\ude00\tB\ud83d\ude80\u00e9a\ud83d\ude009b\u0301\nB\ud83d\ude80",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0070",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0070",
+            "status": "ok",
+            "value": 55
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0076",
+            "task": "levenshtein",
+            "a": "b9a9\t a9\ud83d\ude80ba9\u00e99\n Aab\ud83d\ude80\u00e9A0\n B\u0000B\ud83d\ude80a\u00e9\u00e9b9\u4e2d\u00e9\u4e2d\ud83d\ude800",
+            "b": "\u0301\u00e9\u00e9AA\u4e2d\u0000\ud83d\ude80\u0301\u00e9A\t\u0000\u00e9\nA \ud83d\ude80B\ud83d\ude80",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0076",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0076",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0082",
+            "task": "levenshtein",
+            "a": "\nAA\t\ud83d\ude00",
+            "b": "b\ud83d\ude00\n\ud83d\ude809A\u00e9\ud83d\ude80 \u4e2db\t\ud83d\ude80\ud83d\ude009B0\u0000\u0000\u0000\u0000\ud83d\ude00A\u4e2dbAbB9\u4e2da\t90a\n\nbA b\u00009 A 9\u03019B\ud83d\ude800\ud83d\ude00\ud83d\ude00A\ud83d\ude00B\ud83d\ude00\ud83d\ude80 \u0000",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0082",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0082",
+            "status": "ok",
+            "value": 67
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0088",
+            "task": "levenshtein",
+            "a": "\ud83d\ude00\n90B\u4e2d \n\n\u00e9b\ud83d\ude80\ud83d\ude00Ba",
+            "b": "\u00e9\u0000B\ud83d\ude00\u0301b\u4e2daB0\ud83d\ude000\n0\u03019bbB9\n00b\t\u00e9 \t\u4e2dB9\ud83d\ude00\u4e2daA\u4e2d\u4e2dB\ud83d\ude00\ud83d\ude00\ud83d\ude000\n0b\tBbA\n\u0301a",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0088",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0088",
+            "status": "ok",
+            "value": 46
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0091",
+            "task": "levenshtein",
+            "a": "\u4e2db0\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "b": "\u4e2d\u00e90\tb \u0301\u4e2d\u4e2d\u00e9b0\u0000\ud83d\ude00\t\tb\u00e9 \u0301\n\n \ud83d\ude00\t00B\u00e9\ud83d\ude00",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0091",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0091",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0094",
+            "task": "levenshtein",
+            "a": "99aAb\t\u0000\u00e90 \u4e2db\u00e9\n\u0000\u4e2d",
+            "b": "0bB\ud83d\ude80\ud83d\ude80Aa\n0\u03010B\u0301\u0301\ud83d\ude809\n\ud83d\ude80\t\u0000a\n\ud83d\ude80\ud83d\ude80\u4e2d9B\ud83d\ude80B0\u00e99\u00e9a\ud83d\ude00\t00B\ud83d\ude00\u0301\u0301\u00e9\u0301\u0301A\u00e99\ud83d\ude00\t\n9",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0094",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0094",
+            "status": "ok",
+            "value": 56
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0100",
+            "task": "levenshtein",
+            "a": "A\u00e9\n\u0000\ud83d\ude00ab\ud83d\ude00\u0000\n\u4e2d\u0301\tA\ud83d\ude80\n0",
+            "b": "\u0301\t\u0000AB\n \ud83d\ude8000\n9",
+            "operation": "distance",
+            "parameter": 2
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0100",
+            "status": "ok",
+            "value": 2.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0100",
+            "status": "ok",
+            "value": 17
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0103",
+            "task": "levenshtein",
+            "a": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000bB\u00000\u4e2daB",
+            "b": "b\ud83d\ude80\u4e2d\t\ud83d\ude00\u00e9\n\ud83d\ude00\u00e90\n\u0000\nB\u00000\u4e2daB",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0103",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0103",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0112",
+            "task": "levenshtein",
+            "a": "B0aB\ud83d\ude80",
+            "b": "\u0000\u4e2da\u0000\ud83d\ude80 \u0301 \u00e9\u0000bBb\u00e9BB\t\u00e99\u00e9\tb \u0000\n\u4e2d\tb\ud83d\ude00\t\t\t\u00e9\t\u03019A\u00e9\ud83d\ude80",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0112",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0112",
+            "status": "ok",
+            "value": 38
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0115",
+            "task": "levenshtein",
+            "a": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\u4e2da\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "b": "\ud83d\ude80b\ud83d\ude00A\u0301\u00e9\n\ud83d\ude80\u0301b   0aa\n\n\t\u4e2d9A\u00e99B\ta ab\u0000\ud83d\ude00\u0301b\ud83d\ude00a bAabA\ud83d\ude00\ud83d\ude80a\ud83d\ude00Ab\u00000\ud83d\ude809a",
+            "operation": "distance",
+            "parameter": 1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0115",
+            "status": "ok",
+            "value": 1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0115",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0118",
+            "task": "levenshtein",
+            "a": "00\u00e90b \u00e9\ud83d\ude00A\u00e9aaa 9A\ud83d\ude00a\u0000\u4e2d\t\u4e2d9\ud83d\ude809",
+            "b": "\ud83d\ude00\u0000\n\ud83d\ude80\t\ud83d\ude80b \u4e2daA\ud83d\ude80B A\u00e90\u0000\t\u0000\tAbbB\u00e9\u4e2d90BAB\ud83d\ude00\u00e9Bb\ud83d\ude00\n\ud83d\ude00BBA\u0301 \t\ud83d\ude80 A\t \u0000A\u4e2d\u0301\n\u4e2d\u0000AbAaA\u00e9",
+            "operation": "distance",
+            "parameter": 8
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0118",
+            "status": "ok",
+            "value": 8.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0118",
+            "status": "ok",
+            "value": 59
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0121",
+            "task": "levenshtein",
+            "a": "b\u00e9\u0000bB\u00e9bb0B \tA\u0000aA 0\u00e90 \tB9 99\u4e2d",
+            "b": "b\u00e9\u0000bB\u00e9bb0B \tA\u0000a\ud83d\ude00 0\u00e90 \tB9 99\u4e2d",
+            "operation": "distance",
+            "parameter": -1
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0121",
+            "status": "ok",
+            "value": -1.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0121",
+            "status": "ok",
+            "value": 2
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0124",
+            "task": "levenshtein",
+            "a": "\u0301\nBa\u4e2d\u0000\u4e2dB\t\t\u00e9\ud83d\ude00B\n\u0301\u0301\u4e2d\u0000Aa9\ud83d\ude000\u00e9\ud83d\ude00\ud83d\ude80A\ud83d\ude809\n\u0000 \ud83d\ude80\u4e2d\u0000\u0301",
+            "b": "A\ud83d\ude00\u4e2d\u00e9\u4e2d\u00e9\t\u0000\ud83d\ude00A\u0301b\u0301 \u00e9ba\u0301\u0301\ud83d\ude00\u4e2d\ud83d\ude00\u00e99aa\t\u00e9\ud83d\ude00a9A\nA\u4e2dBa",
+            "operation": "distance",
+            "parameter": 8
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0124",
+            "status": "ok",
+            "value": 8.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0124",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0130",
+            "task": "levenshtein",
+            "a": "A",
+            "b": "\n\ud83d\ude00b9\u00e9bb\n\u0301\u0301\u00e9B00a  \ud83d\ude00B \u0000\t\ud83d\ude80b\u0301Bb\tbb",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0130",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0130",
+            "status": "ok",
+            "value": 33
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0133",
+            "task": "levenshtein",
+            "a": "a\u0000\u4e2dBAb\u0301AA\ud83d\ude00AB",
+            "b": "a\u0000\u4e2dBAb\u0301A\u00e9\ud83d\ude00AB",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0133",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0133",
+            "status": "ok",
+            "value": 1
+          }
+        },
+        {
+          "case": {
+            "id": "levenshtein-evaluation-0136",
+            "task": "levenshtein",
+            "a": "9\n\tBAB\n\u0301A9A a\ud83d\ude809B0a\u0301 \u0301\u4e2d99\u0000\u03019A\u00e9\ud83d\ude00\u0000\u0301\u0301\u0301a\ud83d\ude00\u4e2d90\u4e2dA\u0301\u4e2d9 A99\ud83d\ude80a\u00000\u00e9A\u03010\u0000\u0301\u0000b\u4e2dab\u4e2d",
+            "b": "\u4e2d\u00e99\u4e2d\u4e2d9\ud83d\ude000\tab",
+            "operation": "distance",
+            "parameter": 0
+          },
+          "expected": {
+            "id": "levenshtein-evaluation-0136",
+            "status": "ok",
+            "value": 0.0
+          },
+          "actual": {
+            "id": "levenshtein-evaluation-0136",
+            "status": "ok",
+            "value": 58
+          }
+        }
+      ]
+    }
+  },
+  "passed": 262,
+  "total": 332,
+  "all_pass": false
+}

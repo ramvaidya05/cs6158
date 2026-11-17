@@ -1,0 +1,902 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-visible-000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-002",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-003",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-004",
+      "status": "ok",
+      "value": 0.25396825396825395
+    },
+    {
+      "id": "jaro_winkler-visible-005",
+      "status": "ok",
+      "value": 0.025925925925925908
+    },
+    {
+      "id": "jaro_winkler-visible-006",
+      "status": "ok",
+      "value": 0.1333333333333333
+    },
+    {
+      "id": "jaro_winkler-visible-007",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-009",
+      "status": "ok",
+      "value": 0.01388888888888884
+    },
+    {
+      "id": "jaro_winkler-visible-010",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-011",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-012",
+      "status": "ok",
+      "value": 0.41666666666666663
+    },
+    {
+      "id": "jaro_winkler-visible-013",
+      "status": "ok",
+      "value": 0.33333333333333337
+    },
+    {
+      "id": "jaro_winkler-visible-014",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-015",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-018",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-019",
+      "status": "ok",
+      "value": 0.03888888888888886
+    },
+    {
+      "id": "jaro_winkler-visible-020",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-021",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-022",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-023",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-024",
+      "status": "ok",
+      "value": 0.746031746031746
+    },
+    {
+      "id": "jaro_winkler-visible-025",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0002",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0003",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0004",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0005",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0006",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0007",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 16, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-evaluation-0008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0009",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0010",
+      "status": "ok",
+      "value": 0.33333333333333337
+    },
+    {
+      "id": "jaro_winkler-evaluation-0011",
+      "status": "ok",
+      "value": 0.6666666666666666
+    },
+    {
+      "id": "jaro_winkler-evaluation-0012",
+      "status": "ok",
+      "value": 0.41666666666666663
+    },
+    {
+      "id": "jaro_winkler-evaluation-0013",
+      "status": "ok",
+      "value": 0.5833333333333334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0014",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0015",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0016",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0017",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0018",
+      "status": "ok",
+      "value": 0.00016276041666662966
+    },
+    {
+      "id": "jaro_winkler-evaluation-0019",
+      "status": "ok",
+      "value": 0.9998372395833334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0020",
+      "status": "ok",
+      "value": 0.001846722068328699
+    },
+    {
+      "id": "jaro_winkler-evaluation-0021",
+      "status": "ok",
+      "value": 0.9981532779316713
+    },
+    {
+      "id": "jaro_winkler-evaluation-0022",
+      "status": "ok",
+      "value": 0.16666666666666663
+    },
+    {
+      "id": "jaro_winkler-evaluation-0023",
+      "status": "ok",
+      "value": 0.8333333333333334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0024",
+      "status": "ok",
+      "value": 0.9958333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0025",
+      "status": "ok",
+      "value": 0.9958333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0026",
+      "status": "ok",
+      "value": 0.9958333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0027",
+      "status": "ok",
+      "value": 0.9958333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0028",
+      "status": "ok",
+      "value": 0.9958333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0029",
+      "status": "ok",
+      "value": 0.9833333333333334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0030",
+      "status": "ok",
+      "value": 0.9833333333333334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0031",
+      "status": "ok",
+      "value": 0.6036043634727846
+    },
+    {
+      "id": "jaro_winkler-evaluation-0032",
+      "status": "ok",
+      "value": 0.009440813362382006
+    },
+    {
+      "id": "jaro_winkler-evaluation-0033",
+      "status": "ok",
+      "value": 0.6445569237742691
+    },
+    {
+      "id": "jaro_winkler-evaluation-0034",
+      "status": "ok",
+      "value": 0.04421768707482987
+    },
+    {
+      "id": "jaro_winkler-evaluation-0035",
+      "status": "ok",
+      "value": 0.5443591929525433
+    },
+    {
+      "id": "jaro_winkler-evaluation-0036",
+      "status": "ok",
+      "value": 0.00784856879039697
+    },
+    {
+      "id": "jaro_winkler-evaluation-0037",
+      "status": "ok",
+      "value": 0.47222222222222215
+    },
+    {
+      "id": "jaro_winkler-evaluation-0038",
+      "status": "ok",
+      "value": 0.0014467592592593004
+    },
+    {
+      "id": "jaro_winkler-evaluation-0039",
+      "status": "ok",
+      "value": 0.5286634460547505
+    },
+    {
+      "id": "jaro_winkler-evaluation-0040",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0041",
+      "status": "ok",
+      "value": 0.6709161809347224
+    },
+    {
+      "id": "jaro_winkler-evaluation-0042",
+      "status": "ok",
+      "value": 0.06204906204906202
+    },
+    {
+      "id": "jaro_winkler-evaluation-0043",
+      "status": "ok",
+      "value": 0.5221203346203346
+    },
+    {
+      "id": "jaro_winkler-evaluation-0044",
+      "status": "ok",
+      "value": 0.011684303350970038
+    },
+    {
+      "id": "jaro_winkler-evaluation-0045",
+      "status": "ok",
+      "value": 0.638347190728143
+    },
+    {
+      "id": "jaro_winkler-evaluation-0046",
+      "status": "ok",
+      "value": 0.33333333333333337
+    },
+    {
+      "id": "jaro_winkler-evaluation-0047",
+      "status": "ok",
+      "value": 0.503623188405797
+    },
+    {
+      "id": "jaro_winkler-evaluation-0048",
+      "status": "ok",
+      "value": 0.04444067753669567
+    },
+    {
+      "id": "jaro_winkler-evaluation-0049",
+      "status": "ok",
+      "value": 0.5601587301587302
+    },
+    {
+      "id": "jaro_winkler-evaluation-0050",
+      "status": "ok",
+      "value": 0.02529843893480266
+    },
+    {
+      "id": "jaro_winkler-evaluation-0051",
+      "status": "ok",
+      "value": 0.635562865497076
+    },
+    {
+      "id": "jaro_winkler-evaluation-0052",
+      "status": "ok",
+      "value": 0.05555555555555558
+    },
+    {
+      "id": "jaro_winkler-evaluation-0053",
+      "status": "ok",
+      "value": 0.5942170240415855
+    },
+    {
+      "id": "jaro_winkler-evaluation-0054",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0055",
+      "status": "ok",
+      "value": 0.6805555555555557
+    },
+    {
+      "id": "jaro_winkler-evaluation-0056",
+      "status": "ok",
+      "value": 0.02476205773214557
+    },
+    {
+      "id": "jaro_winkler-evaluation-0057",
+      "status": "ok",
+      "value": 0.5716588636792372
+    },
+    {
+      "id": "jaro_winkler-evaluation-0058",
+      "status": "ok",
+      "value": 0.0014446238529686184
+    },
+    {
+      "id": "jaro_winkler-evaluation-0059",
+      "status": "ok",
+      "value": 0.4683760683760683
+    },
+    {
+      "id": "jaro_winkler-evaluation-0060",
+      "status": "ok",
+      "value": 0.005102040816326481
+    },
+    {
+      "id": "jaro_winkler-evaluation-0061",
+      "status": "ok",
+      "value": 0.5818713450292398
+    },
+    {
+      "id": "jaro_winkler-evaluation-0062",
+      "status": "ok",
+      "value": 0.11985843183904121
+    },
+    {
+      "id": "jaro_winkler-evaluation-0063",
+      "status": "ok",
+      "value": 0.5351851851851852
+    },
+    {
+      "id": "jaro_winkler-evaluation-0064",
+      "status": "ok",
+      "value": 0.033856571252693146
+    },
+    {
+      "id": "jaro_winkler-evaluation-0065",
+      "status": "ok",
+      "value": 0.4575757575757575
+    },
+    {
+      "id": "jaro_winkler-evaluation-0066",
+      "status": "ok",
+      "value": 0.1708529565672423
+    },
+    {
+      "id": "jaro_winkler-evaluation-0067",
+      "status": "ok",
+      "value": 0.5225817323896191
+    },
+    {
+      "id": "jaro_winkler-evaluation-0068",
+      "status": "ok",
+      "value": 0.0006121824303642054
+    },
+    {
+      "id": "jaro_winkler-evaluation-0069",
+      "status": "ok",
+      "value": 0.6874021403433167
+    },
+    {
+      "id": "jaro_winkler-evaluation-0070",
+      "status": "ok",
+      "value": 0.01851851851851849
+    },
+    {
+      "id": "jaro_winkler-evaluation-0071",
+      "status": "ok",
+      "value": 0.5812856125356126
+    },
+    {
+      "id": "jaro_winkler-evaluation-0072",
+      "status": "ok",
+      "value": 0.00395061728395063
+    },
+    {
+      "id": "jaro_winkler-evaluation-0073",
+      "status": "ok",
+      "value": 0.5273972602739726
+    },
+    {
+      "id": "jaro_winkler-evaluation-0074",
+      "status": "ok",
+      "value": 0.016489151873767205
+    },
+    {
+      "id": "jaro_winkler-evaluation-0075",
+      "status": "ok",
+      "value": 0.6458333333333334
+    },
+    {
+      "id": "jaro_winkler-evaluation-0076",
+      "status": "ok",
+      "value": 0.043727598566308146
+    },
+    {
+      "id": "jaro_winkler-evaluation-0077",
+      "status": "ok",
+      "value": 0.7061082132803445
+    },
+    {
+      "id": "jaro_winkler-evaluation-0078",
+      "status": "ok",
+      "value": 0.022253140096618385
+    },
+    {
+      "id": "jaro_winkler-evaluation-0079",
+      "status": "ok",
+      "value": 0.5549169859514688
+    },
+    {
+      "id": "jaro_winkler-evaluation-0080",
+      "status": "ok",
+      "value": 0.055098570040260975
+    },
+    {
+      "id": "jaro_winkler-evaluation-0081",
+      "status": "ok",
+      "value": 0.5265877218317768
+    },
+    {
+      "id": "jaro_winkler-evaluation-0082",
+      "status": "ok",
+      "value": 0.08019589837771657
+    },
+    {
+      "id": "jaro_winkler-evaluation-0083",
+      "status": "ok",
+      "value": 0.6870933243273668
+    },
+    {
+      "id": "jaro_winkler-evaluation-0084",
+      "status": "ok",
+      "value": 0.024187130795418232
+    },
+    {
+      "id": "jaro_winkler-evaluation-0085",
+      "status": "ok",
+      "value": 0.5089605734767025
+    },
+    {
+      "id": "jaro_winkler-evaluation-0086",
+      "status": "ok",
+      "value": 0.0039447731755424265
+    },
+    {
+      "id": "jaro_winkler-evaluation-0087",
+      "status": "ok",
+      "value": 0.6125663129973474
+    },
+    {
+      "id": "jaro_winkler-evaluation-0088",
+      "status": "ok",
+      "value": 0.0444444444444444
+    },
+    {
+      "id": "jaro_winkler-evaluation-0089",
+      "status": "ok",
+      "value": 0.544345238095238
+    },
+    {
+      "id": "jaro_winkler-evaluation-0090",
+      "status": "ok",
+      "value": 0.007791575359142877
+    },
+    {
+      "id": "jaro_winkler-evaluation-0091",
+      "status": "ok",
+      "value": 0.4866300366300366
+    },
+    {
+      "id": "jaro_winkler-evaluation-0092",
+      "status": "ok",
+      "value": 0.11316952506305744
+    },
+    {
+      "id": "jaro_winkler-evaluation-0093",
+      "status": "ok",
+      "value": 0.6808510638297873
+    },
+    {
+      "id": "jaro_winkler-evaluation-0094",
+      "status": "ok",
+      "value": 0.009641873278236957
+    },
+    {
+      "id": "jaro_winkler-evaluation-0095",
+      "status": "ok",
+      "value": 0.5181818181818182
+    },
+    {
+      "id": "jaro_winkler-evaluation-0096",
+      "status": "ok",
+      "value": 0.21785714285714286
+    },
+    {
+      "id": "jaro_winkler-evaluation-0097",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0098",
+      "status": "ok",
+      "value": 0.08247086939446036
+    },
+    {
+      "id": "jaro_winkler-evaluation-0099",
+      "status": "ok",
+      "value": 0.6333333333333333
+    },
+    {
+      "id": "jaro_winkler-evaluation-0100",
+      "status": "ok",
+      "value": 0.00846153846153841
+    },
+    {
+      "id": "jaro_winkler-evaluation-0101",
+      "status": "ok",
+      "value": 0.5966451959205582
+    },
+    {
+      "id": "jaro_winkler-evaluation-0102",
+      "status": "ok",
+      "value": 0.0062362222995706595
+    },
+    {
+      "id": "jaro_winkler-evaluation-0103",
+      "status": "ok",
+      "value": 0.5102302459445317
+    },
+    {
+      "id": "jaro_winkler-evaluation-0104",
+      "status": "ok",
+      "value": 0.011184974147937066
+    },
+    {
+      "id": "jaro_winkler-evaluation-0105",
+      "status": "ok",
+      "value": 0.6783625730994153
+    },
+    {
+      "id": "jaro_winkler-evaluation-0106",
+      "status": "ok",
+      "value": 0.008059872362767284
+    },
+    {
+      "id": "jaro_winkler-evaluation-0107",
+      "status": "ok",
+      "value": 0.698077231692357
+    },
+    {
+      "id": "jaro_winkler-evaluation-0108",
+      "status": "ok",
+      "value": 0.05746704331450103
+    },
+    {
+      "id": "jaro_winkler-evaluation-0109",
+      "status": "ok",
+      "value": 0.5621608438509846
+    },
+    {
+      "id": "jaro_winkler-evaluation-0110",
+      "status": "ok",
+      "value": 0.01972386587771202
+    },
+    {
+      "id": "jaro_winkler-evaluation-0111",
+      "status": "ok",
+      "value": 0.483264320220842
+    },
+    {
+      "id": "jaro_winkler-evaluation-0112",
+      "status": "ok",
+      "value": 0.013989645337301626
+    },
+    {
+      "id": "jaro_winkler-evaluation-0113",
+      "status": "ok",
+      "value": 0.6096834216528614
+    },
+    {
+      "id": "jaro_winkler-evaluation-0114",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-evaluation-0115",
+      "status": "ok",
+      "value": 0.6232364409783764
+    },
+    {
+      "id": "jaro_winkler-evaluation-0116",
+      "status": "ok",
+      "value": 0.02306238185255194
+    },
+    {
+      "id": "jaro_winkler-evaluation-0117",
+      "status": "ok",
+      "value": 0.5746212121212121
+    },
+    {
+      "id": "jaro_winkler-evaluation-0118",
+      "status": "ok",
+      "value": 0.006734006734006703
+    },
+    {
+      "id": "jaro_winkler-evaluation-0119",
+      "status": "ok",
+      "value": 0.5772205534514533
+    },
+    {
+      "id": "jaro_winkler-evaluation-0120",
+      "status": "ok",
+      "value": 0.010305192231470417
+    },
+    {
+      "id": "jaro_winkler-evaluation-0121",
+      "status": "ok",
+      "value": 0.4196078431372549
+    },
+    {
+      "id": "jaro_winkler-evaluation-0122",
+      "status": "ok",
+      "value": 0.02717948717948726
+    },
+    {
+      "id": "jaro_winkler-evaluation-0123",
+      "status": "ok",
+      "value": 0.453405017921147
+    },
+    {
+      "id": "jaro_winkler-evaluation-0124",
+      "status": "ok",
+      "value": 0.055080272108843586
+    },
+    {
+      "id": "jaro_winkler-evaluation-0125",
+      "status": "ok",
+      "value": 0.5574242424242425
+    },
+    {
+      "id": "jaro_winkler-evaluation-0126",
+      "status": "ok",
+      "value": 0.008742600774466536
+    },
+    {
+      "id": "jaro_winkler-evaluation-0127",
+      "status": "ok",
+      "value": 0.6342650103519668
+    },
+    {
+      "id": "jaro_winkler-evaluation-0128",
+      "status": "ok",
+      "value": 0.07673611111111112
+    },
+    {
+      "id": "jaro_winkler-evaluation-0129",
+      "status": "ok",
+      "value": 0.48917748917748916
+    },
+    {
+      "id": "jaro_winkler-evaluation-0130",
+      "status": "ok",
+      "value": 0.05892998027613405
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-1afd8b56d2be4b8f9022aaba1bce1a73",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-f118uipx/candidate.py,dst=/candidate.py,readonly",
+      "sha256:bf3fed84ec56e80a5428b9cbe5e3be10c34d05d029b8f6dd454569ff71af356c",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.661942,
+    "stdout": "[{\"id\": \"jaro_winkler-visible-000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-001\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-002\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-003\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-004\", \"status\": \"ok\", \"value\": 0.25396825396825395}, {\"id\": \"jaro_winkler-visible-005\", \"status\": \"ok\", \"value\": 0.025925925925925908}, {\"id\": \"jaro_winkler-visible-006\", \"status\": \"ok\", \"value\": 0.1333333333333333}, {\"id\": \"jaro_winkler-visible-007\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-008\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-009\", \"status\": \"ok\", \"value\": 0.01388888888888884}, {\"id\": \"jaro_winkler-visible-010\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-011\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-012\", \"status\": \"ok\", \"value\": 0.41666666666666663}, {\"id\": \"jaro_winkler-visible-013\", \"status\": \"ok\", \"value\": 0.33333333333333337}, {\"id\": \"jaro_winkler-visible-014\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-015\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-018\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-019\", \"status\": \"ok\", \"value\": 0.03888888888888886}, {\"id\": \"jaro_winkler-visible-020\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-021\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-022\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-023\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-024\", \"status\": \"ok\", \"value\": 0.746031746031746}, {\"id\": \"jaro_winkler-visible-025\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0001\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-evaluation-0002\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0003\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0004\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0005\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0006\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0007\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 16, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"jaro_winkler-evaluation-0008\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-evaluation-0009\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0010\", \"status\": \"ok\", \"value\": 0.33333333333333337}, {\"id\": \"jaro_winkler-evaluation-0011\", \"status\": \"ok\", \"value\": 0.6666666666666666}, {\"id\": \"jaro_winkler-evaluation-0012\", \"status\": \"ok\", \"value\": 0.41666666666666663}, {\"id\": \"jaro_winkler-evaluation-0013\", \"status\": \"ok\", \"value\": 0.5833333333333334}, {\"id\": \"jaro_winkler-evaluation-0014\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-evaluation-0015\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0016\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-evaluation-0017\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0018\", \"status\": \"ok\", \"value\": 0.00016276041666662966}, {\"id\": \"jaro_winkler-evaluation-0019\", \"status\": \"ok\", \"value\": 0.9998372395833334}, {\"id\": \"jaro_winkler-evaluation-0020\", \"status\": \"ok\", \"value\": 0.001846722068328699}, {\"id\": \"jaro_winkler-evaluation-0021\", \"status\": \"ok\", \"value\": 0.9981532779316713}, {\"id\": \"jaro_winkler-evaluation-0022\", \"status\": \"ok\", \"value\": 0.16666666666666663}, {\"id\": \"jaro_winkler-evaluation-0023\", \"status\": \"ok\", \"value\": 0.8333333333333334}, {\"id\": \"jaro_winkler-evaluation-0024\", \"status\": \"ok\", \"value\": 0.9958333333333333}, {\"id\": \"jaro_winkler-evaluation-0025\", \"status\": \"ok\", \"value\": 0.9958333333333333}, {\"id\": \"jaro_winkler-evaluation-0026\", \"status\": \"ok\", \"value\": 0.9958333333333333}, {\"id\": \"jaro_winkler-evaluation-0027\", \"status\": \"ok\", \"value\": 0.9958333333333333}, {\"id\": \"jaro_winkler-evaluation-0028\", \"status\": \"ok\", \"value\": 0.9958333333333333}, {\"id\": \"jaro_winkler-evaluation-0029\", \"status\": \"ok\", \"value\": 0.9833333333333334}, {\"id\": \"jaro_winkler-evaluation-0030\", \"status\": \"ok\", \"value\": 0.9833333333333334}, {\"id\": \"jaro_winkler-evaluation-0031\", \"status\": \"ok\", \"value\": 0.6036043634727846}, {\"id\": \"jaro_winkler-evaluation-0032\", \"status\": \"ok\", \"value\": 0.009440813362382006}, {\"id\": \"jaro_winkler-evaluation-0033\", \"status\": \"ok\", \"value\": 0.6445569237742691}, {\"id\": \"jaro_winkler-evaluation-0034\", \"status\": \"ok\", \"value\": 0.04421768707482987}, {\"id\": \"jaro_winkler-evaluation-0035\", \"status\": \"ok\", \"value\": 0.5443591929525433}, {\"id\": \"jaro_winkler-evaluation-0036\", \"status\": \"ok\", \"value\": 0.00784856879039697}, {\"id\": \"jaro_winkler-evaluation-0037\", \"status\": \"ok\", \"value\": 0.47222222222222215}, {\"id\": \"jaro_winkler-evaluation-0038\", \"status\": \"ok\", \"value\": 0.0014467592592593004}, {\"id\": \"jaro_winkler-evaluation-0039\", \"status\": \"ok\", \"value\": 0.5286634460547505}, {\"id\": \"jaro_winkler-evaluation-0040\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-evaluation-0041\", \"status\": \"ok\", \"value\": 0.6709161809347224}, {\"id\": \"jaro_winkler-evaluation-0042\", \"status\": \"ok\", \"value\": 0.06204906204906202}, {\"id\": \"jaro_winkler-evaluation-0043\", \"status\": \"ok\", \"value\": 0.5221203346203346}, {\"id\": \"jaro_winkler-evaluation-0044\", \"status\": \"ok\", \"value\": 0.011684303350970038}, {\"id\": \"jaro_winkler-evaluation-0045\", \"status\": \"ok\", \"value\": 0.638347190728143}, {\"id\": \"jaro_winkler-evaluation-0046\", \"status\": \"ok\", \"value\": 0.33333333333333337}, {\"id\": \"jaro_winkler-evaluation-0047\", \"status\": \"ok\", \"value\": 0.503623188405797}, {\"id\": \"jaro_winkler-evaluation-0048\", \"status\": \"ok\", \"value\": 0.04444067753669567}, {\"id\": \"jaro_winkler-evaluation-0049\", \"status\": \"ok\", \"value\": 0.5601587301587302}, {\"id\": \"jaro_winkler-evaluation-0050\", \"status\": \"ok\", \"value\": 0.02529843893480266}, {\"id\": \"jaro_winkler-evaluation-0051\", \"status\": \"ok\", \"value\": 0.635562865497076}, {\"id\": \"jaro_winkler-evaluation-0052\", \"status\": \"ok\", \"value\": 0.05555555555555558}, {\"id\": \"jaro_winkler-evaluation-0053\", \"status\": \"ok\", \"value\": 0.5942170240415855}, {\"id\": \"jaro_winkler-evaluation-0054\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0055\", \"status\": \"ok\", \"value\": 0.6805555555555557}, {\"id\": \"jaro_winkler-evaluation-0056\", \"status\": \"ok\", \"value\": 0.02476205773214557}, {\"id\": \"jaro_winkler-evaluation-0057\", \"status\": \"ok\", \"value\": 0.5716588636792372}, {\"id\": \"jaro_winkler-evaluation-0058\", \"status\": \"ok\", \"value\": 0.0014446238529686184}, {\"id\": \"jaro_winkler-evaluation-0059\", \"status\": \"ok\", \"value\": 0.4683760683760683}, {\"id\": \"jaro_winkler-evaluation-0060\", \"status\": \"ok\", \"value\": 0.005102040816326481}, {\"id\": \"jaro_winkler-evaluation-0061\", \"status\": \"ok\", \"value\": 0.5818713450292398}, {\"id\": \"jaro_winkler-evaluation-0062\", \"status\": \"ok\", \"value\": 0.11985843183904121}, {\"id\": \"jaro_winkler-evaluation-0063\", \"status\": \"ok\", \"value\": 0.5351851851851852}, {\"id\": \"jaro_winkler-evaluation-0064\", \"status\": \"ok\", \"value\": 0.033856571252693146}, {\"id\": \"jaro_winkler-evaluation-0065\", \"status\": \"ok\", \"value\": 0.4575757575757575}, {\"id\": \"jaro_winkler-evaluation-0066\", \"status\": \"ok\", \"value\": 0.1708529565672423}, {\"id\": \"jaro_winkler-evaluation-0067\", \"status\": \"ok\", \"value\": 0.5225817323896191}, {\"id\": \"jaro_winkler-evaluation-0068\", \"status\": \"ok\", \"value\": 0.0006121824303642054}, {\"id\": \"jaro_winkler-evaluation-0069\", \"status\": \"ok\", \"value\": 0.6874021403433167}, {\"id\": \"jaro_winkler-evaluation-0070\", \"status\": \"ok\", \"value\": 0.01851851851851849}, {\"id\": \"jaro_winkler-evaluation-0071\", \"status\": \"ok\", \"value\": 0.5812856125356126}, {\"id\": \"jaro_winkler-evaluation-0072\", \"status\": \"ok\", \"value\": 0.00395061728395063}, {\"id\": \"jaro_winkler-evaluation-0073\", \"status\": \"ok\", \"value\": 0.5273972602739726}, {\"id\": \"jaro_winkler-evaluation-0074\", \"status\": \"ok\", \"value\": 0.016489151873767205}, {\"id\": \"jaro_winkler-evaluation-0075\", \"status\": \"ok\", \"value\": 0.6458333333333334}, {\"id\": \"jaro_winkler-evaluation-0076\", \"status\": \"ok\", \"value\": 0.043727598566308146}, {\"id\": \"jaro_winkler-evaluation-0077\", \"status\": \"ok\", \"value\": 0.7061082132803445}, {\"id\": \"jaro_winkler-evaluation-0078\", \"status\": \"ok\", \"value\": 0.022253140096618385}, {\"id\": \"jaro_winkler-evaluation-0079\", \"status\": \"ok\", \"value\": 0.5549169859514688}, {\"id\": \"jaro_winkler-evaluation-0080\", \"status\": \"ok\", \"value\": 0.055098570040260975}, {\"id\": \"jaro_winkler-evaluation-0081\", \"status\": \"ok\", \"value\": 0.5265877218317768}, {\"id\": \"jaro_winkler-evaluation-0082\", \"status\": \"ok\", \"value\": 0.08019589837771657}, {\"id\": \"jaro_winkler-evaluation-0083\", \"status\": \"ok\", \"value\": 0.6870933243273668}, {\"id\": \"jaro_winkler-evaluation-0084\", \"status\": \"ok\", \"value\": 0.024187130795418232}, {\"id\": \"jaro_winkler-evaluation-0085\", \"status\": \"ok\", \"value\": 0.5089605734767025}, {\"id\": \"jaro_winkler-evaluation-0086\", \"status\": \"ok\", \"value\": 0.0039447731755424265}, {\"id\": \"jaro_winkler-evaluation-0087\", \"status\": \"ok\", \"value\": 0.6125663129973474}, {\"id\": \"jaro_winkler-evaluation-0088\", \"status\": \"ok\", \"value\": 0.0444444444444444}, {\"id\": \"jaro_winkler-evaluation-0089\", \"status\": \"ok\", \"value\": 0.544345238095238}, {\"id\": \"jaro_winkler-evaluation-0090\", \"status\": \"ok\", \"value\": 0.007791575359142877}, {\"id\": \"jaro_winkler-evaluation-0091\", \"status\": \"ok\", \"value\": 0.4866300366300366}, {\"id\": \"jaro_winkler-evaluation-0092\", \"status\": \"ok\", \"value\": 0.11316952506305744}, {\"id\": \"jaro_winkler-evaluation-0093\", \"status\": \"ok\", \"value\": 0.6808510638297873}, {\"id\": \"jaro_winkler-evaluation-0094\", \"status\": \"ok\", \"value\": 0.009641873278236957}, {\"id\": \"jaro_winkler-evaluation-0095\", \"status\": \"ok\", \"value\": 0.5181818181818182}, {\"id\": \"jaro_winkler-evaluation-0096\", \"status\": \"ok\", \"value\": 0.21785714285714286}, {\"id\": \"jaro_winkler-evaluation-0097\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0098\", \"status\": \"ok\", \"value\": 0.08247086939446036}, {\"id\": \"jaro_winkler-evaluation-0099\", \"status\": \"ok\", \"value\": 0.6333333333333333}, {\"id\": \"jaro_winkler-evaluation-0100\", \"status\": \"ok\", \"value\": 0.00846153846153841}, {\"id\": \"jaro_winkler-evaluation-0101\", \"status\": \"ok\", \"value\": 0.5966451959205582}, {\"id\": \"jaro_winkler-evaluation-0102\", \"status\": \"ok\", \"value\": 0.0062362222995706595}, {\"id\": \"jaro_winkler-evaluation-0103\", \"status\": \"ok\", \"value\": 0.5102302459445317}, {\"id\": \"jaro_winkler-evaluation-0104\", \"status\": \"ok\", \"value\": 0.011184974147937066}, {\"id\": \"jaro_winkler-evaluation-0105\", \"status\": \"ok\", \"value\": 0.6783625730994153}, {\"id\": \"jaro_winkler-evaluation-0106\", \"status\": \"ok\", \"value\": 0.008059872362767284}, {\"id\": \"jaro_winkler-evaluation-0107\", \"status\": \"ok\", \"value\": 0.698077231692357}, {\"id\": \"jaro_winkler-evaluation-0108\", \"status\": \"ok\", \"value\": 0.05746704331450103}, {\"id\": \"jaro_winkler-evaluation-0109\", \"status\": \"ok\", \"value\": 0.5621608438509846}, {\"id\": \"jaro_winkler-evaluation-0110\", \"status\": \"ok\", \"value\": 0.01972386587771202}, {\"id\": \"jaro_winkler-evaluation-0111\", \"status\": \"ok\", \"value\": 0.483264320220842}, {\"id\": \"jaro_winkler-evaluation-0112\", \"status\": \"ok\", \"value\": 0.013989645337301626}, {\"id\": \"jaro_winkler-evaluation-0113\", \"status\": \"ok\", \"value\": 0.6096834216528614}, {\"id\": \"jaro_winkler-evaluation-0114\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-evaluation-0115\", \"status\": \"ok\", \"value\": 0.6232364409783764}, {\"id\": \"jaro_winkler-evaluation-0116\", \"status\": \"ok\", \"value\": 0.02306238185255194}, {\"id\": \"jaro_winkler-evaluation-0117\", \"status\": \"ok\", \"value\": 0.5746212121212121}, {\"id\": \"jaro_winkler-evaluation-0118\", \"status\": \"ok\", \"value\": 0.006734006734006703}, {\"id\": \"jaro_winkler-evaluation-0119\", \"status\": \"ok\", \"value\": 0.5772205534514533}, {\"id\": \"jaro_winkler-evaluation-0120\", \"status\": \"ok\", \"value\": 0.010305192231470417}, {\"id\": \"jaro_winkler-evaluation-0121\", \"status\": \"ok\", \"value\": 0.4196078431372549}, {\"id\": \"jaro_winkler-evaluation-0122\", \"status\": \"ok\", \"value\": 0.02717948717948726}, {\"id\": \"jaro_winkler-evaluation-0123\", \"status\": \"ok\", \"value\": 0.453405017921147}, {\"id\": \"jaro_winkler-evaluation-0124\", \"status\": \"ok\", \"value\": 0.055080272108843586}, {\"id\": \"jaro_winkler-evaluation-0125\", \"status\": \"ok\", \"value\": 0.5574242424242425}, {\"id\": \"jaro_winkler-evaluation-0126\", \"status\": \"ok\", \"value\": 0.008742600774466536}, {\"id\": \"jaro_winkler-evaluation-0127\", \"status\": \"ok\", \"value\": 0.6342650103519668}, {\"id\": \"jaro_winkler-evaluation-0128\", \"status\": \"ok\", \"value\": 0.07673611111111112}, {\"id\": \"jaro_winkler-evaluation-0129\", \"status\": \"ok\", \"value\": 0.48917748917748916}, {\"id\": \"jaro_winkler-evaluation-0130\", \"status\": \"ok\", \"value\": 0.05892998027613405}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-14T00:03:39.118325714Z",
+      "FinishedAt": "2026-11-14T00:03:43.713457507Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:4c5f8a40f216e5985b3988a9b04303f28690d75d18fd634ef3de9e823d0a3a91",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:bf3fed84ec56e80a5428b9cbe5e3be10c34d05d029b8f6dd454569ff71af356c",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

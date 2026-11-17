@@ -19,6 +19,10 @@ def main(argv=None):
     freeze_parser.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
     report_parser = commands.add_parser("report", help="Recompute failure-inclusive experiment accuracy")
     report_parser.add_argument("directory", type=Path)
+    catalog_parser = commands.add_parser("catalog", help="Verify and compare archives without modifying evidence")
+    catalog_parser.add_argument("directories", type=Path, nargs="+")
+    catalog_parser.add_argument("--format", choices=("json", "markdown"), default="markdown")
+    catalog_parser.add_argument("--output", type=Path, help="New report outside input archives; refuses overwrite")
     experiment = commands.add_parser("experiment", help="Paired one-shot/code/environment repair trials in containers")
     experiment.add_argument("--suite", type=Path, required=True)
     experiment.add_argument("--task", choices=(*ALL_TASKS, "all"), default="levenshtein")
@@ -64,7 +68,24 @@ def main(argv=None):
             return 0
         if args.command == "report":
             from .experiments import aggregate
-            print(json.dumps(aggregate(args.directory), indent=2))
+            from .reporting import inspect_experiment
+            result = (inspect_experiment(args.directory)["report"] if (args.directory / "checksums.json").exists()
+                      else aggregate(args.directory, persist=False))
+            print(json.dumps(result, indent=2))
+            return 0
+        if args.command == "catalog":
+            from .reporting import build_catalog, render_catalog
+            if args.output and any(args.output.resolve().is_relative_to(p.resolve()) for p in args.directories):
+                parser.error("Catalog output must be outside every input archive")
+            catalog = build_catalog(args.directories)
+            rendered = json.dumps(catalog, indent=2, allow_nan=False) + "\n" if args.format == "json" else render_catalog(catalog)
+            if args.output:
+                args.output.parent.mkdir(parents=True, exist_ok=True)
+                with args.output.open("x", encoding="utf-8") as stream:
+                    stream.write(rendered)
+                print(f"Report: {args.output.resolve()}")
+            else:
+                print(rendered)
             return 0
         if args.command == "experiment":
             from .budget import SpendBudget
@@ -76,8 +97,8 @@ def main(argv=None):
                     parser.error("Replay requires --replay-manifest")
                 backend = ReplayBackend(args.replay_manifest)
             elif args.backend == "gemini":
-                if not __import__("os").environ.get("GEMINI_API_KEY"):
-                    parser.error("Set GEMINI_API_KEY in the environment")
+                from .credentials import load_key
+                load_key(provider="gemini")
                 if args.input_usd_per_million is None or args.output_usd_per_million is None:
                     parser.error("Supply token prices; on the free tier use the paid rates as a safety cap")
                 backend = GeminiBackend(args.model, args.reasoning_effort,
