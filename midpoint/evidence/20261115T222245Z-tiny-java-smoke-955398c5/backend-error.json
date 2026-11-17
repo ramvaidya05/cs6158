@@ -1,0 +1,10 @@
+{
+  "kind": "timeout",
+  "details": {
+    "elapsed_seconds": 60.06391708296724,
+    "phase": "awaiting_response_headers",
+    "response_headers_seconds": null,
+    "timeout_seconds": 60
+  },
+  "raw_response": null
+}

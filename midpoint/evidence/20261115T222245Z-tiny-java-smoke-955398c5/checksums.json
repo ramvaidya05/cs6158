@@ -1,0 +1,16 @@
+{
+  "Oracle.java": "33d396bdd969844dec187f5dc291d0f8c6a2f51dca6c5546a4692945991136e9",
+  "TinyAdd.java": "859683ed0fc90a1c0bdfb83f5cb9e2073f4f57fe977975da3d16f99d630c158f",
+  "backend-error.json": "dae2c7d4683d7bdc80ce83d493ad6ce9c8753a58cff2848e4247129d776b1615",
+  "cases.json": "fa559204c03b7be56d4b6fe9128869ffb5ee5dcc1300d2c9b535f70bdbc42df9",
+  "manifest.json": "9e7613498ce4329a5ff53bf9ae58aa970edfe0f4f491027b7278de8c374428c6",
+  "oracle-execution.json": "7cce0eeed43b7fe879155ed3f938dc4cbbe744bded3961050047d66acf8a2a85",
+  "preflight/cpython/execution.json": "dccedde3ae5ef2b1098f7692ebfd44b75630cd68edc522ca2dfd6fae4e0933a3",
+  "preflight/cpython/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "preflight/graal/execution.json": "eb804bd00526a01bd2abd3828c6322ef9517c04f429fdcae56fd2aaeb9b2f7d2",
+  "preflight/graal/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "prompt.txt": "9ea38d28e170dd6fc3ba4a7e35d787fefc3b358bd7b6aeeaf769740f48b39abd",
+  "reference.json": "250bd322f07c6ccbbf4c7f3d6487ac5c2e9a324f551505c8c9b770c330eb3794",
+  "spend.json": "5a02e486ed4be66a84165a083312c845960e907198ac357f34f9155b7c867ed3",
+  "summary.json": "976cdecb31f82d5af39b928655c59753b0e2407ee143dfd06224d8a0ab114795"
+}

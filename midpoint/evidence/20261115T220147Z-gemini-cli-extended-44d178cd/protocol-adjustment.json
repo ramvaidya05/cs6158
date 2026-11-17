@@ -1,0 +1,8 @@
+{
+  "previous_run": "runs/20261115T215510Z-experiment-9d8225e6",
+  "reason": "Two timeouts and one MAX_TOKENS response; no candidate evaluated",
+  "request_timeout_seconds": 300,
+  "output_tokens": 32768,
+  "remaining_reservation_usd": 0.45538750000000006,
+  "shared_total_limit_usd": 1
+}

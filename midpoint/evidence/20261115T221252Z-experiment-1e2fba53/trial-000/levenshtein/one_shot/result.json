@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "levenshtein",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.069
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 5.723
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 6.009,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Model transport failed: TimeoutError"
+  },
+  "elapsed_seconds": 126.16717816697201,
+  "validated": false
+}

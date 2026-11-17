@@ -1,0 +1,10 @@
+{
+  "20261115T220728Z-gemini-adapter-diagnosis-8fe3ab44/result.json": "56677c890523b72c4b52b7d301fa50432668983d91cb4e2795c705cb941fe7d2",
+  "20261115T220728Z-gemini-adapter-diagnosis-8fe3ab44/spend.json": "ffcf09737062db127495292888837ac782ec0917fd4bb1f5ac5b1af481e90449",
+  "20261115T221252Z-levenshtein-compatibility-setup-2c2b735b/provenance.json": "aca031bda4e952e6c0884bbdb586c0440a35c75f4d36c2c9c2cefbdd9227f2d3",
+  "20261115T221252Z-levenshtein-compatibility-setup-2c2b735b/suite.json": "63204db4b4a33dbf5169e0ff36a288d5d715f4b00c7333c38a6e346f8862ed21",
+  "20261115T221602Z-gemini-curl-diagnosis-a21e51b5/result.json": "c20f5a29da12d6169e21ac759079834236a4d1ff91b6b53fc0f2f6b09a64e3ae",
+  "20261115T221602Z-gemini-curl-diagnosis-a21e51b5/spend.json": "85bda3766c80f7f953817f967fba2c4714563c314b7d85f99491829a232998ab",
+  "docker-isolation-tests.log": "269fffe176495f1a3a2873b015db593f7893cd823994601a174678554f7a89a5",
+  "unit-tests.log": "29e49d994f0ba292cf7879f9ef3bd0a66f5ec3ab89968f02852947cbaea7f460"
+}

@@ -251,3 +251,39 @@ context uses a conservative, manually pinned source-name closure, not a general
 symbol resolver. The candidate is still one module. Whole-repository migration,
 formal equivalence, general environment planning, and a measured gain over a fixed
 LLM baseline are not claimed by this milestone.
+
+## Diagnosing Gemini before a benchmark
+
+`experiment --model-timeout 120` now controls the model HTTP socket timeout
+separately from `--timeout`, which controls candidate execution. The actual model
+request timeout is capped by the remaining loop deadline and recorded in run
+metadata. This is a socket timeout, not a strict end-to-end cancellation guarantee.
+Gemini transport errors record whether the client was awaiting response headers
+or reading the response body, plus the configured timeout and elapsed time.
+
+Run `python3 scripts/diagnose_gemini.py` from `midpoint/` for one tiny curl
+request with DNS/connect/TLS/first-byte timings. It reads `GEMINI_API_KEY` from
+the environment or ignored `.env`, sends no repository code, never executes
+returned code, and reserves at most $0.02 at the currently configured rates.
+It stores sanitized diagnostics under `runs/`. A successful metadata GET alone
+does not demonstrate that generation works. HTTP 503 or generation timeouts
+should be investigated before launching another benchmark batch.
+
+On this Mac, Python 3.15 has no default CA file. For Python API commands, use
+`SSL_CERT_FILE=/etc/ssl/cert.pem` with this existing system CA bundle, or configure
+a valid CA bundle for your Python installation. Never disable TLS verification.
+The diagnostic curl command uses its own verified system trust configuration.
+
+### Completed Commons CLI live configuration (November 17)
+
+The successful batch used `--backend gemini --model gemini-3.8-flash
+--reasoning-effort low --task commons_cli --trials 3 --max-repairs 5
+--model-timeout 300 --timeout 90 --max-output-tokens 32768
+--output-token-budget 196608 --max-spend-usd 1
+--input-usd-per-million .75 --output-usd-per-million 3.75 --archive` with the
+previously frozen CLI suite. These settings differ from the earlier failed
+medium-thinking requests; report the configuration when comparing results.
+The experiment CLI exits 1 when any admitted arm fails validation, including
+an intentionally retained unsuccessful one-shot baseline. Check `summary.json`
+and per-arm statuses to distinguish completed negative results from setup errors.
+See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md#november-17-2026--live-commons-cli-results).

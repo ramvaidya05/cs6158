@@ -1,3 +1,14 @@
+# Current checkpoint — November 17, 2026
+
+The live Commons CLI study now completed using Gemini 3.8 Flash and Docker:
+three fresh initial translations, with the same initial candidate paired across
+three arms. One-shot passed 2/3 trials; code repair and environment-plus-code
+repair each passed 3/3. One natural missing-option recursion bug was fixed by
+one Gemini repair call in each repair arm. No environment remediation was needed.
+See [the live Commons CLI results below](#november-17-2026--live-commons-cli-results)
+for evidence, denominators, and limitations. Earlier failed API attempts remain
+recorded separately and are not silently replaced by this successful batch.
+
 # Experiment checkpoint — October 19, 2026
 
 Execution isolation, accuracy aggregation, and a bounded environment-remediation
@@ -156,3 +167,146 @@ independent semantic test expansion remains necessary. The scope uses Commons CL
 1.9.0 and is not matched to AlphaTrans. No paid model calls were made for this
 milestone. See [EXPERIMENTS.md](EXPERIMENTS.md#commons-cli-milestone-stateful-qualification)
 for commands and remaining research work.
+
+## November 15, 2026 — Docker setup and Gemini diagnosis
+
+Docker Desktop 29.9.3 is installed and running. Both current candidate images
+built successfully; all 11 Docker integration tests passed. The Commons CLI
+hand-authored fixture passed all 160 visible/holdout runtime checks in these
+containers. These are infrastructure qualification results.
+
+Live Commons CLI attempts did not yield a complete candidate:
+
+- `20261115T215510Z-experiment-9d8225e6`: three initial Gemini 3.8 Flash requests
+  with medium thinking and 16,384 output tokens. Two timed out at approximately
+  120 seconds. One returned MAX_TOKENS: 40,186 input tokens, 15,729 thinking
+  tokens, and 641 candidate tokens. All paired arms remain unvalidated.
+- `20261115T220147Z-gemini-cli-extended-44d178cd`: a separate 300-second request
+  configuration with 32,768 output tokens also returned MAX_TOKENS, with 31,326
+  thinking tokens and 1,428 candidate tokens. This changed configuration is not
+  pooled with the initial trials.
+- `20261115T220605Z-gemini-cli-low-thinking-0f741955`: interrupted locally at the
+  user's request to diagnose implementation before further experiments. Provider
+  usage is unknown and its reservation is retained.
+- A repository-free adapter probe (`runs/20261115T220728Z-gemini-adapter-diagnosis-8fe3ab44`)
+  with low thinking and 1,024 output tokens timed out at 60 seconds. Model metadata
+  lookup with the same key returned HTTP 200 and advertised generateContent.
+
+Implementation findings: the controller hard-codes `min(120, remaining)` for model
+requests; CLI `--timeout` configures execution processes, not model requests.
+The transport uses non-streaming `generateContent`, so it provides no incremental
+progress. The broad source bundle produces a 40,186-token prompt. Thinking shares
+its output allowance with generated code and exhausted both tested allowances.
+Incomplete responses are correctly rejected and not executed.
+
+The tiny probe timing out means source-bundle size is not a sufficient explanation
+for the timeouts. The precise cause of generation latency remains unresolved;
+there is no evidence that Docker caused these API-stage failures. Next work is
+transport/latency diagnosis and explicit request-timeout configuration, followed
+by staged small-input generation checks before resuming translation experiments.
+No Commons CLI live translation accuracy or repair improvement is established.
+The combined conservative reservations/accounted amounts, including interrupted
+and diagnostic calls, remain below $1; these are not measured provider charges.
+
+### Previous-workload compatibility check and transport findings
+
+One Levenshtein trial was rerun with `gemini-3.8-flash`, medium thinking, 16,384
+output tokens, and a 120-second model timeout. The prompt matched the earlier
+successful archive byte-for-byte. Every archived case input and reference was
+retained; only the suite comparator fingerprint was explicitly rebound to the
+current evaluator. This is a compatibility check, not an exact historical runtime
+replication or a three-trial rerun.
+
+The request timed out at 120.07 seconds while awaiting HTTP response headers.
+No generated candidate reached Docker. See
+`evidence/20261115T221252Z-experiment-1e2fba53` for the archived failed run.
+
+A separate tiny curl generation probe returned HTTP **503**, with DNS at 0.037 s,
+TCP connection at 0.094 s, TLS completed at 0.121 s, and first response byte at
+2.840 s. TLS certificate verification succeeded. No proxy was configured. Thus
+at least this request encountered an upstream availability failure, and the
+observed problems are not limited to Commons CLI prompt size or Python response
+parsing. This does not prove that every earlier timeout had the same cause.
+No successful small-generation check has yet established readiness to resume.
+
+Implemented a separate model-timeout CLI option and response-phase diagnostics.
+All **75 unit tests** pass. Added `scripts/diagnose_gemini.py` for bounded,
+repository-free transport diagnosis. On this Mac, Python's default CA file is
+missing; the Python requests explicitly used `/etc/ssl/cert.pem`. That configuration
+issue is distinct from the timeouts and HTTP 503 observed with verified TLS.
+
+### Tiny Java-file smoke test
+
+A single five-line `TinyAdd.java` file (`return a + b`) was submitted through
+`GeminiBackend` using `gemini-3.8-flash`, low thinking, 2,048 output tokens,
+and a 60-second model timeout. The smoke-test script uses the existing Docker
+executor and evaluator, with eight Java reference inputs covering ordinary
+addition and signed 32-bit overflow. Java oracle execution and both container
+preflight checks passed before the API call.
+
+The request timed out at **60.064 seconds while awaiting HTTP response headers**.
+No Python candidate was returned and no translation comparison could run.
+This reproduces the timeout without a large source bundle; it does not isolate
+provider availability from account-specific or network-path behavior.
+Evidence: `evidence/20261115T222245Z-tiny-java-smoke-955398c5/summary.json`.
+Reproduce with `python3 scripts/smoke_java_translation.py` from `midpoint/`, with
+Docker on PATH and a valid Python CA configuration. It loads the Gemini key from
+the environment or ignored `.env`, makes one request with a $0.05 reservation
+limit, and archives evidence whether the API succeeds or fails. This is a smoke
+test, not a new benchmark task or an accuracy result.
+
+## November 17, 2026 — live Commons CLI results
+
+[Complete experiment archive](evidence/20261117T204352Z-experiment-1f46722d/summary.json).
+The updated key first completed the tiny Java smoke test: Gemini returned a
+translation in 2.955 seconds, and all 16 Java/Python comparisons passed inside
+CPython and GraalPy containers. [Smoke evidence](evidence/20261117T204310Z-tiny-java-smoke-0e48207a/summary.json).
+This establishes current operation, not that the earlier key caused all failures.
+
+Configuration: Gemini `gemini-3.8-flash`, low thinking, 32,768 output tokens per
+call, 300-second model request timeout, 90-second execution timeout, up to five
+repair rounds, and a $1 conservative reservation cap for this batch. The frozen
+Commons CLI suite SHA-256 was `ecd2f310dd9f38a7b098662dcc01f6010e885455203b20debf632bf9b558e352`.
+Each trial used 20 visible and 60 holdout sequences. All candidate execution ran
+inside the pinned Docker images; source, evaluator and tests were unchanged
+during the study. Every selection was frozen before holdout scoring.
+
+- **One-shot:** 2/3 fully passing trials; 108/120 visible runtime checks and
+  324/360 holdout runtime checks across both runtimes (90% of checks).
+- **Code repair:** 3/3 fully passing trials; 120/120 visible and 360/360 holdout
+  runtime checks. Trials 1 and 2 needed no repair; trial 3 needed one live repair.
+- **Environment plus code repair:** 3/3 fully passing trials; 120/120 visible
+  and 360/360 holdout checks. Trial 3 independently needed one live code repair;
+  no environment repair occurred in any trial.
+
+Trial 3 initially passed 14/20 visible and 42/60 holdout sequences per runtime.
+Its `getOptionValue` implementation resolved an absent option to `None`, then
+recursively called itself with `None` rather than returning the default value.
+This caused `RecursionError` in six visible scenarios. The trusted evaluator
+reported the first differing operation; Gemini added a missing-value guard.
+The repaired candidate preserved every previously passing visible case and
+passed 20/20 visible plus 60/60 holdout sequences in each runtime. Only visible
+feedback influenced repair; no manual edits were made to generated candidates.
+
+There were **5 actual Gemini calls**: 3 initial translations and 2 independent
+repairs. The nine arm/trial outcomes are not nine independent initial generations.
+Usage was 239,550 input and 36,841 output tokens (including thinking), with no
+unknown-usage calls. Conservative accounting was **$0.362732**, below the $1 cap;
+this is not a provider invoice. All returned resolved model identities were
+`gemini-3.8-flash`. Requests took approximately 42–53 seconds. The CLI returned
+exit code 1 because the one-shot baseline failed one trial; the batch itself
+completed and all outcomes were evaluated, with no unvalidated cases.
+
+This is evidence of one natural live-model repair success on the scoped
+four-class Commons CLI API. It does not establish a statistically reliable
+advantage, whole-repository correctness, or additional benefit from environment
+repair. Holdout inputs vary names and values across the same 20 scenario
+templates; they do not establish independent semantic generalization. The
+November 15 medium-thinking failed attempts used different configurations and
+are not pooled with this low-thinking batch.
+
+Next empirical priority: freeze a broader suite with independently designed
+semantic scenarios (including partial-name ambiguity, option replacement and
+more complex state reuse), qualify its oracle and adapters, then run fresh
+paired trials. Do not reuse the current holdout as repair feedback or present
+these three trials as evidence for repository-scale translation.

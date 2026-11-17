@@ -1,0 +1,13 @@
+{
+  "purpose": "Single-file live translation smoke test",
+  "status": "error",
+  "validated": false,
+  "kind": "timeout",
+  "message": "Model transport failed: TimeoutError",
+  "details": {
+    "elapsed_seconds": 60.06391708296724,
+    "phase": "awaiting_response_headers",
+    "response_headers_seconds": null,
+    "timeout_seconds": 60
+  }
+}

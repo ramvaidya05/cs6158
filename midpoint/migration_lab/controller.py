@@ -24,14 +24,14 @@ def assert_unchanged(original):
 
 
 def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6158,
-             timeout=60, max_seconds=900, max_output_tokens=8192, output_token_budget=49152,
+             timeout=60, model_timeout=120, max_seconds=900, max_output_tokens=8192, output_token_budget=49152,
              directory=None, environment=None, suite=None, environment_repairs=False,
              defer_holdout=False):
     if not 0 <= max_repairs <= 5:
         raise ValueError("Allowed repair count is 0 through 5")
     if not modes or len(set(modes)) != len(modes) or set(modes) - {"cpython", "graal"}:
         raise ValueError("Choose unique cpython/graal runtime names")
-    if any(not math.isfinite(n) or n <= 0 for n in (timeout, max_seconds, max_output_tokens, output_token_budget)):
+    if any(not math.isfinite(n) or n <= 0 for n in (timeout, model_timeout, max_seconds, max_output_tokens, output_token_budget)):
         raise ValueError("Budgets must be positive")
     verify_vendor()
     directory = directory or new_run(task)
@@ -45,7 +45,7 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
     guard = protected_hashes()
     started = time.monotonic()
     manifest = {"task": task, "backend": backend.identity, "max_repairs": max_repairs,
-                "runtimes": list(modes), "seed": seed, "timeout_per_process_seconds": timeout,
+                "runtimes": list(modes), "seed": seed, "timeout_per_process_seconds": timeout, "model_request_timeout_seconds": model_timeout,
                 "max_loop_seconds": max_seconds, "max_output_tokens_per_call": max_output_tokens,
                 "output_token_budget": output_token_budget, "protected_hashes": guard,
                 "environment": environment.doctor(),
@@ -116,7 +116,7 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
             state["reserved_output_tokens"] = reserved_tokens
             try:
                 event("translate" if attempt == 0 else "code_repair", attempt=attempt)
-                response = backend.generate(task, attempt, prompt, timeout=min(120, remaining),
+                response = backend.generate(task, attempt, prompt, timeout=min(model_timeout, remaining),
                                             max_output_tokens=max_output_tokens)
             except Exception as exc:
                 save_json(folder / "backend-error.json", {"type": type(exc).__name__, "message": str(exc),

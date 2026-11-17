@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "preflight",
+      "status": "ok",
+      "value": 0.0
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-7cdc7b6591d54e36aeba0de0b78df45f",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-bjiflrab/candidate.py,dst=/candidate.py,readonly",
+      "sha256:f1d5aeedef08eaffd37f9c189007d0b2eb9aa1e4cc0a00b453533e73c99c8acf",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.208923,
+    "stdout": "[{\"id\": \"preflight\", \"status\": \"ok\", \"value\": 0.0}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-17T20:46:21.919212514Z",
+      "FinishedAt": "2026-11-17T20:46:22.043879597Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:f1d5aeedef08eaffd37f9c189007d0b2eb9aa1e4cc0a00b453533e73c99c8acf",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:1678e4cb0dc542299f1c36fc75f926dd59417405d0827a8cf9662c2cfe7dcca4",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

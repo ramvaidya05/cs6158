@@ -1,0 +1,42 @@
+[
+  {
+    "id": "add-0",
+    "status": "ok",
+    "value": 0
+  },
+  {
+    "id": "add-1",
+    "status": "ok",
+    "value": 5
+  },
+  {
+    "id": "add-2",
+    "status": "ok",
+    "value": -3
+  },
+  {
+    "id": "add-3",
+    "status": "ok",
+    "value": -12
+  },
+  {
+    "id": "add-4",
+    "status": "ok",
+    "value": 2147483647
+  },
+  {
+    "id": "add-5",
+    "status": "ok",
+    "value": -2147483648
+  },
+  {
+    "id": "add-6",
+    "status": "ok",
+    "value": 2147483647
+  },
+  {
+    "id": "add-7",
+    "status": "ok",
+    "value": -1
+  }
+]

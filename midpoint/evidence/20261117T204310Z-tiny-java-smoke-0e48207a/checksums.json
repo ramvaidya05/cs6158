@@ -1,0 +1,22 @@
+{
+  "Oracle.java": "33d396bdd969844dec187f5dc291d0f8c6a2f51dca6c5546a4692945991136e9",
+  "TinyAdd.java": "859683ed0fc90a1c0bdfb83f5cb9e2073f4f57fe977975da3d16f99d630c158f",
+  "candidate.py": "2ee1ac3b5bc2a6ed96b8a5c61b7f6e7cdf5441f677ea8787706e3d25f178b333",
+  "cases.json": "fa559204c03b7be56d4b6fe9128869ffb5ee5dcc1300d2c9b535f70bdbc42df9",
+  "evaluation/cpython/execution.json": "d2c4654ac825cfd323ff5766f7328e40a288dc380f41058ca3e25513c084dba1",
+  "evaluation/cpython/inputs.json": "fa559204c03b7be56d4b6fe9128869ffb5ee5dcc1300d2c9b535f70bdbc42df9",
+  "evaluation/graal/execution.json": "ecf56089d43f93ea04a6e275a5a2fc2cefb38c4bcddcecfe78fabd1e078403bb",
+  "evaluation/graal/inputs.json": "fa559204c03b7be56d4b6fe9128869ffb5ee5dcc1300d2c9b535f70bdbc42df9",
+  "evaluation/summary.json": "6cb380003b8319d62378a7b3ac6e51fd50f028f71323dfb9113bfb2bb08503f3",
+  "manifest.json": "9e7613498ce4329a5ff53bf9ae58aa970edfe0f4f491027b7278de8c374428c6",
+  "oracle-execution.json": "ba67c9823c54b5bb1180c501e5bdaa3265a38028027b7c3241129be0d335d3e6",
+  "preflight/cpython/execution.json": "37203048d0d7a04cf21ec0a152c66a179de73804cfad6f64e8721dfb173943ed",
+  "preflight/cpython/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "preflight/graal/execution.json": "5b2655e3c69eebc2b4f4b8ab9b001c3549c36ab3c9e3f350c75c4e79b3cd2eda",
+  "preflight/graal/inputs.json": "6345d78632ff7c40f661121fcc9512c179a8c6a082e705b8765b1c04f5894db8",
+  "prompt.txt": "9ea38d28e170dd6fc3ba4a7e35d787fefc3b358bd7b6aeeaf769740f48b39abd",
+  "reference.json": "250bd322f07c6ccbbf4c7f3d6487ac5c2e9a324f551505c8c9b770c330eb3794",
+  "response.json": "ff98cf9dccc151983ef2644d16d523008b0e501716766c3a82055508b35b29d7",
+  "spend.json": "1ec2f2c6641363c49d479ba143516f376118b0c65e6e56200c4072bd7351f63a",
+  "summary.json": "844b744db2b09da294d87949abc363f2135756e481c53b6b49f38532684ec758"
+}

@@ -189,8 +189,12 @@ class GeminiBackend:
         request = urllib.request.Request(self.URL.format(self.model), data=json.dumps(body).encode(), method="POST",
                   headers={"Content-Type": "application/json", "x-goog-api-key": os.environ["GEMINI_API_KEY"]})
         start = time.monotonic()
+        phase = "awaiting_response_headers"
+        headers_seconds = None
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
+                headers_seconds = time.monotonic() - start
+                phase = "reading_response_body"
                 raw = json.load(response)
         except urllib.error.HTTPError as exc:
             # Never log the key; keep only the provider status code and a bounded message.
@@ -211,7 +215,8 @@ class GeminiBackend:
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
             kind = "timeout" if isinstance(exc, TimeoutError) or isinstance(getattr(exc, "reason", None), TimeoutError) else "transport"
             raise BackendError(f"Model transport failed: {type(exc).__name__}", kind,
-                               elapsed_seconds=time.monotonic() - start) from None
+                               elapsed_seconds=time.monotonic() - start, phase=phase,
+                               response_headers_seconds=headers_seconds, timeout_seconds=timeout) from None
         usage = self.normalize_usage(raw.get("usageMetadata") if isinstance(raw, dict) else None)
         if isinstance(raw, dict):
             raw["usage"] = usage  # adapter-normalized copy; provider counts stay in usageMetadata

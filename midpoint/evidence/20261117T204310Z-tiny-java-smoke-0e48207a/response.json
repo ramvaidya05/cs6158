@@ -1,0 +1,78 @@
+{
+  "code": "def run(a, b, operation, parameter=None):\n    val_a = int(a)\n    val_b = int(b)\n    res = (val_a + val_b) & 0xFFFFFFFF\n    if res >= 0x80000000:\n        res -= 0x100000000\n    return res",
+  "explanation": "This module converts the input decimal strings to integers, adds them, and wraps the result to mimic 32-bit signed integer overflow semantics in Java.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.8-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.8-flash",
+    "response_id": "ZLz8auTgB7mswbUP9J-ZyAI",
+    "usage": {
+      "input_tokens": 144,
+      "output_tokens": 137,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 144,
+        "candidatesTokenCount": 137,
+        "totalTokenCount": 281,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 144
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 2.955
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"def run(a, b, operation, parameter=None):\\n    val_a = int(a)\\n    val_b = int(b)\\n    res = (val_a + val_b) & 0xFFFFFFFF\\n    if res >= 0x80000000:\\n        res -= 0x100000000\\n    return res\",\n  \"explanation\": \"This module converts the input decimal strings to integers, adds them, and wraps the result to mimic 32-bit signed integer overflow semantics in Java.\"\n}",
+              "thoughtSignature": "EpIBCo8BAWkUfROMyTxR5OWzNM4rm6qT66BwjOR3MirbHYU9Y3cwhQy5SYGIotnpGWalw/0R5BuK8dnqe14SGza2qhPQUl+BBovXlVL8qEReA2VZmZonZNTQc5744bal+/TzOSZknzFY9mqj2YME7HvxfUJF/BuEpasaw++Gtx+CeZl3wAyzO3YxxMoualD3jX6Aqxg="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 144,
+      "candidatesTokenCount": 137,
+      "totalTokenCount": 281,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 144
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "ZLz8auTgB7mswbUP9J-ZyAI",
+    "usage": {
+      "input_tokens": 144,
+      "output_tokens": 137,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 144,
+        "candidatesTokenCount": 137,
+        "totalTokenCount": 281,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 144
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

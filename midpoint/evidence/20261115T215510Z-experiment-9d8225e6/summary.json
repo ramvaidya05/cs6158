@@ -1,0 +1,672 @@
+{
+  "provenance": "live_model",
+  "study": "natural_translation",
+  "measurement_status": "no_completed_evaluations",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.5615060804490177
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        }
+      }
+    },
+    "code_repair": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.5615060804490177
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        }
+      }
+    },
+    "environment_repair": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.5615060804490177
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 180,
+            "rate": 0.0,
+            "unvalidated": 180
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "task_success_delta": 0,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-000/commons_cli/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.11444249999477,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "path": "trial-000/commons_cli/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.11617412499617785,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "path": "trial-000/commons_cli/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06609199999365956,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-001/commons_cli/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model response not completed: MAX_TOKENS"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 118.18323395802872,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 16370,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "path": "trial-001/commons_cli/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.1376706669689156,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "path": "trial-001/commons_cli/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.06657991698011756,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-002/commons_cli/one_shot",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "BackendError",
+        "message": "Model transport failed: TimeoutError"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.28032424999401,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 1
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "code_repair",
+      "path": "trial-002/commons_cli/code_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.17163295799400657,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "environment_repair",
+      "path": "trial-002/commons_cli/environment_repair",
+      "status": "error",
+      "validated": false,
+      "stop_reason": null,
+      "error": {
+        "type": "RuntimeError",
+        "message": "Initial generation failed; paired arm remains unvalidated"
+      },
+      "attempts": 0,
+      "code_repairs": 0,
+      "environment_repairs": 0,
+      "elapsed_seconds": 0.0639812090084888,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 0,
+            "total": 20,
+            "rate": 0.0,
+            "unvalidated": 20
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 60,
+            "rate": 0.0,
+            "unvalidated": 60
+          }
+        }
+      }
+    }
+  ],
+  "usage": {
+    "model_calls": 3,
+    "input_tokens": 40186,
+    "output_tokens": 16370,
+    "usage_unknown_calls": 2
+  }
+}

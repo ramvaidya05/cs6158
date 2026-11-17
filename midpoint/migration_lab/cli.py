@@ -29,6 +29,7 @@ def main(argv=None):
     experiment.add_argument("--reasoning-effort", default="medium")
     experiment.add_argument("--max-repairs", type=int, default=5)
     experiment.add_argument("--timeout", type=float, default=60)
+    experiment.add_argument("--model-timeout", type=float, default=120, help="Model HTTP socket timeout in seconds, separate from execution timeout")
     experiment.add_argument("--max-seconds", type=float, default=900)
     experiment.add_argument("--max-output-tokens", type=int, default=8192)
     experiment.add_argument("--output-token-budget", type=int, default=49152)
@@ -93,7 +94,7 @@ def main(argv=None):
                 backend = OpenAIResponsesBackend(args.model, args.reasoning_effort,
                     SpendBudget(args.max_spend_usd, input_rate, output_rate))
             path, result = run_experiment(backend, suite, tasks=tuple(suite.identity()["counts"]) if args.task == "all" else (args.task,),
-                trials=args.trials, max_repairs=args.max_repairs, timeout=args.timeout,
+                trials=args.trials, max_repairs=args.max_repairs, timeout=args.timeout, model_timeout=args.model_timeout,
                 max_seconds=args.max_seconds, max_output_tokens=args.max_output_tokens,
                 output_token_budget=args.output_token_budget, fault=args.fault)
             if args.archive:

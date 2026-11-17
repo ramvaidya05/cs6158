@@ -1,0 +1,12 @@
+{
+  "command": [
+    "java",
+    "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261117T204310Z-tiny-java-smoke-0e48207a/Oracle.java"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.270287,
+  "stdout": "0\n5\n-3\n-12\n2147483647\n-2147483648\n2147483647\n-1\n",
+  "stderr": "",
+  "output_truncated": false
+}

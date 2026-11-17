@@ -1,0 +1,18 @@
+{
+  "purpose": "Tiny transport probe; no benchmark or code execution",
+  "curl_exit": 0,
+  "timings": {
+    "http_code": 503,
+    "time_namelookup": 0.03657,
+    "time_connect": 0.093681,
+    "time_appconnect": 0.121106,
+    "time_starttransfer": 2.839573,
+    "time_total": 2.840019,
+    "http_version": "2",
+    "ssl_verify_result": 0
+  },
+  "stderr": "",
+  "model": null,
+  "finish_reasons": [],
+  "usage": null
+}

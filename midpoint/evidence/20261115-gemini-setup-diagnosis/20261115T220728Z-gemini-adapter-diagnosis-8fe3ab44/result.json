@@ -1,0 +1,9 @@
+{
+  "purpose": "Tiny API adapter diagnosis only; no repository translation or code execution",
+  "status": "error",
+  "kind": "timeout",
+  "details": {
+    "elapsed_seconds": 60.07247733301483
+  },
+  "message": "Model transport failed: TimeoutError"
+}

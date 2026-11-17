@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "commons_cli",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.104
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.81
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.13,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 32768,
+  "error": {
+    "type": "BackendError",
+    "message": "Model response not completed: MAX_TOKENS"
+  },
+  "elapsed_seconds": 225.12433345802128,
+  "validated": false
+}

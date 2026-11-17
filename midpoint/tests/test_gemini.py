@@ -52,6 +52,28 @@ class GeminiAdapter(unittest.TestCase):
                 self.assertEqual(cm.exception.kind, kind)
                 self.assertNotIn('secret-sentinel', str(cm.exception) + str(cm.exception.details))
 
+    def test_timeout_reports_response_phase_and_configured_limit(self):
+        with patch('urllib.request.urlopen', side_effect=TimeoutError):
+            with self.assertRaises(BackendError) as cm:
+                GeminiBackend('test').generate('x', 0, 'prompt', timeout=37)
+            self.assertEqual(cm.exception.details['phase'], 'awaiting_response_headers')
+            self.assertEqual(cm.exception.details['timeout_seconds'], 37)
+        class SlowBody:
+            def __enter__(self): return self
+            def __exit__(self, *args): pass
+            def read(self): raise TimeoutError()
+        with patch('urllib.request.urlopen', return_value=SlowBody()):
+            with self.assertRaises(BackendError) as cm:
+                GeminiBackend('test').generate('x', 0, 'prompt', timeout=37)
+            self.assertEqual(cm.exception.details['phase'], 'reading_response_body')
+            self.assertIsNotNone(cm.exception.details['response_headers_seconds'])
+
+    def test_invalid_model_timeout_is_rejected_before_execution(self):
+        from migration_lab.controller import run_task
+        for timeout in (0, -1, float('nan'), float('inf')):
+            with self.subTest(timeout=timeout), self.assertRaises(ValueError):
+                run_task('levenshtein', None, model_timeout=timeout)
+
     def test_model_change_is_rejected(self):
         backend = GeminiBackend('test')
         self.call(reply('{"code":"x","explanation":""}'), backend)

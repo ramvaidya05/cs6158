@@ -1,0 +1,66 @@
+[
+  {
+    "id": "add-0",
+    "task": "tiny_java_add",
+    "a": "0",
+    "b": "0",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-1",
+    "task": "tiny_java_add",
+    "a": "2",
+    "b": "3",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-2",
+    "task": "tiny_java_add",
+    "a": "-7",
+    "b": "4",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-3",
+    "task": "tiny_java_add",
+    "a": "-3",
+    "b": "-9",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-4",
+    "task": "tiny_java_add",
+    "a": "2147483647",
+    "b": "0",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-5",
+    "task": "tiny_java_add",
+    "a": "2147483647",
+    "b": "1",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-6",
+    "task": "tiny_java_add",
+    "a": "-2147483648",
+    "b": "-1",
+    "operation": "add",
+    "parameter": null
+  },
+  {
+    "id": "add-7",
+    "task": "tiny_java_add",
+    "a": "-2147483648",
+    "b": "2147483647",
+    "operation": "add",
+    "parameter": null
+  }
+]

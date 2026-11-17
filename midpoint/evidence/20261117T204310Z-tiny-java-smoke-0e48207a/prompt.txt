@@ -1,0 +1,7 @@
+Translate this Java file to a standalone Python module. Define run(a, b, operation, parameter=None). a and b are decimal strings representing Java signed 32-bit integers. operation is always add. Return the integer result of TinyAdd.add, preserving Java int overflow. No imports or external services are needed. Return the required JSON object with code and explanation; keep the explanation to one sentence.
+
+public final class TinyAdd {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}

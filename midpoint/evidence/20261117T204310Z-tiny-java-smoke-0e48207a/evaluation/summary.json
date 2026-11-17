@@ -1,0 +1,39 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 8,
+      "total": 8,
+      "status": "completed",
+      "passed_ids": [
+        "add-0",
+        "add-1",
+        "add-2",
+        "add-3",
+        "add-4",
+        "add-5",
+        "add-6",
+        "add-7"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "passed": 8,
+      "total": 8,
+      "status": "completed",
+      "passed_ids": [
+        "add-0",
+        "add-1",
+        "add-2",
+        "add-3",
+        "add-4",
+        "add-5",
+        "add-6",
+        "add-7"
+      ],
+      "failures": []
+    }
+  },
+  "passed": 16,
+  "total": 16,
+  "all_pass": true
+}

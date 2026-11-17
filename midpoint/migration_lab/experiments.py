@@ -123,7 +123,7 @@ def archive_run(directory):
 
 
 def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repairs=5,
-                   timeout=60, max_seconds=900, max_output_tokens=8192,
+                   timeout=60, model_timeout=120, max_seconds=900, max_output_tokens=8192,
                    output_token_budget=49152, fault="none", directory=None):
     if trials < 1 or trials > 100 or not 0 <= max_repairs <= 5:
         raise ValueError("Trials must be 1..100 and repairs 0..5")
@@ -136,7 +136,7 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
     planned = [{"trial": trial, "task": task, "arm": arm,
                 "path": f"trial-{trial:03}/{task}/{arm}"}
                for trial in range(trials) for task in tasks for arm in ARMS]
-    plan = {"schema": 1, "backend": backend.identity, "suite": suite.identity(),
+    plan = {"schema": 1, "backend": backend.identity, "suite": suite.identity(), "model_request_timeout_seconds": model_timeout,
             "planned_runs": planned, "runtimes": ["cpython", "graal"], "max_repairs": max_repairs,
             "study": "natural_translation" if fault == "none" else "controlled_environment_stress",
             "fault": fault, "protected_hashes": protected_hashes(),
@@ -167,7 +167,7 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
                         print(f"Trial {trial + 1}/{trials}: {task}, {arm}", flush=True)
                         run_task(task, backend if arm == "one_shot" else paired,
                                  max_repairs=0 if arm == "one_shot" else max_repairs,
-                                 timeout=timeout, max_seconds=max_seconds,
+                                 timeout=timeout, model_timeout=model_timeout, max_seconds=max_seconds,
                                  max_output_tokens=max_output_tokens, output_token_budget=output_token_budget,
                                  directory=folder, environment=env, suite=suite,
                                  environment_repairs=arm == "environment_repair", defer_holdout=True)
