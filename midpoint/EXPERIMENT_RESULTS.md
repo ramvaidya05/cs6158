@@ -1,4 +1,55 @@
-# Experiment checkpoint — November 15, 2026
+# Experiment checkpoint — November 17, 2026
+
+## New-key JaroWinkler study
+
+A [repository-free Gemini access probe](evidence/20261117T223414Z-gemini-access-probe-cc067a33/result.json)
+completed in three seconds with the locally configured key. The subsequent
+[three-trial JaroWinkler study](evidence/20261117T223433Z-experiment-a13e1401/summary.json)
+kept the predeclared Gemini 3.8 Flash medium-thinking configuration and the
+integrated frozen suite. One initial translation passed all **26 visible and
+131 withheld cases per runtime**, with no repair needed. Another request used
+15,724 thinking tokens and hit the 16,384-token output cap without a complete
+module. The remaining request ended with an interrupted response. Operational
+task success was **1/3**; semantic accuracy is observed only for the completed
+candidate. All three trials and their paired arms remain recorded. Three calls
+returned 7,448 known input and 29,392 known output tokens, with one call's usage
+unknown. The $0.196876 accounted amount is a conservative estimate, not a
+confirmed charge. No smaller-model trial was run.
+
+## Midpoint review follow-up
+
+The [controlled failure-routing experiment](evidence/20261117T223101Z-failure-routing-dece3254/summary.json)
+ran in both isolated runtimes with one fixed Java-oracle case. With a healthy
+trusted preflight, the recorded routes were `candidate_syntax`,
+`candidate_exception`, and `candidate_semantics`; the correct control passed.
+An injected GraalPy cache denial routed to `environment`, and the one allowed
+cache-path correction restored the trusted probe. All **10 predeclared routing
+observations** matched expectations. These are synthetic faults, not measured
+model translation errors or proof of a general classifier. The raw inputs,
+outputs, candidate hashes, and action are archived with checksums.
+
+The [midpoint annotation response](REVIEWER_RESPONSE.md) now explains the
+Java/Python test adapter, why there are 26 visible cases per string task, the
+meaning of each metric, the isolation limits, and why environment repair is
+studied separately from translation accuracy. It also lists the remaining
+model and Commons CLI experiments. No new API calls were made in this follow-up.
+
+## Requested six-trial rerun
+
+The [November 15 rerun](evidence/20261116T035519Z-experiment-7143e702/summary.json)
+admitted three trials each of NormalizedLevenshtein and JaroWinkler using the
+integrated string suite, Gemini 3.8 Flash, medium thinking, 16384 output tokens
+per call, and a $0.50 cap within the remaining approved allowance. Its three
+requests produced one HTTP 503 high-demand error and two 120-second timeouts.
+The availability guard stopped further requests after those three consecutive
+failures. No candidate or repair was produced; all six initial task/trials and
+their paired outcomes remain unvalidated. The $0.243631 retained reservation
+is unknown-usage accounting, not measured cost. Checksums were verified.
+
+The documented pilot command was also corrected: the pilot uses a fixed five-
+repair default and does not accept `--max-repairs`; the example now names the
+integrated suite instead of the incompatible pre-integration suite. No model,
+evaluator, or controller code changed during this rerun.
 
 ## Integrated Commons CLI and experiment framework
 

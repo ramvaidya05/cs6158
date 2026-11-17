@@ -1,5 +1,18 @@
 # Midpoint evidence
 
+November 17 new-key evidence:
+
+- `20261117T223414Z-gemini-access-probe-cc067a33`: repository-free generation
+  completed; confirms the locally configured key can generate with Gemini 3.8 Flash.
+- `20261117T223433Z-experiment-a13e1401`: fixed three-trial JaroWinkler study;
+  one translation passed all 314 runtime checks, one hit its output-token cap,
+  and one response was interrupted. No repair was triggered.
+
+`20261117T223101Z-failure-routing-dece3254/` contains the November 17
+controlled routing experiment: ten expected observations in both isolated
+runtimes, including a trusted GraalPy cache denial and bounded correction.
+This is synthetic taxonomy qualification, not live translation accuracy.
+
 November 15 integration archives:
 
 - `20261115T182047Z-commons-cli-qualification-46ae0253`: first verification of

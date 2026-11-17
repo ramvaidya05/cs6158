@@ -1,0 +1,14 @@
+{
+  "provenance": "synthetic_fault_injection",
+  "suite_sha256": "20bbb4caa97487cc5facc6afc3ef75b9a1b50f8723386651a9d7b3c12ac58aef",
+  "case_id": "levenshtein-visible-004",
+  "expected_routes": {
+    "healthy": "pass",
+    "syntax": "candidate_syntax",
+    "exception": "candidate_exception",
+    "wrong_value": "candidate_semantics",
+    "cache_denial": "environment",
+    "cache_repaired": "pass"
+  },
+  "notes": "One predeclared Java-oracle case per runtime; not a translation accuracy study."
+}

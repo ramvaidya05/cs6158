@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "jaro_winkler",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.114
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 5.531
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.843,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "IncompleteRead",
+    "message": "IncompleteRead(0 bytes read)"
+  },
+  "elapsed_seconds": 71.01088229194283,
+  "validated": false
+}

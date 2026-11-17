@@ -1,0 +1,393 @@
+Translate task: jaro_winkler. Output only the requested JSON schema.
+
+VERIFIED CONTEXT: translation_contract.md
+# Frozen pilot translation contract v1
+
+Return a complete standalone Python module defining:
+`run(a, b, operation="distance", parameter=None)`.
+
+Implement the supplied Java task, including its dependency closure. Inputs are
+strings or None. Output is a finite number. Map Java NullPointerException to
+Python ValueError; do not silently accept null. Exception messages are recorded
+but not scored. Preserve source behavior even where a different algorithm seems
+more idiomatic. Only Python standard-library imports are allowed. Do not call
+Java, subprocesses, network services, or files. No test changes or hardcoded
+answers. No fallback to the original Java implementation.
+
+For Levenshtein, operation is distance and parameter is its optional int limit.
+For NormalizedLevenshtein, operation is distance or similarity; parameter is None.
+For JaroWinkler, operation is distance or similarity and parameter is the optional
+constructor threshold. Invalid operation names are outside this pilot's domain.
+
+All runtimes use the same frozen floating-point comparator: abs_tol=rel_tol=1e-9.
+This is test-supported numeric parity, not a proof of full language equivalence.
+
+
+VERIFIED CONTEXT: java_python_semantics.md
+# Pilot semantic notes v1
+
+- Java String.length/charAt count UTF-16 code units. Python str indexes Unicode
+  code points. Where the source uses charAt, use UTF-16 code units, including for
+  lengths, matching, and edit operations. Do not normalize Unicode inputs.
+  Source: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html
+- Preserve the actual order of null, equality, empty-string, and limit checks.
+  In this Levenshtein source, empty-string results are returned before the limit
+  check. A naive min(full_distance, limit) changes observable behavior.
+- Java integer division truncates toward zero. In JaroWinkler.matches the
+  transposition count is divided as an integer. Its prefix loop has no automatic
+  four-character cap: follow this source rather than a memorized algorithm.
+- The source JaroWinkler declares m as float. Its intermediate arithmetic can
+  round to binary32 before conversion to double. Python float is binary64; use
+  explicit binary32 rounding where necessary (standard-library struct).
+  Source: https://docs.oracle.com/javase/specs/jls/se21/html/jls-15.html
+- Standard-library names and semantics must be checked against the pinned
+  runtime. This small static knowledge pack is not a vector RAG system.
+
+
+JAVA SOURCE: JaroWinkler.java
+package info.debatty.java.stringsimilarity;
+
+import info.debatty.java.stringsimilarity.interfaces.NormalizedStringSimilarity;
+import info.debatty.java.stringsimilarity.interfaces.NormalizedStringDistance;
+import java.util.Arrays;
+
+import net.jcip.annotations.Immutable;
+
+/**
+ * The Jaro–Winkler distance metric is designed and best suited for short
+ * strings such as person names, and to detect typos; it is (roughly) a
+ * variation of Damerau-Levenshtein, where the substitution of 2 close
+ * characters is considered less important then the substitution of 2 characters
+ * that a far from each other.
+ * Jaro-Winkler was developed in the area of record linkage (duplicate
+ * detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0].
+ * The distance is computed as 1 - Jaro-Winkler similarity.
+ * @author Thibault Debatty
+ */
+@Immutable
+public class JaroWinkler
+        implements NormalizedStringSimilarity, NormalizedStringDistance {
+
+    private static final double DEFAULT_THRESHOLD = 0.7;
+    private static final int THREE = 3;
+    private static final double JW_COEF = 0.1;
+    private final double threshold;
+
+    /**
+     * Instantiate with default threshold (0.7).
+     *
+     */
+    public JaroWinkler() {
+        this.threshold = DEFAULT_THRESHOLD;
+    }
+
+    /**
+     * Instantiate with given threshold to determine when Winkler bonus should
+     * be used.
+     * Set threshold to a negative value to get the Jaro distance.
+     * @param threshold
+     */
+    public JaroWinkler(final double threshold) {
+        this.threshold = threshold;
+    }
+
+    /**
+     * Returns the current value of the threshold used for adding the Winkler
+     * bonus. The default value is 0.7.
+     *
+     * @return the current value of the threshold
+     */
+    public final double getThreshold() {
+        return threshold;
+    }
+
+    /**
+     * Compute Jaro-Winkler similarity.
+     * @param s1 The first string to compare.
+     * @param s2 The second string to compare.
+     * @return The Jaro-Winkler similarity in the range [0, 1]
+     * @throws NullPointerException if s1 or s2 is null.
+     */
+    public final double similarity(final String s1, final String s2) {
+        if (s1 == null) {
+            throw new NullPointerException("s1 must not be null");
+        }
+
+        if (s2 == null) {
+            throw new NullPointerException("s2 must not be null");
+        }
+
+        if (s1.equals(s2)) {
+            return 1;
+        }
+
+        int[] mtp = matches(s1, s2);
+        float m = mtp[0];
+        if (m == 0) {
+            return 0f;
+        }
+        double j = ((m / s1.length() + m / s2.length() + (m - mtp[1]) / m))
+                / THREE;
+        double jw = j;
+
+        if (j > getThreshold()) {
+            jw = j + Math.min(JW_COEF, 1.0 / mtp[THREE]) * mtp[2] * (1 - j);
+        }
+        return jw;
+    }
+
+
+    /**
+     * Return 1 - similarity.
+     * @param s1 The first string to compare.
+     * @param s2 The second string to compare.
+     * @return 1 - similarity.
+     * @throws NullPointerException if s1 or s2 is null.
+     */
+    public final double distance(final String s1, final String s2) {
+        return 1.0 - similarity(s1, s2);
+    }
+
+    private int[] matches(final String s1, final String s2) {
+        String max, min;
+        if (s1.length() > s2.length()) {
+            max = s1;
+            min = s2;
+        } else {
+            max = s2;
+            min = s1;
+        }
+        int range = Math.max(max.length() / 2 - 1, 0);
+        int[] match_indexes = new int[min.length()];
+        Arrays.fill(match_indexes, -1);
+        boolean[] match_flags = new boolean[max.length()];
+        int matches = 0;
+        for (int mi = 0; mi < min.length(); mi++) {
+            char c1 = min.charAt(mi);
+            for (int xi = Math.max(mi - range, 0),
+                    xn = Math.min(mi + range + 1, max.length());
+                    xi < xn;
+                    xi++) {
+                if (!match_flags[xi] && c1 == max.charAt(xi)) {
+                    match_indexes[mi] = xi;
+                    match_flags[xi] = true;
+                    matches++;
+                    break;
+                }
+            }
+        }
+        char[] ms1 = new char[matches];
+        char[] ms2 = new char[matches];
+        for (int i = 0, si = 0; i < min.length(); i++) {
+            if (match_indexes[i] != -1) {
+                ms1[si] = min.charAt(i);
+                si++;
+            }
+        }
+        for (int i = 0, si = 0; i < max.length(); i++) {
+            if (match_flags[i]) {
+                ms2[si] = max.charAt(i);
+                si++;
+            }
+        }
+        int transpositions = 0;
+        for (int mi = 0; mi < ms1.length; mi++) {
+            if (ms1[mi] != ms2[mi]) {
+                transpositions++;
+            }
+        }
+        int prefix = 0;
+        for (int mi = 0; mi < min.length(); mi++) {
+            if (s1.charAt(mi) == s2.charAt(mi)) {
+                prefix++;
+            } else {
+                break;
+            }
+        }
+        return new int[]{matches, transpositions / 2, prefix, max.length()};
+    }
+}
+
+
+JAVA INTERFACE: MetricStringDistance.java
+/*
+ * The MIT License
+ *
+ * Copyright 2015 Thibault Debatty.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+package info.debatty.java.stringsimilarity.interfaces;
+
+/**
+ * String distances that implement this interface are metrics.
+ * This means:
+ * - d(x, y) ≥ 0 (non-negativity, or separation axiom)
+ * - d(x, y) = 0 if and only if x = y (identity, or coincidence axiom)
+ * - d(x, y) = d(y, x) (symmetry)
+ * - d(x, z) ≤ d(x, y) + d(y, z) (triangle inequality).
+ *
+ * @author Thibault Debatty
+ */
+public interface MetricStringDistance extends StringDistance {
+
+    /**
+     * Compute and return the metric distance.
+     * @param s1
+     * @param s2
+     * @return
+     */
+    double distance(String s1, String s2);
+}
+
+
+JAVA INTERFACE: NormalizedStringDistance.java
+/*
+ * The MIT License
+ *
+ * Copyright 2015 Thibault Debatty.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+package info.debatty.java.stringsimilarity.interfaces;
+
+/**
+ * Normalized string similarities return a similarity between 0.0 and 1.0.
+ *
+ * @author Thibault Debatty
+ */
+public interface NormalizedStringDistance extends StringDistance {
+
+}
+
+
+JAVA INTERFACE: NormalizedStringSimilarity.java
+/*
+ * The MIT License
+ *
+ * Copyright 2015 Thibault Debatty.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+package info.debatty.java.stringsimilarity.interfaces;
+
+/**
+ *
+ * @author Thibault Debatty
+ */
+public interface NormalizedStringSimilarity extends StringSimilarity {
+
+}
+
+
+JAVA INTERFACE: StringDistance.java
+/*
+ * The MIT License
+ *
+ * Copyright 2015 Thibault Debatty.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+package info.debatty.java.stringsimilarity.interfaces;
+
+import java.io.Serializable;
+
+/**
+ *
+ * @author Thibault Debatty
+ */
+public interface StringDistance extends Serializable {
+
+    /**
+     * Compute and return a measure of distance.
+     * Must be &gt;= 0.
+     * @param s1
+     * @param s2
+     * @return
+     */
+    double distance(String s1, String s2);
+}
+
+
+JAVA INTERFACE: StringSimilarity.java
+package info.debatty.java.stringsimilarity.interfaces;
+
+import java.io.Serializable;
+
+/**
+ *
+ * @author Thibault Debatty
+ */
+public interface StringSimilarity extends Serializable {
+    /**
+     * Compute and return a measure of similarity between 2 strings.
+     * @param s1
+     * @param s2
+     * @return similarity (0 means both strings are completely different)
+     */
+    double similarity(String s1, String s2);
+}

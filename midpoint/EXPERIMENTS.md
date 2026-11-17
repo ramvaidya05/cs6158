@@ -1,5 +1,14 @@
 # Translation accuracy and bounded environment repair
 
+For the midpoint review's requested failure taxonomy, run
+`python3.12 scripts/verify_failure_routing.py` after building both containers.
+It archives ten controlled observations: healthy controls, syntax errors,
+candidate exceptions, and semantic mismatches in CPython/GraalPy, plus the
+GraalPy cache failure and bounded correction. The script uses one fixed case
+from the integrated suite, makes no model calls, and labels the results
+`synthetic_fault_injection`. It qualifies these routes without claiming general
+diagnostic accuracy; see [REVIEWER_RESPONSE.md](REVIEWER_RESPONSE.md).
+
 November 15 integration: the partner's stateful Commons CLI changes and the
 experiment/reporting branch are combined. `scripts/verify_cli.py --archive` now
 qualifies fixtures in containers by default; `--execution local` is available
@@ -108,10 +117,10 @@ is enabled.
 
 ```sh
 python3.12 scripts/live_pilot.py \
-  --suite evaluator-private/pilot-v1.json --backend gemini \
+  --suite evaluator-private/integrated-strings-v2.json --backend gemini \
   --model gemini-3.8-flash --reasoning-effort medium \
   --input-usd-per-million 0.75 --output-usd-per-million 3.75 \
-  --task levenshtein --trials 3 --max-repairs 5 \
+  --task levenshtein --trials 3 \
   --max-output-tokens 16384 --output-token-budget 98304 \
   --max-spend-usd 1
 ```
@@ -121,6 +130,18 @@ Gemini 3.8 Flash prices ($0.75/M input, $3.75/M output through December 31,
 on October 19, 2026. Do not edit files under `migration_lab/`, `tests/`,
 `scripts/` or other protected folders while a run is in progress; the integrity
 guard will invalidate it.
+
+The live-pilot script uses the controller's fixed maximum of five repairs; it
+does not accept a `--max-repairs` argument. For another repair limit, use the
+`migration_lab experiment` CLI. The suite path above refers to the separately
+frozen post-integration protocol; historical pre-integration suites remain
+unchanged and will correctly fail the current comparator hash check.
+
+November 15 requested rerun: three trials each of `normalized` and
+`jaro_winkler`, integrated string suite, unchanged medium thinking and token
+limits, with a $0.50 batch cap from the remaining approved allowance. The
+three-consecutive-provider-failure stop rule remains active. This batch is a
+new retained experiment, not a replacement for previous failed batches.
 
 ### Fixed expansion protocol (November 11, 2026)
 
