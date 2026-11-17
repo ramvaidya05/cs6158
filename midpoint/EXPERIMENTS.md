@@ -419,3 +419,29 @@ The experiment CLI exits 1 when any admitted arm fails validation, including
 an intentionally retained unsuccessful one-shot baseline. Check `summary.json`
 and per-arm statuses to distinguish completed negative results from setup errors.
 See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md#november-17-2026--live-commons-cli-results).
+# Capped Commons Codec Hex pilot
+
+`scripts/codec_hex_pilot.py` is a separate, narrow translation study for the
+`encodeHexString(byte[], boolean)` and `decodeHex(String)` behavior in Apache
+Commons Codec 1.22.1. It does not change the older four-task frozen suite. The
+script freezes deterministic visible and withheld inputs and checks a repeated
+Java oracle before requesting a translation. It gives the model only a pinned
+source excerpt, never withheld cases. One repair may use visible failures. The
+candidate runs in both existing networkless, resource-limited containers. A
+call is skipped if its prompt UTF-8 byte allowance plus 1,024-token overhead and
+2,048 output tokens would exceed the 18,000-token reservation. There are at
+most two calls, with a $0.03 independent spend reservation cap. The explicit
+byte allowance is conservative; the measured count comes from provider usage.
+
+From `midpoint/`, after `python3.12 scripts/bootstrap.py` and
+`python3.12 scripts/build_containers.py`:
+
+```sh
+python3.12 scripts/codec_hex_pilot.py --prepare-only
+python3.12 scripts/codec_hex_pilot.py
+```
+
+The [first completed trial](evidence/20261117T232219Z-codec-hex-pilot/summary.json)
+had no visible failures and therefore no repair call. It passed 70/73 withheld
+cases in CPython and 73/73 in GraalPy. Do not treat those cases as independent
+model trials or as accuracy across the full Commons Codec library.

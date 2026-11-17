@@ -1,0 +1,164 @@
+{
+  "status": "evaluated",
+  "calls": [
+    {
+      "attempt": 0,
+      "prompt_utf8_bytes": 4994,
+      "reserved_tokens": 8066,
+      "cumulative_reserved_tokens": 8066,
+      "metadata": {
+        "backend": "gemini_generate_content",
+        "model": "gemini-3.5-flash-lite",
+        "reasoning_effort": "low",
+        "provenance": "live_model",
+        "resolved_model": "gemini-3.5-flash-lite",
+        "response_id": "rOH8aor8KpvExdIPzOCUoQ4",
+        "usage": {
+          "input_tokens": 1581,
+          "output_tokens": 447,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1581,
+            "candidatesTokenCount": 447,
+            "totalTokenCount": 2028,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1581
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        },
+        "elapsed_seconds": 1.532
+      },
+      "candidate_sha256": "0e9a76e17364e3a577ceadb394d69585bd4ccc3c148f411e3435eee33be528d6",
+      "visible": {
+        "cpython": {
+          "passed": 16,
+          "total": 16,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 16,
+          "total": 16,
+          "status": "completed"
+        }
+      }
+    }
+  ],
+  "candidates": [
+    "candidate-0.py"
+  ],
+  "suite_sha256": "86273e103ed08e591287a4af5b32de2b08824a3e936084e2f237d22fd6749c25",
+  "holdout_baseline": {
+    "cpython": {
+      "status": "completed",
+      "passed": 70,
+      "total": 73,
+      "failures": [
+        {
+          "case": {
+            "id": "codec-holdout-064",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\uff10\uff21",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-064",
+            "status": "ok",
+            "value": [
+              10
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-064",
+            "status": "exception",
+            "type": "DecoderException"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-065",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\uff21\uff46",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-065",
+            "status": "ok",
+            "value": [
+              175
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-065",
+            "status": "exception",
+            "type": "DecoderException"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-070",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd0f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-070",
+            "status": "ok",
+            "value": [
+              47
+            ]
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 73,
+      "total": 73,
+      "failures": []
+    }
+  },
+  "usage": {
+    "limit_usd": 0.03,
+    "accounted_usd": 0.001710375,
+    "input_usd_per_million": 0.3,
+    "output_usd_per_million": 2.5,
+    "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+    "calls": [
+      {
+        "reserved_usd": 0.008791625,
+        "accounted_usd": 0.001710375,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 1581,
+          "output_tokens": 447,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1581,
+            "candidatesTokenCount": 447,
+            "totalTokenCount": 2028,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1581
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 16.302
+}

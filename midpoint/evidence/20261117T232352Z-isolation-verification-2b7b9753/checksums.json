@@ -1,0 +1,20 @@
+{
+  "integration_tests.json": "8476517b018813235a80cac8f5323ae4bf20049c57641b1e2880d693aad4324f",
+  "jaro_winkler/cpython/execution.json": "0e9f736a08fd9df90666be9991212184d6832850780489c4728dd9ab80d5f9c8",
+  "jaro_winkler/cpython/inputs.json": "8281c10fe7a2c91201b7b67ebba475a361d4608616ce5358352d7d5733c0bbab",
+  "jaro_winkler/graal/execution.json": "4c97d50c3014bf5414d96e7011f4b8e47b1b2271a9bb0d7c5a67bfae3a63b025",
+  "jaro_winkler/graal/inputs.json": "8281c10fe7a2c91201b7b67ebba475a361d4608616ce5358352d7d5733c0bbab",
+  "jaro_winkler/summary.json": "10560ad7203967a8625cb34568df95839fe9500a043d6175f03988e7aff3ddb1",
+  "levenshtein/cpython/execution.json": "c8b7b4bcf92600c8732884822b02716686e8d595537b85644b98a2b32cc640d1",
+  "levenshtein/cpython/inputs.json": "3277d1f46d5895852e2f788dac6c8d46501a9f25d91f1f788042f4e65a4896a8",
+  "levenshtein/graal/execution.json": "8c9f1c549244e92861c3b5770022329722bf2de86302f0acaaa5f0285f789e26",
+  "levenshtein/graal/inputs.json": "3277d1f46d5895852e2f788dac6c8d46501a9f25d91f1f788042f4e65a4896a8",
+  "levenshtein/summary.json": "a5dc6c366020c12505e3ec5830fe3362703b2b9256fc7e6c547b7f112abaed2e",
+  "normalized/cpython/execution.json": "750be36e70f4887ab2cc994eee068945cd2d0a9a27f81152f8557524bfbd131d",
+  "normalized/cpython/inputs.json": "e59e8dea34ce944171f28b899096343ce0c706ae7c4f0e6a7eba568efad3ac81",
+  "normalized/graal/execution.json": "abede089d26657f3b6c8ac17295b8bde0424d5f637a0af4452e57a5945f411cb",
+  "normalized/graal/inputs.json": "e59e8dea34ce944171f28b899096343ce0c706ae7c4f0e6a7eba568efad3ac81",
+  "normalized/summary.json": "35ed0d0a4bc4da682bff75d65b87e82dec887443ae525b5cf89d51388bea17bb",
+  "summary.json": "29ee549dd7a617a0d9ba9398e635fe9e0b13b58f23dbd9119bbec7e5ca34e5a9",
+  "tests.json": "153a75657f8f9ea2db9283b213b23d8e033a0c880f9f2b764254268b75b7ffe2"
+}

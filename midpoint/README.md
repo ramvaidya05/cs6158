@@ -1,5 +1,15 @@
 # Environment-in-the-Loop Translation — midpoint prototype
 
+**November 17 checkpoint:** Main now includes both the partner's live Commons
+CLI repair study and the experiment branch. The CLI study passed 2/3 one-shot
+trials and 3/3 after code repair. A new capped Commons Codec Hex pilot passed
+70/73 withheld cases in CPython and 73/73 in GraalPy with one Gemini 3.5
+Flash-Lite call (2,028 reported tokens); its visible cases all passed, so no
+repair was attempted. See [results](EXPERIMENT_RESULTS.md) and the
+[Codec protocol](EXPERIMENTS.md#capped-commons-codec-hex-pilot). The merged
+Python suite passes 87 tests; the five upstream Java tests, isolation suite,
+and Commons CLI qualification also pass.
+
 **November 15 integration:** Commons CLI and the experiment branch are combined.
 Both rebuilt container runtimes pass stateful qualification (160 final checks)
 and the expanded string fixtures (946 checks). All 85 Python tests, five Java
@@ -11,7 +21,7 @@ A small, executable Java-to-Python translation/repair research harness. It has
 separate Migration, Environment, and Testsuite roles, coordinated by a bounded
 controller. Only Migration uses a model; Environment and Testsuite are deterministic.
 
-**Current status:** disposable container execution, frozen evaluation sets, paired
+**Earlier checkpoint:** disposable container execution, frozen evaluation sets, paired
 trial aggregation, and a bounded cache-remediation policy are implemented. The
 expanded fixture check passes 946 runtime checks. A live Levenshtein study with
 Gemini 3.8 Flash (free tier) passed 3/3 trials: every one-shot translation matched

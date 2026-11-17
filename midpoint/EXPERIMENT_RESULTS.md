@@ -1,5 +1,29 @@
 # Current checkpoint — November 17, 2026
 
+## Capped live Apache Commons Codec pilot
+
+The [Commons Codec Hex pilot](evidence/20261117T232219Z-codec-hex-pilot/summary.json)
+used pinned Commons Codec 1.22.1 `Hex.java`, a Java oracle, frozen 16 visible and
+73 withheld cases, and isolated CPython and GraalPy execution. Gemini 3.5
+Flash-Lite generated one complete candidate with low thinking. Both runtimes
+passed **16/16 visible** cases. Withheld accuracy was **70/73 (95.9%) in
+CPython** and **73/73 (100%) in GraalPy**. The three CPython mismatches were
+fullwidth hex digits that Java accepts and one supplementary Unicode digit that
+Java rejects as UTF-16 code units. The visible suite gave no repair trigger, so
+this study made no repair call; the final candidate is the one-shot candidate.
+The archive's `holdout_baseline` field records its withheld scores; an initial
+reporting omission left `holdout_final` empty for a no-repair run. The runner is
+corrected for future trials, and the checksummed archive remains unchanged.
+
+The pilot used **one model call**, **1,581 input tokens**, **447 output tokens**,
+**2,028 total provider-reported tokens**, and **16.3 seconds** end to end. Its
+predeclared ceiling was two calls, 2,048 output tokens per call, an 18,000-token
+conservative reservation, and $0.03. Accounted spend was **$0.001710375** at
+[Google's published Flash-Lite rates](https://ai.google.dev/gemini-api/docs/pricing),
+an estimate rather than a billing statement. This is one narrow `Hex` API slice,
+not a library-wide Codec accuracy estimate. The [24-file archive checksum](evidence/20261117T232219Z-codec-hex-pilot/checksums.json)
+verified.
+
 The live Commons CLI study now completed using Gemini 3.8 Flash and Docker:
 three fresh initial translations, with the same initial candidate paired across
 three arms. One-shot passed 2/3 trials; code repair and environment-plus-code
