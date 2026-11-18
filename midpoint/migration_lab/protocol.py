@@ -47,7 +47,9 @@ def evaluation_cases(task, seed, count=100):
     return rows
 
 
-def freeze(path, seed=None, tasks=TASKS):
+def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
+    if profile not in ("pilot", "commons-cli-semantic-v2", "commons-cli-extended-v3") or (profile != "pilot" and tuple(tasks) != ("commons_cli",)):
+        raise ValueError("Unsupported profile/task combination")
     if not tasks or len(set(tasks)) != len(tasks) or any(t not in ALL_TASKS for t in tasks):
         raise ValueError("Unsupported or duplicate tasks")
     path = Path(path)
@@ -64,11 +66,23 @@ def freeze(path, seed=None, tasks=TASKS):
         if "commons_cli" in tasks:
             from .cli_task import identity
             payload["task_identities"]["commons_cli"] = identity()
+    if profile != "pilot":
+        payload["profile"] = profile
+        payload["profile_sha256"] = sha256(ROOT / ("migration_lab/cli_extended.py" if profile == "commons-cli-extended-v3" else "migration_lab/cli_semantic.py"))
+        payload["semantic_base_sha256"] = sha256(ROOT / "migration_lab/cli_semantic.py")
     tester = TestsuiteAgent(EnvironmentAgent())
     evidence = path.parent / (path.stem + "-oracle")
     for task in tasks:
         payload["tasks"][task] = {}
-        for split, rows in (("visible", cases(task)), ("holdout", cases(task, "holdout", seed) if task == "commons_cli" else evaluation_cases(task, seed))):
+        if profile != "pilot":
+            if profile == "commons-cli-extended-v3":
+                from .cli_extended import cases as semantic_cases
+            else:
+                from .cli_semantic import cases as semantic_cases
+            splits = [(split, semantic_cases(split, seed)) for split in ("visible", "holdout")]
+        else:
+            splits = [("visible", cases(task)), ("holdout", cases(task, "holdout", seed) if task == "commons_cli" else evaluation_cases(task, seed))]
+        for split, rows in splits:
             reference = tester.reference(rows, evidence / task / split)
             repeated = tester.reference(rows, evidence / task / (split + "-repeat"))
             if reference != repeated:
@@ -94,6 +108,11 @@ class FrozenSuite:
             raise ValueError("Unsupported suite schema")
         if payload["schema"] == 2 and payload["generator_sha256"] != sha256(Path(__file__)):
             raise RuntimeError("Suite generator differs from frozen protocol")
+        if payload.get("profile", "pilot") != "pilot":
+            profile_file = {"commons-cli-semantic-v2": "cli_semantic.py", "commons-cli-extended-v3": "cli_extended.py"}.get(payload["profile"])
+            if (profile_file is None or payload["profile_sha256"] != sha256(ROOT / "migration_lab" / profile_file)
+                    or payload.get("semantic_base_sha256", sha256(ROOT / "migration_lab/cli_semantic.py")) != sha256(ROOT / "migration_lab/cli_semantic.py")):
+                raise RuntimeError("Semantic profile changed")
         selected = TASKS if payload["schema"] == 1 else tuple(payload["tasks"])
         if not selected or any(t not in ALL_TASKS for t in selected):
             raise ValueError("Invalid suite tasks")
@@ -120,7 +139,7 @@ class FrozenSuite:
 
     def identity(self):
         data = self._read()
-        return {"sha256": self.digest, "schema": data["schema"], "policy": data["policy"],
+        return {"sha256": self.digest, "schema": data["schema"], "policy": data["policy"], "profile": data.get("profile", "pilot"),
                 "counts": {task: {split: len(value["cases"]) for split, value in splits.items()}
                            for task, splits in data["tasks"].items()}}
 

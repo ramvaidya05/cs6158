@@ -1,0 +1,672 @@
+{
+  "provenance": "live_model",
+  "study": "memory_ablation",
+  "measurement_status": "evaluated",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 1,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 0.3333333333333333,
+      "descriptive_wilson_95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 114,
+            "total": 132,
+            "rate": 0.8636363636363636,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 80,
+            "total": 84,
+            "rate": 0.9523809523809523,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 114,
+            "total": 132,
+            "rate": 0.8636363636363636,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 80,
+            "total": 84,
+            "rate": 0.9523809523809523,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_off": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_on": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 14.28571428571429,
+        "graal": 14.28571428571429
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 14.28571428571429,
+        "graal": 14.28571428571429
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-000/commons_cli/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 63.272000000000006,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40716,
+        "output_tokens": 7887,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 37,
+            "total": 44,
+            "rate": 0.8409090909090909,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 37,
+            "total": 44,
+            "rate": 0.8409090909090909,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "path": "trial-000/commons_cli/memory_off",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 68.367,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 50991,
+        "output_tokens": 7913,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "path": "trial-000/commons_cli/memory_on",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 68.004,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 52209,
+        "output_tokens": 7881,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-001/commons_cli/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 60.472,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40716,
+        "output_tokens": 6634,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 44,
+            "rate": 0.75,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 24,
+            "total": 28,
+            "rate": 0.8571428571428571,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 44,
+            "rate": 0.75,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 24,
+            "total": 28,
+            "rate": 0.8571428571428571,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "path": "trial-001/commons_cli/memory_off",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 62.308,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 49470,
+        "output_tokens": 6881,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "path": "trial-001/commons_cli/memory_on",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 61.790000000000006,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 50692,
+        "output_tokens": 6692,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-002/commons_cli/one_shot",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 58.831999999999994,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40716,
+        "output_tokens": 7051,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "memory_off",
+      "path": "trial-002/commons_cli/memory_off",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 18.875,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "memory_on",
+      "path": "trial-002/commons_cli/memory_on",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.328,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 44,
+            "total": 44,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 28,
+            "total": 28,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  ],
+  "usage": {
+    "model_calls": 7,
+    "input_tokens": 325510,
+    "output_tokens": 50939,
+    "usage_unknown_calls": 0
+  }
+}

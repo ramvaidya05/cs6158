@@ -1,0 +1,1039 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 42,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-required-after-readd",
+        "semantic-v2-visible-parse-with-another-options",
+        "semantic-v2-visible-stop-reset",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-group-reuse",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "semantic-v2-visible-unique-prefix",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--out",
+                    "prefix"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "output"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-unique-prefix",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "prefix"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-unique-prefix",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "exception",
+                "type": "UnrecognizedOptionException"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 6,
+            "expected": {
+              "step": 6,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            },
+            "actual": {
+              "step": 6,
+              "status": "exception",
+              "type": "UnrecognizedOptionException"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "other",
+                "args": [
+                  "p",
+                  "outline",
+                  false,
+                  "other"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "other"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--out"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "AmbiguousOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "UnrecognizedOptionException"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "exception",
+              "type": "AmbiguousOptionException"
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "UnrecognizedOptionException"
+            }
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 42,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-required-after-readd",
+        "semantic-v2-visible-parse-with-another-options",
+        "semantic-v2-visible-stop-reset",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-group-reuse",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "semantic-v2-visible-unique-prefix",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--out",
+                    "prefix"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "output"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-unique-prefix",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "prefix"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-unique-prefix",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "exception",
+                "type": "UnrecognizedOptionException"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 6,
+            "expected": {
+              "step": 6,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            },
+            "actual": {
+              "step": 6,
+              "status": "exception",
+              "type": "UnrecognizedOptionException"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "other",
+                "args": [
+                  "p",
+                  "outline",
+                  false,
+                  "other"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "other"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--out"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "AmbiguousOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-ambiguous-prefix",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "UnrecognizedOptionException"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "exception",
+              "type": "AmbiguousOptionException"
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "UnrecognizedOptionException"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "passed": 84,
+  "total": 88,
+  "all_pass": false
+}

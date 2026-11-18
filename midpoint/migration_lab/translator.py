@@ -27,7 +27,26 @@ class MigrationAgent:
         return "\n\n".join(blocks)
 
     @staticmethod
-    def feedback(summary):
+    def feedback(summary, mode="full"):
+        if mode not in ("full", "basic", "operation", "pruned"):
+            raise ValueError("Unknown feedback mode")
+        if mode == "pruned":
+            from .retry_memory import diagnostics
+            return diagnostics(summary)
+        if mode == "basic":
+            return {runtime: {k:r[k] for k in ("passed", "total", "status")} for runtime,r in summary["runtimes"].items()}
+        if mode == "operation":
+            result = {}
+            for runtime,r in summary["runtimes"].items():
+                failures = []
+                for f in r["failures"][:6]:
+                    diff = f.get("first_difference")
+                    if diff is not None:
+                        failures.append({"case_id": f["case"]["id"], "operations": f["case"]["operations"][:diff["step"]+1], "first_difference": diff})
+                    else:
+                        failures.append(f)
+                result[runtime] = {**{k:r[k] for k in ("passed", "total", "status")}, "failures":failures}
+            return result
         return {mode: {"passed": r["passed"], "total": r["total"], "status": r["status"],
                        "failures": r["failures"][:6]}
                 for mode, r in summary["runtimes"].items()}

@@ -1,0 +1,19 @@
+{
+  "trial-000": {
+    "initial_candidate_identical": true
+  },
+  "trial-001": {
+    "initial_candidate_identical": true
+  },
+  "trial-002": {
+    "initial_candidate_identical": true
+  },
+  "trial-003": {
+    "initial_candidate_identical": true
+  },
+  "trial-004": {
+    "initial_candidate_identical": true
+  },
+  "holdout_ids_absent_from_prompts": true,
+  "key_absent_from_live_archive": true
+}

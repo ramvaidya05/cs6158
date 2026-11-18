@@ -1,5 +1,24 @@
 # Current checkpoint — November 17, 2026
 
+## CLI v3 live Gemini studies — November 17, 2026 local time
+
+Fresh live runs now evaluate the expanded 32-method CLI scope. Main study: one-shot, code repair, and environment-aware repair each passed 3/3 trials; all initial translations passed, so no repairs occurred. Separate memory cohort: one-shot passed the full visible-and-holdout criterion in 1/3 trials, while memory-off and memory-on each passed 3/3. Both failing initials were corrected in one retry by either repair arm. No observed correctness or retry-count advantage from memory was established.
+
+The studies plus their excluded smoke run used 11 actual Gemini calls, with $0.758626875 conservatively accounted at the declared rates. No budget-blocked arms or unknown-usage calls occurred. One visibly incorrect initial candidate passed the entire holdout suite, exposing a semantic coverage limitation despite complete method exercise. See [CLI_V3_LIVE_OBSERVATIONS.md](CLI_V3_LIVE_OBSERVATIONS.md) for the predeclared protocol, per-trial results, failure mechanisms, costs, and caveats. Structured report: `evidence/20261118-cli-v3-live-report/summary.json`.
+
+
+## CLI v3 engineering validation (no new live inference)
+
+The [retry-memory checkpoint](RETRY_MEMORY_OBSERVATIONS.md) expands the contract to 32 methods across five classes, with 44 visible and 28 holdout scenarios. All 32 methods have normal-return observations in both splits. Both runtimes detect all 16 injected visible-test defects.
+
+A paired **synthetic replay** progressed from 82/88 to 86/88 to 88/88 visible observations in both repair arms; both selected candidates scored 56/56 holdout observations. One-shot scored 48/56 holdout. Repairs were predetermined: this validates orchestration, not a memory benefit or new Gemini translation accuracy. The prior live results below remain unchanged. Evidence: `evidence/20261117T231651Z-experiment-555a5519`; isolation audit: `evidence/20261117-retry-memory-v3-report`.
+
+
+Latest: the stronger semantic suite and five-trial feedback comparison are complete.
+See [semantic-v2 results](#november-17--stronger-semantic-suite-and-feedback-comparison),
+including the budget-limited fifth comparison. The earlier pilot below is retained
+as a separate study.
+
 The live Commons CLI study now completed using Gemini 3.8 Flash and Docker:
 three fresh initial translations, with the same initial candidate paired across
 three arms. One-shot passed 2/3 trials; code repair and environment-plus-code
@@ -310,3 +329,75 @@ semantic scenarios (including partial-name ambiguity, option replacement and
 more complex state reuse), qualify its oracle and adapters, then run fresh
 paired trials. Do not reuse the current holdout as repair feedback or present
 these three trials as evidence for repository-scale translation.
+
+## November 17 — stronger semantic suite and feedback comparison
+
+The `commons-cli-semantic-v2` profile has **36 visible and 20 holdout scenarios**.
+Sixteen new visible cases cover partial-name ambiguity, exact matches, quoting,
+option replacement, required-option changes, and parser reuse. Holdout sequences
+are separately authored compositions, not randomized renamings of visible cases.
+They still share API concepts and represent one small library slice. The seed is
+recorded for provenance but these fixed scenario definitions do not use it.
+
+Qualification used the Java oracle, repeated for stability, and an archived
+Gemini baseline inside Docker. The baseline passed all **72 visible runtime
+checks**. All **8 injected faults** were detected in both runtimes: alias loss,
+parser-state leakage, missing-value corruption, wrong exception type, reversed
+value order, disabled partial matching, ignored required flags, and ignored option
+replacement. Only newly failing baseline-passing visible cases count as detections;
+holdout was excluded from mutation qualification. These eight selected mutants
+are an evaluator check, not a comprehensive mutation score or live-model result.
+[Qualification evidence](evidence/20261117T222009Z-cli-semantic-qualification-3fda6c6b/summary.json).
+A separate synthetic replay verified pairing and post-selection scoring before
+live calls: [replay evidence](evidence/20261117T222142Z-semantic-ablation-replay-bd0f3849/experiment/summary.json).
+
+The live study used **five fresh Gemini 3.8 Flash trials**, low thinking, 32,768
+output tokens, a 300-second model timeout, a 90-second execution timeout, at most
+three repairs, and a shared $1 reservation limit. Each trial paired the same initial
+candidate with two feedback treatments. Basic feedback provides per-runtime pass
+counts and execution status only. Operation feedback adds the first differing
+operation, its expected/actual observation, and the preceding operation inputs.
+Repair-arm execution order alternates across trials. All selections freeze before
+holdout scoring; no trial receives a previous trial's fixes or feedback.
+
+[Original run archive](evidence/20261117T222306Z-experiment-f3578eff/summary.json).
+[Corrected reporting summary](evidence/20261117-semantic-v2-report/summary.json)
+excludes blocked requests from evaluated repair counts and flags budget limits.
+The original run archive is preserved unchanged; the report records its provenance.
+
+Across CPython and GraalPy:
+
+- **One-shot:** 3/5 fully passing trials; 310/360 visible and 184/200 holdout checks.
+- **Basic feedback:** 4/5 fully passing trials; 338/360 visible and 192/200 holdout.
+- **Operation feedback:** 4/5 fully passing trials; 332/360 visible and 192/200 holdout.
+
+The aggregate equality of repair arms conceals a budget-limited comparison:
+
+- Trial 4: the initial candidate passed 50/72 visible and 32/40 holdout checks.
+  Basic feedback made two evaluated repairs without improvement and stopped under
+  the no-progress rule. Operation feedback made one repair and reached 72/72
+  visible and 40/40 holdout checks. It corrected recursive absent-option lookup.
+- Trial 5: the initial candidate passed 44/72 visible and 32/40 holdout checks.
+  Basic feedback reached 72/72 and 40/40 after two evaluated repairs. The operation
+  feedback request was **blocked before a model call by the reservation cap**;
+  the unchanged initial candidate was scored. This is not a failed Gemini repair
+  and must not be used to infer that operation feedback is less effective.
+
+There were **10 actual Gemini calls**: 5 initial translations, 4 basic-feedback
+repairs, and 1 operation-feedback repair. Usage was 439,522 input and 71,466 output
+tokens, including thinking, with no unknown-usage calls. Conservative accounting
+was **$0.680049**. The final request's worst-case reservation exceeded the remaining
+allowance even though recorded accounting was below $1. These amounts are not a
+provider invoice. A reporting fix now distinguishes attempted, evaluated, and
+budget-blocked repairs; all **81 unit tests** pass.
+
+This provides one fully observed paired example where operation feedback helped
+and basic feedback did not. Five trials on one slice, with one budget-confounded
+comparison, do not establish a statistically reliable ranking. Do not pool this
+suite with the earlier pilot or claim nine/15 independent initial generations.
+
+Next work: reserve equal repair capacity for each paired arm before another
+feedback study, expand subjects, and then add dependency-ordered multi-module
+translation. Whole-repository translation and cross-trial lesson reuse remain
+unimplemented. A future lesson-reuse study must be separately labelled and keep
+evaluation holdout behavior out of the learned context.

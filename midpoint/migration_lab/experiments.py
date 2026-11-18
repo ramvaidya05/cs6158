@@ -55,7 +55,7 @@ def usage_at(directory):
     return counts
 
 
-def aggregate(directory):
+def aggregate(directory, output_path=None):
     plan = json.loads((directory / "experiment.json").read_text())
     records = []
     for item in plan["planned_runs"]:
@@ -65,7 +65,9 @@ def aggregate(directory):
         record = {**item, "status": state["status"], "validated": bool(state.get("validated", False)) and state["status"] == "completed",
                   "stop_reason": state.get("stop_reason"), "error": state.get("error"),
                   "attempts": len(state.get("attempts", [])),
-                  "code_repairs": max(0, len(state.get("attempts", [])) - 1),
+                  "repair_attempts": max(0, len(state.get("attempts", [])) - 1),
+                  "code_repairs": sum(a.get("status") == "evaluated" for a in state.get("attempts", [])[1:]),
+                  "repair_budget_blocked": state.get("backend_failure", {}).get("kind") == "budget",
                   "environment_repairs": len(state.get("environment_actions", [])),
                   "elapsed_seconds": state.get("elapsed_seconds", 0), "usage": usage_at(folder), "runtimes": {}}
         for mode in plan["runtimes"]:
@@ -82,12 +84,13 @@ def aggregate(directory):
             record["runtimes"][mode] = scores
         records.append(record)
     arms = {}
-    for arm in ARMS:
+    for arm in plan.get("arms", ARMS):
         group = [r for r in records if r["arm"] == arm]
         passed = sum(r["validated"] for r in group)
         arms[arm] = {"tasks_passing": passed, "admitted_task_trials": len(group),
                      "task_pass_rate": passed / len(group) if group else None,
                      "descriptive_wilson_95": wilson(passed, len(group)),
+                     "repair_budget_blocked_trials": sum(r["repair_budget_blocked"] for r in group),
                      "runtimes": {}}
         for mode in plan["runtimes"]:
             arms[arm]["runtimes"][mode] = {}
@@ -100,17 +103,18 @@ def aggregate(directory):
                     "unvalidated": sum(r["unvalidated"] for r in rows)}
     pairs = []
     for initial in (r for r in records if r["arm"] == "one_shot"):
-        for arm in ("code_repair", "environment_repair"):
+        for arm in (a for a in plan.get("arms", ARMS) if a != "one_shot"):
             selected = next(r for r in records if r["trial"] == initial["trial"] and r["task"] == initial["task"] and r["arm"] == arm)
             pairs.append({"trial": initial["trial"], "task": initial["task"], "arm": arm,
                           "task_success_delta": int(selected["validated"]) - int(initial["validated"]),
+                          "repair_budget_blocked": selected["repair_budget_blocked"],
                           "holdout_delta_percentage_points": {mode: 100 * (selected["runtimes"][mode]["holdout"]["rate"] - initial["runtimes"][mode]["holdout"]["rate"]) for mode in plan["runtimes"]}})
     result = {"provenance": plan["backend"]["provenance"], "study": plan["study"],
               "measurement_status": "evaluated" if any(r["status"] == "completed" for r in records) else "no_completed_evaluations",
               "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
               "arms": arms, "paired_changes": pairs, "runs": records,
               "usage": {key: sum(r["usage"][key] for r in records) for key in ("model_calls", "input_tokens", "output_tokens", "usage_unknown_calls")}}
-    save_json(directory / "summary.json", result)
+    save_json(output_path or directory / "summary.json", result)
     return result
 
 
@@ -124,21 +128,35 @@ def archive_run(directory):
 
 def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repairs=5,
                    timeout=60, model_timeout=120, max_seconds=900, max_output_tokens=8192,
-                   output_token_budget=49152, fault="none", directory=None):
+                   output_token_budget=49152, fault="none", directory=None, feedback_ablation=False, budget_policy="partitioned", retry_memory=False, memory_ablation=False):
+    if budget_policy not in ("partitioned", "shared"):
+        raise ValueError("Unknown budget policy")
+    if feedback_ablation and (memory_ablation or retry_memory):
+        raise ValueError("Feedback and memory studies must be separate")
+    if memory_ablation and (retry_memory or fault != "none"):
+        raise ValueError("Memory ablation requires healthy environments and per-arm memory selection")
+    arms = (("one_shot", "memory_off", "memory_on") if memory_ablation else
+            ("one_shot", "basic_feedback", "operation_feedback") if feedback_ablation else ARMS)
+    if feedback_ablation and (fault != "none" or tuple(tasks) != ("commons_cli",)):
+        raise ValueError("Feedback ablation requires Commons CLI and a healthy environment")
     if trials < 1 or trials > 100 or not 0 <= max_repairs <= 5:
         raise ValueError("Trials must be 1..100 and repairs 0..5")
     if len(set(tasks)) != len(tasks) or any(t not in suite.identity()["counts"] for t in tasks):
         raise ValueError("Unknown or repeated task")
+    planned = [{"trial": trial, "task": task, "arm": arm,
+                "path": f"trial-{trial:03}/{task}/{arm}"}
+               for trial in range(trials) for task in tasks for arm in arms]
+    if budget_policy == "partitioned" and getattr(backend, "budget", None):
+        from .budget import PartitionedBudget
+        backend.budget = PartitionedBudget(backend.budget, planned, max_repairs, max_output_tokens)
     directory = directory or new_run("experiment")
     directory.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(suite.path, directory / "evaluation-suite.json")
     suite = FrozenSuite(directory / "evaluation-suite.json")
-    planned = [{"trial": trial, "task": task, "arm": arm,
-                "path": f"trial-{trial:03}/{task}/{arm}"}
-               for trial in range(trials) for task in tasks for arm in ARMS]
     plan = {"schema": 1, "backend": backend.identity, "suite": suite.identity(), "model_request_timeout_seconds": model_timeout,
-            "planned_runs": planned, "runtimes": ["cpython", "graal"], "max_repairs": max_repairs,
-            "study": "natural_translation" if fault == "none" else "controlled_environment_stress",
+            "planned_runs": planned, "budget_policy": budget_policy, "arms": arms, "feedback_ablation": feedback_ablation, "memory_ablation": memory_ablation, "retry_memory": retry_memory,
+            "arm_order_policy": "Alternate the two repair-arm execution orders by trial" if feedback_ablation or memory_ablation else "Fixed arm order", "runtimes": ["cpython", "graal"], "max_repairs": max_repairs,
+            "study": "memory_ablation" if memory_ablation else "feedback_ablation" if feedback_ablation else "natural_translation" if fault == "none" else "controlled_environment_stress",
             "fault": fault, "protected_hashes": protected_hashes(),
             "settings": {"timeout": timeout, "max_seconds": max_seconds,
                          "max_output_tokens": max_output_tokens, "output_token_budget": output_token_budget},
@@ -156,10 +174,13 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
             for task in tasks:
                 base = directory / f"trial-{trial:03}" / task
                 paired = None
-                for arm in ARMS:
+                execution_arms = (arms[0], *reversed(arms[1:])) if (feedback_ablation or memory_ablation) and trial % 2 else arms
+                for arm in execution_arms:
                     folder = base / arm
                     started = time.monotonic()
                     try:
+                        if budget_policy == "partitioned" and getattr(backend, "budget", None):
+                            backend.budget.activate(f"trial-{trial:03}/{task}/{arm}")
                         env = EnvironmentAgent(timeout, ContainerExecutor(fault="none" if arm == "one_shot" else fault))
                         environments[str(folder)] = env
                         if arm != "one_shot" and paired is None:
@@ -170,7 +191,10 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
                                  timeout=timeout, model_timeout=model_timeout, max_seconds=max_seconds,
                                  max_output_tokens=max_output_tokens, output_token_budget=output_token_budget,
                                  directory=folder, environment=env, suite=suite,
-                                 environment_repairs=arm == "environment_repair", defer_holdout=True)
+                                 environment_repairs=arm == "environment_repair", defer_holdout=True,
+                                 **({"feedback_mode": "basic" if arm == "basic_feedback" else "operation"} if feedback_ablation else
+                                    {"feedback_mode": "pruned", "retry_memory": arm == "memory_on"} if memory_ablation else
+                                    {"feedback_mode": "pruned", "retry_memory": arm != "one_shot"} if retry_memory else {}))
                         if arm == "one_shot":
                             paired = InitialResponseBackend(backend,
                                 json.loads((folder / "attempts/00/response.json").read_text()),

@@ -1,0 +1,17 @@
+{
+  "trial-000/commons_cli/one_shot": "0240f876f3b67e2a5428f2930c9e7d37928b7f0f1ff4a95edabcbd234980a33a",
+  "trial-000/commons_cli/basic_feedback": "0240f876f3b67e2a5428f2930c9e7d37928b7f0f1ff4a95edabcbd234980a33a",
+  "trial-000/commons_cli/operation_feedback": "0240f876f3b67e2a5428f2930c9e7d37928b7f0f1ff4a95edabcbd234980a33a",
+  "trial-001/commons_cli/one_shot": "f21b0e027475a77a958a256be26471575bb128be6cd2d381b34e15a1ab6ca0af",
+  "trial-001/commons_cli/basic_feedback": "f21b0e027475a77a958a256be26471575bb128be6cd2d381b34e15a1ab6ca0af",
+  "trial-001/commons_cli/operation_feedback": "f21b0e027475a77a958a256be26471575bb128be6cd2d381b34e15a1ab6ca0af",
+  "trial-002/commons_cli/one_shot": "e6910d7a5ceac8e5055adc35b9045d70060d2b76df65887f0a3dd0c2931ae846",
+  "trial-002/commons_cli/basic_feedback": "e6910d7a5ceac8e5055adc35b9045d70060d2b76df65887f0a3dd0c2931ae846",
+  "trial-002/commons_cli/operation_feedback": "e6910d7a5ceac8e5055adc35b9045d70060d2b76df65887f0a3dd0c2931ae846",
+  "trial-003/commons_cli/one_shot": "f3e32cf807c79d94cb724f6d841afdaa5e039ea9080cb2219d73caffbe86962d",
+  "trial-003/commons_cli/basic_feedback": "f3e32cf807c79d94cb724f6d841afdaa5e039ea9080cb2219d73caffbe86962d",
+  "trial-003/commons_cli/operation_feedback": "26f3c9161ce527bc897b549253c224687b572a3f85ad6aa96f01d57aa4b17ebd",
+  "trial-004/commons_cli/one_shot": "0c359bf8b14c74754122522ebc43ecd5d4c4fe81514f50974df006f79ad6c983",
+  "trial-004/commons_cli/basic_feedback": "067a7e1f75f5dcac6132b698fe7c9a1b278f75299ba3dfbc4e46ceb009fd2349",
+  "trial-004/commons_cli/operation_feedback": "0c359bf8b14c74754122522ebc43ecd5d4c4fe81514f50974df006f79ad6c983"
+}

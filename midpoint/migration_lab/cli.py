@@ -16,6 +16,7 @@ def main(argv=None):
     freeze_parser = commands.add_parser("freeze", help="Freeze evaluator-only inputs and repeated Java oracle outputs")
     freeze_parser.add_argument("--output", type=Path, required=True)
     freeze_parser.add_argument("--seed", type=int)
+    freeze_parser.add_argument("--profile", choices=("pilot", "commons-cli-semantic-v2", "commons-cli-extended-v3"), default="pilot")
     freeze_parser.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
     report_parser = commands.add_parser("report", help="Recompute failure-inclusive experiment accuracy")
     report_parser.add_argument("directory", type=Path)
@@ -34,10 +35,14 @@ def main(argv=None):
     experiment.add_argument("--max-output-tokens", type=int, default=8192)
     experiment.add_argument("--output-token-budget", type=int, default=49152)
     experiment.add_argument("--max-spend-usd", type=float, default=1.0)
+    experiment.add_argument("--budget-policy", choices=("partitioned", "shared"), default="partitioned", help="Partitioned pre-funds equal repair capacity; shared reproduces legacy runs")
     experiment.add_argument("--input-usd-per-million", type=float)
     experiment.add_argument("--output-usd-per-million", type=float)
     experiment.add_argument("--fault", choices=("none", "graal-cache"), default="none")
     experiment.add_argument("--archive", action="store_true")
+    experiment.add_argument("--feedback-ablation", action="store_true")
+    experiment.add_argument("--memory-ablation", action="store_true", help="Compare pruned feedback with/without arm-local retry history")
+    experiment.add_argument("--retry-memory", action="store_true", help="Enable pruned feedback and local history for both main-study repair arms")
     for name in ("demo", "run"):
         p = commands.add_parser(name)
         p.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
@@ -60,7 +65,7 @@ def main(argv=None):
     try:
         if args.command == "freeze":
             from .protocol import freeze
-            print(json.dumps(freeze(args.output, args.seed, tasks=TASKS if args.task == "all" else (args.task,)).identity(), indent=2))
+            print(json.dumps(freeze(args.output, args.seed, tasks=TASKS if args.task == "all" else (args.task,), profile=args.profile).identity(), indent=2))
             return 0
         if args.command == "report":
             from .experiments import aggregate
@@ -96,7 +101,7 @@ def main(argv=None):
             path, result = run_experiment(backend, suite, tasks=tuple(suite.identity()["counts"]) if args.task == "all" else (args.task,),
                 trials=args.trials, max_repairs=args.max_repairs, timeout=args.timeout, model_timeout=args.model_timeout,
                 max_seconds=args.max_seconds, max_output_tokens=args.max_output_tokens,
-                output_token_budget=args.output_token_budget, fault=args.fault)
+                output_token_budget=args.output_token_budget, fault=args.fault, feedback_ablation=args.feedback_ablation, budget_policy=args.budget_policy, retry_memory=args.retry_memory, memory_ablation=args.memory_ablation)
             if args.archive:
                 print(f"Archived: {archive_run(path)}")
             print(f"Artifacts: {path}")

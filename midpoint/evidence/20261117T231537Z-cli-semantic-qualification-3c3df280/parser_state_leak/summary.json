@@ -1,0 +1,2517 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 40,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-unique-prefix",
+        "semantic-v2-visible-ambiguous-prefix",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-required-after-readd",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "commons_cli-visible-017-reuse-parser",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [
+                    "-o",
+                    "visible-value-\ud83d\ude80"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [],
+                  false
+                ],
+                "save": "next"
+              },
+              {
+                "op": "call",
+                "on": "next",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "getValue",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-017-reuse-parser",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-017-reuse-parser",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 7,
+            "expected": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "next"
+              }
+            },
+            "actual": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-o",
+                    "first"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "other",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "other"
+                  },
+                  [],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "first"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "first"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": "first"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 8,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-stop-reset",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "file",
+                    "-v"
+                  ],
+                  true
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-v"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getArgs",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "v"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-stop-reset",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "file",
+                  "-v"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-stop-reset",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "file",
+                  "-v"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 7,
+            "expected": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "extended-v3-visible-group-reuse",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "json",
+                "args": [
+                  "j",
+                  "json",
+                  false,
+                  "JSON"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "xml",
+                "args": [
+                  "x",
+                  "xml",
+                  false,
+                  "XML"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "OptionGroup",
+                "save": "group",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "json"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "xml"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOptionGroup",
+                "args": [
+                  {
+                    "ref": "group"
+                  }
+                ],
+                "save": "optsAlias"
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-j"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-x"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "getSelected",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "j"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "x"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "extended-v3-visible-group-reuse",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": "x"
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "extended-v3-visible-group-reuse",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": "j"
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 10,
+            "expected": {
+              "step": 10,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 10,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 40,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-000-metadata-alias",
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-018-required-missing",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-unique-prefix",
+        "semantic-v2-visible-ambiguous-prefix",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-required-after-readd",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "commons_cli-visible-017-reuse-parser",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [
+                    "-o",
+                    "visible-value-\ud83d\ude80"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [],
+                  false
+                ],
+                "save": "next"
+              },
+              {
+                "op": "call",
+                "on": "next",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "getValue",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-017-reuse-parser",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "next"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-017-reuse-parser",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "visible-value-\ud83d\ude80"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 7,
+            "expected": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "next"
+              }
+            },
+            "actual": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-o",
+                    "first"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "other",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "other"
+                  },
+                  [],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getOptionValue",
+                "args": [
+                  "o"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "first"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-parse-with-another-options",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "other"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": "first"
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": "first"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 8,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-stop-reset",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "file",
+                    "-v"
+                  ],
+                  true
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-v"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "getArgs",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "v"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-stop-reset",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "file",
+                  "-v"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-stop-reset",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "file",
+                  "-v"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 7,
+            "expected": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 7,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "extended-v3-visible-group-reuse",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "json",
+                "args": [
+                  "j",
+                  "json",
+                  false,
+                  "JSON"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "xml",
+                "args": [
+                  "x",
+                  "xml",
+                  false,
+                  "XML"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "OptionGroup",
+                "save": "group",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "json"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "xml"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOptionGroup",
+                "args": [
+                  {
+                    "ref": "group"
+                  }
+                ],
+                "save": "optsAlias"
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-j"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-x"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "getSelected",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "j"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "x"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "extended-v3-visible-group-reuse",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": "x"
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "extended-v3-visible-group-reuse",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": "j"
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 10,
+            "expected": {
+              "step": 10,
+              "status": "ok",
+              "value": {
+                "ref": "second"
+              }
+            },
+            "actual": {
+              "step": 10,
+              "status": "ok",
+              "value": {
+                "ref": "cmd"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "passed": 80,
+  "total": 88,
+  "all_pass": false
+}

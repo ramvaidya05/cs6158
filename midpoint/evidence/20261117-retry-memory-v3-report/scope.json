@@ -1,0 +1,469 @@
+{
+  "source_artifact": "commons-cli:commons-cli:1.9.0",
+  "classes": 5,
+  "method_signatures": 32,
+  "constructor_signatures": 4,
+  "source_context_files": 18,
+  "splits": {
+    "visible": {
+      "cases": 44,
+      "api": {
+        "Option.getOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getLongOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasArg": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.isRequired": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setRequired": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "Option.getValue": {
+          "scheduled": 17,
+          "reached": 14,
+          "normal": 14,
+          "exception": 0
+        },
+        "Option.getValues": {
+          "scheduled": 16,
+          "reached": 13,
+          "normal": 13,
+          "exception": 0
+        },
+        "Option.getDescription": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.setDescription": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getArgName": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.setArgName": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasLongOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasOptionalArg": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.setOptionalArg": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.getArgs": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.setArgs": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Options.addOption": {
+          "scheduled": 81,
+          "reached": 81,
+          "normal": 81,
+          "exception": 0
+        },
+        "Options.hasOption": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Options.getRequiredOptions": {
+          "scheduled": 4,
+          "reached": 4,
+          "normal": 4,
+          "exception": 0
+        },
+        "Options.getMatchingOptions": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Options.addOptionGroup": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "DefaultParser.parse": {
+          "scheduled": 44,
+          "reached": 44,
+          "normal": 34,
+          "exception": 10
+        },
+        "CommandLine.hasOption": {
+          "scheduled": 41,
+          "reached": 35,
+          "normal": 35,
+          "exception": 0
+        },
+        "CommandLine.getOptionValue": {
+          "scheduled": 27,
+          "reached": 24,
+          "normal": 24,
+          "exception": 0
+        },
+        "CommandLine.getOptionValues": {
+          "scheduled": 18,
+          "reached": 15,
+          "normal": 15,
+          "exception": 0
+        },
+        "CommandLine.getArgs": {
+          "scheduled": 17,
+          "reached": 14,
+          "normal": 14,
+          "exception": 0
+        },
+        "OptionGroup.addOption": {
+          "scheduled": 12,
+          "reached": 12,
+          "normal": 12,
+          "exception": 0
+        },
+        "OptionGroup.getNames": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "OptionGroup.getSelected": {
+          "scheduled": 4,
+          "reached": 4,
+          "normal": 4,
+          "exception": 0
+        },
+        "OptionGroup.isRequired": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "OptionGroup.setRequired": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "OptionGroup.setSelected": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 2,
+          "exception": 1
+        },
+        "Option.__init__": {
+          "scheduled": 91,
+          "reached": 91,
+          "normal": 90,
+          "exception": 1
+        },
+        "Options.__init__": {
+          "scheduled": 44,
+          "reached": 44,
+          "normal": 44,
+          "exception": 0
+        },
+        "DefaultParser.__init__": {
+          "scheduled": 43,
+          "reached": 43,
+          "normal": 43,
+          "exception": 0
+        },
+        "OptionGroup.__init__": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        }
+      },
+      "methods_reached": 32,
+      "methods_with_normal_return": 32
+    },
+    "holdout": {
+      "cases": 28,
+      "api": {
+        "Option.getOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getLongOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasArg": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.isRequired": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setRequired": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "Option.getValue": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getValues": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 3,
+          "exception": 0
+        },
+        "Option.getDescription": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setDescription": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getArgName": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setArgName": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasLongOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasOptionalArg": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.setOptionalArg": {
+          "scheduled": 4,
+          "reached": 4,
+          "normal": 4,
+          "exception": 0
+        },
+        "Option.getArgs": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setArgs": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 3,
+          "exception": 0
+        },
+        "Options.addOption": {
+          "scheduled": 54,
+          "reached": 54,
+          "normal": 54,
+          "exception": 0
+        },
+        "Options.hasOption": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Options.getRequiredOptions": {
+          "scheduled": 4,
+          "reached": 4,
+          "normal": 4,
+          "exception": 0
+        },
+        "Options.getMatchingOptions": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Options.addOptionGroup": {
+          "scheduled": 5,
+          "reached": 5,
+          "normal": 5,
+          "exception": 0
+        },
+        "DefaultParser.parse": {
+          "scheduled": 33,
+          "reached": 33,
+          "normal": 26,
+          "exception": 7
+        },
+        "CommandLine.hasOption": {
+          "scheduled": 13,
+          "reached": 12,
+          "normal": 12,
+          "exception": 0
+        },
+        "CommandLine.getOptionValue": {
+          "scheduled": 9,
+          "reached": 9,
+          "normal": 9,
+          "exception": 0
+        },
+        "CommandLine.getOptionValues": {
+          "scheduled": 7,
+          "reached": 7,
+          "normal": 7,
+          "exception": 0
+        },
+        "CommandLine.getArgs": {
+          "scheduled": 7,
+          "reached": 7,
+          "normal": 7,
+          "exception": 0
+        },
+        "OptionGroup.addOption": {
+          "scheduled": 10,
+          "reached": 10,
+          "normal": 10,
+          "exception": 0
+        },
+        "OptionGroup.getNames": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "OptionGroup.getSelected": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "OptionGroup.isRequired": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 3,
+          "exception": 0
+        },
+        "OptionGroup.setRequired": {
+          "scheduled": 7,
+          "reached": 7,
+          "normal": 7,
+          "exception": 0
+        },
+        "OptionGroup.setSelected": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.__init__": {
+          "scheduled": 61,
+          "reached": 61,
+          "normal": 60,
+          "exception": 1
+        },
+        "Options.__init__": {
+          "scheduled": 28,
+          "reached": 28,
+          "normal": 28,
+          "exception": 0
+        },
+        "DefaultParser.__init__": {
+          "scheduled": 27,
+          "reached": 27,
+          "normal": 27,
+          "exception": 0
+        },
+        "OptionGroup.__init__": {
+          "scheduled": 5,
+          "reached": 5,
+          "normal": 5,
+          "exception": 0
+        }
+      },
+      "methods_reached": 32,
+      "methods_with_normal_return": 32
+    }
+  },
+  "excluded": [
+    "HelpFormatter",
+    "Properties defaults",
+    "typed value conversion",
+    "arbitrary object graphs",
+    "full repository translation"
+  ],
+  "candidate_scope": "One Python source module; tests, adapters, oracle, contract, and environment are controller-owned",
+  "limitation": "Reference trace API exercise only; not candidate correctness, branch/line coverage, all upstream overloads, or full repository translation. Void returns alone do not prove state updates.",
+  "sha256": {
+    "suite": "a8d5e510761d2c9532e451387581b91f934f4754a69205e0c5c1c0d3f52c2a19",
+    "contract": "e89c2004a2740b2ae6c69d9c450f071799f1bb99639569265ec72c9c4496ffab",
+    "audit_script": "8d69e2e7bbf579be79524e6c3891a1bc401194ae449e573066340c63dd2e9fd4"
+  }
+}

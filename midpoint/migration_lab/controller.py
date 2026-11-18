@@ -26,7 +26,9 @@ def assert_unchanged(original):
 def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6158,
              timeout=60, model_timeout=120, max_seconds=900, max_output_tokens=8192, output_token_budget=49152,
              directory=None, environment=None, suite=None, environment_repairs=False,
-             defer_holdout=False):
+             defer_holdout=False, feedback_mode="full", retry_memory=False):
+    if feedback_mode not in ("full", "basic", "operation", "pruned"):
+        raise ValueError("Unknown feedback mode")
     if not 0 <= max_repairs <= 5:
         raise ValueError("Allowed repair count is 0 through 5")
     if not modes or len(set(modes)) != len(modes) or set(modes) - {"cpython", "graal"}:
@@ -42,6 +44,8 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
     case_source = suite.cases if suite else cases
     tester = TestsuiteAgent(environment)
     migration = MigrationAgent(backend)
+    from .retry_memory import RetryMemory
+    memory = RetryMemory(directory) if retry_memory else None
     guard = protected_hashes()
     started = time.monotonic()
     manifest = {"task": task, "backend": backend.identity, "max_repairs": max_repairs,
@@ -50,7 +54,8 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
                 "output_token_budget": output_token_budget, "protected_hashes": guard,
                 "environment": environment.doctor(),
                 "evaluation_suite": suite.identity() if suite else {"kind": "public_demo"},
-                "environment_repairs": environment_repairs,
+                "environment_repairs": environment_repairs, "feedback_mode": feedback_mode,
+                "retry_memory": retry_memory, "dependency_policy": "stdlib-only-v1",
                 "child_locale": {"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "TZ": "UTC"},
                 "holdout_policy": ("Frozen evaluator-only suite; excluded from model context; scored after selection"
                                    if suite else "Public demo cases; excluded from model context; scored after selection only"),
@@ -111,6 +116,8 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
             folder = directory / "attempts" / f"{attempt:02}"
             folder.mkdir(parents=True)
             prompt = migration.prompt(task, previous, feedback)
+            if memory and memory.history:
+                prompt += "\n\n" + memory.context()
             (folder / "prompt.txt").write_text(prompt, encoding="utf-8")
             reserved_tokens += max_output_tokens
             state["reserved_output_tokens"] = reserved_tokens
@@ -132,6 +139,8 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
             save_json(folder / "response.json", response)
             candidate = folder / "candidate.py"
             candidate.write_text(response["code"], encoding="utf-8")
+            from .dependencies import write_requirements
+            dependency_report = write_requirements(candidate, folder)
             digest = sha256(candidate)
             if digest in seen:
                 state["attempts"].append({"attempt": attempt, "sha256": digest,
@@ -140,7 +149,14 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
                 break
             seen.add(digest)
             event("evaluate_visible", attempt=attempt)
-            summary = tester.evaluate(candidate, visible, reference, modes, folder / "visible")
+            if dependency_report["status"] == "blocked":
+                summary = {"passed": 0, "total": len(visible) * len(modes), "all_pass": False,
+                    "runtimes": {mode: {"passed": 0, "total": len(visible), "passed_ids": [],
+                        "status": "dependency_policy", "failures": [{"kind": "dependency_policy",
+                        "detail": json.dumps(dependency_report)}]} for mode in modes}}
+                save_json(folder / "visible/summary.json", summary)
+            else:
+                summary = tester.evaluate(candidate, visible, reference, modes, folder / "visible")
             assert_unchanged(guard)
             if initial_path is None:
                 initial_path = candidate
@@ -155,12 +171,14 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
             state["attempts"].append({"attempt": attempt, "sha256": digest,
                                       "accepted": accepted, "status": "evaluated",
                                       "passed": summary["passed"], "total": summary["total"]})
+            if memory:
+                memory.update(attempt, digest, summary, accepted, previous, response["code"])
             event("checkpoint", attempt=attempt, accepted=accepted)
             state["reserved_output_tokens"] = reserved_tokens
             save_json(directory / "result.json", state)
             # Repair from the best checkpoint, never from a rejected regression.
             previous = best_path.read_text(encoding="utf-8")
-            feedback = migration.feedback(best)
+            feedback = migration.feedback(best) if feedback_mode == "full" else migration.feedback(best, feedback_mode)
             if summary["all_pass"]:
                 state["stop_reason"] = "visible_pass"
                 break
@@ -172,6 +190,8 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
             raise RuntimeError("No candidate was evaluated within the configured budget")
         final = directory / "final.py"
         final.write_text(best_path.read_text(encoding="utf-8"), encoding="utf-8")
+        from .dependencies import write_requirements
+        write_requirements(final, directory)
         state["selected_visible"] = best
         # Freeze selection before materializing/scoring holdout. No feedback goes back to M-Agent.
         save_json(directory / "selection.json", {"attempt": state["best_attempt"],

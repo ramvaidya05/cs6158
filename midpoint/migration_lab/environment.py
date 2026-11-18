@@ -57,12 +57,18 @@ class EnvironmentAgent:
             verify_source()
             validate_cases(cases, contract())
         if candidate is not None:
+            from .dependencies import inspect_dependencies
+            dependency_report = inspect_dependencies(candidate.read_text(encoding="utf-8"))
+            if dependency_report["status"] == "blocked":
+                result = {"status": "dependency_policy", "rows": [], "detail": json.dumps(dependency_report)}
+                save_json(artifact / "execution.json", result)
+                return result
             try:
                 tree = ast.parse(candidate.read_text(encoding="utf-8"), filename="candidate.py")
                 if stateful:
                     names = {n.name for n in tree.body if isinstance(n, ast.ClassDef)}
                     if not set(contract()["classes"]) <= names:
-                        raise SyntaxError("Candidate must define the four contract classes")
+                        raise SyntaxError("Candidate must define all contract classes")
                 elif not any(isinstance(n, ast.FunctionDef) and n.name == "run" for n in tree.body):
                     raise SyntaxError("Candidate must define top-level function run")
             except (SyntaxError, UnicodeError) as exc:

@@ -1,0 +1,67 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/Users/SaiVamsi/Documents/Course/SWE/SWE%20ML/midpoint/.tools/apache-maven-3.9.9/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/Users/SaiVamsi/Documents/Course/SWE/SWE%20ML/midpoint/.tools/apache-maven-3.9.9/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< edu.midpoint:migration-harness >-------------------
+[INFO] Building migration-harness 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-source (upstream-source) @ migration-harness ---
+[INFO] Source directory: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/../vendor/java-string-similarity/src/main/java added.
+[INFO] Source directory: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/../vendor/commons-cli/src/main/java added.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ migration-harness ---
+[INFO] skip non existing resourceDirectory /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ migration-harness ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 36 source files with javac [debug release 21] to target/classes
+[INFO] /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/../vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java uses or overrides a deprecated API.
+[INFO] /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-test-source (upstream-tests) @ migration-harness ---
+[INFO] Test Source directory: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/../vendor/java-string-similarity/src/test/java added.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ migration-harness ---
+[INFO] skip non existing resourceDirectory /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ migration-harness ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ migration-harness ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running info.debatty.java.stringsimilarity.LevenshteinTest
+distance
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in info.debatty.java.stringsimilarity.LevenshteinTest
+[INFO] Running info.debatty.java.stringsimilarity.JaroWinklerTest
+similarity
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in info.debatty.java.stringsimilarity.JaroWinklerTest
+[INFO] Running info.debatty.java.stringsimilarity.NormalizedLevenshteinTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in info.debatty.java.stringsimilarity.NormalizedLevenshteinTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- dependency:3.8.1:build-classpath (default-cli) @ migration-harness ---
+[INFO] Skipped writing classpath file '/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/target/classpath.txt'.  No changes found.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.572 s
+[INFO] Finished at: 2026-11-17T18:13:48-05:00
+[INFO] ------------------------------------------------------------------------

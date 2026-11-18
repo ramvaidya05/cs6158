@@ -15,8 +15,8 @@
       "jaro_winkler.py"
     ],
     "commons_cli": [
-      "commons_cli_broken.py",
-      "commons_cli.py"
+      "commons_cli_v3_broken.py",
+      "commons_cli_v3.py"
     ]
   }
 }

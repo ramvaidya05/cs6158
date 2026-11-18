@@ -25,6 +25,7 @@ public final class CliScenario {
                     value = switch (op.get("class").asText()) {
                         case "Option" -> new Option(a.get(0).asText(), a.get(1).asText(), a.get(2).asBoolean(), a.get(3).asText());
                         case "Options" -> new Options();
+                        case "OptionGroup" -> new OptionGroup();
                         case "DefaultParser" -> new DefaultParser(a.get(0).asBoolean());
                         default -> throw new IllegalArgumentException("Unsupported constructor");
                     };
@@ -33,6 +34,15 @@ public final class CliScenario {
                     String method = op.get("method").asText();
                     if (receiver instanceof Option option) {
                         value = switch (method) {
+                            case "getDescription" -> option.getDescription();
+                            case "setDescription" -> { option.setDescription(a.get(0).asText()); yield null; }
+                            case "getArgName" -> option.getArgName();
+                            case "setArgName" -> { option.setArgName(a.get(0).asText()); yield null; }
+                            case "hasLongOpt" -> option.hasLongOpt();
+                            case "hasOptionalArg" -> option.hasOptionalArg();
+                            case "setOptionalArg" -> { option.setOptionalArg(a.get(0).asBoolean()); yield null; }
+                            case "getArgs" -> option.getArgs();
+                            case "setArgs" -> { option.setArgs(a.get(0).asInt()); yield null; }
                             case "getOpt" -> option.getOpt();
                             case "getLongOpt" -> option.getLongOpt();
                             case "hasArg" -> option.hasArg();
@@ -46,8 +56,31 @@ public final class CliScenario {
                         value = switch (method) {
                             case "addOption" -> options.addOption((Option) objects.get(a.get(0).get("ref").asText()));
                             case "hasOption" -> options.hasOption(a.get(0).asText());
-                            case "getRequiredOptions" -> options.getRequiredOptions();
+                            case "getMatchingOptions" -> options.getMatchingOptions(a.get(0).asText());
+                            case "addOptionGroup" -> options.addOptionGroup((OptionGroup) objects.get(a.get(0).get("ref").asText()));
+                            case "getRequiredOptions" -> {
+                                List<Object> entries = new ArrayList<>();
+                                for (Object entry : options.getRequiredOptions()) {
+                                    if (entry instanceof OptionGroup) {
+                                        String handle = null;
+                                        for (var item : objects.entrySet()) if (item.getValue() == entry) { handle = item.getKey(); break; }
+                                        if (handle == null) throw new IllegalArgumentException("Unbound required group");
+                                        entries.add(Map.of("ref", handle));
+                                    } else entries.add(entry);
+                                }
+                                yield entries;
+                            }
                             default -> throw new IllegalArgumentException("Unsupported Options method");
+                        };
+                    } else if (receiver instanceof OptionGroup group) {
+                        value = switch (method) {
+                            case "addOption" -> group.addOption((Option) objects.get(a.get(0).get("ref").asText()));
+                            case "getNames" -> { List<String> names = new ArrayList<>(group.getNames()); Collections.sort(names); yield names; }
+                            case "getSelected" -> group.getSelected();
+                            case "isRequired" -> group.isRequired();
+                            case "setRequired" -> { group.setRequired(a.get(0).asBoolean()); yield null; }
+                            case "setSelected" -> { group.setSelected((Option) objects.get(a.get(0).get("ref").asText())); yield null; }
+                            default -> throw new IllegalArgumentException("Unsupported OptionGroup method");
                         };
                     } else if (receiver instanceof DefaultParser parser) {
                         value = parser.parse((Options) objects.get(a.get(0).get("ref").asText()), strings(a.get(1)), a.get(2).asBoolean());
@@ -62,7 +95,7 @@ public final class CliScenario {
                     } else throw new IllegalArgumentException("Unknown receiver");
                 }
                 if (op.has("save")) objects.put(op.get("save").asText(), value);
-                if (value instanceof Option || value instanceof Options || value instanceof DefaultParser || value instanceof CommandLine) {
+                if (value instanceof OptionGroup || value instanceof Option || value instanceof Options || value instanceof DefaultParser || value instanceof CommandLine) {
                     String canonical = null;
                     for (var entry : objects.entrySet()) if (entry.getValue() == value) { canonical = entry.getKey(); break; }
                     if (canonical == null) throw new IllegalArgumentException("Unbound object result");

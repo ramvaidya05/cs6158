@@ -1,0 +1,1467 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "commons_cli-visible-000-metadata-alias",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-001-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-002-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-003-long",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-004-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-005-empty-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-006-repeated-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-007-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-008-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-009-stop-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-010-stop-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-011-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-012-missing-argument",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-013-missing-before-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-014-negative-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-015-attached-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-016-burst",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-017-reuse-parser",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-018-required-missing",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-visible-019-required-present",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-unique-prefix",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-ambiguous-prefix",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-partial-disabled",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-exact-over-prefix",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-quoted-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-quoted-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-dash-as-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-flag-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-replacement",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-same-long-name",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-required-after-add",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-required-after-readd",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-parse-with-another-options",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-stop-reset",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-ordered-values",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "alias"
+          }
+        },
+        {
+          "step": 4,
+          "status": "exception",
+          "type": "StopIteration"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-visible-invalid-option-name",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "exception",
+          "type": "IllegalArgumentException"
+        }
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-fe54a81d186848f9ada2e58ccf2ab14e",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-_i4e8wik/candidate.py,dst=/candidate.py,readonly",
+      "sha256:f1d5aeedef08eaffd37f9c189007d0b2eb9aa1e4cc0a00b453533e73c99c8acf",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.178784,
+    "stdout": "[{\"id\": \"commons_cli-visible-000-metadata-alias\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-001-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-002-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-003-long\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-004-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-005-empty-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-006-repeated-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-007-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-008-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-009-stop-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-010-stop-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-011-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-012-missing-argument\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-013-missing-before-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-014-negative-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-015-attached-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-016-burst\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-017-reuse-parser\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-018-required-missing\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"commons_cli-visible-019-required-present\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-unique-prefix\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-ambiguous-prefix\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-partial-disabled\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-exact-over-prefix\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-quoted-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-quoted-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-dash-as-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-flag-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-replacement\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-same-long-name\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-required-after-add\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-required-after-readd\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-parse-with-another-options\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-stop-reset\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-ordered-values\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"alias\"}}, {\"step\": 4, \"status\": \"exception\", \"type\": \"StopIteration\"}]}, {\"id\": \"semantic-v2-visible-invalid-option-name\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}]}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-17T22:20:15.213705835Z",
+      "FinishedAt": "2026-11-17T22:20:15.331601835Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:f1d5aeedef08eaffd37f9c189007d0b2eb9aa1e4cc0a00b453533e73c99c8acf",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:1678e4cb0dc542299f1c36fc75f926dd59417405d0827a8cf9662c2cfe7dcca4",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

@@ -1,0 +1,3154 @@
+[
+  {
+    "id": "semantic-v2-holdout-prefix-equals-and-repetition",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=one",
+            "--output=two"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-ambiguity-with-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "other",
+        "args": [
+          "p",
+          "outlier",
+          true,
+          "other"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "other"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=value"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-disabled-prefix-stop",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=value",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-exact-prefix-flag",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "shortlong",
+        "args": [
+          "p",
+          "out",
+          false,
+          "exact"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "shortlong"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out",
+            "-o",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "p"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-quotes-empty-and-repeat",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "\"\"",
+            "-o",
+            "'a b'",
+            "-o",
+            ""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-quotes-embedded-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output=\"a=b c\""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-terminator-after-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-",
+            "--",
+            "-o",
+            "ignored",
+            "--verbose"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-flag-equals-stop",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--verbose=yes",
+            "-o",
+            "ignored"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-replacement-retains-long-map",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "o",
+          "new-output",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "hasOption",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output",
+            "old",
+            "--new-output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "new-output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-same-long-different-short-paths",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "p",
+          "output",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "old",
+            "--output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "p"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-required-list-snapshot",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "ok"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-required-replacement",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "o",
+          "new",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--new"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "new"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-three-parses-two-configurations",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "alpha"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "empty",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "empty"
+          },
+          [
+            "file"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v",
+            "-o",
+            "beta"
+          ],
+          false
+        ],
+        "save": "third"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "third",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-stop-mode-switch",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "file",
+            "-v"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-repeated-empty-unicode",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "\ud83d\ude80",
+            "--output=",
+            "-o",
+            "\u00e9"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-invalid-space-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "invalid",
+        "args": [
+          "two words",
+          "long-name",
+          true,
+          "invalid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-alias-after-new-option",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "late",
+        "args": [
+          "l",
+          "late",
+          false,
+          "late"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "late"
+          }
+        ],
+        "save": "again"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-l"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "late"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "again",
+        "method": "hasOption",
+        "args": [
+          "l"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-required-two-missing-one",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "verbose",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-negative-and-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-2.5",
+            "tail",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "verbose"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "semantic-v2-holdout-unknown-after-known",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v",
+            "--missing"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-metadata-after-reuse",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setDescription",
+        "args": [
+          ""
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgName",
+        "args": [
+          "DEST"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          1
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output=held"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getDescription",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgName",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getMatchingOptions",
+        "args": [
+          "--output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-group-repeated-selection",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getNames",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "optsAlias",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--xml",
+            "--xml"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "x"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-group-reset-empty",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "file"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-group-long-conflict",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--xml",
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-required-after-terminator",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--",
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-optional-toggle",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output"
+          ],
+          false
+        ],
+        "save": "second"
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-two-values-then-flag",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output",
+            "alpha",
+            "beta",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "extended-v3-holdout-group-required-toggle",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getNames",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  }
+]

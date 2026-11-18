@@ -1,0 +1,6 @@
+{
+  "source_archive": "evidence/20261117T222306Z-experiment-f3578eff",
+  "source_summary_sha256": "5089c99aab975a27c5fd48c2f2af930a15d2e2811ee8a2312b6cc8b05d2353d0",
+  "reporting_implementation_sha256": "178c165ed7109ede86dc1557a2b8cebc38325bcb7e8b6967dd50c08b0ae146c9",
+  "change": "Exclude backend/budget errors from evaluated code-repair counts and flag budget-limited comparisons; scores, selections, original evidence unchanged"
+}

@@ -1,0 +1,11 @@
+{
+  "trial-000/commons_cli/one_shot": "33beb270a42eaef6f002f5a064ec75ae5db34d3d4266e16d967d2e59dff756cc",
+  "trial-000/commons_cli/memory_off": "1fab6316306ba98ac44084ca1480661a8e789727d3344587262639a3dcfac101",
+  "trial-000/commons_cli/memory_on": "1fa83e1689940404ba06dc62a97831e04bd78b399784f793a9f5c29c3414f55b",
+  "trial-001/commons_cli/one_shot": "e99f7fd03009409343a6c20ba15baae08a6ae803afc66a7b7524fe087a9dbd94",
+  "trial-001/commons_cli/memory_off": "d23a03ec823480ae01797e28e2911fe593372e265caf648ae2c596cb8129c47b",
+  "trial-001/commons_cli/memory_on": "98780757e38cb5549a8394c0283a4e71819e32e5d6431cd5aa41c15097b26e31",
+  "trial-002/commons_cli/one_shot": "1b5e3aac5501354c36edf0394d9add10982417eb93745c925b7ad85713384c7e",
+  "trial-002/commons_cli/memory_off": "1b5e3aac5501354c36edf0394d9add10982417eb93745c925b7ad85713384c7e",
+  "trial-002/commons_cli/memory_on": "1b5e3aac5501354c36edf0394d9add10982417eb93745c925b7ad85713384c7e"
+}

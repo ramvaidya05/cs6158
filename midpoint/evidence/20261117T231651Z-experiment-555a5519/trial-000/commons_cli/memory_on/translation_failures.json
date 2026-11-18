@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "scope": "this trial/arm; visible only",
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate_sha256": "1f17b8a2f515717c9990bddf9d02c7d1d887224194eb4e6c6d460cb9c8196fb8",
+      "accepted_checkpoint": true,
+      "verification": "visible_failures_remain",
+      "diagnostics": {
+        "passed": 82,
+        "total": 88,
+        "groups_total": 3,
+        "failures": [
+          {
+            "id": "a3de78e3dcfaf3d6",
+            "category": "behavioral_mismatch",
+            "step": 6,
+            "operation": "{\"args\": [], \"method\": \"getDescription\", \"on\": \"out\", \"op\": \"call\"}",
+            "operation_prefix": "[{\"args\": [], \"class\": \"Options\", \"op\": \"new\", \"save\": \"opts\"}, {\"args\": [\"o\", \"output\", true, \"output\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"out\"}, {\"args\": [\"v\", \"verbose\", false, \"verbose\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"verbose\"}, {\"args\": [{\"ref\": \"out\"}], \"method\": \"addOption\", \"on\": \"opts\", \"op\": \"call\", \"save\": \"alias\"}, {\"args\": [{\"ref\": \"verbose\"}], \"method\": \"addOption\", \"on\": \"alias\", \"op\": \"call\"}, {\"args\": [true], \"class\": \"DefaultParser\", \"op\": \"new\", \"save\": \"parser\"}, {\"args\": [], \"method\": \"getDescription\", \"on\": \"out\", \"op\": \"call\"}]",
+            "expected": "{\"status\": \"ok\", \"step\": 6, \"value\": \"output\"}",
+            "actual": "{\"status\": \"ok\", \"step\": 6, \"value\": \"incorrect\"}",
+            "occurrences": 2,
+            "runtimes": [
+              "cpython",
+              "graal"
+            ],
+            "case_ids": [
+              "extended-v3-visible-metadata"
+            ]
+          },
+          {
+            "id": "22629c5cfe05763a",
+            "category": "behavioral_mismatch",
+            "step": 9,
+            "operation": "{\"args\": [], \"method\": \"getRequiredOptions\", \"on\": \"opts\", \"op\": \"call\"}",
+            "operation_prefix": "[{\"args\": [], \"class\": \"Options\", \"op\": \"new\", \"save\": \"opts\"}, {\"args\": [\"j\", \"json\", false, \"JSON\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"json\"}, {\"args\": [\"x\", \"xml\", false, \"XML\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"xml\"}, {\"args\": [], \"class\": \"OptionGroup\", \"op\": \"new\", \"save\": \"group\"}, {\"args\": [{\"ref\": \"json\"}], \"method\": \"addOption\", \"on\": \"group\", \"op\": \"call\", \"save\": \"alias\"}, {\"args\": [{\"ref\": \"xml\"}], \"method\": \"addOption\", \"on\": \"alias\", \"op\": \"call\"}, {\"args\": [true], \"method\": \"setRequired\", \"on\": \"group\", \"op\": \"call\"}, {\"args\": [{\"ref\": \"group\"}], \"method\": \"addOptionGroup\", \"on\": \"opts\", \"op\": \"call\", \"save\": \"optsAlias\"}, {\"args\": [true], \"class\": \"DefaultParser\", \"op\": \"new\", \"save\": \"parser\"}, {\"args\": [], \"method\": \"getRequiredOptions\", \"on\": \"opts\", \"op\": \"call\"}]",
+            "expected": "{\"status\": \"ok\", \"step\": 9, \"value\": [{\"ref\": \"group\"}]}",
+            "actual": "{\"status\": \"ok\", \"step\": 9, \"value\": []}",
+            "occurrences": 2,
+            "runtimes": [
+              "cpython",
+              "graal"
+            ],
+            "case_ids": [
+              "extended-v3-visible-group-select"
+            ]
+          },
+          {
+            "id": "b33d4fa1b4de3dea",
+            "category": "behavioral_mismatch",
+            "step": 9,
+            "operation": "{\"args\": [{\"ref\": \"opts\"}, [], false], \"method\": \"parse\", \"on\": \"parser\", \"op\": \"call\", \"save\": \"cmd\"}",
+            "operation_prefix": "[{\"args\": [], \"class\": \"Options\", \"op\": \"new\", \"save\": \"opts\"}, {\"args\": [\"j\", \"json\", false, \"JSON\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"json\"}, {\"args\": [\"x\", \"xml\", false, \"XML\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"xml\"}, {\"args\": [], \"class\": \"OptionGroup\", \"op\": \"new\", \"save\": \"group\"}, {\"args\": [{\"ref\": \"json\"}], \"method\": \"addOption\", \"on\": \"group\", \"op\": \"call\", \"save\": \"alias\"}, {\"args\": [{\"ref\": \"xml\"}], \"method\": \"addOption\", \"on\": \"alias\", \"op\": \"call\"}, {\"args\": [true], \"method\": \"setRequired\", \"on\": \"group\", \"op\": \"call\"}, {\"args\": [{\"ref\": \"group\"}], \"method\": \"addOptionGroup\", \"on\": \"opts\", \"op\": \"call\", \"save\": \"optsAlias\"}, {\"args\": [true], \"class\": \"DefaultParser\", \"op\": \"new\", \"save\": \"parser\"}, {\"args\": [{\"ref\": \"opts\"}, [], false], \"method\": \"parse\", \"on\": \"parser\", \"op\": \"call\", \"save\": \"cmd\"}]",
+            "expected": "{\"status\": \"exception\", \"step\": 9, \"type\": \"MissingOptionException\"}",
+            "actual": "{\"status\": \"ok\", \"step\": 9, \"value\": {\"ref\": \"cmd\"}}",
+            "occurrences": 2,
+            "runtimes": [
+              "cpython",
+              "graal"
+            ],
+            "case_ids": [
+              "extended-v3-visible-group-required-missing"
+            ]
+          }
+        ],
+        "note": "Observations only, not inferred root causes. Full details remain in visible/summary.json."
+      },
+      "fix_status": "Code revision evaluated; causal explanation not established",
+      "evidence": "attempts/00/visible/summary.json",
+      "previously_failing_observations_now_passing": []
+    },
+    {
+      "attempt": 1,
+      "candidate_sha256": "844a57d9f63136198a34fc071c33ea3eecf3e9dc44c392c5890ff8424e34e18f",
+      "accepted_checkpoint": true,
+      "verification": "visible_failures_remain",
+      "diagnostics": {
+        "passed": 86,
+        "total": 88,
+        "groups_total": 1,
+        "failures": [
+          {
+            "id": "a3de78e3dcfaf3d6",
+            "category": "behavioral_mismatch",
+            "step": 6,
+            "operation": "{\"args\": [], \"method\": \"getDescription\", \"on\": \"out\", \"op\": \"call\"}",
+            "operation_prefix": "[{\"args\": [], \"class\": \"Options\", \"op\": \"new\", \"save\": \"opts\"}, {\"args\": [\"o\", \"output\", true, \"output\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"out\"}, {\"args\": [\"v\", \"verbose\", false, \"verbose\"], \"class\": \"Option\", \"op\": \"new\", \"save\": \"verbose\"}, {\"args\": [{\"ref\": \"out\"}], \"method\": \"addOption\", \"on\": \"opts\", \"op\": \"call\", \"save\": \"alias\"}, {\"args\": [{\"ref\": \"verbose\"}], \"method\": \"addOption\", \"on\": \"alias\", \"op\": \"call\"}, {\"args\": [true], \"class\": \"DefaultParser\", \"op\": \"new\", \"save\": \"parser\"}, {\"args\": [], \"method\": \"getDescription\", \"on\": \"out\", \"op\": \"call\"}]",
+            "expected": "{\"status\": \"ok\", \"step\": 6, \"value\": \"output\"}",
+            "actual": "{\"status\": \"ok\", \"step\": 6, \"value\": \"incorrect\"}",
+            "occurrences": 2,
+            "runtimes": [
+              "cpython",
+              "graal"
+            ],
+            "case_ids": [
+              "extended-v3-visible-metadata"
+            ]
+          }
+        ],
+        "note": "Observations only, not inferred root causes. Full details remain in visible/summary.json."
+      },
+      "fix_status": "Code revision evaluated; causal explanation not established",
+      "evidence": "attempts/01/visible/summary.json",
+      "previously_failing_observations_now_passing": [
+        {
+          "runtime": "cpython",
+          "case_id": "extended-v3-visible-group-select"
+        },
+        {
+          "runtime": "graal",
+          "case_id": "extended-v3-visible-group-select"
+        },
+        {
+          "runtime": "cpython",
+          "case_id": "extended-v3-visible-group-required-missing"
+        },
+        {
+          "runtime": "graal",
+          "case_id": "extended-v3-visible-group-required-missing"
+        }
+      ],
+      "attempted_revision_excerpt": "--- selected-checkpoint.py\n\n+++ attempt-candidate.py\n\n@@ -683,3 +683,2 @@\n\n \n Option.getDescription = lambda self: \"incorrect\"\n-OptionGroup.isRequired = lambda self: False"
+    },
+    {
+      "attempt": 2,
+      "candidate_sha256": "57cea9105f7d02f3bd084472332bc7ccb3cc64a30a1d804cb966190e921090d0",
+      "accepted_checkpoint": true,
+      "verification": "all_visible_pass",
+      "diagnostics": {
+        "passed": 88,
+        "total": 88,
+        "groups_total": 0,
+        "failures": [],
+        "note": "Observations only, not inferred root causes. Full details remain in visible/summary.json."
+      },
+      "fix_status": "Code revision evaluated; causal explanation not established",
+      "evidence": "attempts/02/visible/summary.json",
+      "previously_failing_observations_now_passing": [
+        {
+          "runtime": "cpython",
+          "case_id": "extended-v3-visible-metadata"
+        },
+        {
+          "runtime": "graal",
+          "case_id": "extended-v3-visible-metadata"
+        }
+      ],
+      "attempted_revision_excerpt": "--- selected-checkpoint.py\n\n+++ attempt-candidate.py\n\n@@ -681,4 +681,2 @@\n\n Option.setArgs = _set_args\n Options.getRequiredOptions = _required\n-\n-Option.getDescription = lambda self: \"incorrect\""
+    }
+  ]
+}

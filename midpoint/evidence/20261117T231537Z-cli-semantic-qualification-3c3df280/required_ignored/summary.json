@@ -1,0 +1,1767 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 41,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-unique-prefix",
+        "semantic-v2-visible-ambiguous-prefix",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-parse-with-another-options",
+        "semantic-v2-visible-stop-reset",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-group-reuse",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "commons_cli-visible-000-metadata-alias",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "getOpt",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "getLongOpt",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "hasArg",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "hasArg",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "hasOption",
+                "args": [
+                  "--visible-verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "isRequired",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-000-metadata-alias",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": "v"
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "visible-verbose"
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-000-metadata-alias",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": "v"
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "visible-verbose"
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 12,
+            "expected": {
+              "step": 12,
+              "status": "ok",
+              "value": true
+            },
+            "actual": {
+              "step": 12,
+              "status": "ok",
+              "value": false
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "commons_cli-visible-018-required-missing",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "getRequiredOptions",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-018-required-missing",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "o"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "exception",
+                "type": "MissingOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-018-required-missing",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": []
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": [
+                "o"
+              ]
+            },
+            "actual": {
+              "step": 8,
+              "status": "ok",
+              "value": []
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-required-after-readd",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "out",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "out",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "getRequiredOptions",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-required-after-readd",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": [
+                  "o"
+                ]
+              },
+              {
+                "step": 10,
+                "status": "exception",
+                "type": "MissingOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-required-after-readd",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": []
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 9,
+            "expected": {
+              "step": 9,
+              "status": "ok",
+              "value": [
+                "o"
+              ]
+            },
+            "actual": {
+              "step": 9,
+              "status": "ok",
+              "value": []
+            }
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 41,
+      "total": 44,
+      "status": "completed",
+      "passed_ids": [
+        "commons_cli-visible-001-empty",
+        "commons_cli-visible-002-short",
+        "commons_cli-visible-003-long",
+        "commons_cli-visible-004-equals",
+        "commons_cli-visible-005-empty-value",
+        "commons_cli-visible-006-repeated-value",
+        "commons_cli-visible-007-terminator",
+        "commons_cli-visible-008-positional",
+        "commons_cli-visible-009-stop-positional",
+        "commons_cli-visible-010-stop-unknown",
+        "commons_cli-visible-011-unknown",
+        "commons_cli-visible-012-missing-argument",
+        "commons_cli-visible-013-missing-before-option",
+        "commons_cli-visible-014-negative-value",
+        "commons_cli-visible-015-attached-short",
+        "commons_cli-visible-016-burst",
+        "commons_cli-visible-017-reuse-parser",
+        "commons_cli-visible-019-required-present",
+        "semantic-v2-visible-unique-prefix",
+        "semantic-v2-visible-ambiguous-prefix",
+        "semantic-v2-visible-partial-disabled",
+        "semantic-v2-visible-exact-over-prefix",
+        "semantic-v2-visible-quoted-value",
+        "semantic-v2-visible-quoted-equals",
+        "semantic-v2-visible-dash-as-value",
+        "semantic-v2-visible-flag-equals",
+        "semantic-v2-visible-replacement",
+        "semantic-v2-visible-same-long-name",
+        "semantic-v2-visible-required-after-add",
+        "semantic-v2-visible-parse-with-another-options",
+        "semantic-v2-visible-stop-reset",
+        "semantic-v2-visible-ordered-values",
+        "semantic-v2-visible-invalid-option-name",
+        "extended-v3-visible-metadata",
+        "extended-v3-visible-optional-value",
+        "extended-v3-visible-group-metadata",
+        "extended-v3-visible-group-select",
+        "extended-v3-visible-group-conflict",
+        "extended-v3-visible-group-required-missing",
+        "extended-v3-visible-group-reuse",
+        "extended-v3-visible-direct-selection-conflict"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "commons_cli-visible-000-metadata-alias",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "getOpt",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "getLongOpt",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "flag",
+                "method": "hasArg",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "hasArg",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "hasOption",
+                "args": [
+                  "--visible-verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "isRequired",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-000-metadata-alias",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": "v"
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "visible-verbose"
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": true
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-000-metadata-alias",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": "v"
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": "visible-verbose"
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": false
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 12,
+            "expected": {
+              "step": 12,
+              "status": "ok",
+              "value": true
+            },
+            "actual": {
+              "step": 12,
+              "status": "ok",
+              "value": false
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "commons_cli-visible-018-required-missing",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "flag",
+                "args": [
+                  "v",
+                  "visible-verbose",
+                  false,
+                  "flag"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "value",
+                "args": [
+                  "o",
+                  "visible-output",
+                  true,
+                  "value"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "options",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "flag"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "value",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "value"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "options",
+                "method": "getRequiredOptions",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "options"
+                  },
+                  [],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "commons_cli-visible-018-required-missing",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": [
+                  "o"
+                ]
+              },
+              {
+                "step": 9,
+                "status": "exception",
+                "type": "MissingOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "commons_cli-visible-018-required-missing",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "flag"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "value"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "options"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": []
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": [
+                "o"
+              ]
+            },
+            "actual": {
+              "step": 8,
+              "status": "ok",
+              "value": []
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "semantic-v2-visible-required-after-readd",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "out",
+                "method": "setRequired",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "out",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "getRequiredOptions",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [],
+                  false
+                ],
+                "save": "cmd"
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "id": "semantic-v2-visible-required-after-readd",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": [
+                  "o"
+                ]
+              },
+              {
+                "step": 10,
+                "status": "exception",
+                "type": "MissingOptionException"
+              }
+            ]
+          },
+          "actual": {
+            "id": "semantic-v2-visible-required-after-readd",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": []
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 9,
+            "expected": {
+              "step": 9,
+              "status": "ok",
+              "value": [
+                "o"
+              ]
+            },
+            "actual": {
+              "step": 9,
+              "status": "ok",
+              "value": []
+            }
+          }
+        }
+      ]
+    }
+  },
+  "passed": 82,
+  "total": 88,
+  "all_pass": false
+}

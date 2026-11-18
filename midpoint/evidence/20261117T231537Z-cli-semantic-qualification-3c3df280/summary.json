@@ -1,0 +1,417 @@
+{
+  "provenance": "synthetic_mutation",
+  "suite": {
+    "sha256": "a8d5e510761d2c9532e451387581b91f934f4754a69205e0c5c1c0d3f52c2a19",
+    "schema": 2,
+    "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+    "profile": "commons-cli-extended-v3",
+    "counts": {
+      "commons_cli": {
+        "visible": 44,
+        "holdout": 28
+      }
+    }
+  },
+  "baseline_sha256": "57cea9105f7d02f3bd084472332bc7ccb3cc64a30a1d804cb966190e921090d0",
+  "baseline_source": "runs/extended-v3-replay-fixtures/good.py",
+  "baseline": {
+    "passed": 88,
+    "total": 88,
+    "all_pass": true
+  },
+  "policy": "Only newly failing baseline-passing visible cases count; infrastructure failure is not semantic detection; holdout excluded",
+  "mutations": {
+    "alias_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-unique-prefix"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-unique-prefix"
+        ],
+        "detected": true
+      }
+    },
+    "parser_state_leak": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-017-reuse-parser",
+          "extended-v3-visible-group-reuse",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-stop-reset"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-017-reuse-parser",
+          "extended-v3-visible-group-reuse",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-stop-reset"
+        ],
+        "detected": true
+      }
+    },
+    "missing_value_empty_string": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-017-reuse-parser",
+          "extended-v3-visible-optional-value",
+          "semantic-v2-visible-parse-with-another-options"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-017-reuse-parser",
+          "extended-v3-visible-optional-value",
+          "semantic-v2-visible-parse-with-another-options"
+        ],
+        "detected": true
+      }
+    },
+    "wrong_exception_type": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-018-required-missing",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-018-required-missing",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      }
+    },
+    "reversed_values": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-006-repeated-value",
+          "extended-v3-visible-metadata",
+          "semantic-v2-visible-ordered-values"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-006-repeated-value",
+          "extended-v3-visible-metadata",
+          "semantic-v2-visible-ordered-values"
+        ],
+        "detected": true
+      }
+    },
+    "partial_matching_disabled": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-unique-prefix"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-unique-prefix"
+        ],
+        "detected": true
+      }
+    },
+    "required_ignored": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-018-required-missing",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-018-required-missing",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      }
+    },
+    "option_replacement_ignored": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-018-required-missing",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "commons_cli-visible-018-required-missing",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-required-after-readd"
+        ],
+        "detected": true
+      }
+    },
+    "group_required_ignored": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-select"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-select"
+        ],
+        "detected": true
+      }
+    },
+    "group_selection_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-group-select"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-group-select"
+        ],
+        "detected": true
+      }
+    },
+    "group_members_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-metadata"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-group-metadata"
+        ],
+        "detected": true
+      }
+    },
+    "group_conflict_ignored": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-direct-selection-conflict",
+          "extended-v3-visible-group-conflict"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-direct-selection-conflict",
+          "extended-v3-visible-group-conflict"
+        ],
+        "detected": true
+      }
+    },
+    "description_update_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      }
+    },
+    "arg_name_update_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      }
+    },
+    "arity_update_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata"
+        ],
+        "detected": true
+      }
+    },
+    "optional_update_lost": {
+      "cpython": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value"
+        ],
+        "detected": true
+      },
+      "graal": {
+        "status": "completed",
+        "newly_failing_case_ids": [
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value"
+        ],
+        "detected": true
+      }
+    }
+  },
+  "detected_in_both": 16,
+  "total_mutants": 16
+}

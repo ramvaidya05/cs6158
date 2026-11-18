@@ -1,0 +1,139 @@
+{
+  "limit_usd": 8,
+  "accounted_usd": 0.19756125000000002,
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.06530625,
+      "usage_known": true,
+      "allocation": "trial-000/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 7236,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 7236,
+          "totalTokenCount": 47952,
+          "cachedContentTokenCount": 38671,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38671
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.06664875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 7594,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 7594,
+          "totalTokenCount": 48310,
+          "cachedContentTokenCount": 38671,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38671
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.06560625,
+      "usage_known": true,
+      "allocation": "trial-002/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 7316,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 7316,
+          "totalTokenCount": 48032,
+          "cachedContentTokenCount": 38671,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38671
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ],
+  "allocation_policy": "Fixed independent trial/arm envelopes; initial candidate paid once; unused allocations never transferred",
+  "required_reservation_usd": 7.93548,
+  "allocations": {
+    "trial-000/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.06530625
+    },
+    "trial-000/commons_cli/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-000/commons_cli/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-001/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.06664875
+    },
+    "trial-001/commons_cli/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-001/commons_cli/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-002/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.06560625
+    },
+    "trial-002/commons_cli/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-002/commons_cli/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    }
+  }
+}

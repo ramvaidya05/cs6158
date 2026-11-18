@@ -1,0 +1,9 @@
+{
+  "source_run": "20261117T231651Z-experiment-555a5519",
+  "initial_candidates_identical": true,
+  "holdout_case_ids_absent_from_prompts_and_memory": true,
+  "memory_off_document_absent": true,
+  "memory_on_history_attempts": 3,
+  "history_absent_from_initial_prompt": true,
+  "model_calls": 0
+}

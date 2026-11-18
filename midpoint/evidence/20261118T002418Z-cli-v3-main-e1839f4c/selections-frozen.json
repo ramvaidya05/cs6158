@@ -1,0 +1,11 @@
+{
+  "trial-000/commons_cli/one_shot": "1d03d2dcfd1bc480b24722c9e3c2d710b11d005e58b9685b650842ff46cc9819",
+  "trial-000/commons_cli/code_repair": "1d03d2dcfd1bc480b24722c9e3c2d710b11d005e58b9685b650842ff46cc9819",
+  "trial-000/commons_cli/environment_repair": "1d03d2dcfd1bc480b24722c9e3c2d710b11d005e58b9685b650842ff46cc9819",
+  "trial-001/commons_cli/one_shot": "9ef731c0cb8d0f36082ddb1fbc876fad8ae9a39098d4c85161c7a5471dc8018f",
+  "trial-001/commons_cli/code_repair": "9ef731c0cb8d0f36082ddb1fbc876fad8ae9a39098d4c85161c7a5471dc8018f",
+  "trial-001/commons_cli/environment_repair": "9ef731c0cb8d0f36082ddb1fbc876fad8ae9a39098d4c85161c7a5471dc8018f",
+  "trial-002/commons_cli/one_shot": "9e90dd33a21cd103ce1552668a0e5df0ece297f2c2331227bc85f36a85ce766b",
+  "trial-002/commons_cli/code_repair": "9e90dd33a21cd103ce1552668a0e5df0ece297f2c2331227bc85f36a85ce766b",
+  "trial-002/commons_cli/environment_repair": "9e90dd33a21cd103ce1552668a0e5df0ece297f2c2331227bc85f36a85ce766b"
+}

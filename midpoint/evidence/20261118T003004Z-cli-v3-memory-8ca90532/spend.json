@@ -1,0 +1,231 @@
+{
+  "limit_usd": 8,
+  "accounted_usd": 0.496186875,
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.0677475,
+      "usage_known": true,
+      "allocation": "trial-000/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 7887,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 7887,
+          "totalTokenCount": 48603,
+          "cachedContentTokenCount": 38671,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38671
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3242334375,
+      "accounted_usd": 0.0774778125,
+      "usage_known": true,
+      "allocation": "trial-000/commons_cli/memory_off",
+      "usage": {
+        "input_tokens": 50991,
+        "output_tokens": 7913,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 50991,
+          "candidatesTokenCount": 7913,
+          "totalTokenCount": 58904,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 50991
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3285684375,
+      "accounted_usd": 0.0784996875,
+      "usage_known": true,
+      "allocation": "trial-000/commons_cli/memory_on",
+      "usage": {
+        "input_tokens": 52209,
+        "output_tokens": 7881,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 52209,
+          "candidatesTokenCount": 7881,
+          "totalTokenCount": 60090,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 52209
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.06304875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 6634,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 6634,
+          "totalTokenCount": 47350,
+          "cachedContentTokenCount": 38671,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38671
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.323311875,
+      "accounted_usd": 0.07261875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_cli/memory_on",
+      "usage": {
+        "input_tokens": 50692,
+        "output_tokens": 6692,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 50692,
+          "candidatesTokenCount": 6692,
+          "totalTokenCount": 57384,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 50692
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.318975,
+      "accounted_usd": 0.072181875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_cli/memory_off",
+      "usage": {
+        "input_tokens": 49470,
+        "output_tokens": 6881,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 49470,
+          "candidatesTokenCount": 6881,
+          "totalTokenCount": 56351,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 49470
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.286299375,
+      "accounted_usd": 0.0646125,
+      "usage_known": true,
+      "allocation": "trial-002/commons_cli/one_shot",
+      "usage": {
+        "input_tokens": 40716,
+        "output_tokens": 7051,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 40716,
+          "candidatesTokenCount": 7051,
+          "totalTokenCount": 47767,
+          "cachedContentTokenCount": 38676,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 40716
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 38676
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ],
+  "allocation_policy": "Fixed independent trial/arm envelopes; initial candidate paid once; unused allocations never transferred",
+  "required_reservation_usd": 7.93548,
+  "allocations": {
+    "trial-000/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0677475
+    },
+    "trial-000/commons_cli/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0774778125
+    },
+    "trial-000/commons_cli/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0784996875
+    },
+    "trial-001/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.06304875
+    },
+    "trial-001/commons_cli/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.072181875
+    },
+    "trial-001/commons_cli/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.07261875
+    },
+    "trial-002/commons_cli/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0646125
+    },
+    "trial-002/commons_cli/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    },
+    "trial-002/commons_cli/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0
+    }
+  }
+}

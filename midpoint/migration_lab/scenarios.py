@@ -64,6 +64,8 @@ def validate_cases(cases, contract):
 def check_argument(value, expected, handles):
     if expected == "string":
         valid = isinstance(value, str) and len(value) <= 4096
+    elif expected == "int":
+        valid = type(value) is int and -(2**31) <= value < 2**31
     elif expected == "bool":
         valid = type(value) is bool
     elif expected == "strings":
@@ -113,6 +115,13 @@ def execute_scenario(scope, case, contract):
             elif returns == "void":
                 if value is not None:
                     raise TypeError("Void operation returned a value")
+            elif returns == "required":
+                if not isinstance(value, list):
+                    raise TypeError("Required entries must be a list")
+                value = [v if isinstance(v, str) else {"ref": next(name for name, obj in objects.items() if obj is v)} for v in value]
+            elif returns == "int":
+                if type(value) is not int:
+                    raise TypeError("Integer result required")
             elif returns == "bool":
                 if type(value) is not bool:
                     raise TypeError("Boolean result required")
@@ -123,7 +132,7 @@ def execute_scenario(scope, case, contract):
                 if not (returns == "strings?" and value is None):
                     if not isinstance(value, list) or not all(isinstance(v, str) for v in value):
                         raise TypeError("String list required")
-                    value = list(value)  # Snapshot the observation before subsequent mutation.
+                    value = sorted(value) if cls == "OptionGroup" and operation.get("method") == "getNames" else list(value)  # Snapshot the observation before subsequent mutation.
             row.update(status="ok", value=value)
         except Exception as exc:
             row.update(status="exception", type=contract["exception_map"].get(type(exc).__name__, type(exc).__name__))

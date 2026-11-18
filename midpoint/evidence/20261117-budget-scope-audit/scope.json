@@ -1,0 +1,254 @@
+{
+  "source_artifact": "commons-cli:commons-cli:1.9.0",
+  "classes": 4,
+  "method_signatures": 15,
+  "constructor_signatures": 3,
+  "source_context_files": 18,
+  "splits": {
+    "visible": {
+      "cases": 36,
+      "api": {
+        "Option.getOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.getLongOpt": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.hasArg": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Option.isRequired": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Option.setRequired": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "Option.getValue": {
+          "scheduled": 17,
+          "reached": 14,
+          "normal": 14,
+          "exception": 0
+        },
+        "Option.getValues": {
+          "scheduled": 16,
+          "reached": 13,
+          "normal": 13,
+          "exception": 0
+        },
+        "Options.addOption": {
+          "scheduled": 77,
+          "reached": 77,
+          "normal": 77,
+          "exception": 0
+        },
+        "Options.hasOption": {
+          "scheduled": 1,
+          "reached": 1,
+          "normal": 1,
+          "exception": 0
+        },
+        "Options.getRequiredOptions": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 3,
+          "exception": 0
+        },
+        "DefaultParser.parse": {
+          "scheduled": 37,
+          "reached": 37,
+          "normal": 29,
+          "exception": 8
+        },
+        "CommandLine.hasOption": {
+          "scheduled": 37,
+          "reached": 31,
+          "normal": 31,
+          "exception": 0
+        },
+        "CommandLine.getOptionValue": {
+          "scheduled": 26,
+          "reached": 23,
+          "normal": 23,
+          "exception": 0
+        },
+        "CommandLine.getOptionValues": {
+          "scheduled": 17,
+          "reached": 14,
+          "normal": 14,
+          "exception": 0
+        },
+        "CommandLine.getArgs": {
+          "scheduled": 17,
+          "reached": 14,
+          "normal": 14,
+          "exception": 0
+        },
+        "Option.__init__": {
+          "scheduled": 75,
+          "reached": 75,
+          "normal": 74,
+          "exception": 1
+        },
+        "Options.__init__": {
+          "scheduled": 36,
+          "reached": 36,
+          "normal": 36,
+          "exception": 0
+        },
+        "DefaultParser.__init__": {
+          "scheduled": 35,
+          "reached": 35,
+          "normal": 35,
+          "exception": 0
+        }
+      },
+      "methods_reached": 15,
+      "methods_with_normal_return": 15
+    },
+    "holdout": {
+      "cases": 20,
+      "api": {
+        "Option.getOpt": {
+          "scheduled": 0,
+          "reached": 0,
+          "normal": 0,
+          "exception": 0
+        },
+        "Option.getLongOpt": {
+          "scheduled": 0,
+          "reached": 0,
+          "normal": 0,
+          "exception": 0
+        },
+        "Option.hasArg": {
+          "scheduled": 0,
+          "reached": 0,
+          "normal": 0,
+          "exception": 0
+        },
+        "Option.isRequired": {
+          "scheduled": 0,
+          "reached": 0,
+          "normal": 0,
+          "exception": 0
+        },
+        "Option.setRequired": {
+          "scheduled": 4,
+          "reached": 4,
+          "normal": 4,
+          "exception": 0
+        },
+        "Option.getValue": {
+          "scheduled": 0,
+          "reached": 0,
+          "normal": 0,
+          "exception": 0
+        },
+        "Option.getValues": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Options.addOption": {
+          "scheduled": 48,
+          "reached": 48,
+          "normal": 48,
+          "exception": 0
+        },
+        "Options.hasOption": {
+          "scheduled": 2,
+          "reached": 2,
+          "normal": 2,
+          "exception": 0
+        },
+        "Options.getRequiredOptions": {
+          "scheduled": 3,
+          "reached": 3,
+          "normal": 3,
+          "exception": 0
+        },
+        "DefaultParser.parse": {
+          "scheduled": 22,
+          "reached": 22,
+          "normal": 18,
+          "exception": 4
+        },
+        "CommandLine.hasOption": {
+          "scheduled": 11,
+          "reached": 10,
+          "normal": 10,
+          "exception": 0
+        },
+        "CommandLine.getOptionValue": {
+          "scheduled": 8,
+          "reached": 8,
+          "normal": 8,
+          "exception": 0
+        },
+        "CommandLine.getOptionValues": {
+          "scheduled": 5,
+          "reached": 5,
+          "normal": 5,
+          "exception": 0
+        },
+        "CommandLine.getArgs": {
+          "scheduled": 6,
+          "reached": 6,
+          "normal": 6,
+          "exception": 0
+        },
+        "Option.__init__": {
+          "scheduled": 45,
+          "reached": 45,
+          "normal": 44,
+          "exception": 1
+        },
+        "Options.__init__": {
+          "scheduled": 20,
+          "reached": 20,
+          "normal": 20,
+          "exception": 0
+        },
+        "DefaultParser.__init__": {
+          "scheduled": 19,
+          "reached": 19,
+          "normal": 19,
+          "exception": 0
+        }
+      },
+      "methods_reached": 10,
+      "methods_with_normal_return": 10
+    }
+  },
+  "excluded": [
+    "OptionGroup public API",
+    "HelpFormatter",
+    "Properties defaults",
+    "typed value conversion",
+    "arbitrary object graphs",
+    "full repository translation"
+  ],
+  "candidate_scope": "One Python source module; tests, adapters, oracle, contract, and environment are controller-owned",
+  "limitation": "Reference trace API exercise only; not candidate correctness, branch/line coverage, all upstream overloads, or full repository translation. Void returns alone do not prove state updates.",
+  "sha256": {
+    "suite": "d4b6c335498263919c25dcc6b134ffe9e40aaf91b1217acbc9231d38bee38c52",
+    "contract": "355ff1d16b56293749e5d8fa6283bacfc6ea5ae932b5e18bfe2d41ce8316a5dd",
+    "audit_script": "8d69e2e7bbf579be79524e6c3891a1bc401194ae449e573066340c63dd2e9fd4"
+  }
+}

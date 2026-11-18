@@ -1,0 +1,1028 @@
+{
+  "provenance": "live_model",
+  "study": "feedback_ablation",
+  "measurement_status": "evaluated",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 5,
+      "task_pass_rate": 0.6,
+      "descriptive_wilson_95": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 155,
+            "total": 180,
+            "rate": 0.8611111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 92,
+            "total": 100,
+            "rate": 0.92,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 155,
+            "total": 180,
+            "rate": 0.8611111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 92,
+            "total": 100,
+            "rate": 0.92,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "basic_feedback": {
+      "tasks_passing": 4,
+      "admitted_task_trials": 5,
+      "task_pass_rate": 0.8,
+      "descriptive_wilson_95": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 169,
+            "total": 180,
+            "rate": 0.9388888888888889,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 96,
+            "total": 100,
+            "rate": 0.96,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 169,
+            "total": 180,
+            "rate": 0.9388888888888889,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 96,
+            "total": 100,
+            "rate": 0.96,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "operation_feedback": {
+      "tasks_passing": 4,
+      "admitted_task_trials": 5,
+      "task_pass_rate": 0.8,
+      "descriptive_wilson_95": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "repair_budget_blocked_trials": 1,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 166,
+            "total": 180,
+            "rate": 0.9222222222222223,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 96,
+            "total": 100,
+            "rate": 0.96,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 166,
+            "total": 180,
+            "rate": 0.9222222222222223,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 96,
+            "total": 100,
+            "rate": 0.96,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 3,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 3,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 19.999999999999996,
+        "graal": 19.999999999999996
+      }
+    },
+    {
+      "trial": 4,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 19.999999999999996,
+        "graal": 19.999999999999996
+      }
+    },
+    {
+      "trial": 4,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "task_success_delta": 0,
+      "repair_budget_blocked": true,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-000/commons_cli/one_shot",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 61.529,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 6632,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "path": "trial-000/commons_cli/basic_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 18.654,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "path": "trial-000/commons_cli/operation_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.886000000000003,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-001/commons_cli/one_shot",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 60.596000000000004,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 6628,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "path": "trial-001/commons_cli/basic_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 18.983,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "path": "trial-001/commons_cli/operation_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.294,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-002/commons_cli/one_shot",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 60.277,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 6976,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "path": "trial-002/commons_cli/basic_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.156,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "path": "trial-002/commons_cli/operation_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 22.772,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-003/commons_cli/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 64.44,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 7166,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 25,
+            "total": 36,
+            "rate": 0.6944444444444444,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 25,
+            "total": 36,
+            "rate": 0.6944444444444444,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "path": "trial-003/commons_cli/basic_feedback",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "no_progress",
+      "error": null,
+      "attempts": 3,
+      "repair_attempts": 2,
+      "code_repairs": 2,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 115.285,
+      "usage": {
+        "model_calls": 2,
+        "input_tokens": 93586,
+        "output_tokens": 14632,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 25,
+            "total": 36,
+            "rate": 0.6944444444444444,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 25,
+            "total": 36,
+            "rate": 0.6944444444444444,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "path": "trial-003/commons_cli/operation_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 65.77799999999999,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 50796,
+        "output_tokens": 7191,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 4,
+      "task": "commons_cli",
+      "arm": "one_shot",
+      "path": "trial-004/commons_cli/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 71.122,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 40186,
+        "output_tokens": 7461,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 22,
+            "total": 36,
+            "rate": 0.6111111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 22,
+            "total": 36,
+            "rate": 0.6111111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 4,
+      "task": "commons_cli",
+      "arm": "basic_feedback",
+      "path": "trial-004/commons_cli/basic_feedback",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "attempts": 3,
+      "repair_attempts": 2,
+      "code_repairs": 2,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 125.741,
+      "usage": {
+        "model_calls": 2,
+        "input_tokens": 94210,
+        "output_tokens": 14780,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 36,
+            "total": 36,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 20,
+            "total": 20,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 4,
+      "task": "commons_cli",
+      "arm": "operation_feedback",
+      "path": "trial-004/commons_cli/operation_feedback",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "backend_error",
+      "error": null,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 0,
+      "repair_budget_blocked": true,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.935000000000002,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 22,
+            "total": 36,
+            "rate": 0.6111111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 22,
+            "total": 36,
+            "rate": 0.6111111111111112,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 16,
+            "total": 20,
+            "rate": 0.8,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  ],
+  "usage": {
+    "model_calls": 10,
+    "input_tokens": 439522,
+    "output_tokens": 71466,
+    "usage_unknown_calls": 0
+  }
+}

@@ -287,3 +287,72 @@ The experiment CLI exits 1 when any admitted arm fails validation, including
 an intentionally retained unsuccessful one-shot baseline. Check `summary.json`
 and per-arm statuses to distinguish completed negative results from setup errors.
 See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md#november-17-2026--live-commons-cli-results).
+
+## Semantic v2 and feedback-ablation commands
+
+From `midpoint/`, freeze the stronger task profile before model generation:
+
+```sh
+python3 -m migration_lab freeze --task commons_cli \
+  --profile commons-cli-semantic-v2 --seed 6158 \
+  --output evaluator-private/commons-cli-semantic-v2.json
+```
+
+The profile's generator is fingerprinted, and its oracle is repeated before
+freezing. Default pilot behavior is retained. Changing the profile or protocol
+requires a newly frozen suite; archived historical evidence remains historical.
+The semantic profile is never included in source-context assembly.
+
+`python3 scripts/qualify_cli_semantics.py --suite <suite.json> --baseline <candidate.py>`
+evaluates an existing candidate and eight synthetic mutations in Docker. It counts
+new failures relative to that baseline, reports execution errors separately, uses
+visible cases only, and archives its evidence. Baseline correctness is measured
+against Java; it is never assumed merely because a previous suite passed.
+
+Add `--feedback-ablation` to the existing `experiment --backend gemini --task
+commons_cli` command to select `one_shot`, `basic_feedback`, and
+`operation_feedback` arms. Default experiments retain the original repair arms.
+Both feedback arms share the initial candidate, model settings, per-call limits,
+repair limits and no-regression selection. Repair order alternates by trial.
+Each independent trial starts fresh; repair feedback is reused only within that
+trial. No generated candidate is manually edited by the researcher.
+
+The shared spend cap can still prevent a later arm from making its permitted
+calls. The November 17 study encountered this in trial 5. Reports now expose
+`repair_budget_blocked` and count only evaluated repair candidates in
+`code_repairs`; `repair_attempts` retains all scheduled attempts. Do not interpret
+a budget-blocked arm as evidence against its feedback treatment. Reserve equal
+per-arm capacity in the next study before making a comparative claim.
+# Fair-budget main-study preparation
+
+New experiments default to `--budget-policy partitioned`: the declared spend cap must cover independent worst-case initial and repair allocations before any API request. An insufficient cap fails upfront; it is never raised automatically. Use `--budget-policy shared` only when intentionally reproducing the historical shared-budget protocol. See [BUDGET_SCOPE_OBSERVATIONS.md](BUDGET_SCOPE_OBSERVATIONS.md) for the reservation calculation, scope audit, validation, and remaining main-study gaps.
+
+## CLI v3 and retry-memory experiments
+
+See [RETRY_MEMORY_OBSERVATIONS.md](RETRY_MEMORY_OBSERVATIONS.md) for implementation details and limitations. The new contract requires a new frozen suite and rebuilt Java/Docker harnesses; old archives remain historical evidence, not compatible suites for the changed evaluator.
+
+From `midpoint/`, freeze the evaluator before generation:
+
+```sh
+python3 -m migration_lab freeze --task commons_cli \
+  --profile commons-cli-extended-v3 --seed 6158 --output runs/cli-v3/suite.json
+```
+
+Add `--retry-memory` to enable pruned feedback and arm-local history in the main study, or `--memory-ablation` for the separate one-shot/memory-off/memory-on comparison. The latter keeps the current feedback format identical and changes only accumulated history. Do not combine either with `--feedback-ablation`. Use `--max-repairs 3` for the planned initial comparison. Partitioned budget preflight still applies.
+
+A no-API integration check is available:
+
+```sh
+python3 scripts/prepare_cli_v3_replay.py --output runs/cli-v3-fixtures
+python3 -m migration_lab experiment --backend replay \
+  --replay-manifest runs/cli-v3-fixtures/replay.json \
+  --suite runs/cli-v3/suite.json --task commons_cli --trials 1 \
+  --max-repairs 3 --timeout 90 --memory-ablation --archive
+```
+
+The prepared responses are synthetic fixtures, explicitly including hand-written additions and injected faults. Replay accuracy is not live model performance. Each attempt produces a dependency report and requirements file; no third-party distributions are approved for this standard-library-only task.
+
+
+## Staged live CLI v3 study runner
+
+`scripts/run_cli_v3_study.py` runs one explicitly selected phase: `--phase smoke`, `--phase main`, or `--phase memory`, with `--suite` pointing to a frozen v3 suite. It reads the local Gemini key without printing it, requires Docker, and archives failures as well as successes. Defaults are the predeclared three-trial protocol in [CLI_V3_LIVE_OBSERVATIONS.md](CLI_V3_LIVE_OBSERVATIONS.md), including a $0.40 smoke cap and separate $8 caps for each study. Invoking a phase makes live API calls; it is not a replay command. The completed study's results and remaining limitations are recorded in that document.

@@ -1,0 +1,724 @@
+{
+  "studies": {
+    "smoke": {
+      "archive": "20261118T002250Z-cli-v3-smoke-05baa037",
+      "calls": 1,
+      "accounted_usd": 0.06487875,
+      "unknown_usage_calls": 0,
+      "status": "completed",
+      "validated": true,
+      "visible": 88,
+      "holdout": 56
+    },
+    "main": {
+      "archive": "20261118T002418Z-cli-v3-main-e1839f4c",
+      "calls": 3,
+      "accounted_usd": 0.19756125000000002,
+      "unknown_usage_calls": 0,
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "code_repair": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "environment_repair": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "trial": "trial-000",
+          "arm": "code_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "8c3c0974580232c557f3a3f05e0f5b4eb24d4351202dddb31b629d0b9cc0de1e",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-000",
+          "arm": "environment_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "8c3c0974580232c557f3a3f05e0f5b4eb24d4351202dddb31b629d0b9cc0de1e",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-000",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "8c3c0974580232c557f3a3f05e0f5b4eb24d4351202dddb31b629d0b9cc0de1e",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "code_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "0fb7c9ed915e2f767468f63b6055fe8770b8f685e92d0ece50bcfa658a9cca6a",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "environment_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "0fb7c9ed915e2f767468f63b6055fe8770b8f685e92d0ece50bcfa658a9cca6a",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "0fb7c9ed915e2f767468f63b6055fe8770b8f685e92d0ece50bcfa658a9cca6a",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "code_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "789012da28056ec39c2bc9c4f11a06eb0f003946c8e7699a08242c5d54c14154",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "environment_repair",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "789012da28056ec39c2bc9c4f11a06eb0f003946c8e7699a08242c5d54c14154",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "789012da28056ec39c2bc9c4f11a06eb0f003946c8e7699a08242c5d54c14154",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        }
+      ]
+    },
+    "memory": {
+      "archive": "20261118T003004Z-cli-v3-memory-8ca90532",
+      "calls": 7,
+      "accounted_usd": 0.496186875,
+      "unknown_usage_calls": 0,
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 1,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 0.3333333333333333,
+          "descriptive_wilson_95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 114,
+                "total": 132,
+                "rate": 0.8636363636363636,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 80,
+                "total": 84,
+                "rate": 0.9523809523809523,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 114,
+                "total": 132,
+                "rate": 0.8636363636363636,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 80,
+                "total": 84,
+                "rate": 0.9523809523809523,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "memory_off": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "memory_on": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "task_pass_rate": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "repair_budget_blocked_trials": 0,
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 132,
+                "total": 132,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 84,
+                "total": 84,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        }
+      },
+      "runs": [
+        {
+          "trial": "trial-000",
+          "arm": "memory_off",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 1,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "e46ccbf9dfe17352a28cf050ded514822f985561b98f8c230cdb03aba2bca311",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 74,
+              "total": 88
+            },
+            {
+              "attempt": 1,
+              "sha256": "2573efd4b87e3e4f35238b646702490cbcef3e3e3388b168676a725a2e74c8fd",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-000",
+          "arm": "memory_on",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 1,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "e46ccbf9dfe17352a28cf050ded514822f985561b98f8c230cdb03aba2bca311",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 74,
+              "total": 88
+            },
+            {
+              "attempt": 1,
+              "sha256": "d13c47d2f6e8584817e76b53490978ba46918042df377fa96e67459d52a17382",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-000",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": false,
+          "stop_reason": "attempt_limit",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "e46ccbf9dfe17352a28cf050ded514822f985561b98f8c230cdb03aba2bca311",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 74,
+              "total": 88
+            }
+          ],
+          "visible_passed": 74,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "memory_off",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 1,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "297fb93e4354f0a7328ce38549e4b011f4fb93f94ab3653029b8a43e7b6e4e66",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 66,
+              "total": 88
+            },
+            {
+              "attempt": 1,
+              "sha256": "76a3153452ba56b0f64d98f4902f36af6338101c3b5632cdea3c2e9bd2e94054",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "memory_on",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 1,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "297fb93e4354f0a7328ce38549e4b011f4fb93f94ab3653029b8a43e7b6e4e66",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 66,
+              "total": 88
+            },
+            {
+              "attempt": 1,
+              "sha256": "7590a0b253fcf909002d6fc3e9055241fc2d271f5c5e459a6aceea8628b8f0db",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-001",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": false,
+          "stop_reason": "attempt_limit",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "297fb93e4354f0a7328ce38549e4b011f4fb93f94ab3653029b8a43e7b6e4e66",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 66,
+              "total": 88
+            }
+          ],
+          "visible_passed": 66,
+          "holdout_passed": 48,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "memory_off",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "fc6994cb7d3cd37d1a81d495cd9b4f998fe6b148190bc143aaa4095762797034",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "memory_on",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "fc6994cb7d3cd37d1a81d495cd9b4f998fe6b148190bc143aaa4095762797034",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        },
+        {
+          "trial": "trial-002",
+          "arm": "one_shot",
+          "status": "completed",
+          "validated": true,
+          "stop_reason": "visible_pass",
+          "best_attempt": 0,
+          "environment_actions": 0,
+          "attempts": [
+            {
+              "attempt": 0,
+              "sha256": "fc6994cb7d3cd37d1a81d495cd9b4f998fe6b148190bc143aaa4095762797034",
+              "accepted": true,
+              "status": "evaluated",
+              "passed": 88,
+              "total": 88
+            }
+          ],
+          "visible_passed": 88,
+          "holdout_passed": 56,
+          "holdout_total": 56
+        }
+      ]
+    }
+  },
+  "audit": {
+    "main": {
+      "paired_initials_identical": true,
+      "selected_code_hashes_match": true,
+      "holdout_case_ids_absent_from_prompts_and_history": true,
+      "unknown_usage_calls": 0,
+      "budget_blocked_trials": 0
+    },
+    "memory": {
+      "paired_initials_identical": true,
+      "selected_code_hashes_match": true,
+      "holdout_case_ids_absent_from_prompts_and_history": true,
+      "unknown_usage_calls": 0,
+      "budget_blocked_trials": 0
+    },
+    "credential_absent_from_archives": true
+  },
+  "total_model_calls": 11,
+  "total_accounted_usd": 0.758626875,
+  "resolved_models": [
+    "gemini-3.8-flash"
+  ]
+}

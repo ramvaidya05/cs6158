@@ -1,0 +1,4630 @@
+{
+  "status": "completed",
+  "task": "commons_cli",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.086
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.528
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 4.857,
+      "attempt": 0
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 4.862,
+      "attempt": 0
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 10.186,
+      "attempt": 0,
+      "accepted": true
+    },
+    {
+      "phase": "code_repair",
+      "elapsed_seconds": 10.195,
+      "attempt": 1
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 53.394,
+      "attempt": 1
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 58.461,
+      "attempt": 1,
+      "accepted": true
+    },
+    {
+      "phase": "selection_frozen",
+      "elapsed_seconds": 58.468
+    },
+    {
+      "phase": "evaluate_holdout",
+      "elapsed_seconds": 58.469
+    },
+    {
+      "phase": "completed",
+      "elapsed_seconds": 68.36702341696946
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 0,
+      "sha256": "e46ccbf9dfe17352a28cf050ded514822f985561b98f8c230cdb03aba2bca311",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 74,
+      "total": 88
+    },
+    {
+      "attempt": 1,
+      "sha256": "2573efd4b87e3e4f35238b646702490cbcef3e3e3388b168676a725a2e74c8fd",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 88,
+      "total": 88
+    }
+  ],
+  "best_attempt": 1,
+  "stop_reason": "visible_pass",
+  "reserved_output_tokens": 65536,
+  "baseline_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 37,
+        "total": 44,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "semantic-v2-visible-unique-prefix",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-invalid-option-name",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-select",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-direct-selection-conflict"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-visible-001-empty",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": []
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-001-empty"
+            },
+            "actual": {
+              "id": "commons_cli-visible-001-empty",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-007-terminator",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "--",
+                      "-v",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "-v",
+                    "visible-value-\ud83d\ude80"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-007-terminator"
+            },
+            "actual": {
+              "id": "commons_cli-visible-007-terminator",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-008-positional",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "visible-value-\ud83d\ude80",
+                      "-v"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "visible-value-\ud83d\ude80"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-008-positional"
+            },
+            "actual": {
+              "id": "commons_cli-visible-008-positional",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-009-stop-positional",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "visible-value-\ud83d\ude80",
+                      "-v"
+                    ],
+                    true
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "visible-value-\ud83d\ude80",
+                    "-v"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-009-stop-positional"
+            },
+            "actual": {
+              "id": "commons_cli-visible-009-stop-positional",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-010-stop-unknown",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "--unknown",
+                      "-v"
+                    ],
+                    true
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "--unknown",
+                    "-v"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-010-stop-unknown"
+            },
+            "actual": {
+              "id": "commons_cli-visible-010-stop-unknown",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-017-reuse-parser"
+            },
+            "actual": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 8,
+              "expected": {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "semantic-v2-visible-parse-with-another-options",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "opts",
+                  "args": []
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "out",
+                  "args": [
+                    "o",
+                    "output",
+                    true,
+                    "output"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "verbose",
+                  "args": [
+                    "v",
+                    "verbose",
+                    false,
+                    "verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "opts",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "out"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "verbose"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    true
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "opts"
+                    },
+                    [
+                      "-o",
+                      "first"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "other",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "other"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "second"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "second",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "out"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "verbose"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "other"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": {
+                    "ref": "second"
+                  }
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "first"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "semantic-v2-visible-parse-with-another-options"
+            },
+            "actual": {
+              "id": "semantic-v2-visible-parse-with-another-options",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "out"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "verbose"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "other"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": {
+                    "ref": "second"
+                  }
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "first"
+                },
+                {
+                  "step": 10,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 10,
+              "expected": {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 10,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 37,
+        "total": 44,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "semantic-v2-visible-unique-prefix",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-invalid-option-name",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-select",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-direct-selection-conflict"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "commons_cli-visible-001-empty",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": []
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-001-empty"
+            },
+            "actual": {
+              "id": "commons_cli-visible-001-empty",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-007-terminator",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "--",
+                      "-v",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "-v",
+                    "visible-value-\ud83d\ude80"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-007-terminator"
+            },
+            "actual": {
+              "id": "commons_cli-visible-007-terminator",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-008-positional",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "visible-value-\ud83d\ude80",
+                      "-v"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "visible-value-\ud83d\ude80"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-008-positional"
+            },
+            "actual": {
+              "id": "commons_cli-visible-008-positional",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": true
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-009-stop-positional",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "visible-value-\ud83d\ude80",
+                      "-v"
+                    ],
+                    true
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "visible-value-\ud83d\ude80",
+                    "-v"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-009-stop-positional"
+            },
+            "actual": {
+              "id": "commons_cli-visible-009-stop-positional",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-010-stop-unknown",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "--unknown",
+                      "-v"
+                    ],
+                    true
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "v"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "hasOption",
+                  "args": [
+                    "visible-verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValues",
+                  "args": [
+                    "visible-output"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getArgs",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValues",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 11,
+                  "status": "ok",
+                  "value": [
+                    "--unknown",
+                    "-v"
+                  ]
+                },
+                {
+                  "step": 12,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 13,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-010-stop-unknown"
+            },
+            "actual": {
+              "id": "commons_cli-visible-010-stop-unknown",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": false
+                },
+                {
+                  "step": 9,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 9,
+              "expected": {
+                "step": 9,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 9,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "flag",
+                  "args": [
+                    "v",
+                    "visible-verbose",
+                    false,
+                    "flag"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "value",
+                  "args": [
+                    "o",
+                    "visible-output",
+                    true,
+                    "value"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "options",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "options",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "flag"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "value"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    false
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [
+                      "-o",
+                      "visible-value-\ud83d\ude80"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "options"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "next"
+                },
+                {
+                  "op": "call",
+                  "on": "next",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "value",
+                  "method": "getValue",
+                  "args": []
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": null
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "visible-value-\ud83d\ude80"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "commons_cli-visible-017-reuse-parser"
+            },
+            "actual": {
+              "id": "commons_cli-visible-017-reuse-parser",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "flag"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "value"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "options"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "next"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 8,
+              "expected": {
+                "step": 8,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          },
+          {
+            "case": {
+              "id": "semantic-v2-visible-parse-with-another-options",
+              "task": "commons_cli",
+              "operations": [
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "opts",
+                  "args": []
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "out",
+                  "args": [
+                    "o",
+                    "output",
+                    true,
+                    "output"
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "Option",
+                  "save": "verbose",
+                  "args": [
+                    "v",
+                    "verbose",
+                    false,
+                    "verbose"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "opts",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "out"
+                    }
+                  ],
+                  "save": "alias"
+                },
+                {
+                  "op": "call",
+                  "on": "alias",
+                  "method": "addOption",
+                  "args": [
+                    {
+                      "ref": "verbose"
+                    }
+                  ]
+                },
+                {
+                  "op": "new",
+                  "class": "DefaultParser",
+                  "save": "parser",
+                  "args": [
+                    true
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "opts"
+                    },
+                    [
+                      "-o",
+                      "first"
+                    ],
+                    false
+                  ],
+                  "save": "cmd"
+                },
+                {
+                  "op": "new",
+                  "class": "Options",
+                  "save": "other",
+                  "args": []
+                },
+                {
+                  "op": "call",
+                  "on": "parser",
+                  "method": "parse",
+                  "args": [
+                    {
+                      "ref": "other"
+                    },
+                    [],
+                    false
+                  ],
+                  "save": "second"
+                },
+                {
+                  "op": "call",
+                  "on": "cmd",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                },
+                {
+                  "op": "call",
+                  "on": "second",
+                  "method": "getOptionValue",
+                  "args": [
+                    "o"
+                  ]
+                }
+              ]
+            },
+            "expected": {
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "out"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "verbose"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "other"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": {
+                    "ref": "second"
+                  }
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "first"
+                },
+                {
+                  "step": 10,
+                  "status": "ok",
+                  "value": null
+                }
+              ],
+              "status": "ok",
+              "id": "semantic-v2-visible-parse-with-another-options"
+            },
+            "actual": {
+              "id": "semantic-v2-visible-parse-with-another-options",
+              "status": "ok",
+              "trace": [
+                {
+                  "step": 0,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 1,
+                  "status": "ok",
+                  "value": {
+                    "ref": "out"
+                  }
+                },
+                {
+                  "step": 2,
+                  "status": "ok",
+                  "value": {
+                    "ref": "verbose"
+                  }
+                },
+                {
+                  "step": 3,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 4,
+                  "status": "ok",
+                  "value": {
+                    "ref": "opts"
+                  }
+                },
+                {
+                  "step": 5,
+                  "status": "ok",
+                  "value": {
+                    "ref": "parser"
+                  }
+                },
+                {
+                  "step": 6,
+                  "status": "ok",
+                  "value": {
+                    "ref": "cmd"
+                  }
+                },
+                {
+                  "step": 7,
+                  "status": "ok",
+                  "value": {
+                    "ref": "other"
+                  }
+                },
+                {
+                  "step": 8,
+                  "status": "ok",
+                  "value": {
+                    "ref": "second"
+                  }
+                },
+                {
+                  "step": 9,
+                  "status": "ok",
+                  "value": "first"
+                },
+                {
+                  "step": 10,
+                  "status": "exception",
+                  "type": "RecursionError"
+                }
+              ]
+            },
+            "first_difference": {
+              "step": 10,
+              "expected": {
+                "step": 10,
+                "status": "ok",
+                "value": null
+              },
+              "actual": {
+                "step": 10,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "passed": 74,
+    "total": 88,
+    "all_pass": false
+  },
+  "selected_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 44,
+        "total": 44,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "semantic-v2-visible-unique-prefix",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-invalid-option-name",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-select",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-direct-selection-conflict"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 44,
+        "total": 44,
+        "status": "completed",
+        "passed_ids": [
+          "commons_cli-visible-000-metadata-alias",
+          "commons_cli-visible-001-empty",
+          "commons_cli-visible-002-short",
+          "commons_cli-visible-003-long",
+          "commons_cli-visible-004-equals",
+          "commons_cli-visible-005-empty-value",
+          "commons_cli-visible-006-repeated-value",
+          "commons_cli-visible-007-terminator",
+          "commons_cli-visible-008-positional",
+          "commons_cli-visible-009-stop-positional",
+          "commons_cli-visible-010-stop-unknown",
+          "commons_cli-visible-011-unknown",
+          "commons_cli-visible-012-missing-argument",
+          "commons_cli-visible-013-missing-before-option",
+          "commons_cli-visible-014-negative-value",
+          "commons_cli-visible-015-attached-short",
+          "commons_cli-visible-016-burst",
+          "commons_cli-visible-017-reuse-parser",
+          "commons_cli-visible-018-required-missing",
+          "commons_cli-visible-019-required-present",
+          "semantic-v2-visible-unique-prefix",
+          "semantic-v2-visible-ambiguous-prefix",
+          "semantic-v2-visible-partial-disabled",
+          "semantic-v2-visible-exact-over-prefix",
+          "semantic-v2-visible-quoted-value",
+          "semantic-v2-visible-quoted-equals",
+          "semantic-v2-visible-dash-as-value",
+          "semantic-v2-visible-flag-equals",
+          "semantic-v2-visible-replacement",
+          "semantic-v2-visible-same-long-name",
+          "semantic-v2-visible-required-after-add",
+          "semantic-v2-visible-required-after-readd",
+          "semantic-v2-visible-parse-with-another-options",
+          "semantic-v2-visible-stop-reset",
+          "semantic-v2-visible-ordered-values",
+          "semantic-v2-visible-invalid-option-name",
+          "extended-v3-visible-metadata",
+          "extended-v3-visible-optional-value",
+          "extended-v3-visible-group-metadata",
+          "extended-v3-visible-group-select",
+          "extended-v3-visible-group-conflict",
+          "extended-v3-visible-group-required-missing",
+          "extended-v3-visible-group-reuse",
+          "extended-v3-visible-direct-selection-conflict"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 88,
+    "total": 88,
+    "all_pass": true
+  },
+  "elapsed_seconds": 68.367,
+  "baseline_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 28,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "semantic-v2-holdout-prefix-equals-and-repetition",
+          "semantic-v2-holdout-ambiguity-with-equals",
+          "semantic-v2-holdout-disabled-prefix-stop",
+          "semantic-v2-holdout-exact-prefix-flag",
+          "semantic-v2-holdout-quotes-empty-and-repeat",
+          "semantic-v2-holdout-quotes-embedded-equals",
+          "semantic-v2-holdout-terminator-after-value",
+          "semantic-v2-holdout-flag-equals-stop",
+          "semantic-v2-holdout-replacement-retains-long-map",
+          "semantic-v2-holdout-same-long-different-short-paths",
+          "semantic-v2-holdout-required-list-snapshot",
+          "semantic-v2-holdout-required-replacement",
+          "semantic-v2-holdout-three-parses-two-configurations",
+          "semantic-v2-holdout-stop-mode-switch",
+          "semantic-v2-holdout-repeated-empty-unicode",
+          "semantic-v2-holdout-invalid-space-short",
+          "semantic-v2-holdout-alias-after-new-option",
+          "semantic-v2-holdout-required-two-missing-one",
+          "semantic-v2-holdout-negative-and-positional",
+          "semantic-v2-holdout-unknown-after-known",
+          "extended-v3-holdout-metadata-after-reuse",
+          "extended-v3-holdout-group-repeated-selection",
+          "extended-v3-holdout-group-reset-empty",
+          "extended-v3-holdout-group-long-conflict",
+          "extended-v3-holdout-required-after-terminator",
+          "extended-v3-holdout-optional-toggle",
+          "extended-v3-holdout-two-values-then-flag",
+          "extended-v3-holdout-group-required-toggle"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 28,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "semantic-v2-holdout-prefix-equals-and-repetition",
+          "semantic-v2-holdout-ambiguity-with-equals",
+          "semantic-v2-holdout-disabled-prefix-stop",
+          "semantic-v2-holdout-exact-prefix-flag",
+          "semantic-v2-holdout-quotes-empty-and-repeat",
+          "semantic-v2-holdout-quotes-embedded-equals",
+          "semantic-v2-holdout-terminator-after-value",
+          "semantic-v2-holdout-flag-equals-stop",
+          "semantic-v2-holdout-replacement-retains-long-map",
+          "semantic-v2-holdout-same-long-different-short-paths",
+          "semantic-v2-holdout-required-list-snapshot",
+          "semantic-v2-holdout-required-replacement",
+          "semantic-v2-holdout-three-parses-two-configurations",
+          "semantic-v2-holdout-stop-mode-switch",
+          "semantic-v2-holdout-repeated-empty-unicode",
+          "semantic-v2-holdout-invalid-space-short",
+          "semantic-v2-holdout-alias-after-new-option",
+          "semantic-v2-holdout-required-two-missing-one",
+          "semantic-v2-holdout-negative-and-positional",
+          "semantic-v2-holdout-unknown-after-known",
+          "extended-v3-holdout-metadata-after-reuse",
+          "extended-v3-holdout-group-repeated-selection",
+          "extended-v3-holdout-group-reset-empty",
+          "extended-v3-holdout-group-long-conflict",
+          "extended-v3-holdout-required-after-terminator",
+          "extended-v3-holdout-optional-toggle",
+          "extended-v3-holdout-two-values-then-flag",
+          "extended-v3-holdout-group-required-toggle"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 56,
+    "total": 56,
+    "all_pass": true
+  },
+  "selected_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 28,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "semantic-v2-holdout-prefix-equals-and-repetition",
+          "semantic-v2-holdout-ambiguity-with-equals",
+          "semantic-v2-holdout-disabled-prefix-stop",
+          "semantic-v2-holdout-exact-prefix-flag",
+          "semantic-v2-holdout-quotes-empty-and-repeat",
+          "semantic-v2-holdout-quotes-embedded-equals",
+          "semantic-v2-holdout-terminator-after-value",
+          "semantic-v2-holdout-flag-equals-stop",
+          "semantic-v2-holdout-replacement-retains-long-map",
+          "semantic-v2-holdout-same-long-different-short-paths",
+          "semantic-v2-holdout-required-list-snapshot",
+          "semantic-v2-holdout-required-replacement",
+          "semantic-v2-holdout-three-parses-two-configurations",
+          "semantic-v2-holdout-stop-mode-switch",
+          "semantic-v2-holdout-repeated-empty-unicode",
+          "semantic-v2-holdout-invalid-space-short",
+          "semantic-v2-holdout-alias-after-new-option",
+          "semantic-v2-holdout-required-two-missing-one",
+          "semantic-v2-holdout-negative-and-positional",
+          "semantic-v2-holdout-unknown-after-known",
+          "extended-v3-holdout-metadata-after-reuse",
+          "extended-v3-holdout-group-repeated-selection",
+          "extended-v3-holdout-group-reset-empty",
+          "extended-v3-holdout-group-long-conflict",
+          "extended-v3-holdout-required-after-terminator",
+          "extended-v3-holdout-optional-toggle",
+          "extended-v3-holdout-two-values-then-flag",
+          "extended-v3-holdout-group-required-toggle"
+        ],
+        "failures": []
+      },
+      "graal": {
+        "passed": 28,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "semantic-v2-holdout-prefix-equals-and-repetition",
+          "semantic-v2-holdout-ambiguity-with-equals",
+          "semantic-v2-holdout-disabled-prefix-stop",
+          "semantic-v2-holdout-exact-prefix-flag",
+          "semantic-v2-holdout-quotes-empty-and-repeat",
+          "semantic-v2-holdout-quotes-embedded-equals",
+          "semantic-v2-holdout-terminator-after-value",
+          "semantic-v2-holdout-flag-equals-stop",
+          "semantic-v2-holdout-replacement-retains-long-map",
+          "semantic-v2-holdout-same-long-different-short-paths",
+          "semantic-v2-holdout-required-list-snapshot",
+          "semantic-v2-holdout-required-replacement",
+          "semantic-v2-holdout-three-parses-two-configurations",
+          "semantic-v2-holdout-stop-mode-switch",
+          "semantic-v2-holdout-repeated-empty-unicode",
+          "semantic-v2-holdout-invalid-space-short",
+          "semantic-v2-holdout-alias-after-new-option",
+          "semantic-v2-holdout-required-two-missing-one",
+          "semantic-v2-holdout-negative-and-positional",
+          "semantic-v2-holdout-unknown-after-known",
+          "extended-v3-holdout-metadata-after-reuse",
+          "extended-v3-holdout-group-repeated-selection",
+          "extended-v3-holdout-group-reset-empty",
+          "extended-v3-holdout-group-long-conflict",
+          "extended-v3-holdout-required-after-terminator",
+          "extended-v3-holdout-optional-toggle",
+          "extended-v3-holdout-two-values-then-flag",
+          "extended-v3-holdout-group-required-toggle"
+        ],
+        "failures": []
+      }
+    },
+    "passed": 56,
+    "total": 56,
+    "all_pass": true
+  },
+  "validated": true,
+  "scoring_seconds": 9.898
+}

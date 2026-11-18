@@ -1,0 +1,2294 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "semantic-v2-holdout-prefix-equals-and-repetition",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "one",
+            "two"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-ambiguity-with-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "other"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "exception",
+          "type": "AmbiguousOptionException"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-disabled-prefix-stop",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "--out=value",
+            "-v"
+          ]
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-exact-prefix-flag",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "shortlong"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "x"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-quotes-empty-and-repeat",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "",
+            "'a b'",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-quotes-embedded-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "\"a=b c\""
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-terminator-after-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "-"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "-o",
+            "ignored",
+            "--verbose"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-flag-equals-stop",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "--verbose=yes",
+            "-o",
+            "ignored"
+          ]
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-replacement-retains-long-map",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "old"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-same-long-different-short-paths",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "old"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-required-list-snapshot",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": "ok"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-required-replacement",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-three-parses-two-configurations",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "empty"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "third"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "alpha"
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": "beta"
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-stop-mode-switch",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-repeated-empty-unicode",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "\ud83d\ude80"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "\ud83d\ude80",
+            "",
+            "\u00e9"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-invalid-space-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "exception",
+          "type": "IllegalArgumentException"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-alias-after-new-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "late"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-required-two-missing-one",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-negative-and-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "-2.5"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "tail"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "semantic-v2-holdout-unknown-after-known",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-metadata-after-reuse",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": 2
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 15,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 16,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 17,
+          "status": "ok",
+          "value": "o"
+        },
+        {
+          "step": 18,
+          "status": "ok",
+          "value": "output"
+        },
+        {
+          "step": 19,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 20,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 21,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 22,
+          "status": "ok",
+          "value": "DEST"
+        },
+        {
+          "step": 23,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 24,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 25,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 26,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 27,
+          "status": "ok",
+          "value": [
+            "held"
+          ]
+        },
+        {
+          "step": 28,
+          "status": "ok",
+          "value": [
+            "output"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-group-repeated-selection",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "j",
+            "x"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            {
+              "ref": "group"
+            }
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 15,
+          "status": "ok",
+          "value": "x"
+        },
+        {
+          "step": 16,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-group-reset-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-group-long-conflict",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "AlreadySelectedException"
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-required-after-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-optional-toggle",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-two-values-then-flag",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "alpha",
+            "beta"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "extended-v3-holdout-group-required-toggle",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": [
+            "j",
+            "x"
+          ]
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        }
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-03dbee76de494143bf972bca8614eaec",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-ir6xc1s1/candidate.py,dst=/candidate.py,readonly",
+      "sha256:b3cf37d81523f032e1a443f5d950347a0d457ca78331f1e13d7cc8408271e363",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.195996,
+    "stdout": "[{\"id\": \"semantic-v2-holdout-prefix-equals-and-repetition\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": [\"one\", \"two\"]}]}, {\"id\": \"semantic-v2-holdout-ambiguity-with-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"other\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"exception\", \"type\": \"AmbiguousOptionException\"}]}, {\"id\": \"semantic-v2-holdout-disabled-prefix-stop\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": [\"--out=value\", \"-v\"]}, {\"step\": 8, \"status\": \"ok\", \"value\": false}]}, {\"id\": \"semantic-v2-holdout-exact-prefix-flag\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"shortlong\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": \"x\"}]}, {\"id\": \"semantic-v2-holdout-quotes-empty-and-repeat\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": [\"\", \"'a b'\", \"\"]}]}, {\"id\": \"semantic-v2-holdout-quotes-embedded-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": \"\\\"a=b c\\\"\"}]}, {\"id\": \"semantic-v2-holdout-terminator-after-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": \"-\"}, {\"step\": 8, \"status\": \"ok\", \"value\": [\"-o\", \"ignored\", \"--verbose\"]}, {\"step\": 9, \"status\": \"ok\", \"value\": false}]}, {\"id\": \"semantic-v2-holdout-flag-equals-stop\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": [\"--verbose=yes\", \"-o\", \"ignored\"]}, {\"step\": 8, \"status\": \"ok\", \"value\": false}]}, {\"id\": \"semantic-v2-holdout-replacement-retains-long-map\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"replacement\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"old\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"semantic-v2-holdout-same-long-different-short-paths\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"replacement\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"old\"]}]}, {\"id\": \"semantic-v2-holdout-required-list-snapshot\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": []}, {\"step\": 7, \"status\": \"ok\", \"value\": null}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": [\"o\"]}, {\"step\": 10, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 11, \"status\": \"ok\", \"value\": \"ok\"}]}, {\"id\": \"semantic-v2-holdout-required-replacement\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"replacement\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"o\"]}, {\"step\": 11, \"status\": \"exception\", \"type\": \"MissingOptionException\"}]}, {\"id\": \"semantic-v2-holdout-three-parses-two-configurations\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"empty\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"third\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": \"alpha\"}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"file\"]}, {\"step\": 12, \"status\": \"ok\", \"value\": \"beta\"}, {\"step\": 13, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"semantic-v2-holdout-stop-mode-switch\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": [\"file\"]}, {\"step\": 10, \"status\": \"ok\", \"value\": false}]}, {\"id\": \"semantic-v2-holdout-repeated-empty-unicode\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": \"\\ud83d\\ude80\"}, {\"step\": 8, \"status\": \"ok\", \"value\": [\"\\ud83d\\ude80\", \"\", \"\\u00e9\"]}, {\"step\": 9, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"semantic-v2-holdout-invalid-space-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}]}, {\"id\": \"semantic-v2-holdout-alias-after-new-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"late\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"semantic-v2-holdout-required-two-missing-one\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": null}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 10, \"status\": \"exception\", \"type\": \"MissingOptionException\"}]}, {\"id\": \"semantic-v2-holdout-negative-and-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": \"-2.5\"}, {\"step\": 8, \"status\": \"ok\", \"value\": [\"tail\"]}, {\"step\": 9, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"semantic-v2-holdout-unknown-after-known\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"exception\", \"type\": \"UnrecognizedOptionException\"}]}, {\"id\": \"extended-v3-holdout-metadata-after-reuse\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": null}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": null}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": 2}, {\"step\": 13, \"status\": \"ok\", \"value\": null}, {\"step\": 14, \"status\": \"ok\", \"value\": null}, {\"step\": 15, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 16, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 17, \"status\": \"ok\", \"value\": \"o\"}, {\"step\": 18, \"status\": \"ok\", \"value\": \"output\"}, {\"step\": 19, \"status\": \"ok\", \"value\": true}, {\"step\": 20, \"status\": \"ok\", \"value\": null}, {\"step\": 21, \"status\": \"ok\", \"value\": \"\"}, {\"step\": 22, \"status\": \"ok\", \"value\": \"DEST\"}, {\"step\": 23, \"status\": \"ok\", \"value\": true}, {\"step\": 24, \"status\": \"ok\", \"value\": true}, {\"step\": 25, \"status\": \"ok\", \"value\": null}, {\"step\": 26, \"status\": \"ok\", \"value\": false}, {\"step\": 27, \"status\": \"ok\", \"value\": [\"held\"]}, {\"step\": 28, \"status\": \"ok\", \"value\": [\"output\"]}]}, {\"id\": \"extended-v3-holdout-group-repeated-selection\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"j\", \"x\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": [{\"ref\": \"group\"}]}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": null}, {\"step\": 14, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 15, \"status\": \"ok\", \"value\": \"x\"}, {\"step\": 16, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"extended-v3-holdout-group-reset-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": [\"file\"]}]}, {\"id\": \"extended-v3-holdout-group-long-conflict\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"exception\", \"type\": \"AlreadySelectedException\"}]}, {\"id\": \"extended-v3-holdout-required-after-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"exception\", \"type\": \"MissingOptionException\"}]}, {\"id\": \"extended-v3-holdout-optional-toggle\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"exception\", \"type\": \"MissingArgumentException\"}]}, {\"id\": \"extended-v3-holdout-two-values-then-flag\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": [\"alpha\", \"beta\"]}, {\"step\": 9, \"status\": \"ok\", \"value\": true}, {\"step\": 10, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"extended-v3-holdout-group-required-toggle\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": true}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": false}, {\"step\": 13, \"status\": \"ok\", \"value\": [\"j\", \"x\"]}, {\"step\": 14, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}]}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T00:28:34.481583881Z",
+      "FinishedAt": "2026-11-18T00:28:34.617704714Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:b3cf37d81523f032e1a443f5d950347a0d457ca78331f1e13d7cc8408271e363",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:d5f7b40156fb235dc9d88d27f1b43a6e4eb6734c4e35f00da3f5dda2a314c831",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

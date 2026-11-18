@@ -1,0 +1,141 @@
+Artifacts: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261118T003004Z-cli-v3-memory-8ca90532
+Trial 1/3: commons_cli, one_shot
+Trial 1/3: commons_cli, memory_off
+Trial 1/3: commons_cli, memory_on
+Trial 2/3: commons_cli, one_shot
+Trial 2/3: commons_cli, memory_on
+Trial 2/3: commons_cli, memory_off
+Trial 3/3: commons_cli, one_shot
+Trial 3/3: commons_cli, memory_off
+Trial 3/3: commons_cli, memory_on
+{
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 1,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 0.3333333333333333,
+      "descriptive_wilson_95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 114,
+            "total": 132,
+            "rate": 0.8636363636363636,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 80,
+            "total": 84,
+            "rate": 0.9523809523809523,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 114,
+            "total": 132,
+            "rate": 0.8636363636363636,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 80,
+            "total": 84,
+            "rate": 0.9523809523809523,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_off": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_on": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "task_pass_rate": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "repair_budget_blocked_trials": 0,
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 132,
+            "total": 132,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 84,
+            "total": 84,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 7,
+    "input_tokens": 325510,
+    "output_tokens": 50939,
+    "usage_unknown_calls": 0
+  }
+}
+Archived: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/evidence/20261118T003004Z-cli-v3-memory-8ca90532

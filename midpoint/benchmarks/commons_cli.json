@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "task": "commons_cli",
-  "version": "commons-cli-operations-v1",
+  "version": "commons-cli-operations-v3",
   "source_artifact": "commons-cli:commons-cli:1.9.0",
   "max_operations": 128,
   "classes": {
@@ -44,6 +44,50 @@
         "getValues": {
           "args": [],
           "returns": "strings?"
+        },
+        "getDescription": {
+          "args": [],
+          "returns": "string?"
+        },
+        "setDescription": {
+          "args": [
+            "string"
+          ],
+          "returns": "void"
+        },
+        "getArgName": {
+          "args": [],
+          "returns": "string?"
+        },
+        "setArgName": {
+          "args": [
+            "string"
+          ],
+          "returns": "void"
+        },
+        "hasLongOpt": {
+          "args": [],
+          "returns": "bool"
+        },
+        "hasOptionalArg": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setOptionalArg": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "getArgs": {
+          "args": [],
+          "returns": "int"
+        },
+        "setArgs": {
+          "args": [
+            "int"
+          ],
+          "returns": "void"
         }
       }
     },
@@ -66,7 +110,19 @@
         },
         "getRequiredOptions": {
           "args": [],
+          "returns": "required"
+        },
+        "getMatchingOptions": {
+          "args": [
+            "string"
+          ],
           "returns": "strings"
+        },
+        "addOptionGroup": {
+          "args": [
+            "OptionGroup"
+          ],
+          "returns": "Options"
         }
       }
     },
@@ -112,12 +168,49 @@
           "returns": "strings"
         }
       }
+    },
+    "OptionGroup": {
+      "constructor": {
+        "args": []
+      },
+      "methods": {
+        "addOption": {
+          "args": [
+            "Option"
+          ],
+          "returns": "OptionGroup"
+        },
+        "getNames": {
+          "args": [],
+          "returns": "strings"
+        },
+        "getSelected": {
+          "args": [],
+          "returns": "string?"
+        },
+        "isRequired": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setRequired": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "setSelected": {
+          "args": [
+            "Option"
+          ],
+          "returns": "void"
+        }
+      }
     }
   },
   "exception_map": {
     "ValueError": "IllegalArgumentException"
   },
-  "comparison": "Exact typed operation trace; stop at first exception; messages excluded; object results use canonical first handle",
+  "comparison": "Exact typed operation trace; stop at first exception; messages excluded; object results use canonical first handle; OptionGroup.getNames sorted because source collection is unordered; required group entries use canonical object handles",
   "source_files": [
     "vendor/commons-cli/src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
     "vendor/commons-cli/src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
@@ -140,7 +233,6 @@
   ],
   "dependency_analysis": "Conservative source-name closure, manually scoped API; not full symbol resolution or arbitrary repository analysis",
   "excluded": [
-    "OptionGroup public API",
     "HelpFormatter",
     "Properties defaults",
     "typed value conversion",

@@ -1,0 +1,13 @@
+{
+  "provenance": "synthetic_fixture",
+  "tasks": {
+    "commons_cli": [
+      "bad.py",
+      "partial.py",
+      "good.py"
+    ]
+  },
+  "source": "evidence/20261117T204352Z-experiment-1f46722d/trial-000/commons_cli/one_shot/final.py",
+  "source_sha256": "80a1bf46a03c75599fffb0a3a971b5f6af6a517ca2a9ec88071d4c1411c962c1",
+  "note": "Hand-written additions and mutations; not fresh inference."
+}

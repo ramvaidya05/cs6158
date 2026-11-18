@@ -4,11 +4,19 @@ Prepared 19 October 2026. Updated after midpoint implementation: the runnable pr
 
 The [one-day midpoint plan](./MIDPOINT_TODAY_PLAN.md) records the original scope. The longer milestones below remain a research roadmap, not a statement that every described component is implemented; their original schedule does not apply to today's midpoint target.
 
-Current implementation checkpoint: [isolated experiments and results](midpoint/EXPERIMENT_RESULTS.md).
-Container isolation and bounded cache remediation are now implemented. Live
-GPT-5.6 Sol requests returned HTTP 429. A live Gemini 3.8 Flash study then
-measured Levenshtein translation accuracy: 3/3 one-shot trials passed every
-visible and withheld case in both runtimes. The other two tasks remain unmeasured.
+Current implementation checkpoint: [experiments and results](midpoint/EXPERIMENT_RESULTS.md).
+Live Gemini experiments now cover Levenshtein and a four-class Commons CLI slice.
+The stronger CLI profile contains 36 visible and 20 separately authored holdout
+scenarios, detects eight injected faults in both runtimes, and supports paired
+basic-versus-operation-feedback studies. Five fresh trials yielded one fully
+observed case where operation feedback repaired a failure that basic feedback did
+not; another comparison was budget-limited. See the results for exact denominators
+and limitations. Multi-module translation and cross-trial lesson reuse are still
+future work, not delivered features.
+
+Latest engineering checkpoint: [retry memory and CLI v3 observations](midpoint/RETRY_MEMORY_OBSERVATIONS.md). The evaluator now supports 32 methods across five CLI classes, with 44 visible and 28 holdout scenarios. Arm-local retry memory, pruned diagnostics, and standard-library-only requirements generation are implemented. These changes are locally qualified; the live results above still refer to the earlier four-class protocol. Cross-trial reuse, arbitrary package installation, multi-module translation, and the matched AlphaTrans comparison remain outstanding.
+
+Latest live-study checkpoint: [CLI v3 observations](midpoint/CLI_V3_LIVE_OBSERVATIONS.md). The scoped 32-method main study and separate memory ablation have now run with fresh Gemini responses (three trials each). Main arms all passed 3/3 without repairs; in the separate memory cohort both repair arms improved full-task success from 1/3 to 3/3 with identical one-retry recoveries. Memory superiority is not established. A semantic holdout gap was identified and is recorded for a future suite version; existing scores were not revised. Matched AlphaTrans evaluation and repository-scale work remain outstanding.
 
 ## 1. Recommended research direction
 

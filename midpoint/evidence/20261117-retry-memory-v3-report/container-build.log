@@ -1,0 +1,114 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 315B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm@sha256:34386ef0cb081344d7ec1c103ba398e6e9f64e9ab3a1509accc92a4e24a07258
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm@sha256:34386ef0cb081344d7ec1c103ba398e6e9f64e9ab3a1509accc92a4e24a07258
+#2 DONE 0.6s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/python:3.12-slim-bookworm@sha256:34386ef0cb081344d7ec1c103ba398e6e9f64e9ab3a1509accc92a4e24a07258
+#5 resolve docker.io/library/python:3.12-slim-bookworm@sha256:34386ef0cb081344d7ec1c103ba398e6e9f64e9ab3a1509accc92a4e24a07258 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 18.19kB done
+#6 DONE 0.0s
+
+#7 [2/4] COPY worker.py /runner/worker.py
+#7 CACHED
+
+#8 [3/4] COPY scenarios.py guest_driver.py commons_cli.json /runner/
+#8 DONE 0.0s
+
+#9 [4/4] WORKDIR /tmp
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 exporting manifest sha256:37dbbd99b0f2b008dbe5cb44e79c35127d508894fbeb5c9ae662b396bf202960 done
+#10 exporting config sha256:bb382dc551ff3e651dac5f4af059a68aab263dba4747f9e92591679959883d11 done
+#10 exporting attestation manifest sha256:bdaaf2326bfbc96e2414bdc3012476053d6ffb150c0d226dd9962dabbdead81f done
+#10 exporting manifest list sha256:b3cf37d81523f032e1a443f5d950347a0d457ca78331f1e13d7cc8408271e363 done
+#10 naming to docker.io/library/migration-lab-cpython:v1 done
+#10 unpacking to docker.io/library/migration-lab-cpython:v1 0.0s done
+#10 DONE 0.1s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 627B done
+#1 DONE 0.0s
+
+#2 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:21-jdk-jammy@sha256:742daacb9316be4b6fc60258f6e4ac2a11882f6c597373c92290a57bfad0d2e0
+#3 DONE 0.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [build 1/4] FROM docker.io/library/eclipse-temurin:21-jdk-jammy@sha256:742daacb9316be4b6fc60258f6e4ac2a11882f6c597373c92290a57bfad0d2e0
+#5 resolve docker.io/library/eclipse-temurin:21-jdk-jammy@sha256:742daacb9316be4b6fc60258f6e4ac2a11882f6c597373c92290a57bfad0d2e0 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 173.22MB 0.9s done
+#6 DONE 0.9s
+
+#7 [build 4/4] RUN javac --release 21 -cp '/runner/jars/*' -d /runner/classes /runner/GuestHarness.java
+#7 CACHED
+
+#8 [stage-1 2/5] COPY --from=build /runner/jars /runner/jars
+#8 CACHED
+
+#9 [build 2/4] COPY jars/ /runner/jars/
+#9 CACHED
+
+#10 [build 3/4] COPY GuestHarness.java /runner/GuestHarness.java
+#10 CACHED
+
+#11 [stage-1 3/5] COPY --from=build /runner/classes /runner/classes
+#11 CACHED
+
+#12 [stage-1 4/5] COPY scenarios.py guest_driver.py commons_cli.json /runner/
+#12 DONE 0.1s
+
+#13 [stage-1 5/5] WORKDIR /tmp
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers 0.0s done
+#14 exporting manifest sha256:1a44a2b05edf7a9985a711ead4659a510c26f444ab519d05f8a65110fb23e8ea done
+#14 exporting config sha256:8ed5c55ad5deb6ee4005fef97c07817db3f6be0b04868271b0da713e4d49db66 done
+#14 exporting attestation manifest sha256:c5a9bb365bbeab86b0100238b62a4be586b96b0946bb5456e21821df24e3fba5 done
+#14 exporting manifest list sha256:d5f7b40156fb235dc9d88d27f1b43a6e4eb6734c4e35f00da3f5dda2a314c831
+#14 exporting manifest list sha256:d5f7b40156fb235dc9d88d27f1b43a6e4eb6734c4e35f00da3f5dda2a314c831 done
+#14 naming to docker.io/library/migration-lab-graal:v1 done
+#14 unpacking to docker.io/library/migration-lab-graal:v1 done
+#14 DONE 0.0s
+{
+  "cpython": {
+    "id": "sha256:b3cf37d81523f032e1a443f5d950347a0d457ca78331f1e13d7cc8408271e363",
+    "tag": "migration-lab-cpython:v1",
+    "architecture": "arm64",
+    "os": "linux"
+  },
+  "graal": {
+    "id": "sha256:d5f7b40156fb235dc9d88d27f1b43a6e4eb6734c4e35f00da3f5dda2a314c831",
+    "tag": "migration-lab-graal:v1",
+    "architecture": "arm64",
+    "os": "linux"
+  }
+}

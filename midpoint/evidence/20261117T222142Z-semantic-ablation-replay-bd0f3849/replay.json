@@ -1,0 +1,9 @@
+{
+  "provenance": "synthetic_fixture",
+  "tasks": {
+    "commons_cli": [
+      "parser_state_leak.py",
+      "baseline.py"
+    ]
+  }
+}
