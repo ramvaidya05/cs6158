@@ -1,0 +1,7 @@
+{
+  "type": "HTTPError",
+  "message": "HTTP Error 400: Bad Request",
+  "kind": "backend_error",
+  "details": {},
+  "raw_response": null
+}

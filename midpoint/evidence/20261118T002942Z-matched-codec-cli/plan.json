@@ -1,0 +1,23 @@
+{
+  "model": "gemini-3.5-flash",
+  "thinking": "low",
+  "trials": 3,
+  "max_repair_calls_per_task_trial": 1,
+  "max_output_tokens_per_call": 8192,
+  "token_cap": 360000,
+  "spend_cap_usd": 1.0,
+  "pricing_per_million": {
+    "input": 1.5,
+    "output": 9.0
+  },
+  "model_timeout": 120,
+  "execution_timeout": 60,
+  "task_order": [
+    "commons_codec_hex",
+    "commons_cli"
+  ],
+  "seed": 6158,
+  "cli_suite_sha256": "1d0ed958176392eb3f6bb5099bf15d6976826e4d3840eb93f506f23c0d4535c4",
+  "codec_suite_sha256": "51c4654d45c4f9946f091fdb0b10e1c25a5af42ab6aca36933a7bcf6d7c6e3be",
+  "selection_policy": "visible-only, no-regression improvement; all selections frozen before holdout scoring"
+}

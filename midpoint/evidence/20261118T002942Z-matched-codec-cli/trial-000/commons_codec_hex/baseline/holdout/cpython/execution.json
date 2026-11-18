@@ -1,0 +1,829 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "codec-holdout-000",
+      "status": "ok",
+      "value": "f6b288f0f4"
+    },
+    {
+      "id": "codec-holdout-001",
+      "status": "ok",
+      "value": [
+        246,
+        178,
+        136,
+        240,
+        244
+      ]
+    },
+    {
+      "id": "codec-holdout-002",
+      "status": "ok",
+      "value": "384656DD78A5"
+    },
+    {
+      "id": "codec-holdout-003",
+      "status": "ok",
+      "value": [
+        56,
+        70,
+        86,
+        221,
+        120,
+        165
+      ]
+    },
+    {
+      "id": "codec-holdout-004",
+      "status": "ok",
+      "value": "364e4d0c395e4265"
+    },
+    {
+      "id": "codec-holdout-005",
+      "status": "ok",
+      "value": [
+        54,
+        78,
+        77,
+        12,
+        57,
+        94,
+        66,
+        101
+      ]
+    },
+    {
+      "id": "codec-holdout-006",
+      "status": "ok",
+      "value": "FB4B11EEFB6C46AB6262"
+    },
+    {
+      "id": "codec-holdout-007",
+      "status": "ok",
+      "value": [
+        251,
+        75,
+        17,
+        238,
+        251,
+        108,
+        70,
+        171,
+        98,
+        98
+      ]
+    },
+    {
+      "id": "codec-holdout-008",
+      "status": "ok",
+      "value": "3fe415c560e4cf340d66f02e4b38bd0a9bb4edf31b"
+    },
+    {
+      "id": "codec-holdout-009",
+      "status": "ok",
+      "value": [
+        63,
+        228,
+        21,
+        197,
+        96,
+        228,
+        207,
+        52,
+        13,
+        102,
+        240,
+        46,
+        75,
+        56,
+        189,
+        10,
+        155,
+        180,
+        237,
+        243,
+        27
+      ]
+    },
+    {
+      "id": "codec-holdout-010",
+      "status": "ok",
+      "value": "56CB5D1C2D86ECC4590D68"
+    },
+    {
+      "id": "codec-holdout-011",
+      "status": "ok",
+      "value": [
+        86,
+        203,
+        93,
+        28,
+        45,
+        134,
+        236,
+        196,
+        89,
+        13,
+        104
+      ]
+    },
+    {
+      "id": "codec-holdout-012",
+      "status": "ok",
+      "value": "30d14ee71a26d02bca86ef4a"
+    },
+    {
+      "id": "codec-holdout-013",
+      "status": "ok",
+      "value": [
+        48,
+        209,
+        78,
+        231,
+        26,
+        38,
+        208,
+        43,
+        202,
+        134,
+        239,
+        74
+      ]
+    },
+    {
+      "id": "codec-holdout-014",
+      "status": "ok",
+      "value": ""
+    },
+    {
+      "id": "codec-holdout-015",
+      "status": "ok",
+      "value": []
+    },
+    {
+      "id": "codec-holdout-016",
+      "status": "ok",
+      "value": "bf781eb0bf16f92823fcea3746"
+    },
+    {
+      "id": "codec-holdout-017",
+      "status": "ok",
+      "value": [
+        191,
+        120,
+        30,
+        176,
+        191,
+        22,
+        249,
+        40,
+        35,
+        252,
+        234,
+        55,
+        70
+      ]
+    },
+    {
+      "id": "codec-holdout-018",
+      "status": "ok",
+      "value": "37F78B5EE4ED443FC4D4"
+    },
+    {
+      "id": "codec-holdout-019",
+      "status": "ok",
+      "value": [
+        55,
+        247,
+        139,
+        94,
+        228,
+        237,
+        68,
+        63,
+        196,
+        212
+      ]
+    },
+    {
+      "id": "codec-holdout-020",
+      "status": "ok",
+      "value": "60"
+    },
+    {
+      "id": "codec-holdout-021",
+      "status": "ok",
+      "value": [
+        96
+      ]
+    },
+    {
+      "id": "codec-holdout-022",
+      "status": "ok",
+      "value": "19EE071B71509F7E06103D5A"
+    },
+    {
+      "id": "codec-holdout-023",
+      "status": "ok",
+      "value": [
+        25,
+        238,
+        7,
+        27,
+        113,
+        80,
+        159,
+        126,
+        6,
+        16,
+        61,
+        90
+      ]
+    },
+    {
+      "id": "codec-holdout-024",
+      "status": "ok",
+      "value": "d693d86938b830a6778c753626cd5971"
+    },
+    {
+      "id": "codec-holdout-025",
+      "status": "ok",
+      "value": [
+        214,
+        147,
+        216,
+        105,
+        56,
+        184,
+        48,
+        166,
+        119,
+        140,
+        117,
+        54,
+        38,
+        205,
+        89,
+        113
+      ]
+    },
+    {
+      "id": "codec-holdout-026",
+      "status": "ok",
+      "value": "7846AE5B2147BF306B"
+    },
+    {
+      "id": "codec-holdout-027",
+      "status": "ok",
+      "value": [
+        120,
+        70,
+        174,
+        91,
+        33,
+        71,
+        191,
+        48,
+        107
+      ]
+    },
+    {
+      "id": "codec-holdout-028",
+      "status": "ok",
+      "value": "0fd41292471886d9a3"
+    },
+    {
+      "id": "codec-holdout-029",
+      "status": "ok",
+      "value": [
+        15,
+        212,
+        18,
+        146,
+        71,
+        24,
+        134,
+        217,
+        163
+      ]
+    },
+    {
+      "id": "codec-holdout-030",
+      "status": "ok",
+      "value": "DFF461658B1C"
+    },
+    {
+      "id": "codec-holdout-031",
+      "status": "ok",
+      "value": [
+        223,
+        244,
+        97,
+        101,
+        139,
+        28
+      ]
+    },
+    {
+      "id": "codec-holdout-032",
+      "status": "ok",
+      "value": "40c70f58906db62afafd15"
+    },
+    {
+      "id": "codec-holdout-033",
+      "status": "ok",
+      "value": [
+        64,
+        199,
+        15,
+        88,
+        144,
+        109,
+        182,
+        42,
+        250,
+        253,
+        21
+      ]
+    },
+    {
+      "id": "codec-holdout-034",
+      "status": "ok",
+      "value": "6E36FCEA16DBFF822BBD5695BEEE90032B316F6726F899"
+    },
+    {
+      "id": "codec-holdout-035",
+      "status": "ok",
+      "value": [
+        110,
+        54,
+        252,
+        234,
+        22,
+        219,
+        255,
+        130,
+        43,
+        189,
+        86,
+        149,
+        190,
+        238,
+        144,
+        3,
+        43,
+        49,
+        111,
+        103,
+        38,
+        248,
+        153
+      ]
+    },
+    {
+      "id": "codec-holdout-036",
+      "status": "ok",
+      "value": "80ba94aead0c692d09a2"
+    },
+    {
+      "id": "codec-holdout-037",
+      "status": "ok",
+      "value": [
+        128,
+        186,
+        148,
+        174,
+        173,
+        12,
+        105,
+        45,
+        9,
+        162
+      ]
+    },
+    {
+      "id": "codec-holdout-038",
+      "status": "ok",
+      "value": "72099332C9B135852CA2C3"
+    },
+    {
+      "id": "codec-holdout-039",
+      "status": "ok",
+      "value": [
+        114,
+        9,
+        147,
+        50,
+        201,
+        177,
+        53,
+        133,
+        44,
+        162,
+        195
+      ]
+    },
+    {
+      "id": "codec-holdout-040",
+      "status": "ok",
+      "value": "8aad268d"
+    },
+    {
+      "id": "codec-holdout-041",
+      "status": "ok",
+      "value": [
+        138,
+        173,
+        38,
+        141
+      ]
+    },
+    {
+      "id": "codec-holdout-042",
+      "status": "ok",
+      "value": "316EE34C88053B2594DCF5767E461991"
+    },
+    {
+      "id": "codec-holdout-043",
+      "status": "ok",
+      "value": [
+        49,
+        110,
+        227,
+        76,
+        136,
+        5,
+        59,
+        37,
+        148,
+        220,
+        245,
+        118,
+        126,
+        70,
+        25,
+        145
+      ]
+    },
+    {
+      "id": "codec-holdout-044",
+      "status": "ok",
+      "value": ""
+    },
+    {
+      "id": "codec-holdout-045",
+      "status": "ok",
+      "value": []
+    },
+    {
+      "id": "codec-holdout-046",
+      "status": "ok",
+      "value": "6681F2DF344C"
+    },
+    {
+      "id": "codec-holdout-047",
+      "status": "ok",
+      "value": [
+        102,
+        129,
+        242,
+        223,
+        52,
+        76
+      ]
+    },
+    {
+      "id": "codec-holdout-048",
+      "status": "ok",
+      "value": "b0a58b8f41398433bb8fbcf4e27d3ba4eb236145b69d40e2"
+    },
+    {
+      "id": "codec-holdout-049",
+      "status": "ok",
+      "value": [
+        176,
+        165,
+        139,
+        143,
+        65,
+        57,
+        132,
+        51,
+        187,
+        143,
+        188,
+        244,
+        226,
+        125,
+        59,
+        164,
+        235,
+        35,
+        97,
+        69,
+        182,
+        157,
+        64,
+        226
+      ]
+    },
+    {
+      "id": "codec-holdout-050",
+      "status": "ok",
+      "value": "C4"
+    },
+    {
+      "id": "codec-holdout-051",
+      "status": "ok",
+      "value": [
+        196
+      ]
+    },
+    {
+      "id": "codec-holdout-052",
+      "status": "ok",
+      "value": "55a9a18b18a423ee774833cd901f"
+    },
+    {
+      "id": "codec-holdout-053",
+      "status": "ok",
+      "value": [
+        85,
+        169,
+        161,
+        139,
+        24,
+        164,
+        35,
+        238,
+        119,
+        72,
+        51,
+        205,
+        144,
+        31
+      ]
+    },
+    {
+      "id": "codec-holdout-054",
+      "status": "ok",
+      "value": "FFA71E2A72679BAE23"
+    },
+    {
+      "id": "codec-holdout-055",
+      "status": "ok",
+      "value": [
+        255,
+        167,
+        30,
+        42,
+        114,
+        103,
+        155,
+        174,
+        35
+      ]
+    },
+    {
+      "id": "codec-holdout-056",
+      "status": "ok",
+      "value": "0e"
+    },
+    {
+      "id": "codec-holdout-057",
+      "status": "ok",
+      "value": [
+        14
+      ]
+    },
+    {
+      "id": "codec-holdout-058",
+      "status": "ok",
+      "value": "E11C93523AC70397DB20697B49C28E"
+    },
+    {
+      "id": "codec-holdout-059",
+      "status": "ok",
+      "value": [
+        225,
+        28,
+        147,
+        82,
+        58,
+        199,
+        3,
+        151,
+        219,
+        32,
+        105,
+        123,
+        73,
+        194,
+        142
+      ]
+    },
+    {
+      "id": "codec-holdout-060",
+      "status": "ok",
+      "value": "8725d5b9cc5d1820d7d37bbac267bb"
+    },
+    {
+      "id": "codec-holdout-061",
+      "status": "ok",
+      "value": [
+        135,
+        37,
+        213,
+        185,
+        204,
+        93,
+        24,
+        32,
+        215,
+        211,
+        123,
+        186,
+        194,
+        103,
+        187
+      ]
+    },
+    {
+      "id": "codec-holdout-062",
+      "status": "ok",
+      "value": "4D694FEA0CDD761008496F8B49B491CF547F0E624C50B9AF"
+    },
+    {
+      "id": "codec-holdout-063",
+      "status": "ok",
+      "value": [
+        77,
+        105,
+        79,
+        234,
+        12,
+        221,
+        118,
+        16,
+        8,
+        73,
+        111,
+        139,
+        73,
+        180,
+        145,
+        207,
+        84,
+        127,
+        14,
+        98,
+        76,
+        80,
+        185,
+        175
+      ]
+    },
+    {
+      "id": "codec-holdout-064",
+      "status": "ok",
+      "value": [
+        10
+      ]
+    },
+    {
+      "id": "codec-holdout-065",
+      "status": "ok",
+      "value": [
+        175
+      ]
+    },
+    {
+      "id": "codec-holdout-066",
+      "status": "ok",
+      "value": [
+        31
+      ]
+    },
+    {
+      "id": "codec-holdout-067",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-holdout-068",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-holdout-069",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-holdout-070",
+      "status": "ok",
+      "value": [
+        47
+      ]
+    },
+    {
+      "id": "codec-holdout-071",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-holdout-072",
+      "status": "ok",
+      "value": [
+        1
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-fb91f2c94457493a8fbf65d2539f6994",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-w7cosuak/candidate.py,dst=/candidate.py,readonly",
+      "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.248789,
+    "stdout": "[{\"id\": \"codec-holdout-000\", \"status\": \"ok\", \"value\": \"f6b288f0f4\"}, {\"id\": \"codec-holdout-001\", \"status\": \"ok\", \"value\": [246, 178, 136, 240, 244]}, {\"id\": \"codec-holdout-002\", \"status\": \"ok\", \"value\": \"384656DD78A5\"}, {\"id\": \"codec-holdout-003\", \"status\": \"ok\", \"value\": [56, 70, 86, 221, 120, 165]}, {\"id\": \"codec-holdout-004\", \"status\": \"ok\", \"value\": \"364e4d0c395e4265\"}, {\"id\": \"codec-holdout-005\", \"status\": \"ok\", \"value\": [54, 78, 77, 12, 57, 94, 66, 101]}, {\"id\": \"codec-holdout-006\", \"status\": \"ok\", \"value\": \"FB4B11EEFB6C46AB6262\"}, {\"id\": \"codec-holdout-007\", \"status\": \"ok\", \"value\": [251, 75, 17, 238, 251, 108, 70, 171, 98, 98]}, {\"id\": \"codec-holdout-008\", \"status\": \"ok\", \"value\": \"3fe415c560e4cf340d66f02e4b38bd0a9bb4edf31b\"}, {\"id\": \"codec-holdout-009\", \"status\": \"ok\", \"value\": [63, 228, 21, 197, 96, 228, 207, 52, 13, 102, 240, 46, 75, 56, 189, 10, 155, 180, 237, 243, 27]}, {\"id\": \"codec-holdout-010\", \"status\": \"ok\", \"value\": \"56CB5D1C2D86ECC4590D68\"}, {\"id\": \"codec-holdout-011\", \"status\": \"ok\", \"value\": [86, 203, 93, 28, 45, 134, 236, 196, 89, 13, 104]}, {\"id\": \"codec-holdout-012\", \"status\": \"ok\", \"value\": \"30d14ee71a26d02bca86ef4a\"}, {\"id\": \"codec-holdout-013\", \"status\": \"ok\", \"value\": [48, 209, 78, 231, 26, 38, 208, 43, 202, 134, 239, 74]}, {\"id\": \"codec-holdout-014\", \"status\": \"ok\", \"value\": \"\"}, {\"id\": \"codec-holdout-015\", \"status\": \"ok\", \"value\": []}, {\"id\": \"codec-holdout-016\", \"status\": \"ok\", \"value\": \"bf781eb0bf16f92823fcea3746\"}, {\"id\": \"codec-holdout-017\", \"status\": \"ok\", \"value\": [191, 120, 30, 176, 191, 22, 249, 40, 35, 252, 234, 55, 70]}, {\"id\": \"codec-holdout-018\", \"status\": \"ok\", \"value\": \"37F78B5EE4ED443FC4D4\"}, {\"id\": \"codec-holdout-019\", \"status\": \"ok\", \"value\": [55, 247, 139, 94, 228, 237, 68, 63, 196, 212]}, {\"id\": \"codec-holdout-020\", \"status\": \"ok\", \"value\": \"60\"}, {\"id\": \"codec-holdout-021\", \"status\": \"ok\", \"value\": [96]}, {\"id\": \"codec-holdout-022\", \"status\": \"ok\", \"value\": \"19EE071B71509F7E06103D5A\"}, {\"id\": \"codec-holdout-023\", \"status\": \"ok\", \"value\": [25, 238, 7, 27, 113, 80, 159, 126, 6, 16, 61, 90]}, {\"id\": \"codec-holdout-024\", \"status\": \"ok\", \"value\": \"d693d86938b830a6778c753626cd5971\"}, {\"id\": \"codec-holdout-025\", \"status\": \"ok\", \"value\": [214, 147, 216, 105, 56, 184, 48, 166, 119, 140, 117, 54, 38, 205, 89, 113]}, {\"id\": \"codec-holdout-026\", \"status\": \"ok\", \"value\": \"7846AE5B2147BF306B\"}, {\"id\": \"codec-holdout-027\", \"status\": \"ok\", \"value\": [120, 70, 174, 91, 33, 71, 191, 48, 107]}, {\"id\": \"codec-holdout-028\", \"status\": \"ok\", \"value\": \"0fd41292471886d9a3\"}, {\"id\": \"codec-holdout-029\", \"status\": \"ok\", \"value\": [15, 212, 18, 146, 71, 24, 134, 217, 163]}, {\"id\": \"codec-holdout-030\", \"status\": \"ok\", \"value\": \"DFF461658B1C\"}, {\"id\": \"codec-holdout-031\", \"status\": \"ok\", \"value\": [223, 244, 97, 101, 139, 28]}, {\"id\": \"codec-holdout-032\", \"status\": \"ok\", \"value\": \"40c70f58906db62afafd15\"}, {\"id\": \"codec-holdout-033\", \"status\": \"ok\", \"value\": [64, 199, 15, 88, 144, 109, 182, 42, 250, 253, 21]}, {\"id\": \"codec-holdout-034\", \"status\": \"ok\", \"value\": \"6E36FCEA16DBFF822BBD5695BEEE90032B316F6726F899\"}, {\"id\": \"codec-holdout-035\", \"status\": \"ok\", \"value\": [110, 54, 252, 234, 22, 219, 255, 130, 43, 189, 86, 149, 190, 238, 144, 3, 43, 49, 111, 103, 38, 248, 153]}, {\"id\": \"codec-holdout-036\", \"status\": \"ok\", \"value\": \"80ba94aead0c692d09a2\"}, {\"id\": \"codec-holdout-037\", \"status\": \"ok\", \"value\": [128, 186, 148, 174, 173, 12, 105, 45, 9, 162]}, {\"id\": \"codec-holdout-038\", \"status\": \"ok\", \"value\": \"72099332C9B135852CA2C3\"}, {\"id\": \"codec-holdout-039\", \"status\": \"ok\", \"value\": [114, 9, 147, 50, 201, 177, 53, 133, 44, 162, 195]}, {\"id\": \"codec-holdout-040\", \"status\": \"ok\", \"value\": \"8aad268d\"}, {\"id\": \"codec-holdout-041\", \"status\": \"ok\", \"value\": [138, 173, 38, 141]}, {\"id\": \"codec-holdout-042\", \"status\": \"ok\", \"value\": \"316EE34C88053B2594DCF5767E461991\"}, {\"id\": \"codec-holdout-043\", \"status\": \"ok\", \"value\": [49, 110, 227, 76, 136, 5, 59, 37, 148, 220, 245, 118, 126, 70, 25, 145]}, {\"id\": \"codec-holdout-044\", \"status\": \"ok\", \"value\": \"\"}, {\"id\": \"codec-holdout-045\", \"status\": \"ok\", \"value\": []}, {\"id\": \"codec-holdout-046\", \"status\": \"ok\", \"value\": \"6681F2DF344C\"}, {\"id\": \"codec-holdout-047\", \"status\": \"ok\", \"value\": [102, 129, 242, 223, 52, 76]}, {\"id\": \"codec-holdout-048\", \"status\": \"ok\", \"value\": \"b0a58b8f41398433bb8fbcf4e27d3ba4eb236145b69d40e2\"}, {\"id\": \"codec-holdout-049\", \"status\": \"ok\", \"value\": [176, 165, 139, 143, 65, 57, 132, 51, 187, 143, 188, 244, 226, 125, 59, 164, 235, 35, 97, 69, 182, 157, 64, 226]}, {\"id\": \"codec-holdout-050\", \"status\": \"ok\", \"value\": \"C4\"}, {\"id\": \"codec-holdout-051\", \"status\": \"ok\", \"value\": [196]}, {\"id\": \"codec-holdout-052\", \"status\": \"ok\", \"value\": \"55a9a18b18a423ee774833cd901f\"}, {\"id\": \"codec-holdout-053\", \"status\": \"ok\", \"value\": [85, 169, 161, 139, 24, 164, 35, 238, 119, 72, 51, 205, 144, 31]}, {\"id\": \"codec-holdout-054\", \"status\": \"ok\", \"value\": \"FFA71E2A72679BAE23\"}, {\"id\": \"codec-holdout-055\", \"status\": \"ok\", \"value\": [255, 167, 30, 42, 114, 103, 155, 174, 35]}, {\"id\": \"codec-holdout-056\", \"status\": \"ok\", \"value\": \"0e\"}, {\"id\": \"codec-holdout-057\", \"status\": \"ok\", \"value\": [14]}, {\"id\": \"codec-holdout-058\", \"status\": \"ok\", \"value\": \"E11C93523AC70397DB20697B49C28E\"}, {\"id\": \"codec-holdout-059\", \"status\": \"ok\", \"value\": [225, 28, 147, 82, 58, 199, 3, 151, 219, 32, 105, 123, 73, 194, 142]}, {\"id\": \"codec-holdout-060\", \"status\": \"ok\", \"value\": \"8725d5b9cc5d1820d7d37bbac267bb\"}, {\"id\": \"codec-holdout-061\", \"status\": \"ok\", \"value\": [135, 37, 213, 185, 204, 93, 24, 32, 215, 211, 123, 186, 194, 103, 187]}, {\"id\": \"codec-holdout-062\", \"status\": \"ok\", \"value\": \"4D694FEA0CDD761008496F8B49B491CF547F0E624C50B9AF\"}, {\"id\": \"codec-holdout-063\", \"status\": \"ok\", \"value\": [77, 105, 79, 234, 12, 221, 118, 16, 8, 73, 111, 139, 73, 180, 145, 207, 84, 127, 14, 98, 76, 80, 185, 175]}, {\"id\": \"codec-holdout-064\", \"status\": \"ok\", \"value\": [10]}, {\"id\": \"codec-holdout-065\", \"status\": \"ok\", \"value\": [175]}, {\"id\": \"codec-holdout-066\", \"status\": \"ok\", \"value\": [31]}, {\"id\": \"codec-holdout-067\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-holdout-068\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-holdout-069\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-holdout-070\", \"status\": \"ok\", \"value\": [47]}, {\"id\": \"codec-holdout-071\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-holdout-072\", \"status\": \"ok\", \"value\": [1]}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T00:32:48.535985006Z",
+      "FinishedAt": "2026-11-18T00:32:48.684831006Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:54c0ce3e47f4a7fb67363b0171a77d65bd3518edf90e9453f2b6d9f73ec09ad7",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

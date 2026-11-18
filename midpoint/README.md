@@ -10,6 +10,12 @@ repair was attempted. See [results](EXPERIMENT_RESULTS.md) and the
 Python suite passes 87 tests; the five upstream Java tests, isolation suite,
 and Commons CLI qualification also pass.
 
+**Later Codec-only result:** Three Gemini 3.5 Flash Hex translations completed;
+none passed every withheld case in both runtimes. Across those trials, CPython
+passed 212/219 withheld case-trial observations and GraalPy passed 199/219.
+One visible-guided repair returned the identical candidate. See the
+[three-trial evidence](EXPERIMENT_RESULTS.md#three-commons-codec-trials-with-gemini-35-flash).
+
 **November 15 integration:** Commons CLI and the experiment branch are combined.
 Both rebuilt container runtimes pass stateful qualification (160 final checks)
 and the expanded string fixtures (946 checks). All 85 Python tests, five Java

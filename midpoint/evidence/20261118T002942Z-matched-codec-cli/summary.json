@@ -1,0 +1,465 @@
+{
+  "study": "matched_codec_hex_vs_commons_cli",
+  "model": "gemini-3.5-flash",
+  "thinking": "low",
+  "trials_per_task": 3,
+  "max_repairs": 1,
+  "max_output_tokens_per_call": 8192,
+  "token_cap": 360000,
+  "spend_cap_usd": 1.0,
+  "cli_suite_sha256": "1d0ed958176392eb3f6bb5099bf15d6976826e4d3840eb93f506f23c0d4535c4",
+  "codec_suite_sha256": "51c4654d45c4f9946f091fdb0b10e1c25a5af42ab6aca36933a7bcf6d7c6e3be",
+  "tasks": {
+    "commons_codec_hex": {
+      "trials": [
+        {
+          "trial": 0,
+          "status": "completed",
+          "baseline_full_pass": false,
+          "final_full_pass": false,
+          "repair_attempts": 0,
+          "baseline_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 16,
+              "total": 16
+            }
+          },
+          "final_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 16,
+              "total": 16
+            }
+          },
+          "baseline_holdout": {
+            "cpython": {
+              "passed": 72,
+              "total": 73
+            },
+            "graal": {
+              "passed": 68,
+              "total": 73
+            }
+          },
+          "final_holdout": {
+            "cpython": {
+              "passed": 72,
+              "total": 73
+            },
+            "graal": {
+              "passed": 68,
+              "total": 73
+            }
+          },
+          "error": null
+        },
+        {
+          "trial": 1,
+          "status": "completed",
+          "baseline_full_pass": false,
+          "final_full_pass": false,
+          "repair_attempts": 0,
+          "baseline_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 16,
+              "total": 16
+            }
+          },
+          "final_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 16,
+              "total": 16
+            }
+          },
+          "baseline_holdout": {
+            "cpython": {
+              "passed": 70,
+              "total": 73
+            },
+            "graal": {
+              "passed": 66,
+              "total": 73
+            }
+          },
+          "final_holdout": {
+            "cpython": {
+              "passed": 70,
+              "total": 73
+            },
+            "graal": {
+              "passed": 66,
+              "total": 73
+            }
+          },
+          "error": null
+        },
+        {
+          "trial": 2,
+          "status": "completed",
+          "baseline_full_pass": false,
+          "final_full_pass": false,
+          "repair_attempts": 1,
+          "baseline_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 14,
+              "total": 16
+            }
+          },
+          "final_visible": {
+            "cpython": {
+              "passed": 16,
+              "total": 16
+            },
+            "graal": {
+              "passed": 14,
+              "total": 16
+            }
+          },
+          "baseline_holdout": {
+            "cpython": {
+              "passed": 70,
+              "total": 73
+            },
+            "graal": {
+              "passed": 65,
+              "total": 73
+            }
+          },
+          "final_holdout": {
+            "cpython": {
+              "passed": 70,
+              "total": 73
+            },
+            "graal": {
+              "passed": 65,
+              "total": 73
+            }
+          },
+          "error": null
+        }
+      ],
+      "baseline_successes": 0,
+      "final_successes": 0,
+      "completed_trials": 3
+    },
+    "commons_cli": {
+      "trials": [
+        {
+          "trial": 0,
+          "status": "error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": {
+            "type": "BackendError",
+            "message": "Model response not completed: MAX_TOKENS"
+          }
+        },
+        {
+          "trial": 1,
+          "status": "error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": {
+            "type": "BackendError",
+            "message": "Model response not completed: MAX_TOKENS"
+          }
+        },
+        {
+          "trial": 2,
+          "status": "completed",
+          "baseline_full_pass": false,
+          "final_full_pass": false,
+          "repair_attempts": 0,
+          "baseline_visible": {
+            "cpython": {
+              "passed": 0,
+              "total": 20
+            },
+            "graal": {
+              "passed": 0,
+              "total": 20
+            }
+          },
+          "final_visible": {
+            "cpython": {
+              "passed": 0,
+              "total": 20
+            },
+            "graal": {
+              "passed": 0,
+              "total": 20
+            }
+          },
+          "baseline_holdout": {
+            "cpython": {
+              "passed": 0,
+              "total": 60
+            },
+            "graal": {
+              "passed": 0,
+              "total": 60
+            }
+          },
+          "final_holdout": {
+            "cpython": {
+              "passed": 0,
+              "total": 60
+            },
+            "graal": {
+              "passed": 0,
+              "total": 60
+            }
+          },
+          "error": null
+        }
+      ],
+      "baseline_successes": 0,
+      "final_successes": 0,
+      "completed_trials": 1
+    }
+  },
+  "accounting": {
+    "generation_requests": 8,
+    "token_count_requests": 8,
+    "reserved_tokens": 259156,
+    "known_used_tokens": 220374,
+    "usage_unknown_calls": 0,
+    "spend": {
+      "limit_usd": 1.0,
+      "accounted_usd": 0.6621345,
+      "input_usd_per_million": 1.5,
+      "output_usd_per_million": 9.0,
+      "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+      "calls": [
+        {
+          "reserved_usd": 0.092086125,
+          "accounted_usd": 0.012009375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 1581,
+            "output_tokens": 1005,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 1581,
+              "candidatesTokenCount": 1005,
+              "totalTokenCount": 2586,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 1581
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.39638925,
+          "accounted_usd": 0.14892375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 40186,
+            "output_tokens": 8175,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 40186,
+              "candidatesTokenCount": 8175,
+              "totalTokenCount": 48361,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 40186
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.092086125,
+          "accounted_usd": 0.010560375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 1581,
+            "output_tokens": 844,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 1581,
+              "candidatesTokenCount": 844,
+              "totalTokenCount": 2425,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 1581
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.39638925,
+          "accounted_usd": 0.14892375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 40186,
+            "output_tokens": 8175,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 40186,
+              "candidatesTokenCount": 8175,
+              "totalTokenCount": 48361,
+              "cachedContentTokenCount": 38141,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 40186
+                }
+              ],
+              "cacheTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 38141
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.092086125,
+          "accounted_usd": 0.009804375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 1581,
+            "output_tokens": 760,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 1581,
+              "candidatesTokenCount": 760,
+              "totalTokenCount": 2341,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 1581
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.096723,
+          "accounted_usd": 0.0114285,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 2404,
+            "output_tokens": 769,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 2404,
+              "candidatesTokenCount": 769,
+              "totalTokenCount": 3173,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 2404
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.39638925,
+          "accounted_usd": 0.13867275,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 40186,
+            "output_tokens": 7036,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 40186,
+              "candidatesTokenCount": 7036,
+              "totalTokenCount": 47222,
+              "cachedContentTokenCount": 38141,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 40186
+                }
+              ],
+              "cacheTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 38141
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        },
+        {
+          "reserved_usd": 0.513792375,
+          "accounted_usd": 0.181811625,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 57731,
+            "output_tokens": 8174,
+            "thinking_tokens": 5394,
+            "provider_usage": {
+              "promptTokenCount": 57731,
+              "candidatesTokenCount": 2780,
+              "totalTokenCount": 65905,
+              "cachedContentTokenCount": 38201,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 57731
+                }
+              ],
+              "cacheTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 38201
+                }
+              ],
+              "thoughtsTokenCount": 5394,
+              "serviceTier": "standard"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 211.913
+}

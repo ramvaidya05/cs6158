@@ -1,5 +1,38 @@
 # Current checkpoint — November 17, 2026
 
+## Three Commons Codec trials with Gemini 3.5 Flash
+
+The [checksummed November 18 UTC cohort](evidence/20261118T002942Z-matched-codec-cli/summary.json)
+completed **three independent Commons Codec Hex translations** with Gemini 3.5
+Flash, low thinking, at most 8,192 output tokens per call, and one visible-guided
+repair opportunity per trial. It reused the pinned 16-visible/73-withheld Java
+oracle suite and scored CPython and GraalPy after freezing selections. Full task
+parity was **0/3** at baseline and final selection. Visible observations were
+48/48 in CPython and 46/48 in GraalPy; withheld observations were **212/219
+(96.8%) in CPython** and **199/219 (90.9%) in GraalPy**. These denominators are
+case-trial observations over the same 73 withheld inputs, not 219 independent
+inputs. Trials 0 and 1 passed all visible cases, so no repair was triggered.
+Trial 2 had two GraalPy visible failures; its one repair call returned an
+identical candidate and was rejected as no improvement.
+
+The four Codec generation calls used **7,147 input and 3,378 output tokens**
+(10,525 total; zero reported thinking tokens). Conservative Codec-only
+accounting at the study's $1.50/M input and $9/M output rates is **$0.043803**;
+this is an estimate, not a provider bill. The shared cohort also made CLI calls
+before the user narrowed scope; its CLI arm completed only 1/3 trials and does
+not provide a matched CLI accuracy comparison. No further CLI calls were made
+after that instruction. An earlier zero-generation [token-count preflight
+attempt](evidence/20261118T002833Z-matched-codec-cli/summary.json) failed due
+an invalid request wrapper; it is retained as infrastructure evidence, not
+counted as a translation trial.
+
+Unicode decoding explains most remaining errors. The candidates treat Python
+Unicode code points differently from Java UTF-16 code units, and they call
+`unicodedata.digit`, which is present in the pinned CPython container but absent
+in the pinned GraalPy container. An isolated local probe confirmed that API
+difference. The source and complete per-case mismatches are in the cohort
+archive; withheld cases did not enter model prompts.
+
 ## Capped live Apache Commons Codec pilot
 
 The [Commons Codec Hex pilot](evidence/20261117T232219Z-codec-hex-pilot/summary.json)

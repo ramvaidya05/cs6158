@@ -1,0 +1,30 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = list(\"0123456789abcdef\")\nDIGITS_UPPER = list(\"0123456789ABCDEF\")\n\ndef _char_digit_16(ch):\n    if len(ch) != 1:\n        return -1\n    code = ord(ch)\n    if 0x30 <= code <= 0x39:\n        return code - 0x30\n    if 0x61 <= code <= 0x66:\n        return code - 0x61 + 10\n    if 0x41 <= code <= 0x46:\n        return code - 0x41 + 10\n    try:\n        val = unicodedata.digit(ch)\n        if 0 <= val <= 9:\n            return val\n    except (ValueError, TypeError):\n        pass\n    return -1\n\ndef _to_digit(ch, index):\n    digit = _char_digit_16(ch)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character 0x{ord(ch) & 0xFF:02X} at index {index:,d}.\")\n    return digit\n\ndef decode_hex(data):\n    if len(data) % 2 != 0:\n        raise ValueError(f\"Odd number of characters {len(data):,d}.\")\n    out = bytearray(len(data) >> 1)\n    j = 0\n    for i in range(len(out)):\n        f = _to_digit(data[j], j) << 4\n        j += 1\n        f |= _to_digit(data[j], j)\n        j += 1\n        out[i] = f & 0xFF\n    return list(out)\n\ndef encode_hex_string(data, to_lower_case=True):\n    to_digits = DIGITS_LOWER if to_lower_case else DIGITS_UPPER\n    out = []\n    for b in data:\n        out.append(to_digits[(0xF0 & b) >> 4])\n        out.append(to_digits[0x0F & b])\n    return \"\".join(out)\n\ndef run(operation, data, lower=True):\n    if operation == \"encode\":\n        return encode_hex_string(data, lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "This Python module mirrors the pinned Apache Commons Codec Hex class behavior. It defines `run(operation, data, lower=True)` to handle encoding lists of unsigned byte integers to hexadecimal strings and decoding hexadecimal strings to lists of unsigned byte integers. `Character.digit(ch, 16)` behavior is replicated in Python using ascii/latin range checks combined with `unicodedata.digit()` to handle non-ASCII Unicode digits correctly. Appropriate `ValueError` exceptions are raised on odd-length input or invalid hex digits matching Java's exception logic.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "1vH8aqnGE-qho_UPpMv4iAQ",
+    "usage": {
+      "input_tokens": 1581,
+      "output_tokens": 760,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1581,
+        "candidatesTokenCount": 760,
+        "totalTokenCount": 2341,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1581
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 4.72
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']\nDIGITS_UPPER = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']\n\ndef _character_digit(ch: str, radix: int = 16) -> int:\n    if len(ch) != 1:\n        return -1\n    code = ord(ch)\n    if 0x30 <= code <= 0x39:  # '0'-'9'\n        val = code - 0x30\n    elif 0x61 <= code <= 0x7A:  # 'a'-'z'\n        val = code - 0x61 + 10\n    elif 0x41 <= code <= 0x5A:  # 'A'-'Z'\n        val = code - 0x41 + 10\n    elif 0xFF10 <= code <= 0xFF19:  # Fullwidth '0'-'9'\n        val = code - 0xFF10\n    elif 0xFF41 <= code <= 0xFF5A:  # Fullwidth 'a'-'z'\n        val = code - 0xFF41 + 10\n    elif 0xFF21 <= code <= 0xFF3A:  # Fullwidth 'A'-'Z'\n        val = code - 0xFF21 + 10\n    else:\n        try:\n            val = unicodedata.digit(ch)\n        except (ValueError, TypeError):\n            return -1\n    return val if val < radix else -1\n\ndef to_digit(ch: str, index: int) -> int:\n    digit = _character_digit(ch, 16)\n    if digit == -1:\n        code_val = ord(ch) & 0xFF if len(ch) == 1 else 0\n        raise ValueError(f\"Illegal hexadecimal character {ch} at index {index}\")\n    return digit\n\ndef encode_hex(data: list, to_lower_case: bool = True) -> str:\n    digits = DIGITS_LOWER if to_lower_case else DIGITS_UPPER\n    out = []\n    for byte in data:\n        byte = byte & 0xFF\n        out.append(digits[(0xF0 & byte) >> 4])\n        out.append(digits[0x0F & byte])\n    return \"\".join(out)\n\ndef decode_hex(data: str) -> list:\n    if (len(data) & 1) != 0:\n        raise ValueError(f\"Odd number of characters {len(data)}.\")\n    out = []\n    j = 0\n    while j < len(data):\n        f = to_digit(data[j], j) << 4\n        j += 1\n        f |= to_digit(data[j], j)\n        j += 1\n        out.append(f & 0xFF)\n    return out\n\ndef run(operation: str, data, lower: bool = True):\n    if operation == \"encode\":\n        return encode_hex(data, lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "This Python module mirrors the pinned Apache Commons Codec 1.22.1 `Hex` implementation. It provides encoding of byte sequences to hexadecimal strings (with optional case sensitivity) and decoding of hexadecimal strings to byte lists. Java's `Character.digit(ch, 16)` behavior for radix 16 (including fullwidth and Unicode digit fallback support) is implemented in `_character_digit`. `run` serves as the entry point dispatching 'encode' and 'decode' operations, raising `ValueError` on odd-length strings or invalid hex digits.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "fPH8au3VNM7MytMPueGBuQM",
+    "usage": {
+      "input_tokens": 1581,
+      "output_tokens": 1005,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1581,
+        "candidatesTokenCount": 1005,
+        "totalTokenCount": 2586,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1581
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 5.66
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "codec-visible-000",
+      "status": "ok",
+      "value": ""
+    },
+    {
+      "id": "codec-visible-001",
+      "status": "ok",
+      "value": ""
+    },
+    {
+      "id": "codec-visible-002",
+      "status": "ok",
+      "value": "00"
+    },
+    {
+      "id": "codec-visible-003",
+      "status": "ok",
+      "value": "FF"
+    },
+    {
+      "id": "codec-visible-004",
+      "status": "ok",
+      "value": "000f107f80ff"
+    },
+    {
+      "id": "codec-visible-005",
+      "status": "ok",
+      "value": "01ABCD"
+    },
+    {
+      "id": "codec-visible-006",
+      "status": "ok",
+      "value": []
+    },
+    {
+      "id": "codec-visible-007",
+      "status": "ok",
+      "value": [
+        0
+      ]
+    },
+    {
+      "id": "codec-visible-008",
+      "status": "ok",
+      "value": [
+        255
+      ]
+    },
+    {
+      "id": "codec-visible-009",
+      "status": "ok",
+      "value": [
+        255
+      ]
+    },
+    {
+      "id": "codec-visible-010",
+      "status": "ok",
+      "value": [
+        15,
+        16,
+        255
+      ]
+    },
+    {
+      "id": "codec-visible-011",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-visible-012",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-visible-013",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-visible-014",
+      "status": "exception",
+      "type": "DecoderException"
+    },
+    {
+      "id": "codec-visible-015",
+      "status": "exception",
+      "type": "DecoderException"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-0e09e5ff1057410a857079cc1ca153c9",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-gr2m8yub/candidate.py,dst=/candidate.py,readonly",
+      "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.224108,
+    "stdout": "[{\"id\": \"codec-visible-000\", \"status\": \"ok\", \"value\": \"\"}, {\"id\": \"codec-visible-001\", \"status\": \"ok\", \"value\": \"\"}, {\"id\": \"codec-visible-002\", \"status\": \"ok\", \"value\": \"00\"}, {\"id\": \"codec-visible-003\", \"status\": \"ok\", \"value\": \"FF\"}, {\"id\": \"codec-visible-004\", \"status\": \"ok\", \"value\": \"000f107f80ff\"}, {\"id\": \"codec-visible-005\", \"status\": \"ok\", \"value\": \"01ABCD\"}, {\"id\": \"codec-visible-006\", \"status\": \"ok\", \"value\": []}, {\"id\": \"codec-visible-007\", \"status\": \"ok\", \"value\": [0]}, {\"id\": \"codec-visible-008\", \"status\": \"ok\", \"value\": [255]}, {\"id\": \"codec-visible-009\", \"status\": \"ok\", \"value\": [255]}, {\"id\": \"codec-visible-010\", \"status\": \"ok\", \"value\": [15, 16, 255]}, {\"id\": \"codec-visible-011\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-visible-012\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-visible-013\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-visible-014\", \"status\": \"exception\", \"type\": \"DecoderException\"}, {\"id\": \"codec-visible-015\", \"status\": \"exception\", \"type\": \"DecoderException\"}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T00:31:32.757329888Z",
+      "FinishedAt": "2026-11-18T00:31:32.867462763Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:54c0ce3e47f4a7fb67363b0171a77d65bd3518edf90e9453f2b6d9f73ec09ad7",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}
