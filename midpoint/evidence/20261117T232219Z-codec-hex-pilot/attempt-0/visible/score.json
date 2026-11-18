@@ -1,0 +1,14 @@
+{
+  "cpython": {
+    "status": "completed",
+    "passed": 16,
+    "total": 16,
+    "failures": []
+  },
+  "graal": {
+    "status": "completed",
+    "passed": 16,
+    "total": 16,
+    "failures": []
+  }
+}

@@ -15,6 +15,39 @@ class BackendError(RuntimeError):
         self.details = details
 
 
+class AvailabilityGuard:
+    """Stop an unattended batch after bounded provider failures, without retrying."""
+    def __init__(self, backend, failure_limit=3):
+        if type(failure_limit) is not int or failure_limit < 1:
+            raise ValueError("Provider failure limit must be a positive integer")
+        self.backend, self.failure_limit = backend, failure_limit
+        self.budget = getattr(backend, "budget", None)
+        self.identity = {**backend.identity, "availability_policy": {
+            "consecutive_failure_limit": failure_limit, "automatic_retries": 0}}
+        self.consecutive_failures = 0
+        self.stop = None
+
+    def generate(self, *args, **kwargs):
+        if self.stop:
+            raise BackendError("Provider circuit is open; no request sent", "provider_circuit_open")
+        try:
+            response = self.backend.generate(*args, **kwargs)
+        except BackendError as exc:
+            permanent = exc.kind in ("authentication", "access_denied", "quota", "budget", "model_changed")
+            unavailable = (exc.kind in ("timeout", "transport", "rate_limit") or
+                           (exc.kind == "http_error" and exc.details.get("http_status", 0) >= 500))
+            self.consecutive_failures = self.consecutive_failures + 1 if unavailable else 0
+            if permanent or self.consecutive_failures >= self.failure_limit:
+                self.stop = {"reason": "provider_unavailable" if unavailable else exc.kind,
+                             "trigger_kind": exc.kind,
+                             "consecutive_failures": self.consecutive_failures,
+                             "http_status": exc.details.get("http_status"),
+                             "policy": self.identity["availability_policy"]}
+            raise
+        self.consecutive_failures = 0
+        return response
+
+
 class ReplayBackend:
     def __init__(self, manifest):
         self.path = Path(manifest).resolve()

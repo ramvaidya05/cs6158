@@ -1,0 +1,125 @@
+{
+  "study": "matched_codec_hex_vs_commons_cli",
+  "model": "gemini-3.5-flash",
+  "thinking": "low",
+  "trials_per_task": 3,
+  "max_repairs": 1,
+  "max_output_tokens_per_call": 8192,
+  "token_cap": 360000,
+  "spend_cap_usd": 1.0,
+  "cli_suite_sha256": "8a4cdb221eec7936586a2cc465c736a9e47693f422971c7126921707b4d7ed6a",
+  "codec_suite_sha256": "51c4654d45c4f9946f091fdb0b10e1c25a5af42ab6aca36933a7bcf6d7c6e3be",
+  "tasks": {
+    "commons_codec_hex": {
+      "trials": [
+        {
+          "trial": 0,
+          "status": "model_error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": null
+        },
+        {
+          "trial": 1,
+          "status": "model_error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": null
+        },
+        {
+          "trial": 2,
+          "status": "model_error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": null
+        }
+      ],
+      "baseline_successes": 0,
+      "final_successes": 0,
+      "completed_trials": 0
+    },
+    "commons_cli": {
+      "trials": [
+        {
+          "trial": 0,
+          "status": "error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": {
+            "type": "HTTPError",
+            "message": "HTTP Error 400: Bad Request"
+          }
+        },
+        {
+          "trial": 1,
+          "status": "error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": {
+            "type": "HTTPError",
+            "message": "HTTP Error 400: Bad Request"
+          }
+        },
+        {
+          "trial": 2,
+          "status": "error",
+          "baseline_full_pass": null,
+          "final_full_pass": null,
+          "repair_attempts": 0,
+          "baseline_visible": {},
+          "final_visible": {},
+          "baseline_holdout": {},
+          "final_holdout": {},
+          "error": {
+            "type": "HTTPError",
+            "message": "HTTP Error 400: Bad Request"
+          }
+        }
+      ],
+      "baseline_successes": 0,
+      "final_successes": 0,
+      "completed_trials": 0
+    }
+  },
+  "accounting": {
+    "generation_requests": 0,
+    "token_count_requests": 0,
+    "reserved_tokens": 0,
+    "known_used_tokens": 0,
+    "usage_unknown_calls": 0,
+    "spend": {
+      "limit_usd": 1.0,
+      "accounted_usd": 0,
+      "input_usd_per_million": 1.5,
+      "output_usd_per_million": 9.0,
+      "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+      "calls": []
+    }
+  },
+  "elapsed_seconds": 24.501
+}

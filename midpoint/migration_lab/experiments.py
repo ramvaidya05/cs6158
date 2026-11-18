@@ -4,7 +4,7 @@ import math
 from pathlib import Path
 import shutil
 import time
-from .backends import InitialResponseBackend
+from .backends import InitialResponseBackend, AvailabilityGuard
 from .controller import run_task, score_selected
 from .environment import EnvironmentAgent
 from .isolation import ContainerExecutor
@@ -42,7 +42,7 @@ def usage_at(directory):
     live = manifest.exists() and json.loads(manifest.read_text())["backend"]["provenance"] == "live_model"
     for path in sorted((directory / "attempts").glob("*/backend-error.json")):
         error = json.loads(path.read_text())
-        if not live or error.get("kind") == "budget":
+        if not live or error.get("kind") in ("budget", "provider_circuit_open"):
             continue
         counts["model_calls"] += 1
         raw = error.get("raw_response")
@@ -55,7 +55,47 @@ def usage_at(directory):
     return counts
 
 
-def aggregate(directory, output_path=None):
+def summarize_arms(records, runtimes, arm_names=ARMS):
+    arms = {}
+    for arm in arm_names:
+        group = [r for r in records if r["arm"] == arm]
+        passed = sum(r["validated"] for r in group)
+        completed = sum(r["status"] == "completed" for r in group)
+        summary = {"tasks_passing": passed, "admitted_task_trials": len(group),
+                   "completed_task_trials": completed,
+                   "repair_budget_blocked_trials": sum(r.get("repair_budget_blocked", False) for r in group),
+                   "task_pass_rate": passed / len(group) if group else None,
+                   "pass_rate_among_completed": passed / completed if completed else None,
+                   "descriptive_wilson_95": wilson(passed, len(group)), "runtimes": {}}
+        for mode in runtimes:
+            summary["runtimes"][mode] = {}
+            for split in ("visible", "holdout"):
+                rows = [r["runtimes"][mode][split] for r in group]
+                total = sum(r["total"] for r in rows)
+                count = sum(r["passed"] for r in rows)
+                summary["runtimes"][mode][split] = {"passed": count, "total": total,
+                    "rate": count / total if total else None,
+                    "unvalidated": sum(r["unvalidated"] for r in rows)}
+        arms[arm] = summary
+    return arms
+
+
+def repair_opportunities(records, pairs, arm_names=ARMS):
+    initials = [r for r in records if r["arm"] == "one_shot"]
+    observed = [r for r in initials if r["status"] == "completed"]
+    eligible = [r for r in observed if r["visible_all_pass"] is False]
+    return {"admitted_initials": len(initials), "completed_initials": len(observed),
+            "initials_with_visible_failures": len(eligible),
+            "initials_passing_visible": sum(r["visible_all_pass"] is True for r in observed),
+            "arms": {arm: {
+                "eligible_pairs_completed": sum(p["comparable"] and p["repair_eligible"] for p in pairs if p["arm"] == arm),
+                "eligible_pairs_fully_recovered": sum(p["comparable"] and p["repair_eligible"] and p["final_validated"] for p in pairs if p["arm"] == arm),
+                "pairs_with_holdout_regression": sum(p["comparable"] and any(d < 0 for d in p["holdout_delta_percentage_points"].values()) for p in pairs if p["arm"] == arm),
+            } for arm in arm_names if arm != "one_shot"},
+            "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."}
+
+
+def aggregate(directory, output_path=None, *, persist=True):
     plan = json.loads((directory / "experiment.json").read_text())
     records = []
     for item in plan["planned_runs"]:
@@ -64,6 +104,8 @@ def aggregate(directory, output_path=None):
         state = json.loads(path.read_text()) if path.exists() else {"status": "not_run"}
         record = {**item, "status": state["status"], "validated": bool(state.get("validated", False)) and state["status"] == "completed",
                   "stop_reason": state.get("stop_reason"), "error": state.get("error"),
+                  "not_run_reason": state.get("not_run_reason"),
+                  "visible_all_pass": state.get("selected_visible", {}).get("all_pass"),
                   "attempts": len(state.get("attempts", [])),
                   "repair_attempts": max(0, len(state.get("attempts", [])) - 1),
                   "code_repairs": sum(a.get("status") == "evaluated" for a in state.get("attempts", [])[1:]),
@@ -83,29 +125,15 @@ def aggregate(directory, output_path=None):
                                  "unvalidated": 0 if valid and observed["status"] == "completed" else count}
             record["runtimes"][mode] = scores
         records.append(record)
-    arms = {}
-    for arm in plan.get("arms", ARMS):
-        group = [r for r in records if r["arm"] == arm]
-        passed = sum(r["validated"] for r in group)
-        arms[arm] = {"tasks_passing": passed, "admitted_task_trials": len(group),
-                     "task_pass_rate": passed / len(group) if group else None,
-                     "descriptive_wilson_95": wilson(passed, len(group)),
-                     "repair_budget_blocked_trials": sum(r["repair_budget_blocked"] for r in group),
-                     "runtimes": {}}
-        for mode in plan["runtimes"]:
-            arms[arm]["runtimes"][mode] = {}
-            for split in ("visible", "holdout"):
-                rows = [r["runtimes"][mode][split] for r in group]
-                total = sum(r["total"] for r in rows)
-                count = sum(r["passed"] for r in rows)
-                arms[arm]["runtimes"][mode][split] = {"passed": count, "total": total,
-                    "rate": count / total if total else None,
-                    "unvalidated": sum(r["unvalidated"] for r in rows)}
+    arms = summarize_arms(records, plan["runtimes"], plan.get("arms", ARMS))
     pairs = []
     for initial in (r for r in records if r["arm"] == "one_shot"):
         for arm in (a for a in plan.get("arms", ARMS) if a != "one_shot"):
             selected = next(r for r in records if r["trial"] == initial["trial"] and r["task"] == initial["task"] and r["arm"] == arm)
             pairs.append({"trial": initial["trial"], "task": initial["task"], "arm": arm,
+                          "comparable": initial["status"] == selected["status"] == "completed",
+                          "repair_eligible": initial["status"] == "completed" and initial["visible_all_pass"] is False,
+                          "final_validated": selected["validated"],
                           "task_success_delta": int(selected["validated"]) - int(initial["validated"]),
                           "repair_budget_blocked": selected["repair_budget_blocked"],
                           "holdout_delta_percentage_points": {mode: 100 * (selected["runtimes"][mode]["holdout"]["rate"] - initial["runtimes"][mode]["holdout"]["rate"]) for mode in plan["runtimes"]}})
@@ -113,8 +141,14 @@ def aggregate(directory, output_path=None):
               "measurement_status": "evaluated" if any(r["status"] == "completed" for r in records) else "no_completed_evaluations",
               "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
               "arms": arms, "paired_changes": pairs, "runs": records,
+              "repair_opportunities": repair_opportunities(records, pairs, plan.get("arms", ARMS)),
+              "by_task": {task: {"arms": summarize_arms([r for r in records if r["task"] == task], plan["runtimes"], plan.get("arms", ARMS)),
+                  "repair_opportunities": repair_opportunities([r for r in records if r["task"] == task],
+                                                               [p for p in pairs if p["task"] == task], plan.get("arms", ARMS))}
+                  for task in sorted({r["task"] for r in records})},
               "usage": {key: sum(r["usage"][key] for r in records) for key in ("model_calls", "input_tokens", "output_tokens", "usage_unknown_calls")}}
-    save_json(output_path or directory / "summary.json", result)
+    if persist:
+        save_json(output_path or directory / "summary.json", result)
     return result
 
 
@@ -141,7 +175,7 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
         raise ValueError("Feedback ablation requires Commons CLI and a healthy environment")
     if trials < 1 or trials > 100 or not 0 <= max_repairs <= 5:
         raise ValueError("Trials must be 1..100 and repairs 0..5")
-    if len(set(tasks)) != len(tasks) or any(t not in suite.identity()["counts"] for t in tasks):
+    if not tasks or len(set(tasks)) != len(tasks) or any(t not in suite.identity()["counts"] for t in tasks):
         raise ValueError("Unknown or repeated task")
     planned = [{"trial": trial, "task": task, "arm": arm,
                 "path": f"trial-{trial:03}/{task}/{arm}"}
@@ -149,6 +183,8 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
     if budget_policy == "partitioned" and getattr(backend, "budget", None):
         from .budget import PartitionedBudget
         backend.budget = PartitionedBudget(backend.budget, planned, max_repairs, max_output_tokens)
+    if backend.identity.get("provenance") == "live_model":
+        backend = AvailabilityGuard(backend)
     directory = directory or new_run("experiment")
     directory.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(suite.path, directory / "evaluation-suite.json")
@@ -160,7 +196,7 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
             "fault": fault, "protected_hashes": protected_hashes(),
             "settings": {"timeout": timeout, "max_seconds": max_seconds,
                          "max_output_tokens": max_output_tokens, "output_token_budget": output_token_budget},
-            "pairing": "One fresh initial generation per task/trial, reused verbatim in both repair arms; "
+            "pairing": "One initial response per task/trial (fresh only for live_model), reused verbatim in both repair arms; "
                        "every selection freezes before any holdout scoring. Stress fault affects both repair arms; one-shot is healthy."}
     save_json(directory / "experiment.json", plan)
     for item in planned:
@@ -177,6 +213,11 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
                 execution_arms = (arms[0], *reversed(arms[1:])) if (feedback_ablation or memory_ablation) and trial % 2 else arms
                 for arm in execution_arms:
                     folder = base / arm
+                    if getattr(backend, "stop", None):
+                        save_json(directory / "provider-stop.json", backend.stop)
+                        save_json(folder / "result.json", {"status": "not_run", "task": task,
+                                  "not_run_reason": "provider_circuit_open", "stop_reason": backend.stop["reason"]})
+                        continue
                     started = time.monotonic()
                     try:
                         if budget_policy == "partitioned" and getattr(backend, "budget", None):
@@ -214,5 +255,7 @@ def run_experiment(backend, suite, *, tasks=("levenshtein",), trials=3, max_repa
             if str(folder) in environments:
                 score_selected(folder, environments[str(folder)], suite)
     finally:
+        if getattr(backend, "stop", None):
+            save_json(directory / "provider-stop.json", backend.stop)
         aggregate(directory)
     return directory, aggregate(directory)

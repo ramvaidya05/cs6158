@@ -1,0 +1,263 @@
+{
+  "provenance": "synthetic_semantic_mutations",
+  "status": "completed",
+  "controls": {
+    "levenshtein": {
+      "passed": 332,
+      "total": 332,
+      "all_pass": true
+    },
+    "normalized": {
+      "passed": 300,
+      "total": 300,
+      "all_pass": true
+    },
+    "jaro_winkler": {
+      "passed": 314,
+      "total": 314,
+      "all_pass": true
+    }
+  },
+  "mutations": {
+    "levenshtein_codepoints": {
+      "task": "levenshtein",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 24,
+            "mismatched": 2
+          },
+          "holdout": {
+            "total": 140,
+            "passed": 92,
+            "mismatched": 48
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 24,
+            "mismatched": 2
+          },
+          "holdout": {
+            "total": 140,
+            "passed": 92,
+            "mismatched": 48
+          }
+        }
+      }
+    },
+    "levenshtein_ignores_limit": {
+      "task": "levenshtein",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 22,
+            "mismatched": 4
+          },
+          "holdout": {
+            "total": 140,
+            "passed": 109,
+            "mismatched": 31
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 22,
+            "mismatched": 4
+          },
+          "holdout": {
+            "total": 140,
+            "passed": 109,
+            "mismatched": 31
+          }
+        }
+      }
+    },
+    "normalized_codepoints": {
+      "task": "normalized",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 24,
+            "mismatched": 2
+          },
+          "holdout": {
+            "total": 124,
+            "passed": 32,
+            "mismatched": 92
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 24,
+            "mismatched": 2
+          },
+          "holdout": {
+            "total": 124,
+            "passed": 32,
+            "mismatched": 92
+          }
+        }
+      }
+    },
+    "normalized_minimum_length": {
+      "task": "normalized",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 13,
+            "mismatched": 13
+          },
+          "holdout": {
+            "total": 124,
+            "passed": 59,
+            "mismatched": 65
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 13,
+            "mismatched": 13
+          },
+          "holdout": {
+            "total": 124,
+            "passed": 59,
+            "mismatched": 65
+          }
+        }
+      }
+    },
+    "jaro_binary64": {
+      "task": "jaro_winkler",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 18,
+            "mismatched": 8
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 28,
+            "mismatched": 103
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 18,
+            "mismatched": 8
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 28,
+            "mismatched": 103
+          }
+        }
+      }
+    },
+    "jaro_prefix_cap_four": {
+      "task": "jaro_winkler",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 25,
+            "mismatched": 1
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 84,
+            "mismatched": 47
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 25,
+            "mismatched": 1
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 84,
+            "mismatched": 47
+          }
+        }
+      }
+    },
+    "jaro_fractional_transpositions": {
+      "task": "jaro_winkler",
+      "status": "evaluated",
+      "runtimes": {
+        "cpython": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 26,
+            "mismatched": 0
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 101,
+            "mismatched": 30
+          }
+        },
+        "graal": {
+          "execution_status": "completed",
+          "detected": true,
+          "visible": {
+            "total": 26,
+            "passed": 26,
+            "mismatched": 0
+          },
+          "holdout": {
+            "total": 131,
+            "passed": 101,
+            "mismatched": 30
+          }
+        }
+      }
+    }
+  },
+  "detected_in_both_runtimes": 7,
+  "admitted_mutations": 7
+}

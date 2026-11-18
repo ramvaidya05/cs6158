@@ -1,0 +1,10 @@
+[
+  {
+    "id": "preflight",
+    "task": "levenshtein",
+    "a": "",
+    "b": "",
+    "operation": "distance",
+    "parameter": null
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "task": "commons_codec_hex",
+  "trial": 2,
+  "status": "model_error",
+  "attempts": [
+    {
+      "attempt": 0,
+      "error": {
+        "kind": "HTTPError",
+        "message": "HTTP Error 400: Bad Request"
+      }
+    }
+  ]
+}

@@ -1,0 +1,876 @@
+[
+  {
+    "id": "codec-holdout-000",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      246,
+      178,
+      136,
+      240,
+      244
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-001",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "F6B288F0F4",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-002",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      56,
+      70,
+      86,
+      221,
+      120,
+      165
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-003",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "384656dd78a5",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-004",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      54,
+      78,
+      77,
+      12,
+      57,
+      94,
+      66,
+      101
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-005",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "364e4d0c395e4265",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-006",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      251,
+      75,
+      17,
+      238,
+      251,
+      108,
+      70,
+      171,
+      98,
+      98
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-007",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "FB4B11EEFB6C46AB6262",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-008",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      63,
+      228,
+      21,
+      197,
+      96,
+      228,
+      207,
+      52,
+      13,
+      102,
+      240,
+      46,
+      75,
+      56,
+      189,
+      10,
+      155,
+      180,
+      237,
+      243,
+      27
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-009",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "3fe415c560e4cf340d66f02e4b38bd0a9bb4edf31b",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-010",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      86,
+      203,
+      93,
+      28,
+      45,
+      134,
+      236,
+      196,
+      89,
+      13,
+      104
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-011",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "56cb5d1c2d86ecc4590d68",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-012",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      48,
+      209,
+      78,
+      231,
+      26,
+      38,
+      208,
+      43,
+      202,
+      134,
+      239,
+      74
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-013",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "30D14EE71A26D02BCA86EF4A",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-014",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-015",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-016",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      191,
+      120,
+      30,
+      176,
+      191,
+      22,
+      249,
+      40,
+      35,
+      252,
+      234,
+      55,
+      70
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-017",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "bf781eb0bf16f92823fcea3746",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-018",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      55,
+      247,
+      139,
+      94,
+      228,
+      237,
+      68,
+      63,
+      196,
+      212
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-019",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "37F78B5EE4ED443FC4D4",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-020",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      96
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-021",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "60",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-022",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      25,
+      238,
+      7,
+      27,
+      113,
+      80,
+      159,
+      126,
+      6,
+      16,
+      61,
+      90
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-023",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "19ee071b71509f7e06103d5a",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-024",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      214,
+      147,
+      216,
+      105,
+      56,
+      184,
+      48,
+      166,
+      119,
+      140,
+      117,
+      54,
+      38,
+      205,
+      89,
+      113
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-025",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "D693D86938B830A6778C753626CD5971",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-026",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      120,
+      70,
+      174,
+      91,
+      33,
+      71,
+      191,
+      48,
+      107
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-027",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "7846ae5b2147bf306b",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-028",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      15,
+      212,
+      18,
+      146,
+      71,
+      24,
+      134,
+      217,
+      163
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-029",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "0fd41292471886d9a3",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-030",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      223,
+      244,
+      97,
+      101,
+      139,
+      28
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-031",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "DFF461658B1C",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-032",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      64,
+      199,
+      15,
+      88,
+      144,
+      109,
+      182,
+      42,
+      250,
+      253,
+      21
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-033",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "40c70f58906db62afafd15",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-034",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      110,
+      54,
+      252,
+      234,
+      22,
+      219,
+      255,
+      130,
+      43,
+      189,
+      86,
+      149,
+      190,
+      238,
+      144,
+      3,
+      43,
+      49,
+      111,
+      103,
+      38,
+      248,
+      153
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-035",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "6e36fcea16dbff822bbd5695beee90032b316f6726f899",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-036",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      128,
+      186,
+      148,
+      174,
+      173,
+      12,
+      105,
+      45,
+      9,
+      162
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-037",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "80BA94AEAD0C692D09A2",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-038",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      114,
+      9,
+      147,
+      50,
+      201,
+      177,
+      53,
+      133,
+      44,
+      162,
+      195
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-039",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "72099332c9b135852ca2c3",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-040",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      138,
+      173,
+      38,
+      141
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-041",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "8aad268d",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-042",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      49,
+      110,
+      227,
+      76,
+      136,
+      5,
+      59,
+      37,
+      148,
+      220,
+      245,
+      118,
+      126,
+      70,
+      25,
+      145
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-043",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "316EE34C88053B2594DCF5767E461991",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-044",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-045",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-046",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      102,
+      129,
+      242,
+      223,
+      52,
+      76
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-047",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "6681f2df344c",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-048",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      176,
+      165,
+      139,
+      143,
+      65,
+      57,
+      132,
+      51,
+      187,
+      143,
+      188,
+      244,
+      226,
+      125,
+      59,
+      164,
+      235,
+      35,
+      97,
+      69,
+      182,
+      157,
+      64,
+      226
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-049",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "B0A58B8F41398433BB8FBCF4E27D3BA4EB236145B69D40E2",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-050",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      196
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-051",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "c4",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-052",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      85,
+      169,
+      161,
+      139,
+      24,
+      164,
+      35,
+      238,
+      119,
+      72,
+      51,
+      205,
+      144,
+      31
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-053",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "55a9a18b18a423ee774833cd901f",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-054",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      255,
+      167,
+      30,
+      42,
+      114,
+      103,
+      155,
+      174,
+      35
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-055",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "FFA71E2A72679BAE23",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-056",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      14
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-057",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "0e",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-058",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      225,
+      28,
+      147,
+      82,
+      58,
+      199,
+      3,
+      151,
+      219,
+      32,
+      105,
+      123,
+      73,
+      194,
+      142
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-059",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "e11c93523ac70397db20697b49c28e",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-060",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      135,
+      37,
+      213,
+      185,
+      204,
+      93,
+      24,
+      32,
+      215,
+      211,
+      123,
+      186,
+      194,
+      103,
+      187
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-061",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "8725D5B9CC5D1820D7D37BBAC267BB",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-062",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      77,
+      105,
+      79,
+      234,
+      12,
+      221,
+      118,
+      16,
+      8,
+      73,
+      111,
+      139,
+      73,
+      180,
+      145,
+      207,
+      84,
+      127,
+      14,
+      98,
+      76,
+      80,
+      185,
+      175
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-holdout-063",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "4d694fea0cdd761008496f8b49b491cf547f0e624c50b9af",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-064",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\uff10\uff21",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-065",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\uff21\uff46",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-066",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\u0661f",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-067",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "0f0",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-068",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "0g",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-069",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\u00e90",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-070",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\ud835\udfd0f",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-071",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "f\u0000",
+    "lower": true
+  },
+  {
+    "id": "codec-holdout-072",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\u0660\u0661",
+    "lower": true
+  }
+]

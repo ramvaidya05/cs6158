@@ -1,0 +1,235 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-visible-000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-002",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-003",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-004",
+      "status": "ok",
+      "value": 0.2539682388305664
+    },
+    {
+      "id": "jaro_winkler-visible-005",
+      "status": "ok",
+      "value": 0.02592595219612126
+    },
+    {
+      "id": "jaro_winkler-visible-006",
+      "status": "ok",
+      "value": 0.1333333492279053
+    },
+    {
+      "id": "jaro_winkler-visible-007",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-009",
+      "status": "ok",
+      "value": 0.01388886570930481
+    },
+    {
+      "id": "jaro_winkler-visible-010",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-011",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-012",
+      "status": "ok",
+      "value": 0.4166666865348816
+    },
+    {
+      "id": "jaro_winkler-visible-013",
+      "status": "ok",
+      "value": 0.3333333134651184
+    },
+    {
+      "id": "jaro_winkler-visible-014",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-015",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "s1 must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 14, in evaluate_candidate\n  File \"candidate.py\", line 94, in run\n  File \"candidate.py\", line 50, in distance\n  File \"candidate.py\", line 23, in similarity\nValueError: s1 must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "s2 must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 14, in evaluate_candidate\n  File \"candidate.py\", line 94, in run\n  File \"candidate.py\", line 50, in distance\n  File \"candidate.py\", line 25, in similarity\nValueError: s2 must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-018",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "s1 must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 14, in evaluate_candidate\n  File \"candidate.py\", line 94, in run\n  File \"candidate.py\", line 50, in distance\n  File \"candidate.py\", line 23, in similarity\nValueError: s1 must not be null\n"
+    },
+    {
+      "id": "jaro_winkler-visible-019",
+      "status": "ok",
+      "value": 0.03888890743255613
+    },
+    {
+      "id": "jaro_winkler-visible-020",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-021",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-022",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-023",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-024",
+      "status": "ok",
+      "value": 0.7460317611694336
+    },
+    {
+      "id": "jaro_winkler-visible-025",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "s1 must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 14, in evaluate_candidate\n  File \"candidate.py\", line 96, in run\n  File \"candidate.py\", line 23, in similarity\nValueError: s1 must not be null\n"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-fb1c059f18fd4d108b7c853209f38366",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-32nkojov/candidate.py,dst=/candidate.py,readonly",
+      "sha256:21c8ded7d3606b2c34c7e0871e5629e08432e00278e15a54f0c402612fe2c407",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.61638,
+    "stdout": "[{\"id\": \"jaro_winkler-visible-000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-001\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-002\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-003\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-004\", \"status\": \"ok\", \"value\": 0.2539682388305664}, {\"id\": \"jaro_winkler-visible-005\", \"status\": \"ok\", \"value\": 0.02592595219612126}, {\"id\": \"jaro_winkler-visible-006\", \"status\": \"ok\", \"value\": 0.1333333492279053}, {\"id\": \"jaro_winkler-visible-007\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-008\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-009\", \"status\": \"ok\", \"value\": 0.01388886570930481}, {\"id\": \"jaro_winkler-visible-010\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-011\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-012\", \"status\": \"ok\", \"value\": 0.4166666865348816}, {\"id\": \"jaro_winkler-visible-013\", \"status\": \"ok\", \"value\": 0.3333333134651184}, {\"id\": \"jaro_winkler-visible-014\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-015\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"s1 must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 14, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 94, in run\\n  File \\\"candidate.py\\\", line 50, in distance\\n  File \\\"candidate.py\\\", line 23, in similarity\\nValueError: s1 must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"s2 must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 14, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 94, in run\\n  File \\\"candidate.py\\\", line 50, in distance\\n  File \\\"candidate.py\\\", line 25, in similarity\\nValueError: s2 must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-018\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"s1 must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 14, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 94, in run\\n  File \\\"candidate.py\\\", line 50, in distance\\n  File \\\"candidate.py\\\", line 23, in similarity\\nValueError: s1 must not be null\\n\"}, {\"id\": \"jaro_winkler-visible-019\", \"status\": \"ok\", \"value\": 0.03888890743255613}, {\"id\": \"jaro_winkler-visible-020\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-021\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-022\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"jaro_winkler-visible-023\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"jaro_winkler-visible-024\", \"status\": \"ok\", \"value\": 0.7460317611694336}, {\"id\": \"jaro_winkler-visible-025\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"s1 must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 14, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 96, in run\\n  File \\\"candidate.py\\\", line 23, in similarity\\nValueError: s1 must not be null\\n\"}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-17T22:39:37.268740668Z",
+      "FinishedAt": "2026-11-17T22:39:41.81933892Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:7fdc648cf79c7dda1062359460084debaeb8e15c4655c66bb4490158ae225571",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:21c8ded7d3606b2c34c7e0871e5629e08432e00278e15a54f0c402612fe2c407",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

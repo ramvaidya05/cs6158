@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "observations": {
+    "cpython/healthy": {
+      "route": "pass",
+      "execution_status": "completed",
+      "comparison_passed": true
+    },
+    "cpython/syntax": {
+      "route": "candidate_syntax",
+      "execution_status": "syntax_error",
+      "comparison_passed": null
+    },
+    "cpython/exception": {
+      "route": "candidate_exception",
+      "execution_status": "completed",
+      "comparison_passed": null
+    },
+    "cpython/wrong_value": {
+      "route": "candidate_semantics",
+      "execution_status": "completed",
+      "comparison_passed": false
+    },
+    "graal/healthy": {
+      "route": "pass",
+      "execution_status": "completed",
+      "comparison_passed": true
+    },
+    "graal/syntax": {
+      "route": "candidate_syntax",
+      "execution_status": "syntax_error",
+      "comparison_passed": null
+    },
+    "graal/exception": {
+      "route": "candidate_exception",
+      "execution_status": "completed",
+      "comparison_passed": null
+    },
+    "graal/wrong_value": {
+      "route": "candidate_semantics",
+      "execution_status": "completed",
+      "comparison_passed": false
+    },
+    "graal/cache_denial": {
+      "route": "environment",
+      "execution_status": "execution_error"
+    },
+    "graal/cache_repaired": {
+      "route": "pass",
+      "execution_status": "completed",
+      "action": {
+        "action": "use_ephemeral_graal_cache",
+        "before": {
+          "backend": "docker",
+          "images": {
+            "cpython": {
+              "id": "sha256:7fdc648cf79c7dda1062359460084debaeb8e15c4655c66bb4490158ae225571",
+              "tag": "migration-lab-cpython:v1",
+              "architecture": "arm64",
+              "os": "linux"
+            },
+            "graal": {
+              "id": "sha256:21c8ded7d3606b2c34c7e0871e5629e08432e00278e15a54f0c402612fe2c407",
+              "tag": "migration-lab-graal:v1",
+              "architecture": "arm64",
+              "os": "linux"
+            }
+          },
+          "network": "none",
+          "read_only": true,
+          "user": "65532:65532",
+          "cpus": 1,
+          "memory_mb": {
+            "cpython": 256,
+            "graal": 1536
+          },
+          "pids": 128,
+          "tmpfs_mb": {
+            "cpython": 64,
+            "graal": 512
+          },
+          "output_bytes_per_stream": 2000000,
+          "fault": "graal-cache",
+          "graal_cache": "/unwritable/graalvm"
+        },
+        "after": {
+          "backend": "docker",
+          "images": {
+            "cpython": {
+              "id": "sha256:7fdc648cf79c7dda1062359460084debaeb8e15c4655c66bb4490158ae225571",
+              "tag": "migration-lab-cpython:v1",
+              "architecture": "arm64",
+              "os": "linux"
+            },
+            "graal": {
+              "id": "sha256:21c8ded7d3606b2c34c7e0871e5629e08432e00278e15a54f0c402612fe2c407",
+              "tag": "migration-lab-graal:v1",
+              "architecture": "arm64",
+              "os": "linux"
+            }
+          },
+          "network": "none",
+          "read_only": true,
+          "user": "65532:65532",
+          "cpus": 1,
+          "memory_mb": {
+            "cpython": 256,
+            "graal": 1536
+          },
+          "pids": 128,
+          "tmpfs_mb": {
+            "cpython": 64,
+            "graal": 512
+          },
+          "output_bytes_per_stream": 2000000,
+          "fault": "graal-cache",
+          "graal_cache": "/tmp/graalvm"
+        },
+        "reason": "Trusted preflight reports cache write denial"
+      }
+    }
+  },
+  "candidate_hashes": {
+    "healthy": "8fac5c7d342d004eb2ed60e5555ade4c7bfb397eb0ef1dec64be60fb58fb1ea1",
+    "syntax": "41849082b4fd5ae1e2155838a40c2c846b30a07e5c224ebbccd0c6c1074892b9",
+    "exception": "586ea2819f589882e80b061a2724d32c7ba50b5a16be9f590db77216c14a447e",
+    "wrong_value": "310816ebc9ff042b983ec9193954a1dd85a31211abfe8d9779308c68c2004af1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "error",
+  "task": "jaro_winkler",
+  "validated": false,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Initial generation failed; paired arm remains unvalidated"
+  },
+  "elapsed_seconds": 0.1666020000120625
+}

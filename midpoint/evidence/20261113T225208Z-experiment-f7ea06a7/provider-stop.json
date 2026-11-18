@@ -1,0 +1,10 @@
+{
+  "reason": "budget",
+  "trigger_kind": "budget",
+  "consecutive_failures": 0,
+  "http_status": null,
+  "policy": {
+    "consecutive_failure_limit": 3,
+    "automatic_retries": 0
+  }
+}

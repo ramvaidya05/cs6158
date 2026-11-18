@@ -1,0 +1,2011 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "commons_cli-holdout-000-metadata-alias",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-001-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-002-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-003-long",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-004-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-005-empty-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-006-repeated-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-007-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-008-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-009-stop-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-010-stop-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-011-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-012-missing-argument",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-013-missing-before-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-014-negative-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-015-attached-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-016-burst",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-017-reuse-parser",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-018-required-missing",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-019-required-present",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-020-metadata-alias",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-021-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-022-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-023-long",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-024-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-025-empty-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-026-repeated-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-027-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-028-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-029-stop-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-030-stop-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-031-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-032-missing-argument",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-033-missing-before-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-034-negative-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-035-attached-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-036-burst",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-037-reuse-parser",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-038-required-missing",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-039-required-present",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-040-metadata-alias",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-041-empty",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-042-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-043-long",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-044-equals",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-045-empty-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-046-repeated-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-047-terminator",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-048-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-049-stop-positional",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-050-stop-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-051-unknown",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-052-missing-argument",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-053-missing-before-option",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-054-negative-value",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-055-attached-short",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-056-burst",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-057-reuse-parser",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-058-required-missing",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    },
+    {
+      "id": "commons_cli-holdout-059-required-present",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "exception",
+          "type": "AttributeError"
+        }
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-056afc3c9c604261ae459fd5c4938283",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-r775gnja/candidate.py,dst=/candidate.py,readonly",
+      "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.187675,
+    "stdout": "[{\"id\": \"commons_cli-holdout-000-metadata-alias\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-001-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-002-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-003-long\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-004-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-005-empty-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-006-repeated-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-007-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-008-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-009-stop-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-010-stop-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-011-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-012-missing-argument\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-013-missing-before-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-014-negative-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-015-attached-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-016-burst\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-017-reuse-parser\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-018-required-missing\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-019-required-present\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-020-metadata-alias\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-021-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-022-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-023-long\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-024-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-025-empty-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-026-repeated-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-027-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-028-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-029-stop-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-030-stop-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-031-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-032-missing-argument\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-033-missing-before-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-034-negative-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-035-attached-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-036-burst\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-037-reuse-parser\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-038-required-missing\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-039-required-present\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-040-metadata-alias\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-041-empty\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-042-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-043-long\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-044-equals\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-045-empty-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-046-repeated-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-047-terminator\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-048-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-049-stop-positional\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-050-stop-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-051-unknown\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-052-missing-argument\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-053-missing-before-option\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-054-negative-value\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-055-attached-short\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-056-burst\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-057-reuse-parser\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-058-required-missing\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}, {\"id\": \"commons_cli-holdout-059-required-present\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"flag\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"value\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"options\"}}, {\"step\": 3, \"status\": \"exception\", \"type\": \"AttributeError\"}]}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T00:33:08.929845085Z",
+      "FinishedAt": "2026-11-18T00:33:09.053141543Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:84251c5fe6ed059884ab87908641d886ecf0ef511a9bf27b4f5725ac3eb16997",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:54c0ce3e47f4a7fb67363b0171a77d65bd3518edf90e9453f2b6d9f73ec09ad7",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

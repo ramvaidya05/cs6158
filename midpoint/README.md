@@ -1,15 +1,50 @@
 # Environment-in-the-Loop Translation — midpoint prototype
 
+**November 17 checkpoint:** Main now includes both the partner's live Commons
+CLI repair study and the experiment branch. The CLI study passed 2/3 one-shot
+trials and 3/3 after code repair. A new capped Commons Codec Hex pilot passed
+70/73 withheld cases in CPython and 73/73 in GraalPy with one Gemini 3.5
+Flash-Lite call (2,028 reported tokens); its visible cases all passed, so no
+repair was attempted. See [results](EXPERIMENT_RESULTS.md) and the
+[Codec protocol](EXPERIMENTS.md#capped-commons-codec-hex-pilot). The merged
+Python suite passes 87 tests; the five upstream Java tests, isolation suite,
+and Commons CLI qualification also pass.
+
+**Later Codec-only result:** Three Gemini 3.5 Flash Hex translations completed;
+none passed every withheld case in both runtimes. Across those trials, CPython
+passed 212/219 withheld case-trial observations and GraalPy passed 199/219.
+One visible-guided repair returned the identical candidate. See the
+[three-trial evidence](EXPERIMENT_RESULTS.md#three-commons-codec-trials-with-gemini-35-flash).
+
+**November 15 integration:** Commons CLI and the experiment branch are combined.
+Both rebuilt container runtimes pass stateful qualification (160 final checks)
+and the expanded string fixtures (946 checks). All 85 Python tests, five Java
+tests, and 11 isolation tests pass. The first live Commons CLI request returned
+HTTP 503; no new live accuracy or repair effectiveness is claimed. See the latest
+[results](EXPERIMENT_RESULTS.md) and [archive index](reports/20261115-experiment-history.md).
+
 A small, executable Java-to-Python translation/repair research harness. It has
 separate Migration, Environment, and Testsuite roles, coordinated by a bounded
 controller. Only Migration uses a model; Environment and Testsuite are deterministic.
 
-**Current status:** disposable container execution, frozen evaluation sets, paired
+**Earlier checkpoint:** disposable container execution, frozen evaluation sets, paired
 trial aggregation, and a bounded cache-remediation policy are implemented. The
 expanded fixture check passes 946 runtime checks. A live Levenshtein study with
 Gemini 3.8 Flash (free tier) passed 3/3 trials: every one-shot translation matched
 all 26 visible and 140 withheld cases in both CPython and GraalPy, so no repair was
 needed. An earlier GPT-5.6 Sol attempt returned HTTP 429 and remains unvalidated.
+On November 11, the fixed three-task expansion produced no candidates because
+of Gemini timeouts/service failures; every admitted trial is retained. Reporting
+now includes per-task accuracy and repair opportunities, and live batches stop
+after repeated provider failures. A separate recorded-Gemini check demonstrated
+autonomous cache recovery and all 332 Levenshtein runtime checks passing, with
+zero new model calls. On November 13, two further fixed batches produced only
+timeouts; the budget and availability guards preserved unrun trials. A new
+synthetic semantic-fault experiment detected 7/7 faults in both runtimes while
+all 946 control checks passed. One fault escaped every visible case and failed
+only withheld cases, exposing a repair-feedback limitation. Current Python tests:
+66 passing. The eight-archive [experiment history](reports/20261113-experiment-history.md)
+is verified and generated without modifying archived evidence.
 See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) for the numbers and [EXPERIMENTS.md](EXPERIMENTS.md) for the current workflow.
 The original midpoint replay and its evidence remain below for reproduction.
 

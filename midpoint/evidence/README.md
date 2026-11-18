@@ -1,5 +1,28 @@
 # Midpoint evidence
 
+November 17 new-key evidence:
+
+- `20261117T223414Z-gemini-access-probe-cc067a33`: repository-free generation
+  completed; confirms the locally configured key can generate with Gemini 3.8 Flash.
+- `20261117T223433Z-experiment-a13e1401`: fixed three-trial JaroWinkler study;
+  one translation passed all 314 runtime checks, one hit its output-token cap,
+  and one response was interrupted. No repair was triggered.
+
+`20261117T223101Z-failure-routing-dece3254/` contains the November 17
+controlled routing experiment: ten expected observations in both isolated
+runtimes, including a trusted GraalPy cache denial and bounded correction.
+This is synthetic taxonomy qualification, not live translation accuracy.
+
+November 15 integration archives:
+
+- `20261115T182047Z-commons-cli-qualification-46ae0253`: first verification of
+  the partner's stateful fixture/repair flow in both rebuilt containers; all
+  40 visible and 120 withheld final checks pass.
+- `20261115T182050Z-isolation-verification-4ee64300`: 85 unit tests, 11 Docker
+  isolation tests, and 946 string fixture checks pass after integration.
+- `20261115T182158Z-experiment-a0ba9f7f`: one live Commons CLI initial request,
+  HTTP 503, no generated candidate; paired outcomes remain unvalidated.
+
 `20261019T214029Z-verification-1aee5b7b/` is the completed acceptance archive.
 Its summary records three synthetic replay tasks, 138 task/case combinations,
 276 passing final runtime checks, and five passing upstream JUnit test methods.
@@ -28,3 +51,30 @@ Gemini 3.8 Flash Levenshtein study (`20261019T225222Z-experiment-b8857705`, 3/3
 trials passing every case), an excluded integrity-invalidated attempt of that
 study (`20261019T224716Z-experiment-5942d812`), and a separately labeled synthetic
 environment-remediation experiment. Failed and invalidated runs are retained.
+
+November 11 additions:
+
+- `20261111T232307Z-experiment-6d8f99ec`: fixed three-task live Gemini batch;
+  no generated candidates, provider timeouts/503/transport failures and a final
+  budget stop. Every admitted task/trial remains in the report.
+- `20261112T014417Z-gemini-diagnosis-ce6c3e0d`: tiny repository-free generation
+  timeout, with a retained conservative spend reservation.
+- `20261112T014615Z-recorded-gemini-stress-f10fc0f9`: unchanged archived Gemini
+  candidate; healthy and autonomously repaired environments pass all cases;
+  fixed environment fails the injected cache fault. Zero fresh model calls.
+
+Directory timestamps are UTC; the latter two were November 11 in New York.
+
+November 13 additions:
+
+- `20261113T225208Z-experiment-f7ea06a7`: six admitted task/trials, two timeout
+  calls, then a reservation-budget stop; no generated candidates.
+- `20261113T235626Z-experiment-78be7f18`: six admitted task/trials, three timeout
+  calls, then an automatic provider-availability stop; no generated candidates.
+- `20261114T000258Z-semantic-sensitivity-27e8061d`: seven predeclared synthetic
+  mutations detected in both runtimes and 946/946 correct-control checks passing.
+  One mutation escaped visible tests but failed withheld scoring. No model calls.
+
+The [experiment history](../reports/20261113-experiment-history.md) verifies and
+compares all eight translation experiment archives without rewriting them.
+Synthetic sensitivity evidence is separate from translation pass-rate reporting.

@@ -1,0 +1,867 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "normalized-visible-000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-001",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-002",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-003",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-004",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-005",
+      "status": "ok",
+      "value": 0.2222222222222222
+    },
+    {
+      "id": "normalized-visible-006",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-007",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-009",
+      "status": "ok",
+      "value": 0.09090909090909091
+    },
+    {
+      "id": "normalized-visible-010",
+      "status": "ok",
+      "value": 2.0
+    },
+    {
+      "id": "normalized-visible-011",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-visible-012",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-013",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-014",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-015",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-016",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-017",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-018",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-visible-019",
+      "status": "ok",
+      "value": 0.3333333333333333
+    },
+    {
+      "id": "normalized-visible-020",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-021",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-022",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-023",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-visible-024",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-visible-025",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-evaluation-0001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0002",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0003",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0004",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0005",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0006",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0007",
+      "status": "exception",
+      "type": "ValueError",
+      "message": "Strings must not be null",
+      "trace": "Traceback (most recent call last):\n  File \"Unnamed\", line 12, in <module>\n  File \"candidate.py\", line 11, in run\nValueError: Strings must not be null\n"
+    },
+    {
+      "id": "normalized-evaluation-0008",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-evaluation-0009",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0010",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-evaluation-0011",
+      "status": "ok",
+      "value": 0.5
+    },
+    {
+      "id": "normalized-evaluation-0012",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0013",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-evaluation-0014",
+      "status": "ok",
+      "value": 2.0
+    },
+    {
+      "id": "normalized-evaluation-0015",
+      "status": "ok",
+      "value": -1.0
+    },
+    {
+      "id": "normalized-evaluation-0016",
+      "status": "ok",
+      "value": 1.5
+    },
+    {
+      "id": "normalized-evaluation-0017",
+      "status": "ok",
+      "value": -0.5
+    },
+    {
+      "id": "normalized-evaluation-0018",
+      "status": "ok",
+      "value": 0.015625
+    },
+    {
+      "id": "normalized-evaluation-0019",
+      "status": "ok",
+      "value": 0.984375
+    },
+    {
+      "id": "normalized-evaluation-0020",
+      "status": "ok",
+      "value": 0.10526315789473684
+    },
+    {
+      "id": "normalized-evaluation-0021",
+      "status": "ok",
+      "value": 0.8947368421052632
+    },
+    {
+      "id": "normalized-evaluation-0022",
+      "status": "ok",
+      "value": 0.025
+    },
+    {
+      "id": "normalized-evaluation-0023",
+      "status": "ok",
+      "value": 0.975
+    },
+    {
+      "id": "normalized-evaluation-0024",
+      "status": "ok",
+      "value": -0.34615384615384626
+    },
+    {
+      "id": "normalized-evaluation-0025",
+      "status": "ok",
+      "value": 0.06451612903225806
+    },
+    {
+      "id": "normalized-evaluation-0026",
+      "status": "ok",
+      "value": -0.3076923076923077
+    },
+    {
+      "id": "normalized-evaluation-0027",
+      "status": "ok",
+      "value": 0.10526315789473684
+    },
+    {
+      "id": "normalized-evaluation-0028",
+      "status": "ok",
+      "value": -1.4666666666666668
+    },
+    {
+      "id": "normalized-evaluation-0029",
+      "status": "ok",
+      "value": 0.02127659574468085
+    },
+    {
+      "id": "normalized-evaluation-0030",
+      "status": "ok",
+      "value": -16.0
+    },
+    {
+      "id": "normalized-evaluation-0031",
+      "status": "ok",
+      "value": 0.16666666666666666
+    },
+    {
+      "id": "normalized-evaluation-0032",
+      "status": "ok",
+      "value": -0.5833333333333333
+    },
+    {
+      "id": "normalized-evaluation-0033",
+      "status": "ok",
+      "value": 0.025
+    },
+    {
+      "id": "normalized-evaluation-0034",
+      "status": "ok",
+      "value": -0.9259259259259258
+    },
+    {
+      "id": "normalized-evaluation-0035",
+      "status": "ok",
+      "value": 0.07692307692307693
+    },
+    {
+      "id": "normalized-evaluation-0036",
+      "status": "ok",
+      "value": -0.3125
+    },
+    {
+      "id": "normalized-evaluation-0037",
+      "status": "ok",
+      "value": 0.2
+    },
+    {
+      "id": "normalized-evaluation-0038",
+      "status": "ok",
+      "value": -9.25
+    },
+    {
+      "id": "normalized-evaluation-0039",
+      "status": "ok",
+      "value": 0.07407407407407407
+    },
+    {
+      "id": "normalized-evaluation-0040",
+      "status": "ok",
+      "value": -0.6666666666666667
+    },
+    {
+      "id": "normalized-evaluation-0041",
+      "status": "ok",
+      "value": 0.0196078431372549
+    },
+    {
+      "id": "normalized-evaluation-0042",
+      "status": "ok",
+      "value": -19.666666666666668
+    },
+    {
+      "id": "normalized-evaluation-0043",
+      "status": "ok",
+      "value": 0.1
+    },
+    {
+      "id": "normalized-evaluation-0044",
+      "status": "ok",
+      "value": -1.8421052631578947
+    },
+    {
+      "id": "normalized-evaluation-0045",
+      "status": "ok",
+      "value": 0.02
+    },
+    {
+      "id": "normalized-evaluation-0046",
+      "status": "ok",
+      "value": -32.5
+    },
+    {
+      "id": "normalized-evaluation-0047",
+      "status": "ok",
+      "value": 0.022727272727272728
+    },
+    {
+      "id": "normalized-evaluation-0048",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0049",
+      "status": "ok",
+      "value": 0.0425531914893617
+    },
+    {
+      "id": "normalized-evaluation-0050",
+      "status": "ok",
+      "value": -0.7333333333333334
+    },
+    {
+      "id": "normalized-evaluation-0051",
+      "status": "ok",
+      "value": 0.05263157894736842
+    },
+    {
+      "id": "normalized-evaluation-0052",
+      "status": "ok",
+      "value": -2.111111111111111
+    },
+    {
+      "id": "normalized-evaluation-0053",
+      "status": "ok",
+      "value": 0.03225806451612903
+    },
+    {
+      "id": "normalized-evaluation-0054",
+      "status": "ok",
+      "value": 0.09999999999999998
+    },
+    {
+      "id": "normalized-evaluation-0055",
+      "status": "ok",
+      "value": 0.06666666666666667
+    },
+    {
+      "id": "normalized-evaluation-0056",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0057",
+      "status": "ok",
+      "value": 0.3333333333333333
+    },
+    {
+      "id": "normalized-evaluation-0058",
+      "status": "ok",
+      "value": -0.0714285714285714
+    },
+    {
+      "id": "normalized-evaluation-0059",
+      "status": "ok",
+      "value": 0.3333333333333333
+    },
+    {
+      "id": "normalized-evaluation-0060",
+      "status": "ok",
+      "value": 0.06896551724137934
+    },
+    {
+      "id": "normalized-evaluation-0061",
+      "status": "ok",
+      "value": 0.018518518518518517
+    },
+    {
+      "id": "normalized-evaluation-0062",
+      "status": "ok",
+      "value": -5.6
+    },
+    {
+      "id": "normalized-evaluation-0063",
+      "status": "ok",
+      "value": 0.016129032258064516
+    },
+    {
+      "id": "normalized-evaluation-0064",
+      "status": "ok",
+      "value": -1.8823529411764706
+    },
+    {
+      "id": "normalized-evaluation-0065",
+      "status": "ok",
+      "value": 0.02702702702702703
+    },
+    {
+      "id": "normalized-evaluation-0066",
+      "status": "ok",
+      "value": -4.5
+    },
+    {
+      "id": "normalized-evaluation-0067",
+      "status": "ok",
+      "value": 0.015384615384615385
+    },
+    {
+      "id": "normalized-evaluation-0068",
+      "status": "ok",
+      "value": -0.5333333333333334
+    },
+    {
+      "id": "normalized-evaluation-0069",
+      "status": "ok",
+      "value": 0.015625
+    },
+    {
+      "id": "normalized-evaluation-0070",
+      "status": "ok",
+      "value": 0.09999999999999998
+    },
+    {
+      "id": "normalized-evaluation-0071",
+      "status": "ok",
+      "value": 0.024390243902439025
+    },
+    {
+      "id": "normalized-evaluation-0072",
+      "status": "ok",
+      "value": -7.125
+    },
+    {
+      "id": "normalized-evaluation-0073",
+      "status": "ok",
+      "value": 0.0136986301369863
+    },
+    {
+      "id": "normalized-evaluation-0074",
+      "status": "ok",
+      "value": -0.22222222222222232
+    },
+    {
+      "id": "normalized-evaluation-0075",
+      "status": "ok",
+      "value": 0.02040816326530612
+    },
+    {
+      "id": "normalized-evaluation-0076",
+      "status": "ok",
+      "value": -1.2941176470588234
+    },
+    {
+      "id": "normalized-evaluation-0077",
+      "status": "ok",
+      "value": 0.030303030303030304
+    },
+    {
+      "id": "normalized-evaluation-0078",
+      "status": "ok",
+      "value": -3.5
+    },
+    {
+      "id": "normalized-evaluation-0079",
+      "status": "ok",
+      "value": 0.03076923076923077
+    },
+    {
+      "id": "normalized-evaluation-0080",
+      "status": "ok",
+      "value": -3.153846153846154
+    },
+    {
+      "id": "normalized-evaluation-0081",
+      "status": "ok",
+      "value": 0.014285714285714285
+    },
+    {
+      "id": "normalized-evaluation-0082",
+      "status": "ok",
+      "value": -0.5185185185185186
+    },
+    {
+      "id": "normalized-evaluation-0083",
+      "status": "ok",
+      "value": 0.017543859649122806
+    },
+    {
+      "id": "normalized-evaluation-0084",
+      "status": "ok",
+      "value": 0.12727272727272732
+    },
+    {
+      "id": "normalized-evaluation-0085",
+      "status": "ok",
+      "value": 0.14285714285714285
+    },
+    {
+      "id": "normalized-evaluation-0086",
+      "status": "ok",
+      "value": -0.027027027027026973
+    },
+    {
+      "id": "normalized-evaluation-0087",
+      "status": "ok",
+      "value": 0.015625
+    },
+    {
+      "id": "normalized-evaluation-0088",
+      "status": "ok",
+      "value": 0.030303030303030276
+    },
+    {
+      "id": "normalized-evaluation-0089",
+      "status": "ok",
+      "value": 0.2
+    },
+    {
+      "id": "normalized-evaluation-0090",
+      "status": "ok",
+      "value": 0.16000000000000003
+    },
+    {
+      "id": "normalized-evaluation-0091",
+      "status": "ok",
+      "value": 0.3333333333333333
+    },
+    {
+      "id": "normalized-evaluation-0092",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0093",
+      "status": "ok",
+      "value": 0.043478260869565216
+    },
+    {
+      "id": "normalized-evaluation-0094",
+      "status": "ok",
+      "value": -4.090909090909091
+    },
+    {
+      "id": "normalized-evaluation-0095",
+      "status": "ok",
+      "value": 0.019230769230769232
+    },
+    {
+      "id": "normalized-evaluation-0096",
+      "status": "ok",
+      "value": 0.07499999999999996
+    },
+    {
+      "id": "normalized-evaluation-0097",
+      "status": "ok",
+      "value": 0.02702702702702703
+    },
+    {
+      "id": "normalized-evaluation-0098",
+      "status": "ok",
+      "value": -5.571428571428571
+    },
+    {
+      "id": "normalized-evaluation-0099",
+      "status": "ok",
+      "value": 0.06666666666666667
+    },
+    {
+      "id": "normalized-evaluation-0100",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-evaluation-0101",
+      "status": "ok",
+      "value": 0.045454545454545456
+    },
+    {
+      "id": "normalized-evaluation-0102",
+      "status": "ok",
+      "value": -1.526315789473684
+    },
+    {
+      "id": "normalized-evaluation-0103",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "normalized-evaluation-0104",
+      "status": "ok",
+      "value": -0.22580645161290325
+    },
+    {
+      "id": "normalized-evaluation-0105",
+      "status": "ok",
+      "value": 0.047619047619047616
+    },
+    {
+      "id": "normalized-evaluation-0106",
+      "status": "ok",
+      "value": -3.9000000000000004
+    },
+    {
+      "id": "normalized-evaluation-0107",
+      "status": "ok",
+      "value": 0.020833333333333332
+    },
+    {
+      "id": "normalized-evaluation-0108",
+      "status": "ok",
+      "value": -0.045454545454545414
+    },
+    {
+      "id": "normalized-evaluation-0109",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "normalized-evaluation-0110",
+      "status": "ok",
+      "value": -0.6451612903225807
+    },
+    {
+      "id": "normalized-evaluation-0111",
+      "status": "ok",
+      "value": 0.029850746268656716
+    },
+    {
+      "id": "normalized-evaluation-0112",
+      "status": "ok",
+      "value": -10.25
+    },
+    {
+      "id": "normalized-evaluation-0113",
+      "status": "ok",
+      "value": 0.02040816326530612
+    },
+    {
+      "id": "normalized-evaluation-0114",
+      "status": "ok",
+      "value": -0.75
+    },
+    {
+      "id": "normalized-evaluation-0115",
+      "status": "ok",
+      "value": 0.018518518518518517
+    },
+    {
+      "id": "normalized-evaluation-0116",
+      "status": "ok",
+      "value": -0.08000000000000007
+    },
+    {
+      "id": "normalized-evaluation-0117",
+      "status": "ok",
+      "value": 0.02
+    },
+    {
+      "id": "normalized-evaluation-0118",
+      "status": "ok",
+      "value": -4.0
+    },
+    {
+      "id": "normalized-evaluation-0119",
+      "status": "ok",
+      "value": 0.018867924528301886
+    },
+    {
+      "id": "normalized-evaluation-0120",
+      "status": "ok",
+      "value": -0.9166666666666667
+    },
+    {
+      "id": "normalized-evaluation-0121",
+      "status": "ok",
+      "value": 0.024390243902439025
+    },
+    {
+      "id": "normalized-evaluation-0122",
+      "status": "ok",
+      "value": -2.142857142857143
+    },
+    {
+      "id": "normalized-evaluation-0123",
+      "status": "ok",
+      "value": 0.08
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-72e71110de72413da59ffb9e35df46dd",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-ap67df2p/candidate.py,dst=/candidate.py,readonly",
+      "sha256:bf3fed84ec56e80a5428b9cbe5e3be10c34d05d029b8f6dd454569ff71af356c",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 5.823622,
+    "stdout": "[{\"id\": \"normalized-visible-000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-001\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-002\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-003\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-004\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-005\", \"status\": \"ok\", \"value\": 0.2222222222222222}, {\"id\": \"normalized-visible-006\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-007\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-008\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-009\", \"status\": \"ok\", \"value\": 0.09090909090909091}, {\"id\": \"normalized-visible-010\", \"status\": \"ok\", \"value\": 2.0}, {\"id\": \"normalized-visible-011\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-visible-012\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-013\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-014\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-015\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-016\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-017\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-018\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-visible-019\", \"status\": \"ok\", \"value\": 0.3333333333333333}, {\"id\": \"normalized-visible-020\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-021\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-022\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-023\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-visible-024\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-visible-025\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0000\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-evaluation-0001\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0002\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0003\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0004\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0005\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0006\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0007\", \"status\": \"exception\", \"type\": \"ValueError\", \"message\": \"Strings must not be null\", \"trace\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 12, in <module>\\n  File \\\"candidate.py\\\", line 11, in run\\nValueError: Strings must not be null\\n\"}, {\"id\": \"normalized-evaluation-0008\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-evaluation-0009\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0010\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-evaluation-0011\", \"status\": \"ok\", \"value\": 0.5}, {\"id\": \"normalized-evaluation-0012\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0013\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-evaluation-0014\", \"status\": \"ok\", \"value\": 2.0}, {\"id\": \"normalized-evaluation-0015\", \"status\": \"ok\", \"value\": -1.0}, {\"id\": \"normalized-evaluation-0016\", \"status\": \"ok\", \"value\": 1.5}, {\"id\": \"normalized-evaluation-0017\", \"status\": \"ok\", \"value\": -0.5}, {\"id\": \"normalized-evaluation-0018\", \"status\": \"ok\", \"value\": 0.015625}, {\"id\": \"normalized-evaluation-0019\", \"status\": \"ok\", \"value\": 0.984375}, {\"id\": \"normalized-evaluation-0020\", \"status\": \"ok\", \"value\": 0.10526315789473684}, {\"id\": \"normalized-evaluation-0021\", \"status\": \"ok\", \"value\": 0.8947368421052632}, {\"id\": \"normalized-evaluation-0022\", \"status\": \"ok\", \"value\": 0.025}, {\"id\": \"normalized-evaluation-0023\", \"status\": \"ok\", \"value\": 0.975}, {\"id\": \"normalized-evaluation-0024\", \"status\": \"ok\", \"value\": -0.34615384615384626}, {\"id\": \"normalized-evaluation-0025\", \"status\": \"ok\", \"value\": 0.06451612903225806}, {\"id\": \"normalized-evaluation-0026\", \"status\": \"ok\", \"value\": -0.3076923076923077}, {\"id\": \"normalized-evaluation-0027\", \"status\": \"ok\", \"value\": 0.10526315789473684}, {\"id\": \"normalized-evaluation-0028\", \"status\": \"ok\", \"value\": -1.4666666666666668}, {\"id\": \"normalized-evaluation-0029\", \"status\": \"ok\", \"value\": 0.02127659574468085}, {\"id\": \"normalized-evaluation-0030\", \"status\": \"ok\", \"value\": -16.0}, {\"id\": \"normalized-evaluation-0031\", \"status\": \"ok\", \"value\": 0.16666666666666666}, {\"id\": \"normalized-evaluation-0032\", \"status\": \"ok\", \"value\": -0.5833333333333333}, {\"id\": \"normalized-evaluation-0033\", \"status\": \"ok\", \"value\": 0.025}, {\"id\": \"normalized-evaluation-0034\", \"status\": \"ok\", \"value\": -0.9259259259259258}, {\"id\": \"normalized-evaluation-0035\", \"status\": \"ok\", \"value\": 0.07692307692307693}, {\"id\": \"normalized-evaluation-0036\", \"status\": \"ok\", \"value\": -0.3125}, {\"id\": \"normalized-evaluation-0037\", \"status\": \"ok\", \"value\": 0.2}, {\"id\": \"normalized-evaluation-0038\", \"status\": \"ok\", \"value\": -9.25}, {\"id\": \"normalized-evaluation-0039\", \"status\": \"ok\", \"value\": 0.07407407407407407}, {\"id\": \"normalized-evaluation-0040\", \"status\": \"ok\", \"value\": -0.6666666666666667}, {\"id\": \"normalized-evaluation-0041\", \"status\": \"ok\", \"value\": 0.0196078431372549}, {\"id\": \"normalized-evaluation-0042\", \"status\": \"ok\", \"value\": -19.666666666666668}, {\"id\": \"normalized-evaluation-0043\", \"status\": \"ok\", \"value\": 0.1}, {\"id\": \"normalized-evaluation-0044\", \"status\": \"ok\", \"value\": -1.8421052631578947}, {\"id\": \"normalized-evaluation-0045\", \"status\": \"ok\", \"value\": 0.02}, {\"id\": \"normalized-evaluation-0046\", \"status\": \"ok\", \"value\": -32.5}, {\"id\": \"normalized-evaluation-0047\", \"status\": \"ok\", \"value\": 0.022727272727272728}, {\"id\": \"normalized-evaluation-0048\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0049\", \"status\": \"ok\", \"value\": 0.0425531914893617}, {\"id\": \"normalized-evaluation-0050\", \"status\": \"ok\", \"value\": -0.7333333333333334}, {\"id\": \"normalized-evaluation-0051\", \"status\": \"ok\", \"value\": 0.05263157894736842}, {\"id\": \"normalized-evaluation-0052\", \"status\": \"ok\", \"value\": -2.111111111111111}, {\"id\": \"normalized-evaluation-0053\", \"status\": \"ok\", \"value\": 0.03225806451612903}, {\"id\": \"normalized-evaluation-0054\", \"status\": \"ok\", \"value\": 0.09999999999999998}, {\"id\": \"normalized-evaluation-0055\", \"status\": \"ok\", \"value\": 0.06666666666666667}, {\"id\": \"normalized-evaluation-0056\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0057\", \"status\": \"ok\", \"value\": 0.3333333333333333}, {\"id\": \"normalized-evaluation-0058\", \"status\": \"ok\", \"value\": -0.0714285714285714}, {\"id\": \"normalized-evaluation-0059\", \"status\": \"ok\", \"value\": 0.3333333333333333}, {\"id\": \"normalized-evaluation-0060\", \"status\": \"ok\", \"value\": 0.06896551724137934}, {\"id\": \"normalized-evaluation-0061\", \"status\": \"ok\", \"value\": 0.018518518518518517}, {\"id\": \"normalized-evaluation-0062\", \"status\": \"ok\", \"value\": -5.6}, {\"id\": \"normalized-evaluation-0063\", \"status\": \"ok\", \"value\": 0.016129032258064516}, {\"id\": \"normalized-evaluation-0064\", \"status\": \"ok\", \"value\": -1.8823529411764706}, {\"id\": \"normalized-evaluation-0065\", \"status\": \"ok\", \"value\": 0.02702702702702703}, {\"id\": \"normalized-evaluation-0066\", \"status\": \"ok\", \"value\": -4.5}, {\"id\": \"normalized-evaluation-0067\", \"status\": \"ok\", \"value\": 0.015384615384615385}, {\"id\": \"normalized-evaluation-0068\", \"status\": \"ok\", \"value\": -0.5333333333333334}, {\"id\": \"normalized-evaluation-0069\", \"status\": \"ok\", \"value\": 0.015625}, {\"id\": \"normalized-evaluation-0070\", \"status\": \"ok\", \"value\": 0.09999999999999998}, {\"id\": \"normalized-evaluation-0071\", \"status\": \"ok\", \"value\": 0.024390243902439025}, {\"id\": \"normalized-evaluation-0072\", \"status\": \"ok\", \"value\": -7.125}, {\"id\": \"normalized-evaluation-0073\", \"status\": \"ok\", \"value\": 0.0136986301369863}, {\"id\": \"normalized-evaluation-0074\", \"status\": \"ok\", \"value\": -0.22222222222222232}, {\"id\": \"normalized-evaluation-0075\", \"status\": \"ok\", \"value\": 0.02040816326530612}, {\"id\": \"normalized-evaluation-0076\", \"status\": \"ok\", \"value\": -1.2941176470588234}, {\"id\": \"normalized-evaluation-0077\", \"status\": \"ok\", \"value\": 0.030303030303030304}, {\"id\": \"normalized-evaluation-0078\", \"status\": \"ok\", \"value\": -3.5}, {\"id\": \"normalized-evaluation-0079\", \"status\": \"ok\", \"value\": 0.03076923076923077}, {\"id\": \"normalized-evaluation-0080\", \"status\": \"ok\", \"value\": -3.153846153846154}, {\"id\": \"normalized-evaluation-0081\", \"status\": \"ok\", \"value\": 0.014285714285714285}, {\"id\": \"normalized-evaluation-0082\", \"status\": \"ok\", \"value\": -0.5185185185185186}, {\"id\": \"normalized-evaluation-0083\", \"status\": \"ok\", \"value\": 0.017543859649122806}, {\"id\": \"normalized-evaluation-0084\", \"status\": \"ok\", \"value\": 0.12727272727272732}, {\"id\": \"normalized-evaluation-0085\", \"status\": \"ok\", \"value\": 0.14285714285714285}, {\"id\": \"normalized-evaluation-0086\", \"status\": \"ok\", \"value\": -0.027027027027026973}, {\"id\": \"normalized-evaluation-0087\", \"status\": \"ok\", \"value\": 0.015625}, {\"id\": \"normalized-evaluation-0088\", \"status\": \"ok\", \"value\": 0.030303030303030276}, {\"id\": \"normalized-evaluation-0089\", \"status\": \"ok\", \"value\": 0.2}, {\"id\": \"normalized-evaluation-0090\", \"status\": \"ok\", \"value\": 0.16000000000000003}, {\"id\": \"normalized-evaluation-0091\", \"status\": \"ok\", \"value\": 0.3333333333333333}, {\"id\": \"normalized-evaluation-0092\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0093\", \"status\": \"ok\", \"value\": 0.043478260869565216}, {\"id\": \"normalized-evaluation-0094\", \"status\": \"ok\", \"value\": -4.090909090909091}, {\"id\": \"normalized-evaluation-0095\", \"status\": \"ok\", \"value\": 0.019230769230769232}, {\"id\": \"normalized-evaluation-0096\", \"status\": \"ok\", \"value\": 0.07499999999999996}, {\"id\": \"normalized-evaluation-0097\", \"status\": \"ok\", \"value\": 0.02702702702702703}, {\"id\": \"normalized-evaluation-0098\", \"status\": \"ok\", \"value\": -5.571428571428571}, {\"id\": \"normalized-evaluation-0099\", \"status\": \"ok\", \"value\": 0.06666666666666667}, {\"id\": \"normalized-evaluation-0100\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-evaluation-0101\", \"status\": \"ok\", \"value\": 0.045454545454545456}, {\"id\": \"normalized-evaluation-0102\", \"status\": \"ok\", \"value\": -1.526315789473684}, {\"id\": \"normalized-evaluation-0103\", \"status\": \"ok\", \"value\": 1.0}, {\"id\": \"normalized-evaluation-0104\", \"status\": \"ok\", \"value\": -0.22580645161290325}, {\"id\": \"normalized-evaluation-0105\", \"status\": \"ok\", \"value\": 0.047619047619047616}, {\"id\": \"normalized-evaluation-0106\", \"status\": \"ok\", \"value\": -3.9000000000000004}, {\"id\": \"normalized-evaluation-0107\", \"status\": \"ok\", \"value\": 0.020833333333333332}, {\"id\": \"normalized-evaluation-0108\", \"status\": \"ok\", \"value\": -0.045454545454545414}, {\"id\": \"normalized-evaluation-0109\", \"status\": \"ok\", \"value\": 0.0}, {\"id\": \"normalized-evaluation-0110\", \"status\": \"ok\", \"value\": -0.6451612903225807}, {\"id\": \"normalized-evaluation-0111\", \"status\": \"ok\", \"value\": 0.029850746268656716}, {\"id\": \"normalized-evaluation-0112\", \"status\": \"ok\", \"value\": -10.25}, {\"id\": \"normalized-evaluation-0113\", \"status\": \"ok\", \"value\": 0.02040816326530612}, {\"id\": \"normalized-evaluation-0114\", \"status\": \"ok\", \"value\": -0.75}, {\"id\": \"normalized-evaluation-0115\", \"status\": \"ok\", \"value\": 0.018518518518518517}, {\"id\": \"normalized-evaluation-0116\", \"status\": \"ok\", \"value\": -0.08000000000000007}, {\"id\": \"normalized-evaluation-0117\", \"status\": \"ok\", \"value\": 0.02}, {\"id\": \"normalized-evaluation-0118\", \"status\": \"ok\", \"value\": -4.0}, {\"id\": \"normalized-evaluation-0119\", \"status\": \"ok\", \"value\": 0.018867924528301886}, {\"id\": \"normalized-evaluation-0120\", \"status\": \"ok\", \"value\": -0.9166666666666667}, {\"id\": \"normalized-evaluation-0121\", \"status\": \"ok\", \"value\": 0.024390243902439025}, {\"id\": \"normalized-evaluation-0122\", \"status\": \"ok\", \"value\": -2.142857142857143}, {\"id\": \"normalized-evaluation-0123\", \"status\": \"ok\", \"value\": 0.08}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-14T00:03:33.036386169Z",
+      "FinishedAt": "2026-11-14T00:03:38.792801797Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:4c5f8a40f216e5985b3988a9b04303f28690d75d18fd634ef3de9e823d0a3a91",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:bf3fed84ec56e80a5428b9cbe5e3be10c34d05d029b8f6dd454569ff71af356c",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

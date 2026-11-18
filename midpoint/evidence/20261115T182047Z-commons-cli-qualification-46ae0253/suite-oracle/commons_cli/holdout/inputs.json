@@ -1,0 +1,7466 @@
+[
+  {
+    "id": "commons_cli-holdout-000-metadata-alias",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "hasOption",
+        "args": [
+          "--h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "isRequired",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-001-empty",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-002-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-v",
+            "-o",
+            "h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-003-long",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h266323042006614-verbose",
+            "--h266323042006614-output",
+            "h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-004-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h266323042006614-output=h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-005-empty-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h266323042006614-output="
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-006-repeated-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h266323042006614-value-\ud83d\ude80",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-007-terminator",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--",
+            "-v",
+            "h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-008-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h266323042006614-value-\ud83d\ude80",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-009-stop-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h266323042006614-value-\ud83d\ude80",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-010-stop-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-011-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-012-missing-argument",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-013-missing-before-option",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-014-negative-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-123"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-015-attached-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-oh266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-016-burst",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-voh266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h266323042006614-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h266323042006614-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-017-reuse-parser",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "next"
+      },
+      {
+        "op": "call",
+        "on": "next",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-018-required-missing",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-019-required-present",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h266323042006614-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h266323042006614-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h266323042006614-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "h266323042006614-output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-020-metadata-alias",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "hasOption",
+        "args": [
+          "--h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "isRequired",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-021-empty",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-022-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-v",
+            "-o",
+            "h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-023-long",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h277439775389153-verbose",
+            "--h277439775389153-output",
+            "h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-024-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h277439775389153-output=h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-025-empty-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h277439775389153-output="
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-026-repeated-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h277439775389153-value-\ud83d\ude80",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-027-terminator",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--",
+            "-v",
+            "h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-028-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h277439775389153-value-\ud83d\ude80",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-029-stop-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h277439775389153-value-\ud83d\ude80",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-030-stop-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-031-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-032-missing-argument",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-033-missing-before-option",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-034-negative-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-123"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-035-attached-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-oh277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-036-burst",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-voh277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h277439775389153-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h277439775389153-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-037-reuse-parser",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "next"
+      },
+      {
+        "op": "call",
+        "on": "next",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-038-required-missing",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-039-required-present",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h277439775389153-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h277439775389153-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h277439775389153-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "h277439775389153-output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-040-metadata-alias",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "hasOption",
+        "args": [
+          "--h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "isRequired",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-041-empty",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-042-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-v",
+            "-o",
+            "h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-043-long",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h211172155399241-verbose",
+            "--h211172155399241-output",
+            "h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-044-equals",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h211172155399241-output=h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-045-empty-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--h211172155399241-output="
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-046-repeated-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h211172155399241-value-\ud83d\ude80",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-047-terminator",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--",
+            "-v",
+            "h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-048-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h211172155399241-value-\ud83d\ude80",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-049-stop-positional",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "h211172155399241-value-\ud83d\ude80",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-050-stop-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-051-unknown",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-052-missing-argument",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-053-missing-before-option",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-054-negative-value",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-123"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-055-attached-short",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-oh211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-056-burst",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-voh211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "h211172155399241-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "h211172155399241-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-057-reuse-parser",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "next"
+      },
+      {
+        "op": "call",
+        "on": "next",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-058-required-missing",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "commons_cli-holdout-059-required-present",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "h211172155399241-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "h211172155399241-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "h211172155399241-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "h211172155399241-output"
+        ]
+      }
+    ]
+  }
+]

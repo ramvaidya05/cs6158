@@ -7,6 +7,26 @@ def evaluate_candidate(source, cases, contract):
         validate_cases(cases, contract)
         validate_implementation(scope, contract)
         return [execute_scenario(scope, case, contract) for case in cases]
+    if cases[0]["task"] == "commons_codec_hex":
+        if not callable(scope.get("run")):
+            raise TypeError("Candidate must define run(operation, data, lower)")
+        rows = []
+        for case in cases:
+            row = {"id": case["id"]}
+            try:
+                value = scope["run"](case["operation"], case["data"], case.get("lower", True))
+                if case["operation"] == "encode":
+                    if not isinstance(value, str):
+                        raise TypeError("Encode must return a string")
+                elif not isinstance(value, list) or any(type(v) is not int or not 0 <= v <= 255 for v in value):
+                    raise TypeError("Decode must return unsigned byte values")
+                row.update(status="ok", value=value)
+            except ValueError:
+                row.update(status="exception", type="DecoderException")
+            except Exception as exc:
+                row.update(status="exception", type=type(exc).__name__)
+            rows.append(row)
+        return rows
     rows = []
     for case in cases:
         row = {"id": case["id"]}

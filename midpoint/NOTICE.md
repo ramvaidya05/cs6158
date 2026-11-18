@@ -17,3 +17,8 @@ Apache Commons CLI 1.9.0 source is vendored unmodified under
 included in `vendor/commons-cli/LICENSE.txt` and `NOTICE.txt`. Preserve those files
 when redistributing. The Python CLI qualification fixtures are project-authored
 scoped implementations used only to exercise the harness, not a full upstream port.
+
+Apache Commons Codec 1.22.1 `Hex.java` is vendored unmodified for the bounded
+Hex translation pilot. Its source archive hash and file hashes are in
+`vendor/commons-codec/SOURCE.json`; its Apache License 2.0 and notice are in the
+same directory. The Java oracle uses the matching Maven artifact.

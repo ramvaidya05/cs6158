@@ -1,0 +1,158 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "jaro_winkler-visible-000",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-001",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-002",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-003",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-004",
+      "status": "ok",
+      "value": 0.2539682388305664
+    },
+    {
+      "id": "jaro_winkler-visible-005",
+      "status": "ok",
+      "value": 0.02592595219612126
+    },
+    {
+      "id": "jaro_winkler-visible-006",
+      "status": "ok",
+      "value": 0.1333333492279053
+    },
+    {
+      "id": "jaro_winkler-visible-007",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-008",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-009",
+      "status": "ok",
+      "value": 0.01388886570930481
+    },
+    {
+      "id": "jaro_winkler-visible-010",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-011",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-012",
+      "status": "ok",
+      "value": 0.4166666865348816
+    },
+    {
+      "id": "jaro_winkler-visible-013",
+      "status": "ok",
+      "value": 0.3333333134651184
+    },
+    {
+      "id": "jaro_winkler-visible-014",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-015",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-016",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s1 must not be null"
+    },
+    {
+      "id": "jaro_winkler-visible-017",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s2 must not be null"
+    },
+    {
+      "id": "jaro_winkler-visible-018",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s1 must not be null"
+    },
+    {
+      "id": "jaro_winkler-visible-019",
+      "status": "ok",
+      "value": 0.03888890743255613
+    },
+    {
+      "id": "jaro_winkler-visible-020",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-021",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-022",
+      "status": "ok",
+      "value": 0.0
+    },
+    {
+      "id": "jaro_winkler-visible-023",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "id": "jaro_winkler-visible-024",
+      "status": "ok",
+      "value": 0.7460317611694336
+    },
+    {
+      "id": "jaro_winkler-visible-025",
+      "status": "exception",
+      "type": "NullPointerException",
+      "message": "s1 must not be null"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/ram/cs6158/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/ram/cs6158/midpoint/java/target/classes:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.125649,
+    "stdout": "[{\"id\":\"jaro_winkler-visible-000\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-visible-001\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-002\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-003\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-visible-004\",\"status\":\"ok\",\"value\":0.2539682388305664},{\"id\":\"jaro_winkler-visible-005\",\"status\":\"ok\",\"value\":0.02592595219612126},{\"id\":\"jaro_winkler-visible-006\",\"status\":\"ok\",\"value\":0.1333333492279053},{\"id\":\"jaro_winkler-visible-007\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-008\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-009\",\"status\":\"ok\",\"value\":0.01388886570930481},{\"id\":\"jaro_winkler-visible-010\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-011\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-012\",\"status\":\"ok\",\"value\":0.4166666865348816},{\"id\":\"jaro_winkler-visible-013\",\"status\":\"ok\",\"value\":0.3333333134651184},{\"id\":\"jaro_winkler-visible-014\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-015\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-016\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s1 must not be null\"},{\"id\":\"jaro_winkler-visible-017\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s2 must not be null\"},{\"id\":\"jaro_winkler-visible-018\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s1 must not be null\"},{\"id\":\"jaro_winkler-visible-019\",\"status\":\"ok\",\"value\":0.03888890743255613},{\"id\":\"jaro_winkler-visible-020\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-021\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-visible-022\",\"status\":\"ok\",\"value\":0.0},{\"id\":\"jaro_winkler-visible-023\",\"status\":\"ok\",\"value\":1.0},{\"id\":\"jaro_winkler-visible-024\",\"status\":\"ok\",\"value\":0.7460317611694336},{\"id\":\"jaro_winkler-visible-025\",\"status\":\"exception\",\"type\":\"NullPointerException\",\"message\":\"s1 must not be null\"}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "status": "not_run",
+  "task": "normalized",
+  "not_run_reason": "provider_circuit_open",
+  "stop_reason": "provider_unavailable"
+}

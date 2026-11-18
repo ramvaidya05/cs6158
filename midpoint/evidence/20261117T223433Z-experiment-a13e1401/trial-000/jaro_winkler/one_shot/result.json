@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "jaro_winkler",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.144
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 5.121
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.44,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Model response not completed: MAX_TOKENS"
+  },
+  "elapsed_seconds": 116.19348237500526,
+  "validated": false
+}

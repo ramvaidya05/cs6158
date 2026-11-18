@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "normalized",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.123
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 6.949
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 7.253,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Model HTTP 503; check access, model compatibility and quota"
+  },
+  "elapsed_seconds": 10.522301915916614,
+  "validated": false
+}

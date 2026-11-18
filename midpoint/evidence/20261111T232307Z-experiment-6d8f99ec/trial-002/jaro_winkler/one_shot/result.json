@@ -1,0 +1,31 @@
+{
+  "status": "error",
+  "task": "jaro_winkler",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.035
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.795
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.08,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 16384,
+  "error": {
+    "type": "BackendError",
+    "message": "Experiment dollar reservation budget exhausted"
+  },
+  "elapsed_seconds": 5.154280457994901,
+  "validated": false
+}

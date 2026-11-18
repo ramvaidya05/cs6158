@@ -1,0 +1,5007 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "v"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "h266323042006614-verbose"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-000-metadata-alias"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-001-empty"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-002-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-003-long"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-004-equals"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            ""
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-005-empty-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80",
+            "second"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-006-repeated-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "-v",
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-007-terminator"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-008-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-009-stop-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "--unknown",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-010-stop-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-011-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-012-missing-argument"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-013-missing-before-option"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "-123"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "-123"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-014-negative-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-015-attached-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h266323042006614-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-016-burst"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "next"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-017-reuse-parser"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-018-required-missing"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h266323042006614-value-\ud83d\ude80"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-019-required-present"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "v"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "h277439775389153-verbose"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-020-metadata-alias"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-021-empty"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-022-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-023-long"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-024-equals"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            ""
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-025-empty-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80",
+            "second"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-026-repeated-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "-v",
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-027-terminator"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-028-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-029-stop-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "--unknown",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-030-stop-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-031-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-032-missing-argument"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-033-missing-before-option"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "-123"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "-123"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-034-negative-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-035-attached-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h277439775389153-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-036-burst"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "next"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-037-reuse-parser"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-038-required-missing"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h277439775389153-value-\ud83d\ude80"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-039-required-present"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "v"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "h211172155399241-verbose"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-040-metadata-alias"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-041-empty"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-042-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-043-long"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-044-equals"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            ""
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-045-empty-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80",
+            "second"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-046-repeated-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "-v",
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-047-terminator"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-048-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-049-stop-positional"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "--unknown",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-050-stop-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-051-unknown"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-052-missing-argument"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-053-missing-before-option"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "-123"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "-123"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-054-negative-value"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-055-attached-short"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "h211172155399241-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-056-burst"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "next"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-057-reuse-parser"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-058-required-missing"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "h211172155399241-value-\ud83d\ude80"
+        }
+      ],
+      "status": "ok",
+      "id": "commons_cli-holdout-059-required-present"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/ram/cs6158/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/ram/cs6158/midpoint/java/target/classes:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.146637,
+    "stdout": "[{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":\"v\"},{\"step\":7,\"status\":\"ok\",\"value\":\"h266323042006614-verbose\"},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":true},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-000-metadata-alias\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-001-empty\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-002-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-003-long\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-004-equals\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-005-empty-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\",\"second\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-006-repeated-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"-v\",\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-007-terminator\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-008-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-009-stop-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"--unknown\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-010-stop-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-011-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-012-missing-argument\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-013-missing-before-option\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"-123\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"-123\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-014-negative-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-015-attached-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h266323042006614-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-016-burst\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"next\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-017-reuse-parser\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-018-required-missing\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"h266323042006614-value-\ud83d\ude80\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-019-required-present\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":\"v\"},{\"step\":7,\"status\":\"ok\",\"value\":\"h277439775389153-verbose\"},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":true},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-020-metadata-alias\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-021-empty\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-022-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-023-long\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-024-equals\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-025-empty-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\",\"second\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-026-repeated-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"-v\",\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-027-terminator\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-028-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-029-stop-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"--unknown\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-030-stop-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-031-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-032-missing-argument\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-033-missing-before-option\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"-123\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"-123\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-034-negative-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-035-attached-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h277439775389153-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-036-burst\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"next\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-037-reuse-parser\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-038-required-missing\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"h277439775389153-value-\ud83d\ude80\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-039-required-present\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":\"v\"},{\"step\":7,\"status\":\"ok\",\"value\":\"h211172155399241-verbose\"},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":true},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-040-metadata-alias\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-041-empty\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-042-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-043-long\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-044-equals\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-045-empty-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\",\"second\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-046-repeated-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"-v\",\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-047-terminator\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-048-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-049-stop-positional\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"--unknown\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-050-stop-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-051-unknown\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-052-missing-argument\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-053-missing-before-option\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"-123\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"-123\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-054-negative-value\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-055-attached-short\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"h211172155399241-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-056-burst\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"next\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-057-reuse-parser\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-058-required-missing\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"h211172155399241-value-\ud83d\ude80\"}],\"status\":\"ok\",\"id\":\"commons_cli-holdout-059-required-present\"}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

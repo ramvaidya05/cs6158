@@ -1,0 +1,30 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = list(\"0123456789abcdef\")\nDIGITS_UPPER = list(\"0123456789ABCDEF\")\n\ndef _char_digit_16(ch):\n    if len(ch) != 1:\n        return -1\n    code = ord(ch)\n    if 0x30 <= code <= 0x39:\n        return code - 0x30\n    if 0x61 <= code <= 0x66:\n        return code - 0x61 + 10\n    if 0x41 <= code <= 0x46:\n        return code - 0x41 + 10\n    try:\n        val = unicodedata.digit(ch)\n        if 0 <= val <= 9:\n            return val\n    except (ValueError, TypeError):\n        pass\n    return -1\n\ndef _to_digit(ch, index):\n    digit = _char_digit_16(ch)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character 0x{ord(ch) & 0xFF:02X} at index {index:,d}.\")\n    return digit\n\ndef decode_hex(data):\n    if len(data) % 2 != 0:\n        raise ValueError(f\"Odd number of characters {len(data):,d}.\")\n    out = bytearray(len(data) >> 1)\n    j = 0\n    for i in range(len(out)):\n        f = _to_digit(data[j], j) << 4\n        j += 1\n        f |= _to_digit(data[j], j)\n        j += 1\n        out[i] = f & 0xFF\n    return list(out)\n\ndef encode_hex_string(data, to_lower_case=True):\n    to_digits = DIGITS_LOWER if to_lower_case else DIGITS_UPPER\n    out = []\n    for b in data:\n        out.append(to_digits[(0xF0 & b) >> 4])\n        out.append(to_digits[0x0F & b])\n    return \"\".join(out)\n\ndef run(operation, data, lower=True):\n    if operation == \"encode\":\n        return encode_hex_string(data, lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "The module implements `run(operation, data, lower=True)` supporting both `encode` and `decode` operations matching Apache Commons Codec 1.22.1's `Hex` methods.\n- `encode`: Maps byte arrays to hex strings in either lowercase or uppercase using `encode_hex_string`.\n- `decode`: Parses hex strings into byte lists, supporting Unicode digits via `unicodedata.digit` to accurately mirror `Character.digit(ch, 16)` in Java. Raises `ValueError` for odd character lengths or invalid hexadecimal digits.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "4PH8asTBIJvExdIPzOCUoQ4",
+    "usage": {
+      "input_tokens": 2404,
+      "output_tokens": 769,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2404,
+        "candidatesTokenCount": 769,
+        "totalTokenCount": 3173,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2404
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 4.312
+  }
+}

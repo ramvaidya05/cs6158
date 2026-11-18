@@ -1,0 +1,30 @@
+{
+  "status": "error",
+  "task": "commons_cli",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.031
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.718
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 5.04,
+      "attempt": 0
+    }
+  ],
+  "attempts": [],
+  "best_attempt": null,
+  "stop_reason": null,
+  "reserved_output_tokens": 8192,
+  "error": {
+    "type": "HTTPError",
+    "message": "HTTP Error 400: Bad Request"
+  },
+  "elapsed_seconds": 5.175
+}

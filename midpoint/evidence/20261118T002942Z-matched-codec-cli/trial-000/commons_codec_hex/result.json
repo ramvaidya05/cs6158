@@ -1,0 +1,628 @@
+{
+  "task": "commons_codec_hex",
+  "trial": 0,
+  "status": "completed",
+  "attempts": [
+    {
+      "attempt": 0,
+      "candidate_sha256": "eb2ad56cf409d861a16f5f5a6732eb752d802e17b5a5d58fae9815bfd63b744f",
+      "visible": {
+        "cpython": {
+          "passed": 16,
+          "total": 16,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 16,
+          "total": 16,
+          "status": "completed"
+        }
+      },
+      "usage": {
+        "input_tokens": 1581,
+        "output_tokens": 1005,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 1581,
+          "candidatesTokenCount": 1005,
+          "totalTokenCount": 2586,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1581
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      },
+      "accepted": true
+    }
+  ],
+  "selected_attempt": 0,
+  "baseline_visible": {
+    "cpython": {
+      "passed": 16,
+      "total": 16,
+      "status": "completed"
+    },
+    "graal": {
+      "passed": 16,
+      "total": 16,
+      "status": "completed"
+    }
+  },
+  "selected_visible": {
+    "cpython": {
+      "passed": 16,
+      "total": 16,
+      "status": "completed"
+    },
+    "graal": {
+      "passed": 16,
+      "total": 16,
+      "status": "completed"
+    }
+  },
+  "baseline_holdout": {
+    "cpython": {
+      "status": "completed",
+      "passed": 72,
+      "total": 73,
+      "passed_ids": [
+        "codec-holdout-000",
+        "codec-holdout-001",
+        "codec-holdout-002",
+        "codec-holdout-003",
+        "codec-holdout-004",
+        "codec-holdout-005",
+        "codec-holdout-006",
+        "codec-holdout-007",
+        "codec-holdout-008",
+        "codec-holdout-009",
+        "codec-holdout-010",
+        "codec-holdout-011",
+        "codec-holdout-012",
+        "codec-holdout-013",
+        "codec-holdout-014",
+        "codec-holdout-015",
+        "codec-holdout-016",
+        "codec-holdout-017",
+        "codec-holdout-018",
+        "codec-holdout-019",
+        "codec-holdout-020",
+        "codec-holdout-021",
+        "codec-holdout-022",
+        "codec-holdout-023",
+        "codec-holdout-024",
+        "codec-holdout-025",
+        "codec-holdout-026",
+        "codec-holdout-027",
+        "codec-holdout-028",
+        "codec-holdout-029",
+        "codec-holdout-030",
+        "codec-holdout-031",
+        "codec-holdout-032",
+        "codec-holdout-033",
+        "codec-holdout-034",
+        "codec-holdout-035",
+        "codec-holdout-036",
+        "codec-holdout-037",
+        "codec-holdout-038",
+        "codec-holdout-039",
+        "codec-holdout-040",
+        "codec-holdout-041",
+        "codec-holdout-042",
+        "codec-holdout-043",
+        "codec-holdout-044",
+        "codec-holdout-045",
+        "codec-holdout-046",
+        "codec-holdout-047",
+        "codec-holdout-048",
+        "codec-holdout-049",
+        "codec-holdout-050",
+        "codec-holdout-051",
+        "codec-holdout-052",
+        "codec-holdout-053",
+        "codec-holdout-054",
+        "codec-holdout-055",
+        "codec-holdout-056",
+        "codec-holdout-057",
+        "codec-holdout-058",
+        "codec-holdout-059",
+        "codec-holdout-060",
+        "codec-holdout-061",
+        "codec-holdout-062",
+        "codec-holdout-063",
+        "codec-holdout-064",
+        "codec-holdout-065",
+        "codec-holdout-066",
+        "codec-holdout-067",
+        "codec-holdout-068",
+        "codec-holdout-069",
+        "codec-holdout-071",
+        "codec-holdout-072"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-holdout-070",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd0f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-070",
+            "status": "ok",
+            "value": [
+              47
+            ]
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 68,
+      "total": 73,
+      "passed_ids": [
+        "codec-holdout-000",
+        "codec-holdout-001",
+        "codec-holdout-002",
+        "codec-holdout-003",
+        "codec-holdout-004",
+        "codec-holdout-005",
+        "codec-holdout-006",
+        "codec-holdout-007",
+        "codec-holdout-008",
+        "codec-holdout-009",
+        "codec-holdout-010",
+        "codec-holdout-011",
+        "codec-holdout-012",
+        "codec-holdout-013",
+        "codec-holdout-014",
+        "codec-holdout-015",
+        "codec-holdout-016",
+        "codec-holdout-017",
+        "codec-holdout-018",
+        "codec-holdout-019",
+        "codec-holdout-020",
+        "codec-holdout-021",
+        "codec-holdout-022",
+        "codec-holdout-023",
+        "codec-holdout-024",
+        "codec-holdout-025",
+        "codec-holdout-026",
+        "codec-holdout-027",
+        "codec-holdout-028",
+        "codec-holdout-029",
+        "codec-holdout-030",
+        "codec-holdout-031",
+        "codec-holdout-032",
+        "codec-holdout-033",
+        "codec-holdout-034",
+        "codec-holdout-035",
+        "codec-holdout-036",
+        "codec-holdout-037",
+        "codec-holdout-038",
+        "codec-holdout-039",
+        "codec-holdout-040",
+        "codec-holdout-041",
+        "codec-holdout-042",
+        "codec-holdout-043",
+        "codec-holdout-044",
+        "codec-holdout-045",
+        "codec-holdout-046",
+        "codec-holdout-047",
+        "codec-holdout-048",
+        "codec-holdout-049",
+        "codec-holdout-050",
+        "codec-holdout-051",
+        "codec-holdout-052",
+        "codec-holdout-053",
+        "codec-holdout-054",
+        "codec-holdout-055",
+        "codec-holdout-056",
+        "codec-holdout-057",
+        "codec-holdout-058",
+        "codec-holdout-059",
+        "codec-holdout-060",
+        "codec-holdout-061",
+        "codec-holdout-062",
+        "codec-holdout-063",
+        "codec-holdout-064",
+        "codec-holdout-065",
+        "codec-holdout-067",
+        "codec-holdout-068"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-holdout-066",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0661f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-066",
+            "status": "ok",
+            "value": [
+              31
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-066",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-069",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u00e90",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-069",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-069",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-070",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd0f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-071",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "f\u0000",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-071",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-071",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-072",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0660\u0661",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-072",
+            "status": "ok",
+            "value": [
+              1
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-072",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        }
+      ]
+    }
+  },
+  "selected_holdout": {
+    "cpython": {
+      "status": "completed",
+      "passed": 72,
+      "total": 73,
+      "passed_ids": [
+        "codec-holdout-000",
+        "codec-holdout-001",
+        "codec-holdout-002",
+        "codec-holdout-003",
+        "codec-holdout-004",
+        "codec-holdout-005",
+        "codec-holdout-006",
+        "codec-holdout-007",
+        "codec-holdout-008",
+        "codec-holdout-009",
+        "codec-holdout-010",
+        "codec-holdout-011",
+        "codec-holdout-012",
+        "codec-holdout-013",
+        "codec-holdout-014",
+        "codec-holdout-015",
+        "codec-holdout-016",
+        "codec-holdout-017",
+        "codec-holdout-018",
+        "codec-holdout-019",
+        "codec-holdout-020",
+        "codec-holdout-021",
+        "codec-holdout-022",
+        "codec-holdout-023",
+        "codec-holdout-024",
+        "codec-holdout-025",
+        "codec-holdout-026",
+        "codec-holdout-027",
+        "codec-holdout-028",
+        "codec-holdout-029",
+        "codec-holdout-030",
+        "codec-holdout-031",
+        "codec-holdout-032",
+        "codec-holdout-033",
+        "codec-holdout-034",
+        "codec-holdout-035",
+        "codec-holdout-036",
+        "codec-holdout-037",
+        "codec-holdout-038",
+        "codec-holdout-039",
+        "codec-holdout-040",
+        "codec-holdout-041",
+        "codec-holdout-042",
+        "codec-holdout-043",
+        "codec-holdout-044",
+        "codec-holdout-045",
+        "codec-holdout-046",
+        "codec-holdout-047",
+        "codec-holdout-048",
+        "codec-holdout-049",
+        "codec-holdout-050",
+        "codec-holdout-051",
+        "codec-holdout-052",
+        "codec-holdout-053",
+        "codec-holdout-054",
+        "codec-holdout-055",
+        "codec-holdout-056",
+        "codec-holdout-057",
+        "codec-holdout-058",
+        "codec-holdout-059",
+        "codec-holdout-060",
+        "codec-holdout-061",
+        "codec-holdout-062",
+        "codec-holdout-063",
+        "codec-holdout-064",
+        "codec-holdout-065",
+        "codec-holdout-066",
+        "codec-holdout-067",
+        "codec-holdout-068",
+        "codec-holdout-069",
+        "codec-holdout-071",
+        "codec-holdout-072"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-holdout-070",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd0f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-070",
+            "status": "ok",
+            "value": [
+              47
+            ]
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 68,
+      "total": 73,
+      "passed_ids": [
+        "codec-holdout-000",
+        "codec-holdout-001",
+        "codec-holdout-002",
+        "codec-holdout-003",
+        "codec-holdout-004",
+        "codec-holdout-005",
+        "codec-holdout-006",
+        "codec-holdout-007",
+        "codec-holdout-008",
+        "codec-holdout-009",
+        "codec-holdout-010",
+        "codec-holdout-011",
+        "codec-holdout-012",
+        "codec-holdout-013",
+        "codec-holdout-014",
+        "codec-holdout-015",
+        "codec-holdout-016",
+        "codec-holdout-017",
+        "codec-holdout-018",
+        "codec-holdout-019",
+        "codec-holdout-020",
+        "codec-holdout-021",
+        "codec-holdout-022",
+        "codec-holdout-023",
+        "codec-holdout-024",
+        "codec-holdout-025",
+        "codec-holdout-026",
+        "codec-holdout-027",
+        "codec-holdout-028",
+        "codec-holdout-029",
+        "codec-holdout-030",
+        "codec-holdout-031",
+        "codec-holdout-032",
+        "codec-holdout-033",
+        "codec-holdout-034",
+        "codec-holdout-035",
+        "codec-holdout-036",
+        "codec-holdout-037",
+        "codec-holdout-038",
+        "codec-holdout-039",
+        "codec-holdout-040",
+        "codec-holdout-041",
+        "codec-holdout-042",
+        "codec-holdout-043",
+        "codec-holdout-044",
+        "codec-holdout-045",
+        "codec-holdout-046",
+        "codec-holdout-047",
+        "codec-holdout-048",
+        "codec-holdout-049",
+        "codec-holdout-050",
+        "codec-holdout-051",
+        "codec-holdout-052",
+        "codec-holdout-053",
+        "codec-holdout-054",
+        "codec-holdout-055",
+        "codec-holdout-056",
+        "codec-holdout-057",
+        "codec-holdout-058",
+        "codec-holdout-059",
+        "codec-holdout-060",
+        "codec-holdout-061",
+        "codec-holdout-062",
+        "codec-holdout-063",
+        "codec-holdout-064",
+        "codec-holdout-065",
+        "codec-holdout-067",
+        "codec-holdout-068"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-holdout-066",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0661f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-066",
+            "status": "ok",
+            "value": [
+              31
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-066",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-069",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u00e90",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-069",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-069",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-070",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd0f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-070",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-071",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "f\u0000",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-071",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-holdout-071",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-holdout-072",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0660\u0661",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-holdout-072",
+            "status": "ok",
+            "value": [
+              1
+            ]
+          },
+          "actual": {
+            "id": "codec-holdout-072",
+            "status": "exception",
+            "type": "AttributeError"
+          }
+        }
+      ]
+    }
+  },
+  "baseline_full_pass": false,
+  "final_full_pass": false
+}

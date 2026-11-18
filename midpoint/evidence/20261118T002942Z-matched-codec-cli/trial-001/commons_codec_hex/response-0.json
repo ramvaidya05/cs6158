@@ -1,0 +1,30 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']\nDIGITS_UPPER = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']\n\ndef _char_digit(ch: str, radix: int = 16) -> int:\n    if len(ch) != 1:\n        return -1\n    if '0' <= ch <= '9':\n        val = ord(ch) - ord('0')\n    elif 'a' <= ch <= 'z':\n        val = ord(ch) - ord('a') + 10\n    elif 'A' <= ch <= 'Z':\n        val = ord(ch) - ord('A') + 10\n    else:\n        try:\n            val = unicodedata.digit(ch)\n        except (ValueError, TypeError):\n            return -1\n    return val if val < radix else -1\n\ndef _to_digit(ch: str, index: int) -> int:\n    digit = _char_digit(ch, 16)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character 0x{ord(ch) & 0xFF:02X} at index {index:d}.\")\n    return digit\n\ndef decode_hex(data: str) -> list:\n    data_chars = list(data)\n    length = len(data_chars)\n    if (length & 1) != 0:\n        raise ValueError(f\"Odd number of characters {length:d}.\")\n    out = []\n    j = 0\n    while j < length:\n        f = _to_digit(data_chars[j], j) << 4\n        j += 1\n        f |= _to_digit(data_chars[j], j)\n        j += 1\n        out.append(f & 0xFF)\n    return out\n\ndef encode_hex_string(data: list, lower: bool = True) -> str:\n    to_digits = DIGITS_LOWER if lower else DIGITS_UPPER\n    out = []\n    for b in data:\n        b = b & 0xFF\n        out.append(to_digits[(0xF0 & b) >> 4])\n        out.append(to_digits[0x0F & b])\n    return \"\".join(out)\n\ndef run(operation: str, data, lower: bool = True):\n    if operation == \"encode\":\n        return encode_hex_string(data, lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translated Apache Commons Codec 1.22.1 Hex logic to Python. Implemented `_char_digit` to emulate `Character.digit(ch, 16)` behavior including Unicode digit lookup using Python's `unicodedata` module. `run('encode', data, lower)` converts list of bytes to hex string (respecting casing), and `run('decode', data)` converts hex string to a list of unsigned byte integers, throwing `ValueError` for odd character lengths or invalid hex digits.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "qfH8auDTOIXExdIP2cve4Qk",
+    "usage": {
+      "input_tokens": 1581,
+      "output_tokens": 844,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1581,
+        "candidatesTokenCount": 844,
+        "totalTokenCount": 2425,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1581
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 4.818
+  }
+}

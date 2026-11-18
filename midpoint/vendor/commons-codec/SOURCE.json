@@ -1,0 +1,11 @@
+{
+  "version": "1.22.1",
+  "artifact": "commons-codec:commons-codec:1.22.1",
+  "source_url": "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1-sources.jar",
+  "source_archive_sha256": "96444ee2fa5a41dc4d3b7b95f46b67495795d458e2050fc08bb88ab7f87ac021",
+  "files": {
+    "Hex.java": "fe3ea75fef268a804905213aaa93c48bd381b821bf3c71628395e8800ba66383",
+    "LICENSE.txt": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7",
+    "NOTICE.txt": "d82503df1b65173afe535a2f753d27c25377f7f6e9d0b19b4665af617df14750"
+  }
+}

@@ -1,5 +1,12 @@
 # Environment-in-the-Loop Java-to-Python Translation: Research and Implementation Plan
 
+November 15 integration checkpoint: partner Commons CLI support and the bounded
+experiment framework are combined. Rebuilt containers pass both stateful and
+string qualification; 85 Python tests, five Java tests, and 11 isolation tests
+pass. A live Commons CLI attempt was archived after HTTP 503 with no candidate.
+Next priorities are live-generation availability and independently expanded
+stateful semantic scenarios, followed by measured code/environment repair.
+
 Prepared 19 October 2026. Updated after midpoint implementation: the runnable prototype is in [midpoint/](./midpoint/README.md). Three-task synthetic replay acceptance passes in CPython and Java-embedded GraalPy. This demonstrates infrastructure, not live-model translation performance; see the checkpoint below for the first live result. See the [developer handoff](./midpoint/DEVELOPER_HANDOFF.md) and [midpoint report draft](./midpoint/MIDPOINT_REPORT.md) for the current implementation and evidence.
 
 The [one-day midpoint plan](./MIDPOINT_TODAY_PLAN.md) records the original scope. The longer milestones below remain a research roadmap, not a statement that every described component is implemented; their original schedule does not apply to today's midpoint target.
@@ -17,6 +24,25 @@ future work, not delivered features.
 Latest engineering checkpoint: [retry memory and CLI v3 observations](midpoint/RETRY_MEMORY_OBSERVATIONS.md). The evaluator now supports 32 methods across five CLI classes, with 44 visible and 28 holdout scenarios. Arm-local retry memory, pruned diagnostics, and standard-library-only requirements generation are implemented. These changes are locally qualified; the live results above still refer to the earlier four-class protocol. Cross-trial reuse, arbitrary package installation, multi-module translation, and the matched AlphaTrans comparison remain outstanding.
 
 Latest live-study checkpoint: [CLI v3 observations](midpoint/CLI_V3_LIVE_OBSERVATIONS.md). The scoped 32-method main study and separate memory ablation have now run with fresh Gemini responses (three trials each). Main arms all passed 3/3 without repairs; in the separate memory cohort both repair arms improved full-task success from 1/3 to 3/3 with identical one-retry recoveries. Memory superiority is not established. A semantic holdout gap was identified and is recorded for a future suite version; existing scores were not revised. Matched AlphaTrans evaluation and repository-scale work remain outstanding.
+
+Earlier pilot checkpoint (historical context):
+
+Current implementation checkpoint: [isolated experiments and results](midpoint/EXPERIMENT_RESULTS.md).
+Container isolation and bounded cache remediation are now implemented. Live
+GPT-5.6 Sol requests returned HTTP 429. A live Gemini 3.8 Flash study then
+measured Levenshtein translation accuracy: 3/3 one-shot trials passed every
+visible and withheld case in both runtimes. The other two tasks remain unmeasured.
+The November 11 fixed three-task expansion was retained as unvalidated after
+provider timeouts/HTTP 503; no new accuracy claim is made. Per-task reporting,
+repair-opportunity accounting, and a bounded provider-availability stop policy
+are implemented. Controlled recovery on a recorded Gemini candidate passed all
+332 Levenshtein runtime checks after one autonomous cache correction.
+November 13 follow-up: two further fixed live batches timed out; automatic budget
+and availability stops preserved unrun trials. Read-only archive reporting and
+a seven-fault synthetic evaluator study are implemented. All seven faults were
+detected, but fractional JaroWinkler transpositions escaped the visible split and
+failed only withheld cases. This motivates a separately versioned future visible
+protocol, not retroactive changes to the existing scores or prompts.
 
 ## 1. Recommended research direction
 
