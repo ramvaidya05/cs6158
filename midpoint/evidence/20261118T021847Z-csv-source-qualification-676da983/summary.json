@@ -1,0 +1,86 @@
+{
+  "provenance": "Java source qualification; no translated candidate",
+  "source_artifact": "org.apache.commons:commons-csv:1.10.0",
+  "source_manifest_sha256": "fd8cb1cdcd2661569586555a2ba144544e7da8f8f12310bc81a22c0ebb4b4a56",
+  "draft_contract_sha256": "9e63a2d005c4ece22a68ab09c0413ef2d52476bb32fd6b758aa00d1ce4fc2576",
+  "cases": 8,
+  "repeated_oracle_equal": true,
+  "model_calls": 0,
+  "evaluation_split": "development only; not a frozen benchmark",
+  "rows": [
+    {
+      "id": "csv-development-00",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b,b",
+          "line1\nline2",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-development-01",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-development-02",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          ""
+        ],
+        [
+          "",
+          "c"
+        ]
+      ]
+    },
+    {
+      "id": "csv-development-03",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          null,
+          "b"
+        ]
+      ]
+    },
+    {
+      "id": "csv-development-04",
+      "status": "ok",
+      "value": [
+        [
+          "\u03b1",
+          "\ud83d\ude80"
+        ],
+        [
+          "quote\"inside",
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "csv-development-05",
+      "status": "ok",
+      "value": "\"a,b\",\"say \"\"hi\"\"\",\r\n"
+    },
+    {
+      "id": "csv-development-06",
+      "status": "ok",
+      "value": "NULL,NULL,\"a\nb\"\n"
+    },
+    {
+      "id": "csv-development-07",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    }
+  ]
+}

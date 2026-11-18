@@ -643,3 +643,13 @@ feedback study, expand subjects, and then add dependency-ordered multi-module
 translation. Whole-repository translation and cross-trial lesson reuse remain
 unimplemented. A future lesson-reuse study must be separately labelled and keep
 evaluation holdout behavior out of the learned context.
+
+## November 17: live Commons CSV v1 extension
+
+The scoped parser/printer contract uses pinned Commons CSV 1.10.0, 37 visible and 28 holdout scenarios, and both CPython and GraalPy. One live smoke is excluded from cohort results. Three fresh paired main trials compare one-shot, code repair, and environment-aware repair; a separate three-trial cohort compares pruned feedback with local memory off/on. All use Gemini `gemini-3.8-flash`, up to three repairs, and frozen selections before holdout scoring.
+
+Main one-shot holdout scores per runtime were 25/28, 25/28, 12/28; both repair arms reached 26/28 in each trial. Code repair passed all visible scenarios in all three trials. Healthy containers required no environment actions, so this does not demonstrate an environment-repair benefit. Complete visible-plus-holdout success remained 0/3 for every arm.
+
+In the separate memory cohort, both repair arms produced identical final visible scores (37/37, 36/37, 37/37) and holdout scores (27/28, 25/28, 25/28). Memory used five repair calls versus six without memory, saving one call in one pair, with no final accuracy gain. Trial 2's memory-enabled arm repeated a candidate and was stopped. These three pairs do not establish a reliable memory benefit.
+
+All 32 live calls across the three phases completed with known usage; total accounted cost was $2.5889278125 under declared rates, not verified invoice prices. The two runtimes are correlated checks, not independent replications. The study covers two observable interfaces rather than full-repository translation. See [CSV_LIVE_OBSERVATIONS.md](CSV_LIVE_OBSERVATIONS.md) and [audited results](evidence/20261118-csv-live-report/summary.json) for raw archive references, limitations, and follow-up requirements. Python regression validation: 125 tests passed.

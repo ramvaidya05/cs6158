@@ -22,3 +22,8 @@ Apache Commons Codec 1.22.1 `Hex.java` is vendored unmodified for the bounded
 Hex translation pilot. Its source archive hash and file hashes are in
 `vendor/commons-codec/SOURCE.json`; its Apache License 2.0 and notice are in the
 same directory. The Java oracle uses the matching Maven artifact.
+
+
+## Apache Commons CSV source preparation
+
+The unmodified `vendor/commons-csv` Java sources are from Apache Commons CSV 1.10.0, licensed under Apache-2.0. Upstream LICENSE and NOTICE are retained there; `SOURCE.json` records the source URL, archive digest, and per-file hashes. The harness-owned CSV adapter and qualification tests are separate from upstream sources.

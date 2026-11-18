@@ -1,0 +1,392 @@
+{
+  "limit_usd": 8,
+  "accounted_usd": 1.1406346875,
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.33047625,
+      "accounted_usd": 0.07400625,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 53012,
+        "output_tokens": 6482,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 53012,
+          "candidatesTokenCount": 6482,
+          "totalTokenCount": 59494,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 53012
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.352715625,
+      "accounted_usd": 0.0824521875,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 59365,
+        "output_tokens": 7146,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59365,
+          "candidatesTokenCount": 7146,
+          "totalTokenCount": 66511,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59365
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3544078125,
+      "accounted_usd": 0.0823546875,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/memory_on",
+      "usage": {
+        "input_tokens": 59897,
+        "output_tokens": 6987,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59897,
+          "candidatesTokenCount": 6987,
+          "totalTokenCount": 66884,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59897
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.33047625,
+      "accounted_usd": 0.07645125,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 53012,
+        "output_tokens": 7134,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 53012,
+          "candidatesTokenCount": 7134,
+          "totalTokenCount": 60146,
+          "cachedContentTokenCount": 50964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 53012
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 50964
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3572784375,
+      "accounted_usd": 0.0838209375,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_on",
+      "usage": {
+        "input_tokens": 60581,
+        "output_tokens": 7207,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 60581,
+          "candidatesTokenCount": 7207,
+          "totalTokenCount": 67788,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 60581
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.35946375,
+      "accounted_usd": 0.0846646875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_on",
+      "usage": {
+        "input_tokens": 61293,
+        "output_tokens": 7254,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 61293,
+          "candidatesTokenCount": 7254,
+          "totalTokenCount": 68547,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 61293
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3617353125,
+      "accounted_usd": 0.0852309375,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_on",
+      "usage": {
+        "input_tokens": 61985,
+        "output_tokens": 7232,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 61985,
+          "candidatesTokenCount": 7232,
+          "totalTokenCount": 69217,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 61985
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3555675,
+      "accounted_usd": 0.083341875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 60042,
+        "output_tokens": 7214,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 60042,
+          "candidatesTokenCount": 7214,
+          "totalTokenCount": 67256,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 60042
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.355419375,
+      "accounted_usd": 0.083263125,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 59990,
+        "output_tokens": 7206,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59990,
+          "candidatesTokenCount": 7206,
+          "totalTokenCount": 67196,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59990
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.355419375,
+      "accounted_usd": 0.083293125,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 59990,
+        "output_tokens": 7214,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59990,
+          "candidatesTokenCount": 7214,
+          "totalTokenCount": 67204,
+          "cachedContentTokenCount": 57942,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59990
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 57942
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.33047625,
+      "accounted_usd": 0.0757725,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 53012,
+        "output_tokens": 6953,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 53012,
+          "candidatesTokenCount": 6953,
+          "totalTokenCount": 59965,
+          "cachedContentTokenCount": 50964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 53012
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 50964
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3536896875,
+      "accounted_usd": 0.08204625,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 59628,
+        "output_tokens": 6972,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59628,
+          "candidatesTokenCount": 6972,
+          "totalTokenCount": 66600,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59628
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.3537,
+      "accounted_usd": 0.081871875,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/memory_off",
+      "usage": {
+        "input_tokens": 59614,
+        "output_tokens": 6929,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 59614,
+          "candidatesTokenCount": 6929,
+          "totalTokenCount": 66543,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 59614
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.355400625,
+      "accounted_usd": 0.082065,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/memory_on",
+      "usage": {
+        "input_tokens": 60164,
+        "output_tokens": 6843,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 60164,
+          "candidatesTokenCount": 6843,
+          "totalTokenCount": 67007,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 60164
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ],
+  "allocation_policy": "Fixed independent trial/arm envelopes; initial candidate paid once; unused allocations never transferred",
+  "required_reservation_usd": 7.93548,
+  "allocations": {
+    "trial-000/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.07400625
+    },
+    "trial-000/commons_csv/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0824521875
+    },
+    "trial-000/commons_csv/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0823546875
+    },
+    "trial-001/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.07645125
+    },
+    "trial-001/commons_csv/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.24989812499999997
+    },
+    "trial-001/commons_csv/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.2537165625
+    },
+    "trial-002/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0757725
+    },
+    "trial-002/commons_csv/memory_off": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.163918125
+    },
+    "trial-002/commons_csv/memory_on": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.082065
+    }
+  }
+}

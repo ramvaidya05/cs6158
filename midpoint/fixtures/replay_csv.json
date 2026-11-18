@@ -1,0 +1,5 @@
+{
+  "provenance": "synthetic_fixture",
+  "description": "Typed empty-output defect followed by an incomplete stdlib probe. Tests orchestration; not fresh inference or a full correct translation.",
+  "tasks": {"commons_csv": ["csv_broken.py", "csv_stdlib_probe.py"]}
+}

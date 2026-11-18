@@ -1,0 +1,377 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "csv-v1-visible-empty",
+      "status": "ok",
+      "value": []
+    },
+    {
+      "id": "csv-v1-visible-blank-default",
+      "status": "ok",
+      "value": []
+    },
+    {
+      "id": "csv-v1-visible-blank-kept",
+      "status": "ok",
+      "value": [
+        [
+          "a"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-trailing-fields",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "",
+          ""
+        ],
+        [
+          "b",
+          "c",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-quoted-empty",
+      "status": "ok",
+      "value": [
+        [
+          "",
+          "x"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-quoted-delimiter",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b,c"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-doubled-quote",
+      "status": "ok",
+      "value": [
+        [
+          "say \"hi\"",
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-multiline",
+      "status": "ok",
+      "value": [
+        [
+          "line1\nline2",
+          "x"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-mixed-endings",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c",
+          "d"
+        ],
+        [
+          "e",
+          "f"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-semicolon",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b;c",
+          "d"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-escaped-quote",
+      "status": "ok",
+      "value": [
+        [
+          "a\"b",
+          "c"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-spaces-literal",
+      "status": "ok",
+      "value": [
+        [
+          " a ",
+          " b "
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-surrounding",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v1-visible-trim",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "b"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-null-marker",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "",
+          "x"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-unicode",
+      "status": "ok",
+      "value": [
+        [
+          "\u03b1",
+          "\ud83d\ude80",
+          "e\u0301"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-quotes-disabled",
+      "status": "ok",
+      "value": [
+        [
+          "a",
+          "\"b\"",
+          "c"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-separator-is-printer-only",
+      "status": "ok",
+      "value": [
+        [
+          "a|b"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-visible-unterminated",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v1-visible-junk-after-quote",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v1-visible-invalid-delimiter",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v1-visible-invalid-bool",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v1-visible-invalid-quote-mode",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v1-visible-empty-output",
+      "status": "ok",
+      "value": ""
+    },
+    {
+      "id": "csv-v1-visible-empty-record",
+      "status": "ok",
+      "value": "\n"
+    },
+    {
+      "id": "csv-v1-visible-basic-output",
+      "status": "ok",
+      "value": "a,b\nc,d\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-quotes",
+      "status": "ok",
+      "value": "\"a,b\",\"say \"\"hi\"\"\",\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-multiline",
+      "status": "ok",
+      "value": "\"a\nb\",\"c\rd\"\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-unicode",
+      "status": "ok",
+      "value": "\u4e2d,\ud83d\ude80,\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-null",
+      "status": "ok",
+      "value": "NULL,NULL,\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-all",
+      "status": "ok",
+      "value": "\"a\",\"b\"\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-all-non-null",
+      "status": "ok",
+      "value": "\"N\",\"\",\"x\"\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-non-numeric",
+      "status": "ok",
+      "value": "\"12\",\"x\"\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-none",
+      "status": "ok",
+      "value": "a\\,b,c\\\nd\n"
+    },
+    {
+      "id": "csv-v1-visible-printer-custom",
+      "status": "ok",
+      "value": "\"a;b\"; c \n"
+    },
+    {
+      "id": "csv-v1-visible-printer-trim",
+      "status": "ok",
+      "value": "a,b\n"
+    },
+    {
+      "id": "csv-v1-visible-invalid-none",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-2bbac6bbd420498193fd4a3b14a3fff6",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-_984t2bg/candidate.py,dst=/candidate.py,readonly",
+      "sha256:8c842625ebe7d35d86261a999594cfb45847bc0ac561089d0790cd26413e06ff",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.364161,
+    "stdout": "[{\"id\": \"csv-v1-visible-empty\", \"status\": \"ok\", \"value\": []}, {\"id\": \"csv-v1-visible-blank-default\", \"status\": \"ok\", \"value\": []}, {\"id\": \"csv-v1-visible-blank-kept\", \"status\": \"ok\", \"value\": [[\"a\"], [\"\"]]}, {\"id\": \"csv-v1-visible-trailing-fields\", \"status\": \"ok\", \"value\": [[\"a\", \"\", \"\"], [\"b\", \"c\", \"\"]]}, {\"id\": \"csv-v1-visible-quoted-empty\", \"status\": \"ok\", \"value\": [[\"\", \"x\"]]}, {\"id\": \"csv-v1-visible-quoted-delimiter\", \"status\": \"ok\", \"value\": [[\"a\", \"b,c\"]]}, {\"id\": \"csv-v1-visible-doubled-quote\", \"status\": \"ok\", \"value\": [[\"say \\\"hi\\\"\", \"end\"]]}, {\"id\": \"csv-v1-visible-multiline\", \"status\": \"ok\", \"value\": [[\"line1\\nline2\", \"x\"]]}, {\"id\": \"csv-v1-visible-mixed-endings\", \"status\": \"ok\", \"value\": [[\"a\", \"b\"], [\"c\", \"d\"], [\"e\", \"f\"]]}, {\"id\": \"csv-v1-visible-semicolon\", \"status\": \"ok\", \"value\": [[\"a\", \"b;c\", \"d\"]]}, {\"id\": \"csv-v1-visible-escaped-quote\", \"status\": \"ok\", \"value\": [[\"a\\\"b\", \"c\"]]}, {\"id\": \"csv-v1-visible-spaces-literal\", \"status\": \"ok\", \"value\": [[\" a \", \" b \"]]}, {\"id\": \"csv-v1-visible-surrounding\", \"status\": \"exception\", \"type\": \"CSVParseError\"}, {\"id\": \"csv-v1-visible-trim\", \"status\": \"ok\", \"value\": [[\"a\", \"b\"]]}, {\"id\": \"csv-v1-visible-null-marker\", \"status\": \"ok\", \"value\": [[null, null, \"\", \"x\"]]}, {\"id\": \"csv-v1-visible-unicode\", \"status\": \"ok\", \"value\": [[\"\\u03b1\", \"\\ud83d\\ude80\", \"e\\u0301\"]]}, {\"id\": \"csv-v1-visible-quotes-disabled\", \"status\": \"ok\", \"value\": [[\"a\", \"\\\"b\\\"\", \"c\"]]}, {\"id\": \"csv-v1-visible-separator-is-printer-only\", \"status\": \"ok\", \"value\": [[\"a|b\"]]}, {\"id\": \"csv-v1-visible-unterminated\", \"status\": \"exception\", \"type\": \"CSVParseError\"}, {\"id\": \"csv-v1-visible-junk-after-quote\", \"status\": \"exception\", \"type\": \"CSVParseError\"}, {\"id\": \"csv-v1-visible-invalid-delimiter\", \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}, {\"id\": \"csv-v1-visible-invalid-bool\", \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}, {\"id\": \"csv-v1-visible-invalid-quote-mode\", \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}, {\"id\": \"csv-v1-visible-empty-output\", \"status\": \"ok\", \"value\": \"\"}, {\"id\": \"csv-v1-visible-empty-record\", \"status\": \"ok\", \"value\": \"\\n\"}, {\"id\": \"csv-v1-visible-basic-output\", \"status\": \"ok\", \"value\": \"a,b\\nc,d\\n\"}, {\"id\": \"csv-v1-visible-printer-quotes\", \"status\": \"ok\", \"value\": \"\\\"a,b\\\",\\\"say \\\"\\\"hi\\\"\\\"\\\",\\n\"}, {\"id\": \"csv-v1-visible-printer-multiline\", \"status\": \"ok\", \"value\": \"\\\"a\\nb\\\",\\\"c\\rd\\\"\\n\"}, {\"id\": \"csv-v1-visible-printer-unicode\", \"status\": \"ok\", \"value\": \"\\u4e2d,\\ud83d\\ude80,\\n\"}, {\"id\": \"csv-v1-visible-printer-null\", \"status\": \"ok\", \"value\": \"NULL,NULL,\\n\"}, {\"id\": \"csv-v1-visible-printer-all\", \"status\": \"ok\", \"value\": \"\\\"a\\\",\\\"b\\\"\\n\"}, {\"id\": \"csv-v1-visible-printer-all-non-null\", \"status\": \"ok\", \"value\": \"\\\"N\\\",\\\"\\\",\\\"x\\\"\\n\"}, {\"id\": \"csv-v1-visible-printer-non-numeric\", \"status\": \"ok\", \"value\": \"\\\"12\\\",\\\"x\\\"\\n\"}, {\"id\": \"csv-v1-visible-printer-none\", \"status\": \"ok\", \"value\": \"a\\\\,b,c\\\\\\nd\\n\"}, {\"id\": \"csv-v1-visible-printer-custom\", \"status\": \"ok\", \"value\": \"\\\"a;b\\\"; c \\n\"}, {\"id\": \"csv-v1-visible-printer-trim\", \"status\": \"ok\", \"value\": \"a,b\\n\"}, {\"id\": \"csv-v1-visible-invalid-none\", \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T02:27:11.912162045Z",
+      "FinishedAt": "2026-11-18T02:27:16.202341255Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:6ef59ab7ce1742ac31545d5ada4a4ef16964bfad84e9bde15311b83a0fb30d8b",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:8c842625ebe7d35d86261a999594cfb45847bc0ac561089d0790cd26413e06ff",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

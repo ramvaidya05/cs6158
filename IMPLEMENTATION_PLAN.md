@@ -44,6 +44,10 @@ detected, but fractional JaroWinkler transpositions escaped the visible split an
 failed only withheld cases. This motivates a separately versioned future visible
 protocol, not retroactive changes to the existing scores or prompts.
 
+Next subject selected by the user: **Apache Commons CSV**. [Preparation observations](midpoint/CSV_PREPARATION_OBSERVATIONS.md) record the pinned 1.10.0 source, draft parser/printer scope, Java oracle qualification, and remaining candidate-adapter/evaluation work. This onboarding is not a live translation result.
+
+CSV adapter checkpoint: [frozen CSV evaluation and local validation](midpoint/CSV_ADAPTER_OBSERVATIONS.md). Both runtimes support the two scoped entrypoints; 37 visible and 28 holdout scenarios are frozen, all eight injected defects are detected, and the incomplete-probe replay reports its failures correctly. The subsequent [live CSV study](midpoint/CSV_LIVE_OBSERVATIONS.md) completed its main cohort: code repair improved holdout case accuracy, but no candidate passed the entire visible-plus-holdout suite. The separate memory cohort also completed: identical final accuracy with and without local history, with one fewer retry in one pair. Next is failure classification and a versioned follow-up suite with new independent holdout coverage, before broader CSV API expansion.
+
 ## 1. Recommended research direction
 
 Build a small, reproducible Java-to-Python translation system that combines dependency-aware translation, executable Java reference behavior, GraalPy validation, and bounded repair of both target code and its environment. Start by validating the evaluator, then add translation, then repair, and finally investigate diagnostic reports and broader generalization.

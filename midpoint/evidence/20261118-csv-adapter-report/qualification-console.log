@@ -1,0 +1,10 @@
+Artifacts: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261118T022637Z-csv-qualification-b4870d72
+split_lines_and_commas {'cpython': True, 'graal': True}
+drop_empty_fields {'cpython': True, 'graal': True}
+collapse_null {'cpython': True, 'graal': True}
+ignore_trim {'cpython': True, 'graal': True}
+reverse_records {'cpython': True, 'graal': True}
+wrong_exception {'cpython': True, 'graal': True}
+printer_lf_only {'cpython': True, 'graal': True}
+printer_quote_loss {'cpython': True, 'graal': True}
+Archived: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/evidence/20261118T022637Z-csv-qualification-b4870d72

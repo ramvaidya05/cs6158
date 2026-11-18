@@ -48,7 +48,8 @@ def evaluation_cases(task, seed, count=100):
 
 
 def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
-    if profile not in ("pilot", "commons-cli-semantic-v2", "commons-cli-extended-v3") or (profile != "pilot" and tuple(tasks) != ("commons_cli",)):
+    profiles = {"commons-cli-semantic-v2": "commons_cli", "commons-cli-extended-v3": "commons_cli", "commons-csv-v1": "commons_csv"}
+    if (profile != "pilot" and (profile not in profiles or tuple(tasks) != (profiles[profile],))) or ("commons_csv" in tasks and profile != "commons-csv-v1"):
         raise ValueError("Unsupported profile/task combination")
     if not tasks or len(set(tasks)) != len(tasks) or any(t not in ALL_TASKS for t in tasks):
         raise ValueError("Unsupported or duplicate tasks")
@@ -66,16 +67,22 @@ def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
         if "commons_cli" in tasks:
             from .cli_task import identity
             payload["task_identities"]["commons_cli"] = identity()
+    if "commons_csv" in tasks:
+        from .csv_task import identity as csv_identity
+        payload["task_identities"]["commons_csv"] = csv_identity()
     if profile != "pilot":
         payload["profile"] = profile
-        payload["profile_sha256"] = sha256(ROOT / ("migration_lab/cli_extended.py" if profile == "commons-cli-extended-v3" else "migration_lab/cli_semantic.py"))
-        payload["semantic_base_sha256"] = sha256(ROOT / "migration_lab/cli_semantic.py")
+        payload["profile_sha256"] = sha256(ROOT / ("migration_lab/csv_cases.py" if profile == "commons-csv-v1" else "migration_lab/cli_extended.py" if profile == "commons-cli-extended-v3" else "migration_lab/cli_semantic.py"))
+        if profile != "commons-csv-v1":
+            payload["semantic_base_sha256"] = sha256(ROOT / "migration_lab/cli_semantic.py")
     tester = TestsuiteAgent(EnvironmentAgent())
     evidence = path.parent / (path.stem + "-oracle")
     for task in tasks:
         payload["tasks"][task] = {}
         if profile != "pilot":
-            if profile == "commons-cli-extended-v3":
+            if profile == "commons-csv-v1":
+                from .csv_cases import cases as semantic_cases
+            elif profile == "commons-cli-extended-v3":
                 from .cli_extended import cases as semantic_cases
             else:
                 from .cli_semantic import cases as semantic_cases
@@ -109,13 +116,26 @@ class FrozenSuite:
         if payload["schema"] == 2 and payload["generator_sha256"] != sha256(Path(__file__)):
             raise RuntimeError("Suite generator differs from frozen protocol")
         if payload.get("profile", "pilot") != "pilot":
-            profile_file = {"commons-cli-semantic-v2": "cli_semantic.py", "commons-cli-extended-v3": "cli_extended.py"}.get(payload["profile"])
+            profile_file = {"commons-cli-semantic-v2": "cli_semantic.py", "commons-cli-extended-v3": "cli_extended.py", "commons-csv-v1": "csv_cases.py"}.get(payload["profile"])
             if (profile_file is None or payload["profile_sha256"] != sha256(ROOT / "migration_lab" / profile_file)
                     or payload.get("semantic_base_sha256", sha256(ROOT / "migration_lab/cli_semantic.py")) != sha256(ROOT / "migration_lab/cli_semantic.py")):
                 raise RuntimeError("Semantic profile changed")
         selected = TASKS if payload["schema"] == 1 else tuple(payload["tasks"])
         if not selected or any(t not in ALL_TASKS for t in selected):
             raise ValueError("Invalid suite tasks")
+        if "commons_csv" in selected:
+            from .csv_task import identity as csv_identity, validate_cases as csv_validate, validate_rows as csv_rows
+            if payload.get("profile") != "commons-csv-v1" or payload.get("task_identities", {}).get("commons_csv") != csv_identity():
+                raise RuntimeError("CSV task differs from frozen protocol")
+            entries = payload["tasks"]["commons_csv"]
+            for entry in entries.values():
+                csv_validate(entry["cases"])
+                csv_rows(entry["reference"], entry["cases"])
+            def signature(row):
+                return json.dumps({k:v for k,v in row.items() if k != "id"}, sort_keys=True)
+            visible = {signature(row) for row in entries["visible"]["cases"]}
+            if any(signature(row) in visible for row in entries["holdout"]["cases"]):
+                raise ValueError("CSV visible and holdout overlap")
         if "commons_cli" in selected:
             from .cli_task import identity, contract
             from .scenarios import validate_cases, validate_rows

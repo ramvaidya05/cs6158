@@ -51,6 +51,11 @@ class EnvironmentAgent:
         if not cases:
             raise ValueError("Refusing zero-test run")
         stateful = any(c.get("task") == "commons_cli" for c in cases)
+        csv_task = any(c.get("task") == "commons_csv" for c in cases)
+        if csv_task:
+            from .csv_task import validate_cases as validate_csv_cases, verify_source as verify_csv_source
+            verify_csv_source()
+            validate_csv_cases(cases)
         if stateful:
             from .cli_task import contract, verify_source
             from .scenarios import validate_cases
@@ -69,6 +74,10 @@ class EnvironmentAgent:
                     names = {n.name for n in tree.body if isinstance(n, ast.ClassDef)}
                     if not set(contract()["classes"]) <= names:
                         raise SyntaxError("Candidate must define all contract classes")
+                elif csv_task:
+                    names = {n.name for n in tree.body if isinstance(n, ast.FunctionDef)}
+                    if not {"parse_csv", "print_csv"} <= names:
+                        raise SyntaxError("Candidate must define parse_csv and print_csv")
                 elif not any(isinstance(n, ast.FunctionDef) and n.name == "run" for n in tree.body):
                     raise SyntaxError("Candidate must define top-level function run")
             except (SyntaxError, UnicodeError) as exc:
@@ -113,6 +122,9 @@ class EnvironmentAgent:
                 if stateful:
                     from .scenarios import validate_rows
                     validate_rows(rows, cases)
+                if csv_task:
+                    from .csv_task import validate_rows as validate_csv_rows
+                    validate_csv_rows(rows, cases)
                 status = "completed"
             except (ValueError, KeyError, TypeError) as exc:
                 status, detail, rows = "protocol_error", str(exc), []

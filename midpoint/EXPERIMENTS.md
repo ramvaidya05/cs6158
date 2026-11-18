@@ -515,3 +515,20 @@ The [first completed trial](evidence/20261117T232219Z-codec-hex-pilot/summary.js
 had no visible failures and therefore no repair call. It passed 70/73 withheld
 cases in CPython and 73/73 in GraalPy. Do not treat those cases as independent
 model trials or as accuracy across the full Commons Codec library.
+
+
+## Commons CSV v1
+
+The `commons_csv` task uses `--profile commons-csv-v1` when freezing and exact structured/text comparison. See [CSV_ADAPTER_OBSERVATIONS.md](CSV_ADAPTER_OBSERVATIONS.md) for qualification and replay commands, frozen-suite identity, input-context limits, and the distinction between synthetic probe results and live inference. Use a new suite path; old CLI archives remain tied to their recorded evaluator fingerprints.
+
+### Live CSV study
+
+The staged runner uses the frozen adapter suite and independent spending caps:
+
+```sh
+python3 scripts/run_csv_v1_study.py --phase smoke --suite evidence/20261118-csv-adapter-report/suite.json
+python3 scripts/run_csv_v1_study.py --phase main --suite evidence/20261118-csv-adapter-report/suite.json
+python3 scripts/run_csv_v1_study.py --phase memory --suite evidence/20261118-csv-adapter-report/suite.json
+```
+
+These commands make paid Gemini calls. Start with the smoke; run memory only when the main study has visible initial failures and no operational blocker. See [CSV_LIVE_OBSERVATIONS.md](CSV_LIVE_OBSERVATIONS.md) for settings, accounting assumptions, results, and limits. The runner supports `GEMINI_API_KEY`, `.env.gemini`, or the existing `.env` fallback; never commit credentials.

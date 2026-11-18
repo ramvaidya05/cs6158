@@ -1,0 +1,504 @@
+{
+  "provenance": "synthetic_fixture",
+  "study": "memory_ablation",
+  "measurement_status": "evaluated",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_off": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_on": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "memory_off",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 78.57142857142857,
+        "graal": 78.57142857142857
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "memory_on",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": false,
+      "task_success_delta": 0,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 78.57142857142857,
+        "graal": 78.57142857142857
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "one_shot",
+      "path": "trial-000/commons_csv/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 19.052,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "memory_off",
+      "path": "trial-000/commons_csv/memory_off",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 23.582,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "memory_on",
+      "path": "trial-000/commons_csv/memory_on",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 23.946,
+      "usage": {
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  ],
+  "repair_opportunities": {
+    "admitted_initials": 1,
+    "completed_initials": 1,
+    "initials_with_visible_failures": 1,
+    "initials_passing_visible": 0,
+    "arms": {
+      "memory_off": {
+        "eligible_pairs_completed": 1,
+        "eligible_pairs_fully_recovered": 0,
+        "pairs_with_holdout_regression": 0
+      },
+      "memory_on": {
+        "eligible_pairs_completed": 1,
+        "eligible_pairs_fully_recovered": 0,
+        "pairs_with_holdout_regression": 0
+      }
+    },
+    "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+  },
+  "by_task": {
+    "commons_csv": {
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 1,
+          "completed_task_trials": 1,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": 0.0,
+          "descriptive_wilson_95": [
+            0,
+            0.7934567085261071
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 3,
+                "total": 37,
+                "rate": 0.08108108108108109,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 28,
+                "rate": 0.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 3,
+                "total": 37,
+                "rate": 0.08108108108108109,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 0,
+                "total": 28,
+                "rate": 0.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "memory_off": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 1,
+          "completed_task_trials": 1,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": 0.0,
+          "descriptive_wilson_95": [
+            0,
+            0.7934567085261071
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 33,
+                "total": 37,
+                "rate": 0.8918918918918919,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 22,
+                "total": 28,
+                "rate": 0.7857142857142857,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 33,
+                "total": 37,
+                "rate": 0.8918918918918919,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 22,
+                "total": 28,
+                "rate": 0.7857142857142857,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "memory_on": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 1,
+          "completed_task_trials": 1,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": 0.0,
+          "descriptive_wilson_95": [
+            0,
+            0.7934567085261071
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 33,
+                "total": 37,
+                "rate": 0.8918918918918919,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 22,
+                "total": 28,
+                "rate": 0.7857142857142857,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 33,
+                "total": 37,
+                "rate": 0.8918918918918919,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 22,
+                "total": 28,
+                "rate": 0.7857142857142857,
+                "unvalidated": 0
+              }
+            }
+          }
+        }
+      },
+      "repair_opportunities": {
+        "admitted_initials": 1,
+        "completed_initials": 1,
+        "initials_with_visible_failures": 1,
+        "initials_passing_visible": 0,
+        "arms": {
+          "memory_off": {
+            "eligible_pairs_completed": 1,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          },
+          "memory_on": {
+            "eligible_pairs_completed": 1,
+            "eligible_pairs_fully_recovered": 0,
+            "pairs_with_holdout_regression": 0
+          }
+        },
+        "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "usage_unknown_calls": 0
+  }
+}

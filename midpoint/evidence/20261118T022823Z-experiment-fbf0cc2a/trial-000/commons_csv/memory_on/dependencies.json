@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "stdlib_imports": [
+    "csv",
+    "io"
+  ],
+  "unresolved_imports": [],
+  "dynamic_loading_lines": [],
+  "requirements": [],
+  "policy": "Single Python module, standard-library only. No third-party distributions approved. Static inspection is not a security sandbox or a runtime compatibility guarantee."
+}

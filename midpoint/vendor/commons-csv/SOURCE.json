@@ -1,0 +1,25 @@
+{
+  "artifact": "org.apache.commons:commons-csv:1.10.0",
+  "source_url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-csv/1.10.0/commons-csv-1.10.0-sources.jar",
+  "archive_sha256": "94fa4e32ed1c1aeba053dfac8b69fb7f0d267a70c633ce85ed2a5fa9659be00f",
+  "published_sha1": "27bb8cf5d6829b003636a600d169f456ee83709f",
+  "license": "Apache-2.0",
+  "files": {
+    "src/main/java/org/apache/commons/csv/CSVFormat.java": "7edafcae94c899f0c37247970d52aac9b436121aa6c97e36717163ded7fa38b9",
+    "src/main/java/org/apache/commons/csv/CSVParser.java": "49c743a7c43b3bcd80620811dfee239b8446720c4b6a2ba01bc2e8901a767e8a",
+    "src/main/java/org/apache/commons/csv/CSVPrinter.java": "3d25f081a271d783a5cc48bb172a72687494e36d2e7e6d272319e6060f783e9f",
+    "src/main/java/org/apache/commons/csv/CSVRecord.java": "8cbc02cfa53d4fd3585399073787c285b27cd1b64d3ca820fdcc83b36e2b6b25",
+    "src/main/java/org/apache/commons/csv/Constants.java": "c6b97bdf3a4f0dfe7fccf91a616d9e541d2dddd2a6b09323813f0ba08e0e80b9",
+    "src/main/java/org/apache/commons/csv/DuplicateHeaderMode.java": "36eabfad7650d413c8a6f41558b8021520775d2d39f0e0666fa64d1131ae6c60",
+    "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java": "117dc55b49c9aab03f636811b20d0fc67044a993519fc2e13bdcb3ebae697237",
+    "src/main/java/org/apache/commons/csv/IOUtils.java": "3c0bf44b1545966bd4facd70930b153fb21660eaa0618420131b7af9c122e86c",
+    "src/main/java/org/apache/commons/csv/Lexer.java": "6de461d08a8afd3136ecee3daf6e7f1b180fa4b6c2c7811f14f3f72ddcc2608d",
+    "src/main/java/org/apache/commons/csv/QuoteMode.java": "b911f1faa82391ef8a5f81ad538d5bfe8bde9c5753014021c593d7ae9faaac4a",
+    "src/main/java/org/apache/commons/csv/Token.java": "9ffada06bf831ad2148f8ddf264dbf0e9efbb1052aba82aaab8995ee3ba7c9cc",
+    "src/main/java/org/apache/commons/csv/package-info.java": "99ab3d854b4bd825367318961ec19d2780ddcabed6d12c83598896d024eb0774",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "f084f5e707a26e488e6de3480e1415d9258b9f350457a9024c28fc54a477bcf3"
+  },
+  "selection": "Fixed historical source version with a self-contained parser/printer implementation. Not a latest-release or AlphaTrans-version claim.",
+  "scope": "All Java package sources vendored for provenance; only scoped behavior will be evaluated."
+}

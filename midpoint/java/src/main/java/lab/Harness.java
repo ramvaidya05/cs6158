@@ -41,6 +41,7 @@ public final class Harness {
             for (JsonNode c : cases) {
                 if (c.path("task").asText().equals("commons_cli")) { rows.add(CliScenario.run(c)); continue; }
                 if (c.path("task").asText().equals("commons_codec_hex")) { rows.add(CodecHexScenario.run(c)); continue; }
+                if (c.path("task").asText().equals("commons_csv")) { rows.add(CsvScenario.run(c)); continue; }
                 ObjectNode r = JSON.createObjectNode().put("id", c.get("id").asText());
                 try { r.put("status", "ok").put("value", reference(c)); }
                 catch (NullPointerException e) { r.put("status", "exception").put("type", "NullPointerException").put("message", e.getMessage()); }

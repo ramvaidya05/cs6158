@@ -1,0 +1,1083 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 19,
+      "total": 37,
+      "status": "completed",
+      "passed_ids": [
+        "csv-v1-visible-empty",
+        "csv-v1-visible-blank-kept",
+        "csv-v1-visible-trailing-fields",
+        "csv-v1-visible-mixed-endings",
+        "csv-v1-visible-spaces-literal",
+        "csv-v1-visible-unicode",
+        "csv-v1-visible-quotes-disabled",
+        "csv-v1-visible-separator-is-printer-only",
+        "csv-v1-visible-empty-output",
+        "csv-v1-visible-empty-record",
+        "csv-v1-visible-basic-output",
+        "csv-v1-visible-printer-quotes",
+        "csv-v1-visible-printer-multiline",
+        "csv-v1-visible-printer-unicode",
+        "csv-v1-visible-printer-null",
+        "csv-v1-visible-printer-all",
+        "csv-v1-visible-printer-non-numeric",
+        "csv-v1-visible-printer-trim",
+        "csv-v1-visible-invalid-none"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "csv-v1-visible-blank-default",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\n\r\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-blank-default",
+            "status": "ok",
+            "value": []
+          },
+          "actual": {
+            "id": "csv-v1-visible-blank-default",
+            "status": "ok",
+            "value": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-quoted-empty",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\",x\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-quoted-empty",
+            "status": "ok",
+            "value": [
+              [
+                "",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-quoted-empty",
+            "status": "ok",
+            "value": [
+              [
+                "\"\"",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b,c\"\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b,c"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "\"b",
+                "c\""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-doubled-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"say \"\"hi\"\"\",end",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-doubled-quote",
+            "status": "ok",
+            "value": [
+              [
+                "say \"hi\"",
+                "end"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-doubled-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"say \"\"hi\"\"\"",
+                "end"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-multiline",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"line1\nline2\",x\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "line1\nline2",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "\"line1"
+              ],
+              [
+                "line2\"",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-semicolon",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a;\"b;c\";d",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b;c",
+                "d"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "a;\"b;c\";d"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-escaped-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\\\"b\",c",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-escaped-quote",
+            "status": "ok",
+            "value": [
+              [
+                "a\"b",
+                "c"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-escaped-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"a\\\"b\"",
+                "c"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-surrounding",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                " \" b \" "
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-trim",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a ,\" b \"",
+            "config": {
+              "trim": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-trim",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-trim",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                "\" b \""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-null-marker",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "NULL,\"NULL\",,x",
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                "NULL",
+                "\"NULL\"",
+                "",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-unterminated",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"open",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-unterminated",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          "actual": {
+            "id": "csv-v1-visible-unterminated",
+            "status": "ok",
+            "value": [
+              [
+                "\"open"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"x\"junk,y",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          "actual": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"x\"junk",
+                "y"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b",
+            "config": {
+              "delimiter": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-bool",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "trim": 1
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-bool",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-bool",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "quote_mode": "UNKNOWN"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "\"N\",\"\",\"x\"\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\\nd\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\"; c \n"
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 19,
+      "total": 37,
+      "status": "completed",
+      "passed_ids": [
+        "csv-v1-visible-empty",
+        "csv-v1-visible-blank-kept",
+        "csv-v1-visible-trailing-fields",
+        "csv-v1-visible-mixed-endings",
+        "csv-v1-visible-spaces-literal",
+        "csv-v1-visible-unicode",
+        "csv-v1-visible-quotes-disabled",
+        "csv-v1-visible-separator-is-printer-only",
+        "csv-v1-visible-empty-output",
+        "csv-v1-visible-empty-record",
+        "csv-v1-visible-basic-output",
+        "csv-v1-visible-printer-quotes",
+        "csv-v1-visible-printer-multiline",
+        "csv-v1-visible-printer-unicode",
+        "csv-v1-visible-printer-null",
+        "csv-v1-visible-printer-all",
+        "csv-v1-visible-printer-non-numeric",
+        "csv-v1-visible-printer-trim",
+        "csv-v1-visible-invalid-none"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "csv-v1-visible-blank-default",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\n\r\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-blank-default",
+            "status": "ok",
+            "value": []
+          },
+          "actual": {
+            "id": "csv-v1-visible-blank-default",
+            "status": "ok",
+            "value": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-quoted-empty",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\",x\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-quoted-empty",
+            "status": "ok",
+            "value": [
+              [
+                "",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-quoted-empty",
+            "status": "ok",
+            "value": [
+              [
+                "\"\"",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b,c\"\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b,c"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "\"b",
+                "c\""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-doubled-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"say \"\"hi\"\"\",end",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-doubled-quote",
+            "status": "ok",
+            "value": [
+              [
+                "say \"hi\"",
+                "end"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-doubled-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"say \"\"hi\"\"\"",
+                "end"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-multiline",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"line1\nline2\",x\n",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "line1\nline2",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "\"line1"
+              ],
+              [
+                "line2\"",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-semicolon",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a;\"b;c\";d",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b;c",
+                "d"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "a;\"b;c\";d"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-escaped-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\\\"b\",c",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-escaped-quote",
+            "status": "ok",
+            "value": [
+              [
+                "a\"b",
+                "c"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-escaped-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"a\\\"b\"",
+                "c"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-surrounding",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                " \" b \" "
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-trim",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a ,\" b \"",
+            "config": {
+              "trim": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-trim",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-trim",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                "\" b \""
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-null-marker",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "NULL,\"NULL\",,x",
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                "x"
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                "NULL",
+                "\"NULL\"",
+                "",
+                "x"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-unterminated",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"open",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-unterminated",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          "actual": {
+            "id": "csv-v1-visible-unterminated",
+            "status": "ok",
+            "value": [
+              [
+                "\"open"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"x\"junk,y",
+            "config": {}
+          },
+          "expected": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          "actual": {
+            "id": "csv-v1-visible-junk-after-quote",
+            "status": "ok",
+            "value": [
+              [
+                "\"x\"junk",
+                "y"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b",
+            "config": {
+              "delimiter": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-bool",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "trim": 1
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-bool",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-bool",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "quote_mode": "UNKNOWN"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          "actual": {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ]
+            ]
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "\"N\",\"\",\"x\"\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\\nd\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\"; c \n"
+          }
+        }
+      ]
+    }
+  },
+  "passed": 38,
+  "total": 74,
+  "all_pass": false
+}

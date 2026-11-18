@@ -30,6 +30,8 @@ def diagnostics(summary):
                 actual = failure.get('actual', {})
                 observation = {'category': 'runtime_exception' if actual.get('status') == 'exception' else 'behavioral_mismatch',
                                'expected': clip(failure.get('expected')), 'actual': clip(actual)}
+                if case.get('task') == 'commons_csv':
+                    observation['input'] = clip({k:v for k,v in case.items() if k not in ('id','task')}, 1800)
             else:
                 stderr = failure.get('stderr', '')
                 lines = stderr.splitlines()

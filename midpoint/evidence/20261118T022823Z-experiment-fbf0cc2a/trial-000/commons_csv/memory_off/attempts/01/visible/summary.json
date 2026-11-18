@@ -1,0 +1,307 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 33,
+      "total": 37,
+      "status": "completed",
+      "passed_ids": [
+        "csv-v1-visible-empty",
+        "csv-v1-visible-blank-default",
+        "csv-v1-visible-blank-kept",
+        "csv-v1-visible-trailing-fields",
+        "csv-v1-visible-quoted-empty",
+        "csv-v1-visible-quoted-delimiter",
+        "csv-v1-visible-doubled-quote",
+        "csv-v1-visible-multiline",
+        "csv-v1-visible-mixed-endings",
+        "csv-v1-visible-semicolon",
+        "csv-v1-visible-escaped-quote",
+        "csv-v1-visible-spaces-literal",
+        "csv-v1-visible-trim",
+        "csv-v1-visible-null-marker",
+        "csv-v1-visible-unicode",
+        "csv-v1-visible-quotes-disabled",
+        "csv-v1-visible-separator-is-printer-only",
+        "csv-v1-visible-unterminated",
+        "csv-v1-visible-junk-after-quote",
+        "csv-v1-visible-invalid-delimiter",
+        "csv-v1-visible-invalid-bool",
+        "csv-v1-visible-invalid-quote-mode",
+        "csv-v1-visible-empty-output",
+        "csv-v1-visible-empty-record",
+        "csv-v1-visible-basic-output",
+        "csv-v1-visible-printer-quotes",
+        "csv-v1-visible-printer-multiline",
+        "csv-v1-visible-printer-unicode",
+        "csv-v1-visible-printer-null",
+        "csv-v1-visible-printer-all",
+        "csv-v1-visible-printer-non-numeric",
+        "csv-v1-visible-printer-trim",
+        "csv-v1-visible-invalid-none"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "csv-v1-visible-surrounding",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "exception",
+            "type": "CSVParseError"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "\"N\",\"\",\"x\"\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\\nd\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\"; c \n"
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 33,
+      "total": 37,
+      "status": "completed",
+      "passed_ids": [
+        "csv-v1-visible-empty",
+        "csv-v1-visible-blank-default",
+        "csv-v1-visible-blank-kept",
+        "csv-v1-visible-trailing-fields",
+        "csv-v1-visible-quoted-empty",
+        "csv-v1-visible-quoted-delimiter",
+        "csv-v1-visible-doubled-quote",
+        "csv-v1-visible-multiline",
+        "csv-v1-visible-mixed-endings",
+        "csv-v1-visible-semicolon",
+        "csv-v1-visible-escaped-quote",
+        "csv-v1-visible-spaces-literal",
+        "csv-v1-visible-trim",
+        "csv-v1-visible-null-marker",
+        "csv-v1-visible-unicode",
+        "csv-v1-visible-quotes-disabled",
+        "csv-v1-visible-separator-is-printer-only",
+        "csv-v1-visible-unterminated",
+        "csv-v1-visible-junk-after-quote",
+        "csv-v1-visible-invalid-delimiter",
+        "csv-v1-visible-invalid-bool",
+        "csv-v1-visible-invalid-quote-mode",
+        "csv-v1-visible-empty-output",
+        "csv-v1-visible-empty-record",
+        "csv-v1-visible-basic-output",
+        "csv-v1-visible-printer-quotes",
+        "csv-v1-visible-printer-multiline",
+        "csv-v1-visible-printer-unicode",
+        "csv-v1-visible-printer-null",
+        "csv-v1-visible-printer-all",
+        "csv-v1-visible-printer-non-numeric",
+        "csv-v1-visible-printer-trim",
+        "csv-v1-visible-invalid-none"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "csv-v1-visible-surrounding",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          "actual": {
+            "id": "csv-v1-visible-surrounding",
+            "status": "exception",
+            "type": "CSVParseError"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "\"N\",\"\",\"x\"\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\\nd\r\n"
+          }
+        },
+        {
+          "case": {
+            "id": "csv-v1-visible-printer-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          "expected": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          "actual": {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\"; c \n"
+          }
+        }
+      ]
+    }
+  },
+  "passed": 66,
+  "total": 74,
+  "all_pass": false
+}

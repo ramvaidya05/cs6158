@@ -1,0 +1,11 @@
+{
+  "phase": "memory",
+  "purpose": "three fresh paired trials",
+  "rates_note": "Supplied conservative accounting rates; not a provider invoice or verified current price",
+  "model": "gemini-3.8-flash",
+  "max_repairs": 3,
+  "budget_limit_usd": 8,
+  "fault": "none",
+  "memory_enabled": true,
+  "policy": "No cross-trial learning or manual candidate edits. All selections before holdout scoring."
+}

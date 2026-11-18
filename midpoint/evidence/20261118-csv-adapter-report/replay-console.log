@@ -1,0 +1,141 @@
+Trial 1/1: commons_csv, one_shot
+Trial 1/1: commons_csv, memory_off
+Trial 1/1: commons_csv, memory_on
+Archived: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/evidence/20261118T022823Z-experiment-fbf0cc2a
+Artifacts: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261118T022823Z-experiment-fbf0cc2a
+{
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 3,
+            "total": 37,
+            "rate": 0.08108108108108109,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 0,
+            "total": 28,
+            "rate": 0.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_off": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "memory_on": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 1,
+      "completed_task_trials": 1,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.7934567085261071
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 33,
+            "total": 37,
+            "rate": 0.8918918918918919,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 22,
+            "total": 28,
+            "rate": 0.7857142857142857,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "usage_unknown_calls": 0
+  }
+}

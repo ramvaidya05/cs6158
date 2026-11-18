@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "task": "commons_csv",
+  "version": "commons-csv-parser-printer-v1",
+  "status": "Executable adapter contract; suite must be frozen before live generation",
+  "source_artifact": "org.apache.commons:commons-csv:1.10.0",
+  "candidate_entrypoints": {
+    "parse_csv(text, config)": {
+      "returns": "list[list[string|null]]"
+    },
+    "print_csv(records, config)": {
+      "returns": "string"
+    }
+  },
+  "base_format": "CSVFormat.DEFAULT",
+  "settings": {
+    "delimiter": "one non-null UTF-16 character",
+    "quote": "one UTF-16 character or null",
+    "escape": "one UTF-16 character or null",
+    "record_separator": "string",
+    "null_string": "string or null",
+    "quote_mode": [
+      "ALL",
+      "ALL_NON_NULL",
+      "MINIMAL",
+      "NON_NUMERIC",
+      "NONE"
+    ],
+    "ignore_empty_lines": "boolean",
+    "ignore_surrounding_spaces": "boolean",
+    "trim": "boolean"
+  },
+  "comparison": "Exact nested records and exact printer output including line endings; normalized exception category; messages not scored",
+  "exception_map": {
+    "IOException": "CSVParseError",
+    "UncheckedIOException": "CSVParseError",
+    "IllegalArgumentException": "IllegalArgumentException"
+  },
+  "scored_methods_note": "Two observable entrypoints; configuration settings are not additional scored methods.",
+  "excluded": [
+    "file/network/JDBC I/O",
+    "headers and name-based lookup in initial scope",
+    "arbitrary objects/numeric printer dispatch",
+    "streaming resource lifecycle",
+    "arbitrary format presets",
+    "full repository migration"
+  ],
+  "source_files": [
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/CSVParser.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/Constants.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/DuplicateHeaderMode.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/IOUtils.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/Lexer.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/QuoteMode.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/Token.java",
+    "vendor/commons-csv/src/main/java/org/apache/commons/csv/package-info.java"
+  ],
+  "candidate_exceptions": [
+    "CSVParseError",
+    "IllegalArgumentException"
+  ],
+  "input_bounds": {
+    "text_characters": 16000,
+    "records": 100,
+    "fields_per_record": 100,
+    "field_characters": 4096,
+    "configuration_string_characters": 128
+  }
+}

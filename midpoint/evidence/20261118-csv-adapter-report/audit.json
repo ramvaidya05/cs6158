@@ -1,0 +1,8 @@
+{
+  "replay_archive": "20261118T022823Z-experiment-fbf0cc2a",
+  "initials_identical": true,
+  "holdout_case_ids_absent_from_prompts_and_memory": true,
+  "memory_only_in_enabled_arm": true,
+  "selected_hashes_match": true,
+  "model_calls": 0
+}

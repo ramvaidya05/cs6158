@@ -7,6 +7,29 @@ def evaluate_candidate(source, cases, contract):
         validate_cases(cases, contract)
         validate_implementation(scope, contract)
         return [execute_scenario(scope, case, contract) for case in cases]
+    if cases[0]["task"] == "commons_csv":
+        for name in ("parse_csv", "print_csv"):
+            if not callable(scope.get(name)):
+                raise TypeError("Candidate must define " + name)
+        rows = []
+        for case in cases:
+            row = {"id": case["id"]}
+            try:
+                config = json.loads(json.dumps(case.get("config", {})))
+                if case["operation"] == "parse":
+                    value = scope["parse_csv"](case["text"], config)
+                    if not isinstance(value, list) or any(not isinstance(record, list) or
+                            any(v is not None and not isinstance(v, str) for v in record) for record in value):
+                        raise TypeError("Parser must return nested string/null lists")
+                else:
+                    value = scope["print_csv"](json.loads(json.dumps(case["records"])), config)
+                    if not isinstance(value, str):
+                        raise TypeError("Printer must return a string")
+                row.update(status="ok", value=value)
+            except Exception as exc:
+                row.update(status="exception", type=type(exc).__name__)
+            rows.append(row)
+        return rows
     if cases[0]["task"] == "commons_codec_hex":
         if not callable(scope.get("run")):
             raise TypeError("Candidate must define run(operation, data, lower)")

@@ -1,0 +1,1264 @@
+{
+  "schema": 2,
+  "seed": 6158,
+  "source": {
+    "repository": "https://github.com/tdebatty/java-string-similarity",
+    "commit": "93240df9aab3ecea98b869c9536aa7ebc555b281",
+    "note": "Unmodified subset of main sources, interfaces and corresponding upstream tests. Harness build configuration is separate.",
+    "files": {
+      "LICENSE.md": "bae2d5f8af7bbb46fca680a3d191522b0cd8b1d5b3d5d72c8d49e785d60a39df",
+      "src/main/java/info/debatty/java/stringsimilarity/JaroWinkler.java": "6a2b933d9f769581d739f82c476ecd3ece0e8cb21b0335a1010caa2e633d0ce5",
+      "src/main/java/info/debatty/java/stringsimilarity/Levenshtein.java": "79d9d78419323834c6717e6dfd8179423409f7b3821e905e1f1f966904244b77",
+      "src/main/java/info/debatty/java/stringsimilarity/NormalizedLevenshtein.java": "c3ddf6a291e222521f291c1eb2b49e108ad814c999b30408af88ab62b5bbde89",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java": "7c5ae3d445181c543919647b59b31e7b99be7b2e4258f85c9db996d8edba41fe",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java": "c3f4e7110a897b93ccde6a5eb52e71b4a1c42ad8cc6e0a63650761a0b12bb4ee",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java": "4b159b1347f153aa6aa114d8946e3d57bbc24f94e5ad56a9dfb0a0dfc7ff28ce",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/StringDistance.java": "c93dfba3ab27add4cf04a406ab894f2e8b16311fe3f25421d1789d7215defca3",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java": "f64bd4d203179fedc9fd4667c6623b0a312982e9e298b1bddd45eed59f448778",
+      "src/test/java/info/debatty/java/stringsimilarity/JaroWinklerTest.java": "a6173190ca29d7353bd3cfc811632c1fe50d35835a0cf2ce08f8b2952cb62e07",
+      "src/test/java/info/debatty/java/stringsimilarity/LevenshteinTest.java": "8e3bbbc863c3ca0c734605ebd90e5a4671229f5830d3105b7352f7fd987c3e76",
+      "src/test/java/info/debatty/java/stringsimilarity/NormalizedLevenshteinTest.java": "62af21a6b822ec9c278751d0f6d199487c4e328e4d5d1268dc315b821cdd75c4",
+      "src/test/java/info/debatty/java/stringsimilarity/testutil/NullEmptyTests.java": "e08089f50ad5ed77888918a517dc4160988a07e6c8896c93009d94c45d925c51"
+    }
+  },
+  "tasks": {
+    "commons_csv": {
+      "visible": {
+        "cases": [
+          {
+            "id": "csv-v1-visible-empty",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-blank-default",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\n\r\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-blank-kept",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a\n\n",
+            "config": {
+              "ignore_empty_lines": false
+            }
+          },
+          {
+            "id": "csv-v1-visible-trailing-fields",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,,\nb,c,",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-quoted-empty",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\",x\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b,c\"\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-doubled-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"say \"\"hi\"\"\",end",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-multiline",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"line1\nline2\",x\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-mixed-endings",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b\r\nc,d\re,f\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-semicolon",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a;\"b;c\";d",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v1-visible-escaped-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\\\"b\",c",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v1-visible-spaces-literal",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , b ",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-surrounding",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v1-visible-trim",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a ,\" b \"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v1-visible-null-marker",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "NULL,\"NULL\",,x",
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          {
+            "id": "csv-v1-visible-unicode",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u03b1,\ud83d\ude80,e\u0301",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-quotes-disabled",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b\",c",
+            "config": {
+              "quote": null
+            }
+          },
+          {
+            "id": "csv-v1-visible-separator-is-printer-only",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a|b",
+            "config": {
+              "record_separator": "|"
+            }
+          },
+          {
+            "id": "csv-v1-visible-unterminated",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"open",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-junk-after-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"x\"junk,y",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b",
+            "config": {
+              "delimiter": "\n"
+            }
+          },
+          {
+            "id": "csv-v1-visible-invalid-bool",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "trim": 1
+            }
+          },
+          {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "quote_mode": "UNKNOWN"
+            }
+          },
+          {
+            "id": "csv-v1-visible-empty-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-empty-record",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              []
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-basic-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "c",
+                "d"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-printer-quotes",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "say \"hi\"",
+                ""
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-printer-multiline",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a\nb",
+                "c\rd"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-printer-unicode",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u4e2d",
+                "\ud83d\ude80",
+                null
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-visible-printer-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "NULL",
+                ""
+              ]
+            ],
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-all",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a",
+                "b"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-non-numeric",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "12",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NON_NUMERIC"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v1-visible-printer-trim",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                " a ",
+                " b "
+              ]
+            ],
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v1-visible-invalid-none",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE"
+            }
+          }
+        ],
+        "reference": [
+          {
+            "id": "csv-v1-visible-empty",
+            "status": "ok",
+            "value": []
+          },
+          {
+            "id": "csv-v1-visible-blank-default",
+            "status": "ok",
+            "value": []
+          },
+          {
+            "id": "csv-v1-visible-blank-kept",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-trailing-fields",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "",
+                ""
+              ],
+              [
+                "b",
+                "c",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-quoted-empty",
+            "status": "ok",
+            "value": [
+              [
+                "",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-quoted-delimiter",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b,c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-doubled-quote",
+            "status": "ok",
+            "value": [
+              [
+                "say \"hi\"",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "line1\nline2",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-mixed-endings",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "c",
+                "d"
+              ],
+              [
+                "e",
+                "f"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b;c",
+                "d"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-escaped-quote",
+            "status": "ok",
+            "value": [
+              [
+                "a\"b",
+                "c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-spaces-literal",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                " b "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-surrounding",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-trim",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-unicode",
+            "status": "ok",
+            "value": [
+              [
+                "\u03b1",
+                "\ud83d\ude80",
+                "e\u0301"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-quotes-disabled",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "\"b\"",
+                "c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-separator-is-printer-only",
+            "status": "ok",
+            "value": [
+              [
+                "a|b"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-visible-unterminated",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v1-visible-junk-after-quote",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v1-visible-invalid-delimiter",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-visible-invalid-bool",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-visible-invalid-quote-mode",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-visible-empty-output",
+            "status": "ok",
+            "value": ""
+          },
+          {
+            "id": "csv-v1-visible-empty-record",
+            "status": "ok",
+            "value": "\r\n"
+          },
+          {
+            "id": "csv-v1-visible-basic-output",
+            "status": "ok",
+            "value": "a,b\r\nc,d\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-quotes",
+            "status": "ok",
+            "value": "\"a,b\",\"say \"\"hi\"\"\",\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-multiline",
+            "status": "ok",
+            "value": "\"a\nb\",\"c\rd\"\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-unicode",
+            "status": "ok",
+            "value": "\u4e2d,\ud83d\ude80,\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-null",
+            "status": "ok",
+            "value": "NULL,NULL,\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-all",
+            "status": "ok",
+            "value": "\"a\",\"b\"\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-all-non-null",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-non-numeric",
+            "status": "ok",
+            "value": "\"12\",\"x\"\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-none",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-custom",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          {
+            "id": "csv-v1-visible-printer-trim",
+            "status": "ok",
+            "value": "a,b\r\n"
+          },
+          {
+            "id": "csv-v1-visible-invalid-none",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          }
+        ]
+      },
+      "holdout": {
+        "cases": [
+          {
+            "id": "csv-v1-holdout-multiline-empty-composition",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "head,\"first\r\nsecond\",\r\n,,tail",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-holdout-blank-between-quoted-records",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a,b\",c\n\n\"d\",\n",
+            "config": {
+              "ignore_empty_lines": false
+            }
+          },
+          {
+            "id": "csv-v1-holdout-quoted-quotes-and-cr",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\"\"x\"\"\ry\",z\r",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-holdout-tab-unicode",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u4e2d\t\"x\ty\"\t\ud83d\ude80",
+            "config": {
+              "delimiter": "\t"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-escaped-delimiter-newline",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "one\\,two,three\\nline",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-spaces-with-empty",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " x , ,\" y \"\n",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v1-holdout-trim-multiline",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\" x\ny \", z ,",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v1-holdout-null-and-empty-quoted",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "N,\"N\",\"\",\n",
+            "config": {
+              "null_string": "N",
+              "quote_mode": "ALL_NON_NULL"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-quoted-null-default",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "missing,\"missing\",value",
+            "config": {
+              "null_string": "missing"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-literal-quotes-semicolon",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\";right;",
+            "config": {
+              "quote": null,
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-empty-null-marker",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": ",\"\",tail",
+            "config": {
+              "null_string": ""
+            }
+          },
+          {
+            "id": "csv-v1-holdout-nul-and-supplementary",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a\u0000b,\"\ud83d\ude80,\ud83d\ude00\",end",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-holdout-printer-separator-does-not-split",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x;y|z;w",
+            "config": {
+              "delimiter": ";",
+              "record_separator": "|"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-unterminated-second-record",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok,row\n\"open\nnext",
+            "config": {}
+          },
+          {
+            "id": "csv-v1-holdout-junk-after-multiline-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\nb\"!;c",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-same-quote-and-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "delimiter": "\""
+            }
+          },
+          {
+            "id": "csv-v1-holdout-invalid-ignore-type",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "ignore_empty_lines": "true"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-supplementary-delimiter",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "delimiter": "\ud83d\ude80"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-mixed-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "",
+                "x,y",
+                null
+              ],
+              [
+                "a\nb",
+                "\"",
+                "last"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v1-holdout-custom-quote",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                "it's fine"
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "quote": "'",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-all-multiline-null",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "x\ny",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL",
+              "null_string": "N",
+              "record_separator": "\r"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-non-null-markers",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "N",
+                "x,y"
+              ],
+              [
+                "",
+                "z",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-numeric-looking-strings",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "-1",
+                "1.25",
+                "NaN",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "NON_NUMERIC",
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-none-escaped-custom",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "x;y",
+                "a\\b",
+                "line\r\nnext"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "delimiter": ";",
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-trim-null-and-space",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                " x ",
+                " y,z "
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "null_string": "MISSING"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-empty-record-followed",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [],
+              [
+                "x"
+              ],
+              []
+            ],
+            "config": {
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-invalid-escape-mode",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "bad"
+              ]
+            ],
+            "config": {
+              "escape": "\n",
+              "quote_mode": "NONE"
+            }
+          },
+          {
+            "id": "csv-v1-holdout-unicode-quotes",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u03b1,\u03b2",
+                "\ud83d\ude80\n\ud83d\ude00",
+                "e\u0301"
+              ]
+            ],
+            "config": {
+              "quote": "\u00ab"
+            }
+          }
+        ],
+        "reference": [
+          {
+            "id": "csv-v1-holdout-multiline-empty-composition",
+            "status": "ok",
+            "value": [
+              [
+                "head",
+                "first\r\nsecond",
+                ""
+              ],
+              [
+                "",
+                "",
+                "tail"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-blank-between-quoted-records",
+            "status": "ok",
+            "value": [
+              [
+                "a,b",
+                "c"
+              ],
+              [
+                ""
+              ],
+              [
+                "d",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-quoted-quotes-and-cr",
+            "status": "ok",
+            "value": [
+              [
+                "\"x\"\ry",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-tab-unicode",
+            "status": "ok",
+            "value": [
+              [
+                "\u4e2d",
+                "x\ty",
+                "\ud83d\ude80"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-escaped-delimiter-newline",
+            "status": "ok",
+            "value": [
+              [
+                "one,two",
+                "three\nline"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-spaces-with-empty",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "",
+                " y "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-trim-multiline",
+            "status": "ok",
+            "value": [
+              [
+                "x\ny",
+                "z",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-null-and-empty-quoted",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                "N",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-quoted-null-default",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "value"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-literal-quotes-semicolon",
+            "status": "ok",
+            "value": [
+              [
+                "\"left\"",
+                "right",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-empty-null-marker",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "tail"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-nul-and-supplementary",
+            "status": "ok",
+            "value": [
+              [
+                "a\u0000b",
+                "\ud83d\ude80,\ud83d\ude00",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-printer-separator-does-not-split",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "y|z",
+                "w"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v1-holdout-unterminated-second-record",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v1-holdout-junk-after-multiline-quote",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v1-holdout-same-quote-and-delimiter",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-holdout-invalid-ignore-type",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-holdout-supplementary-delimiter",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-holdout-mixed-output",
+            "status": "ok",
+            "value": "\"\",\"x,y\",\r\n\"a\nb\",\"\"\"\",last\r\n"
+          },
+          {
+            "id": "csv-v1-holdout-custom-quote",
+            "status": "ok",
+            "value": "'a;b';'it''s fine'\n"
+          },
+          {
+            "id": "csv-v1-holdout-all-multiline-null",
+            "status": "ok",
+            "value": "\"N\",\"x\ny\",\"\"\r"
+          },
+          {
+            "id": "csv-v1-holdout-non-null-markers",
+            "status": "ok",
+            "value": "N,\"N\",\"x,y\"\r\n\"\",\"z\",\"\"\r\n"
+          },
+          {
+            "id": "csv-v1-holdout-numeric-looking-strings",
+            "status": "ok",
+            "value": "\"-1\";\"1.25\";\"NaN\";\"\"\r\n"
+          },
+          {
+            "id": "csv-v1-holdout-none-escaped-custom",
+            "status": "ok",
+            "value": "x\\;y;a\\\\b;line\\r\\nnext\r\n"
+          },
+          {
+            "id": "csv-v1-holdout-trim-null-and-space",
+            "status": "ok",
+            "value": "MISSING,x,\"y,z\"\r\n"
+          },
+          {
+            "id": "csv-v1-holdout-empty-record-followed",
+            "status": "ok",
+            "value": "\nx\n\n"
+          },
+          {
+            "id": "csv-v1-holdout-invalid-escape-mode",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v1-holdout-unicode-quotes",
+            "status": "ok",
+            "value": "\u00ab\u03b1,\u03b2\u00ab,\u00ab\ud83d\ude80\n\ud83d\ude00\u00ab,e\u0301\r\n"
+          }
+        ]
+      }
+    }
+  },
+  "comparator_sha256": "9561000a70941a0560f8654a67802c4bc17f8d40f5ac20ee06c0e93d7ba78844",
+  "generator_sha256": "23346af2083eec599e0c8e039118a29485c78b71995d08407985b8d05d560051",
+  "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+  "task_identities": {
+    "commons_csv": {
+      "benchmarks/commons_csv.json": "2778343b3ac4e2370eb04185b61f5d47ebf2319a1bf01b2bfcf5c3e6879df3e1",
+      "vendor/commons-csv/SOURCE.json": "fd8cb1cdcd2661569586555a2ba144544e7da8f8f12310bc81a22c0ebb4b4a56",
+      "migration_lab/csv_task.py": "6bf500316a25ccfa012f58fc4646fec019c8d6e6d5b9a06ca3a1f6ab1a1e3006",
+      "migration_lab/csv_cases.py": "df16c751aab7f882cd747328dc18a8beb614342ff1ce8061587a5c725fb6e4b3",
+      "migration_lab/guest_driver.py": "991da67ca60c587d13aae51b4155a6d14e08d6dad2ef46617168e625029510ba",
+      "migration_lab/worker.py": "b1e57ed7c858cd3b0558d5358cb5492da44f54380397a9d5ccbbb3a844190173",
+      "migration_lab/environment.py": "5daaa4f3d3c23aaadf2f5f94ac37e37253cefca60f74a2458156b24ec4d007d6",
+      "migration_lab/dependencies.py": "364d32dfe2057f1457a173c1ab83998f27ead85ada42851bda847656ff4b2a88",
+      "java/src/main/java/lab/CsvScenario.java": "eaf05397e78fa5045b74473245078255ef54bf7a00d4276f6c8a03e96c4fe821",
+      "java/src/main/java/lab/Harness.java": "aee22be5e4fd05af8fe466975237e75b31f4ce8cae6db314b0439fa2c23bb1ee"
+    }
+  },
+  "profile": "commons-csv-v1",
+  "profile_sha256": "df16c751aab7f882cd747328dc18a8beb614342ff1ce8061587a5c725fb6e4b3"
+}

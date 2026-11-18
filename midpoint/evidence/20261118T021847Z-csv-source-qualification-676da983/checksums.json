@@ -1,0 +1,9 @@
+{
+  "java-build.log": "6cf5457e7be13702b9b1aeadba0138fe6472496bb8bbc3b3c8e810c61d494204",
+  "oracle-first/execution.json": "594d45c4b99db5f2770efc423af2734c99136e34c7ab9446200457afb59b57cb",
+  "oracle-first/inputs.json": "351b802c2107c9da1b3fe241642ee9ecd91155a47c031e2a1a5641a02a8c6b23",
+  "oracle-repeat/execution.json": "b107169724d519ea8a95e9cc8263f819ee9c46b4b9633f3cb437ec4bc919947a",
+  "oracle-repeat/inputs.json": "351b802c2107c9da1b3fe241642ee9ecd91155a47c031e2a1a5641a02a8c6b23",
+  "python-tests.log": "47a0cfe1183b75322906274602e278eec0f0aa706bfcc60c073634f6ed30712c",
+  "summary.json": "a00a4367ed8dd0e89c447093899fdcab942b3d38a36e1df8e8b50c465bb25605"
+}

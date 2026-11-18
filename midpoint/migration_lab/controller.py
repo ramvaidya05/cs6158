@@ -61,6 +61,9 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
                                    if suite else "Public demo cases; excluded from model context; scored after selection only"),
                 "budget_note": "Loop deadline checked between calls; final evaluation may run beyond it. "
                                "Output budget reserves requested maximum per call, not input tokens or dollars."}
+    if task == "commons_csv":
+        from .csv_task import identity
+        manifest["task_contract"] = identity()
     if task == "commons_cli":
         from .cli_task import identity
         manifest["task_contract"] = identity()

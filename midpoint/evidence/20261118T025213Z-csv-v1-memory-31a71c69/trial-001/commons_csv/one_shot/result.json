@@ -1,0 +1,1008 @@
+{
+  "status": "completed",
+  "task": "commons_csv",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.098
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.268
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 4.586,
+      "attempt": 0
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 46.25,
+      "attempt": 0
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 51.083,
+      "attempt": 0,
+      "accepted": true
+    },
+    {
+      "phase": "selection_frozen",
+      "elapsed_seconds": 51.087
+    },
+    {
+      "phase": "evaluate_holdout",
+      "elapsed_seconds": 51.087
+    },
+    {
+      "phase": "completed",
+      "elapsed_seconds": 60.27809787495062
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 0,
+      "sha256": "6f39bbbc80768fb895902341569cf93659f0475738f8e49ee9b39896f821d1c3",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 70,
+      "total": 74
+    }
+  ],
+  "best_attempt": 0,
+  "stop_reason": "attempt_limit",
+  "reserved_output_tokens": 32768,
+  "baseline_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 35,
+        "total": 37,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-visible-empty",
+          "csv-v1-visible-blank-default",
+          "csv-v1-visible-blank-kept",
+          "csv-v1-visible-trailing-fields",
+          "csv-v1-visible-quoted-empty",
+          "csv-v1-visible-quoted-delimiter",
+          "csv-v1-visible-doubled-quote",
+          "csv-v1-visible-multiline",
+          "csv-v1-visible-mixed-endings",
+          "csv-v1-visible-semicolon",
+          "csv-v1-visible-spaces-literal",
+          "csv-v1-visible-surrounding",
+          "csv-v1-visible-trim",
+          "csv-v1-visible-null-marker",
+          "csv-v1-visible-unicode",
+          "csv-v1-visible-quotes-disabled",
+          "csv-v1-visible-separator-is-printer-only",
+          "csv-v1-visible-unterminated",
+          "csv-v1-visible-junk-after-quote",
+          "csv-v1-visible-invalid-delimiter",
+          "csv-v1-visible-invalid-quote-mode",
+          "csv-v1-visible-empty-output",
+          "csv-v1-visible-empty-record",
+          "csv-v1-visible-basic-output",
+          "csv-v1-visible-printer-quotes",
+          "csv-v1-visible-printer-multiline",
+          "csv-v1-visible-printer-unicode",
+          "csv-v1-visible-printer-null",
+          "csv-v1-visible-printer-all",
+          "csv-v1-visible-printer-all-non-null",
+          "csv-v1-visible-printer-non-numeric",
+          "csv-v1-visible-printer-none",
+          "csv-v1-visible-printer-custom",
+          "csv-v1-visible-printer-trim",
+          "csv-v1-visible-invalid-none"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-visible-escaped-quote",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "\"a\\\"b\",c",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "ok",
+              "value": [
+                [
+                  "a\"b",
+                  "c"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-visible-invalid-bool",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "a",
+              "config": {
+                "trim": 1
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "ok",
+              "value": [
+                [
+                  "a"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 35,
+        "total": 37,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-visible-empty",
+          "csv-v1-visible-blank-default",
+          "csv-v1-visible-blank-kept",
+          "csv-v1-visible-trailing-fields",
+          "csv-v1-visible-quoted-empty",
+          "csv-v1-visible-quoted-delimiter",
+          "csv-v1-visible-doubled-quote",
+          "csv-v1-visible-multiline",
+          "csv-v1-visible-mixed-endings",
+          "csv-v1-visible-semicolon",
+          "csv-v1-visible-spaces-literal",
+          "csv-v1-visible-surrounding",
+          "csv-v1-visible-trim",
+          "csv-v1-visible-null-marker",
+          "csv-v1-visible-unicode",
+          "csv-v1-visible-quotes-disabled",
+          "csv-v1-visible-separator-is-printer-only",
+          "csv-v1-visible-unterminated",
+          "csv-v1-visible-junk-after-quote",
+          "csv-v1-visible-invalid-delimiter",
+          "csv-v1-visible-invalid-quote-mode",
+          "csv-v1-visible-empty-output",
+          "csv-v1-visible-empty-record",
+          "csv-v1-visible-basic-output",
+          "csv-v1-visible-printer-quotes",
+          "csv-v1-visible-printer-multiline",
+          "csv-v1-visible-printer-unicode",
+          "csv-v1-visible-printer-null",
+          "csv-v1-visible-printer-all",
+          "csv-v1-visible-printer-all-non-null",
+          "csv-v1-visible-printer-non-numeric",
+          "csv-v1-visible-printer-none",
+          "csv-v1-visible-printer-custom",
+          "csv-v1-visible-printer-trim",
+          "csv-v1-visible-invalid-none"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-visible-escaped-quote",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "\"a\\\"b\",c",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "ok",
+              "value": [
+                [
+                  "a\"b",
+                  "c"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-visible-invalid-bool",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "a",
+              "config": {
+                "trim": 1
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "ok",
+              "value": [
+                [
+                  "a"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "passed": 70,
+    "total": 74,
+    "all_pass": false
+  },
+  "selected_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 35,
+        "total": 37,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-visible-empty",
+          "csv-v1-visible-blank-default",
+          "csv-v1-visible-blank-kept",
+          "csv-v1-visible-trailing-fields",
+          "csv-v1-visible-quoted-empty",
+          "csv-v1-visible-quoted-delimiter",
+          "csv-v1-visible-doubled-quote",
+          "csv-v1-visible-multiline",
+          "csv-v1-visible-mixed-endings",
+          "csv-v1-visible-semicolon",
+          "csv-v1-visible-spaces-literal",
+          "csv-v1-visible-surrounding",
+          "csv-v1-visible-trim",
+          "csv-v1-visible-null-marker",
+          "csv-v1-visible-unicode",
+          "csv-v1-visible-quotes-disabled",
+          "csv-v1-visible-separator-is-printer-only",
+          "csv-v1-visible-unterminated",
+          "csv-v1-visible-junk-after-quote",
+          "csv-v1-visible-invalid-delimiter",
+          "csv-v1-visible-invalid-quote-mode",
+          "csv-v1-visible-empty-output",
+          "csv-v1-visible-empty-record",
+          "csv-v1-visible-basic-output",
+          "csv-v1-visible-printer-quotes",
+          "csv-v1-visible-printer-multiline",
+          "csv-v1-visible-printer-unicode",
+          "csv-v1-visible-printer-null",
+          "csv-v1-visible-printer-all",
+          "csv-v1-visible-printer-all-non-null",
+          "csv-v1-visible-printer-non-numeric",
+          "csv-v1-visible-printer-none",
+          "csv-v1-visible-printer-custom",
+          "csv-v1-visible-printer-trim",
+          "csv-v1-visible-invalid-none"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-visible-escaped-quote",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "\"a\\\"b\",c",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "ok",
+              "value": [
+                [
+                  "a\"b",
+                  "c"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-visible-invalid-bool",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "a",
+              "config": {
+                "trim": 1
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "ok",
+              "value": [
+                [
+                  "a"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 35,
+        "total": 37,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-visible-empty",
+          "csv-v1-visible-blank-default",
+          "csv-v1-visible-blank-kept",
+          "csv-v1-visible-trailing-fields",
+          "csv-v1-visible-quoted-empty",
+          "csv-v1-visible-quoted-delimiter",
+          "csv-v1-visible-doubled-quote",
+          "csv-v1-visible-multiline",
+          "csv-v1-visible-mixed-endings",
+          "csv-v1-visible-semicolon",
+          "csv-v1-visible-spaces-literal",
+          "csv-v1-visible-surrounding",
+          "csv-v1-visible-trim",
+          "csv-v1-visible-null-marker",
+          "csv-v1-visible-unicode",
+          "csv-v1-visible-quotes-disabled",
+          "csv-v1-visible-separator-is-printer-only",
+          "csv-v1-visible-unterminated",
+          "csv-v1-visible-junk-after-quote",
+          "csv-v1-visible-invalid-delimiter",
+          "csv-v1-visible-invalid-quote-mode",
+          "csv-v1-visible-empty-output",
+          "csv-v1-visible-empty-record",
+          "csv-v1-visible-basic-output",
+          "csv-v1-visible-printer-quotes",
+          "csv-v1-visible-printer-multiline",
+          "csv-v1-visible-printer-unicode",
+          "csv-v1-visible-printer-null",
+          "csv-v1-visible-printer-all",
+          "csv-v1-visible-printer-all-non-null",
+          "csv-v1-visible-printer-non-numeric",
+          "csv-v1-visible-printer-none",
+          "csv-v1-visible-printer-custom",
+          "csv-v1-visible-printer-trim",
+          "csv-v1-visible-invalid-none"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-visible-escaped-quote",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "\"a\\\"b\",c",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "ok",
+              "value": [
+                [
+                  "a\"b",
+                  "c"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-visible-escaped-quote",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-visible-invalid-bool",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "a",
+              "config": {
+                "trim": 1
+              }
+            },
+            "expected": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-visible-invalid-bool",
+              "status": "ok",
+              "value": [
+                [
+                  "a"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "passed": 70,
+    "total": 74,
+    "all_pass": false
+  },
+  "elapsed_seconds": 60.278000000000006,
+  "baseline_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 24,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-holdout-multiline-empty-composition",
+          "csv-v1-holdout-blank-between-quoted-records",
+          "csv-v1-holdout-quoted-quotes-and-cr",
+          "csv-v1-holdout-tab-unicode",
+          "csv-v1-holdout-spaces-with-empty",
+          "csv-v1-holdout-trim-multiline",
+          "csv-v1-holdout-null-and-empty-quoted",
+          "csv-v1-holdout-quoted-null-default",
+          "csv-v1-holdout-literal-quotes-semicolon",
+          "csv-v1-holdout-empty-null-marker",
+          "csv-v1-holdout-nul-and-supplementary",
+          "csv-v1-holdout-printer-separator-does-not-split",
+          "csv-v1-holdout-unterminated-second-record",
+          "csv-v1-holdout-junk-after-multiline-quote",
+          "csv-v1-holdout-same-quote-and-delimiter",
+          "csv-v1-holdout-mixed-output",
+          "csv-v1-holdout-custom-quote",
+          "csv-v1-holdout-all-multiline-null",
+          "csv-v1-holdout-non-null-markers",
+          "csv-v1-holdout-numeric-looking-strings",
+          "csv-v1-holdout-none-escaped-custom",
+          "csv-v1-holdout-trim-null-and-space",
+          "csv-v1-holdout-empty-record-followed",
+          "csv-v1-holdout-unicode-quotes"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "one\\,two,three\\nline",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "ok",
+              "value": [
+                [
+                  "one,two",
+                  "three\nline"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "ignore_empty_lines": "true"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "delimiter": "\ud83d\ude80"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "task": "commons_csv",
+              "operation": "print",
+              "records": [
+                [
+                  "bad"
+                ]
+              ],
+              "config": {
+                "escape": "\n",
+                "quote_mode": "NONE"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "ok",
+              "value": "bad\r\n"
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 24,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-holdout-multiline-empty-composition",
+          "csv-v1-holdout-blank-between-quoted-records",
+          "csv-v1-holdout-quoted-quotes-and-cr",
+          "csv-v1-holdout-tab-unicode",
+          "csv-v1-holdout-spaces-with-empty",
+          "csv-v1-holdout-trim-multiline",
+          "csv-v1-holdout-null-and-empty-quoted",
+          "csv-v1-holdout-quoted-null-default",
+          "csv-v1-holdout-literal-quotes-semicolon",
+          "csv-v1-holdout-empty-null-marker",
+          "csv-v1-holdout-nul-and-supplementary",
+          "csv-v1-holdout-printer-separator-does-not-split",
+          "csv-v1-holdout-unterminated-second-record",
+          "csv-v1-holdout-junk-after-multiline-quote",
+          "csv-v1-holdout-same-quote-and-delimiter",
+          "csv-v1-holdout-mixed-output",
+          "csv-v1-holdout-custom-quote",
+          "csv-v1-holdout-all-multiline-null",
+          "csv-v1-holdout-non-null-markers",
+          "csv-v1-holdout-numeric-looking-strings",
+          "csv-v1-holdout-none-escaped-custom",
+          "csv-v1-holdout-trim-null-and-space",
+          "csv-v1-holdout-empty-record-followed",
+          "csv-v1-holdout-unicode-quotes"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "one\\,two,three\\nline",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "ok",
+              "value": [
+                [
+                  "one,two",
+                  "three\nline"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "ignore_empty_lines": "true"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "delimiter": "\ud83d\ude80"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "task": "commons_csv",
+              "operation": "print",
+              "records": [
+                [
+                  "bad"
+                ]
+              ],
+              "config": {
+                "escape": "\n",
+                "quote_mode": "NONE"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "ok",
+              "value": "bad\r\n"
+            }
+          }
+        ]
+      }
+    },
+    "passed": 48,
+    "total": 56,
+    "all_pass": false
+  },
+  "selected_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 24,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-holdout-multiline-empty-composition",
+          "csv-v1-holdout-blank-between-quoted-records",
+          "csv-v1-holdout-quoted-quotes-and-cr",
+          "csv-v1-holdout-tab-unicode",
+          "csv-v1-holdout-spaces-with-empty",
+          "csv-v1-holdout-trim-multiline",
+          "csv-v1-holdout-null-and-empty-quoted",
+          "csv-v1-holdout-quoted-null-default",
+          "csv-v1-holdout-literal-quotes-semicolon",
+          "csv-v1-holdout-empty-null-marker",
+          "csv-v1-holdout-nul-and-supplementary",
+          "csv-v1-holdout-printer-separator-does-not-split",
+          "csv-v1-holdout-unterminated-second-record",
+          "csv-v1-holdout-junk-after-multiline-quote",
+          "csv-v1-holdout-same-quote-and-delimiter",
+          "csv-v1-holdout-mixed-output",
+          "csv-v1-holdout-custom-quote",
+          "csv-v1-holdout-all-multiline-null",
+          "csv-v1-holdout-non-null-markers",
+          "csv-v1-holdout-numeric-looking-strings",
+          "csv-v1-holdout-none-escaped-custom",
+          "csv-v1-holdout-trim-null-and-space",
+          "csv-v1-holdout-empty-record-followed",
+          "csv-v1-holdout-unicode-quotes"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "one\\,two,three\\nline",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "ok",
+              "value": [
+                [
+                  "one,two",
+                  "three\nline"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "ignore_empty_lines": "true"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "delimiter": "\ud83d\ude80"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "task": "commons_csv",
+              "operation": "print",
+              "records": [
+                [
+                  "bad"
+                ]
+              ],
+              "config": {
+                "escape": "\n",
+                "quote_mode": "NONE"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "ok",
+              "value": "bad\r\n"
+            }
+          }
+        ]
+      },
+      "graal": {
+        "passed": 24,
+        "total": 28,
+        "status": "completed",
+        "passed_ids": [
+          "csv-v1-holdout-multiline-empty-composition",
+          "csv-v1-holdout-blank-between-quoted-records",
+          "csv-v1-holdout-quoted-quotes-and-cr",
+          "csv-v1-holdout-tab-unicode",
+          "csv-v1-holdout-spaces-with-empty",
+          "csv-v1-holdout-trim-multiline",
+          "csv-v1-holdout-null-and-empty-quoted",
+          "csv-v1-holdout-quoted-null-default",
+          "csv-v1-holdout-literal-quotes-semicolon",
+          "csv-v1-holdout-empty-null-marker",
+          "csv-v1-holdout-nul-and-supplementary",
+          "csv-v1-holdout-printer-separator-does-not-split",
+          "csv-v1-holdout-unterminated-second-record",
+          "csv-v1-holdout-junk-after-multiline-quote",
+          "csv-v1-holdout-same-quote-and-delimiter",
+          "csv-v1-holdout-mixed-output",
+          "csv-v1-holdout-custom-quote",
+          "csv-v1-holdout-all-multiline-null",
+          "csv-v1-holdout-non-null-markers",
+          "csv-v1-holdout-numeric-looking-strings",
+          "csv-v1-holdout-none-escaped-custom",
+          "csv-v1-holdout-trim-null-and-space",
+          "csv-v1-holdout-empty-record-followed",
+          "csv-v1-holdout-unicode-quotes"
+        ],
+        "failures": [
+          {
+            "case": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "one\\,two,three\\nline",
+              "config": {
+                "escape": "\\"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "ok",
+              "value": [
+                [
+                  "one,two",
+                  "three\nline"
+                ]
+              ]
+            },
+            "actual": {
+              "id": "csv-v1-holdout-escaped-delimiter-newline",
+              "status": "exception",
+              "type": "TypeError"
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "ignore_empty_lines": "true"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-ignore-type",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "task": "commons_csv",
+              "operation": "parse",
+              "text": "x",
+              "config": {
+                "delimiter": "\ud83d\ude80"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-supplementary-delimiter",
+              "status": "ok",
+              "value": [
+                [
+                  "x"
+                ]
+              ]
+            }
+          },
+          {
+            "case": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "task": "commons_csv",
+              "operation": "print",
+              "records": [
+                [
+                  "bad"
+                ]
+              ],
+              "config": {
+                "escape": "\n",
+                "quote_mode": "NONE"
+              }
+            },
+            "expected": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "exception",
+              "type": "IllegalArgumentException"
+            },
+            "actual": {
+              "id": "csv-v1-holdout-invalid-escape-mode",
+              "status": "ok",
+              "value": "bad\r\n"
+            }
+          }
+        ]
+      }
+    },
+    "passed": 48,
+    "total": 56,
+    "all_pass": false
+  },
+  "validated": false,
+  "scoring_seconds": 9.191
+}

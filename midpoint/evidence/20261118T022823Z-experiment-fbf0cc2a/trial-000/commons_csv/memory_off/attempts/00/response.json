@@ -1,0 +1,13 @@
+{
+  "code": "\"\"\"Intentionally incorrect, typed synthetic fixture; not a model translation.\"\"\"\ndef parse_csv(text, config):\n    return []\n\n\ndef print_csv(records, config):\n    return ''\n",
+  "explanation": "Recorded replay fixture",
+  "metadata": {
+    "backend": "replay",
+    "provenance": "synthetic_fixture",
+    "manifest_sha256": "b2384398e43ba76af2a0d1c6bef3ef19fd379fa8834b7af2e3afede5d110d181",
+    "source": "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/fixtures/csv_broken.py",
+    "sha256": "2c8b6ce71a51dcd4283cabaee87b3dc717bf6ed544460886add9ce6f7abb33d1",
+    "usage": null,
+    "reused_initial": true
+  }
+}

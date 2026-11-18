@@ -3,7 +3,13 @@ import math
 from .storage import save_json
 
 
-def equivalent(expected, actual):
+def equivalent(expected, actual, task=None):
+    if task == "commons_csv":
+        from .scenarios import strict_equal
+        if expected["status"] != actual.get("status"):
+            return False
+        key = "type" if expected["status"] == "exception" else "value"
+        return key in actual and strict_equal(expected[key], actual[key])
     if isinstance(expected.get("trace"), list):
         from .scenarios import strict_equal
         return actual.get("status") == "ok" and strict_equal(expected["trace"], actual.get("trace"))
@@ -42,7 +48,7 @@ class TestsuiteAgent:
             passed_ids = []
             if observed["status"] == "completed":
                 for case, expected, actual in zip(cases, reference, observed["rows"], strict=True):
-                    if equivalent(expected, actual):
+                    if equivalent(expected, actual, case.get("task")):
                         passed += 1
                         passed_ids.append(case["id"])
                     else:

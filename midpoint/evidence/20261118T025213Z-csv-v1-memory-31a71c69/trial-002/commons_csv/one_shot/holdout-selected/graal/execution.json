@@ -1,0 +1,328 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "csv-v1-holdout-multiline-empty-composition",
+      "status": "ok",
+      "value": [
+        [
+          "head",
+          "first\r\nsecond",
+          ""
+        ],
+        [
+          "",
+          "",
+          "tail"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-blank-between-quoted-records",
+      "status": "ok",
+      "value": [
+        [
+          "a,b",
+          "c"
+        ],
+        [
+          ""
+        ],
+        [
+          "d",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-quoted-quotes-and-cr",
+      "status": "ok",
+      "value": [
+        [
+          "\"x\"\ry",
+          "z"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-tab-unicode",
+      "status": "ok",
+      "value": [
+        [
+          "\u4e2d",
+          "x\ty",
+          "\ud83d\ude80"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-escaped-delimiter-newline",
+      "status": "exception",
+      "type": "TypeError"
+    },
+    {
+      "id": "csv-v1-holdout-spaces-with-empty",
+      "status": "ok",
+      "value": [
+        [
+          "x",
+          "",
+          " y "
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-trim-multiline",
+      "status": "ok",
+      "value": [
+        [
+          "x\ny",
+          "z",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-null-and-empty-quoted",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          "N",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-quoted-null-default",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "value"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-literal-quotes-semicolon",
+      "status": "ok",
+      "value": [
+        [
+          "\"left\"",
+          "right",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-empty-null-marker",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "tail"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-nul-and-supplementary",
+      "status": "ok",
+      "value": [
+        [
+          "a\u0000b",
+          "\ud83d\ude80,\ud83d\ude00",
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-printer-separator-does-not-split",
+      "status": "ok",
+      "value": [
+        [
+          "x",
+          "y|z",
+          "w"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-unterminated-second-record",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v1-holdout-junk-after-multiline-quote",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v1-holdout-same-quote-and-delimiter",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v1-holdout-invalid-ignore-type",
+      "status": "ok",
+      "value": [
+        [
+          "x"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-supplementary-delimiter",
+      "status": "ok",
+      "value": [
+        [
+          "x"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v1-holdout-mixed-output",
+      "status": "ok",
+      "value": "\"\",\"x,y\",\r\n\"a\nb\",\"\"\"\",last\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-custom-quote",
+      "status": "ok",
+      "value": "'a;b';'it''s fine'\n"
+    },
+    {
+      "id": "csv-v1-holdout-all-multiline-null",
+      "status": "ok",
+      "value": "\"N\",\"x\ny\",\"\"\r"
+    },
+    {
+      "id": "csv-v1-holdout-non-null-markers",
+      "status": "ok",
+      "value": "N,\"N\",\"x,y\"\r\n\"\",\"z\",\"\"\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-numeric-looking-strings",
+      "status": "ok",
+      "value": "\"-1\";\"1.25\";\"NaN\";\"\"\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-none-escaped-custom",
+      "status": "ok",
+      "value": "x\\;y;a\\\\b;line\\r\\nnext\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-trim-null-and-space",
+      "status": "ok",
+      "value": "MISSING,x,\"y,z\"\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-empty-record-followed",
+      "status": "ok",
+      "value": "\nx\n\n"
+    },
+    {
+      "id": "csv-v1-holdout-invalid-escape-mode",
+      "status": "ok",
+      "value": "bad\r\n"
+    },
+    {
+      "id": "csv-v1-holdout-unicode-quotes",
+      "status": "ok",
+      "value": "\u00ab\u03b1,\u03b2\u00ab,\u00ab\ud83d\ude80\n\ud83d\ude00\u00ab,e\u0301\r\n"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-178f4b96add743518b46fdfacf5ea20a",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-stt6gmi7/candidate.py,dst=/candidate.py,readonly",
+      "sha256:8c842625ebe7d35d86261a999594cfb45847bc0ac561089d0790cd26413e06ff",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.382125,
+    "stdout": "[{\"id\": \"csv-v1-holdout-multiline-empty-composition\", \"status\": \"ok\", \"value\": [[\"head\", \"first\\r\\nsecond\", \"\"], [\"\", \"\", \"tail\"]]}, {\"id\": \"csv-v1-holdout-blank-between-quoted-records\", \"status\": \"ok\", \"value\": [[\"a,b\", \"c\"], [\"\"], [\"d\", \"\"]]}, {\"id\": \"csv-v1-holdout-quoted-quotes-and-cr\", \"status\": \"ok\", \"value\": [[\"\\\"x\\\"\\ry\", \"z\"]]}, {\"id\": \"csv-v1-holdout-tab-unicode\", \"status\": \"ok\", \"value\": [[\"\\u4e2d\", \"x\\ty\", \"\\ud83d\\ude80\"]]}, {\"id\": \"csv-v1-holdout-escaped-delimiter-newline\", \"status\": \"exception\", \"type\": \"TypeError\"}, {\"id\": \"csv-v1-holdout-spaces-with-empty\", \"status\": \"ok\", \"value\": [[\"x\", \"\", \" y \"]]}, {\"id\": \"csv-v1-holdout-trim-multiline\", \"status\": \"ok\", \"value\": [[\"x\\ny\", \"z\", \"\"]]}, {\"id\": \"csv-v1-holdout-null-and-empty-quoted\", \"status\": \"ok\", \"value\": [[null, \"N\", \"\", \"\"]]}, {\"id\": \"csv-v1-holdout-quoted-null-default\", \"status\": \"ok\", \"value\": [[null, null, \"value\"]]}, {\"id\": \"csv-v1-holdout-literal-quotes-semicolon\", \"status\": \"ok\", \"value\": [[\"\\\"left\\\"\", \"right\", \"\"]]}, {\"id\": \"csv-v1-holdout-empty-null-marker\", \"status\": \"ok\", \"value\": [[null, null, \"tail\"]]}, {\"id\": \"csv-v1-holdout-nul-and-supplementary\", \"status\": \"ok\", \"value\": [[\"a\\u0000b\", \"\\ud83d\\ude80,\\ud83d\\ude00\", \"end\"]]}, {\"id\": \"csv-v1-holdout-printer-separator-does-not-split\", \"status\": \"ok\", \"value\": [[\"x\", \"y|z\", \"w\"]]}, {\"id\": \"csv-v1-holdout-unterminated-second-record\", \"status\": \"exception\", \"type\": \"CSVParseError\"}, {\"id\": \"csv-v1-holdout-junk-after-multiline-quote\", \"status\": \"exception\", \"type\": \"CSVParseError\"}, {\"id\": \"csv-v1-holdout-same-quote-and-delimiter\", \"status\": \"exception\", \"type\": \"IllegalArgumentException\"}, {\"id\": \"csv-v1-holdout-invalid-ignore-type\", \"status\": \"ok\", \"value\": [[\"x\"]]}, {\"id\": \"csv-v1-holdout-supplementary-delimiter\", \"status\": \"ok\", \"value\": [[\"x\"]]}, {\"id\": \"csv-v1-holdout-mixed-output\", \"status\": \"ok\", \"value\": \"\\\"\\\",\\\"x,y\\\",\\r\\n\\\"a\\nb\\\",\\\"\\\"\\\"\\\",last\\r\\n\"}, {\"id\": \"csv-v1-holdout-custom-quote\", \"status\": \"ok\", \"value\": \"'a;b';'it''s fine'\\n\"}, {\"id\": \"csv-v1-holdout-all-multiline-null\", \"status\": \"ok\", \"value\": \"\\\"N\\\",\\\"x\\ny\\\",\\\"\\\"\\r\"}, {\"id\": \"csv-v1-holdout-non-null-markers\", \"status\": \"ok\", \"value\": \"N,\\\"N\\\",\\\"x,y\\\"\\r\\n\\\"\\\",\\\"z\\\",\\\"\\\"\\r\\n\"}, {\"id\": \"csv-v1-holdout-numeric-looking-strings\", \"status\": \"ok\", \"value\": \"\\\"-1\\\";\\\"1.25\\\";\\\"NaN\\\";\\\"\\\"\\r\\n\"}, {\"id\": \"csv-v1-holdout-none-escaped-custom\", \"status\": \"ok\", \"value\": \"x\\\\;y;a\\\\\\\\b;line\\\\r\\\\nnext\\r\\n\"}, {\"id\": \"csv-v1-holdout-trim-null-and-space\", \"status\": \"ok\", \"value\": \"MISSING,x,\\\"y,z\\\"\\r\\n\"}, {\"id\": \"csv-v1-holdout-empty-record-followed\", \"status\": \"ok\", \"value\": \"\\nx\\n\\n\"}, {\"id\": \"csv-v1-holdout-invalid-escape-mode\", \"status\": \"ok\", \"value\": \"bad\\r\\n\"}, {\"id\": \"csv-v1-holdout-unicode-quotes\", \"status\": \"ok\", \"value\": \"\\u00ab\\u03b1,\\u03b2\\u00ab,\\u00ab\\ud83d\\ude80\\n\\ud83d\\ude00\\u00ab,e\\u0301\\r\\n\"}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-18T03:05:12.532081128Z",
+      "FinishedAt": "2026-11-18T03:05:16.836441297Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:6ef59ab7ce1742ac31545d5ada4a4ef16964bfad84e9bde15311b83a0fb30d8b",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:8c842625ebe7d35d86261a999594cfb45847bc0ac561089d0790cd26413e06ff",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

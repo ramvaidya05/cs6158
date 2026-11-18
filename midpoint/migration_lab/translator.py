@@ -9,7 +9,10 @@ class MigrationAgent:
         self.backend = backend
 
     def prompt(self, task, previous=None, feedback=None):
-        if task == "commons_cli":
+        if task == "commons_csv":
+            from .csv_task import prompt
+            blocks = [prompt()]
+        elif task == "commons_cli":
             from .cli_task import prompt
             blocks = [prompt()]
         else:

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "csv-development-00",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,\"b,b\",\"line1\nline2\",\n"
+  },
+  {
+    "id": "csv-development-01",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"unterminated"
+  },
+  {
+    "id": "csv-development-02",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,b\n\n,c\n",
+    "config": {
+      "ignore_empty_lines": false
+    }
+  },
+  {
+    "id": "csv-development-03",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": " a ;NULL;\" b \"\n",
+    "config": {
+      "delimiter": ";",
+      "trim": true,
+      "null_string": "NULL"
+    }
+  },
+  {
+    "id": "csv-development-04",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u03b1,\ud83d\ude80\r\n\"quote\"\"inside\",end"
+  },
+  {
+    "id": "csv-development-05",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a,b",
+        "say \"hi\"",
+        ""
+      ]
+    ]
+  },
+  {
+    "id": "csv-development-06",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "NULL",
+        "a\nb"
+      ]
+    ],
+    "config": {
+      "null_string": "NULL",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-development-07",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "",
+    "config": {
+      "trim": 1
+    }
+  }
+]

@@ -1,0 +1,371 @@
+[
+  {
+    "id": "csv-v1-visible-empty",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-blank-default",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\n\r\n",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-blank-kept",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a\n\n",
+    "config": {
+      "ignore_empty_lines": false
+    }
+  },
+  {
+    "id": "csv-v1-visible-trailing-fields",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,,\nb,c,",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-quoted-empty",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"\",x\n",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-quoted-delimiter",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,\"b,c\"\n",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-doubled-quote",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"say \"\"hi\"\"\",end",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-multiline",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"line1\nline2\",x\n",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-mixed-endings",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,b\r\nc,d\re,f\n",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-semicolon",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a;\"b;c\";d",
+    "config": {
+      "delimiter": ";"
+    }
+  },
+  {
+    "id": "csv-v1-visible-escaped-quote",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"a\\\"b\",c",
+    "config": {
+      "escape": "\\"
+    }
+  },
+  {
+    "id": "csv-v1-visible-spaces-literal",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": " a , b ",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-surrounding",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": " a , \" b \" ",
+    "config": {
+      "ignore_surrounding_spaces": true
+    }
+  },
+  {
+    "id": "csv-v1-visible-trim",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": " a ,\" b \"",
+    "config": {
+      "trim": true
+    }
+  },
+  {
+    "id": "csv-v1-visible-null-marker",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "NULL,\"NULL\",,x",
+    "config": {
+      "null_string": "NULL"
+    }
+  },
+  {
+    "id": "csv-v1-visible-unicode",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u03b1,\ud83d\ude80,e\u0301",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-quotes-disabled",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,\"b\",c",
+    "config": {
+      "quote": null
+    }
+  },
+  {
+    "id": "csv-v1-visible-separator-is-printer-only",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a|b",
+    "config": {
+      "record_separator": "|"
+    }
+  },
+  {
+    "id": "csv-v1-visible-unterminated",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"open",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-junk-after-quote",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"x\"junk,y",
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-invalid-delimiter",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a,b",
+    "config": {
+      "delimiter": "\n"
+    }
+  },
+  {
+    "id": "csv-v1-visible-invalid-bool",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a",
+    "config": {
+      "trim": 1
+    }
+  },
+  {
+    "id": "csv-v1-visible-invalid-quote-mode",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "a",
+    "config": {
+      "quote_mode": "UNKNOWN"
+    }
+  },
+  {
+    "id": "csv-v1-visible-empty-output",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-empty-record",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      []
+    ],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-basic-output",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-printer-quotes",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a,b",
+        "say \"hi\"",
+        ""
+      ]
+    ],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-printer-multiline",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a\nb",
+        "c\rd"
+      ]
+    ],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-printer-unicode",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "\u4e2d",
+        "\ud83d\ude80",
+        null
+      ]
+    ],
+    "config": {}
+  },
+  {
+    "id": "csv-v1-visible-printer-null",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "NULL",
+        ""
+      ]
+    ],
+    "config": {
+      "null_string": "NULL"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-all",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "config": {
+      "quote_mode": "ALL"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-all-non-null",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "",
+        "x"
+      ]
+    ],
+    "config": {
+      "quote_mode": "ALL_NON_NULL",
+      "null_string": "N"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-non-numeric",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "12",
+        "x"
+      ]
+    ],
+    "config": {
+      "quote_mode": "NON_NUMERIC"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-none",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a,b",
+        "c\nd"
+      ]
+    ],
+    "config": {
+      "quote_mode": "NONE",
+      "escape": "\\"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-custom",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a;b",
+        " c "
+      ]
+    ],
+    "config": {
+      "delimiter": ";",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v1-visible-printer-trim",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        " a ",
+        " b "
+      ]
+    ],
+    "config": {
+      "trim": true
+    }
+  },
+  {
+    "id": "csv-v1-visible-invalid-none",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "a"
+      ]
+    ],
+    "config": {
+      "quote_mode": "NONE"
+    }
+  }
+]
