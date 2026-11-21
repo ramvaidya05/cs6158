@@ -1,0 +1,1 @@
+class CodecDigits { public static void main(String[] a) { for(int i=0;i<65536;i++) System.out.print((char)(66+Character.digit((char)i,16))); } }

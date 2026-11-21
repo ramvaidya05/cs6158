@@ -1,0 +1,85 @@
+{
+  "cpython": {
+    "status": "completed",
+    "passed": 21,
+    "total": 21,
+    "passed_ids": [
+      "codec-visible-000",
+      "codec-visible-001",
+      "codec-visible-002",
+      "codec-visible-003",
+      "codec-visible-004",
+      "codec-visible-005",
+      "codec-visible-006",
+      "codec-visible-007",
+      "codec-visible-008",
+      "codec-visible-009",
+      "codec-visible-010",
+      "codec-visible-011",
+      "codec-visible-012",
+      "codec-visible-013",
+      "codec-visible-014",
+      "codec-visible-015",
+      "codec-v2-visible-16",
+      "codec-v2-visible-17",
+      "codec-v2-visible-18",
+      "codec-v2-visible-19",
+      "codec-v2-visible-20"
+    ],
+    "failures": []
+  },
+  "graal": {
+    "status": "completed",
+    "passed": 20,
+    "total": 21,
+    "passed_ids": [
+      "codec-visible-000",
+      "codec-visible-001",
+      "codec-visible-002",
+      "codec-visible-003",
+      "codec-visible-004",
+      "codec-visible-005",
+      "codec-visible-006",
+      "codec-visible-007",
+      "codec-visible-008",
+      "codec-visible-009",
+      "codec-visible-010",
+      "codec-visible-011",
+      "codec-visible-012",
+      "codec-visible-013",
+      "codec-visible-014",
+      "codec-visible-015",
+      "codec-v2-visible-16",
+      "codec-v2-visible-18",
+      "codec-v2-visible-19",
+      "codec-v2-visible-20"
+    ],
+    "failures": [
+      {
+        "case": {
+          "id": "codec-v2-visible-17",
+          "task": "commons_codec_hex",
+          "operation": "decode",
+          "data": "\u0662a",
+          "lower": true
+        },
+        "expected": {
+          "id": "codec-v2-visible-17",
+          "status": "ok",
+          "value": [
+            42
+          ]
+        },
+        "actual": {
+          "id": "codec-v2-visible-17",
+          "status": "exception",
+          "type": "AttributeError",
+          "diagnostic": {
+            "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+            "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 54, in decode_hex\n  File \"candidate.py\", line 40, in _to_digit\n  File \"candidate.py\", line 36, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+          }
+        }
+      }
+    ]
+  }
+}

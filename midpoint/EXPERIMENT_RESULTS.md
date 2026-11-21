@@ -1,3 +1,13 @@
+## November 21 — completed assisted Codec Hex slice
+
+Final isolated qualification passes 21/21 visible and 110/110 previously withheld
+API cases in each of CPython and GraalPy, plus all 65,536 Java char digit mappings
+in each runtime. The final implementation includes a developer-assisted Unicode
+portability fix; this is scoped Hex completion, not full-library translation or
+an autonomous repair success. Final verification used no model tokens. See
+[Codec v2 observations](CODEC_V2_OBSERVATIONS.md) for live scores, provenance,
+limitations, and reproducible archived evidence. Earlier studies below are unchanged.
+
 # Current checkpoint — November 17, 2026
 
 ## CLI v3 live Gemini studies — November 17, 2026 local time

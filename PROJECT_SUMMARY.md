@@ -1,6 +1,6 @@
 # Project summary
 
-Last updated: **November 21, 2026**. Latest recorded experiments: November 17 local time (November 18 UTC archives).
+Last updated: **November 21, 2026**. Latest recorded Codec experiments and qualification: November 21 local time.
 
 ## Goal and implementation
 
@@ -17,9 +17,9 @@ Translate selected Java library behavior into Python using an LLM, then verify a
 - **Early pilot:** live Levenshtein translations passed all checks in 3/3 one-shot trials. Earlier API failures/timeouts remain documented as unsuccessful runs.
 - **Commons CLI v3:** 32 methods across five classes; 44 visible and 28 holdout scenarios. Main study: all three initial translations passed, so repair offered no measurable improvement. Separate memory study: full-task success improved from **1/3 one-shot to 3/3 with either repair arm**. Both failures needed one retry. **Memory added no measured benefit.** The scoped CLI study is complete; the full library is not translated.
 - **Commons CSV v1:** parser/printer interfaces; 37 visible and 28 holdout scenarios. Across three main trials, average holdout accuracy increased from **73.81% to 92.86%** with repair. Code repair passed all visible cases, but **0/3 candidates passed the entire suite**. Remaining errors include escaping and Java UTF-16 delimiter semantics. Separate memory study: identical final accuracy with/without history; history saved one retry in one pair.
-- **Commons Codec Hex:** separately recorded three-trial study reached **96.8% CPython / 90.9% GraalPy holdout accuracy**, but **0/3 full-task passes**. Unicode semantics and runtime API differences remain unresolved. Different model/settings mean this is not a matched comparison with CLI/CSV.
+- **Commons Codec Hex:** separately recorded three-trial study reached **96.8% CPython / 90.9% GraalPy holdout accuracy**, but **0/3 full-task passes**. A November 21 v2 live trial plus continuation reached 110/110 CPython and 108/110 GraalPy holdout cases (12,119 tokens). A subsequent developer-assisted Unicode fix completed the supported Hex slice: 21/21 visible and 110/110 previously withheld cases in each runtime, plus all 65,536 Java char digit mappings in each. This qualification used no API tokens; it is regression evidence, not autonomous repair success or full-library completion. Different model/settings mean this is not a matched comparison with CLI/CSV.
 
-CLI v3 used 11 live calls (about **$0.76**); CSV used 32 (about **$2.59**), including their smoke runs. These are declared-rate accounting estimates, not provider invoices or total historical project spend. Latest validation checkpoint: **125 Python tests passed**; CSV Java qualification passed **10 tests**.
+CLI v3 used 11 live calls (about **$0.76**); CSV used 32 (about **$2.59**), including their smoke runs. These are declared-rate accounting estimates, not provider invoices or total historical project spend. Latest validation checkpoint: **127 Python tests passed**; CSV Java qualification passed **10 tests**.
 
 ## What the evidence supports—and what remains
 
@@ -30,6 +30,7 @@ Execution-guided repair helped failing translations in these small studies. Retr
 ## Details only when needed
 
 - [Complete experiment history](midpoint/EXPERIMENT_RESULTS.md)
+- [Codec completion and provenance](midpoint/CODEC_V2_OBSERVATIONS.md)
 - [CLI results](midpoint/CLI_V3_LIVE_OBSERVATIONS.md) · [CSV results](midpoint/CSV_LIVE_OBSERVATIONS.md)
 - [Retry memory and dependency changes](midpoint/RETRY_MEMORY_OBSERVATIONS.md)
 - [Architecture and roadmap](IMPLEMENTATION_PLAN.md) · [Professor feedback response](midpoint/REVIEWER_RESPONSE.md)

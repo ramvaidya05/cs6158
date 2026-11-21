@@ -1,0 +1,30 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = list(\"0123456789abcdef\")\nDIGITS_UPPER = list(\"0123456789ABCDEF\")\n\ndef _character_digit_radix_16(ch: str) -> int:\n    if len(ch) != 1:\n        return -1\n    code = ord(ch)\n    # Basic ASCII fast path\n    if 0x30 <= code <= 0x39:\n        return code - 0x30\n    if 0x61 <= code <= 0x66:\n        return code - 0x61 + 10\n    if 0x41 <= code <= 0x46:\n        return code - 0x41 + 10\n    \n    # Fullwidth ASCII hex characters\n    if 0xFF10 <= code <= 0xFF19:\n        return code - 0xFF10\n    if 0xFF41 <= code <= 0xFF46:\n        return code - 0xFF41 + 10\n    if 0xFF21 <= code <= 0xFF26:\n        return code - 0xFF21 + 10\n\n    # Unicode decimal digit fallback\n    try:\n        val = unicodedata.decimal(ch)\n        if 0 <= val <= 9:\n            return val\n    except (ValueError, TypeError):\n        pass\n    return -1\n\ndef _to_digit(ch: str, index: int) -> int:\n    digit = _character_digit_radix_16(ch)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character {ch} at index {index}.\")\n    return digit\n\ndef decode_hex(data: str) -> list:\n    # Java String length is in UTF-16 code units / chars\n    # Python string indexing is by character\n    chars = list(data)\n    length = len(chars)\n    if (length & 1) != 0:\n        raise ValueError(f\"Odd number of characters {length}.\")\n    \n    out = []\n    j = 0\n    while j < length:\n        f = _to_digit(chars[j], j) << 4\n        j += 1\n        f |= _to_digit(chars[j], j)\n        j += 1\n        out.append(f & 0xFF)\n    return out\n\ndef encode_hex_string(data: list, to_lower: bool = True) -> str:\n    digits = DIGITS_LOWER if to_lower else DIGITS_UPPER\n    out = []\n    for b in data:\n        b_val = b & 0xFF\n        out.append(digits[(0xF0 & b_val) >> 4])\n        out.append(digits[0x0F & b_val])\n    return \"\".join(out)\n\ndef run(operation: str, data, lower: bool = True):\n    if operation == \"encode\":\n        return encode_hex_string(data, to_lower=lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unsupported operation: {operation}\")\n",
+  "explanation": "The implementation faithfully translates Apache Commons Codec 1.22.1 `Hex` methods into Python. `run('encode', data, lower)` converts a list of unsigned bytes into a hex string (lowercase by default, uppercase if `lower=False`). `run('decode', data)` converts a hex string into a list of unsigned bytes. It replicates `Character.digit(ch, 16)` behavior, handling standard ASCII digits/letters, fullwidth hex characters, and Unicode decimal digits via `unicodedata.decimal()`. If an odd length hex string or an invalid hex digit is provided, `ValueError` (mapping to Java's `DecoderException`) is raised.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "EyQCa9_PA5PcytMPxZvbsAw",
+    "usage": {
+      "input_tokens": 1666,
+      "output_tokens": 962,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1666,
+        "candidatesTokenCount": 962,
+        "totalTokenCount": 2628,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1666
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 5.632
+  }
+}

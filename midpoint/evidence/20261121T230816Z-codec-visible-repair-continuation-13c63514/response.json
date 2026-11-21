@@ -1,0 +1,78 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = list(\"0123456789abcdef\")\nDIGITS_UPPER = list(\"0123456789ABCDEF\")\n\ndef _to_code_units(s: str) -> list:\n    units = []\n    for ch in s:\n        cp = ord(ch)\n        if cp <= 0xFFFF:\n            units.append(cp)\n        else:\n            cp -= 0x10000\n            units.append(0xD800 + (cp >> 10))\n            units.append(0xDC00 + (cp & 0x3FF))\n    return units\n\ndef _character_digit_radix_16(cu: int) -> int:\n    # ASCII digits and hex letters\n    if 0x30 <= cu <= 0x39:\n        return cu - 0x30\n    if 0x61 <= cu <= 0x66:\n        return cu - 0x61 + 10\n    if 0x41 <= cu <= 0x46:\n        return cu - 0x41 + 10\n    # Fullwidth ASCII digits and hex letters\n    if 0xFF10 <= cu <= 0xFF19:\n        return cu - 0xFF10\n    if 0xFF41 <= cu <= 0xFF46:\n        return cu - 0xFF41 + 10\n    if 0xFF21 <= cu <= 0xFF26:\n        return cu - 0xFF21 + 10\n    # Unicode General Category Nd (Decimal Number)\n    ch = chr(cu)\n    if unicodedata.category(ch) == 'Nd':\n        return unicodedata.decimal(ch, -1)\n    return -1\n\ndef _to_digit(cu: int, index: int) -> int:\n    digit = _character_digit_radix_16(cu)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character {chr(cu)!r} at index {index}.\")\n    return digit\n\ndef decode_hex(data: str) -> list:\n    code_units = _to_code_units(data)\n    length = len(code_units)\n    if (length & 1) != 0:\n        raise ValueError(f\"Odd number of characters {length}.\")\n    \n    out = []\n    j = 0\n    while j < length:\n        f = _to_digit(code_units[j], j) << 4\n        j += 1\n        f |= _to_digit(code_units[j], j)\n        j += 1\n        out.append(f & 0xFF)\n    return out\n\ndef encode_hex_string(data: list, to_lower: bool = True) -> str:\n    digits = DIGITS_LOWER if to_lower else DIGITS_UPPER\n    out = []\n    for b in data:\n        b_val = b & 0xFF\n        out.append(digits[(0xF0 & b_val) >> 4])\n        out.append(digits[0x0F & b_val])\n    return \"\".join(out)\n\ndef run(operation: str, data, lower: bool = True):\n    if operation == \"encode\":\n        return encode_hex_string(data, to_lower=lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unsupported operation: {operation}\")\n",
+  "explanation": "Java's `Character.digit(ch, 16)` returns valid hex digit values for any character with general category 'Nd' (Decimal Number), as well as ASCII and fullwidth hex letters (A-F, a-f). The previous code checked standard/fullwidth ASCII digit ranges and fell back to `unicodedata.decimal(chr(cu), -1)`. However, in some Python runtimes or for certain Unicode decimal digits, `unicodedata.decimal()` requires checking `unicodedata.category(ch) == 'Nd'`. Updating `_character_digit_radix_16` to explicitly check `unicodedata.category(ch) == 'Nd'` ensures all Unicode decimal digits (such as U+0662 Arabic-Indic digit two) accurately resolve to their decimal integer values as Java's `Character.digit` does.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "YCQCa-S0LZPMytMP5-6QyQk",
+    "usage": {
+      "input_tokens": 2604,
+      "output_tokens": 1082,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2604,
+        "candidatesTokenCount": 1082,
+        "totalTokenCount": 3686,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2604
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 5.648
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\n\\nDIGITS_LOWER = list(\\\"0123456789abcdef\\\")\\nDIGITS_UPPER = list(\\\"0123456789ABCDEF\\\")\\n\\ndef _to_code_units(s: str) -> list:\\n    units = []\\n    for ch in s:\\n        cp = ord(ch)\\n        if cp <= 0xFFFF:\\n            units.append(cp)\\n        else:\\n            cp -= 0x10000\\n            units.append(0xD800 + (cp >> 10))\\n            units.append(0xDC00 + (cp & 0x3FF))\\n    return units\\n\\ndef _character_digit_radix_16(cu: int) -> int:\\n    # ASCII digits and hex letters\\n    if 0x30 <= cu <= 0x39:\\n        return cu - 0x30\\n    if 0x61 <= cu <= 0x66:\\n        return cu - 0x61 + 10\\n    if 0x41 <= cu <= 0x46:\\n        return cu - 0x41 + 10\\n    # Fullwidth ASCII digits and hex letters\\n    if 0xFF10 <= cu <= 0xFF19:\\n        return cu - 0xFF10\\n    if 0xFF41 <= cu <= 0xFF46:\\n        return cu - 0xFF41 + 10\\n    if 0xFF21 <= cu <= 0xFF26:\\n        return cu - 0xFF21 + 10\\n    # Unicode General Category Nd (Decimal Number)\\n    ch = chr(cu)\\n    if unicodedata.category(ch) == 'Nd':\\n        return unicodedata.decimal(ch, -1)\\n    return -1\\n\\ndef _to_digit(cu: int, index: int) -> int:\\n    digit = _character_digit_radix_16(cu)\\n    if digit == -1:\\n        raise ValueError(f\\\"Illegal hexadecimal character {chr(cu)!r} at index {index}.\\\")\\n    return digit\\n\\ndef decode_hex(data: str) -> list:\\n    code_units = _to_code_units(data)\\n    length = len(code_units)\\n    if (length & 1) != 0:\\n        raise ValueError(f\\\"Odd number of characters {length}.\\\")\\n    \\n    out = []\\n    j = 0\\n    while j < length:\\n        f = _to_digit(code_units[j], j) << 4\\n        j += 1\\n        f |= _to_digit(code_units[j], j)\\n        j += 1\\n        out.append(f & 0xFF)\\n    return out\\n\\ndef encode_hex_string(data: list, to_lower: bool = True) -> str:\\n    digits = DIGITS_LOWER if to_lower else DIGITS_UPPER\\n    out = []\\n    for b in data:\\n        b_val = b & 0xFF\\n        out.append(digits[(0xF0 & b_val) >> 4])\\n        out.append(digits[0x0F & b_val])\\n    return \\\"\\\".join(out)\\n\\ndef run(operation: str, data, lower: bool = True):\\n    if operation == \\\"encode\\\":\\n        return encode_hex_string(data, to_lower=lower)\\n    elif operation == \\\"decode\\\":\\n        return decode_hex(data)\\n    else:\\n        raise ValueError(f\\\"Unsupported operation: {operation}\\\")\\n\",\n  \"explanation\": \"Java's `Character.digit(ch, 16)` returns valid hex digit values for any character with general category 'Nd' (Decimal Number), as well as ASCII and fullwidth hex letters (A-F, a-f). The previous code checked standard/fullwidth ASCII digit ranges and fell back to `unicodedata.decimal(chr(cu), -1)`. However, in some Python runtimes or for certain Unicode decimal digits, `unicodedata.decimal()` requires checking `unicodedata.category(ch) == 'Nd'`. Updating `_character_digit_radix_16` to explicitly check `unicodedata.category(ch) == 'Nd'` ensures all Unicode decimal digits (such as U+0662 Arabic-Indic digit two) accurately resolve to their decimal integer values as Java's `Character.digit` does.\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfRNyNMFzGZa3srMM+TDTSdUmwo6ErPQJhU7UStgSdS/El8+kJyRXlbUbp6eLCagYKEyB63/eaDtC2fEnh8DjjG8DPBgSstgHPV5z+L6Nj8khIc0SEbTuR25ThAqkrhgYn0aaU6v/FSk7WiglTq8GdQhZRh7LND4ZalJOkLidDnmOMaX4FfNaUnD81X+nZyVAXg=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2604,
+      "candidatesTokenCount": 1082,
+      "totalTokenCount": 3686,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2604
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "YCQCa-S0LZPMytMP5-6QyQk",
+    "usage": {
+      "input_tokens": 2604,
+      "output_tokens": 1082,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2604,
+        "candidatesTokenCount": 1082,
+        "totalTokenCount": 3686,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2604
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "provenance": "continuation, not independent trial",
+  "parent": "/Users/ram/cs6158/midpoint/evidence/20261121T230658Z-codec-hex-pilot",
+  "feedback": "visible only",
+  "max_calls": 1,
+  "max_output_tokens": 4096,
+  "max_spend_usd": 0.1,
+  "suite_sha256": "3013f592f85aa71bbba53911aec29a02095e8e781e7bff24c9389d555e4cec8e"
+}
