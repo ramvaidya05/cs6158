@@ -1,0 +1,14 @@
+---
+description: Maintain the user's concise project progress summary
+alwaysApply: true
+---
+
+# Project summary upkeep
+
+- Read `PROJECT_SUMMARY.md` when starting substantive project work.
+- After meaningful implementation changes, completed experiments, or agreed plan changes, update it in the same task.
+- Keep it concise (approximately one page, no more than 700 words). Replace stale status instead of accumulating a chronological log.
+- Keep the goal, delivered features, important results, limitations, and immediate next steps current. Link detailed observations and evidence.
+- Distinguish live model results from synthetic tests, case accuracy from full-task success, and completed work from planned work. Never claim results for unrun experiments.
+- Use America/New_York dates; distinguish the summary update date from experiment dates. Do not change historical evidence or scores when updating the summary.
+- A summary update does not authorize additional experiments, API spending, or publishing.
