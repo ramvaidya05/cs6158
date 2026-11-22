@@ -1,0 +1,11 @@
+{
+  "trial-000/commons_csv/one_shot": "acb85b8d4eb703282c9e34b6cccc119c4304f639f3a52b9f2b15385fcc6a6a2a",
+  "trial-000/commons_csv/code_repair": "705a7489dd2669ed679ff178666a1dcbe3762a99bcadf2b52ba0e7033c2a39ae",
+  "trial-000/commons_csv/environment_repair": "388619b2ad2d4d26b10e3e077a7c474041821378053af789a0f41a7d807e9fa6",
+  "trial-001/commons_csv/one_shot": "0e99d8baf30ec617a6621023eab5d275ed8b210cf2550c0bd7573565aec62acb",
+  "trial-001/commons_csv/code_repair": "c4daf18bdb27cbc9cac8d1e5546fa81093c1873ea23d1ee6a4e03c998d2ec186",
+  "trial-001/commons_csv/environment_repair": "82910463e94cc38f071261554cb5a7a2b801a3c28ee55a9a1dc671c9ec673bc6",
+  "trial-002/commons_csv/one_shot": "0251db99894dca26e0413866ce61ee709b22852ee9e393c630e60e2827ec6051",
+  "trial-002/commons_csv/code_repair": "0dacd9c54c4fdfc7b30b834db7fa67d0ec3e135268411ae1a5c6e4636465ec64",
+  "trial-002/commons_csv/environment_repair": "7c8f7b012ce754800df24538e19f24ba9b8122d2c5f931a30e8262bb899c9907"
+}

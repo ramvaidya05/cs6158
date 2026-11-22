@@ -1,0 +1,147 @@
+Artifacts: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/runs/20261121T232749Z-csv-v2-main-d4aa60a3
+Trial 1/3: commons_csv, one_shot
+Trial 1/3: commons_csv, code_repair
+Trial 1/3: commons_csv, environment_repair
+Trial 2/3: commons_csv, one_shot
+Trial 2/3: commons_csv, code_repair
+Trial 2/3: commons_csv, environment_repair
+Trial 3/3: commons_csv, one_shot
+Trial 3/3: commons_csv, code_repair
+Trial 3/3: commons_csv, environment_repair
+{
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.5615060804490177
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 296,
+            "total": 303,
+            "rate": 0.976897689768977,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 171,
+            "total": 177,
+            "rate": 0.9661016949152542,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 296,
+            "total": 303,
+            "rate": 0.976897689768977,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 171,
+            "total": 177,
+            "rate": 0.9661016949152542,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "code_repair": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 1.0,
+      "pass_rate_among_completed": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "environment_repair": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 1.0,
+      "pass_rate_among_completed": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 9,
+    "input_tokens": 222847,
+    "output_tokens": 59921,
+    "usage_unknown_calls": 0
+  }
+}
+Archived: /Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/evidence/20261121T232749Z-csv-v2-main-d4aa60a3

@@ -1,0 +1,3204 @@
+{
+  "schema": 2,
+  "seed": 6158,
+  "source": {
+    "repository": "https://github.com/tdebatty/java-string-similarity",
+    "commit": "93240df9aab3ecea98b869c9536aa7ebc555b281",
+    "note": "Unmodified subset of main sources, interfaces and corresponding upstream tests. Harness build configuration is separate.",
+    "files": {
+      "LICENSE.md": "bae2d5f8af7bbb46fca680a3d191522b0cd8b1d5b3d5d72c8d49e785d60a39df",
+      "src/main/java/info/debatty/java/stringsimilarity/JaroWinkler.java": "6a2b933d9f769581d739f82c476ecd3ece0e8cb21b0335a1010caa2e633d0ce5",
+      "src/main/java/info/debatty/java/stringsimilarity/Levenshtein.java": "79d9d78419323834c6717e6dfd8179423409f7b3821e905e1f1f966904244b77",
+      "src/main/java/info/debatty/java/stringsimilarity/NormalizedLevenshtein.java": "c3ddf6a291e222521f291c1eb2b49e108ad814c999b30408af88ab62b5bbde89",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/MetricStringDistance.java": "7c5ae3d445181c543919647b59b31e7b99be7b2e4258f85c9db996d8edba41fe",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringDistance.java": "c3f4e7110a897b93ccde6a5eb52e71b4a1c42ad8cc6e0a63650761a0b12bb4ee",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/NormalizedStringSimilarity.java": "4b159b1347f153aa6aa114d8946e3d57bbc24f94e5ad56a9dfb0a0dfc7ff28ce",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/StringDistance.java": "c93dfba3ab27add4cf04a406ab894f2e8b16311fe3f25421d1789d7215defca3",
+      "src/main/java/info/debatty/java/stringsimilarity/interfaces/StringSimilarity.java": "f64bd4d203179fedc9fd4667c6623b0a312982e9e298b1bddd45eed59f448778",
+      "src/test/java/info/debatty/java/stringsimilarity/JaroWinklerTest.java": "a6173190ca29d7353bd3cfc811632c1fe50d35835a0cf2ce08f8b2952cb62e07",
+      "src/test/java/info/debatty/java/stringsimilarity/LevenshteinTest.java": "8e3bbbc863c3ca0c734605ebd90e5a4671229f5830d3105b7352f7fd987c3e76",
+      "src/test/java/info/debatty/java/stringsimilarity/NormalizedLevenshteinTest.java": "62af21a6b822ec9c278751d0f6d199487c4e328e4d5d1268dc315b821cdd75c4",
+      "src/test/java/info/debatty/java/stringsimilarity/testutil/NullEmptyTests.java": "e08089f50ad5ed77888918a517dc4160988a07e6c8896c93009d94c45d925c51"
+    }
+  },
+  "tasks": {
+    "commons_csv": {
+      "visible": {
+        "cases": [
+          {
+            "id": "csv-v2-visible-promoted-000",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-001",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\n\r\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-002",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a\n\n",
+            "config": {
+              "ignore_empty_lines": false
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-003",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,,\nb,c,",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-004",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\",x\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-005",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b,c\"\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-006",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"say \"\"hi\"\"\",end",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-007",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"line1\nline2\",x\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-008",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b\r\nc,d\re,f\n",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-009",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a;\"b;c\";d",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-010",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\\\"b\",c",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-011",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , b ",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-012",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a , \" b \" ",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-013",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " a ,\" b \"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-014",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "NULL,\"NULL\",,x",
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-015",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u03b1,\ud83d\ude80,e\u0301",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-016",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,\"b\",c",
+            "config": {
+              "quote": null
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-017",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a|b",
+            "config": {
+              "record_separator": "|"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-018",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"open",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-019",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"x\"junk,y",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-020",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a,b",
+            "config": {
+              "delimiter": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-021",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "trim": 1
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-022",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a",
+            "config": {
+              "quote_mode": "UNKNOWN"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-023",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-024",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              []
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-025",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "c",
+                "d"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-026",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "say \"hi\"",
+                ""
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-027",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a\nb",
+                "c\rd"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-028",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u4e2d",
+                "\ud83d\ude80",
+                null
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-029",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "NULL",
+                ""
+              ]
+            ],
+            "config": {
+              "null_string": "NULL"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-030",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a",
+                "b"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-031",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-032",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "12",
+                "x"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NON_NUMERIC"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-033",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a,b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-034",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                " c "
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-035",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                " a ",
+                " b "
+              ]
+            ],
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-036",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-037",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "head,\"first\r\nsecond\",\r\n,,tail",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-038",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a,b\",c\n\n\"d\",\n",
+            "config": {
+              "ignore_empty_lines": false
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-039",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"\"\"x\"\"\ry\",z\r",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-040",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u4e2d\t\"x\ty\"\t\ud83d\ude80",
+            "config": {
+              "delimiter": "\t"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-041",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "one\\,two,three\\nline",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-042",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": " x , ,\" y \"\n",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-043",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\" x\ny \", z ,",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-044",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "N,\"N\",\"\",\n",
+            "config": {
+              "null_string": "N",
+              "quote_mode": "ALL_NON_NULL"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-045",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "missing,\"missing\",value",
+            "config": {
+              "null_string": "missing"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-046",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\";right;",
+            "config": {
+              "quote": null,
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-047",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": ",\"\",tail",
+            "config": {
+              "null_string": ""
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-048",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "a\u0000b,\"\ud83d\ude80,\ud83d\ude00\",end",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-049",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x;y|z;w",
+            "config": {
+              "delimiter": ";",
+              "record_separator": "|"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-050",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok,row\n\"open\nnext",
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-051",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"a\nb\"!;c",
+            "config": {
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-052",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "delimiter": "\""
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-053",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "ignore_empty_lines": "true"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-054",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "x",
+            "config": {
+              "delimiter": "\ud83d\ude80"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-055",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "",
+                "x,y",
+                null
+              ],
+              [
+                "a\nb",
+                "\"",
+                "last"
+              ]
+            ],
+            "config": {}
+          },
+          {
+            "id": "csv-v2-visible-promoted-056",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "a;b",
+                "it's fine"
+              ]
+            ],
+            "config": {
+              "delimiter": ";",
+              "quote": "'",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-057",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "x\ny",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL",
+              "null_string": "N",
+              "record_separator": "\r"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-058",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "N",
+                "x,y"
+              ],
+              [
+                "",
+                "z",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "N"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-059",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "-1",
+                "1.25",
+                "NaN",
+                ""
+              ]
+            ],
+            "config": {
+              "quote_mode": "NON_NUMERIC",
+              "delimiter": ";"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-060",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "x;y",
+                "a\\b",
+                "line\r\nnext"
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "delimiter": ";",
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-061",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                " x ",
+                " y,z "
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "null_string": "MISSING"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-062",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [],
+              [
+                "x"
+              ],
+              []
+            ],
+            "config": {
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-063",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "bad"
+              ]
+            ],
+            "config": {
+              "escape": "\n",
+              "quote_mode": "NONE"
+            }
+          },
+          {
+            "id": "csv-v2-visible-promoted-064",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u03b1,\u03b2",
+                "\ud83d\ude80\n\ud83d\ude00",
+                "e\u0301"
+              ]
+            ],
+            "config": {
+              "quote": "\u00ab"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-114",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\rright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-114",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\rright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-110",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\nright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-110",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\nright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-116",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\tright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-116",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\tright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-98",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\bright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-98",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\bright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-102",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\fright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-102",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\fright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-122",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\zright,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-122",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\zright\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-92",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\\\right,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-92",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\\\right\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-44",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\,right,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-44",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\,right\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-34",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "left\\\"right,end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-34",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"left\\\"right\",end",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-delimiter-utf16",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "data,tail",
+            "config": {
+              "delimiter": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-delimiter-utf16-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "data",
+                "tail"
+              ]
+            ],
+            "config": {
+              "delimiter": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quote-utf16",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "data,tail",
+            "config": {
+              "quote": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quote-utf16-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "data",
+                "tail"
+              ]
+            ],
+            "config": {
+              "quote": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-utf16",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "data,tail",
+            "config": {
+              "escape": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-escape-utf16-output",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "data",
+                "tail"
+              ]
+            ],
+            "config": {
+              "escape": "\ud83d\ude00"
+            }
+          },
+          {
+            "id": "csv-v2-visible-terminal-escape",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "payload\\",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-quoted-terminal-escape",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"payload\\",
+            "config": {
+              "escape": "\\"
+            }
+          },
+          {
+            "id": "csv-v2-visible-trim-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u0000x\u0000,\"\u0000y\u0000\"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-surrounding-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u0000x\u0000,z",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-trim-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\tx\t,\"\ty\t\"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-surrounding-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\tx\t,z",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-trim-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u00a0x\u00a0,\"\u00a0y\u00a0\"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-surrounding-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u00a0x\u00a0,z",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-trim-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u2003x\u2003,\"\u2003y\u2003\"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-surrounding-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u2003x\u2003,z",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-trim-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u202fx\u202f,\"\u202fy\u202f\"",
+            "config": {
+              "trim": true
+            }
+          },
+          {
+            "id": "csv-v2-visible-surrounding-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u202fx\u202f,z",
+            "config": {
+              "ignore_surrounding_spaces": true
+            }
+          }
+        ],
+        "reference": [
+          {
+            "id": "csv-v2-visible-promoted-000",
+            "status": "ok",
+            "value": []
+          },
+          {
+            "id": "csv-v2-visible-promoted-001",
+            "status": "ok",
+            "value": []
+          },
+          {
+            "id": "csv-v2-visible-promoted-002",
+            "status": "ok",
+            "value": [
+              [
+                "a"
+              ],
+              [
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-003",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "",
+                ""
+              ],
+              [
+                "b",
+                "c",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-004",
+            "status": "ok",
+            "value": [
+              [
+                "",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-005",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b,c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-006",
+            "status": "ok",
+            "value": [
+              [
+                "say \"hi\"",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-007",
+            "status": "ok",
+            "value": [
+              [
+                "line1\nline2",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-008",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "c",
+                "d"
+              ],
+              [
+                "e",
+                "f"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-009",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b;c",
+                "d"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-010",
+            "status": "ok",
+            "value": [
+              [
+                "a\"b",
+                "c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-011",
+            "status": "ok",
+            "value": [
+              [
+                " a ",
+                " b "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-012",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                " b "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-013",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "b"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-014",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                "x"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-015",
+            "status": "ok",
+            "value": [
+              [
+                "\u03b1",
+                "\ud83d\ude80",
+                "e\u0301"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-016",
+            "status": "ok",
+            "value": [
+              [
+                "a",
+                "\"b\"",
+                "c"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-017",
+            "status": "ok",
+            "value": [
+              [
+                "a|b"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-018",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-promoted-019",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-promoted-020",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-021",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-022",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-023",
+            "status": "ok",
+            "value": ""
+          },
+          {
+            "id": "csv-v2-visible-promoted-024",
+            "status": "ok",
+            "value": "\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-025",
+            "status": "ok",
+            "value": "a,b\r\nc,d\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-026",
+            "status": "ok",
+            "value": "\"a,b\",\"say \"\"hi\"\"\",\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-027",
+            "status": "ok",
+            "value": "\"a\nb\",\"c\rd\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-028",
+            "status": "ok",
+            "value": "\u4e2d,\ud83d\ude80,\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-029",
+            "status": "ok",
+            "value": "NULL,NULL,\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-030",
+            "status": "ok",
+            "value": "\"a\",\"b\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-031",
+            "status": "ok",
+            "value": "N,\"\",\"x\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-032",
+            "status": "ok",
+            "value": "\"12\",\"x\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-033",
+            "status": "ok",
+            "value": "a\\,b,c\\nd\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-034",
+            "status": "ok",
+            "value": "\"a;b\";\" c \"\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-035",
+            "status": "ok",
+            "value": "a,b\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-036",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-037",
+            "status": "ok",
+            "value": [
+              [
+                "head",
+                "first\r\nsecond",
+                ""
+              ],
+              [
+                "",
+                "",
+                "tail"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-038",
+            "status": "ok",
+            "value": [
+              [
+                "a,b",
+                "c"
+              ],
+              [
+                ""
+              ],
+              [
+                "d",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-039",
+            "status": "ok",
+            "value": [
+              [
+                "\"x\"\ry",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-040",
+            "status": "ok",
+            "value": [
+              [
+                "\u4e2d",
+                "x\ty",
+                "\ud83d\ude80"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-041",
+            "status": "ok",
+            "value": [
+              [
+                "one,two",
+                "three\nline"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-042",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "",
+                " y "
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-043",
+            "status": "ok",
+            "value": [
+              [
+                "x\ny",
+                "z",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-044",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                "N",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-045",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "value"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-046",
+            "status": "ok",
+            "value": [
+              [
+                "\"left\"",
+                "right",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-047",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "tail"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-048",
+            "status": "ok",
+            "value": [
+              [
+                "a\u0000b",
+                "\ud83d\ude80,\ud83d\ude00",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-049",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "y|z",
+                "w"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-promoted-050",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-promoted-051",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-promoted-052",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-053",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-054",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-055",
+            "status": "ok",
+            "value": "\"\",\"x,y\",\r\n\"a\nb\",\"\"\"\",last\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-056",
+            "status": "ok",
+            "value": "'a;b';'it''s fine'\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-057",
+            "status": "ok",
+            "value": "\"N\",\"x\ny\",\"\"\r"
+          },
+          {
+            "id": "csv-v2-visible-promoted-058",
+            "status": "ok",
+            "value": "N,\"N\",\"x,y\"\r\n\"\",\"z\",\"\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-059",
+            "status": "ok",
+            "value": "\"-1\";\"1.25\";\"NaN\";\"\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-060",
+            "status": "ok",
+            "value": "x\\;y;a\\\\b;line\\r\\nnext\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-061",
+            "status": "ok",
+            "value": "MISSING,x,\"y,z\"\r\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-062",
+            "status": "ok",
+            "value": "\nx\n\n"
+          },
+          {
+            "id": "csv-v2-visible-promoted-063",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-promoted-064",
+            "status": "ok",
+            "value": "\u00ab\u03b1,\u03b2\u00ab,\u00ab\ud83d\ude80\n\ud83d\ude00\u00ab,e\u0301\r\n"
+          },
+          {
+            "id": "csv-v2-visible-escape-114",
+            "status": "ok",
+            "value": [
+              [
+                "left\rright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-114",
+            "status": "ok",
+            "value": [
+              [
+                "left\rright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-110",
+            "status": "ok",
+            "value": [
+              [
+                "left\nright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-110",
+            "status": "ok",
+            "value": [
+              [
+                "left\nright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-116",
+            "status": "ok",
+            "value": [
+              [
+                "left\tright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-116",
+            "status": "ok",
+            "value": [
+              [
+                "left\tright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-98",
+            "status": "ok",
+            "value": [
+              [
+                "left\bright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-98",
+            "status": "ok",
+            "value": [
+              [
+                "left\bright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-102",
+            "status": "ok",
+            "value": [
+              [
+                "left\fright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-102",
+            "status": "ok",
+            "value": [
+              [
+                "left\fright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-122",
+            "status": "ok",
+            "value": [
+              [
+                "left\\zright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-122",
+            "status": "ok",
+            "value": [
+              [
+                "left\\zright",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-92",
+            "status": "ok",
+            "value": [
+              [
+                "left\\right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-92",
+            "status": "ok",
+            "value": [
+              [
+                "left\\right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-44",
+            "status": "ok",
+            "value": [
+              [
+                "left,right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-44",
+            "status": "ok",
+            "value": [
+              [
+                "left,right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-escape-34",
+            "status": "ok",
+            "value": [
+              [
+                "left\"right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-quoted-escape-34",
+            "status": "ok",
+            "value": [
+              [
+                "left\"right",
+                "end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-delimiter-utf16",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-delimiter-utf16-output",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-quote-utf16",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-quote-utf16-output",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-escape-utf16",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-escape-utf16-output",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-visible-terminal-escape",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-quoted-terminal-escape",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-visible-trim-0",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "y"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-surrounding-0",
+            "status": "ok",
+            "value": [
+              [
+                "\u0000x\u0000",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-trim-1",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "y"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-surrounding-1",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-trim-2",
+            "status": "ok",
+            "value": [
+              [
+                "\u00a0x\u00a0",
+                "\u00a0y\u00a0"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-surrounding-2",
+            "status": "ok",
+            "value": [
+              [
+                "\u00a0x\u00a0",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-trim-3",
+            "status": "ok",
+            "value": [
+              [
+                "\u2003x\u2003",
+                "\u2003y\u2003"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-surrounding-3",
+            "status": "ok",
+            "value": [
+              [
+                "x",
+                "z"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-trim-4",
+            "status": "ok",
+            "value": [
+              [
+                "\u202fx\u202f",
+                "\u202fy\u202f"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-visible-surrounding-4",
+            "status": "ok",
+            "value": [
+              [
+                "\u202fx\u202f",
+                "z"
+              ]
+            ]
+          }
+        ]
+      },
+      "holdout": {
+        "cases": [
+          {
+            "id": "csv-v2-holdout-composed-escape-0-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!r\u03a9\"|tail!rend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!n\u03a9\"|tail!nend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!t\u03a9\"|tail!tend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!b\u03a9\"|tail!bend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!f\u03a9\"|tail!fend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-5",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!q\u03a9\"|tail!qend\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-6",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item10921!|\u03a9\"|tail!|end\r\n",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "item10921!\nnext|x!\ry",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok|unfinished!",
+            "config": {
+              "delimiter": "|",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!r\u03a9\":tail!rend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!n\u03a9\":tail!nend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!t\u03a9\":tail!tend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!b\u03a9\":tail!bend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!f\u03a9\":tail!fend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-5",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!q\u03a9\":tail!qend\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-6",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item63224!:\u03a9\":tail!:end\r\n",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "item63224!\nnext:x!\ry",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok:unfinished!",
+            "config": {
+              "delimiter": ":",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!r\u03a9\"\ttail!rend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!n\u03a9\"\ttail!nend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!t\u03a9\"\ttail!tend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!b\u03a9\"\ttail!bend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!f\u03a9\"\ttail!fend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-5",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!q\u03a9\"\ttail!qend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-6",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\"item72517!\t\u03a9\"\ttail!\tend\r\n",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "item72517!\nnext\tx!\ry",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok\tunfinished!",
+            "config": {
+              "delimiter": "\t",
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "fresh;record",
+            "config": {
+              "delimiter": "\ud83e\uddea"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-0",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh",
+                null
+              ]
+            ],
+            "config": {
+              "delimiter": "\ud801\udc00"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "fresh;record",
+            "config": {
+              "delimiter": ";",
+              "quote": "\ud83e\uddea"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-1",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh",
+                null
+              ]
+            ],
+            "config": {
+              "quote": "\ud801\udc00"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "fresh;record",
+            "config": {
+              "delimiter": ";",
+              "escape": "\ud83e\uddea"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-2",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh",
+                null
+              ]
+            ],
+            "config": {
+              "escape": "\ud801\udc00"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-0",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "absent",
+                "",
+                "x|y"
+              ],
+              [
+                "a!b",
+                "c\"d",
+                "line\r\nnext",
+                "  edge  "
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+            "config": {
+              "quote_mode": "ALL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-1",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "absent",
+                "",
+                "x|y"
+              ],
+              [
+                "a!b",
+                "c\"d",
+                "line\r\nnext",
+                "  edge  "
+              ]
+            ],
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+            "config": {
+              "quote_mode": "ALL_NON_NULL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-2",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "absent",
+                "",
+                "x|y"
+              ],
+              [
+                "a!b",
+                "c\"d",
+                "line\r\nnext",
+                "  edge  "
+              ]
+            ],
+            "config": {
+              "quote_mode": "MINIMAL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+            "config": {
+              "quote_mode": "MINIMAL",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-3",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "absent",
+                "",
+                "x|y"
+              ],
+              [
+                "a!b",
+                "c\"d",
+                "line\r\nnext",
+                "  edge  "
+              ]
+            ],
+            "config": {
+              "quote_mode": "NON_NUMERIC",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+            "config": {
+              "quote_mode": "NON_NUMERIC",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-4",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                null,
+                "absent",
+                "",
+                "x|y"
+              ],
+              [
+                "a!b",
+                "c\"d",
+                "line\r\nnext",
+                "  edge  "
+              ]
+            ],
+            "config": {
+              "quote_mode": "NONE",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-4",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+            "config": {
+              "quote_mode": "NONE",
+              "null_string": "absent",
+              "delimiter": "|",
+              "escape": "!",
+              "record_separator": "\n"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-0",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u00a0one\u00a0;\"\u00a0two\u00a0\";\r\n",
+            "config": {
+              "delimiter": ";",
+              "trim": true,
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-holdout-print-space-0",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u00a0one\u00a0",
+                "",
+                null
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "delimiter": ":",
+              "null_string": "nil"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-1",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u2002one\u2002;\"\u2002two\u2002\";\r\n",
+            "config": {
+              "delimiter": ";",
+              "trim": true,
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-holdout-print-space-1",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u2002one\u2002",
+                "",
+                null
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "delimiter": ":",
+              "null_string": "nil"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-2",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u202fone\u202f;\"\u202ftwo\u202f\";\r\n",
+            "config": {
+              "delimiter": ";",
+              "trim": true,
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-holdout-print-space-2",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u202fone\u202f",
+                "",
+                null
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "delimiter": ":",
+              "null_string": "nil"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-3",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\u001fone\u001f;\"\u001ftwo\u001f\";\r\n",
+            "config": {
+              "delimiter": ";",
+              "trim": true,
+              "ignore_surrounding_spaces": true
+            }
+          },
+          {
+            "id": "csv-v2-holdout-print-space-3",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "\u001fone\u001f",
+                "",
+                null
+              ]
+            ],
+            "config": {
+              "trim": true,
+              "delimiter": ":",
+              "null_string": "nil"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-retained-blanks",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "\r\n\"fresh|value\"|\r\n\r\nlast|\"\"\r\n",
+            "config": {
+              "delimiter": "|",
+              "ignore_empty_lines": false
+            }
+          },
+          {
+            "id": "csv-v2-holdout-malformed-after-quote",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "ok|row\n\"fresh\"unexpected|tail",
+            "config": {
+              "delimiter": "|"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-quote-disabled-composition",
+            "task": "commons_csv",
+            "operation": "parse",
+            "text": "'x'|a!|b|",
+            "config": {
+              "delimiter": "|",
+              "quote": null,
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-custom-quote-composition",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "it's|quoted",
+                "a!b",
+                null
+              ],
+              []
+            ],
+            "config": {
+              "delimiter": "|",
+              "quote": "'",
+              "escape": "!",
+              "null_string": "nil",
+              "record_separator": "\r"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-disabled-quote-composition",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "x|y",
+                "a!b",
+                "c\nd"
+              ]
+            ],
+            "config": {
+              "delimiter": "|",
+              "quote": null,
+              "escape": "!"
+            }
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-0",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh"
+              ]
+            ],
+            "config": {
+              "trim": 0
+            }
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-1",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh"
+              ]
+            ],
+            "config": {
+              "ignore_surrounding_spaces": 0
+            }
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-2",
+            "task": "commons_csv",
+            "operation": "print",
+            "records": [
+              [
+                "fresh"
+              ]
+            ],
+            "config": {
+              "ignore_empty_lines": 0
+            }
+          }
+        ],
+        "reference": [
+          {
+            "id": "csv-v2-holdout-composed-escape-0-0",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\r\u03a9",
+                "tail\rend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-1",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\n\u03a9",
+                "tail\nend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-2",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\t\u03a9",
+                "tail\tend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-3",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\b\u03a9",
+                "tail\bend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-4",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\f\u03a9",
+                "tail\fend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-5",
+            "status": "ok",
+            "value": [
+              [
+                "item10921!q\u03a9",
+                "tail!qend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-0-6",
+            "status": "ok",
+            "value": [
+              [
+                "item10921|\u03a9",
+                "tail|end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-0",
+            "status": "ok",
+            "value": [
+              [
+                "item10921\nnext",
+                "x\ry"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-0",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-0",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\r\u03a9",
+                "tail\rend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-1",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\n\u03a9",
+                "tail\nend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-2",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\t\u03a9",
+                "tail\tend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-3",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\b\u03a9",
+                "tail\bend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-4",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\f\u03a9",
+                "tail\fend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-5",
+            "status": "ok",
+            "value": [
+              [
+                "item63224!q\u03a9",
+                "tail!qend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-1-6",
+            "status": "ok",
+            "value": [
+              [
+                "item63224:\u03a9",
+                "tail:end"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-1",
+            "status": "ok",
+            "value": [
+              [
+                "item63224\nnext",
+                "x\ry"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-1",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-0",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\r\u03a9",
+                "tail\rend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-1",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\n\u03a9",
+                "tail\nend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-2",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\t\u03a9",
+                "tail\tend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-3",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\b\u03a9",
+                "tail\bend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-4",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\f\u03a9",
+                "tail\fend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-5",
+            "status": "ok",
+            "value": [
+              [
+                "item72517!q\u03a9",
+                "tail!qend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-composed-escape-2-6",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\t\u03a9",
+                "tail\tend"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escaped-physical-2",
+            "status": "ok",
+            "value": [
+              [
+                "item72517\nnext",
+                "x\ry"
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-escape-eof-2",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-0",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-0",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-1",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-1",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-character-validation-2",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-printer-character-validation-2",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-0",
+            "status": "ok",
+            "value": "\"absent\"|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-0",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                ""
+              ],
+              [
+                "v|w",
+                null,
+                "tail",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-1",
+            "status": "ok",
+            "value": "absent|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-1",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                "absent",
+                "",
+                ""
+              ],
+              [
+                "v|w",
+                null,
+                "tail",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-2",
+            "status": "ok",
+            "value": "absent|absent||\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-2",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                ""
+              ],
+              [
+                "v|w",
+                null,
+                "tail",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-3",
+            "status": "ok",
+            "value": "absent|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-3",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                "absent",
+                "",
+                ""
+              ],
+              [
+                "v|w",
+                null,
+                "tail",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-mode-composition-4",
+            "status": "ok",
+            "value": "absent|absent||x!|y\na!!b|c\"d|line!r!nnext|  edge  \n"
+          },
+          {
+            "id": "csv-v2-holdout-null-composition-4",
+            "status": "ok",
+            "value": [
+              [
+                null,
+                null,
+                "",
+                ""
+              ],
+              [
+                "v|w",
+                null,
+                "tail",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-0",
+            "status": "ok",
+            "value": [
+              [
+                "\u00a0one\u00a0",
+                "\u00a0two\u00a0",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-print-space-0",
+            "status": "ok",
+            "value": "\u00a0one\u00a0::nil\r\n"
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-1",
+            "status": "ok",
+            "value": [
+              [
+                "one",
+                "\u2002two\u2002",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-print-space-1",
+            "status": "ok",
+            "value": "\u2002one\u2002::nil\r\n"
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-2",
+            "status": "ok",
+            "value": [
+              [
+                "\u202fone\u202f",
+                "\u202ftwo\u202f",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-print-space-2",
+            "status": "ok",
+            "value": "\u202fone\u202f::nil\r\n"
+          },
+          {
+            "id": "csv-v2-holdout-space-composition-3",
+            "status": "ok",
+            "value": [
+              [
+                "one",
+                "two",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-print-space-3",
+            "status": "ok",
+            "value": "one::nil\r\n"
+          },
+          {
+            "id": "csv-v2-holdout-retained-blanks",
+            "status": "ok",
+            "value": [
+              [
+                ""
+              ],
+              [
+                "fresh|value",
+                ""
+              ],
+              [
+                ""
+              ],
+              [
+                "last",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-malformed-after-quote",
+            "status": "exception",
+            "type": "CSVParseError"
+          },
+          {
+            "id": "csv-v2-holdout-quote-disabled-composition",
+            "status": "ok",
+            "value": [
+              [
+                "'x'",
+                "a|b",
+                ""
+              ]
+            ]
+          },
+          {
+            "id": "csv-v2-holdout-custom-quote-composition",
+            "status": "ok",
+            "value": "'it!'s|quoted'|'a!!b'|nil\r\r"
+          },
+          {
+            "id": "csv-v2-holdout-disabled-quote-composition",
+            "status": "ok",
+            "value": "x!|y|a!!b|c!nd\r\n"
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-0",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-1",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          },
+          {
+            "id": "csv-v2-holdout-bool-validation-2",
+            "status": "exception",
+            "type": "IllegalArgumentException"
+          }
+        ]
+      }
+    }
+  },
+  "comparator_sha256": "9561000a70941a0560f8654a67802c4bc17f8d40f5ac20ee06c0e93d7ba78844",
+  "generator_sha256": "ad8e337fd919f2907f37b129c5309dc127ddaf7d6b9050d65c80959146fc76d9",
+  "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+  "task_identities": {
+    "commons_csv": {
+      "benchmarks/commons_csv.json": "2778343b3ac4e2370eb04185b61f5d47ebf2319a1bf01b2bfcf5c3e6879df3e1",
+      "vendor/commons-csv/SOURCE.json": "fd8cb1cdcd2661569586555a2ba144544e7da8f8f12310bc81a22c0ebb4b4a56",
+      "migration_lab/csv_task.py": "c605422984d86afc73c6ba077801cdafe95fca3b19d115feb384b70ec50f04fa",
+      "migration_lab/csv_cases.py": "df16c751aab7f882cd747328dc18a8beb614342ff1ce8061587a5c725fb6e4b3",
+      "migration_lab/csv_v2_cases.py": "6a312eb814316156aa6231a072553f3081c8a8c3f47be9353b6a30822fd297e0",
+      "migration_lab/csv_context.py": "12e26b0a6851b81a8b6a0dc637f498558e77cf5bcb3cab2c020b5ec619c27faf",
+      "migration_lab/guest_driver.py": "991da67ca60c587d13aae51b4155a6d14e08d6dad2ef46617168e625029510ba",
+      "migration_lab/worker.py": "b1e57ed7c858cd3b0558d5358cb5492da44f54380397a9d5ccbbb3a844190173",
+      "migration_lab/environment.py": "5daaa4f3d3c23aaadf2f5f94ac37e37253cefca60f74a2458156b24ec4d007d6",
+      "migration_lab/dependencies.py": "364d32dfe2057f1457a173c1ab83998f27ead85ada42851bda847656ff4b2a88",
+      "java/src/main/java/lab/CsvScenario.java": "eaf05397e78fa5045b74473245078255ef54bf7a00d4276f6c8a03e96c4fe821",
+      "java/src/main/java/lab/Harness.java": "aee22be5e4fd05af8fe466975237e75b31f4ce8cae6db314b0439fa2c23bb1ee"
+    }
+  },
+  "profile": "commons-csv-v2",
+  "profile_sha256": "6a312eb814316156aa6231a072553f3081c8a8c3f47be9353b6a30822fd297e0"
+}

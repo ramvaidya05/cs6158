@@ -1,0 +1,756 @@
+[
+  {
+    "id": "csv-v2-holdout-composed-escape-0-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!r\u03a9\"|tail!rend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!n\u03a9\"|tail!nend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!t\u03a9\"|tail!tend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-3",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!b\u03a9\"|tail!bend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-4",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!f\u03a9\"|tail!fend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-5",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!q\u03a9\"|tail!qend\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-0-6",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item10921!|\u03a9\"|tail!|end\r\n",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escaped-physical-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "item10921!\nnext|x!\ry",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escape-eof-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "ok|unfinished!",
+    "config": {
+      "delimiter": "|",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!r\u03a9\":tail!rend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!n\u03a9\":tail!nend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!t\u03a9\":tail!tend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-3",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!b\u03a9\":tail!bend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-4",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!f\u03a9\":tail!fend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-5",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!q\u03a9\":tail!qend\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-1-6",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item63224!:\u03a9\":tail!:end\r\n",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escaped-physical-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "item63224!\nnext:x!\ry",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escape-eof-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "ok:unfinished!",
+    "config": {
+      "delimiter": ":",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!r\u03a9\"\ttail!rend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!n\u03a9\"\ttail!nend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!t\u03a9\"\ttail!tend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-3",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!b\u03a9\"\ttail!bend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-4",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!f\u03a9\"\ttail!fend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-5",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!q\u03a9\"\ttail!qend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-composed-escape-2-6",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\"item72517!\t\u03a9\"\ttail!\tend\r\n",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escaped-physical-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "item72517!\nnext\tx!\ry",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-escape-eof-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "ok\tunfinished!",
+    "config": {
+      "delimiter": "\t",
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-character-validation-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "fresh;record",
+    "config": {
+      "delimiter": "\ud83e\uddea"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-printer-character-validation-0",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh",
+        null
+      ]
+    ],
+    "config": {
+      "delimiter": "\ud801\udc00"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-character-validation-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "fresh;record",
+    "config": {
+      "delimiter": ";",
+      "quote": "\ud83e\uddea"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-printer-character-validation-1",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh",
+        null
+      ]
+    ],
+    "config": {
+      "quote": "\ud801\udc00"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-character-validation-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "fresh;record",
+    "config": {
+      "delimiter": ";",
+      "escape": "\ud83e\uddea"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-printer-character-validation-2",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh",
+        null
+      ]
+    ],
+    "config": {
+      "escape": "\ud801\udc00"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-mode-composition-0",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "absent",
+        "",
+        "x|y"
+      ],
+      [
+        "a!b",
+        "c\"d",
+        "line\r\nnext",
+        "  edge  "
+      ]
+    ],
+    "config": {
+      "quote_mode": "ALL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-null-composition-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+    "config": {
+      "quote_mode": "ALL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-mode-composition-1",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "absent",
+        "",
+        "x|y"
+      ],
+      [
+        "a!b",
+        "c\"d",
+        "line\r\nnext",
+        "  edge  "
+      ]
+    ],
+    "config": {
+      "quote_mode": "ALL_NON_NULL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-null-composition-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+    "config": {
+      "quote_mode": "ALL_NON_NULL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-mode-composition-2",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "absent",
+        "",
+        "x|y"
+      ],
+      [
+        "a!b",
+        "c\"d",
+        "line\r\nnext",
+        "  edge  "
+      ]
+    ],
+    "config": {
+      "quote_mode": "MINIMAL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-null-composition-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+    "config": {
+      "quote_mode": "MINIMAL",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-mode-composition-3",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "absent",
+        "",
+        "x|y"
+      ],
+      [
+        "a!b",
+        "c\"d",
+        "line\r\nnext",
+        "  edge  "
+      ]
+    ],
+    "config": {
+      "quote_mode": "NON_NUMERIC",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-null-composition-3",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+    "config": {
+      "quote_mode": "NON_NUMERIC",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-mode-composition-4",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        null,
+        "absent",
+        "",
+        "x|y"
+      ],
+      [
+        "a!b",
+        "c\"d",
+        "line\r\nnext",
+        "  edge  "
+      ]
+    ],
+    "config": {
+      "quote_mode": "NONE",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-null-composition-4",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "absent|\"absent\"|\"\"|\n\"v|w\"|absent|tail|",
+    "config": {
+      "quote_mode": "NONE",
+      "null_string": "absent",
+      "delimiter": "|",
+      "escape": "!",
+      "record_separator": "\n"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-space-composition-0",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u00a0one\u00a0;\"\u00a0two\u00a0\";\r\n",
+    "config": {
+      "delimiter": ";",
+      "trim": true,
+      "ignore_surrounding_spaces": true
+    }
+  },
+  {
+    "id": "csv-v2-holdout-print-space-0",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "\u00a0one\u00a0",
+        "",
+        null
+      ]
+    ],
+    "config": {
+      "trim": true,
+      "delimiter": ":",
+      "null_string": "nil"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-space-composition-1",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u2002one\u2002;\"\u2002two\u2002\";\r\n",
+    "config": {
+      "delimiter": ";",
+      "trim": true,
+      "ignore_surrounding_spaces": true
+    }
+  },
+  {
+    "id": "csv-v2-holdout-print-space-1",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "\u2002one\u2002",
+        "",
+        null
+      ]
+    ],
+    "config": {
+      "trim": true,
+      "delimiter": ":",
+      "null_string": "nil"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-space-composition-2",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u202fone\u202f;\"\u202ftwo\u202f\";\r\n",
+    "config": {
+      "delimiter": ";",
+      "trim": true,
+      "ignore_surrounding_spaces": true
+    }
+  },
+  {
+    "id": "csv-v2-holdout-print-space-2",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "\u202fone\u202f",
+        "",
+        null
+      ]
+    ],
+    "config": {
+      "trim": true,
+      "delimiter": ":",
+      "null_string": "nil"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-space-composition-3",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\u001fone\u001f;\"\u001ftwo\u001f\";\r\n",
+    "config": {
+      "delimiter": ";",
+      "trim": true,
+      "ignore_surrounding_spaces": true
+    }
+  },
+  {
+    "id": "csv-v2-holdout-print-space-3",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "\u001fone\u001f",
+        "",
+        null
+      ]
+    ],
+    "config": {
+      "trim": true,
+      "delimiter": ":",
+      "null_string": "nil"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-retained-blanks",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "\r\n\"fresh|value\"|\r\n\r\nlast|\"\"\r\n",
+    "config": {
+      "delimiter": "|",
+      "ignore_empty_lines": false
+    }
+  },
+  {
+    "id": "csv-v2-holdout-malformed-after-quote",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "ok|row\n\"fresh\"unexpected|tail",
+    "config": {
+      "delimiter": "|"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-quote-disabled-composition",
+    "task": "commons_csv",
+    "operation": "parse",
+    "text": "'x'|a!|b|",
+    "config": {
+      "delimiter": "|",
+      "quote": null,
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-custom-quote-composition",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "it's|quoted",
+        "a!b",
+        null
+      ],
+      []
+    ],
+    "config": {
+      "delimiter": "|",
+      "quote": "'",
+      "escape": "!",
+      "null_string": "nil",
+      "record_separator": "\r"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-disabled-quote-composition",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "x|y",
+        "a!b",
+        "c\nd"
+      ]
+    ],
+    "config": {
+      "delimiter": "|",
+      "quote": null,
+      "escape": "!"
+    }
+  },
+  {
+    "id": "csv-v2-holdout-bool-validation-0",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh"
+      ]
+    ],
+    "config": {
+      "trim": 0
+    }
+  },
+  {
+    "id": "csv-v2-holdout-bool-validation-1",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh"
+      ]
+    ],
+    "config": {
+      "ignore_surrounding_spaces": 0
+    }
+  },
+  {
+    "id": "csv-v2-holdout-bool-validation-2",
+    "task": "commons_csv",
+    "operation": "print",
+    "records": [
+      [
+        "fresh"
+      ]
+    ],
+    "config": {
+      "ignore_empty_lines": 0
+    }
+  }
+]
