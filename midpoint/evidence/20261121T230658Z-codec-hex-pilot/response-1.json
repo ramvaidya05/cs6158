@@ -1,0 +1,31 @@
+{
+  "code": "import unicodedata\n\nDIGITS_LOWER = list(\"0123456789abcdef\")\nDIGITS_UPPER = list(\"0123456789ABCDEF\")\n\ndef _to_code_units(s: str) -> list:\n    units = []\n    for ch in s:\n        cp = ord(ch)\n        if cp <= 0xFFFF:\n            units.append(cp)\n        else:\n            cp -= 0x10000\n            units.append(0xD800 + (cp >> 10))\n            units.append(0xDC00 + (cp & 0x3FF))\n    return units\n\ndef _character_digit_radix_16(cu: int) -> int:\n    if 0x30 <= cu <= 0x39:\n        return cu - 0x30\n    if 0x61 <= cu <= 0x66:\n        return cu - 0x61 + 10\n    if 0x41 <= cu <= 0x46:\n        return cu - 0x41 + 10\n    if 0xFF10 <= cu <= 0xFF19:\n        return cu - 0xFF10\n    if 0xFF41 <= cu <= 0xFF46:\n        return cu - 0xFF41 + 10\n    if 0xFF21 <= cu <= 0xFF26:\n        return cu - 0xFF21 + 10\n    try:\n        v = unicodedata.decimal(chr(cu), -1)\n        if 0 <= v <= 9:\n            return v\n    except Exception:\n        pass\n    return -1\n\ndef _to_digit(cu: int, index: int) -> int:\n    digit = _character_digit_radix_16(cu)\n    if digit == -1:\n        raise ValueError(f\"Illegal hexadecimal character {chr(cu)!r} at index {index}.\")\n    return digit\n\ndef decode_hex(data: str) -> list:\n    code_units = _to_code_units(data)\n    length = len(code_units)\n    if (length & 1) != 0:\n        raise ValueError(f\"Odd number of characters {length}.\")\n    \n    out = []\n    j = 0\n    while j < length:\n        f = _to_digit(code_units[j], j) << 4\n        j += 1\n        f |= _to_digit(code_units[j], j)\n        j += 1\n        out.append(f & 0xFF)\n    return out\n\ndef encode_hex_string(data: list, to_lower: bool = True) -> str:\n    digits = DIGITS_LOWER if to_lower else DIGITS_UPPER\n    out = []\n    for b in data:\n        b_val = b & 0xFF\n        out.append(digits[(0xF0 & b_val) >> 4])\n        out.append(digits[0x0F & b_val])\n    return \"\".join(out)\n\ndef run(operation: str, data, lower: bool = True):\n    if operation == \"encode\":\n        return encode_hex_string(data, to_lower=lower)\n    elif operation == \"decode\":\n        return decode_hex(data)\n    else:\n        raise ValueError(f\"Unsupported operation: {operation}\")\n",
+  "explanation": "Converted input strings into Java UTF-16 code units before performing Hex decoding. This ensures surrogate pairs present in non-BMP characters correctly split into two 16-bit Java char equivalents, matching Java's char[] array length and Character.digit behavior.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "HSQCa4WgNo-hytMP0KvI6Q0",
+    "usage": {
+      "input_tokens": 2548,
+      "output_tokens": 3257,
+      "thinking_tokens": 2329,
+      "provider_usage": {
+        "promptTokenCount": 2548,
+        "candidatesTokenCount": 928,
+        "totalTokenCount": 5805,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2548
+          }
+        ],
+        "thoughtsTokenCount": 2329,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 15.642
+  }
+}

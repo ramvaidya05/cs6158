@@ -17,9 +17,9 @@ Translate selected Java library behavior into Python using an LLM, then verify a
 - **Early pilot:** live Levenshtein translations passed all checks in 3/3 one-shot trials. Earlier API failures/timeouts remain documented as unsuccessful runs.
 - **Commons CLI v3:** 32 methods across five classes; 44 visible and 28 holdout scenarios. Main study: all three initial translations passed, so repair offered no measurable improvement. Separate memory study: full-task success improved from **1/3 one-shot to 3/3 with either repair arm**. Both failures needed one retry. **Memory added no measured benefit.** The scoped CLI study is complete; the full library is not translated.
 - **Commons CSV parser/printer milestone complete:** v2 uses a 65% smaller source prompt with Java semantic guidance and a fresh suite of 101 development and 59 holdout cases. Full-suite passes improved from **0/3 one-shot to 3/3 in each repair arm**, after one retry each. v1 memory added no measured accuracy benefit. Headers and broader APIs remain outside this scope.
-- **Commons Codec Hex:** separately recorded three-trial study reached **96.8% CPython / 90.9% GraalPy holdout accuracy**, but **0/3 full-task passes**. Unicode semantics and runtime API differences remain unresolved. Different model/settings mean this is not a matched comparison with CLI/CSV.
+- **Commons Codec Hex:** separately recorded three-trial study reached **96.8% CPython / 90.9% GraalPy holdout accuracy**, but **0/3 full-task passes**. A November 21 v2 live trial plus continuation reached 110/110 CPython and 108/110 GraalPy holdout cases (12,119 tokens). A subsequent developer-assisted Unicode fix completed the supported Hex slice: 21/21 visible and 110/110 previously withheld cases in each runtime, plus all 65,536 Java char digit mappings in each. This qualification used no API tokens; it is regression evidence, not autonomous repair success or full-library completion. Different model/settings mean this is not a matched comparison with CLI/CSV.
 
-CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. Latest validation: **129 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
+CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV and Codec, **131 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
 
 ## What the evidence supports—and what remains
 
@@ -31,6 +31,7 @@ Execution-guided repair helped failing translations in these small studies. Retr
 
 - [Complete experiment history](midpoint/EXPERIMENT_RESULTS.md)
 - [CLI results](midpoint/CLI_V3_LIVE_OBSERVATIONS.md) · [CSV v2 results and verified translation](midpoint/CSV_V2_OBSERVATIONS.md)
+- [Codec completion and provenance](midpoint/CODEC_V2_OBSERVATIONS.md)
 - [Retry memory and dependency changes](midpoint/RETRY_MEMORY_OBSERVATIONS.md)
 - [Architecture and roadmap](IMPLEMENTATION_PLAN.md) · [Professor feedback response](midpoint/REVIEWER_RESPONSE.md)
 

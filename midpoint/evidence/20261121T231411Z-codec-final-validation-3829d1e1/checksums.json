@@ -1,0 +1,21 @@
+{
+  "CodecDigits.java": "2a49ae71f6d30134e2235438846e5fd24ee38eb2c88ce0c50f4e5d2867baf9ce",
+  "candidate.py": "16c48e3bdeb22f22121d0c1528c2ed0e3f3dfff65c8faccea696059314fe9a98",
+  "character-domain/cpython/execution.json": "f6d2c9a2f70e632a3f37a8dcd3db3855ee78fb853729b8c34780433c761b6d93",
+  "character-domain/cpython/inputs.json": "0c9fbf81c28282d6f5955e6cce46f374a529e8d5f8c0741168614f81dda7e62b",
+  "character-domain/graal/execution.json": "358fbf5b1333d5ddfef24fb1cd58ba8b186fc4aab14eda9efcc03c7da643b8c3",
+  "character-domain/graal/inputs.json": "0c9fbf81c28282d6f5955e6cce46f374a529e8d5f8c0741168614f81dda7e62b",
+  "character-oracle.json": "8304bbf50d188f83c7246ba7f354269cf822df33ae19dadd3f2b0fda66997ea2",
+  "character-probe.py": "133fbb389182c372068de45adc635225c2f9c120c314bb6610ba8b46a5d77866",
+  "holdout/cpython/execution.json": "61608d99e62d53fc0f927cd4614139a417914175f7002105622972f260965c31",
+  "holdout/cpython/inputs.json": "8f5fac74da35c3a6ff99f42fe3933eb1a916f175d3afd5dfa80c851d2924af8e",
+  "holdout/graal/execution.json": "b93584e1e91b29ba3ffdacb010fe1f92ae1bd145aa53bb1f1a9ba8943df6d6fd",
+  "holdout/graal/inputs.json": "8f5fac74da35c3a6ff99f42fe3933eb1a916f175d3afd5dfa80c851d2924af8e",
+  "holdout/score.json": "2f7a92f6a446f106057e4a92f4531ec5f4b695a3d87015430e83b5047020baa0",
+  "summary.json": "040e20030079ae1c1f0a6866b77a812aee37a477c3d5536dfd517673d6aec89b",
+  "visible/cpython/execution.json": "0a71ed192004a545fd5b382c9f657035328a609af8b27992542bf352e587988e",
+  "visible/cpython/inputs.json": "2fca41916d174281463565e3e66d7e17b96cc505b23f2d1f9a023b778a1c1cb3",
+  "visible/graal/execution.json": "c22dd16f534d095f0d08dd5f689d3ca9c2e569516ea7fb8bc0c5360b59693153",
+  "visible/graal/inputs.json": "2fca41916d174281463565e3e66d7e17b96cc505b23f2d1f9a023b778a1c1cb3",
+  "visible/score.json": "ee19cebb3a7c54397746b8c9edabdd811ae9df0d76d9da30b2f482a15c6eba74"
+}

@@ -535,7 +535,7 @@ These commands make paid Gemini calls. Start with the smoke; run memory only whe
 
 ## Commons CSV v2
 
-From `midpoint/`, reproduce the live paired study with the frozen v2 suite. This command makes paid Gemini calls with an $8 cohort cap.
+Use the CSV v2 study revision `f487641` to reproduce the archived suite. Its fingerprints include the shared guest driver, which changed in the subsequent Codec integration. Build the runtime images at the study revision, then run the following command from `midpoint/`. The command makes paid Gemini calls with an $8 cohort cap.
 
 ```sh
 python3 scripts/run_csv_v2_study.py --phase main --suite evidence/20261121-csv-v2-preparation/frozen/suite.json

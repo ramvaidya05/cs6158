@@ -1,0 +1,164 @@
+[
+  {
+    "id": "codec-visible-000",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [],
+    "lower": true
+  },
+  {
+    "id": "codec-visible-001",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [],
+    "lower": false
+  },
+  {
+    "id": "codec-visible-002",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      0
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-visible-003",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      255
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-visible-004",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      0,
+      15,
+      16,
+      127,
+      128,
+      255
+    ],
+    "lower": true
+  },
+  {
+    "id": "codec-visible-005",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [
+      1,
+      171,
+      205
+    ],
+    "lower": false
+  },
+  {
+    "id": "codec-visible-006",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-007",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "00",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-008",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "ff",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-009",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "Ff",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-010",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "0F10ff",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-011",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "a",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-012",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "abz1",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-013",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "zz",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-014",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "ff ",
+    "lower": true
+  },
+  {
+    "id": "codec-visible-015",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "123",
+    "lower": true
+  },
+  {
+    "id": "codec-v2-visible-16",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\uff26\uff11",
+    "lower": true
+  },
+  {
+    "id": "codec-v2-visible-17",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\u0662a",
+    "lower": true
+  },
+  {
+    "id": "codec-v2-visible-18",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\ud835\udfd1b",
+    "lower": true
+  },
+  {
+    "id": "codec-v2-visible-19",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "\u00b2a",
+    "lower": true
+  },
+  {
+    "id": "codec-v2-visible-20",
+    "task": "commons_codec_hex",
+    "operation": "decode",
+    "data": "g1",
+    "lower": true
+  }
+]

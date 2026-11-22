@@ -84,7 +84,7 @@ def score(environment, candidate, rows, reference, split, directory):
         mismatches = []
         if observed["status"] == "completed":
             for case, expected, actual in zip(rows, reference, observed["rows"], strict=True):
-                if expected != actual:
+                if not equivalent_observation(expected, actual):
                     mismatches.append({"case": case, "expected": expected, "actual": actual})
         else:
             mismatches = [{"kind": observed["status"], "detail": observed.get("detail", "")}]
@@ -94,6 +94,11 @@ def score(environment, candidate, rows, reference, split, directory):
                         if observed["status"] == "completed" else [], "failures": mismatches}
     save_json(directory / split / "score.json", result)
     return result
+
+
+def equivalent_observation(expected, actual):
+    """Diagnostics inform repair but never change the observable contract."""
+    return expected == {key: value for key, value in actual.items() if key != "diagnostic"}
 
 
 def main():

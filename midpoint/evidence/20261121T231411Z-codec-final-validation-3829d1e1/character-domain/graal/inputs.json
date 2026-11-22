@@ -1,0 +1,9 @@
+[
+  {
+    "id": "all-java-chars",
+    "task": "commons_codec_hex",
+    "operation": "encode",
+    "data": [],
+    "lower": true
+  }
+]

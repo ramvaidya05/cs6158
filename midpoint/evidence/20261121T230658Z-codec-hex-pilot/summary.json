@@ -1,0 +1,854 @@
+{
+  "status": "evaluated",
+  "calls": [
+    {
+      "attempt": 0,
+      "prompt_utf8_bytes": 5348,
+      "reserved_tokens": 10468,
+      "cumulative_reserved_tokens": 10468,
+      "metadata": {
+        "backend": "gemini_generate_content",
+        "model": "gemini-3.5-flash",
+        "reasoning_effort": "low",
+        "provenance": "live_model",
+        "resolved_model": "gemini-3.6-flash",
+        "response_id": "EyQCa9_PA5PcytMPxZvbsAw",
+        "usage": {
+          "input_tokens": 1666,
+          "output_tokens": 962,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1666,
+            "candidatesTokenCount": 962,
+            "totalTokenCount": 2628,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1666
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        },
+        "elapsed_seconds": 5.632
+      },
+      "candidate_sha256": "54c840966948391c763ba58c855d322f1d9d3697187a40c78c6d4561bc215b6b",
+      "visible": {
+        "cpython": {
+          "passed": 20,
+          "total": 21,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 15,
+          "total": 21,
+          "status": "completed"
+        }
+      }
+    },
+    {
+      "attempt": 1,
+      "prompt_utf8_bytes": 7820,
+      "reserved_tokens": 12940,
+      "cumulative_reserved_tokens": 23408,
+      "metadata": {
+        "backend": "gemini_generate_content",
+        "model": "gemini-3.5-flash",
+        "reasoning_effort": "low",
+        "provenance": "live_model",
+        "resolved_model": "gemini-3.6-flash",
+        "response_id": "HSQCa4WgNo-hytMP0KvI6Q0",
+        "usage": {
+          "input_tokens": 2548,
+          "output_tokens": 3257,
+          "thinking_tokens": 2329,
+          "provider_usage": {
+            "promptTokenCount": 2548,
+            "candidatesTokenCount": 928,
+            "totalTokenCount": 5805,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 2548
+              }
+            ],
+            "thoughtsTokenCount": 2329,
+            "serviceTier": "standard"
+          }
+        },
+        "elapsed_seconds": 15.642
+      },
+      "candidate_sha256": "887cb3397891d1aa5bea707dbedab1d0ea247b32548cb386013738beda70db77",
+      "visible": {
+        "cpython": {
+          "passed": 21,
+          "total": 21,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 20,
+          "total": 21,
+          "status": "completed"
+        }
+      }
+    }
+  ],
+  "candidates": [
+    "candidate-0.py",
+    "candidate-1.py"
+  ],
+  "suite_sha256": "3013f592f85aa71bbba53911aec29a02095e8e781e7bff24c9389d555e4cec8e",
+  "holdout_baseline": {
+    "cpython": {
+      "status": "completed",
+      "passed": 109,
+      "total": 110,
+      "passed_ids": [
+        "codec-v2-holdout-0",
+        "codec-v2-holdout-1",
+        "codec-v2-holdout-2",
+        "codec-v2-holdout-3",
+        "codec-v2-holdout-4",
+        "codec-v2-holdout-5",
+        "codec-v2-holdout-6",
+        "codec-v2-holdout-7",
+        "codec-v2-holdout-8",
+        "codec-v2-holdout-9",
+        "codec-v2-holdout-10",
+        "codec-v2-holdout-11",
+        "codec-v2-holdout-12",
+        "codec-v2-holdout-13",
+        "codec-v2-holdout-14",
+        "codec-v2-holdout-15",
+        "codec-v2-holdout-16",
+        "codec-v2-holdout-17",
+        "codec-v2-holdout-18",
+        "codec-v2-holdout-19",
+        "codec-v2-holdout-20",
+        "codec-v2-holdout-21",
+        "codec-v2-holdout-22",
+        "codec-v2-holdout-23",
+        "codec-v2-holdout-24",
+        "codec-v2-holdout-25",
+        "codec-v2-holdout-26",
+        "codec-v2-holdout-27",
+        "codec-v2-holdout-28",
+        "codec-v2-holdout-29",
+        "codec-v2-holdout-30",
+        "codec-v2-holdout-31",
+        "codec-v2-holdout-32",
+        "codec-v2-holdout-33",
+        "codec-v2-holdout-34",
+        "codec-v2-holdout-35",
+        "codec-v2-holdout-36",
+        "codec-v2-holdout-37",
+        "codec-v2-holdout-38",
+        "codec-v2-holdout-39",
+        "codec-v2-holdout-40",
+        "codec-v2-holdout-41",
+        "codec-v2-holdout-42",
+        "codec-v2-holdout-43",
+        "codec-v2-holdout-44",
+        "codec-v2-holdout-45",
+        "codec-v2-holdout-46",
+        "codec-v2-holdout-47",
+        "codec-v2-holdout-48",
+        "codec-v2-holdout-49",
+        "codec-v2-holdout-50",
+        "codec-v2-holdout-51",
+        "codec-v2-holdout-52",
+        "codec-v2-holdout-53",
+        "codec-v2-holdout-54",
+        "codec-v2-holdout-55",
+        "codec-v2-holdout-56",
+        "codec-v2-holdout-57",
+        "codec-v2-holdout-58",
+        "codec-v2-holdout-59",
+        "codec-v2-holdout-60",
+        "codec-v2-holdout-61",
+        "codec-v2-holdout-62",
+        "codec-v2-holdout-63",
+        "codec-v2-holdout-64",
+        "codec-v2-holdout-65",
+        "codec-v2-holdout-66",
+        "codec-v2-holdout-67",
+        "codec-v2-holdout-68",
+        "codec-v2-holdout-69",
+        "codec-v2-holdout-70",
+        "codec-v2-holdout-71",
+        "codec-v2-holdout-72",
+        "codec-v2-holdout-73",
+        "codec-v2-holdout-74",
+        "codec-v2-holdout-75",
+        "codec-v2-holdout-76",
+        "codec-v2-holdout-77",
+        "codec-v2-holdout-78",
+        "codec-v2-holdout-79",
+        "codec-v2-holdout-80",
+        "codec-v2-holdout-81",
+        "codec-v2-holdout-82",
+        "codec-v2-holdout-83",
+        "codec-v2-holdout-84",
+        "codec-v2-holdout-85",
+        "codec-v2-holdout-86",
+        "codec-v2-holdout-87",
+        "codec-v2-holdout-88",
+        "codec-v2-holdout-89",
+        "codec-v2-holdout-90",
+        "codec-v2-holdout-91",
+        "codec-v2-holdout-92",
+        "codec-v2-holdout-93",
+        "codec-v2-holdout-94",
+        "codec-v2-holdout-95",
+        "codec-v2-holdout-96",
+        "codec-v2-holdout-97",
+        "codec-v2-holdout-98",
+        "codec-v2-holdout-99",
+        "codec-v2-holdout-100",
+        "codec-v2-holdout-101",
+        "codec-v2-holdout-102",
+        "codec-v2-holdout-103",
+        "codec-v2-holdout-105",
+        "codec-v2-holdout-106",
+        "codec-v2-holdout-107",
+        "codec-v2-holdout-108",
+        "codec-v2-holdout-109"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-v2-holdout-104",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd6e",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-104",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-104",
+            "status": "ok",
+            "value": [
+              142
+            ]
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 103,
+      "total": 110,
+      "passed_ids": [
+        "codec-v2-holdout-0",
+        "codec-v2-holdout-1",
+        "codec-v2-holdout-2",
+        "codec-v2-holdout-3",
+        "codec-v2-holdout-4",
+        "codec-v2-holdout-5",
+        "codec-v2-holdout-6",
+        "codec-v2-holdout-7",
+        "codec-v2-holdout-8",
+        "codec-v2-holdout-9",
+        "codec-v2-holdout-10",
+        "codec-v2-holdout-11",
+        "codec-v2-holdout-12",
+        "codec-v2-holdout-13",
+        "codec-v2-holdout-14",
+        "codec-v2-holdout-15",
+        "codec-v2-holdout-16",
+        "codec-v2-holdout-17",
+        "codec-v2-holdout-18",
+        "codec-v2-holdout-19",
+        "codec-v2-holdout-20",
+        "codec-v2-holdout-21",
+        "codec-v2-holdout-22",
+        "codec-v2-holdout-23",
+        "codec-v2-holdout-24",
+        "codec-v2-holdout-25",
+        "codec-v2-holdout-26",
+        "codec-v2-holdout-27",
+        "codec-v2-holdout-28",
+        "codec-v2-holdout-29",
+        "codec-v2-holdout-30",
+        "codec-v2-holdout-31",
+        "codec-v2-holdout-32",
+        "codec-v2-holdout-33",
+        "codec-v2-holdout-34",
+        "codec-v2-holdout-35",
+        "codec-v2-holdout-36",
+        "codec-v2-holdout-37",
+        "codec-v2-holdout-38",
+        "codec-v2-holdout-39",
+        "codec-v2-holdout-40",
+        "codec-v2-holdout-41",
+        "codec-v2-holdout-42",
+        "codec-v2-holdout-43",
+        "codec-v2-holdout-44",
+        "codec-v2-holdout-45",
+        "codec-v2-holdout-46",
+        "codec-v2-holdout-47",
+        "codec-v2-holdout-48",
+        "codec-v2-holdout-49",
+        "codec-v2-holdout-50",
+        "codec-v2-holdout-51",
+        "codec-v2-holdout-52",
+        "codec-v2-holdout-53",
+        "codec-v2-holdout-54",
+        "codec-v2-holdout-55",
+        "codec-v2-holdout-56",
+        "codec-v2-holdout-57",
+        "codec-v2-holdout-58",
+        "codec-v2-holdout-59",
+        "codec-v2-holdout-60",
+        "codec-v2-holdout-61",
+        "codec-v2-holdout-62",
+        "codec-v2-holdout-63",
+        "codec-v2-holdout-64",
+        "codec-v2-holdout-65",
+        "codec-v2-holdout-66",
+        "codec-v2-holdout-67",
+        "codec-v2-holdout-68",
+        "codec-v2-holdout-69",
+        "codec-v2-holdout-70",
+        "codec-v2-holdout-71",
+        "codec-v2-holdout-72",
+        "codec-v2-holdout-73",
+        "codec-v2-holdout-74",
+        "codec-v2-holdout-75",
+        "codec-v2-holdout-76",
+        "codec-v2-holdout-77",
+        "codec-v2-holdout-78",
+        "codec-v2-holdout-79",
+        "codec-v2-holdout-80",
+        "codec-v2-holdout-81",
+        "codec-v2-holdout-82",
+        "codec-v2-holdout-83",
+        "codec-v2-holdout-84",
+        "codec-v2-holdout-85",
+        "codec-v2-holdout-86",
+        "codec-v2-holdout-87",
+        "codec-v2-holdout-88",
+        "codec-v2-holdout-89",
+        "codec-v2-holdout-90",
+        "codec-v2-holdout-91",
+        "codec-v2-holdout-92",
+        "codec-v2-holdout-93",
+        "codec-v2-holdout-94",
+        "codec-v2-holdout-95",
+        "codec-v2-holdout-96",
+        "codec-v2-holdout-97",
+        "codec-v2-holdout-98",
+        "codec-v2-holdout-99",
+        "codec-v2-holdout-100",
+        "codec-v2-holdout-101",
+        "codec-v2-holdout-108"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-v2-holdout-102",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0664B",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-102",
+            "status": "ok",
+            "value": [
+              75
+            ]
+          },
+          "actual": {
+            "id": "codec-v2-holdout-102",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 52, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-103",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u096cc",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-103",
+            "status": "ok",
+            "value": [
+              108
+            ]
+          },
+          "actual": {
+            "id": "codec-v2-holdout-103",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 52, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-104",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\ud835\udfd6e",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-104",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-104",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 52, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-105",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u2074f",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-105",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-105",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 52, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-106",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u2163a",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-106",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-106",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 52, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-107",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "b\u0000",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-107",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-107",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 54, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-109",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "a\n",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-109",
+            "status": "exception",
+            "type": "DecoderException"
+          },
+          "actual": {
+            "id": "codec-v2-holdout-109",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 40, in evaluate_candidate\n  File \"candidate.py\", line 72, in run\n  File \"candidate.py\", line 54, in decode_hex\n  File \"candidate.py\", line 36, in _to_digit\n  File \"candidate.py\", line 28, in _character_digit_radix_16\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "selected_attempt": 1,
+  "holdout_final": {
+    "cpython": {
+      "status": "completed",
+      "passed": 110,
+      "total": 110,
+      "passed_ids": [
+        "codec-v2-holdout-0",
+        "codec-v2-holdout-1",
+        "codec-v2-holdout-2",
+        "codec-v2-holdout-3",
+        "codec-v2-holdout-4",
+        "codec-v2-holdout-5",
+        "codec-v2-holdout-6",
+        "codec-v2-holdout-7",
+        "codec-v2-holdout-8",
+        "codec-v2-holdout-9",
+        "codec-v2-holdout-10",
+        "codec-v2-holdout-11",
+        "codec-v2-holdout-12",
+        "codec-v2-holdout-13",
+        "codec-v2-holdout-14",
+        "codec-v2-holdout-15",
+        "codec-v2-holdout-16",
+        "codec-v2-holdout-17",
+        "codec-v2-holdout-18",
+        "codec-v2-holdout-19",
+        "codec-v2-holdout-20",
+        "codec-v2-holdout-21",
+        "codec-v2-holdout-22",
+        "codec-v2-holdout-23",
+        "codec-v2-holdout-24",
+        "codec-v2-holdout-25",
+        "codec-v2-holdout-26",
+        "codec-v2-holdout-27",
+        "codec-v2-holdout-28",
+        "codec-v2-holdout-29",
+        "codec-v2-holdout-30",
+        "codec-v2-holdout-31",
+        "codec-v2-holdout-32",
+        "codec-v2-holdout-33",
+        "codec-v2-holdout-34",
+        "codec-v2-holdout-35",
+        "codec-v2-holdout-36",
+        "codec-v2-holdout-37",
+        "codec-v2-holdout-38",
+        "codec-v2-holdout-39",
+        "codec-v2-holdout-40",
+        "codec-v2-holdout-41",
+        "codec-v2-holdout-42",
+        "codec-v2-holdout-43",
+        "codec-v2-holdout-44",
+        "codec-v2-holdout-45",
+        "codec-v2-holdout-46",
+        "codec-v2-holdout-47",
+        "codec-v2-holdout-48",
+        "codec-v2-holdout-49",
+        "codec-v2-holdout-50",
+        "codec-v2-holdout-51",
+        "codec-v2-holdout-52",
+        "codec-v2-holdout-53",
+        "codec-v2-holdout-54",
+        "codec-v2-holdout-55",
+        "codec-v2-holdout-56",
+        "codec-v2-holdout-57",
+        "codec-v2-holdout-58",
+        "codec-v2-holdout-59",
+        "codec-v2-holdout-60",
+        "codec-v2-holdout-61",
+        "codec-v2-holdout-62",
+        "codec-v2-holdout-63",
+        "codec-v2-holdout-64",
+        "codec-v2-holdout-65",
+        "codec-v2-holdout-66",
+        "codec-v2-holdout-67",
+        "codec-v2-holdout-68",
+        "codec-v2-holdout-69",
+        "codec-v2-holdout-70",
+        "codec-v2-holdout-71",
+        "codec-v2-holdout-72",
+        "codec-v2-holdout-73",
+        "codec-v2-holdout-74",
+        "codec-v2-holdout-75",
+        "codec-v2-holdout-76",
+        "codec-v2-holdout-77",
+        "codec-v2-holdout-78",
+        "codec-v2-holdout-79",
+        "codec-v2-holdout-80",
+        "codec-v2-holdout-81",
+        "codec-v2-holdout-82",
+        "codec-v2-holdout-83",
+        "codec-v2-holdout-84",
+        "codec-v2-holdout-85",
+        "codec-v2-holdout-86",
+        "codec-v2-holdout-87",
+        "codec-v2-holdout-88",
+        "codec-v2-holdout-89",
+        "codec-v2-holdout-90",
+        "codec-v2-holdout-91",
+        "codec-v2-holdout-92",
+        "codec-v2-holdout-93",
+        "codec-v2-holdout-94",
+        "codec-v2-holdout-95",
+        "codec-v2-holdout-96",
+        "codec-v2-holdout-97",
+        "codec-v2-holdout-98",
+        "codec-v2-holdout-99",
+        "codec-v2-holdout-100",
+        "codec-v2-holdout-101",
+        "codec-v2-holdout-102",
+        "codec-v2-holdout-103",
+        "codec-v2-holdout-104",
+        "codec-v2-holdout-105",
+        "codec-v2-holdout-106",
+        "codec-v2-holdout-107",
+        "codec-v2-holdout-108",
+        "codec-v2-holdout-109"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 108,
+      "total": 110,
+      "passed_ids": [
+        "codec-v2-holdout-0",
+        "codec-v2-holdout-1",
+        "codec-v2-holdout-2",
+        "codec-v2-holdout-3",
+        "codec-v2-holdout-4",
+        "codec-v2-holdout-5",
+        "codec-v2-holdout-6",
+        "codec-v2-holdout-7",
+        "codec-v2-holdout-8",
+        "codec-v2-holdout-9",
+        "codec-v2-holdout-10",
+        "codec-v2-holdout-11",
+        "codec-v2-holdout-12",
+        "codec-v2-holdout-13",
+        "codec-v2-holdout-14",
+        "codec-v2-holdout-15",
+        "codec-v2-holdout-16",
+        "codec-v2-holdout-17",
+        "codec-v2-holdout-18",
+        "codec-v2-holdout-19",
+        "codec-v2-holdout-20",
+        "codec-v2-holdout-21",
+        "codec-v2-holdout-22",
+        "codec-v2-holdout-23",
+        "codec-v2-holdout-24",
+        "codec-v2-holdout-25",
+        "codec-v2-holdout-26",
+        "codec-v2-holdout-27",
+        "codec-v2-holdout-28",
+        "codec-v2-holdout-29",
+        "codec-v2-holdout-30",
+        "codec-v2-holdout-31",
+        "codec-v2-holdout-32",
+        "codec-v2-holdout-33",
+        "codec-v2-holdout-34",
+        "codec-v2-holdout-35",
+        "codec-v2-holdout-36",
+        "codec-v2-holdout-37",
+        "codec-v2-holdout-38",
+        "codec-v2-holdout-39",
+        "codec-v2-holdout-40",
+        "codec-v2-holdout-41",
+        "codec-v2-holdout-42",
+        "codec-v2-holdout-43",
+        "codec-v2-holdout-44",
+        "codec-v2-holdout-45",
+        "codec-v2-holdout-46",
+        "codec-v2-holdout-47",
+        "codec-v2-holdout-48",
+        "codec-v2-holdout-49",
+        "codec-v2-holdout-50",
+        "codec-v2-holdout-51",
+        "codec-v2-holdout-52",
+        "codec-v2-holdout-53",
+        "codec-v2-holdout-54",
+        "codec-v2-holdout-55",
+        "codec-v2-holdout-56",
+        "codec-v2-holdout-57",
+        "codec-v2-holdout-58",
+        "codec-v2-holdout-59",
+        "codec-v2-holdout-60",
+        "codec-v2-holdout-61",
+        "codec-v2-holdout-62",
+        "codec-v2-holdout-63",
+        "codec-v2-holdout-64",
+        "codec-v2-holdout-65",
+        "codec-v2-holdout-66",
+        "codec-v2-holdout-67",
+        "codec-v2-holdout-68",
+        "codec-v2-holdout-69",
+        "codec-v2-holdout-70",
+        "codec-v2-holdout-71",
+        "codec-v2-holdout-72",
+        "codec-v2-holdout-73",
+        "codec-v2-holdout-74",
+        "codec-v2-holdout-75",
+        "codec-v2-holdout-76",
+        "codec-v2-holdout-77",
+        "codec-v2-holdout-78",
+        "codec-v2-holdout-79",
+        "codec-v2-holdout-80",
+        "codec-v2-holdout-81",
+        "codec-v2-holdout-82",
+        "codec-v2-holdout-83",
+        "codec-v2-holdout-84",
+        "codec-v2-holdout-85",
+        "codec-v2-holdout-86",
+        "codec-v2-holdout-87",
+        "codec-v2-holdout-88",
+        "codec-v2-holdout-89",
+        "codec-v2-holdout-90",
+        "codec-v2-holdout-91",
+        "codec-v2-holdout-92",
+        "codec-v2-holdout-93",
+        "codec-v2-holdout-94",
+        "codec-v2-holdout-95",
+        "codec-v2-holdout-96",
+        "codec-v2-holdout-97",
+        "codec-v2-holdout-98",
+        "codec-v2-holdout-99",
+        "codec-v2-holdout-100",
+        "codec-v2-holdout-101",
+        "codec-v2-holdout-104",
+        "codec-v2-holdout-105",
+        "codec-v2-holdout-106",
+        "codec-v2-holdout-107",
+        "codec-v2-holdout-108",
+        "codec-v2-holdout-109"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "codec-v2-holdout-102",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u0664B",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-102",
+            "status": "ok",
+            "value": [
+              75
+            ]
+          },
+          "actual": {
+            "id": "codec-v2-holdout-102",
+            "status": "exception",
+            "type": "DecoderException"
+          }
+        },
+        {
+          "case": {
+            "id": "codec-v2-holdout-103",
+            "task": "commons_codec_hex",
+            "operation": "decode",
+            "data": "\u096cc",
+            "lower": true
+          },
+          "expected": {
+            "id": "codec-v2-holdout-103",
+            "status": "ok",
+            "value": [
+              108
+            ]
+          },
+          "actual": {
+            "id": "codec-v2-holdout-103",
+            "status": "exception",
+            "type": "DecoderException"
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "limit_usd": 0.15,
+    "accounted_usd": 0.04587225,
+    "input_usd_per_million": 1.5,
+    "output_usd_per_million": 9.0,
+    "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+    "calls": [
+      {
+        "reserved_usd": 0.05588775,
+        "accounted_usd": 0.01178175,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 1666,
+          "output_tokens": 962,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1666,
+            "candidatesTokenCount": 962,
+            "totalTokenCount": 2628,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1666
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        }
+      },
+      {
+        "reserved_usd": 0.06079275,
+        "accounted_usd": 0.0340905,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 2548,
+          "output_tokens": 3257,
+          "thinking_tokens": 2329,
+          "provider_usage": {
+            "promptTokenCount": 2548,
+            "candidatesTokenCount": 928,
+            "totalTokenCount": 5805,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 2548
+              }
+            ],
+            "thoughtsTokenCount": 2329,
+            "serviceTier": "standard"
+          }
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 41.704
+}

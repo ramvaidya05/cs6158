@@ -1,0 +1,19 @@
+{
+  "candidate.py": "bd75fb669e7ce429bd25261e7ee36d93ac6988286fd3bfcb18a1ed9ca5f111bc",
+  "holdout/cpython/execution.json": "5fd509702b17b48c591a9c376b697aa08ef651c06f993ca07ce7bc156597f55f",
+  "holdout/cpython/inputs.json": "8f5fac74da35c3a6ff99f42fe3933eb1a916f175d3afd5dfa80c851d2924af8e",
+  "holdout/graal/execution.json": "113f01d4b15f0f19eb685c44057252216d01c64c97e69c4e5ddcae2a619d01da",
+  "holdout/graal/inputs.json": "8f5fac74da35c3a6ff99f42fe3933eb1a916f175d3afd5dfa80c851d2924af8e",
+  "holdout/score.json": "84aa158c13e89004086de6807679f12596e0728b03b6d914924709b618fe160d",
+  "plan.json": "770a8a8e1f67c11a759189e0b00e1fb27e19104ca628171a0047f477c02eed78",
+  "prompt.txt": "87f9ae7ff3e79f426510c809f20b9936fa52b1f5a4a53a59d9c84d2f393fe75d",
+  "response.json": "f1ff4ea3bea274768ff49c9430c69b1a1d5c7a20969d46bbf808016735ec8808",
+  "selection.json": "06388592074f340e60144fe15d29e5649e3f99d277619c3353ddf136106a23f4",
+  "spend.json": "7a65449345c2b387d4b40b415203df6d9babc03a1182fe0e9798eb7c3e780fb7",
+  "summary.json": "ff6aa9ad80726cdf219a177369e523c7e5559a43cfa1cf0de483179df84ccbb4",
+  "visible/cpython/execution.json": "58a45d26b169001d1030c25d42b4b9edfc96aea0e63d078bb01815a12aceaf8d",
+  "visible/cpython/inputs.json": "2fca41916d174281463565e3e66d7e17b96cc505b23f2d1f9a023b778a1c1cb3",
+  "visible/graal/execution.json": "78ea2194c83806f0c1354b6e415e5ed3ec2e4008d4079bc2aa6f76e3a24c5861",
+  "visible/graal/inputs.json": "2fca41916d174281463565e3e66d7e17b96cc505b23f2d1f9a023b778a1c1cb3",
+  "visible/score.json": "dae567439892db72979b612ea5d91cbe91d269d86ba82a2e7c919997ca951b93"
+}

@@ -47,7 +47,9 @@ def evaluate_candidate(source, cases, contract):
             except ValueError:
                 row.update(status="exception", type="DecoderException")
             except Exception as exc:
-                row.update(status="exception", type=type(exc).__name__)
+                row.update(status="exception", type=type(exc).__name__,
+                           diagnostic={"message": str(exc)[:2000],
+                                       "traceback": traceback.format_exc(limit=8)[-6000:]})
             rows.append(row)
         return rows
     rows = []
