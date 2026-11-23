@@ -1,0 +1,81 @@
+{
+  "code": "import unicodedata\nfrom typing import Any\n\n\ndef _to_utf16_chars(code: str) -> list[str]:\n    raw_bytes = code.encode('utf-16-be')\n    return [\n        chr(raw_bytes[i] * 256 + raw_bytes[i + 1])\n        for i in range(0, len(raw_bytes), 2)\n    ]\n\n\ndef _is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    chars = _to_utf16_chars(code)\n    start = 0\n    end = len(chars)\n    while start < end and ord(chars[start]) <= 32:\n        start += 1\n    while end > start and ord(chars[end - 1]) <= 32:\n        end -= 1\n    return (end - start) == 0\n\n\nclass LuhnCheckDigit:\n    MODULUS = 10\n    POSITION_WEIGHT = [2, 1]\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted = char_value * weight\n        return weighted - 9 if weighted > 9 else weighted\n\n    def to_int(self, character: str, left_pos: int, right_pos: int) -> int:\n        if unicodedata.category(character) == 'Nd':\n            return unicodedata.decimal(character)\n        raise ValueError(f\"Invalid Character[{left_pos}] = '{character}'\")\n\n    def to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise ValueError(f\"Invalid Check Digit Value ={char_value}\")\n\n    def calculate_modulus(self, chars: list[str], includes_check_digit: bool) -> int:\n        total = 0\n        length = len(chars)\n        lth = length + (0 if includes_check_digit else 1)\n        for i in range(length):\n            left_pos = i + 1\n            right_pos = lth - i\n            char_value = self.to_int(chars[i], left_pos, right_pos)\n            total += self.weighted_value(char_value, left_pos, right_pos)\n        if total == 0:\n            raise ValueError(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str | None) -> str:\n        if _is_blank_or_null(code):\n            raise ValueError(\"Code is missing\")\n        chars = _to_utf16_chars(code)  # type: ignore\n        modulus_result = self.calculate_modulus(chars, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self.to_check_digit(char_value)\n\n    def is_valid(self, code: str | None) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            chars = _to_utf16_chars(code)  # type: ignore\n            modulus_result = self.calculate_modulus(chars, True)\n            return modulus_result == 0\n        except ValueError:\n            return False\n\n\ndef run(operation: str, data: str | None) -> Any:\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        return luhn.calculate(data)\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translates Apache Commons Validator LuhnCheckDigit faithfully to Python.\n- Converts input strings into UTF-16 code unit sequences matching Java `char[]` and `String.charAt()` indexing.\n- Implements `GenericValidator.isBlankOrNull` using Java `trim()` mechanics (stripping chars <= 32).\n- Uses `unicodedata.category` ('Nd') and `unicodedata.decimal` to match Java's `Character.isDigit` and `Character.getNumericValue` across all Unicode decimal digits.\n- Raises `ValueError` for `CheckDigitException` on `calculate` and catches `ValueError` returning `False` on `isValid`.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "9SoCa-PfOrq5xdIPxPSZgQE",
+    "usage": {
+      "input_tokens": 2753,
+      "output_tokens": 2706,
+      "thinking_tokens": 1581,
+      "provider_usage": {
+        "promptTokenCount": 2753,
+        "candidatesTokenCount": 1125,
+        "totalTokenCount": 5459,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2753
+          }
+        ],
+        "thoughtsTokenCount": 1581,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 14.212
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\nfrom typing import Any\\n\\n\\ndef _to_utf16_chars(code: str) -> list[str]:\\n    raw_bytes = code.encode('utf-16-be')\\n    return [\\n        chr(raw_bytes[i] * 256 + raw_bytes[i + 1])\\n        for i in range(0, len(raw_bytes), 2)\\n    ]\\n\\n\\ndef _is_blank_or_null(code: str | None) -> bool:\\n    if code is None:\\n        return True\\n    chars = _to_utf16_chars(code)\\n    start = 0\\n    end = len(chars)\\n    while start < end and ord(chars[start]) <= 32:\\n        start += 1\\n    while end > start and ord(chars[end - 1]) <= 32:\\n        end -= 1\\n    return (end - start) == 0\\n\\n\\nclass LuhnCheckDigit:\\n    MODULUS = 10\\n    POSITION_WEIGHT = [2, 1]\\n\\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\\n        weight = self.POSITION_WEIGHT[right_pos % 2]\\n        weighted = char_value * weight\\n        return weighted - 9 if weighted > 9 else weighted\\n\\n    def to_int(self, character: str, left_pos: int, right_pos: int) -> int:\\n        if unicodedata.category(character) == 'Nd':\\n            return unicodedata.decimal(character)\\n        raise ValueError(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\n    def to_check_digit(self, char_value: int) -> str:\\n        if 0 <= char_value <= 9:\\n            return str(char_value)\\n        raise ValueError(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\n    def calculate_modulus(self, chars: list[str], includes_check_digit: bool) -> int:\\n        total = 0\\n        length = len(chars)\\n        lth = length + (0 if includes_check_digit else 1)\\n        for i in range(length):\\n            left_pos = i + 1\\n            right_pos = lth - i\\n            char_value = self.to_int(chars[i], left_pos, right_pos)\\n            total += self.weighted_value(char_value, left_pos, right_pos)\\n        if total == 0:\\n            raise ValueError(\\\"Invalid code, sum is zero\\\")\\n        return total % self.MODULUS\\n\\n    def calculate(self, code: str | None) -> str:\\n        if _is_blank_or_null(code):\\n            raise ValueError(\\\"Code is missing\\\")\\n        chars = _to_utf16_chars(code)  # type: ignore\\n        modulus_result = self.calculate_modulus(chars, False)\\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\\n        return self.to_check_digit(char_value)\\n\\n    def is_valid(self, code: str | None) -> bool:\\n        if _is_blank_or_null(code):\\n            return False\\n        try:\\n            chars = _to_utf16_chars(code)  # type: ignore\\n            modulus_result = self.calculate_modulus(chars, True)\\n            return modulus_result == 0\\n        except ValueError:\\n            return False\\n\\n\\ndef run(operation: str, data: str | None) -> Any:\\n    luhn = LuhnCheckDigit()\\n    if operation == \\\"calculate\\\":\\n        return luhn.calculate(data)\\n    elif operation == \\\"isValid\\\":\\n        return luhn.is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Translates Apache Commons Validator LuhnCheckDigit faithfully to Python.\\n- Converts input strings into UTF-16 code unit sequences matching Java `char[]` and `String.charAt()` indexing.\\n- Implements `GenericValidator.isBlankOrNull` using Java `trim()` mechanics (stripping chars <= 32).\\n- Uses `unicodedata.category` ('Nd') and `unicodedata.decimal` to match Java's `Character.isDigit` and `Character.getNumericValue` across all Unicode decimal digits.\\n- Raises `ValueError` for `CheckDigitException` on `calculate` and catches `ValueError` returning `False` on `isValid`.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2753,
+      "candidatesTokenCount": 1125,
+      "totalTokenCount": 5459,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2753
+        }
+      ],
+      "thoughtsTokenCount": 1581,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "9SoCa-PfOrq5xdIPxPSZgQE",
+    "usage": {
+      "input_tokens": 2753,
+      "output_tokens": 2706,
+      "thinking_tokens": 1581,
+      "provider_usage": {
+        "promptTokenCount": 2753,
+        "candidatesTokenCount": 1125,
+        "totalTokenCount": 5459,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2753
+          }
+        ],
+        "thoughtsTokenCount": 1581,
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

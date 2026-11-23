@@ -1,3 +1,20 @@
+## November 22 — Validator assisted qualification
+
+The supported Luhn slice passes **160/160 API cases in each runtime** after a
+deterministic portability fix. The extra runtime-guided model repair failed and
+was rejected; its evidence remains archived. Total Validator live usage is
+**13,055 tokens**, **$0.074053875 accounted**. Assisted qualification used zero API
+calls. These are inspected regression cases, not a fresh generalization estimate.
+[Results and provenance](VALIDATOR_OBSERVATIONS.md).
+
+## November 21 — Validator Luhn live pilot
+
+One Gemini 3.5 Flash translation plus one repair: selected holdout **126/130
+(96.92%) per runtime**, full-task success **0/1**. Repair improved CPython visible
+checks from 28/30 to 30/30 but regressed GraalPy from 28/30 to 10/30, so the
+no-regression gate retained baseline. **7,596 tokens**, **38.122 seconds**,
+**$0.044538 accounted**. [Full protocol and limitations](VALIDATOR_OBSERVATIONS.md).
+
 ## November 21 — completed assisted Codec Hex slice
 
 Final isolated qualification passes 21/21 visible and 110/110 previously withheld

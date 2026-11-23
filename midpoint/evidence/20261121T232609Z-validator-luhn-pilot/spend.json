@@ -1,0 +1,54 @@
+{
+  "limit_usd": 0.15,
+  "accounted_usd": 0.044538,
+  "input_usd_per_million": 1.5,
+  "output_usd_per_million": 9.0,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.05435025,
+      "accounted_usd": 0.010218375,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 1197,
+        "output_tokens": 886,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 1197,
+          "candidatesTokenCount": 886,
+          "totalTokenCount": 2083,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1197
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.060408375,
+      "accounted_usd": 0.034319625,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 2147,
+        "output_tokens": 3366,
+        "thinking_tokens": 2264,
+        "provider_usage": {
+          "promptTokenCount": 2147,
+          "candidatesTokenCount": 1102,
+          "totalTokenCount": 5513,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 2147
+            }
+          ],
+          "thoughtsTokenCount": 2264,
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "unicode-capabilities",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "1"
+  }
+]

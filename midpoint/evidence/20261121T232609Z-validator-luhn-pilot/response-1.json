@@ -1,0 +1,31 @@
+{
+  "code": "import unicodedata\nfrom typing import Any\n\n\ndef _is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    trimmed = code.strip(\"\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\\x09\\x0a\\x0b\\x0c\\x0d\\x0e\\x0f\\x10\\x11\\x12\\x13\\x14\\x15\\x16\\x17\\x18\\x19\\x1a\\x1b\\x1c\\x1d\\x1e\\x1f \")\n    return len(trimmed) == 0\n\n\ndef _to_utf16_chars(s: str) -> list[str]:\n    raw_bytes = s.encode('utf-16-be')\n    chars = []\n    for i in range(0, len(raw_bytes), 2):\n        val = (raw_bytes[i] << 8) | raw_bytes[i + 1]\n        chars.append(chr(val))\n    return chars\n\n\nclass LuhnCheckDigit:\n    MODULUS = 10\n    POSITION_WEIGHT = [2, 1]\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted = char_value * weight\n        return weighted - 9 if weighted > 9 else weighted\n\n    def to_int(self, character: str, left_pos: int, right_pos: int) -> int:\n        if unicodedata.category(character) == 'Nd':\n            return unicodedata.decimal(character)\n        raise ValueError(f\"Invalid Character[{left_pos}] = '{character}'\")\n\n    def to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise ValueError(f\"Invalid Check Digit Value ={char_value}\")\n\n    def calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\n        chars = _to_utf16_chars(code)\n        length = len(chars)\n        lth = length + (0 if includes_check_digit else 1)\n        total = 0\n        for i in range(length):\n            left_pos = i + 1\n            right_pos = lth - i\n            char_value = self.to_int(chars[i], left_pos, right_pos)\n            total += self.weighted_value(char_value, left_pos, right_pos)\n        if total == 0:\n            raise ValueError(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str | None) -> str:\n        if _is_blank_or_null(code):\n            raise ValueError(\"Code is missing\")\n        modulus_result = self.calculate_modulus(code, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self.to_check_digit(char_value)\n\n    def is_valid(self, code: str | None) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            modulus_result = self.calculate_modulus(code, True)\n            return modulus_result == 0\n        except ValueError:\n            return False\n\n\ndef run(operation: str, data: Any) -> Any:\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        return luhn.calculate(data)\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translates Apache Commons Validator LuhnCheckDigit and its ModulusCheckDigit superclass logic to Python. Uses Unicode category 'Nd' and unicodedata.decimal for faithful Java Character.isDigit/getNumericValue semantics (handling full-width and non-ASCII digits), UTF-16 encoding code unit iteration, Java-compatible trim logic for blank checks, and raises ValueError for CheckDigitException.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "nCgCa6fhDcGrytMPz-6jMQ",
+    "usage": {
+      "input_tokens": 2147,
+      "output_tokens": 3366,
+      "thinking_tokens": 2264,
+      "provider_usage": {
+        "promptTokenCount": 2147,
+        "candidatesTokenCount": 1102,
+        "totalTokenCount": 5513,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2147
+          }
+        ],
+        "thoughtsTokenCount": 2264,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 17.308
+  }
+}

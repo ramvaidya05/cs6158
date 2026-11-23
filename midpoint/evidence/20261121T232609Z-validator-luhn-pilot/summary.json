@@ -1,0 +1,989 @@
+{
+  "status": "evaluated",
+  "calls": [
+    {
+      "attempt": 0,
+      "prompt_utf8_bytes": 4473,
+      "reserved_tokens": 9593,
+      "cumulative_reserved_tokens": 9593,
+      "metadata": {
+        "backend": "gemini_generate_content",
+        "model": "gemini-3.5-flash",
+        "reasoning_effort": "low",
+        "provenance": "live_model",
+        "resolved_model": "gemini-3.6-flash",
+        "response_id": "kigCa9ueE7CQytMPn-SdkAQ",
+        "usage": {
+          "input_tokens": 1197,
+          "output_tokens": 886,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1197,
+            "candidatesTokenCount": 886,
+            "totalTokenCount": 2083,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1197
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        },
+        "elapsed_seconds": 4.718
+      },
+      "candidate_sha256": "c1c2ca2c5544b7f6c6c4e19c987c142a939d59f28a52e87d65f453a45be30241",
+      "visible": {
+        "cpython": {
+          "passed": 28,
+          "total": 30,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 28,
+          "total": 30,
+          "status": "completed"
+        }
+      }
+    },
+    {
+      "attempt": 1,
+      "prompt_utf8_bytes": 7519,
+      "reserved_tokens": 12639,
+      "cumulative_reserved_tokens": 22232,
+      "metadata": {
+        "backend": "gemini_generate_content",
+        "model": "gemini-3.5-flash",
+        "reasoning_effort": "low",
+        "provenance": "live_model",
+        "resolved_model": "gemini-3.6-flash",
+        "response_id": "nCgCa6fhDcGrytMPz-6jMQ",
+        "usage": {
+          "input_tokens": 2147,
+          "output_tokens": 3366,
+          "thinking_tokens": 2264,
+          "provider_usage": {
+            "promptTokenCount": 2147,
+            "candidatesTokenCount": 1102,
+            "totalTokenCount": 5513,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 2147
+              }
+            ],
+            "thoughtsTokenCount": 2264,
+            "serviceTier": "standard"
+          }
+        },
+        "elapsed_seconds": 17.308
+      },
+      "candidate_sha256": "49fe91931ac914c4ec122b824535150bb152f75c17b980f3a9df8fb551341c57",
+      "visible": {
+        "cpython": {
+          "passed": 30,
+          "total": 30,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 10,
+          "total": 30,
+          "status": "completed"
+        }
+      }
+    }
+  ],
+  "candidates": [
+    "candidate-0.py",
+    "candidate-1.py"
+  ],
+  "suite_sha256": "4ab8ad3ee61a54bd8245ecaf58d644ed5783558b6369f28bd00e6603df9dd99f",
+  "holdout_baseline": {
+    "cpython": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    }
+  },
+  "selected_attempt": 0,
+  "holdout_final": {
+    "cpython": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "limit_usd": 0.15,
+    "accounted_usd": 0.044538,
+    "input_usd_per_million": 1.5,
+    "output_usd_per_million": 9.0,
+    "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+    "calls": [
+      {
+        "reserved_usd": 0.05435025,
+        "accounted_usd": 0.010218375,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 1197,
+          "output_tokens": 886,
+          "thinking_tokens": 0,
+          "provider_usage": {
+            "promptTokenCount": 1197,
+            "candidatesTokenCount": 886,
+            "totalTokenCount": 2083,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1197
+              }
+            ],
+            "serviceTier": "standard"
+          }
+        }
+      },
+      {
+        "reserved_usd": 0.060408375,
+        "accounted_usd": 0.034319625,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 2147,
+          "output_tokens": 3366,
+          "thinking_tokens": 2264,
+          "provider_usage": {
+            "promptTokenCount": 2147,
+            "candidatesTokenCount": 1102,
+            "totalTokenCount": 5513,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 2147
+              }
+            ],
+            "thoughtsTokenCount": 2264,
+            "serviceTier": "standard"
+          }
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 38.122
+}

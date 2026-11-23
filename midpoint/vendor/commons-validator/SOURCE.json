@@ -1,0 +1,15 @@
+{
+  "version": "1.9.0",
+  "artifact": "commons-validator:commons-validator:1.9.0",
+  "source_url": "https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.9.0/commons-validator-1.9.0-sources.jar",
+  "source_archive_sha256": "4fe71e09c1d03a4715bdcf03174dce060e5c0010f2fb9248ba5ecc91fec80b89",
+  "files": {
+    "CheckDigit.java": "92f8ed8d7dc634590cd0f27b55abde69afa3d0adb2aa7f5597d57c0cf51b3cba",
+    "CheckDigitException.java": "f614358a59272b935bb17661af4ad2a66f30d3e404eeb7cc55d538e102d0a4ff",
+    "NOTICE.txt": "17ccc300089baf2587396266349148c652b3a27c6eefa624d15094a82bc4e9ce",
+    "LuhnCheckDigit.java": "5ec3222bcb7ee8372ea115101cde815e6ec35b4727f4a057f7bc5c10087fc708",
+    "AbstractCheckDigit.java": "b5124569ece44b90b965262edf78a78055fb2f1585749451434663e87e013396",
+    "ModulusCheckDigit.java": "90a9cdccc9c9655381f0863fd25eac2a7a0a8d32608d1954f755a64e80d7dc45",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+}

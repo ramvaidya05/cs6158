@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "unicode-capabilities",
+      "status": "ok",
+      "value": "{\"category\": {\"callable\": true, \"sample\": \"Nd\"}, \"decimal\": {\"callable\": false}, \"digit\": {\"callable\": false}}"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-6a1cfb69df1d49b9a7fb817c6670465f",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-_7ai023c/candidate.py,dst=/candidate.py,readonly",
+      "sha256:7a6f9b47ca5d264fe5fcc7d43c0524ff91652df86e326b74da956cb7700c2da0",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.652343,
+    "stdout": "[{\"id\": \"unicode-capabilities\", \"status\": \"ok\", \"value\": \"{\\\"category\\\": {\\\"callable\\\": true, \\\"sample\\\": \\\"Nd\\\"}, \\\"decimal\\\": {\\\"callable\\\": false}, \\\"digit\\\": {\\\"callable\\\": false}}\"}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-21T23:36:16.760502583Z",
+      "FinishedAt": "2026-11-21T23:36:21.346426294Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:25836c0871015d642bdc52b5b1e237c2f13a1e647afa2a71bfdf18c14128792c",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:7a6f9b47ca5d264fe5fcc7d43c0524ff91652df86e326b74da956cb7700c2da0",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

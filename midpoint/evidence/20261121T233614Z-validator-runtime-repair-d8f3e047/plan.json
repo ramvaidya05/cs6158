@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.5-flash",
+  "thinking": "low",
+  "max_calls": 1,
+  "max_output_tokens": 4096,
+  "token_reservation_cap": 20000,
+  "reserved_tokens": 14149,
+  "usd_cap": 0.1,
+  "selection": "strict visible improvement without per-case regressions in either runtime",
+  "holdout_role": "previously evaluated regression suite; not fresh holdout",
+  "suite_sha256": "4ab8ad3ee61a54bd8245ecaf58d644ed5783558b6369f28bd00e6603df9dd99f"
+}

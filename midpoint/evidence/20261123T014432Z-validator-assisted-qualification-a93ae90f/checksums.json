@@ -1,0 +1,14 @@
+{
+  "candidate.py": "67591394a08f430bbe46f15bf59af08cfc95d95d48b339b8652dab6967d6fde4",
+  "holdout/cpython/execution.json": "492287e08edb91c26411153b7dffc1b89be14919c1454e5dfaecff921195a7cf",
+  "holdout/cpython/inputs.json": "838868508641a54ba133b2243bda671195f13f13d2557f580d3faf2568baaf50",
+  "holdout/graal/execution.json": "2e0661bf2c5ce34346d2c3fc63b21db36a060360707e25f11f6ec44884f10bf3",
+  "holdout/graal/inputs.json": "838868508641a54ba133b2243bda671195f13f13d2557f580d3faf2568baaf50",
+  "holdout/score.json": "2f40ee9df6d563e99f43e3f10904899cd08256a7b35c956f0c0b782c4f922f06",
+  "summary.json": "4976bcd563d3cf3e7a1c688a81f79ebfc34a90e3296481ae7665bafc09b95162",
+  "visible/cpython/execution.json": "652a0f9f7279d277a985365c49df1b950e768920077c6d2fd2466aaea623f3f1",
+  "visible/cpython/inputs.json": "622861becc28f1b84cbe3dd7527d7b8078704daeb992ff15fb52494c5b8d505c",
+  "visible/graal/execution.json": "2c2f7ad61b5af9cc5da952e8f3ad3a25c2fdd86d826d400045b9fe65aee022ba",
+  "visible/graal/inputs.json": "622861becc28f1b84cbe3dd7527d7b8078704daeb992ff15fb52494c5b8d505c",
+  "visible/score.json": "94bc9221ac6ff576a8d6b9e6e0a487a858ce439ade63afc6ace94ee0dcee7b44"
+}

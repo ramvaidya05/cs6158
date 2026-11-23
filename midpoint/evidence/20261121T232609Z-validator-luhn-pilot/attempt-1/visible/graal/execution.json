@@ -1,0 +1,327 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "validator-visible-0",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-visible-1",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-visible-2",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-visible-3",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-visible-4",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-5",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-6",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-7",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-8",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-9",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-10",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-11",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-12",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-13",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-14",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-15",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-16",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-17",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-18",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-19",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-20",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-visible-21",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-visible-22",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-23",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-24",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 74, in run\n  File \"candidate.py\", line 57, in calculate\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-25",
+      "status": "exception",
+      "type": "AttributeError",
+      "diagnostic": {
+        "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+        "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 76, in run\n  File \"candidate.py\", line 65, in is_valid\n  File \"candidate.py\", line 48, in calculate_modulus\n  File \"candidate.py\", line 32, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+      }
+    },
+    {
+      "id": "validator-visible-26",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-visible-27",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-visible-28",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-visible-29",
+      "status": "ok",
+      "value": false
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-f9aeeff41c52490c8c04bd9d30ed5e6c",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-uaye_e6b/candidate.py,dst=/candidate.py,readonly",
+      "sha256:7a6f9b47ca5d264fe5fcc7d43c0524ff91652df86e326b74da956cb7700c2da0",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.83835,
+    "stdout": "[{\"id\": \"validator-visible-0\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"validator-visible-1\", \"status\": \"ok\", \"value\": false}, {\"id\": \"validator-visible-2\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"validator-visible-3\", \"status\": \"ok\", \"value\": false}, {\"id\": \"validator-visible-4\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-5\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-6\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-7\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-8\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-9\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-10\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-11\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-12\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-13\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-14\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-15\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-16\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-17\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-18\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-19\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-20\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"validator-visible-21\", \"status\": \"ok\", \"value\": false}, {\"id\": \"validator-visible-22\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-23\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-24\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 74, in run\\n  File \\\"candidate.py\\\", line 57, in calculate\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-25\", \"status\": \"exception\", \"type\": \"AttributeError\", \"diagnostic\": {\"message\": \"module '_cpython_unicodedata' does not have 'decimal' attribute\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"Unnamed\\\", line 38, in evaluate_candidate\\n  File \\\"candidate.py\\\", line 76, in run\\n  File \\\"candidate.py\\\", line 65, in is_valid\\n  File \\\"candidate.py\\\", line 48, in calculate_modulus\\n  File \\\"candidate.py\\\", line 32, in to_int\\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\\n\"}}, {\"id\": \"validator-visible-26\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"validator-visible-27\", \"status\": \"ok\", \"value\": false}, {\"id\": \"validator-visible-28\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"validator-visible-29\", \"status\": \"ok\", \"value\": false}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-21T23:26:37.681756089Z",
+      "FinishedAt": "2026-11-21T23:26:42.45712455Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:25836c0871015d642bdc52b5b1e237c2f13a1e647afa2a71bfdf18c14128792c",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:7a6f9b47ca5d264fe5fcc7d43c0524ff91652df86e326b74da956cb7700c2da0",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "validator-holdout-0",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-1",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-2",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-3",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-4",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "validator-holdout-5",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-6",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-7",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-8",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-9",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-10",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-11",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-12",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-13",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-14",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-15",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-16",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-17",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-18",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "validator-holdout-19",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-20",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-21",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-22",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "validator-holdout-23",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-24",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-25",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-26",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-27",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-28",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "validator-holdout-29",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-30",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-31",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-32",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-33",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-34",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-35",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-36",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-37",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-38",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "validator-holdout-39",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-40",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-41",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-42",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-43",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-44",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-45",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-46",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "validator-holdout-47",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-48",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-49",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-50",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-51",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-52",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-53",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-54",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-55",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-56",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "validator-holdout-57",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-58",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-59",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-60",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "validator-holdout-61",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-62",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-63",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-64",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "validator-holdout-65",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-66",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-67",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-68",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-69",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-70",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-71",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-72",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-73",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-74",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-75",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-76",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-77",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-78",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "validator-holdout-79",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-80",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-81",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-82",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-83",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-84",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-85",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-86",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "validator-holdout-87",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-88",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "validator-holdout-89",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-90",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-91",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-92",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-93",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-94",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-95",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-96",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "validator-holdout-97",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-98",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "validator-holdout-99",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-100",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "validator-holdout-101",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-102",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-103",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-104",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-105",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-106",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-107",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-108",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-109",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-110",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-111",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-112",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "validator-holdout-113",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "validator-holdout-114",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "validator-holdout-115",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-116",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "validator-holdout-117",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-118",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-119",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-120",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-121",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-122",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-123",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-124",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-125",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-126",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "validator-holdout-127",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "validator-holdout-128",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "validator-holdout-129",
+      "status": "ok",
+      "value": true
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/ram/cs6158/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/ram/cs6158/midpoint/java/target/classes:/Users/ram/cs6158/midpoint/.cache/m2/commons-validator/commons-validator/1.9.0/commons-validator-1.9.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-logging/commons-logging/1.3.2/commons-logging-1.3.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.12463,
+    "stdout": "[{\"id\":\"validator-holdout-0\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-1\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-2\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-3\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-4\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"validator-holdout-5\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-6\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-7\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-8\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-9\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-10\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-11\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-12\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-13\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-14\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-15\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-16\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-17\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-18\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"validator-holdout-19\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-20\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-21\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-22\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"validator-holdout-23\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-24\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-25\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-26\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-27\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-28\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"validator-holdout-29\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-30\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-31\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-32\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-33\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-34\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-35\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-36\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-37\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-38\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"validator-holdout-39\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-40\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-41\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-42\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-43\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-44\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-45\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-46\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"validator-holdout-47\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-48\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-49\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-50\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-51\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-52\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-53\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-54\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-55\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-56\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"validator-holdout-57\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-58\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-59\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-60\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"validator-holdout-61\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-62\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-63\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-64\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"validator-holdout-65\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-66\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-67\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-68\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-69\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-70\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-71\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-72\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-73\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-74\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-75\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-76\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-77\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-78\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"validator-holdout-79\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-80\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-81\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-82\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-83\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-84\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-85\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-86\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"validator-holdout-87\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-88\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"validator-holdout-89\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-90\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-91\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-92\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-93\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-94\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-95\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-96\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"validator-holdout-97\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-98\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"validator-holdout-99\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-100\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"validator-holdout-101\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-102\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-103\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-104\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-105\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-106\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-107\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-108\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-109\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-110\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-111\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-112\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"validator-holdout-113\",\"status\":\"ok\",\"value\":true},{\"id\":\"validator-holdout-114\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"validator-holdout-115\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-116\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"validator-holdout-117\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-118\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-119\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-120\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-121\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-122\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-123\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-124\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-125\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-126\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"validator-holdout-127\",\"status\":\"ok\",\"value\":false},{\"id\":\"validator-holdout-128\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"validator-holdout-129\",\"status\":\"ok\",\"value\":true}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

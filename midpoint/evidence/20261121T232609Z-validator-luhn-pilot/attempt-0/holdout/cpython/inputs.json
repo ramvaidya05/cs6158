@@ -1,0 +1,782 @@
+[
+  {
+    "id": "validator-holdout-0",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "7547873819282683541829"
+  },
+  {
+    "id": "validator-holdout-1",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "7547873819282683541829"
+  },
+  {
+    "id": "validator-holdout-2",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "80182235972077325833"
+  },
+  {
+    "id": "validator-holdout-3",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "80182235972077325833"
+  },
+  {
+    "id": "validator-holdout-4",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "9879063761037129"
+  },
+  {
+    "id": "validator-holdout-5",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "9879063761037129"
+  },
+  {
+    "id": "validator-holdout-6",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "950495770582682"
+  },
+  {
+    "id": "validator-holdout-7",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "950495770582682"
+  },
+  {
+    "id": "validator-holdout-8",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "14762093"
+  },
+  {
+    "id": "validator-holdout-9",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "14762093"
+  },
+  {
+    "id": "validator-holdout-10",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "916270161647206530550711771892517429772166036807003"
+  },
+  {
+    "id": "validator-holdout-11",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "916270161647206530550711771892517429772166036807003"
+  },
+  {
+    "id": "validator-holdout-12",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "430012886496381581534"
+  },
+  {
+    "id": "validator-holdout-13",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "430012886496381581534"
+  },
+  {
+    "id": "validator-holdout-14",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "911623493299528129519340690420"
+  },
+  {
+    "id": "validator-holdout-15",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "911623493299528129519340690420"
+  },
+  {
+    "id": "validator-holdout-16",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "9695398867388340526024835177038917"
+  },
+  {
+    "id": "validator-holdout-17",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "9695398867388340526024835177038917"
+  },
+  {
+    "id": "validator-holdout-18",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "80674159248598740113317894545459503105530491869514156288485"
+  },
+  {
+    "id": "validator-holdout-19",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "80674159248598740113317894545459503105530491869514156288485"
+  },
+  {
+    "id": "validator-holdout-20",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "4813799240"
+  },
+  {
+    "id": "validator-holdout-21",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "4813799240"
+  },
+  {
+    "id": "validator-holdout-22",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "149673392084033"
+  },
+  {
+    "id": "validator-holdout-23",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "149673392084033"
+  },
+  {
+    "id": "validator-holdout-24",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "761255848942141545779931587132954"
+  },
+  {
+    "id": "validator-holdout-25",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "761255848942141545779931587132954"
+  },
+  {
+    "id": "validator-holdout-26",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "70672554099517321"
+  },
+  {
+    "id": "validator-holdout-27",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "70672554099517321"
+  },
+  {
+    "id": "validator-holdout-28",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "4048975081334581080770421604861383264741656290166356"
+  },
+  {
+    "id": "validator-holdout-29",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "4048975081334581080770421604861383264741656290166356"
+  },
+  {
+    "id": "validator-holdout-30",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "52327063002342954623098322"
+  },
+  {
+    "id": "validator-holdout-31",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "52327063002342954623098322"
+  },
+  {
+    "id": "validator-holdout-32",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "57700351130598140081225877530605708773290466374"
+  },
+  {
+    "id": "validator-holdout-33",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "57700351130598140081225877530605708773290466374"
+  },
+  {
+    "id": "validator-holdout-34",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "667882955804358964245306992468265916159449186"
+  },
+  {
+    "id": "validator-holdout-35",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "667882955804358964245306992468265916159449186"
+  },
+  {
+    "id": "validator-holdout-36",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "2953361761"
+  },
+  {
+    "id": "validator-holdout-37",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "2953361761"
+  },
+  {
+    "id": "validator-holdout-38",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "74106398378093914454988591"
+  },
+  {
+    "id": "validator-holdout-39",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "74106398378093914454988591"
+  },
+  {
+    "id": "validator-holdout-40",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "130315277201132905674"
+  },
+  {
+    "id": "validator-holdout-41",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "130315277201132905674"
+  },
+  {
+    "id": "validator-holdout-42",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "6790843818646131463435952468872199325"
+  },
+  {
+    "id": "validator-holdout-43",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "6790843818646131463435952468872199325"
+  },
+  {
+    "id": "validator-holdout-44",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "706921539582853106412866135556196031"
+  },
+  {
+    "id": "validator-holdout-45",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "706921539582853106412866135556196031"
+  },
+  {
+    "id": "validator-holdout-46",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "259164474701027553702393933367724975812649397806"
+  },
+  {
+    "id": "validator-holdout-47",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "259164474701027553702393933367724975812649397806"
+  },
+  {
+    "id": "validator-holdout-48",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "4497"
+  },
+  {
+    "id": "validator-holdout-49",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "4497"
+  },
+  {
+    "id": "validator-holdout-50",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "3394927423781518"
+  },
+  {
+    "id": "validator-holdout-51",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "3394927423781518"
+  },
+  {
+    "id": "validator-holdout-52",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "256813338"
+  },
+  {
+    "id": "validator-holdout-53",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "256813338"
+  },
+  {
+    "id": "validator-holdout-54",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "115017679669660403748411097215"
+  },
+  {
+    "id": "validator-holdout-55",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "115017679669660403748411097215"
+  },
+  {
+    "id": "validator-holdout-56",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "8989510"
+  },
+  {
+    "id": "validator-holdout-57",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "8989510"
+  },
+  {
+    "id": "validator-holdout-58",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "31242682090396385675694570850690384865068"
+  },
+  {
+    "id": "validator-holdout-59",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "31242682090396385675694570850690384865068"
+  },
+  {
+    "id": "validator-holdout-60",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "0202838318215064533086122241677768506815615346328363663754865"
+  },
+  {
+    "id": "validator-holdout-61",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "0202838318215064533086122241677768506815615346328363663754865"
+  },
+  {
+    "id": "validator-holdout-62",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "432433619979099308873112816462272771345444108239596675772073086"
+  },
+  {
+    "id": "validator-holdout-63",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "432433619979099308873112816462272771345444108239596675772073086"
+  },
+  {
+    "id": "validator-holdout-64",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "64827816985513293432023680062"
+  },
+  {
+    "id": "validator-holdout-65",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "64827816985513293432023680062"
+  },
+  {
+    "id": "validator-holdout-66",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "1042024924559318544411116114"
+  },
+  {
+    "id": "validator-holdout-67",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "1042024924559318544411116114"
+  },
+  {
+    "id": "validator-holdout-68",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "0251"
+  },
+  {
+    "id": "validator-holdout-69",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "0251"
+  },
+  {
+    "id": "validator-holdout-70",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "203297346795497714879099785058283438764476390"
+  },
+  {
+    "id": "validator-holdout-71",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "203297346795497714879099785058283438764476390"
+  },
+  {
+    "id": "validator-holdout-72",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "6796289286529050246217512745790427926334130639692364"
+  },
+  {
+    "id": "validator-holdout-73",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "6796289286529050246217512745790427926334130639692364"
+  },
+  {
+    "id": "validator-holdout-74",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "864916656489782820"
+  },
+  {
+    "id": "validator-holdout-75",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "864916656489782820"
+  },
+  {
+    "id": "validator-holdout-76",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "113363560913303947409250531229216306737"
+  },
+  {
+    "id": "validator-holdout-77",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "113363560913303947409250531229216306737"
+  },
+  {
+    "id": "validator-holdout-78",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "753409303727271480163588739"
+  },
+  {
+    "id": "validator-holdout-79",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "753409303727271480163588739"
+  },
+  {
+    "id": "validator-holdout-80",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "6594197735197659147532296879285731858200616893845676"
+  },
+  {
+    "id": "validator-holdout-81",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "6594197735197659147532296879285731858200616893845676"
+  },
+  {
+    "id": "validator-holdout-82",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "1730292108194"
+  },
+  {
+    "id": "validator-holdout-83",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "1730292108194"
+  },
+  {
+    "id": "validator-holdout-84",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "6315132230586171689895815297360337387355219455836348015"
+  },
+  {
+    "id": "validator-holdout-85",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "6315132230586171689895815297360337387355219455836348015"
+  },
+  {
+    "id": "validator-holdout-86",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "5143515368958928310643437"
+  },
+  {
+    "id": "validator-holdout-87",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "5143515368958928310643437"
+  },
+  {
+    "id": "validator-holdout-88",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "6394775788801711429403"
+  },
+  {
+    "id": "validator-holdout-89",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "6394775788801711429403"
+  },
+  {
+    "id": "validator-holdout-90",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "2730172860275822604307007180139184228056"
+  },
+  {
+    "id": "validator-holdout-91",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "2730172860275822604307007180139184228056"
+  },
+  {
+    "id": "validator-holdout-92",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "5"
+  },
+  {
+    "id": "validator-holdout-93",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "5"
+  },
+  {
+    "id": "validator-holdout-94",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "17455121078484662822725903650316361633218806699324043333130516"
+  },
+  {
+    "id": "validator-holdout-95",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "17455121078484662822725903650316361633218806699324043333130516"
+  },
+  {
+    "id": "validator-holdout-96",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "601245532593318721515259983872471692327263822828471645"
+  },
+  {
+    "id": "validator-holdout-97",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "601245532593318721515259983872471692327263822828471645"
+  },
+  {
+    "id": "validator-holdout-98",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "36460777086930043719246499419644750246441756927"
+  },
+  {
+    "id": "validator-holdout-99",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "36460777086930043719246499419644750246441756927"
+  },
+  {
+    "id": "validator-holdout-100",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "9"
+  },
+  {
+    "id": "validator-holdout-101",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "9"
+  },
+  {
+    "id": "validator-holdout-102",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "00"
+  },
+  {
+    "id": "validator-holdout-103",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "00"
+  },
+  {
+    "id": "validator-holdout-104",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "000000000"
+  },
+  {
+    "id": "validator-holdout-105",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "000000000"
+  },
+  {
+    "id": "validator-holdout-106",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\t"
+  },
+  {
+    "id": "validator-holdout-107",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\t"
+  },
+  {
+    "id": "validator-holdout-108",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "12\n"
+  },
+  {
+    "id": "validator-holdout-109",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "12\n"
+  },
+  {
+    "id": "validator-holdout-110",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "1\u00002"
+  },
+  {
+    "id": "validator-holdout-111",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "1\u00002"
+  },
+  {
+    "id": "validator-holdout-112",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u096c\u096d"
+  },
+  {
+    "id": "validator-holdout-113",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u096c\u096d"
+  },
+  {
+    "id": "validator-holdout-114",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\uff14\uff19"
+  },
+  {
+    "id": "validator-holdout-115",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\uff14\uff19"
+  },
+  {
+    "id": "validator-holdout-116",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u0664\u0665\u0666"
+  },
+  {
+    "id": "validator-holdout-117",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u0664\u0665\u0666"
+  },
+  {
+    "id": "validator-holdout-118",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u21632"
+  },
+  {
+    "id": "validator-holdout-119",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u21632"
+  },
+  {
+    "id": "validator-holdout-120",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\ud835\udfe09"
+  },
+  {
+    "id": "validator-holdout-121",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\ud835\udfe09"
+  },
+  {
+    "id": "validator-holdout-122",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "-12"
+  },
+  {
+    "id": "validator-holdout-123",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "-12"
+  },
+  {
+    "id": "validator-holdout-124",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "12.3"
+  },
+  {
+    "id": "validator-holdout-125",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "12.3"
+  },
+  {
+    "id": "validator-holdout-126",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u00a0"
+  },
+  {
+    "id": "validator-holdout-127",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u00a0"
+  },
+  {
+    "id": "validator-holdout-128",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+  },
+  {
+    "id": "validator-holdout-129",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+  }
+]

@@ -30,6 +30,26 @@ def evaluate_candidate(source, cases, contract):
                 row.update(status="exception", type=type(exc).__name__)
             rows.append(row)
         return rows
+    if cases[0]["task"] == "commons_validator_luhn":
+        rows = []
+        for case in cases:
+            row = {"id": case["id"]}
+            try:
+                value = scope["run"](case["operation"], case["data"])
+                if case["operation"] == "isValid":
+                    if type(value) is not bool:
+                        raise TypeError("isValid must return bool")
+                elif not isinstance(value, str):
+                    raise TypeError("calculate must return string")
+                row.update(status="ok", value=value)
+            except ValueError:
+                row.update(status="exception", type="CheckDigitException")
+            except Exception as exc:
+                row.update(status="exception", type=type(exc).__name__,
+                           diagnostic={"message": str(exc)[:2000],
+                                       "traceback": traceback.format_exc(limit=8)[-6000:]})
+            rows.append(row)
+        return rows
     if cases[0]["task"] == "commons_codec_hex":
         if not callable(scope.get("run")):
             raise TypeError("Candidate must define run(operation, data, lower)")

@@ -1,0 +1,961 @@
+{
+  "status": "evaluated",
+  "parent": "20261121T232609Z-validator-luhn-pilot",
+  "parent_verification": {
+    "checksums_sha256": "9a09f30dcda1679ba79099d02a57585fabece62592fd5684dd614784fc8dc718",
+    "verified_files": 33
+  },
+  "independent_trial": false,
+  "model_calls": 1,
+  "manual_candidate_edits": false,
+  "accepted": false,
+  "visible": {
+    "cpython": {
+      "status": "completed",
+      "passed": 30,
+      "total": 30,
+      "passed_ids": [
+        "validator-visible-0",
+        "validator-visible-1",
+        "validator-visible-2",
+        "validator-visible-3",
+        "validator-visible-4",
+        "validator-visible-5",
+        "validator-visible-6",
+        "validator-visible-7",
+        "validator-visible-8",
+        "validator-visible-9",
+        "validator-visible-10",
+        "validator-visible-11",
+        "validator-visible-12",
+        "validator-visible-13",
+        "validator-visible-14",
+        "validator-visible-15",
+        "validator-visible-16",
+        "validator-visible-17",
+        "validator-visible-18",
+        "validator-visible-19",
+        "validator-visible-20",
+        "validator-visible-21",
+        "validator-visible-22",
+        "validator-visible-23",
+        "validator-visible-24",
+        "validator-visible-25",
+        "validator-visible-26",
+        "validator-visible-27",
+        "validator-visible-28",
+        "validator-visible-29"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 10,
+      "total": 30,
+      "passed_ids": [
+        "validator-visible-0",
+        "validator-visible-1",
+        "validator-visible-2",
+        "validator-visible-3",
+        "validator-visible-20",
+        "validator-visible-21",
+        "validator-visible-26",
+        "validator-visible-27",
+        "validator-visible-28",
+        "validator-visible-29"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-visible-4",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "0"
+          },
+          "expected": {
+            "id": "validator-visible-4",
+            "status": "exception",
+            "type": "CheckDigitException"
+          },
+          "actual": {
+            "id": "validator-visible-4",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-5",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "0"
+          },
+          "expected": {
+            "id": "validator-visible-5",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-5",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-6",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "0000"
+          },
+          "expected": {
+            "id": "validator-visible-6",
+            "status": "exception",
+            "type": "CheckDigitException"
+          },
+          "actual": {
+            "id": "validator-visible-6",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-7",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "0000"
+          },
+          "expected": {
+            "id": "validator-visible-7",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-7",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-8",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "7992739871"
+          },
+          "expected": {
+            "id": "validator-visible-8",
+            "status": "ok",
+            "value": "3"
+          },
+          "actual": {
+            "id": "validator-visible-8",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-9",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "7992739871"
+          },
+          "expected": {
+            "id": "validator-visible-9",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-9",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-10",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "79927398713"
+          },
+          "expected": {
+            "id": "validator-visible-10",
+            "status": "ok",
+            "value": "8"
+          },
+          "actual": {
+            "id": "validator-visible-10",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-11",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "79927398713"
+          },
+          "expected": {
+            "id": "validator-visible-11",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-visible-11",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-12",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "79927398714"
+          },
+          "expected": {
+            "id": "validator-visible-12",
+            "status": "ok",
+            "value": "6"
+          },
+          "actual": {
+            "id": "validator-visible-12",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-13",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "79927398714"
+          },
+          "expected": {
+            "id": "validator-visible-13",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-13",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-14",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "1"
+          },
+          "expected": {
+            "id": "validator-visible-14",
+            "status": "ok",
+            "value": "8"
+          },
+          "actual": {
+            "id": "validator-visible-14",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-15",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "1"
+          },
+          "expected": {
+            "id": "validator-visible-15",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-15",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-16",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "18"
+          },
+          "expected": {
+            "id": "validator-visible-16",
+            "status": "ok",
+            "value": "2"
+          },
+          "actual": {
+            "id": "validator-visible-16",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-17",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "18"
+          },
+          "expected": {
+            "id": "validator-visible-17",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-visible-17",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-18",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "12a"
+          },
+          "expected": {
+            "id": "validator-visible-18",
+            "status": "exception",
+            "type": "CheckDigitException"
+          },
+          "actual": {
+            "id": "validator-visible-18",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-19",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "12a"
+          },
+          "expected": {
+            "id": "validator-visible-19",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-19",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-22",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff11\uff12"
+          },
+          "expected": {
+            "id": "validator-visible-22",
+            "status": "ok",
+            "value": "5"
+          },
+          "actual": {
+            "id": "validator-visible-22",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-23",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\uff11\uff12"
+          },
+          "expected": {
+            "id": "validator-visible-23",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-23",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-24",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0661\u0662"
+          },
+          "expected": {
+            "id": "validator-visible-24",
+            "status": "ok",
+            "value": "5"
+          },
+          "actual": {
+            "id": "validator-visible-24",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 80, in run\n  File \"candidate.py\", line 62, in calculate\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "validator-visible-25",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u0661\u0662"
+          },
+          "expected": {
+            "id": "validator-visible-25",
+            "status": "ok",
+            "value": false
+          },
+          "actual": {
+            "id": "validator-visible-25",
+            "status": "exception",
+            "type": "AttributeError",
+            "diagnostic": {
+              "message": "module '_cpython_unicodedata' does not have 'decimal' attribute",
+              "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 82, in run\n  File \"candidate.py\", line 71, in is_valid\n  File \"candidate.py\", line 52, in calculate_modulus\n  File \"candidate.py\", line 37, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'decimal' attribute\n"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "selected_sha256": "c1c2ca2c5544b7f6c6c4e19c987c142a939d59f28a52e87d65f453a45be30241",
+  "regression": {
+    "cpython": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    },
+    "graal": {
+      "status": "completed",
+      "passed": 126,
+      "total": 130,
+      "passed_ids": [
+        "validator-holdout-0",
+        "validator-holdout-1",
+        "validator-holdout-2",
+        "validator-holdout-3",
+        "validator-holdout-4",
+        "validator-holdout-5",
+        "validator-holdout-6",
+        "validator-holdout-7",
+        "validator-holdout-8",
+        "validator-holdout-9",
+        "validator-holdout-10",
+        "validator-holdout-11",
+        "validator-holdout-12",
+        "validator-holdout-13",
+        "validator-holdout-14",
+        "validator-holdout-15",
+        "validator-holdout-16",
+        "validator-holdout-17",
+        "validator-holdout-18",
+        "validator-holdout-19",
+        "validator-holdout-20",
+        "validator-holdout-21",
+        "validator-holdout-22",
+        "validator-holdout-23",
+        "validator-holdout-24",
+        "validator-holdout-25",
+        "validator-holdout-26",
+        "validator-holdout-27",
+        "validator-holdout-28",
+        "validator-holdout-29",
+        "validator-holdout-30",
+        "validator-holdout-31",
+        "validator-holdout-32",
+        "validator-holdout-33",
+        "validator-holdout-34",
+        "validator-holdout-35",
+        "validator-holdout-36",
+        "validator-holdout-37",
+        "validator-holdout-38",
+        "validator-holdout-39",
+        "validator-holdout-40",
+        "validator-holdout-41",
+        "validator-holdout-42",
+        "validator-holdout-43",
+        "validator-holdout-44",
+        "validator-holdout-45",
+        "validator-holdout-46",
+        "validator-holdout-47",
+        "validator-holdout-48",
+        "validator-holdout-49",
+        "validator-holdout-50",
+        "validator-holdout-51",
+        "validator-holdout-52",
+        "validator-holdout-53",
+        "validator-holdout-54",
+        "validator-holdout-55",
+        "validator-holdout-56",
+        "validator-holdout-57",
+        "validator-holdout-58",
+        "validator-holdout-59",
+        "validator-holdout-60",
+        "validator-holdout-61",
+        "validator-holdout-62",
+        "validator-holdout-63",
+        "validator-holdout-64",
+        "validator-holdout-65",
+        "validator-holdout-66",
+        "validator-holdout-67",
+        "validator-holdout-68",
+        "validator-holdout-69",
+        "validator-holdout-70",
+        "validator-holdout-71",
+        "validator-holdout-72",
+        "validator-holdout-73",
+        "validator-holdout-74",
+        "validator-holdout-75",
+        "validator-holdout-76",
+        "validator-holdout-77",
+        "validator-holdout-78",
+        "validator-holdout-79",
+        "validator-holdout-80",
+        "validator-holdout-81",
+        "validator-holdout-82",
+        "validator-holdout-83",
+        "validator-holdout-84",
+        "validator-holdout-85",
+        "validator-holdout-86",
+        "validator-holdout-87",
+        "validator-holdout-88",
+        "validator-holdout-89",
+        "validator-holdout-90",
+        "validator-holdout-91",
+        "validator-holdout-92",
+        "validator-holdout-93",
+        "validator-holdout-94",
+        "validator-holdout-95",
+        "validator-holdout-96",
+        "validator-holdout-97",
+        "validator-holdout-98",
+        "validator-holdout-99",
+        "validator-holdout-100",
+        "validator-holdout-101",
+        "validator-holdout-102",
+        "validator-holdout-103",
+        "validator-holdout-104",
+        "validator-holdout-105",
+        "validator-holdout-106",
+        "validator-holdout-107",
+        "validator-holdout-108",
+        "validator-holdout-109",
+        "validator-holdout-110",
+        "validator-holdout-111",
+        "validator-holdout-115",
+        "validator-holdout-117",
+        "validator-holdout-118",
+        "validator-holdout-119",
+        "validator-holdout-120",
+        "validator-holdout-121",
+        "validator-holdout-122",
+        "validator-holdout-123",
+        "validator-holdout-124",
+        "validator-holdout-125",
+        "validator-holdout-126",
+        "validator-holdout-127",
+        "validator-holdout-128",
+        "validator-holdout-129"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "validator-holdout-112",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-112",
+            "status": "ok",
+            "value": "9"
+          },
+          "actual": {
+            "id": "validator-holdout-112",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-113",
+            "task": "commons_validator_luhn",
+            "operation": "isValid",
+            "data": "\u096c\u096d"
+          },
+          "expected": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": true
+          },
+          "actual": {
+            "id": "validator-holdout-113",
+            "status": "ok",
+            "value": false
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-114",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\uff14\uff19"
+          },
+          "expected": {
+            "id": "validator-holdout-114",
+            "status": "ok",
+            "value": "7"
+          },
+          "actual": {
+            "id": "validator-holdout-114",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        },
+        {
+          "case": {
+            "id": "validator-holdout-116",
+            "task": "commons_validator_luhn",
+            "operation": "calculate",
+            "data": "\u0664\u0665\u0666"
+          },
+          "expected": {
+            "id": "validator-holdout-116",
+            "status": "ok",
+            "value": "4"
+          },
+          "actual": {
+            "id": "validator-holdout-116",
+            "status": "exception",
+            "type": "CheckDigitException"
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "limit_usd": 0.1,
+    "accounted_usd": 0.029515875,
+    "input_usd_per_million": 1.5,
+    "output_usd_per_million": 9.0,
+    "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+    "calls": [
+      {
+        "reserved_usd": 0.0635115,
+        "accounted_usd": 0.029515875,
+        "usage_known": true,
+        "usage": {
+          "input_tokens": 2753,
+          "output_tokens": 2706,
+          "thinking_tokens": 1581,
+          "provider_usage": {
+            "promptTokenCount": 2753,
+            "candidatesTokenCount": 1125,
+            "totalTokenCount": 5459,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 2753
+              }
+            ],
+            "thoughtsTokenCount": 1581,
+            "serviceTier": "standard"
+          }
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 31.602
+}
