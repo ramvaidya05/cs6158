@@ -1,0 +1,21 @@
+{
+  "diagnosis/DecimalContract.java": "c4ed0aff51365e9d1c62b20074cc98425a755ba8a5c8ec03e132734474adf83a",
+  "diagnosis/capability-probe.py": "828baf14bb7cad2c9adcbfa49b3675747f09c4ffa6170411b0283dc116bacc27",
+  "diagnosis/cpython/execution.json": "2c1799cd193542001bf5bc8dbcc8f911be6c6531030607888ee9c0a0b5185247",
+  "diagnosis/cpython/inputs.json": "20027df65dce237fc0cd915ffee88bb484acb25e4b0420638e113c362056d40e",
+  "diagnosis/diagnosis.json": "c261c0e093d891e47f323ddaccedbaddaf9c0ce9dcc2014633fb5ee6380487de",
+  "diagnosis/graal/execution.json": "ea66089e7f5ccb7ee805d3ecd0f2087c53f6cd18c3938cbea18affd5d2914fbc",
+  "diagnosis/graal/inputs.json": "20027df65dce237fc0cd915ffee88bb484acb25e4b0420638e113c362056d40e",
+  "diagnosis/java-character-domain.json": "530fa53fcfdfc61177a0a1239ae95f9e9704a2a11ed01de588e983566c40f760",
+  "frozen-suite.json": "c97f72931cd6f51172f3f68bb877d17bdcaebc7b4181c78d0bca264d437bc21d",
+  "oracle/holdout/execution.json": "f0dfcdf735f32be7732b08dfd7416ba93c042508757129ce91213c784ab42632",
+  "oracle/holdout/inputs.json": "5e42aa696d7d910bf8e6486ed6cb51cb9aa9e583d8a01a3c2449c3e01b5b221e",
+  "oracle/holdout-repeat/execution.json": "75b3c2be5965897c6f90f488b7787efe44e8fb95d6dd29f6c2cbeaaede70c5d5",
+  "oracle/holdout-repeat/inputs.json": "5e42aa696d7d910bf8e6486ed6cb51cb9aa9e583d8a01a3c2449c3e01b5b221e",
+  "oracle/visible/execution.json": "a6c6f45b6251bc43208c1fa9f21c83742d90e8ff33428074394f900b6a240181",
+  "oracle/visible/inputs.json": "622861becc28f1b84cbe3dd7527d7b8078704daeb992ff15fb52494c5b8d505c",
+  "oracle/visible-repeat/execution.json": "286f252fbe26ba62a4d5bb9e0d4ed7ad0b5eb8937c6205283b79b05d647a44af",
+  "oracle/visible-repeat/inputs.json": "622861becc28f1b84cbe3dd7527d7b8078704daeb992ff15fb52494c5b8d505c",
+  "plan.json": "150b42bd7c45d86cc7c707db104f1746b2a624cef6adc69efdb058d38d0aada8",
+  "summary.json": "3008dc1a08a48a20d0fd208e3d717489bbfc18ad77f109c5e4802c9793c88a59"
+}

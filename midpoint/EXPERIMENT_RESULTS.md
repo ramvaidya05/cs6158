@@ -1,3 +1,10 @@
+## November 22 — four-arm attempt stopped on incomplete output
+
+The diagnosis-versus-semantics factorial protocol was prepared and attempted.
+The third request hit the output cap; the failure-stop policy ended the batch.
+**No complete comparisons or new accuracy results.** Three calls used 13,893
+tokens and $0.082835625 accounted. [Protocol and evidence](FACTORIAL_DIAGNOSIS_PROTOCOL.md).
+
 ## November 22 — paired Validator diagnosis study
 
 Three fresh paired trials: **0/3 ordinary repair versus 2/3 diagnosis-guided repair

@@ -1,0 +1,78 @@
+{
+  "code": "class CheckDigitException(Exception):\n    pass\n\n\ndef _is_blank_or_null(code):\n    if code is None:\n        return True\n    return len(code.strip()) == 0\n\n\nclass LuhnCheckDigit:\n    POSITION_WEIGHT = [2, 1]\n    MODULUS = 10\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted_val = char_value * weight\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\n\n    def to_int(self, character: str, left_pos: int, right_pos: int) -> int:\n        if character.isdigit():\n            return int(character)\n        raise CheckDigitException(f\"Invalid Character[{left_pos}] = '{character}'\")\n\n    def to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise CheckDigitException(f\"Invalid Check Digit Value ={char_value}\")\n\n    def calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\n        total = 0\n        code_len = len(code)\n        for i in range(code_len):\n            lth = code_len + (0 if includes_check_digit else 1)\n            left_pos = i + 1\n            right_pos = lth - i\n            char_val = self.to_int(code[i], left_pos, right_pos)\n            total += self.weighted_value(char_val, left_pos, right_pos)\n        if total == 0:\n            raise CheckDigitException(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str) -> str:\n        if _is_blank_or_null(code):\n            raise CheckDigitException(\"Code is missing\")\n        modulus_result = self.calculate_modulus(code, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self.to_check_digit(char_value)\n\n    def is_valid(self, code: str) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            modulus_result = self.calculate_modulus(code, True)\n            return modulus_result == 0\n        except CheckDigitException:\n            return False\n\n\ndef run(operation: str, data: str | None):\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        try:\n            return luhn.calculate(data)\n        except CheckDigitException as e:\n            raise ValueError(str(e)) from e\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translates the LuhnCheckDigit and inherited ModulusCheckDigit Java behavior into Python. GenericValidator.isBlankOrNull is mapped to checking for None or empty string after strip(). CheckDigitException raises ValueError in `run` when calculating as requested.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "DZ4Da92yGYebo_UP6_HrqQE",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 836,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 2033,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 3.581
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"class CheckDigitException(Exception):\\n    pass\\n\\n\\ndef _is_blank_or_null(code):\\n    if code is None:\\n        return True\\n    return len(code.strip()) == 0\\n\\n\\nclass LuhnCheckDigit:\\n    POSITION_WEIGHT = [2, 1]\\n    MODULUS = 10\\n\\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\\n        weight = self.POSITION_WEIGHT[right_pos % 2]\\n        weighted_val = char_value * weight\\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\\n\\n    def to_int(self, character: str, left_pos: int, right_pos: int) -> int:\\n        if character.isdigit():\\n            return int(character)\\n        raise CheckDigitException(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\n    def to_check_digit(self, char_value: int) -> str:\\n        if 0 <= char_value <= 9:\\n            return str(char_value)\\n        raise CheckDigitException(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\n    def calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\\n        total = 0\\n        code_len = len(code)\\n        for i in range(code_len):\\n            lth = code_len + (0 if includes_check_digit else 1)\\n            left_pos = i + 1\\n            right_pos = lth - i\\n            char_val = self.to_int(code[i], left_pos, right_pos)\\n            total += self.weighted_value(char_val, left_pos, right_pos)\\n        if total == 0:\\n            raise CheckDigitException(\\\"Invalid code, sum is zero\\\")\\n        return total % self.MODULUS\\n\\n    def calculate(self, code: str) -> str:\\n        if _is_blank_or_null(code):\\n            raise CheckDigitException(\\\"Code is missing\\\")\\n        modulus_result = self.calculate_modulus(code, False)\\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\\n        return self.to_check_digit(char_value)\\n\\n    def is_valid(self, code: str) -> bool:\\n        if _is_blank_or_null(code):\\n            return False\\n        try:\\n            modulus_result = self.calculate_modulus(code, True)\\n            return modulus_result == 0\\n        except CheckDigitException:\\n            return False\\n\\n\\ndef run(operation: str, data: str | None):\\n    luhn = LuhnCheckDigit()\\n    if operation == \\\"calculate\\\":\\n        try:\\n            return luhn.calculate(data)\\n        except CheckDigitException as e:\\n            raise ValueError(str(e)) from e\\n    elif operation == \\\"isValid\\\":\\n        return luhn.is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Translates the LuhnCheckDigit and inherited ModulusCheckDigit Java behavior into Python. GenericValidator.isBlankOrNull is mapped to checking for None or empty string after strip(). CheckDigitException raises ValueError in `run` when calculating as requested.\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfROJW3gyaPjXOHNrgveDnUebMgK2CbstX7ysWsUPyuTR6XgbLSM3RT95xT4oviJxNYtGTgEn/Y7KxfPh+awsZmrnSuDB0aMBVwWQZcRkT8rVQ16iAnTan5NJzBdVmkzywHa+jJt9KJdUWbxMmGOWw3bR/lYnf9nP0fWip9evhoEktNZd2oSSreTpiaCT2C+dXQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1197,
+      "candidatesTokenCount": 836,
+      "totalTokenCount": 2033,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1197
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "DZ4Da92yGYebo_UP6_HrqQE",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 836,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 2033,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

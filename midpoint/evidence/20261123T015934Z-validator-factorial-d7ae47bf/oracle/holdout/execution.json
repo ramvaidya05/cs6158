@@ -1,0 +1,704 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "factorial-held-0-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-0-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-1-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-1-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-2-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-2-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-3-calculate",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "factorial-held-3-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-4-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-4-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-5-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-5-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-6-calculate",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "factorial-held-6-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-7-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-7-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-8-calculate",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "factorial-held-8-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-9-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-9-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-10-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-10-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-11-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-11-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-12-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-12-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-13-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-13-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-14-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-14-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-15-calculate",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "factorial-held-15-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-16-calculate",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "factorial-held-16-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-17-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-17-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-18-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-18-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-19-calculate",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "factorial-held-19-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-20-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-20-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-21-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-21-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-22-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-22-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-23-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-23-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-24-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-24-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-25-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-25-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-26-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-26-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-27-calculate",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "factorial-held-27-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-28-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-28-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-29-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-29-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-30-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-30-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-31-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-31-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-32-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-32-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-33-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-33-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-34-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-34-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-35-calculate",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "factorial-held-35-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-36-calculate",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "factorial-held-36-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-37-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-37-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-38-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-38-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-39-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-39-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-40-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-40-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-41-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-41-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-42-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-42-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-43-calculate",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "factorial-held-43-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-44-calculate",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "factorial-held-44-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-45-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-45-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-46-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-46-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-47-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-47-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-48-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-48-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-49-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-49-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-50-calculate",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "factorial-held-50-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-51-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-51-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-52-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-52-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-53-calculate",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "factorial-held-53-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-54-calculate",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "factorial-held-54-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-55-calculate",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "factorial-held-55-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-56-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-56-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-57-calculate",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "factorial-held-57-isValid",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "factorial-held-58-calculate",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "factorial-held-58-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-59-calculate",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "factorial-held-59-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-60-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-60-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-61-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-61-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-62-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-62-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-63-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-63-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-64-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-64-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-65-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-65-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-66-calculate",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "factorial-held-66-isValid",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "factorial-held-67-calculate",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "factorial-held-67-isValid",
+      "status": "ok",
+      "value": false
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/ram/cs6158/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/ram/cs6158/midpoint/java/target/classes:/Users/ram/cs6158/midpoint/.cache/m2/commons-validator/commons-validator/1.9.0/commons-validator-1.9.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-logging/commons-logging/1.3.2/commons-logging-1.3.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1.jar:/Users/ram/cs6158/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/ram/cs6158/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ram/cs6158/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.134665,
+    "stdout": "[{\"id\":\"factorial-held-0-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-0-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-1-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-1-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-2-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-2-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-3-calculate\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"factorial-held-3-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-4-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-4-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-5-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-5-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-6-calculate\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"factorial-held-6-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-7-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-7-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-8-calculate\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"factorial-held-8-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-9-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-9-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-10-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-10-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-11-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-11-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-12-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-12-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-13-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-13-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-14-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-14-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-15-calculate\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"factorial-held-15-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-16-calculate\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"factorial-held-16-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-17-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-17-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-18-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-18-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-19-calculate\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"factorial-held-19-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-20-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-20-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-21-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-21-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-22-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-22-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-23-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-23-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-24-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-24-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-25-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-25-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-26-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-26-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-27-calculate\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"factorial-held-27-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-28-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-28-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-29-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-29-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-30-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-30-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-31-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-31-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-32-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-32-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-33-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-33-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-34-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-34-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-35-calculate\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"factorial-held-35-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-36-calculate\",\"status\":\"ok\",\"value\":\"8\"},{\"id\":\"factorial-held-36-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-37-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-37-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-38-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-38-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-39-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-39-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-40-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-40-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-41-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-41-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-42-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-42-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-43-calculate\",\"status\":\"ok\",\"value\":\"3\"},{\"id\":\"factorial-held-43-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-44-calculate\",\"status\":\"ok\",\"value\":\"9\"},{\"id\":\"factorial-held-44-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-45-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-45-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-46-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-46-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-47-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-47-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-48-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-48-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-49-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-49-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-50-calculate\",\"status\":\"ok\",\"value\":\"0\"},{\"id\":\"factorial-held-50-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-51-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-51-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-52-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-52-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-53-calculate\",\"status\":\"ok\",\"value\":\"5\"},{\"id\":\"factorial-held-53-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-54-calculate\",\"status\":\"ok\",\"value\":\"7\"},{\"id\":\"factorial-held-54-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-55-calculate\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"factorial-held-55-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-56-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-56-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-57-calculate\",\"status\":\"ok\",\"value\":\"4\"},{\"id\":\"factorial-held-57-isValid\",\"status\":\"ok\",\"value\":true},{\"id\":\"factorial-held-58-calculate\",\"status\":\"ok\",\"value\":\"6\"},{\"id\":\"factorial-held-58-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-59-calculate\",\"status\":\"ok\",\"value\":\"2\"},{\"id\":\"factorial-held-59-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-60-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-60-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-61-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-61-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-62-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-62-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-63-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-63-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-64-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-64-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-65-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-65-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-66-calculate\",\"status\":\"exception\",\"type\":\"CheckDigitException\"},{\"id\":\"factorial-held-66-isValid\",\"status\":\"ok\",\"value\":false},{\"id\":\"factorial-held-67-calculate\",\"status\":\"ok\",\"value\":\"1\"},{\"id\":\"factorial-held-67-isValid\",\"status\":\"ok\",\"value\":false}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

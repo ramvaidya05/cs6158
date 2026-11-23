@@ -23,13 +23,13 @@ Translate selected Java library behavior into Python using an LLM, then verify a
 
 - **Fresh paired Validator study:** ordinary repair **0/3** versus diagnosis-guided repair **2/3 full-task passes**, with shared initial candidates and a fresh 136-case holdout. No manual candidate edits. Third diagnosis candidate failed three GraalPy surrogate cases. Nine calls, **35,225 tokens**, **$0.183** accounted. This supports the combined runtime/semantic guidance treatment on one small task, not general superiority. [Evidence](midpoint/PAIRED_DIAGNOSIS_OBSERVATIONS.md).
 
-CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV, Codec and Validator, **141 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
+CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV, Codec and Validator, **145 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
 
 ## What the evidence supports—and what remains
 
 Execution-guided repair helped failing translations in these small studies. Retry memory has **not shown an accuracy advantage**. Healthy CLI/CSV studies required no environment actions; separate controlled fault tests demonstrate only the implemented recovery path. Three trials and correlated checks in two runtimes do not establish broad statistical superiority. Passing these suites does not prove full semantic equivalence.
 
-**Next:** replicate paired diagnosis results on fresh trials/subjects, separate semantic guidance from capability diagnosis, and evaluate controlled infrastructure recovery. Close CLI absent-option coverage gaps with fresh holdout cases. Multi-module translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
+**Next:** resume the four-arm diagnosis/semantic-guidance question under a revised predeclared output policy. Its first attempt stopped on incomplete model output (three calls, $0.083; no complete comparisons). [Protocol and failed evidence](midpoint/FACTORIAL_DIAGNOSIS_PROTOCOL.md). Replicate on other subjects and evaluate controlled infrastructure recovery. Close CLI absent-option coverage gaps with fresh holdout cases. Multi-module translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
 
 ## Details only when needed
 

@@ -1,0 +1,22 @@
+{
+  "trials": 4,
+  "model": "gemini-3.5-flash",
+  "thinking": "low",
+  "max_output_tokens_per_call": 4096,
+  "max_calls": 20,
+  "usd_cap": 1.6,
+  "per_call_cap": 0.08,
+  "arms": [
+    "code_only",
+    "diagnosis_only",
+    "semantics_only",
+    "both"
+  ],
+  "max_repairs_per_arm": 1,
+  "seed": 2026112202,
+  "primary_endpoint": "all visible and holdout cases pass in both runtimes",
+  "selection": "visible-only, no per-case regressions in either runtime",
+  "holdout_evaluation": "after all trial selections are frozen",
+  "diagnosis": "capability probe plus Java digit contract; no deterministic candidate edits",
+  "order": "rotating Latin square; each arm occupies each position once; shared initial candidate"
+}

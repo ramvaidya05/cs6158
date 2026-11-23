@@ -1,0 +1,68 @@
+{
+  "status": "failed",
+  "planned_trials": 4,
+  "completed_pairs": 0,
+  "incomplete_pairs": 1,
+  "arms": {
+    "code_only": {
+      "full_passes": 0,
+      "completed_trials": 0,
+      "holdout": {
+        "cpython": {
+          "passed": 0,
+          "total": 0
+        },
+        "graal": {
+          "passed": 0,
+          "total": 0
+        }
+      }
+    },
+    "diagnosis_only": {
+      "full_passes": 0,
+      "completed_trials": 0,
+      "holdout": {
+        "cpython": {
+          "passed": 0,
+          "total": 0
+        },
+        "graal": {
+          "passed": 0,
+          "total": 0
+        }
+      }
+    },
+    "semantics_only": {
+      "full_passes": 0,
+      "completed_trials": 0,
+      "holdout": {
+        "cpython": {
+          "passed": 0,
+          "total": 0
+        },
+        "graal": {
+          "passed": 0,
+          "total": 0
+        }
+      }
+    },
+    "both": {
+      "full_passes": 0,
+      "completed_trials": 0,
+      "holdout": {
+        "cpython": {
+          "passed": 0,
+          "total": 0
+        },
+        "graal": {
+          "passed": 0,
+          "total": 0
+        }
+      }
+    }
+  },
+  "contrasts": [],
+  "accounted_usd": 0.082835625,
+  "tokens": 13893,
+  "elapsed_seconds": 53.689
+}

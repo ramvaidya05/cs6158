@@ -1,0 +1,985 @@
+{
+  "status": "failed",
+  "trials": [
+    {
+      "trial": 0,
+      "arms": {
+        "code_only": {
+          "selected": "initial/candidate.py",
+          "accepted": false,
+          "repair_calls": 1,
+          "proposed_visible": {
+            "cpython": {
+              "status": "completed",
+              "passed": 30,
+              "total": 30,
+              "passed_ids": [
+                "validator-visible-0",
+                "validator-visible-1",
+                "validator-visible-2",
+                "validator-visible-3",
+                "validator-visible-4",
+                "validator-visible-5",
+                "validator-visible-6",
+                "validator-visible-7",
+                "validator-visible-8",
+                "validator-visible-9",
+                "validator-visible-10",
+                "validator-visible-11",
+                "validator-visible-12",
+                "validator-visible-13",
+                "validator-visible-14",
+                "validator-visible-15",
+                "validator-visible-16",
+                "validator-visible-17",
+                "validator-visible-18",
+                "validator-visible-19",
+                "validator-visible-20",
+                "validator-visible-21",
+                "validator-visible-22",
+                "validator-visible-23",
+                "validator-visible-24",
+                "validator-visible-25",
+                "validator-visible-26",
+                "validator-visible-27",
+                "validator-visible-28",
+                "validator-visible-29"
+              ],
+              "failures": []
+            },
+            "graal": {
+              "status": "completed",
+              "passed": 10,
+              "total": 30,
+              "passed_ids": [
+                "validator-visible-0",
+                "validator-visible-1",
+                "validator-visible-2",
+                "validator-visible-3",
+                "validator-visible-20",
+                "validator-visible-21",
+                "validator-visible-26",
+                "validator-visible-27",
+                "validator-visible-28",
+                "validator-visible-29"
+              ],
+              "failures": [
+                {
+                  "case": {
+                    "id": "validator-visible-4",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "0"
+                  },
+                  "expected": {
+                    "id": "validator-visible-4",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  },
+                  "actual": {
+                    "id": "validator-visible-4",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-5",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "0"
+                  },
+                  "expected": {
+                    "id": "validator-visible-5",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-5",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-6",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "0000"
+                  },
+                  "expected": {
+                    "id": "validator-visible-6",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  },
+                  "actual": {
+                    "id": "validator-visible-6",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-7",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "0000"
+                  },
+                  "expected": {
+                    "id": "validator-visible-7",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-7",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-8",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "7992739871"
+                  },
+                  "expected": {
+                    "id": "validator-visible-8",
+                    "status": "ok",
+                    "value": "3"
+                  },
+                  "actual": {
+                    "id": "validator-visible-8",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-9",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "7992739871"
+                  },
+                  "expected": {
+                    "id": "validator-visible-9",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-9",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-10",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "79927398713"
+                  },
+                  "expected": {
+                    "id": "validator-visible-10",
+                    "status": "ok",
+                    "value": "8"
+                  },
+                  "actual": {
+                    "id": "validator-visible-10",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-11",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "79927398713"
+                  },
+                  "expected": {
+                    "id": "validator-visible-11",
+                    "status": "ok",
+                    "value": true
+                  },
+                  "actual": {
+                    "id": "validator-visible-11",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-12",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "79927398714"
+                  },
+                  "expected": {
+                    "id": "validator-visible-12",
+                    "status": "ok",
+                    "value": "6"
+                  },
+                  "actual": {
+                    "id": "validator-visible-12",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-13",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "79927398714"
+                  },
+                  "expected": {
+                    "id": "validator-visible-13",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-13",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-14",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "1"
+                  },
+                  "expected": {
+                    "id": "validator-visible-14",
+                    "status": "ok",
+                    "value": "8"
+                  },
+                  "actual": {
+                    "id": "validator-visible-14",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-15",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "1"
+                  },
+                  "expected": {
+                    "id": "validator-visible-15",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-15",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-16",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "18"
+                  },
+                  "expected": {
+                    "id": "validator-visible-16",
+                    "status": "ok",
+                    "value": "2"
+                  },
+                  "actual": {
+                    "id": "validator-visible-16",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-17",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "18"
+                  },
+                  "expected": {
+                    "id": "validator-visible-17",
+                    "status": "ok",
+                    "value": true
+                  },
+                  "actual": {
+                    "id": "validator-visible-17",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-18",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "12a"
+                  },
+                  "expected": {
+                    "id": "validator-visible-18",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  },
+                  "actual": {
+                    "id": "validator-visible-18",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-19",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "12a"
+                  },
+                  "expected": {
+                    "id": "validator-visible-19",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-19",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-22",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "\uff11\uff12"
+                  },
+                  "expected": {
+                    "id": "validator-visible-22",
+                    "status": "ok",
+                    "value": "5"
+                  },
+                  "actual": {
+                    "id": "validator-visible-22",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-23",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "\uff11\uff12"
+                  },
+                  "expected": {
+                    "id": "validator-visible-23",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-23",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-24",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "\u0661\u0662"
+                  },
+                  "expected": {
+                    "id": "validator-visible-24",
+                    "status": "ok",
+                    "value": "5"
+                  },
+                  "actual": {
+                    "id": "validator-visible-24",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 67, in run\n  File \"candidate.py\", line 50, in calculate\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-25",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "\u0661\u0662"
+                  },
+                  "expected": {
+                    "id": "validator-visible-25",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-25",
+                    "status": "exception",
+                    "type": "AttributeError",
+                    "diagnostic": {
+                      "message": "module '_cpython_unicodedata' does not have 'digit' attribute",
+                      "traceback": "Traceback (most recent call last):\n  File \"Unnamed\", line 38, in evaluate_candidate\n  File \"candidate.py\", line 71, in run\n  File \"candidate.py\", line 58, in is_valid\n  File \"candidate.py\", line 41, in calculate_modulus\n  File \"candidate.py\", line 24, in to_int\nAttributeError: module '_cpython_unicodedata' does not have 'digit' attribute\n"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "selected_visible": {
+            "cpython": {
+              "status": "completed",
+              "passed": 28,
+              "total": 30,
+              "passed_ids": [
+                "validator-visible-0",
+                "validator-visible-1",
+                "validator-visible-2",
+                "validator-visible-3",
+                "validator-visible-4",
+                "validator-visible-5",
+                "validator-visible-6",
+                "validator-visible-7",
+                "validator-visible-8",
+                "validator-visible-9",
+                "validator-visible-10",
+                "validator-visible-11",
+                "validator-visible-12",
+                "validator-visible-13",
+                "validator-visible-14",
+                "validator-visible-15",
+                "validator-visible-16",
+                "validator-visible-17",
+                "validator-visible-18",
+                "validator-visible-19",
+                "validator-visible-20",
+                "validator-visible-21",
+                "validator-visible-22",
+                "validator-visible-23",
+                "validator-visible-24",
+                "validator-visible-25",
+                "validator-visible-26",
+                "validator-visible-29"
+              ],
+              "failures": [
+                {
+                  "case": {
+                    "id": "validator-visible-27",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "\u00b23"
+                  },
+                  "expected": {
+                    "id": "validator-visible-27",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-27",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-28",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "\ud835\udfd92"
+                  },
+                  "expected": {
+                    "id": "validator-visible-28",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  },
+                  "actual": {
+                    "id": "validator-visible-28",
+                    "status": "ok",
+                    "value": "5"
+                  }
+                }
+              ]
+            },
+            "graal": {
+              "status": "completed",
+              "passed": 28,
+              "total": 30,
+              "passed_ids": [
+                "validator-visible-0",
+                "validator-visible-1",
+                "validator-visible-2",
+                "validator-visible-3",
+                "validator-visible-4",
+                "validator-visible-5",
+                "validator-visible-6",
+                "validator-visible-7",
+                "validator-visible-8",
+                "validator-visible-9",
+                "validator-visible-10",
+                "validator-visible-11",
+                "validator-visible-12",
+                "validator-visible-13",
+                "validator-visible-14",
+                "validator-visible-15",
+                "validator-visible-16",
+                "validator-visible-17",
+                "validator-visible-18",
+                "validator-visible-19",
+                "validator-visible-20",
+                "validator-visible-21",
+                "validator-visible-22",
+                "validator-visible-23",
+                "validator-visible-24",
+                "validator-visible-25",
+                "validator-visible-26",
+                "validator-visible-29"
+              ],
+              "failures": [
+                {
+                  "case": {
+                    "id": "validator-visible-27",
+                    "task": "commons_validator_luhn",
+                    "operation": "isValid",
+                    "data": "\u00b23"
+                  },
+                  "expected": {
+                    "id": "validator-visible-27",
+                    "status": "ok",
+                    "value": false
+                  },
+                  "actual": {
+                    "id": "validator-visible-27",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  }
+                },
+                {
+                  "case": {
+                    "id": "validator-visible-28",
+                    "task": "commons_validator_luhn",
+                    "operation": "calculate",
+                    "data": "\ud835\udfd92"
+                  },
+                  "expected": {
+                    "id": "validator-visible-28",
+                    "status": "exception",
+                    "type": "CheckDigitException"
+                  },
+                  "actual": {
+                    "id": "validator-visible-28",
+                    "status": "ok",
+                    "value": "5"
+                  }
+                }
+              ]
+            }
+          },
+          "selected_sha256": "979d9b069f19f00521341c38601caf3e7b155b323cb2a66ddf95bb6b3afee853"
+        },
+        "diagnosis_only": {
+          "selected": "initial/candidate.py",
+          "accepted": false,
+          "repair_calls": 1
+        }
+      },
+      "calls": [
+        {
+          "label": "initial",
+          "metadata": {
+            "backend": "gemini_generate_content",
+            "model": "gemini-3.5-flash",
+            "reasoning_effort": "low",
+            "provenance": "live_model",
+            "resolved_model": "gemini-3.6-flash",
+            "response_id": "DZ4Da92yGYebo_UP6_HrqQE",
+            "usage": {
+              "input_tokens": 1197,
+              "output_tokens": 836,
+              "thinking_tokens": 0,
+              "provider_usage": {
+                "promptTokenCount": 1197,
+                "candidatesTokenCount": 836,
+                "totalTokenCount": 2033,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 1197
+                  }
+                ],
+                "serviceTier": "standard"
+              }
+            },
+            "elapsed_seconds": 3.581
+          }
+        },
+        {
+          "label": "code_only",
+          "metadata": {
+            "backend": "gemini_generate_content",
+            "model": "gemini-3.5-flash",
+            "reasoning_effort": "low",
+            "provenance": "live_model",
+            "resolved_model": "gemini-3.6-flash",
+            "response_id": "FZ4Da9z-OO7U-sAP1ufwoQ0",
+            "usage": {
+              "input_tokens": 2320,
+              "output_tokens": 3056,
+              "thinking_tokens": 1957,
+              "provider_usage": {
+                "promptTokenCount": 2320,
+                "candidatesTokenCount": 1099,
+                "totalTokenCount": 5376,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 2320
+                  }
+                ],
+                "thoughtsTokenCount": 1957,
+                "serviceTier": "standard"
+              }
+            },
+            "elapsed_seconds": 13.204
+          }
+        },
+        {
+          "label": "diagnosis_only"
+        }
+      ],
+      "baseline_visible": {
+        "cpython": {
+          "status": "completed",
+          "passed": 28,
+          "total": 30,
+          "passed_ids": [
+            "validator-visible-0",
+            "validator-visible-1",
+            "validator-visible-2",
+            "validator-visible-3",
+            "validator-visible-4",
+            "validator-visible-5",
+            "validator-visible-6",
+            "validator-visible-7",
+            "validator-visible-8",
+            "validator-visible-9",
+            "validator-visible-10",
+            "validator-visible-11",
+            "validator-visible-12",
+            "validator-visible-13",
+            "validator-visible-14",
+            "validator-visible-15",
+            "validator-visible-16",
+            "validator-visible-17",
+            "validator-visible-18",
+            "validator-visible-19",
+            "validator-visible-20",
+            "validator-visible-21",
+            "validator-visible-22",
+            "validator-visible-23",
+            "validator-visible-24",
+            "validator-visible-25",
+            "validator-visible-26",
+            "validator-visible-29"
+          ],
+          "failures": [
+            {
+              "case": {
+                "id": "validator-visible-27",
+                "task": "commons_validator_luhn",
+                "operation": "isValid",
+                "data": "\u00b23"
+              },
+              "expected": {
+                "id": "validator-visible-27",
+                "status": "ok",
+                "value": false
+              },
+              "actual": {
+                "id": "validator-visible-27",
+                "status": "exception",
+                "type": "CheckDigitException"
+              }
+            },
+            {
+              "case": {
+                "id": "validator-visible-28",
+                "task": "commons_validator_luhn",
+                "operation": "calculate",
+                "data": "\ud835\udfd92"
+              },
+              "expected": {
+                "id": "validator-visible-28",
+                "status": "exception",
+                "type": "CheckDigitException"
+              },
+              "actual": {
+                "id": "validator-visible-28",
+                "status": "ok",
+                "value": "5"
+              }
+            }
+          ]
+        },
+        "graal": {
+          "status": "completed",
+          "passed": 28,
+          "total": 30,
+          "passed_ids": [
+            "validator-visible-0",
+            "validator-visible-1",
+            "validator-visible-2",
+            "validator-visible-3",
+            "validator-visible-4",
+            "validator-visible-5",
+            "validator-visible-6",
+            "validator-visible-7",
+            "validator-visible-8",
+            "validator-visible-9",
+            "validator-visible-10",
+            "validator-visible-11",
+            "validator-visible-12",
+            "validator-visible-13",
+            "validator-visible-14",
+            "validator-visible-15",
+            "validator-visible-16",
+            "validator-visible-17",
+            "validator-visible-18",
+            "validator-visible-19",
+            "validator-visible-20",
+            "validator-visible-21",
+            "validator-visible-22",
+            "validator-visible-23",
+            "validator-visible-24",
+            "validator-visible-25",
+            "validator-visible-26",
+            "validator-visible-29"
+          ],
+          "failures": [
+            {
+              "case": {
+                "id": "validator-visible-27",
+                "task": "commons_validator_luhn",
+                "operation": "isValid",
+                "data": "\u00b23"
+              },
+              "expected": {
+                "id": "validator-visible-27",
+                "status": "ok",
+                "value": false
+              },
+              "actual": {
+                "id": "validator-visible-27",
+                "status": "exception",
+                "type": "CheckDigitException"
+              }
+            },
+            {
+              "case": {
+                "id": "validator-visible-28",
+                "task": "commons_validator_luhn",
+                "operation": "calculate",
+                "data": "\ud835\udfd92"
+              },
+              "expected": {
+                "id": "validator-visible-28",
+                "status": "exception",
+                "type": "CheckDigitException"
+              },
+              "actual": {
+                "id": "validator-visible-28",
+                "status": "ok",
+                "value": "5"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": "fresh paired live trials; source-runtime portability, not injected infrastructure recovery",
+  "suite_sha256": "c97f72931cd6f51172f3f68bb877d17bdcaebc7b4181c78d0bca264d437bc21d",
+  "error": {
+    "type": "BackendError",
+    "kind": "incomplete",
+    "message": "Model response not completed: MAX_TOKENS"
+  },
+  "budgets": [
+    {
+      "limit_usd": 0.08,
+      "accounted_usd": 0.009768375,
+      "input_usd_per_million": 1.5,
+      "output_usd_per_million": 9,
+      "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+      "calls": [
+        {
+          "reserved_usd": 0.05435025,
+          "accounted_usd": 0.009768375,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 1197,
+            "output_tokens": 836,
+            "thinking_tokens": 0,
+            "provider_usage": {
+              "promptTokenCount": 1197,
+              "candidatesTokenCount": 836,
+              "totalTokenCount": 2033,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 1197
+                }
+              ],
+              "serviceTier": "standard"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "limit_usd": 0.08,
+      "accounted_usd": 0.031854,
+      "input_usd_per_million": 1.5,
+      "output_usd_per_million": 9,
+      "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+      "calls": [
+        {
+          "reserved_usd": 0.06170775,
+          "accounted_usd": 0.031854,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 2320,
+            "output_tokens": 3056,
+            "thinking_tokens": 1957,
+            "provider_usage": {
+              "promptTokenCount": 2320,
+              "candidatesTokenCount": 1099,
+              "totalTokenCount": 5376,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 2320
+                }
+              ],
+              "thoughtsTokenCount": 1957,
+              "serviceTier": "standard"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "limit_usd": 0.08,
+      "accounted_usd": 0.04121325,
+      "input_usd_per_million": 1.5,
+      "output_usd_per_million": 9,
+      "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+      "calls": [
+        {
+          "reserved_usd": 0.062339625,
+          "accounted_usd": 0.04121325,
+          "usage_known": true,
+          "usage": {
+            "input_tokens": 2406,
+            "output_tokens": 4078,
+            "thinking_tokens": 3440,
+            "provider_usage": {
+              "promptTokenCount": 2406,
+              "candidatesTokenCount": 638,
+              "totalTokenCount": 6484,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 2406
+                }
+              ],
+              "thoughtsTokenCount": 3440,
+              "serviceTier": "standard"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 53.689
+}
