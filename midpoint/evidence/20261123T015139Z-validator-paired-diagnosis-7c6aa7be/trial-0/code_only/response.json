@@ -1,0 +1,81 @@
+{
+  "code": "import unicodedata\n\ndef is_blank_or_null(code):\n    if code is None:\n        return True\n    trimmed = code.strip(''.join(chr(i) for i in range(33)))\n    return len(trimmed) == 0\n\ndef to_utf16_units(code):\n    raw = code.encode('utf-16-le')\n    return [chr(raw[i] | (raw[i+1] << 8)) for i in range(0, len(raw), 2)]\n\ndef to_int(character, left_pos, right_pos):\n    if unicodedata.category(character) == 'Nd':\n        return unicodedata.decimal(character)\n    raise ValueError(f\"Invalid Character[{left_pos}] = '{character}'\")\n\ndef weighted_value(char_value, left_pos, right_pos):\n    position_weight = [2, 1]\n    weight = position_weight[right_pos % 2]\n    w_val = char_value * weight\n    return w_val - 9 if w_val > 9 else w_val\n\ndef calculate_modulus(code_units, includes_check_digit):\n    modulus = 10\n    total = 0\n    length = len(code_units)\n    for i, ch in enumerate(code_units):\n        lth = length + (0 if includes_check_digit else 1)\n        left_pos = i + 1\n        right_pos = lth - i\n        char_val = to_int(ch, left_pos, right_pos)\n        total += weighted_value(char_val, left_pos, right_pos)\n    if total == 0:\n        raise ValueError(\"Invalid code, sum is zero\")\n    return total % modulus\n\ndef to_check_digit(char_value):\n    if 0 <= char_value <= 9:\n        return str(char_value)\n    raise ValueError(f\"Invalid Check Digit Value ={char_value}\")\n\ndef calculate(code):\n    if is_blank_or_null(code):\n        raise ValueError(\"Code is missing\")\n    units = to_utf16_units(code)\n    modulus = 10\n    modulus_result = calculate_modulus(units, False)\n    char_value = (modulus - modulus_result) % modulus\n    return to_check_digit(char_value)\n\ndef is_valid(code):\n    if is_blank_or_null(code):\n        return False\n    try:\n        units = to_utf16_units(code)\n        modulus_result = calculate_modulus(units, True)\n        return modulus_result == 0\n    except ValueError:\n        return False\n\ndef run(operation, data):\n    if operation == \"calculate\":\n        return calculate(data)\n    elif operation == \"isValid\":\n        return is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translated Java LuhnCheckDigit and ModulusCheckDigit routines into Python. Standardized Unicode character digit validation and conversion using unicodedata.category ('Nd') and unicodedata.decimal to faithfully match Java's Character.isDigit and Character.getNumericValue for non-ASCII digits. Represented Java UTF-16 code units explicitly so code position indexing and length match Java String semantics.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "PpwDa9mwA6X9wbUPiPW0qAw",
+    "usage": {
+      "input_tokens": 2247,
+      "output_tokens": 2699,
+      "thinking_tokens": 1863,
+      "provider_usage": {
+        "promptTokenCount": 2247,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 4946,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2247
+          }
+        ],
+        "thoughtsTokenCount": 1863,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 14.604
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\n\\ndef is_blank_or_null(code):\\n    if code is None:\\n        return True\\n    trimmed = code.strip(''.join(chr(i) for i in range(33)))\\n    return len(trimmed) == 0\\n\\ndef to_utf16_units(code):\\n    raw = code.encode('utf-16-le')\\n    return [chr(raw[i] | (raw[i+1] << 8)) for i in range(0, len(raw), 2)]\\n\\ndef to_int(character, left_pos, right_pos):\\n    if unicodedata.category(character) == 'Nd':\\n        return unicodedata.decimal(character)\\n    raise ValueError(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\ndef weighted_value(char_value, left_pos, right_pos):\\n    position_weight = [2, 1]\\n    weight = position_weight[right_pos % 2]\\n    w_val = char_value * weight\\n    return w_val - 9 if w_val > 9 else w_val\\n\\ndef calculate_modulus(code_units, includes_check_digit):\\n    modulus = 10\\n    total = 0\\n    length = len(code_units)\\n    for i, ch in enumerate(code_units):\\n        lth = length + (0 if includes_check_digit else 1)\\n        left_pos = i + 1\\n        right_pos = lth - i\\n        char_val = to_int(ch, left_pos, right_pos)\\n        total += weighted_value(char_val, left_pos, right_pos)\\n    if total == 0:\\n        raise ValueError(\\\"Invalid code, sum is zero\\\")\\n    return total % modulus\\n\\ndef to_check_digit(char_value):\\n    if 0 <= char_value <= 9:\\n        return str(char_value)\\n    raise ValueError(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\ndef calculate(code):\\n    if is_blank_or_null(code):\\n        raise ValueError(\\\"Code is missing\\\")\\n    units = to_utf16_units(code)\\n    modulus = 10\\n    modulus_result = calculate_modulus(units, False)\\n    char_value = (modulus - modulus_result) % modulus\\n    return to_check_digit(char_value)\\n\\ndef is_valid(code):\\n    if is_blank_or_null(code):\\n        return False\\n    try:\\n        units = to_utf16_units(code)\\n        modulus_result = calculate_modulus(units, True)\\n        return modulus_result == 0\\n    except ValueError:\\n        return False\\n\\ndef run(operation, data):\\n    if operation == \\\"calculate\\\":\\n        return calculate(data)\\n    elif operation == \\\"isValid\\\":\\n        return is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Translated Java LuhnCheckDigit and ModulusCheckDigit routines into Python. Standardized Unicode character digit validation and conversion using unicodedata.category ('Nd') and unicodedata.decimal to faithfully match Java's Character.isDigit and Character.getNumericValue for non-ASCII digits. Represented Java UTF-16 code units explicitly so code position indexing and length match Java String semantics.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2247,
+      "candidatesTokenCount": 836,
+      "totalTokenCount": 4946,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2247
+        }
+      ],
+      "thoughtsTokenCount": 1863,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "PpwDa9mwA6X9wbUPiPW0qAw",
+    "usage": {
+      "input_tokens": 2247,
+      "output_tokens": 2699,
+      "thinking_tokens": 1863,
+      "provider_usage": {
+        "promptTokenCount": 2247,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 4946,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2247
+          }
+        ],
+        "thoughtsTokenCount": 1863,
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

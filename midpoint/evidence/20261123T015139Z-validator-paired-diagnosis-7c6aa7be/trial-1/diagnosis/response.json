@@ -1,0 +1,78 @@
+{
+  "code": "import unicodedata\n\nclass CheckDigitException(Exception):\n    pass\n\nJAVA_DECIMAL_BASES = (\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558,\n    3664, 3792, 3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232,\n    7248, 42528, 43216, 43264, 43472, 43504, 43600, 44016, 65296\n)\n\ndef _is_java_digit(code_unit: int) -> bool:\n    for base in JAVA_DECIMAL_BASES:\n        if base <= code_unit <= base + 9:\n            return True\n    return False\n\ndef _get_java_numeric_value(code_unit: int) -> int:\n    for base in JAVA_DECIMAL_BASES:\n        if base <= code_unit <= base + 9:\n            return code_unit - base\n    return -1\n\ndef _is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    return len(code.strip()) == 0\n\ndef _to_utf16_code_units(s: str) -> list[int]:\n    res = []\n    for ch in s:\n        cp = ord(ch)\n        if cp <= 0xFFFF:\n            res.append(cp)\n        else:\n            cp_prime = cp - 0x10000\n            res.append(0xD800 + (cp_prime >> 10))\n            res.append(0xDC00 + (cp_prime & 0x3FF))\n    return res\n\nclass LuhnCheckDigit:\n    POSITION_WEIGHT = [2, 1]\n    MODULUS = 10\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted_val = char_value * weight\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\n\n    def _to_int(self, code_unit: int, left_pos: int, right_pos: int) -> int:\n        if _is_java_digit(code_unit):\n            return _get_java_numeric_value(code_unit)\n        ch_str = chr(code_unit)\n        raise CheckDigitException(f\"Invalid Character[{left_pos}] = '{ch_str}'\")\n\n    def _to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise CheckDigitException(f\"Invalid Check Digit Value ={char_value}\")\n\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\n        code_units = _to_utf16_code_units(code)\n        lth = len(code_units) + (0 if includes_check_digit else 1)\n        total = 0\n        for i, cu in enumerate(code_units):\n            left_pos = i + 1\n            right_pos = lth - i\n            char_val = self._to_int(cu, left_pos, right_pos)\n            total += self.weighted_value(char_val, left_pos, right_pos)\n        if total == 0:\n            raise CheckDigitException(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str | None) -> str:\n        if _is_blank_or_null(code):\n            raise CheckDigitException(\"Code is missing\")\n        modulus_result = self._calculate_modulus(code, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self._to_check_digit(char_value)\n\n    def is_valid(self, code: str | None) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            modulus_result = self._calculate_modulus(code, True)\n            return modulus_result == 0\n        except CheckDigitException:\n            return False\n\ndef run(operation: str, data: str | None):\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        try:\n            return luhn.calculate(data)\n        except CheckDigitException as e:\n            raise ValueError(str(e)) from e\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Implemented Java's Character.isDigit() and Character.getNumericValue() semantics accurately across Python runtimes using the exact 37 Unicode decimal digit range base code points for Java chars. Replaced simple ASCII digit checks in `_to_int` with these portable decimal base range checks, ensuring full support for full-width digits, Arabic-Indic digits, and all unicode decimal digit character sets present in Java.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "aJwDa4qJF-7BjMcPyKLc4As",
+    "usage": {
+      "input_tokens": 2922,
+      "output_tokens": 1426,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2922,
+        "candidatesTokenCount": 1426,
+        "totalTokenCount": 4348,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2922
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 7.269
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\n\\nclass CheckDigitException(Exception):\\n    pass\\n\\nJAVA_DECIMAL_BASES = (\\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558,\\n    3664, 3792, 3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232,\\n    7248, 42528, 43216, 43264, 43472, 43504, 43600, 44016, 65296\\n)\\n\\ndef _is_java_digit(code_unit: int) -> bool:\\n    for base in JAVA_DECIMAL_BASES:\\n        if base <= code_unit <= base + 9:\\n            return True\\n    return False\\n\\ndef _get_java_numeric_value(code_unit: int) -> int:\\n    for base in JAVA_DECIMAL_BASES:\\n        if base <= code_unit <= base + 9:\\n            return code_unit - base\\n    return -1\\n\\ndef _is_blank_or_null(code: str | None) -> bool:\\n    if code is None:\\n        return True\\n    return len(code.strip()) == 0\\n\\ndef _to_utf16_code_units(s: str) -> list[int]:\\n    res = []\\n    for ch in s:\\n        cp = ord(ch)\\n        if cp <= 0xFFFF:\\n            res.append(cp)\\n        else:\\n            cp_prime = cp - 0x10000\\n            res.append(0xD800 + (cp_prime >> 10))\\n            res.append(0xDC00 + (cp_prime & 0x3FF))\\n    return res\\n\\nclass LuhnCheckDigit:\\n    POSITION_WEIGHT = [2, 1]\\n    MODULUS = 10\\n\\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\\n        weight = self.POSITION_WEIGHT[right_pos % 2]\\n        weighted_val = char_value * weight\\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\\n\\n    def _to_int(self, code_unit: int, left_pos: int, right_pos: int) -> int:\\n        if _is_java_digit(code_unit):\\n            return _get_java_numeric_value(code_unit)\\n        ch_str = chr(code_unit)\\n        raise CheckDigitException(f\\\"Invalid Character[{left_pos}] = '{ch_str}'\\\")\\n\\n    def _to_check_digit(self, char_value: int) -> str:\\n        if 0 <= char_value <= 9:\\n            return str(char_value)\\n        raise CheckDigitException(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\\n        code_units = _to_utf16_code_units(code)\\n        lth = len(code_units) + (0 if includes_check_digit else 1)\\n        total = 0\\n        for i, cu in enumerate(code_units):\\n            left_pos = i + 1\\n            right_pos = lth - i\\n            char_val = self._to_int(cu, left_pos, right_pos)\\n            total += self.weighted_value(char_val, left_pos, right_pos)\\n        if total == 0:\\n            raise CheckDigitException(\\\"Invalid code, sum is zero\\\")\\n        return total % self.MODULUS\\n\\n    def calculate(self, code: str | None) -> str:\\n        if _is_blank_or_null(code):\\n            raise CheckDigitException(\\\"Code is missing\\\")\\n        modulus_result = self._calculate_modulus(code, False)\\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\\n        return self._to_check_digit(char_value)\\n\\n    def is_valid(self, code: str | None) -> bool:\\n        if _is_blank_or_null(code):\\n            return False\\n        try:\\n            modulus_result = self._calculate_modulus(code, True)\\n            return modulus_result == 0\\n        except CheckDigitException:\\n            return False\\n\\ndef run(operation: str, data: str | None):\\n    luhn = LuhnCheckDigit()\\n    if operation == \\\"calculate\\\":\\n        try:\\n            return luhn.calculate(data)\\n        except CheckDigitException as e:\\n            raise ValueError(str(e)) from e\\n    elif operation == \\\"isValid\\\":\\n        return luhn.is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Implemented Java's Character.isDigit() and Character.getNumericValue() semantics accurately across Python runtimes using the exact 37 Unicode decimal digit range base code points for Java chars. Replaced simple ASCII digit checks in `_to_int` with these portable decimal base range checks, ensuring full support for full-width digits, Arabic-Indic digits, and all unicode decimal digit character sets present in Java.\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfRMbM2EZtiNFF8iRx1b8J8d8eFQlkuzbM0fJxqvHTSyv6s84hjLP2x2CNRoThUuLkJ3GpA2YwIrEIhlV+kEpCgzWnsC1dWS5sxHIYm67m2vYdenUfAobv1JBGT2TjSs9DzziiZIqnP6O2nnQ7AI4WCflxVSwDd4jPfTHlRmuBMWdQ4t4zUB8qUIG4O9V/ldjmg=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2922,
+      "candidatesTokenCount": 1426,
+      "totalTokenCount": 4348,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2922
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "aJwDa4qJF-7BjMcPyKLc4As",
+    "usage": {
+      "input_tokens": 2922,
+      "output_tokens": 1426,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2922,
+        "candidatesTokenCount": 1426,
+        "totalTokenCount": 4348,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2922
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

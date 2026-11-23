@@ -1,3 +1,13 @@
+## November 22 — paired Validator diagnosis study
+
+Three fresh paired trials: **0/3 ordinary repair versus 2/3 diagnosis-guided repair
+full-task success**. Per-runtime holdout observations: ordinary 361/408 each;
+diagnosis 408/408 CPython, 405/408 GraalPy. All initial candidates were shared
+within pairs; selections froze before holdout scoring; no manual code fixes.
+Nine calls, 35,225 tokens, $0.182825625 accounted. Small-sample evidence for the
+combined runtime diagnosis and Java semantic contract treatment, not general
+agent superiority. [Protocol and limitations](PAIRED_DIAGNOSIS_OBSERVATIONS.md).
+
 ## November 22 — Validator assisted qualification
 
 The supported Luhn slice passes **160/160 API cases in each runtime** after a

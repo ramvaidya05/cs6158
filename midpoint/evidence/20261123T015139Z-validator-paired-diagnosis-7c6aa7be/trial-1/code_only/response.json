@@ -1,0 +1,81 @@
+{
+  "code": "import unicodedata\n\nclass CheckDigitException(Exception):\n    pass\n\ndef _is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    return len(code.strip(' \\t\\n\\r\\f\\v')) == 0\n\ndef _to_utf16_code_units(s: str) -> list[int]:\n    res = []\n    for ch in s:\n        cp = ord(ch)\n        if cp <= 0xFFFF:\n            res.append(cp)\n        else:\n            cp_prime = cp - 0x10000\n            res.append(0xD800 + (cp_prime >> 10))\n            res.append(0xDC00 + (cp_prime & 0x3FF))\n    return res\n\nclass LuhnCheckDigit:\n    POSITION_WEIGHT = [2, 1]\n    MODULUS = 10\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted_val = char_value * weight\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\n\n    def _to_int(self, character: str, left_pos: int, right_pos: int) -> int:\n        if unicodedata.category(character) == 'Nd':\n            return unicodedata.digit(character)\n        raise CheckDigitException(f\"Invalid Character[{left_pos}] = '{character}'\")\n\n    def _to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise CheckDigitException(f\"Invalid Check Digit Value ={char_value}\")\n\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\n        code_units = _to_utf16_code_units(code)\n        lth = len(code_units) + (0 if includes_check_digit else 1)\n        total = 0\n        for i, cu in enumerate(code_units):\n            left_pos = i + 1\n            right_pos = lth - i\n            ch_str = chr(cu)\n            char_val = self._to_int(ch_str, left_pos, right_pos)\n            total += self.weighted_value(char_val, left_pos, right_pos)\n        if total == 0:\n            raise CheckDigitException(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str | None) -> str:\n        if _is_blank_or_null(code):\n            raise CheckDigitException(\"Code is missing\")\n        modulus_result = self._calculate_modulus(code, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self._to_check_digit(char_value)\n\n    def is_valid(self, code: str | None) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            modulus_result = self._calculate_modulus(code, True)\n            return modulus_result == 0\n        except CheckDigitException:\n            return False\n\ndef run(operation: str, data: str | None):\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        try:\n            return luhn.calculate(data)\n        except CheckDigitException as e:\n            raise ValueError(str(e)) from e\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "The failure in the previous candidate was due to handling digit characters. Java's Character.isDigit check accepts all Unicode decimal digits (such as full-width and Arabic-Indic digits) and Character.getNumericValue returns their numeric digit values. Using unicodedata.category(character) == 'Nd' and unicodedata.digit(character) faithfully replicates Java's behavior for non-ASCII Unicode digit characters.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "dJwDa6CrHOa5sOIPl-WjsA8",
+    "usage": {
+      "input_tokens": 2516,
+      "output_tokens": 2284,
+      "thinking_tokens": 1217,
+      "provider_usage": {
+        "promptTokenCount": 2516,
+        "candidatesTokenCount": 1067,
+        "totalTokenCount": 4800,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2516
+          }
+        ],
+        "thoughtsTokenCount": 1217,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 10.671
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\n\\nclass CheckDigitException(Exception):\\n    pass\\n\\ndef _is_blank_or_null(code: str | None) -> bool:\\n    if code is None:\\n        return True\\n    return len(code.strip(' \\\\t\\\\n\\\\r\\\\f\\\\v')) == 0\\n\\ndef _to_utf16_code_units(s: str) -> list[int]:\\n    res = []\\n    for ch in s:\\n        cp = ord(ch)\\n        if cp <= 0xFFFF:\\n            res.append(cp)\\n        else:\\n            cp_prime = cp - 0x10000\\n            res.append(0xD800 + (cp_prime >> 10))\\n            res.append(0xDC00 + (cp_prime & 0x3FF))\\n    return res\\n\\nclass LuhnCheckDigit:\\n    POSITION_WEIGHT = [2, 1]\\n    MODULUS = 10\\n\\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\\n        weight = self.POSITION_WEIGHT[right_pos % 2]\\n        weighted_val = char_value * weight\\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\\n\\n    def _to_int(self, character: str, left_pos: int, right_pos: int) -> int:\\n        if unicodedata.category(character) == 'Nd':\\n            return unicodedata.digit(character)\\n        raise CheckDigitException(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\n    def _to_check_digit(self, char_value: int) -> str:\\n        if 0 <= char_value <= 9:\\n            return str(char_value)\\n        raise CheckDigitException(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\\n        code_units = _to_utf16_code_units(code)\\n        lth = len(code_units) + (0 if includes_check_digit else 1)\\n        total = 0\\n        for i, cu in enumerate(code_units):\\n            left_pos = i + 1\\n            right_pos = lth - i\\n            ch_str = chr(cu)\\n            char_val = self._to_int(ch_str, left_pos, right_pos)\\n            total += self.weighted_value(char_val, left_pos, right_pos)\\n        if total == 0:\\n            raise CheckDigitException(\\\"Invalid code, sum is zero\\\")\\n        return total % self.MODULUS\\n\\n    def calculate(self, code: str | None) -> str:\\n        if _is_blank_or_null(code):\\n            raise CheckDigitException(\\\"Code is missing\\\")\\n        modulus_result = self._calculate_modulus(code, False)\\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\\n        return self._to_check_digit(char_value)\\n\\n    def is_valid(self, code: str | None) -> bool:\\n        if _is_blank_or_null(code):\\n            return False\\n        try:\\n            modulus_result = self._calculate_modulus(code, True)\\n            return modulus_result == 0\\n        except CheckDigitException:\\n            return False\\n\\ndef run(operation: str, data: str | None):\\n    luhn = LuhnCheckDigit()\\n    if operation == \\\"calculate\\\":\\n        try:\\n            return luhn.calculate(data)\\n        except CheckDigitException as e:\\n            raise ValueError(str(e)) from e\\n    elif operation == \\\"isValid\\\":\\n        return luhn.is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"The failure in the previous candidate was due to handling digit characters. Java's Character.isDigit check accepts all Unicode decimal digits (such as full-width and Arabic-Indic digits) and Character.getNumericValue returns their numeric digit values. Using unicodedata.category(character) == 'Nd' and unicodedata.digit(character) faithfully replicates Java's behavior for non-ASCII Unicode digit characters.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2516,
+      "candidatesTokenCount": 1067,
+      "totalTokenCount": 4800,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2516
+        }
+      ],
+      "thoughtsTokenCount": 1217,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "dJwDa6CrHOa5sOIPl-WjsA8",
+    "usage": {
+      "input_tokens": 2516,
+      "output_tokens": 2284,
+      "thinking_tokens": 1217,
+      "provider_usage": {
+        "promptTokenCount": 2516,
+        "candidatesTokenCount": 1067,
+        "totalTokenCount": 4800,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2516
+          }
+        ],
+        "thoughtsTokenCount": 1217,
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

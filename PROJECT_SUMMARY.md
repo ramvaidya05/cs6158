@@ -1,6 +1,6 @@
 # Project summary
 
-Last updated: **November 22, 2026**. Latest live studies: November 21; Validator assisted qualification: November 22 local time.
+Last updated: **November 22, 2026**. Latest live study: November 22 local time, paired Validator runtime diagnosis.
 
 ## Goal and implementation
 
@@ -21,13 +21,15 @@ Translate selected Java library behavior into Python using an LLM, then verify a
 
 - **Commons Validator Luhn pilot:** selected translation passed **126/130 holdout cases (96.92%)** per runtime; **0/1 full-task success**. The repair improved CPython visible cases but regressed GraalPy and was rejected. A runtime-guided continuation also failed. A deterministic assisted API substitution then passed **160/160 cases per runtime**. Total live usage: **13,055 tokens**, about **$0.074** accounted; assisted qualification used no API calls. This is scoped regression success, not autonomous model repair. [Protocol and evidence](midpoint/VALIDATOR_OBSERVATIONS.md).
 
-CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV, Codec and Validator, **139 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
+- **Fresh paired Validator study:** ordinary repair **0/3** versus diagnosis-guided repair **2/3 full-task passes**, with shared initial candidates and a fresh 136-case holdout. No manual candidate edits. Third diagnosis candidate failed three GraalPy surrogate cases. Nine calls, **35,225 tokens**, **$0.183** accounted. This supports the combined runtime/semantic guidance treatment on one small task, not general superiority. [Evidence](midpoint/PAIRED_DIAGNOSIS_OBSERVATIONS.md).
+
+CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV, Codec and Validator, **141 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
 
 ## What the evidence supports—and what remains
 
 Execution-guided repair helped failing translations in these small studies. Retry memory has **not shown an accuracy advantage**. Healthy CLI/CSV studies required no environment actions; separate controlled fault tests demonstrate only the implemented recovery path. Three trials and correlated checks in two runtimes do not establish broad statistical superiority. Passing these suites does not prove full semantic equivalence.
 
-**Next:** close the CLI absent-option coverage gaps with fresh holdout cases and assess broader CSV APIs as a separate scope. Multi-module translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
+**Next:** replicate paired diagnosis results on fresh trials/subjects, separate semantic guidance from capability diagnosis, and evaluate controlled infrastructure recovery. Close CLI absent-option coverage gaps with fresh holdout cases. Multi-module translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
 
 ## Details only when needed
 

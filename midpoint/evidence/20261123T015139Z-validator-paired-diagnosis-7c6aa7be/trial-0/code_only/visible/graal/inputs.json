@@ -1,0 +1,182 @@
+[
+  {
+    "id": "validator-visible-0",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": null
+  },
+  {
+    "id": "validator-visible-1",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": null
+  },
+  {
+    "id": "validator-visible-2",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": ""
+  },
+  {
+    "id": "validator-visible-3",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": ""
+  },
+  {
+    "id": "validator-visible-4",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "0"
+  },
+  {
+    "id": "validator-visible-5",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "0"
+  },
+  {
+    "id": "validator-visible-6",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "0000"
+  },
+  {
+    "id": "validator-visible-7",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "0000"
+  },
+  {
+    "id": "validator-visible-8",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "7992739871"
+  },
+  {
+    "id": "validator-visible-9",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "7992739871"
+  },
+  {
+    "id": "validator-visible-10",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "79927398713"
+  },
+  {
+    "id": "validator-visible-11",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "79927398713"
+  },
+  {
+    "id": "validator-visible-12",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "79927398714"
+  },
+  {
+    "id": "validator-visible-13",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "79927398714"
+  },
+  {
+    "id": "validator-visible-14",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "1"
+  },
+  {
+    "id": "validator-visible-15",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "1"
+  },
+  {
+    "id": "validator-visible-16",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "18"
+  },
+  {
+    "id": "validator-visible-17",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "18"
+  },
+  {
+    "id": "validator-visible-18",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "12a"
+  },
+  {
+    "id": "validator-visible-19",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "12a"
+  },
+  {
+    "id": "validator-visible-20",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": " 12"
+  },
+  {
+    "id": "validator-visible-21",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": " 12"
+  },
+  {
+    "id": "validator-visible-22",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\uff11\uff12"
+  },
+  {
+    "id": "validator-visible-23",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\uff11\uff12"
+  },
+  {
+    "id": "validator-visible-24",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u0661\u0662"
+  },
+  {
+    "id": "validator-visible-25",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u0661\u0662"
+  },
+  {
+    "id": "validator-visible-26",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\u00b23"
+  },
+  {
+    "id": "validator-visible-27",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\u00b23"
+  },
+  {
+    "id": "validator-visible-28",
+    "task": "commons_validator_luhn",
+    "operation": "calculate",
+    "data": "\ud835\udfd92"
+  },
+  {
+    "id": "validator-visible-29",
+    "task": "commons_validator_luhn",
+    "operation": "isValid",
+    "data": "\ud835\udfd92"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "trial": 0,
+    "arms": {
+      "code_only": "c910293b703ff79e762d8d96af6f63fa0bf00425ae46d79ced53b1c5d369a8f7",
+      "diagnosis": "4d0a75bea826b3e3662b048c412b4cf49133497f14a69e2402fc797f73419bdd"
+    }
+  },
+  {
+    "trial": 1,
+    "arms": {
+      "diagnosis": "f6275cd1bd10da58b4629f31a13114d87a46d41b4c4aaaef9547fe3d43258687",
+      "code_only": "76a70f1be1ab03d9deac30a8a748039ab4a069b7d17b815ca5767e3147d876a8"
+    }
+  },
+  {
+    "trial": 2,
+    "arms": {
+      "code_only": "42abfc2822e2748e2eedbe61f618b8d435ac2d7c297b185eb9c722f89b11568f",
+      "diagnosis": "4778a79d268a97e52ff542dcc52928baaba4788be13010d3ebf441e74eaeeb67"
+    }
+  }
+]

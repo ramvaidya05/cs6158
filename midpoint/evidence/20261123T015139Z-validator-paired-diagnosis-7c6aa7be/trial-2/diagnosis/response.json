@@ -1,0 +1,81 @@
+{
+  "code": "import struct\n\nclass CheckDigitException(Exception):\n    pass\n\nJAVA_DECIMAL_BASES = (\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558, 3664, 3792, 3872,\n    4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216, 43264, 43472,\n    43504, 43600, 44016, 65296\n)\nPOSITION_WEIGHT = (2, 1)\n\ndef to_utf16_units(code: str) -> list[int]:\n    raw = code.encode('utf-16-le', errors='surrogatepass')\n    return list(struct.unpack(f'<{len(raw)//2}H', raw))\n\ndef is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    units = to_utf16_units(code)\n    start = 0\n    end = len(units)\n    while start < end and units[start] <= 32:\n        start += 1\n    while end > start and units[end - 1] <= 32:\n        end -= 1\n    return (end - start) == 0\n\ndef get_java_digit_value(unit: int) -> int:\n    for b in JAVA_DECIMAL_BASES:\n        if b <= unit <= b + 9:\n            return unit - b\n    return -1\n\ndef to_int(unit: int, left_pos: int) -> int:\n    digit_val = get_java_digit_value(unit)\n    if digit_val != -1:\n        return digit_val\n    char_str = chr(unit)\n    raise CheckDigitException(f\"Invalid Character[{left_pos}] = '{char_str}'\")\n\ndef weighted_value(char_value: int, right_pos: int) -> int:\n    weight = POSITION_WEIGHT[right_pos % 2]\n    w_val = char_value * weight\n    return w_val - 9 if w_val > 9 else w_val\n\ndef calculate_modulus(code: str, includes_check_digit: bool) -> int:\n    units = to_utf16_units(code)\n    length = len(units)\n    total = 0\n    for i in range(length):\n        lth = length + (0 if includes_check_digit else 1)\n        left_pos = i + 1\n        right_pos = lth - i\n        char_val = to_int(units[i], left_pos)\n        total += weighted_value(char_val, right_pos)\n    if total == 0:\n        raise CheckDigitException(\"Invalid code, sum is zero\")\n    return total % 10\n\ndef to_check_digit(char_value: int) -> str:\n    if 0 <= char_value <= 9:\n        return str(char_value)\n    raise CheckDigitException(f\"Invalid Check Digit Value ={char_value}\")\n\ndef calculate(code: str | None) -> str:\n    if is_blank_or_null(code):\n        raise ValueError(\"Code is missing\")\n    try:\n        modulus_result = calculate_modulus(code, False)\n        char_value = (10 - modulus_result) % 10\n        return to_check_digit(char_value)\n    except CheckDigitException as e:\n        raise ValueError(str(e)) from e\n\ndef is_valid(code: str | None) -> bool:\n    if is_blank_or_null(code):\n        return False\n    try:\n        modulus_result = calculate_modulus(code, True)\n        return modulus_result == 0\n    except CheckDigitException:\n        return False\n\ndef run(operation: str, data: str | None):\n    if operation == \"calculate\":\n        return calculate(data)\n    elif operation == \"isValid\":\n        return is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translates LuhnCheckDigit and ModulusCheckDigit faithfully to Python.\n1. Converts strings to UTF-16 code units (16-bit integers) using `struct.unpack` to match Java `String.length()` and `String.charAt()` UTF-16 semantics.\n2. Implements `GenericValidator.isBlankOrNull` matching Java's `trim()` which strips chars <= 32.\n3. Checks `Character.isDigit` by matching the 16-bit code unit against the exact list of Java BMP decimal bases, ensuring surrogate pairs or non-Nd digits (such as superscripts) are correctly rejected as non-digits.\n4. Raises `ValueError` wrapping `CheckDigitException` for `calculate` and returns `bool` for `isValid`.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "pZwDa6bKGsj7-sAPtKGk-QQ",
+    "usage": {
+      "input_tokens": 2656,
+      "output_tokens": 2699,
+      "thinking_tokens": 1358,
+      "provider_usage": {
+        "promptTokenCount": 2656,
+        "candidatesTokenCount": 1341,
+        "totalTokenCount": 5355,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2656
+          }
+        ],
+        "thoughtsTokenCount": 1358,
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 11.551
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import struct\\n\\nclass CheckDigitException(Exception):\\n    pass\\n\\nJAVA_DECIMAL_BASES = (\\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558, 3664, 3792, 3872,\\n    4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216, 43264, 43472,\\n    43504, 43600, 44016, 65296\\n)\\nPOSITION_WEIGHT = (2, 1)\\n\\ndef to_utf16_units(code: str) -> list[int]:\\n    raw = code.encode('utf-16-le', errors='surrogatepass')\\n    return list(struct.unpack(f'<{len(raw)//2}H', raw))\\n\\ndef is_blank_or_null(code: str | None) -> bool:\\n    if code is None:\\n        return True\\n    units = to_utf16_units(code)\\n    start = 0\\n    end = len(units)\\n    while start < end and units[start] <= 32:\\n        start += 1\\n    while end > start and units[end - 1] <= 32:\\n        end -= 1\\n    return (end - start) == 0\\n\\ndef get_java_digit_value(unit: int) -> int:\\n    for b in JAVA_DECIMAL_BASES:\\n        if b <= unit <= b + 9:\\n            return unit - b\\n    return -1\\n\\ndef to_int(unit: int, left_pos: int) -> int:\\n    digit_val = get_java_digit_value(unit)\\n    if digit_val != -1:\\n        return digit_val\\n    char_str = chr(unit)\\n    raise CheckDigitException(f\\\"Invalid Character[{left_pos}] = '{char_str}'\\\")\\n\\ndef weighted_value(char_value: int, right_pos: int) -> int:\\n    weight = POSITION_WEIGHT[right_pos % 2]\\n    w_val = char_value * weight\\n    return w_val - 9 if w_val > 9 else w_val\\n\\ndef calculate_modulus(code: str, includes_check_digit: bool) -> int:\\n    units = to_utf16_units(code)\\n    length = len(units)\\n    total = 0\\n    for i in range(length):\\n        lth = length + (0 if includes_check_digit else 1)\\n        left_pos = i + 1\\n        right_pos = lth - i\\n        char_val = to_int(units[i], left_pos)\\n        total += weighted_value(char_val, right_pos)\\n    if total == 0:\\n        raise CheckDigitException(\\\"Invalid code, sum is zero\\\")\\n    return total % 10\\n\\ndef to_check_digit(char_value: int) -> str:\\n    if 0 <= char_value <= 9:\\n        return str(char_value)\\n    raise CheckDigitException(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\ndef calculate(code: str | None) -> str:\\n    if is_blank_or_null(code):\\n        raise ValueError(\\\"Code is missing\\\")\\n    try:\\n        modulus_result = calculate_modulus(code, False)\\n        char_value = (10 - modulus_result) % 10\\n        return to_check_digit(char_value)\\n    except CheckDigitException as e:\\n        raise ValueError(str(e)) from e\\n\\ndef is_valid(code: str | None) -> bool:\\n    if is_blank_or_null(code):\\n        return False\\n    try:\\n        modulus_result = calculate_modulus(code, True)\\n        return modulus_result == 0\\n    except CheckDigitException:\\n        return False\\n\\ndef run(operation: str, data: str | None):\\n    if operation == \\\"calculate\\\":\\n        return calculate(data)\\n    elif operation == \\\"isValid\\\":\\n        return is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Translates LuhnCheckDigit and ModulusCheckDigit faithfully to Python.\\n1. Converts strings to UTF-16 code units (16-bit integers) using `struct.unpack` to match Java `String.length()` and `String.charAt()` UTF-16 semantics.\\n2. Implements `GenericValidator.isBlankOrNull` matching Java's `trim()` which strips chars <= 32.\\n3. Checks `Character.isDigit` by matching the 16-bit code unit against the exact list of Java BMP decimal bases, ensuring surrogate pairs or non-Nd digits (such as superscripts) are correctly rejected as non-digits.\\n4. Raises `ValueError` wrapping `CheckDigitException` for `calculate` and returns `bool` for `isValid`.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2656,
+      "candidatesTokenCount": 1341,
+      "totalTokenCount": 5355,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2656
+        }
+      ],
+      "thoughtsTokenCount": 1358,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "pZwDa6bKGsj7-sAPtKGk-QQ",
+    "usage": {
+      "input_tokens": 2656,
+      "output_tokens": 2699,
+      "thinking_tokens": 1358,
+      "provider_usage": {
+        "promptTokenCount": 2656,
+        "candidatesTokenCount": 1341,
+        "totalTokenCount": 5355,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2656
+          }
+        ],
+        "thoughtsTokenCount": 1358,
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

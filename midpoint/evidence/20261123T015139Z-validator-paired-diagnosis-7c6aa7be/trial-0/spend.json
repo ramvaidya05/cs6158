@@ -1,0 +1,76 @@
+{
+  "limit_usd": 0.16666666666666666,
+  "accounted_usd": 0.052300875000000004,
+  "input_usd_per_million": 1.5,
+  "output_usd_per_million": 9,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.05435025,
+      "accounted_usd": 0.009219375,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 1197,
+        "output_tokens": 775,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 1197,
+          "candidatesTokenCount": 775,
+          "totalTokenCount": 1972,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1197
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.0609315,
+      "accounted_usd": 0.028504125,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 2247,
+        "output_tokens": 2699,
+        "thinking_tokens": 1863,
+        "provider_usage": {
+          "promptTokenCount": 2247,
+          "candidatesTokenCount": 836,
+          "totalTokenCount": 4946,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 2247
+            }
+          ],
+          "thoughtsTokenCount": 1863,
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.062744625,
+      "accounted_usd": 0.014577375,
+      "usage_known": true,
+      "usage": {
+        "input_tokens": 2653,
+        "output_tokens": 1067,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 2653,
+          "candidatesTokenCount": 1067,
+          "totalTokenCount": 3720,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 2653
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ]
+}

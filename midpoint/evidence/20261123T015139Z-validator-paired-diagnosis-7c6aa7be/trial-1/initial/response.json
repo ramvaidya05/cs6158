@@ -1,0 +1,78 @@
+{
+  "code": "import unicodedata\n\nclass CheckDigitException(Exception):\n    pass\n\ndef _is_blank_or_null(code: str | None) -> bool:\n    if code is None:\n        return True\n    return len(code.strip()) == 0\n\ndef _to_utf16_code_units(s: str) -> list[int]:\n    res = []\n    for ch in s:\n        cp = ord(ch)\n        if cp <= 0xFFFF:\n            res.append(cp)\n        else:\n            cp_prime = cp - 0x10000\n            res.append(0xD800 + (cp_prime >> 10))\n            res.append(0xDC00 + (cp_prime & 0x3FF))\n    return res\n\nclass LuhnCheckDigit:\n    POSITION_WEIGHT = [2, 1]\n    MODULUS = 10\n\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\n        weight = self.POSITION_WEIGHT[right_pos % 2]\n        weighted_val = char_value * weight\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\n\n    def _to_int(self, character: str, left_pos: int, right_pos: int) -> int:\n        if len(character) == 1 and ('0' <= character <= '9'):\n            return ord(character) - ord('0')\n        raise CheckDigitException(f\"Invalid Character[{left_pos}] = '{character}'\")\n\n    def _to_check_digit(self, char_value: int) -> str:\n        if 0 <= char_value <= 9:\n            return str(char_value)\n        raise CheckDigitException(f\"Invalid Check Digit Value ={char_value}\")\n\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\n        code_units = _to_utf16_code_units(code)\n        lth = len(code_units) + (0 if includes_check_digit else 1)\n        total = 0\n        for i, cu in enumerate(code_units):\n            left_pos = i + 1\n            right_pos = lth - i\n            ch_str = chr(cu)\n            char_val = self._to_int(ch_str, left_pos, right_pos)\n            total += self.weighted_value(char_val, left_pos, right_pos)\n        if total == 0:\n            raise CheckDigitException(\"Invalid code, sum is zero\")\n        return total % self.MODULUS\n\n    def calculate(self, code: str | None) -> str:\n        if _is_blank_or_null(code):\n            raise CheckDigitException(\"Code is missing\")\n        modulus_result = self._calculate_modulus(code, False)\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\n        return self._to_check_digit(char_value)\n\n    def is_valid(self, code: str | None) -> bool:\n        if _is_blank_or_null(code):\n            return False\n        try:\n            modulus_result = self._calculate_modulus(code, True)\n            return modulus_result == 0\n        except CheckDigitException:\n            return False\n\ndef run(operation: str, data: str | None):\n    luhn = LuhnCheckDigit()\n    if operation == \"calculate\":\n        try:\n            return luhn.calculate(data)\n        except CheckDigitException as e:\n            raise ValueError(str(e)) from e\n    elif operation == \"isValid\":\n        return luhn.is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "Translated the Java `LuhnCheckDigit` and `ModulusCheckDigit` classes faithfully into Python. Preserved UTF-16 code unit semantics when indexing strings (using `_to_utf16_code_units`). Implemented `GenericValidator.isBlankOrNull` checks matching Java semantics. Implemented `run(operation, data)` to handle `calculate` (returning string or raising `ValueError`) and `isValid` (returning boolean).",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "XZwDa8bLGLn4-sAP6Iam0AY",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 1069,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 1069,
+        "totalTokenCount": 2266,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 5.354
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"import unicodedata\\n\\nclass CheckDigitException(Exception):\\n    pass\\n\\ndef _is_blank_or_null(code: str | None) -> bool:\\n    if code is None:\\n        return True\\n    return len(code.strip()) == 0\\n\\ndef _to_utf16_code_units(s: str) -> list[int]:\\n    res = []\\n    for ch in s:\\n        cp = ord(ch)\\n        if cp <= 0xFFFF:\\n            res.append(cp)\\n        else:\\n            cp_prime = cp - 0x10000\\n            res.append(0xD800 + (cp_prime >> 10))\\n            res.append(0xDC00 + (cp_prime & 0x3FF))\\n    return res\\n\\nclass LuhnCheckDigit:\\n    POSITION_WEIGHT = [2, 1]\\n    MODULUS = 10\\n\\n    def weighted_value(self, char_value: int, left_pos: int, right_pos: int) -> int:\\n        weight = self.POSITION_WEIGHT[right_pos % 2]\\n        weighted_val = char_value * weight\\n        return weighted_val - 9 if weighted_val > 9 else weighted_val\\n\\n    def _to_int(self, character: str, left_pos: int, right_pos: int) -> int:\\n        if len(character) == 1 and ('0' <= character <= '9'):\\n            return ord(character) - ord('0')\\n        raise CheckDigitException(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\n    def _to_check_digit(self, char_value: int) -> str:\\n        if 0 <= char_value <= 9:\\n            return str(char_value)\\n        raise CheckDigitException(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\n    def _calculate_modulus(self, code: str, includes_check_digit: bool) -> int:\\n        code_units = _to_utf16_code_units(code)\\n        lth = len(code_units) + (0 if includes_check_digit else 1)\\n        total = 0\\n        for i, cu in enumerate(code_units):\\n            left_pos = i + 1\\n            right_pos = lth - i\\n            ch_str = chr(cu)\\n            char_val = self._to_int(ch_str, left_pos, right_pos)\\n            total += self.weighted_value(char_val, left_pos, right_pos)\\n        if total == 0:\\n            raise CheckDigitException(\\\"Invalid code, sum is zero\\\")\\n        return total % self.MODULUS\\n\\n    def calculate(self, code: str | None) -> str:\\n        if _is_blank_or_null(code):\\n            raise CheckDigitException(\\\"Code is missing\\\")\\n        modulus_result = self._calculate_modulus(code, False)\\n        char_value = (self.MODULUS - modulus_result) % self.MODULUS\\n        return self._to_check_digit(char_value)\\n\\n    def is_valid(self, code: str | None) -> bool:\\n        if _is_blank_or_null(code):\\n            return False\\n        try:\\n            modulus_result = self._calculate_modulus(code, True)\\n            return modulus_result == 0\\n        except CheckDigitException:\\n            return False\\n\\ndef run(operation: str, data: str | None):\\n    luhn = LuhnCheckDigit()\\n    if operation == \\\"calculate\\\":\\n        try:\\n            return luhn.calculate(data)\\n        except CheckDigitException as e:\\n            raise ValueError(str(e)) from e\\n    elif operation == \\\"isValid\\\":\\n        return luhn.is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"Translated the Java `LuhnCheckDigit` and `ModulusCheckDigit` classes faithfully into Python. Preserved UTF-16 code unit semantics when indexing strings (using `_to_utf16_code_units`). Implemented `GenericValidator.isBlankOrNull` checks matching Java semantics. Implemented `run(operation, data)` to handle `calculate` (returning string or raising `ValueError`) and `isValid` (returning boolean).\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfRPiU419o9Sply+MfH1Qsr0iPiZ6iP+m5EDw/XNvqDpqkjbukQi/Z9fJKe2KNjaZ2uKVZlIBFaw6677ypcOr2VWokTg+RCUOmY/Q7ts4Eczj4XW98a0QnY2nVfnc+jfsSaX7hTASSfa419sgz/vZTH2OMx/Gz8bYOaaCAIsP9Ud81cpdpXZ7/FRMSNF8iR4d0A=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1197,
+      "candidatesTokenCount": 1069,
+      "totalTokenCount": 2266,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1197
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "XZwDa8bLGLn4-sAP6Iam0AY",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 1069,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 1069,
+        "totalTokenCount": 2266,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

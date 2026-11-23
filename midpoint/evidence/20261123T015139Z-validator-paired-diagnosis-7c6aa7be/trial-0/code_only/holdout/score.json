@@ -1,0 +1,1074 @@
+{
+  "cpython": {
+    "status": "completed",
+    "passed": 113,
+    "total": 136,
+    "passed_ids": [
+      "paired-held-0",
+      "paired-held-1",
+      "paired-held-2",
+      "paired-held-3",
+      "paired-held-4",
+      "paired-held-5",
+      "paired-held-6",
+      "paired-held-7",
+      "paired-held-8",
+      "paired-held-9",
+      "paired-held-10",
+      "paired-held-11",
+      "paired-held-12",
+      "paired-held-13",
+      "paired-held-14",
+      "paired-held-15",
+      "paired-held-16",
+      "paired-held-17",
+      "paired-held-18",
+      "paired-held-19",
+      "paired-held-20",
+      "paired-held-21",
+      "paired-held-22",
+      "paired-held-23",
+      "paired-held-24",
+      "paired-held-25",
+      "paired-held-26",
+      "paired-held-27",
+      "paired-held-28",
+      "paired-held-29",
+      "paired-held-30",
+      "paired-held-31",
+      "paired-held-32",
+      "paired-held-33",
+      "paired-held-34",
+      "paired-held-35",
+      "paired-held-36",
+      "paired-held-37",
+      "paired-held-38",
+      "paired-held-39",
+      "paired-held-40",
+      "paired-held-41",
+      "paired-held-42",
+      "paired-held-43",
+      "paired-held-44",
+      "paired-held-45",
+      "paired-held-46",
+      "paired-held-47",
+      "paired-held-48",
+      "paired-held-49",
+      "paired-held-50",
+      "paired-held-51",
+      "paired-held-52",
+      "paired-held-53",
+      "paired-held-54",
+      "paired-held-55",
+      "paired-held-56",
+      "paired-held-57",
+      "paired-held-58",
+      "paired-held-59",
+      "paired-held-60",
+      "paired-held-61",
+      "paired-held-62",
+      "paired-held-63",
+      "paired-held-64",
+      "paired-held-65",
+      "paired-held-66",
+      "paired-held-67",
+      "paired-held-68",
+      "paired-held-69",
+      "paired-held-70",
+      "paired-held-71",
+      "paired-held-72",
+      "paired-held-73",
+      "paired-held-74",
+      "paired-held-75",
+      "paired-held-76",
+      "paired-held-77",
+      "paired-held-78",
+      "paired-held-79",
+      "paired-held-81",
+      "paired-held-83",
+      "paired-held-85",
+      "paired-held-89",
+      "paired-held-91",
+      "paired-held-93",
+      "paired-held-95",
+      "paired-held-97",
+      "paired-held-101",
+      "paired-held-103",
+      "paired-held-105",
+      "paired-held-109",
+      "paired-held-111",
+      "paired-held-113",
+      "paired-held-115",
+      "paired-held-117",
+      "paired-held-119",
+      "paired-held-120",
+      "paired-held-121",
+      "paired-held-122",
+      "paired-held-123",
+      "paired-held-124",
+      "paired-held-125",
+      "paired-held-126",
+      "paired-held-127",
+      "paired-held-128",
+      "paired-held-129",
+      "paired-held-130",
+      "paired-held-131",
+      "paired-held-132",
+      "paired-held-133",
+      "paired-held-134",
+      "paired-held-135"
+    ],
+    "failures": [
+      {
+        "case": {
+          "id": "paired-held-80",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0662\u0664"
+        },
+        "expected": {
+          "id": "paired-held-80",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-80",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-82",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0665\u0668\u0665\u0666\u0661\u0669\u0666\u0669\u0668\u0666\u0666\u0667"
+        },
+        "expected": {
+          "id": "paired-held-82",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-82",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-84",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0662\u0663\u0668\u0664\u0667\u0664\u0668\u0664\u0664\u0660\u0667\u0662"
+        },
+        "expected": {
+          "id": "paired-held-84",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-84",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-86",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0665\u0662\u0662\u0668\u0662\u0661"
+        },
+        "expected": {
+          "id": "paired-held-86",
+          "status": "ok",
+          "value": "8"
+        },
+        "actual": {
+          "id": "paired-held-86",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-87",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u0665\u0662\u0662\u0668\u0662\u0661"
+        },
+        "expected": {
+          "id": "paired-held-87",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-87",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-88",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0666\u0660\u0668\u0660\u0660"
+        },
+        "expected": {
+          "id": "paired-held-88",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-88",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-90",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f9\u06f1\u06f1\u06f0\u06f1\u06f6\u06f6\u06f6\u06f8\u06f2\u06f7\u06f9\u06f8"
+        },
+        "expected": {
+          "id": "paired-held-90",
+          "status": "ok",
+          "value": "1"
+        },
+        "actual": {
+          "id": "paired-held-90",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-92",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f2\u06f1\u06f9\u06f2\u06f1\u06f9\u06f6\u06f1\u06f4\u06f6\u06f2\u06f0"
+        },
+        "expected": {
+          "id": "paired-held-92",
+          "status": "ok",
+          "value": "6"
+        },
+        "actual": {
+          "id": "paired-held-92",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-94",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f2\u06f2\u06f6\u06f5\u06f2\u06f6\u06f0\u06f9\u06f7\u06f7"
+        },
+        "expected": {
+          "id": "paired-held-94",
+          "status": "ok",
+          "value": "1"
+        },
+        "actual": {
+          "id": "paired-held-94",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-96",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f6\u06f5\u06f1\u06f8"
+        },
+        "expected": {
+          "id": "paired-held-96",
+          "status": "ok",
+          "value": "5"
+        },
+        "actual": {
+          "id": "paired-held-96",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-98",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f1\u06f8\u06f7\u06f1\u06f2\u06f4\u06f3\u06f6\u06f1\u06f2"
+        },
+        "expected": {
+          "id": "paired-held-98",
+          "status": "ok",
+          "value": "2"
+        },
+        "actual": {
+          "id": "paired-held-98",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-99",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u06f1\u06f8\u06f7\u06f1\u06f2\u06f4\u06f3\u06f6\u06f1\u06f2"
+        },
+        "expected": {
+          "id": "paired-held-99",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-99",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-100",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096c\u096c\u096d\u096c\u096f\u096b\u096c\u096e\u0969\u096b\u0967"
+        },
+        "expected": {
+          "id": "paired-held-100",
+          "status": "ok",
+          "value": "2"
+        },
+        "actual": {
+          "id": "paired-held-100",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-102",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096b\u096d\u096f\u0967"
+        },
+        "expected": {
+          "id": "paired-held-102",
+          "status": "ok",
+          "value": "9"
+        },
+        "actual": {
+          "id": "paired-held-102",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-104",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0969\u0967\u096f\u096d\u0967\u0966\u0969\u0968"
+        },
+        "expected": {
+          "id": "paired-held-104",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-104",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-106",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096f\u0968\u096b\u0968\u096e"
+        },
+        "expected": {
+          "id": "paired-held-106",
+          "status": "ok",
+          "value": "9"
+        },
+        "actual": {
+          "id": "paired-held-106",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-107",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u096f\u0968\u096b\u0968\u096e"
+        },
+        "expected": {
+          "id": "paired-held-107",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-107",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-108",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0967\u0968\u096a\u096b\u096c\u096c\u0969\u0967\u096d\u096c"
+        },
+        "expected": {
+          "id": "paired-held-108",
+          "status": "ok",
+          "value": "6"
+        },
+        "actual": {
+          "id": "paired-held-108",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-110",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff13\uff19\uff19\uff17\uff16\uff13\uff13\uff11\uff11\uff16"
+        },
+        "expected": {
+          "id": "paired-held-110",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-110",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-112",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff13\uff17\uff10\uff11\uff14"
+        },
+        "expected": {
+          "id": "paired-held-112",
+          "status": "ok",
+          "value": "8"
+        },
+        "actual": {
+          "id": "paired-held-112",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-114",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff10\uff12\uff14"
+        },
+        "expected": {
+          "id": "paired-held-114",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-114",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-116",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff11\uff12\uff17\uff15"
+        },
+        "expected": {
+          "id": "paired-held-116",
+          "status": "ok",
+          "value": "7"
+        },
+        "actual": {
+          "id": "paired-held-116",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-118",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff10\uff18\uff19"
+        },
+        "expected": {
+          "id": "paired-held-118",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-118",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      }
+    ]
+  },
+  "graal": {
+    "status": "completed",
+    "passed": 113,
+    "total": 136,
+    "passed_ids": [
+      "paired-held-0",
+      "paired-held-1",
+      "paired-held-2",
+      "paired-held-3",
+      "paired-held-4",
+      "paired-held-5",
+      "paired-held-6",
+      "paired-held-7",
+      "paired-held-8",
+      "paired-held-9",
+      "paired-held-10",
+      "paired-held-11",
+      "paired-held-12",
+      "paired-held-13",
+      "paired-held-14",
+      "paired-held-15",
+      "paired-held-16",
+      "paired-held-17",
+      "paired-held-18",
+      "paired-held-19",
+      "paired-held-20",
+      "paired-held-21",
+      "paired-held-22",
+      "paired-held-23",
+      "paired-held-24",
+      "paired-held-25",
+      "paired-held-26",
+      "paired-held-27",
+      "paired-held-28",
+      "paired-held-29",
+      "paired-held-30",
+      "paired-held-31",
+      "paired-held-32",
+      "paired-held-33",
+      "paired-held-34",
+      "paired-held-35",
+      "paired-held-36",
+      "paired-held-37",
+      "paired-held-38",
+      "paired-held-39",
+      "paired-held-40",
+      "paired-held-41",
+      "paired-held-42",
+      "paired-held-43",
+      "paired-held-44",
+      "paired-held-45",
+      "paired-held-46",
+      "paired-held-47",
+      "paired-held-48",
+      "paired-held-49",
+      "paired-held-50",
+      "paired-held-51",
+      "paired-held-52",
+      "paired-held-53",
+      "paired-held-54",
+      "paired-held-55",
+      "paired-held-56",
+      "paired-held-57",
+      "paired-held-58",
+      "paired-held-59",
+      "paired-held-60",
+      "paired-held-61",
+      "paired-held-62",
+      "paired-held-63",
+      "paired-held-64",
+      "paired-held-65",
+      "paired-held-66",
+      "paired-held-67",
+      "paired-held-68",
+      "paired-held-69",
+      "paired-held-70",
+      "paired-held-71",
+      "paired-held-72",
+      "paired-held-73",
+      "paired-held-74",
+      "paired-held-75",
+      "paired-held-76",
+      "paired-held-77",
+      "paired-held-78",
+      "paired-held-79",
+      "paired-held-81",
+      "paired-held-83",
+      "paired-held-85",
+      "paired-held-89",
+      "paired-held-91",
+      "paired-held-93",
+      "paired-held-95",
+      "paired-held-97",
+      "paired-held-101",
+      "paired-held-103",
+      "paired-held-105",
+      "paired-held-109",
+      "paired-held-111",
+      "paired-held-113",
+      "paired-held-115",
+      "paired-held-117",
+      "paired-held-119",
+      "paired-held-120",
+      "paired-held-121",
+      "paired-held-122",
+      "paired-held-123",
+      "paired-held-124",
+      "paired-held-125",
+      "paired-held-126",
+      "paired-held-127",
+      "paired-held-128",
+      "paired-held-129",
+      "paired-held-130",
+      "paired-held-131",
+      "paired-held-132",
+      "paired-held-133",
+      "paired-held-134",
+      "paired-held-135"
+    ],
+    "failures": [
+      {
+        "case": {
+          "id": "paired-held-80",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0662\u0664"
+        },
+        "expected": {
+          "id": "paired-held-80",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-80",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-82",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0665\u0668\u0665\u0666\u0661\u0669\u0666\u0669\u0668\u0666\u0666\u0667"
+        },
+        "expected": {
+          "id": "paired-held-82",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-82",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-84",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0662\u0663\u0668\u0664\u0667\u0664\u0668\u0664\u0664\u0660\u0667\u0662"
+        },
+        "expected": {
+          "id": "paired-held-84",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-84",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-86",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0665\u0662\u0662\u0668\u0662\u0661"
+        },
+        "expected": {
+          "id": "paired-held-86",
+          "status": "ok",
+          "value": "8"
+        },
+        "actual": {
+          "id": "paired-held-86",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-87",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u0665\u0662\u0662\u0668\u0662\u0661"
+        },
+        "expected": {
+          "id": "paired-held-87",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-87",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-88",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0666\u0660\u0668\u0660\u0660"
+        },
+        "expected": {
+          "id": "paired-held-88",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-88",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-90",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f9\u06f1\u06f1\u06f0\u06f1\u06f6\u06f6\u06f6\u06f8\u06f2\u06f7\u06f9\u06f8"
+        },
+        "expected": {
+          "id": "paired-held-90",
+          "status": "ok",
+          "value": "1"
+        },
+        "actual": {
+          "id": "paired-held-90",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-92",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f2\u06f1\u06f9\u06f2\u06f1\u06f9\u06f6\u06f1\u06f4\u06f6\u06f2\u06f0"
+        },
+        "expected": {
+          "id": "paired-held-92",
+          "status": "ok",
+          "value": "6"
+        },
+        "actual": {
+          "id": "paired-held-92",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-94",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f2\u06f2\u06f6\u06f5\u06f2\u06f6\u06f0\u06f9\u06f7\u06f7"
+        },
+        "expected": {
+          "id": "paired-held-94",
+          "status": "ok",
+          "value": "1"
+        },
+        "actual": {
+          "id": "paired-held-94",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-96",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f6\u06f5\u06f1\u06f8"
+        },
+        "expected": {
+          "id": "paired-held-96",
+          "status": "ok",
+          "value": "5"
+        },
+        "actual": {
+          "id": "paired-held-96",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-98",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u06f1\u06f8\u06f7\u06f1\u06f2\u06f4\u06f3\u06f6\u06f1\u06f2"
+        },
+        "expected": {
+          "id": "paired-held-98",
+          "status": "ok",
+          "value": "2"
+        },
+        "actual": {
+          "id": "paired-held-98",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-99",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u06f1\u06f8\u06f7\u06f1\u06f2\u06f4\u06f3\u06f6\u06f1\u06f2"
+        },
+        "expected": {
+          "id": "paired-held-99",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-99",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-100",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096c\u096c\u096d\u096c\u096f\u096b\u096c\u096e\u0969\u096b\u0967"
+        },
+        "expected": {
+          "id": "paired-held-100",
+          "status": "ok",
+          "value": "2"
+        },
+        "actual": {
+          "id": "paired-held-100",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-102",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096b\u096d\u096f\u0967"
+        },
+        "expected": {
+          "id": "paired-held-102",
+          "status": "ok",
+          "value": "9"
+        },
+        "actual": {
+          "id": "paired-held-102",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-104",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0969\u0967\u096f\u096d\u0967\u0966\u0969\u0968"
+        },
+        "expected": {
+          "id": "paired-held-104",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-104",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-106",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u096f\u0968\u096b\u0968\u096e"
+        },
+        "expected": {
+          "id": "paired-held-106",
+          "status": "ok",
+          "value": "9"
+        },
+        "actual": {
+          "id": "paired-held-106",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-107",
+          "task": "commons_validator_luhn",
+          "operation": "isValid",
+          "data": "\u096f\u0968\u096b\u0968\u096e"
+        },
+        "expected": {
+          "id": "paired-held-107",
+          "status": "ok",
+          "value": true
+        },
+        "actual": {
+          "id": "paired-held-107",
+          "status": "ok",
+          "value": false
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-108",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\u0967\u0968\u096a\u096b\u096c\u096c\u0969\u0967\u096d\u096c"
+        },
+        "expected": {
+          "id": "paired-held-108",
+          "status": "ok",
+          "value": "6"
+        },
+        "actual": {
+          "id": "paired-held-108",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-110",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff13\uff19\uff19\uff17\uff16\uff13\uff13\uff11\uff11\uff16"
+        },
+        "expected": {
+          "id": "paired-held-110",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-110",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-112",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff13\uff17\uff10\uff11\uff14"
+        },
+        "expected": {
+          "id": "paired-held-112",
+          "status": "ok",
+          "value": "8"
+        },
+        "actual": {
+          "id": "paired-held-112",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-114",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff10\uff12\uff14"
+        },
+        "expected": {
+          "id": "paired-held-114",
+          "status": "ok",
+          "value": "0"
+        },
+        "actual": {
+          "id": "paired-held-114",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-116",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff11\uff12\uff17\uff15"
+        },
+        "expected": {
+          "id": "paired-held-116",
+          "status": "ok",
+          "value": "7"
+        },
+        "actual": {
+          "id": "paired-held-116",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      },
+      {
+        "case": {
+          "id": "paired-held-118",
+          "task": "commons_validator_luhn",
+          "operation": "calculate",
+          "data": "\uff10\uff18\uff19"
+        },
+        "expected": {
+          "id": "paired-held-118",
+          "status": "ok",
+          "value": "3"
+        },
+        "actual": {
+          "id": "paired-held-118",
+          "status": "exception",
+          "type": "CheckDigitException"
+        }
+      }
+    ]
+  }
+}

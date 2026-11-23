@@ -1,0 +1,771 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "paired-held-0",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "paired-held-1",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-2",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "paired-held-3",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-4",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "paired-held-5",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-6",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-7",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-8",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-9",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-10",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "paired-held-11",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-12",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "paired-held-13",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-14",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-15",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-16",
+      "status": "ok",
+      "value": "3"
+    },
+    {
+      "id": "paired-held-17",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-18",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "paired-held-19",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-20",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-21",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-22",
+      "status": "ok",
+      "value": "0"
+    },
+    {
+      "id": "paired-held-23",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-24",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-25",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-26",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "paired-held-27",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-28",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "paired-held-29",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "paired-held-30",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "paired-held-31",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-32",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "paired-held-33",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "paired-held-34",
+      "status": "ok",
+      "value": "4"
+    },
+    {
+      "id": "paired-held-35",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-36",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "paired-held-37",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "paired-held-38",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "paired-held-39",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-40",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "paired-held-41",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-42",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-43",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-44",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-45",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-46",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "paired-held-47",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-48",
+      "status": "ok",
+      "value": "6"
+    },
+    {
+      "id": "paired-held-49",
+      "status": "ok",
+      "value": true
+    },
+    {
+      "id": "paired-held-50",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "paired-held-51",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-52",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "paired-held-53",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-54",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "paired-held-55",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-56",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "paired-held-57",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-58",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "paired-held-59",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-60",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-61",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-62",
+      "status": "ok",
+      "value": "8"
+    },
+    {
+      "id": "paired-held-63",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-64",
+      "status": "ok",
+      "value": "2"
+    },
+    {
+      "id": "paired-held-65",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-66",
+      "status": "ok",
+      "value": "5"
+    },
+    {
+      "id": "paired-held-67",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-68",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-69",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-70",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-71",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-72",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-73",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-74",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-75",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-76",
+      "status": "ok",
+      "value": "1"
+    },
+    {
+      "id": "paired-held-77",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-78",
+      "status": "ok",
+      "value": "9"
+    },
+    {
+      "id": "paired-held-79",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-80",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-81",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-82",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-83",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-84",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-85",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-86",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-87",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-88",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-89",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-90",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-91",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-92",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-93",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-94",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-95",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-96",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-97",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-98",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-99",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-100",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-101",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-102",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-103",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-104",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-105",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-106",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-107",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-108",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-109",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-110",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-111",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-112",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-113",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-114",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-115",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-116",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-117",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-118",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-119",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-120",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-121",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-122",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-123",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-124",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-125",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-126",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-127",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-128",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-129",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-130",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-131",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-132",
+      "status": "exception",
+      "type": "CheckDigitException"
+    },
+    {
+      "id": "paired-held-133",
+      "status": "ok",
+      "value": false
+    },
+    {
+      "id": "paired-held-134",
+      "status": "ok",
+      "value": "7"
+    },
+    {
+      "id": "paired-held-135",
+      "status": "ok",
+      "value": false
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-247d3fadf381424eb536b8431d32c5ab",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=256m",
+      "--memory-swap=256m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/yr/srn8f8t13v56_fnq0_5p87y40000gn/T/migration-candidate-9b85bppr/candidate.py,dst=/candidate.py,readonly",
+      "sha256:25836c0871015d642bdc52b5b1e237c2f13a1e647afa2a71bfdf18c14128792c",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.200217,
+    "stdout": "[{\"id\": \"paired-held-0\", \"status\": \"ok\", \"value\": \"0\"}, {\"id\": \"paired-held-1\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-2\", \"status\": \"ok\", \"value\": \"4\"}, {\"id\": \"paired-held-3\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-4\", \"status\": \"ok\", \"value\": \"0\"}, {\"id\": \"paired-held-5\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-6\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-7\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-8\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-9\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-10\", \"status\": \"ok\", \"value\": \"4\"}, {\"id\": \"paired-held-11\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-12\", \"status\": \"ok\", \"value\": \"6\"}, {\"id\": \"paired-held-13\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-14\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-15\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-16\", \"status\": \"ok\", \"value\": \"3\"}, {\"id\": \"paired-held-17\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-18\", \"status\": \"ok\", \"value\": \"2\"}, {\"id\": \"paired-held-19\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-20\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-21\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-22\", \"status\": \"ok\", \"value\": \"0\"}, {\"id\": \"paired-held-23\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-24\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-25\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-26\", \"status\": \"ok\", \"value\": \"4\"}, {\"id\": \"paired-held-27\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-28\", \"status\": \"ok\", \"value\": \"4\"}, {\"id\": \"paired-held-29\", \"status\": \"ok\", \"value\": true}, {\"id\": \"paired-held-30\", \"status\": \"ok\", \"value\": \"1\"}, {\"id\": \"paired-held-31\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-32\", \"status\": \"ok\", \"value\": \"2\"}, {\"id\": \"paired-held-33\", \"status\": \"ok\", \"value\": true}, {\"id\": \"paired-held-34\", \"status\": \"ok\", \"value\": \"4\"}, {\"id\": \"paired-held-35\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-36\", \"status\": \"ok\", \"value\": \"6\"}, {\"id\": \"paired-held-37\", \"status\": \"ok\", \"value\": true}, {\"id\": \"paired-held-38\", \"status\": \"ok\", \"value\": \"5\"}, {\"id\": \"paired-held-39\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-40\", \"status\": \"ok\", \"value\": \"5\"}, {\"id\": \"paired-held-41\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-42\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-43\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-44\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-45\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-46\", \"status\": \"ok\", \"value\": \"8\"}, {\"id\": \"paired-held-47\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-48\", \"status\": \"ok\", \"value\": \"6\"}, {\"id\": \"paired-held-49\", \"status\": \"ok\", \"value\": true}, {\"id\": \"paired-held-50\", \"status\": \"ok\", \"value\": \"8\"}, {\"id\": \"paired-held-51\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-52\", \"status\": \"ok\", \"value\": \"8\"}, {\"id\": \"paired-held-53\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-54\", \"status\": \"ok\", \"value\": \"5\"}, {\"id\": \"paired-held-55\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-56\", \"status\": \"ok\", \"value\": \"2\"}, {\"id\": \"paired-held-57\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-58\", \"status\": \"ok\", \"value\": \"1\"}, {\"id\": \"paired-held-59\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-60\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-61\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-62\", \"status\": \"ok\", \"value\": \"8\"}, {\"id\": \"paired-held-63\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-64\", \"status\": \"ok\", \"value\": \"2\"}, {\"id\": \"paired-held-65\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-66\", \"status\": \"ok\", \"value\": \"5\"}, {\"id\": \"paired-held-67\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-68\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-69\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-70\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-71\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-72\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-73\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-74\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-75\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-76\", \"status\": \"ok\", \"value\": \"1\"}, {\"id\": \"paired-held-77\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-78\", \"status\": \"ok\", \"value\": \"9\"}, {\"id\": \"paired-held-79\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-80\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-81\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-82\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-83\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-84\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-85\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-86\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-87\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-88\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-89\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-90\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-91\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-92\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-93\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-94\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-95\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-96\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-97\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-98\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-99\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-100\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-101\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-102\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-103\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-104\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-105\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-106\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-107\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-108\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-109\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-110\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-111\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-112\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-113\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-114\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-115\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-116\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-117\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-118\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-119\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-120\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-121\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-122\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-123\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-124\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-125\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-126\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-127\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-128\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-129\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-130\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-131\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-132\", \"status\": \"exception\", \"type\": \"CheckDigitException\"}, {\"id\": \"paired-held-133\", \"status\": \"ok\", \"value\": false}, {\"id\": \"paired-held-134\", \"status\": \"ok\", \"value\": \"7\"}, {\"id\": \"paired-held-135\", \"status\": \"ok\", \"value\": false}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-23T01:53:58.633359591Z",
+      "FinishedAt": "2026-11-23T01:53:58.75831055Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:25836c0871015d642bdc52b5b1e237c2f13a1e647afa2a71bfdf18c14128792c",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:7a6f9b47ca5d264fe5fcc7d43c0524ff91652df86e326b74da956cb7700c2da0",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

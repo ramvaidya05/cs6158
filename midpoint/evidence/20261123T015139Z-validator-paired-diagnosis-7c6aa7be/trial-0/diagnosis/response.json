@@ -1,0 +1,78 @@
+{
+  "code": "JAVA_DECIMAL_BASES = [\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558, 3664, 3792,\n    3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216,\n    43264, 43472, 43504, 43600, 44016, 65296\n]\n\ndef get_numeric_value(ch):\n    cp = ord(ch)\n    for base in JAVA_DECIMAL_BASES:\n        if base <= cp < base + 10:\n            return cp - base\n    return -1\n\ndef is_blank_or_null(code):\n    if code is None:\n        return True\n    return len(code.strip()) == 0\n\ndef to_int(character, left_pos, right_pos):\n    val = get_numeric_value(character)\n    if val >= 0:\n        return val\n    raise ValueError(f\"Invalid Character[{left_pos}] = '{character}'\")\n\ndef weighted_value(char_value, left_pos, right_pos):\n    position_weight = [2, 1]\n    weight = position_weight[right_pos % 2]\n    w_val = char_value * weight\n    return w_val - 9 if w_val > 9 else w_val\n\ndef calculate_modulus(code, includes_check_digit):\n    modulus = 10\n    total = 0\n    for i, ch in enumerate(code):\n        lth = len(code) + (0 if includes_check_digit else 1)\n        left_pos = i + 1\n        right_pos = lth - i\n        char_val = to_int(ch, left_pos, right_pos)\n        total += weighted_value(char_val, left_pos, right_pos)\n    if total == 0:\n        raise ValueError(\"Invalid code, sum is zero\")\n    return total % modulus\n\ndef to_check_digit(char_value):\n    if 0 <= char_value <= 9:\n        return str(char_value)\n    raise ValueError(f\"Invalid Check Digit Value ={char_value}\")\n\ndef calculate(code):\n    if is_blank_or_null(code):\n        raise ValueError(\"Code is missing\")\n    modulus = 10\n    modulus_result = calculate_modulus(code, False)\n    char_value = (modulus - modulus_result) % modulus\n    return to_check_digit(char_value)\n\ndef is_valid(code):\n    if is_blank_or_null(code):\n        return False\n    try:\n        modulus_result = calculate_modulus(code, True)\n        return modulus_result == 0\n    except ValueError:\n        return False\n\ndef run(operation, data):\n    if operation == \"calculate\":\n        return calculate(data)\n    elif operation == \"isValid\":\n        return is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "The failure in the previous candidate was due to `java_is_digit` and `java_get_numeric_value` only supporting ASCII digits ('0'-'9'), whereas Java's `Character.isDigit` and `Character.getNumericValue` support all Unicode decimal digit characters (such as full-width digits '\\uff11', '\\uff12' and Arabic-Indic digits '\\u0661', '\\u0662'). By using the verified list of Java decimal bases (`JAVA_DECIMAL_BASES`), `get_numeric_value` correctly identifies non-ASCII decimal digits across standard CPython and GraalPy without relying on platform-specific unicodedata methods.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "UZwDa73DN-7BjMcPyKLc4As",
+    "usage": {
+      "input_tokens": 2653,
+      "output_tokens": 1067,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2653,
+        "candidatesTokenCount": 1067,
+        "totalTokenCount": 3720,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2653
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 5.971
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"JAVA_DECIMAL_BASES = [\\n    48, 1632, 1776, 1984, 2406, 2534, 2662, 2790, 2918, 3046, 3174, 3302, 3430, 3558, 3664, 3792,\\n    3872, 4160, 4240, 6112, 6160, 6470, 6608, 6784, 6800, 6992, 7088, 7232, 7248, 42528, 43216,\\n    43264, 43472, 43504, 43600, 44016, 65296\\n]\\n\\ndef get_numeric_value(ch):\\n    cp = ord(ch)\\n    for base in JAVA_DECIMAL_BASES:\\n        if base <= cp < base + 10:\\n            return cp - base\\n    return -1\\n\\ndef is_blank_or_null(code):\\n    if code is None:\\n        return True\\n    return len(code.strip()) == 0\\n\\ndef to_int(character, left_pos, right_pos):\\n    val = get_numeric_value(character)\\n    if val >= 0:\\n        return val\\n    raise ValueError(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\ndef weighted_value(char_value, left_pos, right_pos):\\n    position_weight = [2, 1]\\n    weight = position_weight[right_pos % 2]\\n    w_val = char_value * weight\\n    return w_val - 9 if w_val > 9 else w_val\\n\\ndef calculate_modulus(code, includes_check_digit):\\n    modulus = 10\\n    total = 0\\n    for i, ch in enumerate(code):\\n        lth = len(code) + (0 if includes_check_digit else 1)\\n        left_pos = i + 1\\n        right_pos = lth - i\\n        char_val = to_int(ch, left_pos, right_pos)\\n        total += weighted_value(char_val, left_pos, right_pos)\\n    if total == 0:\\n        raise ValueError(\\\"Invalid code, sum is zero\\\")\\n    return total % modulus\\n\\ndef to_check_digit(char_value):\\n    if 0 <= char_value <= 9:\\n        return str(char_value)\\n    raise ValueError(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\ndef calculate(code):\\n    if is_blank_or_null(code):\\n        raise ValueError(\\\"Code is missing\\\")\\n    modulus = 10\\n    modulus_result = calculate_modulus(code, False)\\n    char_value = (modulus - modulus_result) % modulus\\n    return to_check_digit(char_value)\\n\\ndef is_valid(code):\\n    if is_blank_or_null(code):\\n        return False\\n    try:\\n        modulus_result = calculate_modulus(code, True)\\n        return modulus_result == 0\\n    except ValueError:\\n        return False\\n\\ndef run(operation, data):\\n    if operation == \\\"calculate\\\":\\n        return calculate(data)\\n    elif operation == \\\"isValid\\\":\\n        return is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"The failure in the previous candidate was due to `java_is_digit` and `java_get_numeric_value` only supporting ASCII digits ('0'-'9'), whereas Java's `Character.isDigit` and `Character.getNumericValue` support all Unicode decimal digit characters (such as full-width digits '\\\\uff11', '\\\\uff12' and Arabic-Indic digits '\\\\u0661', '\\\\u0662'). By using the verified list of Java decimal bases (`JAVA_DECIMAL_BASES`), `get_numeric_value` correctly identifies non-ASCII decimal digits across standard CPython and GraalPy without relying on platform-specific unicodedata methods.\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfROSynv4riE3ZaEwVlMg3Oe4qPqBOouCo2/qG8uS2lq5bwb2O6KwtTw4lInXk9ObjZ0vtq+/BlNIW4c/2TsCb+ks9bYgC6BfDY7GIyIJJHkUMJLZBlLjDZyA8qr7wged6+wXE2O7/cbs9n6Hu34zCzdjx5sWX3IBZTV1+t1OsWVDNp9PKUasIgxEaZ8JaupRew=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 2653,
+      "candidatesTokenCount": 1067,
+      "totalTokenCount": 3720,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2653
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "UZwDa73DN-7BjMcPyKLc4As",
+    "usage": {
+      "input_tokens": 2653,
+      "output_tokens": 1067,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 2653,
+        "candidatesTokenCount": 1067,
+        "totalTokenCount": 3720,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2653
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}

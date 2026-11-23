@@ -1,0 +1,78 @@
+{
+  "code": "def is_blank_or_null(code):\n    if code is None:\n        return True\n    return len(code.strip()) == 0\n\ndef java_is_digit(ch):\n    return ch.isdigit()\n\ndef java_get_numeric_value(ch):\n    if '0' <= ch <= '9':\n        return ord(ch) - ord('0')\n    return -1\n\ndef to_int(character, left_pos, right_pos):\n    if java_is_digit(character):\n        num = java_get_numeric_value(character)\n        if num >= 0:\n            return num\n    raise ValueError(f\"Invalid Character[{left_pos}] = '{character}'\")\n\ndef weighted_value(char_value, left_pos, right_pos):\n    position_weight = [2, 1]\n    weight = position_weight[right_pos % 2]\n    w_val = char_value * weight\n    return w_val - 9 if w_val > 9 else w_val\n\ndef calculate_modulus(code, includes_check_digit):\n    modulus = 10\n    total = 0\n    for i, ch in enumerate(code):\n        lth = len(code) + (0 if includes_check_digit else 1)\n        left_pos = i + 1\n        right_pos = lth - i\n        char_val = to_int(ch, left_pos, right_pos)\n        total += weighted_value(char_val, left_pos, right_pos)\n    if total == 0:\n        raise ValueError(\"Invalid code, sum is zero\")\n    return total % modulus\n\ndef to_check_digit(char_value):\n    if 0 <= char_value <= 9:\n        return str(char_value)\n    raise ValueError(f\"Invalid Check Digit Value ={char_value}\")\n\ndef calculate(code):\n    if is_blank_or_null(code):\n        raise ValueError(\"Code is missing\")\n    modulus = 10\n    modulus_result = calculate_modulus(code, False)\n    char_value = (modulus - modulus_result) % modulus\n    return to_check_digit(char_value)\n\ndef is_valid(code):\n    if is_blank_or_null(code):\n        return False\n    try:\n        modulus_result = calculate_modulus(code, True)\n        return modulus_result == 0\n    except ValueError:\n        return False\n\ndef run(operation, data):\n    if operation == \"calculate\":\n        return calculate(data)\n    elif operation == \"isValid\":\n        return is_valid(data)\n    else:\n        raise ValueError(f\"Unknown operation: {operation}\")\n",
+  "explanation": "The LuhnCheckDigit class implementation translates ModulusCheckDigit (with default modulus 10) and AbstractCheckDigit logic. GenericValidator.isBlankOrNull is checked by testing if data is None or stripped string length is 0. Standard Luhn weighting logic and character validation strictly follow Commons Validator rules and throw ValueError (representing CheckDigitException) on invalid data during calculation or return False for isValid.",
+  "metadata": {
+    "backend": "gemini_generate_content",
+    "model": "gemini-3.5-flash",
+    "reasoning_effort": "low",
+    "provenance": "live_model",
+    "resolved_model": "gemini-3.6-flash",
+    "response_id": "M5wDa6b6GPCjiLMPndXCoAM",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 775,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 775,
+        "totalTokenCount": 1972,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "elapsed_seconds": 4.826
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"code\": \"def is_blank_or_null(code):\\n    if code is None:\\n        return True\\n    return len(code.strip()) == 0\\n\\ndef java_is_digit(ch):\\n    return ch.isdigit()\\n\\ndef java_get_numeric_value(ch):\\n    if '0' <= ch <= '9':\\n        return ord(ch) - ord('0')\\n    return -1\\n\\ndef to_int(character, left_pos, right_pos):\\n    if java_is_digit(character):\\n        num = java_get_numeric_value(character)\\n        if num >= 0:\\n            return num\\n    raise ValueError(f\\\"Invalid Character[{left_pos}] = '{character}'\\\")\\n\\ndef weighted_value(char_value, left_pos, right_pos):\\n    position_weight = [2, 1]\\n    weight = position_weight[right_pos % 2]\\n    w_val = char_value * weight\\n    return w_val - 9 if w_val > 9 else w_val\\n\\ndef calculate_modulus(code, includes_check_digit):\\n    modulus = 10\\n    total = 0\\n    for i, ch in enumerate(code):\\n        lth = len(code) + (0 if includes_check_digit else 1)\\n        left_pos = i + 1\\n        right_pos = lth - i\\n        char_val = to_int(ch, left_pos, right_pos)\\n        total += weighted_value(char_val, left_pos, right_pos)\\n    if total == 0:\\n        raise ValueError(\\\"Invalid code, sum is zero\\\")\\n    return total % modulus\\n\\ndef to_check_digit(char_value):\\n    if 0 <= char_value <= 9:\\n        return str(char_value)\\n    raise ValueError(f\\\"Invalid Check Digit Value ={char_value}\\\")\\n\\ndef calculate(code):\\n    if is_blank_or_null(code):\\n        raise ValueError(\\\"Code is missing\\\")\\n    modulus = 10\\n    modulus_result = calculate_modulus(code, False)\\n    char_value = (modulus - modulus_result) % modulus\\n    return to_check_digit(char_value)\\n\\ndef is_valid(code):\\n    if is_blank_or_null(code):\\n        return False\\n    try:\\n        modulus_result = calculate_modulus(code, True)\\n        return modulus_result == 0\\n    except ValueError:\\n        return False\\n\\ndef run(operation, data):\\n    if operation == \\\"calculate\\\":\\n        return calculate(data)\\n    elif operation == \\\"isValid\\\":\\n        return is_valid(data)\\n    else:\\n        raise ValueError(f\\\"Unknown operation: {operation}\\\")\\n\",\n  \"explanation\": \"The LuhnCheckDigit class implementation translates ModulusCheckDigit (with default modulus 10) and AbstractCheckDigit logic. GenericValidator.isBlankOrNull is checked by testing if data is None or stripped string length is 0. Standard Luhn weighting logic and character validation strictly follow Commons Validator rules and throw ValueError (representing CheckDigitException) on invalid data during calculation or return False for isValid.\"\n}",
+              "thoughtSignature": "EpcBCpQBAWkUfRP+B0mavNKTtCM8cjo6DGnsLcwHrCV7sWo3I4kWrFpDbRSHL6hvjVQlD/VB54vUUKyfaxUHqMgD+GTCdBnDyKDSWzAPnhGttXOfNJJe/RrrOHdtEeJYI1dDUq9oNatKzqD9VQq+D7WYBYi4ATMkUFD9ZxMDiS2lrTA2TYEhR2z3ELkPpGSyMOLkVJWTpEldRQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1197,
+      "candidatesTokenCount": 775,
+      "totalTokenCount": 1972,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1197
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "M5wDa6b6GPCjiLMPndXCoAM",
+    "usage": {
+      "input_tokens": 1197,
+      "output_tokens": 775,
+      "thinking_tokens": 0,
+      "provider_usage": {
+        "promptTokenCount": 1197,
+        "candidatesTokenCount": 775,
+        "totalTokenCount": 1972,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1197
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  }
+}
