@@ -680,3 +680,7 @@ Main one-shot holdout scores per runtime were 25/28, 25/28, 12/28; both repair a
 In the separate memory cohort, both repair arms produced identical final visible scores (37/37, 36/37, 37/37) and holdout scores (27/28, 25/28, 25/28). Memory used five repair calls versus six without memory, saving one call in one pair, with no final accuracy gain. Trial 2's memory-enabled arm repeated a candidate and was stopped. These three pairs do not establish a reliable memory benefit.
 
 All 32 live calls across the three phases completed with known usage; total accounted cost was $2.5889278125 under declared rates, not verified invoice prices. The two runtimes are correlated checks, not independent replications. The study covers two observable interfaces rather than full-repository translation. See [CSV_LIVE_OBSERVATIONS.md](CSV_LIVE_OBSERVATIONS.md) and [audited results](evidence/20261118-csv-live-report/summary.json) for raw archive references, limitations, and follow-up requirements. Python regression validation: 125 tests passed.
+
+## November 21: Commons CSV v2 parser/printer milestone
+
+Three live paired Gemini trials on 101 development and 59 fresh holdout cases in both Docker runtimes. Full-suite success was 0/3 one-shot and 3/3 in each repair arm, with one retry per repaired selection. Nine calls accounted for approximately $0.43. The combined treatment used compacted source context, Java semantic guidance, and expanded development coverage. See [CSV v2 observations](CSV_V2_OBSERVATIONS.md) for the verified module, scope, and evidence.

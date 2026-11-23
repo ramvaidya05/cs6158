@@ -532,3 +532,13 @@ python3 scripts/run_csv_v1_study.py --phase memory --suite evidence/20261118-csv
 ```
 
 These commands make paid Gemini calls. Start with the smoke; run memory only when the main study has visible initial failures and no operational blocker. See [CSV_LIVE_OBSERVATIONS.md](CSV_LIVE_OBSERVATIONS.md) for settings, accounting assumptions, results, and limits. The runner supports `GEMINI_API_KEY`, `.env.gemini`, or the existing `.env` fallback; never commit credentials.
+
+## Commons CSV v2
+
+Use the CSV v2 study revision `f487641` to reproduce the archived suite. Its fingerprints include the shared guest driver, which changed in the subsequent Codec integration. Build the runtime images at the study revision, then run the following command from `midpoint/`. The command makes paid Gemini calls with an $8 cohort cap.
+
+```sh
+python3 scripts/run_csv_v2_study.py --phase main --suite evidence/20261121-csv-v2-preparation/frozen/suite.json
+```
+
+The [CSV v2 observations](CSV_V2_OBSERVATIONS.md) link to a passing candidate and the archived audit. Use the recorded revision when reproducing older fingerprinted suites.

@@ -1,0 +1,884 @@
+{
+  "provenance": "live_model",
+  "study": "natural_translation",
+  "measurement_status": "evaluated",
+  "interpretation": "Test-supported behavioral parity on this pilot; repeated trials/cases are not independent repositories.",
+  "arms": {
+    "one_shot": {
+      "tasks_passing": 0,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 0.0,
+      "pass_rate_among_completed": 0.0,
+      "descriptive_wilson_95": [
+        0,
+        0.5615060804490177
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 296,
+            "total": 303,
+            "rate": 0.976897689768977,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 171,
+            "total": 177,
+            "rate": 0.9661016949152542,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 296,
+            "total": 303,
+            "rate": 0.976897689768977,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 171,
+            "total": 177,
+            "rate": 0.9661016949152542,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "code_repair": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 1.0,
+      "pass_rate_among_completed": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    "environment_repair": {
+      "tasks_passing": 3,
+      "admitted_task_trials": 3,
+      "completed_task_trials": 3,
+      "repair_budget_blocked_trials": 0,
+      "task_pass_rate": 1.0,
+      "pass_rate_among_completed": 1.0,
+      "descriptive_wilson_95": [
+        0.43849391955098227,
+        1
+      ],
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 303,
+            "total": 303,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 177,
+            "total": 177,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_changes": [
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 5.0847457627118615,
+        "graal": 5.0847457627118615
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 5.0847457627118615,
+        "graal": 5.0847457627118615
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 0.0,
+        "graal": 0.0
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 5.0847457627118615,
+        "graal": 5.0847457627118615
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "comparable": true,
+      "repair_eligible": true,
+      "final_validated": true,
+      "task_success_delta": 1,
+      "repair_budget_blocked": false,
+      "holdout_delta_percentage_points": {
+        "cpython": 5.0847457627118615,
+        "graal": 5.0847457627118615
+      }
+    }
+  ],
+  "runs": [
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "one_shot",
+      "path": "trial-000/commons_csv/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 52.989000000000004,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 20287,
+        "output_tokens": 5695,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 98,
+            "total": 101,
+            "rate": 0.9702970297029703,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 56,
+            "total": 59,
+            "rate": 0.9491525423728814,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 98,
+            "total": 101,
+            "rate": 0.9702970297029703,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 56,
+            "total": 59,
+            "rate": 0.9491525423728814,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "path": "trial-000/commons_csv/code_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 68.82300000000001,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 26372,
+        "output_tokens": 6221,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 0,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "path": "trial-000/commons_csv/environment_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 69.549,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 26372,
+        "output_tokens": 6132,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_csv",
+      "arm": "one_shot",
+      "path": "trial-001/commons_csv/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 67.417,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 20287,
+        "output_tokens": 7254,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 100,
+            "total": 101,
+            "rate": 0.9900990099009901,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 100,
+            "total": 101,
+            "rate": 0.9900990099009901,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "path": "trial-001/commons_csv/code_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 73.63,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 27241,
+        "output_tokens": 7237,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "path": "trial-001/commons_csv/environment_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 73.89399999999999,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 27241,
+        "output_tokens": 7168,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_csv",
+      "arm": "one_shot",
+      "path": "trial-002/commons_csv/one_shot",
+      "status": "completed",
+      "validated": false,
+      "stop_reason": "attempt_limit",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": false,
+      "attempts": 1,
+      "repair_attempts": 0,
+      "code_repairs": 0,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 71.505,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 20287,
+        "output_tokens": 6780,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 98,
+            "total": 101,
+            "rate": 0.9702970297029703,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 56,
+            "total": 59,
+            "rate": 0.9491525423728814,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 98,
+            "total": 101,
+            "rate": 0.9702970297029703,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 56,
+            "total": 59,
+            "rate": 0.9491525423728814,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_csv",
+      "arm": "code_repair",
+      "path": "trial-002/commons_csv/code_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 70.33800000000001,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 27380,
+        "output_tokens": 6692,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "task": "commons_csv",
+      "arm": "environment_repair",
+      "path": "trial-002/commons_csv/environment_repair",
+      "status": "completed",
+      "validated": true,
+      "stop_reason": "visible_pass",
+      "error": null,
+      "not_run_reason": null,
+      "visible_all_pass": true,
+      "attempts": 2,
+      "repair_attempts": 1,
+      "code_repairs": 1,
+      "repair_budget_blocked": false,
+      "environment_repairs": 0,
+      "elapsed_seconds": 69.187,
+      "usage": {
+        "model_calls": 1,
+        "input_tokens": 27380,
+        "output_tokens": 6742,
+        "usage_unknown_calls": 0
+      },
+      "runtimes": {
+        "cpython": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        },
+        "graal": {
+          "visible": {
+            "passed": 101,
+            "total": 101,
+            "rate": 1.0,
+            "unvalidated": 0
+          },
+          "holdout": {
+            "passed": 59,
+            "total": 59,
+            "rate": 1.0,
+            "unvalidated": 0
+          }
+        }
+      }
+    }
+  ],
+  "repair_opportunities": {
+    "admitted_initials": 3,
+    "completed_initials": 3,
+    "initials_with_visible_failures": 3,
+    "initials_passing_visible": 0,
+    "arms": {
+      "code_repair": {
+        "eligible_pairs_completed": 3,
+        "eligible_pairs_fully_recovered": 3,
+        "pairs_with_holdout_regression": 0
+      },
+      "environment_repair": {
+        "eligible_pairs_completed": 3,
+        "eligible_pairs_fully_recovered": 3,
+        "pairs_with_holdout_regression": 0
+      }
+    },
+    "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+  },
+  "by_task": {
+    "commons_csv": {
+      "arms": {
+        "one_shot": {
+          "tasks_passing": 0,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 3,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 0.0,
+          "pass_rate_among_completed": 0.0,
+          "descriptive_wilson_95": [
+            0,
+            0.5615060804490177
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 296,
+                "total": 303,
+                "rate": 0.976897689768977,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 171,
+                "total": 177,
+                "rate": 0.9661016949152542,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 296,
+                "total": 303,
+                "rate": 0.976897689768977,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 171,
+                "total": 177,
+                "rate": 0.9661016949152542,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "code_repair": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 3,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 1.0,
+          "pass_rate_among_completed": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 303,
+                "total": 303,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 177,
+                "total": 177,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 303,
+                "total": 303,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 177,
+                "total": 177,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        },
+        "environment_repair": {
+          "tasks_passing": 3,
+          "admitted_task_trials": 3,
+          "completed_task_trials": 3,
+          "repair_budget_blocked_trials": 0,
+          "task_pass_rate": 1.0,
+          "pass_rate_among_completed": 1.0,
+          "descriptive_wilson_95": [
+            0.43849391955098227,
+            1
+          ],
+          "runtimes": {
+            "cpython": {
+              "visible": {
+                "passed": 303,
+                "total": 303,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 177,
+                "total": 177,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            },
+            "graal": {
+              "visible": {
+                "passed": 303,
+                "total": 303,
+                "rate": 1.0,
+                "unvalidated": 0
+              },
+              "holdout": {
+                "passed": 177,
+                "total": 177,
+                "rate": 1.0,
+                "unvalidated": 0
+              }
+            }
+          }
+        }
+      },
+      "repair_opportunities": {
+        "admitted_initials": 3,
+        "completed_initials": 3,
+        "initials_with_visible_failures": 3,
+        "initials_passing_visible": 0,
+        "arms": {
+          "code_repair": {
+            "eligible_pairs_completed": 3,
+            "eligible_pairs_fully_recovered": 3,
+            "pairs_with_holdout_regression": 0
+          },
+          "environment_repair": {
+            "eligible_pairs_completed": 3,
+            "eligible_pairs_fully_recovered": 3,
+            "pairs_with_holdout_regression": 0
+          }
+        },
+        "interpretation": "Repair eligibility uses visible failures only. Zero eligible initials gives no evidence of code-repair effectiveness."
+      }
+    }
+  },
+  "usage": {
+    "model_calls": 9,
+    "input_tokens": 222847,
+    "output_tokens": 59921,
+    "usage_unknown_calls": 0
+  }
+}

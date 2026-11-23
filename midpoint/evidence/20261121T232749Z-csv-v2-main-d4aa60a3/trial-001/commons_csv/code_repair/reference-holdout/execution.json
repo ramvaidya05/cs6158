@@ -1,0 +1,549 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "csv-v2-holdout-composed-escape-0-0",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\r\u03a9",
+          "tail\rend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-1",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\n\u03a9",
+          "tail\nend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-2",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\t\u03a9",
+          "tail\tend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-3",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\b\u03a9",
+          "tail\bend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-4",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\f\u03a9",
+          "tail\fend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-5",
+      "status": "ok",
+      "value": [
+        [
+          "item10921!q\u03a9",
+          "tail!qend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-0-6",
+      "status": "ok",
+      "value": [
+        [
+          "item10921|\u03a9",
+          "tail|end"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escaped-physical-0",
+      "status": "ok",
+      "value": [
+        [
+          "item10921\nnext",
+          "x\ry"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escape-eof-0",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-0",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\r\u03a9",
+          "tail\rend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-1",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\n\u03a9",
+          "tail\nend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-2",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\t\u03a9",
+          "tail\tend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-3",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\b\u03a9",
+          "tail\bend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-4",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\f\u03a9",
+          "tail\fend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-5",
+      "status": "ok",
+      "value": [
+        [
+          "item63224!q\u03a9",
+          "tail!qend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-1-6",
+      "status": "ok",
+      "value": [
+        [
+          "item63224:\u03a9",
+          "tail:end"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escaped-physical-1",
+      "status": "ok",
+      "value": [
+        [
+          "item63224\nnext",
+          "x\ry"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escape-eof-1",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-0",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\r\u03a9",
+          "tail\rend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-1",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\n\u03a9",
+          "tail\nend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-2",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\t\u03a9",
+          "tail\tend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-3",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\b\u03a9",
+          "tail\bend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-4",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\f\u03a9",
+          "tail\fend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-5",
+      "status": "ok",
+      "value": [
+        [
+          "item72517!q\u03a9",
+          "tail!qend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-composed-escape-2-6",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\t\u03a9",
+          "tail\tend"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escaped-physical-2",
+      "status": "ok",
+      "value": [
+        [
+          "item72517\nnext",
+          "x\ry"
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-escape-eof-2",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v2-holdout-character-validation-0",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-printer-character-validation-0",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-character-validation-1",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-printer-character-validation-1",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-character-validation-2",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-printer-character-validation-2",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-mode-composition-0",
+      "status": "ok",
+      "value": "\"absent\"|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+    },
+    {
+      "id": "csv-v2-holdout-null-composition-0",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "",
+          ""
+        ],
+        [
+          "v|w",
+          null,
+          "tail",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-mode-composition-1",
+      "status": "ok",
+      "value": "absent|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+    },
+    {
+      "id": "csv-v2-holdout-null-composition-1",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          "absent",
+          "",
+          ""
+        ],
+        [
+          "v|w",
+          null,
+          "tail",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-mode-composition-2",
+      "status": "ok",
+      "value": "absent|absent||\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+    },
+    {
+      "id": "csv-v2-holdout-null-composition-2",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "",
+          ""
+        ],
+        [
+          "v|w",
+          null,
+          "tail",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-mode-composition-3",
+      "status": "ok",
+      "value": "absent|\"absent\"|\"\"|\"x|y\"\n\"a!!b\"|\"c!\"d\"|\"line\r\nnext\"|\"  edge  \"\n"
+    },
+    {
+      "id": "csv-v2-holdout-null-composition-3",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          "absent",
+          "",
+          ""
+        ],
+        [
+          "v|w",
+          null,
+          "tail",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-mode-composition-4",
+      "status": "ok",
+      "value": "absent|absent||x!|y\na!!b|c\"d|line!r!nnext|  edge  \n"
+    },
+    {
+      "id": "csv-v2-holdout-null-composition-4",
+      "status": "ok",
+      "value": [
+        [
+          null,
+          null,
+          "",
+          ""
+        ],
+        [
+          "v|w",
+          null,
+          "tail",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-space-composition-0",
+      "status": "ok",
+      "value": [
+        [
+          "\u00a0one\u00a0",
+          "\u00a0two\u00a0",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-print-space-0",
+      "status": "ok",
+      "value": "\u00a0one\u00a0::nil\r\n"
+    },
+    {
+      "id": "csv-v2-holdout-space-composition-1",
+      "status": "ok",
+      "value": [
+        [
+          "one",
+          "\u2002two\u2002",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-print-space-1",
+      "status": "ok",
+      "value": "\u2002one\u2002::nil\r\n"
+    },
+    {
+      "id": "csv-v2-holdout-space-composition-2",
+      "status": "ok",
+      "value": [
+        [
+          "\u202fone\u202f",
+          "\u202ftwo\u202f",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-print-space-2",
+      "status": "ok",
+      "value": "\u202fone\u202f::nil\r\n"
+    },
+    {
+      "id": "csv-v2-holdout-space-composition-3",
+      "status": "ok",
+      "value": [
+        [
+          "one",
+          "two",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-print-space-3",
+      "status": "ok",
+      "value": "one::nil\r\n"
+    },
+    {
+      "id": "csv-v2-holdout-retained-blanks",
+      "status": "ok",
+      "value": [
+        [
+          ""
+        ],
+        [
+          "fresh|value",
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          "last",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-malformed-after-quote",
+      "status": "exception",
+      "type": "CSVParseError"
+    },
+    {
+      "id": "csv-v2-holdout-quote-disabled-composition",
+      "status": "ok",
+      "value": [
+        [
+          "'x'",
+          "a|b",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "csv-v2-holdout-custom-quote-composition",
+      "status": "ok",
+      "value": "'it!'s|quoted'|'a!!b'|nil\r\r"
+    },
+    {
+      "id": "csv-v2-holdout-disabled-quote-composition",
+      "status": "ok",
+      "value": "x!|y|a!!b|c!nd\r\n"
+    },
+    {
+      "id": "csv-v2-holdout-bool-validation-0",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-bool-validation-1",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    },
+    {
+      "id": "csv-v2-holdout-bool-validation-2",
+      "status": "exception",
+      "type": "IllegalArgumentException"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/target/classes:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.146078,
+    "stdout": "[{\"id\":\"csv-v2-holdout-composed-escape-0-0\",\"status\":\"ok\",\"value\":[[\"item10921\\r\u03a9\",\"tail\\rend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-1\",\"status\":\"ok\",\"value\":[[\"item10921\\n\u03a9\",\"tail\\nend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-2\",\"status\":\"ok\",\"value\":[[\"item10921\\t\u03a9\",\"tail\\tend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-3\",\"status\":\"ok\",\"value\":[[\"item10921\\b\u03a9\",\"tail\\bend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-4\",\"status\":\"ok\",\"value\":[[\"item10921\\f\u03a9\",\"tail\\fend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-5\",\"status\":\"ok\",\"value\":[[\"item10921!q\u03a9\",\"tail!qend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-0-6\",\"status\":\"ok\",\"value\":[[\"item10921|\u03a9\",\"tail|end\"]]},{\"id\":\"csv-v2-holdout-escaped-physical-0\",\"status\":\"ok\",\"value\":[[\"item10921\\nnext\",\"x\\ry\"]]},{\"id\":\"csv-v2-holdout-escape-eof-0\",\"status\":\"exception\",\"type\":\"CSVParseError\"},{\"id\":\"csv-v2-holdout-composed-escape-1-0\",\"status\":\"ok\",\"value\":[[\"item63224\\r\u03a9\",\"tail\\rend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-1\",\"status\":\"ok\",\"value\":[[\"item63224\\n\u03a9\",\"tail\\nend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-2\",\"status\":\"ok\",\"value\":[[\"item63224\\t\u03a9\",\"tail\\tend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-3\",\"status\":\"ok\",\"value\":[[\"item63224\\b\u03a9\",\"tail\\bend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-4\",\"status\":\"ok\",\"value\":[[\"item63224\\f\u03a9\",\"tail\\fend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-5\",\"status\":\"ok\",\"value\":[[\"item63224!q\u03a9\",\"tail!qend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-1-6\",\"status\":\"ok\",\"value\":[[\"item63224:\u03a9\",\"tail:end\"]]},{\"id\":\"csv-v2-holdout-escaped-physical-1\",\"status\":\"ok\",\"value\":[[\"item63224\\nnext\",\"x\\ry\"]]},{\"id\":\"csv-v2-holdout-escape-eof-1\",\"status\":\"exception\",\"type\":\"CSVParseError\"},{\"id\":\"csv-v2-holdout-composed-escape-2-0\",\"status\":\"ok\",\"value\":[[\"item72517\\r\u03a9\",\"tail\\rend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-1\",\"status\":\"ok\",\"value\":[[\"item72517\\n\u03a9\",\"tail\\nend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-2\",\"status\":\"ok\",\"value\":[[\"item72517\\t\u03a9\",\"tail\\tend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-3\",\"status\":\"ok\",\"value\":[[\"item72517\\b\u03a9\",\"tail\\bend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-4\",\"status\":\"ok\",\"value\":[[\"item72517\\f\u03a9\",\"tail\\fend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-5\",\"status\":\"ok\",\"value\":[[\"item72517!q\u03a9\",\"tail!qend\"]]},{\"id\":\"csv-v2-holdout-composed-escape-2-6\",\"status\":\"ok\",\"value\":[[\"item72517\\t\u03a9\",\"tail\\tend\"]]},{\"id\":\"csv-v2-holdout-escaped-physical-2\",\"status\":\"ok\",\"value\":[[\"item72517\\nnext\",\"x\\ry\"]]},{\"id\":\"csv-v2-holdout-escape-eof-2\",\"status\":\"exception\",\"type\":\"CSVParseError\"},{\"id\":\"csv-v2-holdout-character-validation-0\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-printer-character-validation-0\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-character-validation-1\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-printer-character-validation-1\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-character-validation-2\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-printer-character-validation-2\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-mode-composition-0\",\"status\":\"ok\",\"value\":\"\\\"absent\\\"|\\\"absent\\\"|\\\"\\\"|\\\"x|y\\\"\\n\\\"a!!b\\\"|\\\"c!\\\"d\\\"|\\\"line\\r\\nnext\\\"|\\\"  edge  \\\"\\n\"},{\"id\":\"csv-v2-holdout-null-composition-0\",\"status\":\"ok\",\"value\":[[null,null,\"\",\"\"],[\"v|w\",null,\"tail\",\"\"]]},{\"id\":\"csv-v2-holdout-mode-composition-1\",\"status\":\"ok\",\"value\":\"absent|\\\"absent\\\"|\\\"\\\"|\\\"x|y\\\"\\n\\\"a!!b\\\"|\\\"c!\\\"d\\\"|\\\"line\\r\\nnext\\\"|\\\"  edge  \\\"\\n\"},{\"id\":\"csv-v2-holdout-null-composition-1\",\"status\":\"ok\",\"value\":[[null,\"absent\",\"\",\"\"],[\"v|w\",null,\"tail\",\"\"]]},{\"id\":\"csv-v2-holdout-mode-composition-2\",\"status\":\"ok\",\"value\":\"absent|absent||\\\"x|y\\\"\\n\\\"a!!b\\\"|\\\"c!\\\"d\\\"|\\\"line\\r\\nnext\\\"|\\\"  edge  \\\"\\n\"},{\"id\":\"csv-v2-holdout-null-composition-2\",\"status\":\"ok\",\"value\":[[null,null,\"\",\"\"],[\"v|w\",null,\"tail\",\"\"]]},{\"id\":\"csv-v2-holdout-mode-composition-3\",\"status\":\"ok\",\"value\":\"absent|\\\"absent\\\"|\\\"\\\"|\\\"x|y\\\"\\n\\\"a!!b\\\"|\\\"c!\\\"d\\\"|\\\"line\\r\\nnext\\\"|\\\"  edge  \\\"\\n\"},{\"id\":\"csv-v2-holdout-null-composition-3\",\"status\":\"ok\",\"value\":[[null,\"absent\",\"\",\"\"],[\"v|w\",null,\"tail\",\"\"]]},{\"id\":\"csv-v2-holdout-mode-composition-4\",\"status\":\"ok\",\"value\":\"absent|absent||x!|y\\na!!b|c\\\"d|line!r!nnext|  edge  \\n\"},{\"id\":\"csv-v2-holdout-null-composition-4\",\"status\":\"ok\",\"value\":[[null,null,\"\",\"\"],[\"v|w\",null,\"tail\",\"\"]]},{\"id\":\"csv-v2-holdout-space-composition-0\",\"status\":\"ok\",\"value\":[[\"\u00a0one\u00a0\",\"\u00a0two\u00a0\",\"\"]]},{\"id\":\"csv-v2-holdout-print-space-0\",\"status\":\"ok\",\"value\":\"\u00a0one\u00a0::nil\\r\\n\"},{\"id\":\"csv-v2-holdout-space-composition-1\",\"status\":\"ok\",\"value\":[[\"one\",\"\u2002two\u2002\",\"\"]]},{\"id\":\"csv-v2-holdout-print-space-1\",\"status\":\"ok\",\"value\":\"\u2002one\u2002::nil\\r\\n\"},{\"id\":\"csv-v2-holdout-space-composition-2\",\"status\":\"ok\",\"value\":[[\"\u202fone\u202f\",\"\u202ftwo\u202f\",\"\"]]},{\"id\":\"csv-v2-holdout-print-space-2\",\"status\":\"ok\",\"value\":\"\u202fone\u202f::nil\\r\\n\"},{\"id\":\"csv-v2-holdout-space-composition-3\",\"status\":\"ok\",\"value\":[[\"one\",\"two\",\"\"]]},{\"id\":\"csv-v2-holdout-print-space-3\",\"status\":\"ok\",\"value\":\"one::nil\\r\\n\"},{\"id\":\"csv-v2-holdout-retained-blanks\",\"status\":\"ok\",\"value\":[[\"\"],[\"fresh|value\",\"\"],[\"\"],[\"last\",\"\"]]},{\"id\":\"csv-v2-holdout-malformed-after-quote\",\"status\":\"exception\",\"type\":\"CSVParseError\"},{\"id\":\"csv-v2-holdout-quote-disabled-composition\",\"status\":\"ok\",\"value\":[[\"'x'\",\"a|b\",\"\"]]},{\"id\":\"csv-v2-holdout-custom-quote-composition\",\"status\":\"ok\",\"value\":\"'it!'s|quoted'|'a!!b'|nil\\r\\r\"},{\"id\":\"csv-v2-holdout-disabled-quote-composition\",\"status\":\"ok\",\"value\":\"x!|y|a!!b|c!nd\\r\\n\"},{\"id\":\"csv-v2-holdout-bool-validation-0\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-bool-validation-1\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"},{\"id\":\"csv-v2-holdout-bool-validation-2\",\"status\":\"exception\",\"type\":\"IllegalArgumentException\"}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

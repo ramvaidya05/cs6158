@@ -1,6 +1,6 @@
 # Project summary
 
-Last updated: **November 22, 2026**. Latest qualification: Validator Luhn, November 22 local time.
+Last updated: **November 22, 2026**. Latest live studies: November 21; Validator assisted qualification: November 22 local time.
 
 ## Goal and implementation
 
@@ -16,24 +16,24 @@ Translate selected Java library behavior into Python using an LLM, then verify a
 
 - **Early pilot:** live Levenshtein translations passed all checks in 3/3 one-shot trials. Earlier API failures/timeouts remain documented as unsuccessful runs.
 - **Commons CLI v3:** 32 methods across five classes; 44 visible and 28 holdout scenarios. Main study: all three initial translations passed, so repair offered no measurable improvement. Separate memory study: full-task success improved from **1/3 one-shot to 3/3 with either repair arm**. Both failures needed one retry. **Memory added no measured benefit.** The scoped CLI study is complete; the full library is not translated.
-- **Commons CSV v1:** parser/printer interfaces; 37 visible and 28 holdout scenarios. Across three main trials, average holdout accuracy increased from **73.81% to 92.86%** with repair. Code repair passed all visible cases, but **0/3 candidates passed the entire suite**. Remaining errors include escaping and Java UTF-16 delimiter semantics. Separate memory study: identical final accuracy with/without history; history saved one retry in one pair.
+- **Commons CSV parser/printer milestone complete:** v2 uses a 65% smaller source prompt with Java semantic guidance and a fresh suite of 101 development and 59 holdout cases. Full-suite passes improved from **0/3 one-shot to 3/3 in each repair arm**, after one retry each. v1 memory added no measured accuracy benefit. Headers and broader APIs remain outside this scope.
 - **Commons Codec Hex:** separately recorded three-trial study reached **96.8% CPython / 90.9% GraalPy holdout accuracy**, but **0/3 full-task passes**. A November 21 v2 live trial plus continuation reached 110/110 CPython and 108/110 GraalPy holdout cases (12,119 tokens). A subsequent developer-assisted Unicode fix completed the supported Hex slice: 21/21 visible and 110/110 previously withheld cases in each runtime, plus all 65,536 Java char digit mappings in each. This qualification used no API tokens; it is regression evidence, not autonomous repair success or full-library completion. Different model/settings mean this is not a matched comparison with CLI/CSV.
 
 - **Commons Validator Luhn pilot:** selected translation passed **126/130 holdout cases (96.92%)** per runtime; **0/1 full-task success**. The repair improved CPython visible cases but regressed GraalPy and was rejected. A runtime-guided continuation also failed. A deterministic assisted API substitution then passed **160/160 cases per runtime**. Total live usage: **13,055 tokens**, about **$0.074** accounted; assisted qualification used no API calls. This is scoped regression success, not autonomous model repair. [Protocol and evidence](midpoint/VALIDATOR_OBSERVATIONS.md).
 
-CLI v3 used 11 live calls (about **$0.76**); CSV used 32 (about **$2.59**), including their smoke runs. These are declared-rate accounting estimates, not provider invoices or total historical project spend. Latest validation checkpoint: **135 Python tests passed**; CSV Java qualification passed **10 tests**.
+CLI v3 used 11 live calls (~**$0.76**), CSV v1 used 32 (~**$2.59**), and CSV v2 used nine (~**$0.43**). Costs use declared accounting rates. After integrating CSV, Codec and Validator, **139 Python tests passed**. The existing CSV Java qualification passed **10 tests**.
 
 ## What the evidence supports—and what remains
 
 Execution-guided repair helped failing translations in these small studies. Retry memory has **not shown an accuracy advantage**. Healthy CLI/CSV studies required no environment actions; separate controlled fault tests demonstrate only the implemented recovery path. Three trials and correlated checks in two runtimes do not establish broad statistical superiority. Passing these suites does not prove full semantic equivalence.
 
-**Next:** turn observed CSV failures and CLI absent-option coverage gaps into development regressions; create versioned suites with fresh independent holdout cases before another scored study. Preserve old scores and archives. Broader CSV APIs, multi-module/repository translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
+**Next:** close the CLI absent-option coverage gaps with fresh holdout cases and assess broader CSV APIs as a separate scope. Multi-module translation, cross-trial learning, arbitrary package installation, and a matched AlphaTrans comparison remain outstanding.
 
 ## Details only when needed
 
 - [Complete experiment history](midpoint/EXPERIMENT_RESULTS.md)
+- [CLI results](midpoint/CLI_V3_LIVE_OBSERVATIONS.md) · [CSV v2 results and verified translation](midpoint/CSV_V2_OBSERVATIONS.md)
 - [Codec completion and provenance](midpoint/CODEC_V2_OBSERVATIONS.md)
-- [CLI results](midpoint/CLI_V3_LIVE_OBSERVATIONS.md) · [CSV results](midpoint/CSV_LIVE_OBSERVATIONS.md)
 - [Retry memory and dependency changes](midpoint/RETRY_MEMORY_OBSERVATIONS.md)
 - [Architecture and roadmap](IMPLEMENTATION_PLAN.md) · [Professor feedback response](midpoint/REVIEWER_RESPONSE.md)
 

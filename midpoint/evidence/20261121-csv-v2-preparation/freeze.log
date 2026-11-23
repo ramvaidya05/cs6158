@@ -1,0 +1,12 @@
+{
+  "sha256": "e13be5ca15628267df04222cbf21fe18240a37709ca8a864f76689e9d6905764",
+  "schema": 2,
+  "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+  "profile": "commons-csv-v2",
+  "counts": {
+    "commons_csv": {
+      "visible": 101,
+      "holdout": 59
+    }
+  }
+}

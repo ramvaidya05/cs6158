@@ -1,0 +1,291 @@
+{
+  "limit_usd": 8,
+  "accounted_usd": 0.4336228125,
+  "input_usd_per_million": 0.75,
+  "output_usd_per_million": 3.75,
+  "policy": "UTF-8 request bytes + 4096 overhead as conservative input-token allowance; 1.25x input rate reserves cache-write premium; unknown charges retain full reservation. Estimate at supplied prices, not a provider billing guarantee.",
+  "calls": [
+    {
+      "reserved_usd": 0.1980103125,
+      "accounted_usd": 0.0403753125,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 20287,
+        "output_tokens": 5695,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 20287,
+          "candidatesTokenCount": 5695,
+          "totalTokenCount": 25982,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 20287
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.218353125,
+      "accounted_usd": 0.0480525,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/code_repair",
+      "usage": {
+        "input_tokens": 26372,
+        "output_tokens": 6221,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 26372,
+          "candidatesTokenCount": 6221,
+          "totalTokenCount": 32593,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 26372
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.218353125,
+      "accounted_usd": 0.04771875,
+      "usage_known": true,
+      "allocation": "trial-000/commons_csv/environment_repair",
+      "usage": {
+        "input_tokens": 26372,
+        "output_tokens": 6132,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 26372,
+          "candidatesTokenCount": 6132,
+          "totalTokenCount": 32504,
+          "cachedContentTokenCount": 24333,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 26372
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 24333
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.1980103125,
+      "accounted_usd": 0.0462215625,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 20287,
+        "output_tokens": 7254,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 20287,
+          "candidatesTokenCount": 7254,
+          "totalTokenCount": 27541,
+          "cachedContentTokenCount": 18252,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 20287
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 18252
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.221698125,
+      "accounted_usd": 0.0526771875,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/code_repair",
+      "usage": {
+        "input_tokens": 27241,
+        "output_tokens": 7237,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 27241,
+          "candidatesTokenCount": 7237,
+          "totalTokenCount": 34478,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 27241
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.221698125,
+      "accounted_usd": 0.0524184375,
+      "usage_known": true,
+      "allocation": "trial-001/commons_csv/environment_repair",
+      "usage": {
+        "input_tokens": 27241,
+        "output_tokens": 7168,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 27241,
+          "candidatesTokenCount": 7168,
+          "totalTokenCount": 34409,
+          "cachedContentTokenCount": 25201,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 27241
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 25201
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.1980103125,
+      "accounted_usd": 0.0444440625,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/one_shot",
+      "usage": {
+        "input_tokens": 20287,
+        "output_tokens": 6780,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 20287,
+          "candidatesTokenCount": 6780,
+          "totalTokenCount": 27067,
+          "cachedContentTokenCount": 18252,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 20287
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 18252
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.222174375,
+      "accounted_usd": 0.05076375,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/code_repair",
+      "usage": {
+        "input_tokens": 27380,
+        "output_tokens": 6692,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 27380,
+          "candidatesTokenCount": 6692,
+          "totalTokenCount": 34072,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 27380
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    },
+    {
+      "reserved_usd": 0.222174375,
+      "accounted_usd": 0.05095125,
+      "usage_known": true,
+      "allocation": "trial-002/commons_csv/environment_repair",
+      "usage": {
+        "input_tokens": 27380,
+        "output_tokens": 6742,
+        "thinking_tokens": 0,
+        "provider_usage": {
+          "promptTokenCount": 27380,
+          "candidatesTokenCount": 6742,
+          "totalTokenCount": 34122,
+          "cachedContentTokenCount": 25340,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 27380
+            }
+          ],
+          "cacheTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 25340
+            }
+          ],
+          "serviceTier": "standard"
+        }
+      }
+    }
+  ],
+  "allocation_policy": "Fixed independent trial/arm envelopes; initial candidate paid once; unused allocations never transferred",
+  "required_reservation_usd": 7.93548,
+  "allocations": {
+    "trial-000/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0403753125
+    },
+    "trial-000/commons_csv/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0480525
+    },
+    "trial-000/commons_csv/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.04771875
+    },
+    "trial-001/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0462215625
+    },
+    "trial-001/commons_csv/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0526771875
+    },
+    "trial-001/commons_csv/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.0524184375
+    },
+    "trial-002/commons_csv/one_shot": {
+      "limit_usd": 0.37788,
+      "accounted_usd": 0.0444440625
+    },
+    "trial-002/commons_csv/code_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.05076375
+    },
+    "trial-002/commons_csv/environment_repair": {
+      "limit_usd": 1.13364,
+      "accounted_usd": 0.05095125
+    }
+  }
+}
