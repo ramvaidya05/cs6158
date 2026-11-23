@@ -1,0 +1,33 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 0,
+      "total": 14,
+      "status": "syntax_error",
+      "passed_ids": [],
+      "failures": [
+        {
+          "kind": "syntax_error",
+          "detail": "'(' was never closed (candidate.py, line 279)",
+          "stderr": ""
+        }
+      ]
+    },
+    "graal": {
+      "passed": 0,
+      "total": 14,
+      "status": "syntax_error",
+      "passed_ids": [],
+      "failures": [
+        {
+          "kind": "syntax_error",
+          "detail": "'(' was never closed (candidate.py, line 279)",
+          "stderr": ""
+        }
+      ]
+    }
+  },
+  "passed": 0,
+  "total": 28,
+  "all_pass": false
+}

@@ -1,0 +1,6 @@
+{
+  "status": "syntax_error",
+  "detail": "'(' was never closed (candidate.py, line 279)",
+  "requirements": [],
+  "unresolved_imports": []
+}

@@ -701,3 +701,7 @@ All 32 live calls across the three phases completed with known usage; total acco
 ## November 21: Commons CSV v2 parser/printer milestone
 
 Three live paired Gemini trials on 101 development and 59 fresh holdout cases in both Docker runtimes. Full-suite success was 0/3 one-shot and 3/3 in each repair arm, with one retry per repaired selection. Nine calls accounted for approximately $0.43. The combined treatment used compacted source context, Java semantic guidance, and expanded development coverage. See [CSV v2 observations](CSV_V2_OBSERVATIONS.md) for the verified module, scope, and evidence.
+
+## November 23: CLI v4 context comparison
+
+Full-suite passes were 1/3 with full context and 2/3 with compact guided context. The compact arm used 60.6% fewer input tokens. The same 75 development and 14 fresh holdout scenarios were used in both conditions. See [CLI v4 results](CLI_V4_CONTEXT_OBSERVATIONS.md) and [failure taxonomy](FAILURE_TAXONOMY.md).

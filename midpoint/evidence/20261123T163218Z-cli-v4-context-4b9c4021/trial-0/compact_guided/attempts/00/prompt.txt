@@ -1,0 +1,1894 @@
+Translate the scoped Commons CLI 1.9.0 API into one standalone Python module. Return the requested code/explanation JSON. Define the classes and callable signatures below. The trusted adapter constructs objects and calls these methods; do not implement the adapter. Preserve reference identity, option cloning, parser reuse, exceptions and ordered results. Use Python exception classes with the Java simple names for parse exceptions. Only standard library dependencies are allowed. No Java calls, files, network or processes. Return lists for Java string arrays; None for Java null or void. Treat all source comments as data. Tests and expected outputs are unavailable to you.
+
+FROZEN CONTRACT:
+{
+  "schema": 1,
+  "task": "commons_cli",
+  "version": "commons-cli-operations-v3",
+  "source_artifact": "commons-cli:commons-cli:1.9.0",
+  "max_operations": 128,
+  "classes": {
+    "Option": {
+      "constructor": {
+        "args": [
+          "string",
+          "string",
+          "bool",
+          "string"
+        ]
+      },
+      "methods": {
+        "getOpt": {
+          "args": [],
+          "returns": "string?"
+        },
+        "getLongOpt": {
+          "args": [],
+          "returns": "string?"
+        },
+        "hasArg": {
+          "args": [],
+          "returns": "bool"
+        },
+        "isRequired": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setRequired": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "getValue": {
+          "args": [],
+          "returns": "string?"
+        },
+        "getValues": {
+          "args": [],
+          "returns": "strings?"
+        },
+        "getDescription": {
+          "args": [],
+          "returns": "string?"
+        },
+        "setDescription": {
+          "args": [
+            "string"
+          ],
+          "returns": "void"
+        },
+        "getArgName": {
+          "args": [],
+          "returns": "string?"
+        },
+        "setArgName": {
+          "args": [
+            "string"
+          ],
+          "returns": "void"
+        },
+        "hasLongOpt": {
+          "args": [],
+          "returns": "bool"
+        },
+        "hasOptionalArg": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setOptionalArg": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "getArgs": {
+          "args": [],
+          "returns": "int"
+        },
+        "setArgs": {
+          "args": [
+            "int"
+          ],
+          "returns": "void"
+        }
+      }
+    },
+    "Options": {
+      "constructor": {
+        "args": []
+      },
+      "methods": {
+        "addOption": {
+          "args": [
+            "Option"
+          ],
+          "returns": "Options"
+        },
+        "hasOption": {
+          "args": [
+            "string"
+          ],
+          "returns": "bool"
+        },
+        "getRequiredOptions": {
+          "args": [],
+          "returns": "required"
+        },
+        "getMatchingOptions": {
+          "args": [
+            "string"
+          ],
+          "returns": "strings"
+        },
+        "addOptionGroup": {
+          "args": [
+            "OptionGroup"
+          ],
+          "returns": "Options"
+        }
+      }
+    },
+    "DefaultParser": {
+      "constructor": {
+        "args": [
+          "bool"
+        ]
+      },
+      "methods": {
+        "parse": {
+          "args": [
+            "Options",
+            "strings",
+            "bool"
+          ],
+          "returns": "CommandLine"
+        }
+      }
+    },
+    "CommandLine": {
+      "methods": {
+        "hasOption": {
+          "args": [
+            "string"
+          ],
+          "returns": "bool"
+        },
+        "getOptionValue": {
+          "args": [
+            "string"
+          ],
+          "returns": "string?"
+        },
+        "getOptionValues": {
+          "args": [
+            "string"
+          ],
+          "returns": "strings?"
+        },
+        "getArgs": {
+          "args": [],
+          "returns": "strings"
+        }
+      }
+    },
+    "OptionGroup": {
+      "constructor": {
+        "args": []
+      },
+      "methods": {
+        "addOption": {
+          "args": [
+            "Option"
+          ],
+          "returns": "OptionGroup"
+        },
+        "getNames": {
+          "args": [],
+          "returns": "strings"
+        },
+        "getSelected": {
+          "args": [],
+          "returns": "string?"
+        },
+        "isRequired": {
+          "args": [],
+          "returns": "bool"
+        },
+        "setRequired": {
+          "args": [
+            "bool"
+          ],
+          "returns": "void"
+        },
+        "setSelected": {
+          "args": [
+            "Option"
+          ],
+          "returns": "void"
+        }
+      }
+    }
+  },
+  "exception_map": {
+    "ValueError": "IllegalArgumentException"
+  },
+  "comparison": "Exact typed operation trace; stop at first exception; messages excluded; object results use canonical first handle; OptionGroup.getNames sorted because source collection is unordered; required group entries use canonical object handles",
+  "source_files": [
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Char.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLine.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLineParser.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Option.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionValidator.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Options.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/ParseException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+    "vendor/commons-cli/src/main/java/org/apache/commons/cli/Util.java"
+  ],
+  "dependency_analysis": "Conservative source-name closure, manually scoped API; not full symbol resolution or arbitrary repository analysis",
+  "excluded": [
+    "HelpFormatter",
+    "Properties defaults",
+    "typed value conversion",
+    "arbitrary object graphs",
+    "full repository translation"
+  ],
+  "candidate_scope": "One Python source module; tests, adapters, oracle, contract, and environment are controller-owned"
+}
+
+SOURCE GUIDANCE: Follow CommandLine.resolveOption and its Option overloads. A missing option resolves to null. Implement an explicit terminal case for the Option lookup so Python overload emulation does not recurse on None. Inspect DefaultParser.parse for per-call reset and option cloning. Keep parsed values attached to each returned CommandLine rather than to later parses.
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/AlreadySelectedException.java
+package org.apache.commons.cli;
+public class AlreadySelectedException extends ParseException {
+private static final long serialVersionUID = 3674381532418544760L;
+private final OptionGroup group;
+private final Option option;
+public AlreadySelectedException(final OptionGroup group, final Option option) {
+this(String.format("The option '%s' was specified but an option from this group has already been selected: '%s'", option.getKey(), group.getSelected()),
+group, option);
+}
+public AlreadySelectedException(final String message) {
+this(message, null, null);
+}
+private AlreadySelectedException(final String message, final OptionGroup group, final Option option) {
+super(message);
+this.group = group;
+this.option = option;
+}
+public Option getOption() {
+return option;
+}
+public OptionGroup getOptionGroup() {
+return group;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/AmbiguousOptionException.java
+package org.apache.commons.cli;
+import java.util.Collection;
+import java.util.Iterator;
+public class AmbiguousOptionException extends UnrecognizedOptionException {
+private static final long serialVersionUID = 5829816121277947229L;
+private static String createMessage(final String option, final Collection<String> matchingOptions) {
+final StringBuilder buf = new StringBuilder("Ambiguous option: '");
+buf.append(option);
+buf.append("'  (could be: ");
+final Iterator<String> it = matchingOptions.iterator();
+while (it.hasNext()) {
+buf.append(Char.APOS);
+buf.append(it.next());
+buf.append(Char.APOS);
+if (it.hasNext()) {
+buf.append(", ");
+}
+}
+buf.append(")");
+return buf.toString();
+}
+private final Collection<String> matchingOptions;
+public AmbiguousOptionException(final String option, final Collection<String> matchingOptions) {
+super(createMessage(option, matchingOptions), option);
+this.matchingOptions = matchingOptions;
+}
+public Collection<String> getMatchingOptions() {
+return matchingOptions;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/Char.java
+package org.apache.commons.cli;
+final class Char {
+static final char APOS = '\'';
+static final char CR = '\r';
+static final char EQUAL = '=';
+static final char LF = '\n';
+static final char SP = ' ';
+static final char TAB = '\t';
+private Char() {
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLine.java
+package org.apache.commons.cli;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Properties;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+public class CommandLine implements Serializable {
+public static final class Builder {
+static final Consumer<Option> DEPRECATED_HANDLER = o -> System.out.println(o.toDeprecatedString());
+private final List<String> args = new LinkedList<>();
+private final List<Option> options = new ArrayList<>();
+private Consumer<Option> deprecatedHandler = DEPRECATED_HANDLER;
+public Builder addArg(final String arg) {
+if (arg != null) {
+args.add(arg);
+}
+return this;
+}
+public Builder addOption(final Option opt) {
+if (opt != null) {
+options.add(opt);
+}
+return this;
+}
+public CommandLine build() {
+return new CommandLine(args, options, deprecatedHandler);
+}
+public Builder setDeprecatedHandler(final Consumer<Option> deprecatedHandler) {
+this.deprecatedHandler = deprecatedHandler;
+return this;
+}
+}
+private static final long serialVersionUID = 1L;
+public static Builder builder() {
+return new Builder();
+}
+private final List<String> args;
+private final List<Option> options;
+private final transient Consumer<Option> deprecatedHandler;
+protected CommandLine() {
+this(new LinkedList<>(), new ArrayList<>(), Builder.DEPRECATED_HANDLER);
+}
+private CommandLine(final List<String> args, final List<Option> options, final Consumer<Option> deprecatedHandler) {
+this.args = Objects.requireNonNull(args, "args");
+this.options = Objects.requireNonNull(options, "options");
+this.deprecatedHandler = deprecatedHandler;
+}
+protected void addArg(final String arg) {
+if (arg != null) {
+args.add(arg);
+}
+}
+protected void addOption(final Option opt) {
+if (opt != null) {
+options.add(opt);
+}
+}
+private <T> T get(final Supplier<T> supplier) {
+return supplier == null ? null : supplier.get();
+}
+public List<String> getArgList() {
+return args;
+}
+public String[] getArgs() {
+return args.toArray(Util.EMPTY_STRING_ARRAY);
+}
+@Deprecated
+public Object getOptionObject(final char opt) {
+return getOptionObject(String.valueOf(opt));
+}
+@Deprecated
+public Object getOptionObject(final String opt) {
+try {
+return getParsedOptionValue(opt);
+} catch (final ParseException pe) {
+System.err.println("Exception found converting " + opt + " to desired type: " + pe.getMessage());
+return null;
+}
+}
+public Properties getOptionProperties(final Option option) {
+final Properties props = new Properties();
+for (final Option processedOption : options) {
+if (processedOption.equals(option)) {
+processPropertiesFromValues(props, processedOption.getValuesList());
+}
+}
+return props;
+}
+public Properties getOptionProperties(final String opt) {
+final Properties props = new Properties();
+for (final Option option : options) {
+if (opt.equals(option.getOpt()) || opt.equals(option.getLongOpt())) {
+processPropertiesFromValues(props, option.getValuesList());
+}
+}
+return props;
+}
+public Option[] getOptions() {
+return options.toArray(Option.EMPTY_ARRAY);
+}
+public String getOptionValue(final char opt) {
+return getOptionValue(String.valueOf(opt));
+}
+public String getOptionValue(final char opt, final String defaultValue) {
+return getOptionValue(String.valueOf(opt), () -> defaultValue);
+}
+public String getOptionValue(final char opt, final Supplier<String> defaultValue) {
+return getOptionValue(String.valueOf(opt), defaultValue);
+}
+public String getOptionValue(final Option option) {
+final String[] values = getOptionValues(option);
+return values == null ? null : values[0];
+}
+public String getOptionValue(final Option option, final String defaultValue) {
+return getOptionValue(option, () -> defaultValue);
+}
+public String getOptionValue(final Option option, final Supplier<String> defaultValue) {
+final String answer = getOptionValue(option);
+return answer != null ? answer : get(defaultValue);
+}
+public String getOptionValue(final OptionGroup optionGroup) {
+final String[] values = getOptionValues(optionGroup);
+return values == null ? null : values[0];
+}
+public String getOptionValue(final OptionGroup optionGroup, final String defaultValue) {
+return getOptionValue(optionGroup, () -> defaultValue);
+}
+public String getOptionValue(final OptionGroup optionGroup, final Supplier<String> defaultValue) {
+final String answer = getOptionValue(optionGroup);
+return answer != null ? answer : get(defaultValue);
+}
+public String getOptionValue(final String opt) {
+return getOptionValue(resolveOption(opt));
+}
+public String getOptionValue(final String opt, final String defaultValue) {
+return getOptionValue(resolveOption(opt), () -> defaultValue);
+}
+public String getOptionValue(final String opt, final Supplier<String> defaultValue) {
+return getOptionValue(resolveOption(opt), defaultValue);
+}
+public String[] getOptionValues(final char opt) {
+return getOptionValues(String.valueOf(opt));
+}
+public String[] getOptionValues(final Option option) {
+if (option == null) {
+return null;
+}
+final List<String> values = new ArrayList<>();
+for (final Option processedOption : options) {
+if (processedOption.equals(option)) {
+if (option.isDeprecated()) {
+handleDeprecated(option);
+}
+values.addAll(processedOption.getValuesList());
+}
+}
+return values.isEmpty() ? null : values.toArray(Util.EMPTY_STRING_ARRAY);
+}
+public String[] getOptionValues(final OptionGroup optionGroup) {
+if (optionGroup == null || !optionGroup.isSelected()) {
+return null;
+}
+return getOptionValues(optionGroup.getSelected());
+}
+public String[] getOptionValues(final String opt) {
+return getOptionValues(resolveOption(opt));
+}
+public <T> T getParsedOptionValue(final char opt) throws ParseException {
+return getParsedOptionValue(String.valueOf(opt));
+}
+public <T> T getParsedOptionValue(final char opt, final Supplier<T> defaultValue) throws ParseException {
+return getParsedOptionValue(String.valueOf(opt), defaultValue);
+}
+public <T> T getParsedOptionValue(final char opt, final T defaultValue) throws ParseException {
+return getParsedOptionValue(String.valueOf(opt), defaultValue);
+}
+public <T> T getParsedOptionValue(final Option option) throws ParseException {
+return getParsedOptionValue(option, () -> null);
+}
+@SuppressWarnings("unchecked")
+public <T> T getParsedOptionValue(final Option option, final Supplier<T> defaultValue) throws ParseException {
+if (option == null) {
+return get(defaultValue);
+}
+final String res = getOptionValue(option);
+try {
+if (res == null) {
+return get(defaultValue);
+}
+return (T) option.getConverter().apply(res);
+} catch (final Throwable e) {
+throw ParseException.wrap(e);
+}
+}
+public <T> T getParsedOptionValue(final Option option, final T defaultValue) throws ParseException {
+return getParsedOptionValue(option, () -> defaultValue);
+}
+public <T> T getParsedOptionValue(final OptionGroup optionGroup) throws ParseException {
+return getParsedOptionValue(optionGroup, () -> null);
+}
+public <T> T getParsedOptionValue(final OptionGroup optionGroup, final Supplier<T> defaultValue) throws ParseException {
+if (optionGroup == null || !optionGroup.isSelected()) {
+return get(defaultValue);
+}
+return getParsedOptionValue(optionGroup.getSelected(), defaultValue);
+}
+public <T> T getParsedOptionValue(final OptionGroup optionGroup, final T defaultValue) throws ParseException {
+return getParsedOptionValue(optionGroup, () -> defaultValue);
+}
+public <T> T getParsedOptionValue(final String opt) throws ParseException {
+return getParsedOptionValue(resolveOption(opt));
+}
+public <T> T getParsedOptionValue(final String opt, final Supplier<T> defaultValue) throws ParseException {
+return getParsedOptionValue(resolveOption(opt), defaultValue);
+}
+public <T> T getParsedOptionValue(final String opt, final T defaultValue) throws ParseException {
+return getParsedOptionValue(resolveOption(opt), defaultValue);
+}
+private void handleDeprecated(final Option option) {
+if (deprecatedHandler != null) {
+deprecatedHandler.accept(option);
+}
+}
+public boolean hasOption(final char opt) {
+return hasOption(String.valueOf(opt));
+}
+public boolean hasOption(final Option opt) {
+final boolean result = options.contains(opt);
+if (result && opt.isDeprecated()) {
+handleDeprecated(opt);
+}
+return result;
+}
+public boolean hasOption(final OptionGroup optionGroup) {
+if (optionGroup == null || !optionGroup.isSelected()) {
+return false;
+}
+return hasOption(optionGroup.getSelected());
+}
+public boolean hasOption(final String opt) {
+return hasOption(resolveOption(opt));
+}
+public Iterator<Option> iterator() {
+return options.iterator();
+}
+private void processPropertiesFromValues(final Properties props, final List<String> values) {
+for (int i = 0; i < values.size(); i += 2) {
+if (i + 1 < values.size()) {
+props.put(values.get(i), values.get(i + 1));
+} else {
+props.put(values.get(i), "true");
+}
+}
+}
+private Option resolveOption(final String opt) {
+final String actual = Util.stripLeadingHyphens(opt);
+if (actual != null) {
+for (final Option option : options) {
+if (actual.equals(option.getOpt()) || actual.equals(option.getLongOpt())) {
+return option;
+}
+}
+}
+return null;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/CommandLineParser.java
+package org.apache.commons.cli;
+public interface CommandLineParser {
+CommandLine parse(Options options, String[] arguments) throws ParseException;
+CommandLine parse(Options options, String[] arguments, boolean stopAtNonOption) throws ParseException;
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/Converter.java
+package org.apache.commons.cli;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+@FunctionalInterface
+public interface Converter<T, E extends Throwable> {
+Converter<?, RuntimeException> DEFAULT = s -> s;
+Converter<Class<?>, ClassNotFoundException> CLASS = Class::forName;
+Converter<File, NullPointerException> FILE = File::new;
+Converter<Path, InvalidPathException> PATH = Paths::get;
+Converter<Number, NumberFormatException> NUMBER = s -> s.indexOf('.') != -1 ? (Number) Double.valueOf(s) : (Number) Long.valueOf(s);
+Converter<Object, ReflectiveOperationException> OBJECT = s -> CLASS.apply(s).getConstructor().newInstance();
+Converter<URL, MalformedURLException> URL = URL::new;
+Converter<Date, java.text.ParseException> DATE = s -> new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy").parse(s);
+T apply(String string) throws E;
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java
+package org.apache.commons.cli;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Properties;
+import java.util.function.Consumer;
+public class DefaultParser implements CommandLineParser {
+public static final class Builder {
+private boolean allowPartialMatching = true;
+private Consumer<Option> deprecatedHandler = CommandLine.Builder.DEPRECATED_HANDLER;
+private Boolean stripLeadingAndTrailingQuotes;
+private Builder() {
+}
+public DefaultParser build() {
+return new DefaultParser(allowPartialMatching, stripLeadingAndTrailingQuotes, deprecatedHandler);
+}
+public Builder setAllowPartialMatching(final boolean allowPartialMatching) {
+this.allowPartialMatching = allowPartialMatching;
+return this;
+}
+public Builder setDeprecatedHandler(final Consumer<Option> deprecatedHandler) {
+this.deprecatedHandler = deprecatedHandler;
+return this;
+}
+public Builder setStripLeadingAndTrailingQuotes(final Boolean stripLeadingAndTrailingQuotes) {
+this.stripLeadingAndTrailingQuotes = stripLeadingAndTrailingQuotes;
+return this;
+}
+}
+public static Builder builder() {
+return new Builder();
+}
+static int indexOfEqual(final String token) {
+return token.indexOf(Char.EQUAL);
+}
+protected CommandLine cmd;
+protected Options options;
+protected boolean stopAtNonOption;
+protected String currentToken;
+protected Option currentOption;
+protected boolean skipParsing;
+protected List expectedOpts;
+private final boolean allowPartialMatching;
+private final Boolean stripLeadingAndTrailingQuotes;
+private final Consumer<Option> deprecatedHandler;
+public DefaultParser() {
+this.allowPartialMatching = true;
+this.stripLeadingAndTrailingQuotes = null;
+this.deprecatedHandler = CommandLine.Builder.DEPRECATED_HANDLER;
+}
+public DefaultParser(final boolean allowPartialMatching) {
+this.allowPartialMatching = allowPartialMatching;
+this.stripLeadingAndTrailingQuotes = null;
+this.deprecatedHandler = CommandLine.Builder.DEPRECATED_HANDLER;
+}
+private DefaultParser(final boolean allowPartialMatching, final Boolean stripLeadingAndTrailingQuotes, final Consumer<Option> deprecatedHandler) {
+this.allowPartialMatching = allowPartialMatching;
+this.stripLeadingAndTrailingQuotes = stripLeadingAndTrailingQuotes;
+this.deprecatedHandler = deprecatedHandler;
+}
+private void checkRequiredArgs() throws ParseException {
+if (currentOption != null && currentOption.requiresArg()) {
+if (isJavaProperty(currentOption.getKey()) && currentOption.getValuesList().size() == 1) {
+return;
+}
+throw new MissingArgumentException(currentOption);
+}
+}
+protected void checkRequiredOptions() throws MissingOptionException {
+if (!expectedOpts.isEmpty()) {
+throw new MissingOptionException(expectedOpts);
+}
+}
+private String getLongPrefix(final String token) {
+final String t = Util.stripLeadingHyphens(token);
+int i;
+String opt = null;
+for (i = t.length() - 2; i > 1; i--) {
+final String prefix = t.substring(0, i);
+if (options.hasLongOption(prefix)) {
+opt = prefix;
+break;
+}
+}
+return opt;
+}
+private List<String> getMatchingLongOptions(final String token) {
+if (allowPartialMatching) {
+return options.getMatchingOptions(token);
+}
+final List<String> matches = new ArrayList<>(1);
+if (options.hasLongOption(token)) {
+matches.add(options.getOption(token).getLongOpt());
+}
+return matches;
+}
+protected void handleConcatenatedOptions(final String token) throws ParseException {
+for (int i = 1; i < token.length(); i++) {
+final String ch = String.valueOf(token.charAt(i));
+if (!options.hasOption(ch)) {
+handleUnknownToken(stopAtNonOption && i > 1 ? token.substring(i) : token);
+break;
+}
+handleOption(options.getOption(ch));
+if (currentOption != null && token.length() != i + 1) {
+currentOption.processValue(stripLeadingAndTrailingQuotesDefaultOff(token.substring(i + 1)));
+break;
+}
+}
+}
+private void handleLongOption(final String token) throws ParseException {
+if (indexOfEqual(token) == -1) {
+handleLongOptionWithoutEqual(token);
+} else {
+handleLongOptionWithEqual(token);
+}
+}
+private void handleLongOptionWithEqual(final String token) throws ParseException {
+final int pos = indexOfEqual(token);
+final String value = token.substring(pos + 1);
+final String opt = token.substring(0, pos);
+final List<String> matchingOpts = getMatchingLongOptions(opt);
+if (matchingOpts.isEmpty()) {
+handleUnknownToken(currentToken);
+} else if (matchingOpts.size() > 1 && !options.hasLongOption(opt)) {
+throw new AmbiguousOptionException(opt, matchingOpts);
+} else {
+final String key = options.hasLongOption(opt) ? opt : matchingOpts.get(0);
+final Option option = options.getOption(key);
+if (option.acceptsArg()) {
+handleOption(option);
+currentOption.processValue(stripLeadingAndTrailingQuotesDefaultOff(value));
+currentOption = null;
+} else {
+handleUnknownToken(currentToken);
+}
+}
+}
+private void handleLongOptionWithoutEqual(final String token) throws ParseException {
+final List<String> matchingOpts = getMatchingLongOptions(token);
+if (matchingOpts.isEmpty()) {
+handleUnknownToken(currentToken);
+} else if (matchingOpts.size() > 1 && !options.hasLongOption(token)) {
+throw new AmbiguousOptionException(token, matchingOpts);
+} else {
+final String key = options.hasLongOption(token) ? token : matchingOpts.get(0);
+handleOption(options.getOption(key));
+}
+}
+private void handleOption(final Option option) throws ParseException {
+checkRequiredArgs();
+final Option copy = (Option) option.clone();
+updateRequiredOptions(copy);
+cmd.addOption(copy);
+currentOption = copy.hasArg() ? copy : null;
+}
+private void handleProperties(final Properties properties) throws ParseException {
+if (properties == null) {
+return;
+}
+for (final Enumeration<?> e = properties.propertyNames(); e.hasMoreElements();) {
+final String option = e.nextElement().toString();
+final Option opt = options.getOption(option);
+if (opt == null) {
+throw new UnrecognizedOptionException("Default option wasn't defined", option);
+}
+final OptionGroup group = options.getOptionGroup(opt);
+final boolean selected = group != null && group.isSelected();
+if (!cmd.hasOption(option) && !selected) {
+final String value = properties.getProperty(option);
+if (opt.hasArg()) {
+if (Util.isEmpty(opt.getValues())) {
+opt.processValue(stripLeadingAndTrailingQuotesDefaultOff(value));
+}
+} else if (!("yes".equalsIgnoreCase(value) || "true".equalsIgnoreCase(value) || "1".equalsIgnoreCase(value))) {
+continue;
+}
+handleOption(opt);
+currentOption = null;
+}
+}
+}
+private void handleShortAndLongOption(final String hyphenToken) throws ParseException {
+final String token = Util.stripLeadingHyphens(hyphenToken);
+final int pos = indexOfEqual(token);
+if (token.length() == 1) {
+if (options.hasShortOption(token)) {
+handleOption(options.getOption(token));
+} else {
+handleUnknownToken(hyphenToken);
+}
+} else if (pos == -1) {
+if (options.hasShortOption(token)) {
+handleOption(options.getOption(token));
+} else if (!getMatchingLongOptions(token).isEmpty()) {
+handleLongOptionWithoutEqual(hyphenToken);
+} else {
+final String opt = getLongPrefix(token);
+if (opt != null && options.getOption(opt).acceptsArg()) {
+handleOption(options.getOption(opt));
+currentOption.processValue(stripLeadingAndTrailingQuotesDefaultOff(token.substring(opt.length())));
+currentOption = null;
+} else if (isJavaProperty(token)) {
+handleOption(options.getOption(token.substring(0, 1)));
+currentOption.processValue(stripLeadingAndTrailingQuotesDefaultOff(token.substring(1)));
+currentOption = null;
+} else {
+handleConcatenatedOptions(hyphenToken);
+}
+}
+} else {
+final String opt = token.substring(0, pos);
+final String value = token.substring(pos + 1);
+if (opt.length() == 1) {
+final Option option = options.getOption(opt);
+if (option != null && option.acceptsArg()) {
+handleOption(option);
+currentOption.processValue(value);
+currentOption = null;
+} else {
+handleUnknownToken(hyphenToken);
+}
+} else if (isJavaProperty(opt)) {
+handleOption(options.getOption(opt.substring(0, 1)));
+currentOption.processValue(opt.substring(1));
+currentOption.processValue(value);
+currentOption = null;
+} else {
+handleLongOptionWithEqual(hyphenToken);
+}
+}
+}
+private void handleToken(final String token) throws ParseException {
+if (token != null) {
+currentToken = token;
+if (skipParsing) {
+cmd.addArg(token);
+} else if ("--".equals(token)) {
+skipParsing = true;
+} else if (currentOption != null && currentOption.acceptsArg() && isArgument(token)) {
+currentOption.processValue(stripLeadingAndTrailingQuotesDefaultOn(token));
+} else if (token.startsWith("--")) {
+handleLongOption(token);
+} else if (token.startsWith("-") && !"-".equals(token)) {
+handleShortAndLongOption(token);
+} else {
+handleUnknownToken(token);
+}
+if (currentOption != null && !currentOption.acceptsArg()) {
+currentOption = null;
+}
+}
+}
+private void handleUnknownToken(final String token) throws ParseException {
+if (token.startsWith("-") && token.length() > 1 && !stopAtNonOption) {
+throw new UnrecognizedOptionException("Unrecognized option: " + token, token);
+}
+cmd.addArg(token);
+if (stopAtNonOption) {
+skipParsing = true;
+}
+}
+private boolean isArgument(final String token) {
+return !isOption(token) || isNegativeNumber(token);
+}
+private boolean isJavaProperty(final String token) {
+final String opt = token.isEmpty() ? null : token.substring(0, 1);
+final Option option = options.getOption(opt);
+return option != null && (option.getArgs() >= 2 || option.getArgs() == Option.UNLIMITED_VALUES);
+}
+private boolean isLongOption(final String token) {
+if (token == null || !token.startsWith("-") || token.length() == 1) {
+return false;
+}
+final int pos = indexOfEqual(token);
+final String t = pos == -1 ? token : token.substring(0, pos);
+if (!getMatchingLongOptions(t).isEmpty()) {
+return true;
+}
+if (getLongPrefix(token) != null && !token.startsWith("--")) {
+return true;
+}
+return false;
+}
+private boolean isNegativeNumber(final String token) {
+try {
+Double.parseDouble(token);
+return true;
+} catch (final NumberFormatException e) {
+return false;
+}
+}
+private boolean isOption(final String token) {
+return isLongOption(token) || isShortOption(token);
+}
+private boolean isShortOption(final String token) {
+if (token == null || !token.startsWith("-") || token.length() == 1) {
+return false;
+}
+final int pos = indexOfEqual(token);
+final String optName = pos == -1 ? token.substring(1) : token.substring(1, pos);
+if (options.hasShortOption(optName)) {
+return true;
+}
+return !optName.isEmpty() && options.hasShortOption(String.valueOf(optName.charAt(0)));
+}
+@Override
+public CommandLine parse(final Options options, final String[] arguments) throws ParseException {
+return parse(options, arguments, null);
+}
+@Override
+public CommandLine parse(final Options options, final String[] arguments, final boolean stopAtNonOption) throws ParseException {
+return parse(options, arguments, null, stopAtNonOption);
+}
+public CommandLine parse(final Options options, final String[] arguments, final Properties properties) throws ParseException {
+return parse(options, arguments, properties, false);
+}
+public CommandLine parse(final Options options, final String[] arguments, final Properties properties, final boolean stopAtNonOption)
+throws ParseException {
+this.options = options;
+this.stopAtNonOption = stopAtNonOption;
+skipParsing = false;
+currentOption = null;
+expectedOpts = new ArrayList<>(options.getRequiredOptions());
+for (final OptionGroup group : options.getOptionGroups()) {
+group.setSelected(null);
+}
+cmd = CommandLine.builder().setDeprecatedHandler(deprecatedHandler).build();
+if (arguments != null) {
+for (final String argument : arguments) {
+handleToken(argument);
+}
+}
+checkRequiredArgs();
+handleProperties(properties);
+checkRequiredOptions();
+return cmd;
+}
+private String stripLeadingAndTrailingQuotesDefaultOff(final String token) {
+if (stripLeadingAndTrailingQuotes != null && stripLeadingAndTrailingQuotes) {
+return Util.stripLeadingAndTrailingQuotes(token);
+}
+return token;
+}
+private String stripLeadingAndTrailingQuotesDefaultOn(final String token) {
+if (stripLeadingAndTrailingQuotes == null || stripLeadingAndTrailingQuotes) {
+return Util.stripLeadingAndTrailingQuotes(token);
+}
+return token;
+}
+private void updateRequiredOptions(final Option option) throws AlreadySelectedException {
+if (option.isRequired()) {
+expectedOpts.remove(option.getKey());
+}
+if (options.getOptionGroup(option) != null) {
+final OptionGroup group = options.getOptionGroup(option);
+if (group.isRequired()) {
+expectedOpts.remove(group);
+}
+group.setSelected(option);
+}
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/DeprecatedAttributes.java
+package org.apache.commons.cli;
+import java.util.function.Supplier;
+public final class DeprecatedAttributes {
+public static class Builder implements Supplier<DeprecatedAttributes> {
+private String description;
+private boolean forRemoval;
+private String since;
+@Override
+public DeprecatedAttributes get() {
+return new DeprecatedAttributes(description, since, forRemoval);
+}
+public Builder setDescription(final String description) {
+this.description = description;
+return this;
+}
+public Builder setForRemoval(final boolean forRemoval) {
+this.forRemoval = forRemoval;
+return this;
+}
+public Builder setSince(final String since) {
+this.since = since;
+return this;
+}
+}
+static final DeprecatedAttributes DEFAULT = new DeprecatedAttributes("", "", false);
+private static final String EMPTY_STRING = "";
+public static Builder builder() {
+return new Builder();
+}
+private final String description;
+private final boolean forRemoval;
+private final String since;
+private DeprecatedAttributes(final String description, final String since, final boolean forRemoval) {
+this.description = toEmpty(description);
+this.since = toEmpty(since);
+this.forRemoval = forRemoval;
+}
+public String getDescription() {
+return description;
+}
+public String getSince() {
+return since;
+}
+public boolean isForRemoval() {
+return forRemoval;
+}
+private String toEmpty(final String since) {
+return since != null ? since : EMPTY_STRING;
+}
+@Override
+public String toString() {
+final StringBuilder builder = new StringBuilder("Deprecated");
+if (forRemoval) {
+builder.append(" for removal");
+}
+if (!since.isEmpty()) {
+builder.append(" since ");
+builder.append(since);
+}
+if (!description.isEmpty()) {
+builder.append(": ");
+builder.append(description);
+}
+return builder.toString();
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingArgumentException.java
+package org.apache.commons.cli;
+public class MissingArgumentException extends ParseException {
+private static final long serialVersionUID = -7098538588704965017L;
+private Option option;
+public MissingArgumentException(final Option option) {
+this("Missing argument for option: " + option.getKey());
+this.option = option;
+}
+public MissingArgumentException(final String message) {
+super(message);
+}
+public Option getOption() {
+return option;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/MissingOptionException.java
+package org.apache.commons.cli;
+import java.util.Iterator;
+import java.util.List;
+public class MissingOptionException extends ParseException {
+private static final long serialVersionUID = 8161889051578563249L;
+private static String createMessage(final List<?> missingOptions) {
+final StringBuilder buf = new StringBuilder("Missing required option");
+buf.append(missingOptions.size() == 1 ? "" : "s");
+buf.append(": ");
+final Iterator<?> it = missingOptions.iterator();
+while (it.hasNext()) {
+buf.append(it.next());
+if (it.hasNext()) {
+buf.append(", ");
+}
+}
+return buf.toString();
+}
+private List missingOptions;
+public MissingOptionException(final List missingOptions) {
+this(createMessage(missingOptions));
+this.missingOptions = missingOptions;
+}
+public MissingOptionException(final String message) {
+super(message);
+}
+public List getMissingOptions() {
+return missingOptions;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/Option.java
+package org.apache.commons.cli;
+import static org.apache.commons.cli.Util.EMPTY_STRING_ARRAY;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+public class Option implements Cloneable, Serializable {
+public static final class Builder {
+private static final Class<String> DEFAULT_TYPE = String.class;
+private static Class<?> toType(final Class<?> type) {
+return type != null ? type : DEFAULT_TYPE;
+}
+private int argCount = UNINITIALIZED;
+private String argName;
+private Converter<?, ?> converter;
+private DeprecatedAttributes deprecated;
+private String description;
+private String longOption;
+private String option;
+private boolean optionalArg;
+private boolean required;
+private String since;
+private Class<?> type = DEFAULT_TYPE;
+private char valueSeparator;
+private Builder(final String option) throws IllegalArgumentException {
+option(option);
+}
+public Builder argName(final String argName) {
+this.argName = argName;
+return this;
+}
+public Option build() {
+if (option == null && longOption == null) {
+throw new IllegalArgumentException("Either opt or longOpt must be specified");
+}
+return new Option(this);
+}
+public Builder converter(final Converter<?, ?> converter) {
+this.converter = converter;
+return this;
+}
+public Builder deprecated() {
+return deprecated(DeprecatedAttributes.DEFAULT);
+}
+public Builder deprecated(final DeprecatedAttributes deprecated) {
+this.deprecated = deprecated;
+return this;
+}
+public Builder desc(final String description) {
+this.description = description;
+return this;
+}
+public Builder hasArg() {
+return hasArg(true);
+}
+public Builder hasArg(final boolean hasArg) {
+argCount = hasArg ? 1 : UNINITIALIZED;
+return this;
+}
+public Builder hasArgs() {
+argCount = UNLIMITED_VALUES;
+return this;
+}
+public Builder longOpt(final String longOption) {
+this.longOption = longOption;
+return this;
+}
+public Builder numberOfArgs(final int argCount) {
+this.argCount = argCount;
+return this;
+}
+public Builder option(final String option) throws IllegalArgumentException {
+this.option = OptionValidator.validate(option);
+return this;
+}
+public Builder optionalArg(final boolean optionalArg) {
+if (optionalArg && argCount == UNINITIALIZED) {
+argCount = 1;
+}
+this.optionalArg = optionalArg;
+return this;
+}
+public Builder required() {
+return required(true);
+}
+public Builder required(final boolean required) {
+this.required = required;
+return this;
+}
+public Builder since(final String since) {
+this.since = since;
+return this;
+}
+public Builder type(final Class<?> type) {
+this.type = toType(type);
+return this;
+}
+public Builder valueSeparator() {
+return valueSeparator(Char.EQUAL);
+}
+public Builder valueSeparator(final char valueSeparator) {
+this.valueSeparator = valueSeparator;
+return this;
+}
+}
+static final Option[] EMPTY_ARRAY = {};
+private static final long serialVersionUID = 1L;
+public static final int UNINITIALIZED = -1;
+public static final int UNLIMITED_VALUES = -2;
+public static Builder builder() {
+return builder(null);
+}
+public static Builder builder(final String option) {
+return new Builder(option);
+}
+private int argCount = UNINITIALIZED;
+private String argName;
+private transient Converter<?, ?> converter;
+private final transient DeprecatedAttributes deprecated;
+private String description;
+private String longOption;
+private final String option;
+private boolean optionalArg;
+private boolean required;
+private String since;
+private Class<?> type = String.class;
+private List<String> values = new ArrayList<>();
+private char valueSeparator;
+private Option(final Builder builder) {
+this.argName = builder.argName;
+this.description = builder.description;
+this.longOption = builder.longOption;
+this.argCount = builder.argCount;
+this.option = builder.option;
+this.optionalArg = builder.optionalArg;
+this.deprecated = builder.deprecated;
+this.required = builder.required;
+this.since = builder.since;
+this.type = builder.type;
+this.valueSeparator = builder.valueSeparator;
+this.converter = builder.converter;
+}
+public Option(final String option, final boolean hasArg, final String description) throws IllegalArgumentException {
+this(option, null, hasArg, description);
+}
+public Option(final String option, final String description) throws IllegalArgumentException {
+this(option, null, false, description);
+}
+public Option(final String option, final String longOption, final boolean hasArg, final String description) throws IllegalArgumentException {
+this.deprecated = null;
+this.option = OptionValidator.validate(option);
+this.longOption = longOption;
+if (hasArg) {
+this.argCount = 1;
+}
+this.description = description;
+}
+boolean acceptsArg() {
+return (hasArg() || hasArgs() || hasOptionalArg()) && (argCount <= 0 || values.size() < argCount);
+}
+private void add(final String value) {
+if (!acceptsArg()) {
+throw new IllegalArgumentException("Cannot add value, list full.");
+}
+values.add(value);
+}
+@Deprecated
+public boolean addValue(final String value) {
+throw new UnsupportedOperationException(
+"The addValue method is not intended for client use. Subclasses should use the processValue method instead.");
+}
+void clearValues() {
+values.clear();
+}
+@Override
+public Object clone() {
+try {
+final Option option = (Option) super.clone();
+option.values = new ArrayList<>(values);
+return option;
+} catch (final CloneNotSupportedException e) {
+throw new UnsupportedOperationException(e.getMessage(), e);
+}
+}
+@Override
+public boolean equals(final Object obj) {
+if (this == obj) {
+return true;
+}
+if (!(obj instanceof Option)) {
+return false;
+}
+final Option other = (Option) obj;
+return Objects.equals(longOption, other.longOption) && Objects.equals(option, other.option);
+}
+public String getArgName() {
+return argName;
+}
+public int getArgs() {
+return argCount;
+}
+public Converter<?, ?> getConverter() {
+return converter == null ? TypeHandler.getDefault().getConverter(type) : converter;
+}
+public DeprecatedAttributes getDeprecated() {
+return deprecated;
+}
+public String getDescription() {
+return description;
+}
+public int getId() {
+return getKey().charAt(0);
+}
+public String getKey() {
+return option == null ? longOption : option;
+}
+public String getLongOpt() {
+return longOption;
+}
+public String getOpt() {
+return option;
+}
+public String getSince() {
+return since;
+}
+public Object getType() {
+return type;
+}
+public String getValue() {
+return hasNoValues() ? null : values.get(0);
+}
+public String getValue(final int index) throws IndexOutOfBoundsException {
+return hasNoValues() ? null : values.get(index);
+}
+public String getValue(final String defaultValue) {
+final String value = getValue();
+return value != null ? value : defaultValue;
+}
+public String[] getValues() {
+return hasNoValues() ? null : values.toArray(EMPTY_STRING_ARRAY);
+}
+public char getValueSeparator() {
+return valueSeparator;
+}
+public List<String> getValuesList() {
+return values;
+}
+public boolean hasArg() {
+return argCount > 0 || argCount == UNLIMITED_VALUES;
+}
+public boolean hasArgName() {
+return argName != null && !argName.isEmpty();
+}
+public boolean hasArgs() {
+return argCount > 1 || argCount == UNLIMITED_VALUES;
+}
+@Override
+public int hashCode() {
+return Objects.hash(longOption, option);
+}
+public boolean hasLongOpt() {
+return longOption != null;
+}
+private boolean hasNoValues() {
+return values.isEmpty();
+}
+public boolean hasOptionalArg() {
+return optionalArg;
+}
+public boolean hasValueSeparator() {
+return valueSeparator > 0;
+}
+public boolean isDeprecated() {
+return deprecated != null;
+}
+public boolean isRequired() {
+return required;
+}
+void processValue(final String value) {
+if (argCount == UNINITIALIZED) {
+throw new IllegalArgumentException("NO_ARGS_ALLOWED");
+}
+String add = value;
+if (hasValueSeparator()) {
+final char sep = getValueSeparator();
+int index = add.indexOf(sep);
+while (index != -1) {
+if (values.size() == argCount - 1) {
+break;
+}
+add(add.substring(0, index));
+add = add.substring(index + 1);
+index = add.indexOf(sep);
+}
+}
+add(add);
+}
+boolean requiresArg() {
+if (optionalArg) {
+return false;
+}
+if (argCount == UNLIMITED_VALUES) {
+return values.isEmpty();
+}
+return acceptsArg();
+}
+public void setArgName(final String argName) {
+this.argName = argName;
+}
+public void setArgs(final int num) {
+this.argCount = num;
+}
+public void setConverter(final Converter<?, ?> converter) {
+this.converter = converter;
+}
+public void setDescription(final String description) {
+this.description = description;
+}
+public void setLongOpt(final String longOpt) {
+this.longOption = longOpt;
+}
+public void setOptionalArg(final boolean optionalArg) {
+this.optionalArg = optionalArg;
+}
+public void setRequired(final boolean required) {
+this.required = required;
+}
+public void setType(final Class<?> type) {
+this.type = Builder.toType(type);
+}
+@Deprecated
+public void setType(final Object type) {
+setType((Class<?>) type);
+}
+public void setValueSeparator(final char valueSeparator) {
+this.valueSeparator = valueSeparator;
+}
+String toDeprecatedString() {
+if (!isDeprecated()) {
+return "";
+}
+final StringBuilder buf = new StringBuilder()
+.append("Option '")
+.append(option)
+.append(Char.APOS);
+if (longOption != null) {
+buf.append(Char.APOS).append(longOption).append(Char.APOS);
+}
+buf.append(": ").append(deprecated);
+return buf.toString();
+}
+@Override
+public String toString() {
+final StringBuilder buf = new StringBuilder().append("[ ");
+buf.append("Option ");
+buf.append(option);
+if (longOption != null) {
+buf.append(Char.SP).append(longOption);
+}
+if (isDeprecated()) {
+buf.append(Char.SP);
+buf.append(deprecated.toString());
+}
+if (hasArgs()) {
+buf.append("[ARG...]");
+} else if (hasArg()) {
+buf.append(" [ARG]");
+}
+return buf.append(" :: ")
+.append(description)
+.append(" :: ")
+.append(type)
+.append(" ]")
+.toString();
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionGroup.java
+package org.apache.commons.cli;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+public class OptionGroup implements Serializable {
+private static final long serialVersionUID = 1L;
+private final Map<String, Option> optionMap = new LinkedHashMap<>();
+private String selected;
+private boolean required;
+public OptionGroup addOption(final Option option) {
+optionMap.put(option.getKey(), option);
+return this;
+}
+public Collection<String> getNames() {
+return optionMap.keySet();
+}
+public Collection<Option> getOptions() {
+return optionMap.values();
+}
+public String getSelected() {
+return selected;
+}
+public boolean isRequired() {
+return required;
+}
+public boolean isSelected() {
+return selected != null;
+}
+public void setRequired(final boolean required) {
+this.required = required;
+}
+public void setSelected(final Option option) throws AlreadySelectedException {
+if (option == null) {
+selected = null;
+return;
+}
+if (selected != null && !selected.equals(option.getKey())) {
+throw new AlreadySelectedException(this, option);
+}
+selected = option.getKey();
+}
+@Override
+public String toString() {
+final StringBuilder buff = new StringBuilder();
+final Iterator<Option> iter = getOptions().iterator();
+buff.append("[");
+while (iter.hasNext()) {
+final Option option = iter.next();
+if (option.getOpt() != null) {
+buff.append("-");
+buff.append(option.getOpt());
+} else {
+buff.append("--");
+buff.append(option.getLongOpt());
+}
+if (option.getDescription() != null) {
+buff.append(Char.SP);
+buff.append(option.getDescription());
+}
+if (iter.hasNext()) {
+buff.append(", ");
+}
+}
+buff.append("]");
+return buff.toString();
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/OptionValidator.java
+package org.apache.commons.cli;
+final class OptionValidator {
+static final char[] ADDITIONAL_OPTION_CHARS = {'?', '@'};
+static final char[] ADDITIONAL_LONG_CHARS = {'-'};
+private static boolean isValidChar(final char c) {
+return Character.isJavaIdentifierPart(c) || search(ADDITIONAL_LONG_CHARS, c);
+}
+private static boolean isValidOpt(final char c) {
+return Character.isJavaIdentifierPart(c) || search(ADDITIONAL_OPTION_CHARS, c);
+}
+private static boolean search(final char[] chars, final char c) {
+for (final char a : chars) {
+if (a == c) {
+return true;
+}
+}
+return false;
+}
+static String validate(final String option) throws IllegalArgumentException {
+if (option == null) {
+return null;
+}
+if (option.isEmpty()) {
+throw new IllegalArgumentException("Empty option name.");
+}
+final char[] chars = option.toCharArray();
+final char ch0 = chars[0];
+if (!isValidOpt(ch0)) {
+throw new IllegalArgumentException(String.format("Illegal option name '%s'.", ch0));
+}
+if (option.length() > 1) {
+for (int i = 1; i < chars.length; i++) {
+final char ch = chars[i];
+if (!isValidChar(ch)) {
+throw new IllegalArgumentException(String.format("The option '%s' contains an illegal " + "character : '%s'.", option, ch));
+}
+}
+}
+return option;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/Options.java
+package org.apache.commons.cli;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+public class Options implements Serializable {
+private static final long serialVersionUID = 1L;
+private final Map<String, Option> shortOpts = new LinkedHashMap<>();
+private final Map<String, Option> longOpts = new LinkedHashMap<>();
+private final List<Object> requiredOpts = new ArrayList<>();
+private final Map<String, OptionGroup> optionGroups = new LinkedHashMap<>();
+public Options addOption(final Option opt) {
+final String key = opt.getKey();
+if (opt.hasLongOpt()) {
+longOpts.put(opt.getLongOpt(), opt);
+}
+if (opt.isRequired()) {
+if (requiredOpts.contains(key)) {
+requiredOpts.remove(requiredOpts.indexOf(key));
+}
+requiredOpts.add(key);
+}
+shortOpts.put(key, opt);
+return this;
+}
+public Options addOption(final String opt, final boolean hasArg, final String description) {
+addOption(opt, null, hasArg, description);
+return this;
+}
+public Options addOption(final String opt, final String description) {
+addOption(opt, null, false, description);
+return this;
+}
+public Options addOption(final String opt, final String longOpt, final boolean hasArg, final String description) {
+addOption(new Option(opt, longOpt, hasArg, description));
+return this;
+}
+public Options addOptionGroup(final OptionGroup group) {
+if (group.isRequired()) {
+requiredOpts.add(group);
+}
+for (final Option option : group.getOptions()) {
+option.setRequired(false);
+addOption(option);
+optionGroups.put(option.getKey(), group);
+}
+return this;
+}
+public Options addOptions(final Options options) {
+for (final Option opt : options.getOptions()) {
+if (hasOption(opt.getKey())) {
+throw new IllegalArgumentException("Duplicate key: " + opt.getKey());
+}
+addOption(opt);
+}
+options.getOptionGroups().forEach(this::addOptionGroup);
+return this;
+}
+public Options addRequiredOption(final String opt, final String longOpt, final boolean hasArg, final String description) {
+final Option option = new Option(opt, longOpt, hasArg, description);
+option.setRequired(true);
+addOption(option);
+return this;
+}
+public List<String> getMatchingOptions(final String opt) {
+final String clean = Util.stripLeadingHyphens(opt);
+final List<String> matchingOpts = new ArrayList<>();
+if (longOpts.containsKey(clean)) {
+return Collections.singletonList(clean);
+}
+for (final String longOpt : longOpts.keySet()) {
+if (longOpt.startsWith(clean)) {
+matchingOpts.add(longOpt);
+}
+}
+return matchingOpts;
+}
+public Option getOption(final String opt) {
+final String clean = Util.stripLeadingHyphens(opt);
+final Option option = shortOpts.get(clean);
+return option != null ? option : longOpts.get(clean);
+}
+public OptionGroup getOptionGroup(final Option opt) {
+return optionGroups.get(opt.getKey());
+}
+Collection<OptionGroup> getOptionGroups() {
+return new HashSet<>(optionGroups.values());
+}
+public Collection<Option> getOptions() {
+return Collections.unmodifiableCollection(helpOptions());
+}
+public List<?> getRequiredOptions() {
+return Collections.unmodifiableList(requiredOpts);
+}
+public boolean hasLongOption(final String opt) {
+return longOpts.containsKey(Util.stripLeadingHyphens(opt));
+}
+public boolean hasOption(final String opt) {
+final String clean = Util.stripLeadingHyphens(opt);
+return shortOpts.containsKey(clean) || longOpts.containsKey(clean);
+}
+public boolean hasShortOption(final String opt) {
+final String clean = Util.stripLeadingHyphens(opt);
+return shortOpts.containsKey(clean);
+}
+List<Option> helpOptions() {
+return new ArrayList<>(shortOpts.values());
+}
+@Override
+public String toString() {
+final StringBuilder buf = new StringBuilder();
+buf.append("[ Options: [ short ");
+buf.append(shortOpts.toString());
+buf.append(" ] [ long ");
+buf.append(longOpts);
+buf.append(" ]");
+return buf.toString();
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/ParseException.java
+package org.apache.commons.cli;
+public class ParseException extends Exception {
+private static final long serialVersionUID = 9112808380089253192L;
+public static ParseException wrap(final Throwable e) throws UnsupportedOperationException {
+if (e instanceof UnsupportedOperationException) {
+throw (UnsupportedOperationException) e;
+}
+if (e instanceof ParseException) {
+return (ParseException) e;
+}
+return new ParseException(e);
+}
+public ParseException(final String message) {
+super(message);
+}
+public ParseException(final Throwable e) {
+super(e);
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java
+package org.apache.commons.cli;
+import java.io.File;
+import java.io.FileInputStream;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.net.URL;
+import java.nio.file.Path;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+public class TypeHandler {
+private static final TypeHandler DEFAULT = new TypeHandler();
+private static final int HEX_RADIX = 16;
+public static Class<?> createClass(final String className) throws ParseException {
+return createValue(className, Class.class);
+}
+public static Date createDate(final String string) {
+return createValueUnchecked(string, Date.class);
+}
+public static Map<Class<?>, Converter<?, ? extends Throwable>> createDefaultMap() {
+return putDefaultMap(new HashMap<>());
+}
+public static File createFile(final String string) {
+return createValueUnchecked(string, File.class);
+}
+@Deprecated
+public static File[] createFiles(final String string) {
+throw new UnsupportedOperationException("Not yet implemented");
+}
+@Deprecated
+public static Number createNumber(final String string) throws ParseException {
+return createValue(string, Number.class);
+}
+@Deprecated
+public static Object createObject(final String className) throws ParseException {
+return createValue(className, Object.class);
+}
+public static URL createURL(final String string) throws ParseException {
+return createValue(string, URL.class);
+}
+public static <T> T createValue(final String string, final Class<T> clazz) throws ParseException {
+try {
+return getDefault().getConverter(clazz).apply(string);
+} catch (final Throwable e) {
+throw ParseException.wrap(e);
+}
+}
+@Deprecated
+public static Object createValue(final String string, final Object obj) throws ParseException {
+return createValue(string, (Class<?>) obj);
+}
+private static <T> T createValueUnchecked(final String string, final Class<T> clazz) {
+try {
+return createValue(string, clazz);
+} catch (final ParseException e) {
+throw new IllegalArgumentException(e);
+}
+}
+public static TypeHandler getDefault() {
+return DEFAULT;
+}
+@Deprecated
+public static FileInputStream openFile(final String string) throws ParseException {
+return createValue(string, FileInputStream.class);
+}
+private static Map<Class<?>, Converter<?, ? extends Throwable>> putDefaultMap(final Map<Class<?>, Converter<?, ? extends Throwable>> map) {
+map.put(Object.class, Converter.OBJECT);
+map.put(Class.class, Converter.CLASS);
+map.put(Date.class, Converter.DATE);
+map.put(File.class, Converter.FILE);
+map.put(Path.class, Converter.PATH);
+map.put(Number.class, Converter.NUMBER);
+map.put(URL.class, Converter.URL);
+map.put(FileInputStream.class, FileInputStream::new);
+map.put(Long.class, Long::parseLong);
+map.put(Integer.class, Integer::parseInt);
+map.put(Short.class, Short::parseShort);
+map.put(Byte.class, Byte::parseByte);
+map.put(Character.class, s -> s.startsWith("\\u") ? Character.toChars(Integer.parseInt(s.substring(2), HEX_RADIX))[0] : s.charAt(0));
+map.put(Double.class, Double::parseDouble);
+map.put(Float.class, Float::parseFloat);
+map.put(BigInteger.class, BigInteger::new);
+map.put(BigDecimal.class, BigDecimal::new);
+return map;
+}
+private final Map<Class<?>, Converter<?, ? extends Throwable>> converterMap;
+public TypeHandler() {
+this(createDefaultMap());
+}
+public TypeHandler(final Map<Class<?>, Converter<?, ? extends Throwable>> converterMap) {
+this.converterMap = Objects.requireNonNull(converterMap, "converterMap");
+}
+@SuppressWarnings("unchecked")
+public <T> Converter<T, ?> getConverter(final Class<T> clazz) {
+return (Converter<T, ?>) converterMap.getOrDefault(clazz, Converter.DEFAULT);
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java
+package org.apache.commons.cli;
+public class UnrecognizedOptionException extends ParseException {
+private static final long serialVersionUID = -252504690284625623L;
+private final String option;
+public UnrecognizedOptionException(final String message) {
+this(message, null);
+}
+public UnrecognizedOptionException(final String message, final String option) {
+super(message);
+this.option = option;
+}
+public String getOption() {
+return option;
+}
+}
+
+JAVA SOURCE: vendor/commons-cli/src/main/java/org/apache/commons/cli/Util.java
+package org.apache.commons.cli;
+final class Util {
+static final String[] EMPTY_STRING_ARRAY = {};
+static boolean isEmpty(final Object[] array) {
+return array == null || array.length == 0;
+}
+static boolean isEmpty(final String str) {
+return str == null || str.isEmpty();
+}
+static String stripLeadingAndTrailingQuotes(final String str) {
+if (isEmpty(str)) {
+return str;
+}
+final int length = str.length();
+if (length > 1 && str.startsWith("\"") && str.endsWith("\"") && str.substring(1, length - 1).indexOf('"') == -1) {
+return str.substring(1, length - 1);
+}
+return str;
+}
+static String stripLeadingHyphens(final String str) {
+if (isEmpty(str)) {
+return str;
+}
+if (str.startsWith("--")) {
+return str.substring(2);
+}
+if (str.startsWith("-")) {
+return str.substring(1);
+}
+return str;
+}
+private Util() {
+}
+}

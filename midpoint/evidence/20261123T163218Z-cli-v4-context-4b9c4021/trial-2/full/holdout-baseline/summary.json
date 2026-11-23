@@ -1,0 +1,2495 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 10,
+      "total": 14,
+      "status": "completed",
+      "passed_ids": [
+        "cli-v4-holdout-01",
+        "cli-v4-holdout-02",
+        "cli-v4-holdout-04",
+        "cli-v4-holdout-05",
+        "cli-v4-holdout-07",
+        "cli-v4-holdout-08",
+        "cli-v4-holdout-10",
+        "cli-v4-holdout-11",
+        "cli-v4-holdout-12",
+        "cli-v4-holdout-13"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "cli-v4-holdout-00",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--output=archive",
+                    "-v"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "archive"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "-o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "--output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "archive"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-00"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-00",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-03",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-o",
+                    "folder"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "folder"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "folder"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-03"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-03",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-06",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--output",
+                    "index"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "index"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "-o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "index"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-06"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-06",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-09",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "json",
+                "args": [
+                  "j",
+                  "json",
+                  false,
+                  "JSON"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "xml",
+                "args": [
+                  "x",
+                  "xml",
+                  false,
+                  "XML"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "OptionGroup",
+                "save": "group",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "json"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "xml"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOptionGroup",
+                "args": [
+                  {
+                    "ref": "group"
+                  }
+                ],
+                "save": "optsAlias"
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--xml"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-j"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--xml"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "json"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "xml"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "json"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 14,
+                "status": "ok",
+                "value": true
+              }
+            ],
+            "id": "cli-v4-holdout-09"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-09",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 11,
+            "expected": {
+              "step": 11,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 11,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        }
+      ]
+    },
+    "graal": {
+      "passed": 10,
+      "total": 14,
+      "status": "completed",
+      "passed_ids": [
+        "cli-v4-holdout-01",
+        "cli-v4-holdout-02",
+        "cli-v4-holdout-04",
+        "cli-v4-holdout-05",
+        "cli-v4-holdout-07",
+        "cli-v4-holdout-08",
+        "cli-v4-holdout-10",
+        "cli-v4-holdout-11",
+        "cli-v4-holdout-12",
+        "cli-v4-holdout-13"
+      ],
+      "failures": [
+        {
+          "case": {
+            "id": "cli-v4-holdout-00",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--output=archive",
+                    "-v"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "archive"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "-o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "--output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "archive"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-00"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-00",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-03",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-o",
+                    "folder"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "folder"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "folder"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-03"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-03",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-06",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "out",
+                "args": [
+                  "o",
+                  "output",
+                  true,
+                  "output"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "verbose",
+                "args": [
+                  "v",
+                  "verbose",
+                  false,
+                  "verbose"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "out"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "verbose"
+                  }
+                ]
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--output",
+                    "index"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--",
+                    "index"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "output"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--unregistered"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "-o"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "getArgs",
+                "args": []
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": [
+                  "index"
+                ]
+              }
+            ],
+            "id": "cli-v4-holdout-06"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-06",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "out"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "verbose"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 8,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 8,
+            "expected": {
+              "step": 8,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 8,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        },
+        {
+          "case": {
+            "id": "cli-v4-holdout-09",
+            "task": "commons_cli",
+            "operations": [
+              {
+                "op": "new",
+                "class": "Options",
+                "save": "opts",
+                "args": []
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "json",
+                "args": [
+                  "j",
+                  "json",
+                  false,
+                  "JSON"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "Option",
+                "save": "xml",
+                "args": [
+                  "x",
+                  "xml",
+                  false,
+                  "XML"
+                ]
+              },
+              {
+                "op": "new",
+                "class": "OptionGroup",
+                "save": "group",
+                "args": []
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "json"
+                  }
+                ],
+                "save": "alias"
+              },
+              {
+                "op": "call",
+                "on": "alias",
+                "method": "addOption",
+                "args": [
+                  {
+                    "ref": "xml"
+                  }
+                ]
+              },
+              {
+                "op": "call",
+                "on": "group",
+                "method": "setRequired",
+                "args": [
+                  false
+                ]
+              },
+              {
+                "op": "call",
+                "on": "opts",
+                "method": "addOptionGroup",
+                "args": [
+                  {
+                    "ref": "group"
+                  }
+                ],
+                "save": "optsAlias"
+              },
+              {
+                "op": "new",
+                "class": "DefaultParser",
+                "save": "parser",
+                "args": [
+                  true
+                ]
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "--xml"
+                  ],
+                  false
+                ],
+                "save": "cmd"
+              },
+              {
+                "op": "call",
+                "on": "parser",
+                "method": "parse",
+                "args": [
+                  {
+                    "ref": "opts"
+                  },
+                  [
+                    "-j"
+                  ],
+                  false
+                ],
+                "save": "second"
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "--xml"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "json"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "cmd",
+                "method": "hasOption",
+                "args": [
+                  "xml"
+                ]
+              },
+              {
+                "op": "call",
+                "on": "second",
+                "method": "hasOption",
+                "args": [
+                  "json"
+                ]
+              }
+            ]
+          },
+          "expected": {
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 12,
+                "status": "ok",
+                "value": false
+              },
+              {
+                "step": 13,
+                "status": "ok",
+                "value": true
+              },
+              {
+                "step": 14,
+                "status": "ok",
+                "value": true
+              }
+            ],
+            "id": "cli-v4-holdout-09"
+          },
+          "actual": {
+            "id": "cli-v4-holdout-09",
+            "status": "ok",
+            "trace": [
+              {
+                "step": 0,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 1,
+                "status": "ok",
+                "value": {
+                  "ref": "json"
+                }
+              },
+              {
+                "step": 2,
+                "status": "ok",
+                "value": {
+                  "ref": "xml"
+                }
+              },
+              {
+                "step": 3,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 4,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 5,
+                "status": "ok",
+                "value": {
+                  "ref": "group"
+                }
+              },
+              {
+                "step": 6,
+                "status": "ok",
+                "value": null
+              },
+              {
+                "step": 7,
+                "status": "ok",
+                "value": {
+                  "ref": "opts"
+                }
+              },
+              {
+                "step": 8,
+                "status": "ok",
+                "value": {
+                  "ref": "parser"
+                }
+              },
+              {
+                "step": 9,
+                "status": "ok",
+                "value": {
+                  "ref": "cmd"
+                }
+              },
+              {
+                "step": 10,
+                "status": "ok",
+                "value": {
+                  "ref": "second"
+                }
+              },
+              {
+                "step": 11,
+                "status": "exception",
+                "type": "RecursionError"
+              }
+            ]
+          },
+          "first_difference": {
+            "step": 11,
+            "expected": {
+              "step": 11,
+              "status": "ok",
+              "value": false
+            },
+            "actual": {
+              "step": 11,
+              "status": "exception",
+              "type": "RecursionError"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "passed": 20,
+  "total": 28,
+  "all_pass": false
+}

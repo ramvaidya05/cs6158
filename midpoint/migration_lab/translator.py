@@ -5,8 +5,9 @@ from .storage import ROOT
 
 
 class MigrationAgent:
-    def __init__(self, backend):
+    def __init__(self, backend, *, compact_cli=False):
         self.backend = backend
+        self.compact_cli = compact_cli
 
     def prompt(self, task, previous=None, feedback=None):
         if task == "commons_csv":
@@ -14,7 +15,7 @@ class MigrationAgent:
             blocks = [prompt()]
         elif task == "commons_cli":
             from .cli_task import prompt
-            blocks = [prompt()]
+            blocks = [prompt(compact=self.compact_cli)]
         else:
             blocks = [f"Translate task: {task}. Output only the requested JSON schema."]
             for name in ("translation_contract.md", "java_python_semantics.md"):

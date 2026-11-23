@@ -1,0 +1,8372 @@
+[
+  {
+    "id": "cli-v4-visible-legacy-00",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "flag",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "hasOption",
+        "args": [
+          "--visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "isRequired",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-01",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-02",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-v",
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-03",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-verbose",
+            "--visible-output",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-04",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-output=visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-05",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--visible-output="
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-06",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-07",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--",
+            "-v",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-08",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-09",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-10",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-11",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "--unknown"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-12",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-13",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-14",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "-123"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-15",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-ovisible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-16",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-vovisible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "visible-verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "visible-output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-17",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "next"
+      },
+      {
+        "op": "call",
+        "on": "next",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "getValue",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-18",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-19",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "flag",
+        "args": [
+          "v",
+          "visible-verbose",
+          false,
+          "flag"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "value",
+        "args": [
+          "o",
+          "visible-output",
+          true,
+          "value"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "options",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "flag"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "value",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "options",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "value"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "options"
+          },
+          [
+            "-o",
+            "visible-value-\ud83d\ude80"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "visible-output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-20",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out",
+            "prefix"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-21",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "other",
+        "args": [
+          "p",
+          "outline",
+          false,
+          "other"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "other"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-22",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-23",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "other",
+        "args": [
+          "p",
+          "outputting",
+          false,
+          "other"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "other"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-24",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "\"two words\""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-25",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output=\"two words\""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-26",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-27",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--verbose=yes"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-28",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "o",
+          "replacement",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "replacement"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-29",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "p",
+          "output",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "p"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-30",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-31",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-32",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "first"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "other",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "other"
+          },
+          [],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-33",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "file",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-34",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "third",
+            "-o",
+            "first",
+            "-o",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-35",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "invalid",
+        "args": [
+          "bad!",
+          "bad",
+          false,
+          "invalid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-36",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getDescription",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setDescription",
+        "args": [
+          "changed"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getDescription",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgName",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgName",
+        "args": [
+          "FILE"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgName",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getMatchingOptions",
+        "args": [
+          "out"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "first",
+            "second"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-37",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-38",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getNames",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "getSelected",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-39",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-j"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "json"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-40",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-j",
+            "-x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-41",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-42",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-j"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-x"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "j"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "hasOption",
+        "args": [
+          "x"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-43",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-44",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=one",
+            "--output=two"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-45",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "other",
+        "args": [
+          "p",
+          "outlier",
+          true,
+          "other"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "other"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=value"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-46",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out=value",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-47",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "shortlong",
+        "args": [
+          "p",
+          "out",
+          false,
+          "exact"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "shortlong"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--out",
+            "-o",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "p"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-48",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "\"\"",
+            "-o",
+            "'a b'",
+            "-o",
+            ""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-49",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output=\"a=b c\""
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-50",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-",
+            "--",
+            "-o",
+            "ignored",
+            "--verbose"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-51",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--verbose=yes",
+            "-o",
+            "ignored"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-52",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "o",
+          "new-output",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "hasOption",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output",
+            "old",
+            "--new-output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "new-output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-53",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "p",
+          "output",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "old",
+            "--output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "p"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-54",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "ok"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-55",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "replacement",
+        "args": [
+          "o",
+          "new",
+          false,
+          "new"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "replacement"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--new"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "new"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-56",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "alpha"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "empty",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "empty"
+          },
+          [
+            "file"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v",
+            "-o",
+            "beta"
+          ],
+          false
+        ],
+        "save": "third"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "third",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-57",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "unknown",
+            "-v"
+          ],
+          true
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "file",
+            "-v"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-58",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "\ud83d\ude80",
+            "--output=",
+            "-o",
+            "\u00e9"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-59",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "invalid",
+        "args": [
+          "two words",
+          "long-name",
+          true,
+          "invalid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-60",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "late",
+        "args": [
+          "l",
+          "late",
+          false,
+          "late"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "late"
+          }
+        ],
+        "save": "again"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-l"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "late"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "again",
+        "method": "hasOption",
+        "args": [
+          "l"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-61",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "verbose",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "x"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-62",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "-2.5",
+            "tail",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "verbose"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-63",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v",
+            "--missing"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-64",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setDescription",
+        "args": [
+          ""
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgName",
+        "args": [
+          "DEST"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgs",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          1
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output=held"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValue",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getDescription",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getArgName",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasLongOpt",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "hasOptionalArg",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "getMatchingOptions",
+        "args": [
+          "--output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-65",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getNames",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "optsAlias",
+        "method": "getRequiredOptions",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setSelected",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--xml",
+            "--xml"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "x"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-66",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "file"
+          ],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getSelected",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "getArgs",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-67",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--xml",
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-68",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--",
+            "--json"
+          ],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-69",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setOptionalArg",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output"
+          ],
+          false
+        ],
+        "save": "second"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-70",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "setArgs",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "--output",
+            "alpha",
+            "beta",
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "hasOption",
+        "args": [
+          "v"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "out",
+        "method": "getValues",
+        "args": []
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-legacy-71",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "json",
+        "args": [
+          "j",
+          "json",
+          false,
+          "JSON"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "xml",
+        "args": [
+          "x",
+          "xml",
+          false,
+          "XML"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "OptionGroup",
+        "save": "group",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "json"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "xml"
+          }
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOptionGroup",
+        "args": [
+          {
+            "ref": "group"
+          }
+        ],
+        "save": "optsAlias"
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "setRequired",
+        "args": [
+          false
+        ]
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "isRequired",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "group",
+        "method": "getNames",
+        "args": []
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-00",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "--output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-01",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-v"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValue",
+        "args": [
+          "output"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cli-v4-visible-02",
+    "task": "commons_cli",
+    "operations": [
+      {
+        "op": "new",
+        "class": "Options",
+        "save": "opts",
+        "args": []
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "out",
+        "args": [
+          "o",
+          "output",
+          true,
+          "output"
+        ]
+      },
+      {
+        "op": "new",
+        "class": "Option",
+        "save": "verbose",
+        "args": [
+          "v",
+          "verbose",
+          false,
+          "verbose"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "opts",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "out"
+          }
+        ],
+        "save": "alias"
+      },
+      {
+        "op": "call",
+        "on": "alias",
+        "method": "addOption",
+        "args": [
+          {
+            "ref": "verbose"
+          }
+        ]
+      },
+      {
+        "op": "new",
+        "class": "DefaultParser",
+        "save": "parser",
+        "args": [
+          true
+        ]
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [
+            "-o",
+            "before"
+          ],
+          false
+        ],
+        "save": "cmd"
+      },
+      {
+        "op": "call",
+        "on": "parser",
+        "method": "parse",
+        "args": [
+          {
+            "ref": "opts"
+          },
+          [],
+          false
+        ],
+        "save": "second"
+      },
+      {
+        "op": "call",
+        "on": "second",
+        "method": "hasOption",
+        "args": [
+          "output"
+        ]
+      },
+      {
+        "op": "call",
+        "on": "cmd",
+        "method": "getOptionValues",
+        "args": [
+          "o"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "trial": 0,
+    "arm": "full",
+    "status": "completed",
+    "validated": true,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 40716,
+      "output_tokens": 6816,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 67.997,
+    "accounted_usd": 0.06373125
+  },
+  {
+    "trial": 0,
+    "arm": "compact_guided",
+    "status": "completed",
+    "validated": false,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 0,
+          "total": 75,
+          "status": "syntax_error"
+        },
+        "graal": {
+          "passed": 0,
+          "total": 75,
+          "status": "syntax_error"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 0,
+          "total": 14,
+          "status": "syntax_error"
+        },
+        "graal": {
+          "passed": 0,
+          "total": 14,
+          "status": "syntax_error"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 16041,
+      "output_tokens": 7730,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 61.940000000000005,
+    "accounted_usd": 0.0440259375
+  },
+  {
+    "trial": 1,
+    "arm": "compact_guided",
+    "status": "completed",
+    "validated": true,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 16041,
+      "output_tokens": 6377,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 68.803,
+    "accounted_usd": 0.0389521875
+  },
+  {
+    "trial": 1,
+    "arm": "full",
+    "status": "completed",
+    "validated": false,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 59,
+          "total": 75,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 59,
+          "total": 75,
+          "status": "completed"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 10,
+          "total": 14,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 10,
+          "total": 14,
+          "status": "completed"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 40716,
+      "output_tokens": 7700,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 73.532,
+    "accounted_usd": 0.06704625
+  },
+  {
+    "trial": 2,
+    "arm": "full",
+    "status": "completed",
+    "validated": false,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 59,
+          "total": 75,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 59,
+          "total": 75,
+          "status": "completed"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 10,
+          "total": 14,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 10,
+          "total": 14,
+          "status": "completed"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 40716,
+      "output_tokens": 8016,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 78.247,
+    "accounted_usd": 0.06823125
+  },
+  {
+    "trial": 2,
+    "arm": "compact_guided",
+    "status": "completed",
+    "validated": true,
+    "scores": {
+      "visible": {
+        "cpython": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 75,
+          "total": 75,
+          "status": "completed"
+        }
+      },
+      "holdout": {
+        "cpython": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        },
+        "graal": {
+          "passed": 14,
+          "total": 14,
+          "status": "completed"
+        }
+      }
+    },
+    "usage": {
+      "model_calls": 1,
+      "input_tokens": 16041,
+      "output_tokens": 7663,
+      "usage_unknown_calls": 0
+    },
+    "elapsed_seconds": 70.653,
+    "accounted_usd": 0.0437746875
+  }
+]

@@ -1,0 +1,1312 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "id": "cli-v4-holdout-00",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "archive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-01",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "archive"
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "archive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-02",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "archive"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "archive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-03",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "folder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-04",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "folder"
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "folder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-05",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "folder"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "folder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-06",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "index"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-07",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "index"
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "index"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-08",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "index"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "index"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-09",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-10",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-11",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-12",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "cli-v4-holdout-13",
+      "status": "ok",
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "one",
+            "two"
+          ]
+        }
+      ]
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "docker",
+      "run",
+      "--name",
+      "migration-16822a531d5c4702a4ffe05c0e6d3c36",
+      "--pull=never",
+      "--interactive",
+      "--network=none",
+      "--read-only",
+      "--user=65532:65532",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--cpus=1",
+      "--memory=1536m",
+      "--memory-swap=1536m",
+      "--pids-limit=128",
+      "--ulimit=nofile=256:256",
+      "--ipc=none",
+      "--log-driver=none",
+      "--workdir=/tmp",
+      "--tmpfs=/tmp:rw,nosuid,nodev,exec,size=512m,mode=1777",
+      "--env=HOME=/tmp",
+      "--env=LANG=C.UTF-8",
+      "--env=LC_ALL=C.UTF-8",
+      "--env=TZ=UTC",
+      "--env=PYTHONDONTWRITEBYTECODE=1",
+      "--mount",
+      "type=bind,src=/var/folders/38/_pj7vwwn29nbw_px6wzrlndm0000gn/T/migration-candidate-1pseom67/candidate.py,dst=/candidate.py,readonly",
+      "sha256:39ad2fc5c70b94e66dd0ecc960870f7823432165d037a503ed096a14f8bad33c",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/tmp/graalvm",
+      "-cp",
+      "/runner/classes:/runner/jars/*",
+      "lab.GuestHarness",
+      "/candidate.py"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 4.154159,
+    "stdout": "[{\"id\": \"cli-v4-holdout-00\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": false}, {\"step\": 10, \"status\": \"ok\", \"value\": true}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"archive\"]}]}, {\"id\": \"cli-v4-holdout-01\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": \"archive\"}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"archive\"]}]}, {\"id\": \"cli-v4-holdout-02\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"archive\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"archive\"]}]}, {\"id\": \"cli-v4-holdout-03\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": false}, {\"step\": 10, \"status\": \"ok\", \"value\": true}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"folder\"]}]}, {\"id\": \"cli-v4-holdout-04\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": \"folder\"}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"folder\"]}]}, {\"id\": \"cli-v4-holdout-05\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"folder\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"folder\"]}]}, {\"id\": \"cli-v4-holdout-06\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": false}, {\"step\": 9, \"status\": \"ok\", \"value\": false}, {\"step\": 10, \"status\": \"ok\", \"value\": true}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"index\"]}]}, {\"id\": \"cli-v4-holdout-07\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": \"index\"}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"index\"]}]}, {\"id\": \"cli-v4-holdout-08\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": null}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"index\"]}, {\"step\": 11, \"status\": \"ok\", \"value\": [\"index\"]}]}, {\"id\": \"cli-v4-holdout-09\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 11, \"status\": \"ok\", \"value\": false}, {\"step\": 12, \"status\": \"ok\", \"value\": false}, {\"step\": 13, \"status\": \"ok\", \"value\": true}, {\"step\": 14, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"cli-v4-holdout-10\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": true}, {\"step\": 14, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"cli-v4-holdout-11\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"json\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"xml\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"group\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 10, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 11, \"status\": \"ok\", \"value\": null}, {\"step\": 12, \"status\": \"ok\", \"value\": null}, {\"step\": 13, \"status\": \"ok\", \"value\": true}, {\"step\": 14, \"status\": \"ok\", \"value\": true}]}, {\"id\": \"cli-v4-holdout-12\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": true}, {\"step\": 9, \"status\": \"ok\", \"value\": null}]}, {\"id\": \"cli-v4-holdout-13\", \"status\": \"ok\", \"trace\": [{\"step\": 0, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 1, \"status\": \"ok\", \"value\": {\"ref\": \"out\"}}, {\"step\": 2, \"status\": \"ok\", \"value\": {\"ref\": \"verbose\"}}, {\"step\": 3, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 4, \"status\": \"ok\", \"value\": {\"ref\": \"opts\"}}, {\"step\": 5, \"status\": \"ok\", \"value\": {\"ref\": \"parser\"}}, {\"step\": 6, \"status\": \"ok\", \"value\": null}, {\"step\": 7, \"status\": \"ok\", \"value\": {\"ref\": \"cmd\"}}, {\"step\": 8, \"status\": \"ok\", \"value\": {\"ref\": \"second\"}}, {\"step\": 9, \"status\": \"ok\", \"value\": null}, {\"step\": 10, \"status\": \"ok\", \"value\": [\"one\", \"two\"]}]}]\n",
+    "stderr": "",
+    "output_truncated": false,
+    "container_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-23T16:38:46.096227719Z",
+      "FinishedAt": "2026-11-23T16:38:50.193687138Z"
+    },
+    "isolation": {
+      "backend": "docker",
+      "images": {
+        "cpython": {
+          "id": "sha256:9d5a7a2e7bec42546f8a4df9b9f30a278d68f2016e3555f788000e67cc12f432",
+          "tag": "migration-lab-cpython:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "graal": {
+          "id": "sha256:39ad2fc5c70b94e66dd0ecc960870f7823432165d037a503ed096a14f8bad33c",
+          "tag": "migration-lab-graal:v1",
+          "architecture": "arm64",
+          "os": "linux"
+        }
+      },
+      "network": "none",
+      "read_only": true,
+      "user": "65532:65532",
+      "cpus": 1,
+      "memory_mb": {
+        "cpython": 256,
+        "graal": 1536
+      },
+      "pids": 128,
+      "tmpfs_mb": {
+        "cpython": 64,
+        "graal": 512
+      },
+      "output_bytes_per_stream": 2000000,
+      "fault": "none",
+      "graal_cache": "/tmp/graalvm"
+    }
+  }
+}

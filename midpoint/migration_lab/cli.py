@@ -16,7 +16,7 @@ def main(argv=None):
     freeze_parser = commands.add_parser("freeze", help="Freeze evaluator-only inputs and repeated Java oracle outputs")
     freeze_parser.add_argument("--output", type=Path, required=True)
     freeze_parser.add_argument("--seed", type=int)
-    freeze_parser.add_argument("--profile", choices=("pilot", "commons-cli-semantic-v2", "commons-cli-extended-v3", "commons-csv-v1", "commons-csv-v2"), default="pilot")
+    freeze_parser.add_argument("--profile", choices=("pilot", "commons-cli-semantic-v2", "commons-cli-extended-v3", "commons-cli-lookup-v4", "commons-csv-v1", "commons-csv-v2"), default="pilot")
     freeze_parser.add_argument("--task", choices=(*ALL_TASKS, "all"), default="all")
     report_parser = commands.add_parser("report", help="Recompute failure-inclusive experiment accuracy")
     report_parser.add_argument("directory", type=Path)

@@ -1,0 +1,5808 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "v"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "visible-verbose"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-00"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-01"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-02"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-03"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-04"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            ""
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-05"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80",
+            "second"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-06"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "-v",
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-07"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-08"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-09"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "--unknown",
+            "-v"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-10"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-11"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-12"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-13"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "-123"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "-123"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-14"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-15"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "visible-value-\ud83d\ude80"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-16"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "next"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-17"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-18"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "flag"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "value"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "options"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "visible-value-\ud83d\ude80"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-19"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "prefix"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-20"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "other"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "exception",
+          "type": "AmbiguousOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-21"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-22"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "other"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "x"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-23"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "two words"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-24"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "\"two words\""
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-25"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "-"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-26"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-27"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-28"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-29"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-30"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-31"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "other"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": "first"
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-32"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "file",
+            "-v"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-33"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "third",
+            "first",
+            "second"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-34"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "exception",
+          "type": "IllegalArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-35"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": "output"
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": "changed"
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": "FILE"
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 15,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 16,
+          "status": "ok",
+          "value": 1
+        },
+        {
+          "step": 17,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 18,
+          "status": "ok",
+          "value": 2
+        },
+        {
+          "step": 19,
+          "status": "ok",
+          "value": [
+            "output"
+          ]
+        },
+        {
+          "step": 20,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 21,
+          "status": "ok",
+          "value": [
+            "first",
+            "second"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-36"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-37"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "j",
+            "x"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": "j"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-38"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            {
+              "ref": "group"
+            }
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": "j"
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-39"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "AlreadySelectedException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-40"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-41"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": "x"
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-42"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "AlreadySelectedException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-43"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "one",
+            "two"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-44"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "other"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "exception",
+          "type": "AmbiguousOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-45"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "--out=value",
+            "-v"
+          ]
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-46"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "shortlong"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "x"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-47"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "",
+            "'a b'",
+            ""
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-48"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "\"a=b c\""
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-49"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "-"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "-o",
+            "ignored",
+            "--verbose"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-50"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": [
+            "--verbose=yes",
+            "-o",
+            "ignored"
+          ]
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-51"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "old"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-52"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "old"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-53"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": []
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": "ok"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-54"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "replacement"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "o"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-55"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "empty"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "third"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": "alpha"
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": "beta"
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-56"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": false
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-57"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "\ud83d\ude80"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "\ud83d\ude80",
+            "",
+            "\u00e9"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-58"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "exception",
+          "type": "IllegalArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-59"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "late"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-60"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-61"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": "-2.5"
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "tail"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-62"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "exception",
+          "type": "UnrecognizedOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-63"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": 2
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 15,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 16,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 17,
+          "status": "ok",
+          "value": "o"
+        },
+        {
+          "step": 18,
+          "status": "ok",
+          "value": "output"
+        },
+        {
+          "step": 19,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 20,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 21,
+          "status": "ok",
+          "value": ""
+        },
+        {
+          "step": 22,
+          "status": "ok",
+          "value": "DEST"
+        },
+        {
+          "step": 23,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 24,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 25,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 26,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 27,
+          "status": "ok",
+          "value": [
+            "held"
+          ]
+        },
+        {
+          "step": 28,
+          "status": "ok",
+          "value": [
+            "output"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-64"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": [
+            "j",
+            "x"
+          ]
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": [
+            {
+              "ref": "group"
+            }
+          ]
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 15,
+          "status": "ok",
+          "value": "x"
+        },
+        {
+          "step": 16,
+          "status": "ok",
+          "value": true
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-65"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": [
+            "file"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-66"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "AlreadySelectedException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-67"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "exception",
+          "type": "MissingOptionException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-68"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "exception",
+          "type": "MissingArgumentException"
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-69"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": [
+            "alpha",
+            "beta"
+          ]
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-70"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "json"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "xml"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "group"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 10,
+          "status": "ok",
+          "value": true
+        },
+        {
+          "step": 11,
+          "status": "ok",
+          "value": null
+        },
+        {
+          "step": 12,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 13,
+          "status": "ok",
+          "value": [
+            "j",
+            "x"
+          ]
+        },
+        {
+          "step": 14,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-legacy-71"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-00"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": null
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-01"
+    },
+    {
+      "trace": [
+        {
+          "step": 0,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 1,
+          "status": "ok",
+          "value": {
+            "ref": "out"
+          }
+        },
+        {
+          "step": 2,
+          "status": "ok",
+          "value": {
+            "ref": "verbose"
+          }
+        },
+        {
+          "step": 3,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 4,
+          "status": "ok",
+          "value": {
+            "ref": "opts"
+          }
+        },
+        {
+          "step": 5,
+          "status": "ok",
+          "value": {
+            "ref": "parser"
+          }
+        },
+        {
+          "step": 6,
+          "status": "ok",
+          "value": {
+            "ref": "cmd"
+          }
+        },
+        {
+          "step": 7,
+          "status": "ok",
+          "value": {
+            "ref": "second"
+          }
+        },
+        {
+          "step": 8,
+          "status": "ok",
+          "value": false
+        },
+        {
+          "step": 9,
+          "status": "ok",
+          "value": [
+            "before"
+          ]
+        }
+      ],
+      "status": "ok",
+      "id": "cli-v4-visible-02"
+    }
+  ],
+  "detail": "",
+  "process": {
+    "command": [
+      "java",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx768m",
+      "-Dpolyglot.engine.userResourceCache=/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/graalvm",
+      "-cp",
+      "/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/java/target/classes:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-validator/commons-validator/1.9.0/commons-validator-1.9.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-logging/commons-logging/1.3.2/commons-logging-1.3.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/polyglot/25.0.0/polyglot-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/collections/25.0.0/collections-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/nativeimage/25.0.0/nativeimage-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/word/25.0.0/word-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/polyglot/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-community/25.0.0/python-community-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python/25.0.0/python-25.0.0.pom:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-language/25.0.0/python-language-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-api/25.0.0/truffle-api-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/tools/profiler-tool/25.0.0/profiler-tool-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/json/25.0.0/json-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/regex/regex/25.0.0/regex-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi/25.0.0/truffle-nfi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-libffi/25.0.0/truffle-nfi-libffi-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-nfi-panama/25.0.0/truffle-nfi-panama-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/icu4j/25.0.0/icu4j-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/shadowed/xz/25.0.0/xz-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcprov-jdk18on/1.78.1/bcprov-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcpkix-jdk18on/1.78.1/bcpkix-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/bouncycastle/bcutil-jdk18on/1.78.1/bcutil-jdk18on-1.78.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/python/python-resources/25.0.0/python-resources-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-runtime/25.0.0/truffle-runtime-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/sdk/jniutils/25.0.0/jniutils-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/graalvm/truffle/truffle-compiler/25.0.0/truffle-compiler-25.0.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/commons-codec/commons-codec/1.22.1/commons-codec-1.22.1.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/junit/junit/4.13.2/junit-4.13.2.jar:/Users/SaiVamsi/Documents/Course/SWE/SWE ML/midpoint/.cache/m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+      "lab.Harness",
+      "reference"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.143029,
+    "stdout": "[{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":\"v\"},{\"step\":7,\"status\":\"ok\",\"value\":\"visible-verbose\"},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":true},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-00\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-01\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-02\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-03\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-04\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-05\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\",\"second\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-06\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"-v\",\"visible-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-07\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-08\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-09\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":[\"--unknown\",\"-v\"]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-10\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-11\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-12\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-13\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"-123\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"-123\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-14\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":false},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-15\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":true},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":[\"visible-value-\ud83d\ude80\"]},{\"step\":11,\"status\":\"ok\",\"value\":[]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-16\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"next\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-17\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-18\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"flag\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"value\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"options\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"visible-value-\ud83d\ude80\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-19\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"prefix\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-20\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"other\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"exception\",\"type\":\"AmbiguousOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-21\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-22\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"other\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"x\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-23\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"two words\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-24\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"\\\"two words\\\"\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-25\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"-\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-26\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-27\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"replacement\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-28\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"replacement\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-29\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":[]},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-30\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":10,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-31\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"other\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":9,\"status\":\"ok\",\"value\":\"first\"},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-32\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"file\",\"-v\"]},{\"step\":9,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-33\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":[\"third\",\"first\",\"second\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-34\"},{\"trace\":[{\"step\":0,\"status\":\"exception\",\"type\":\"IllegalArgumentException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-35\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":\"output\"},{\"step\":7,\"status\":\"ok\",\"value\":null},{\"step\":8,\"status\":\"ok\",\"value\":\"changed\"},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":\"FILE\"},{\"step\":12,\"status\":\"ok\",\"value\":true},{\"step\":13,\"status\":\"ok\",\"value\":false},{\"step\":14,\"status\":\"ok\",\"value\":null},{\"step\":15,\"status\":\"ok\",\"value\":true},{\"step\":16,\"status\":\"ok\",\"value\":1},{\"step\":17,\"status\":\"ok\",\"value\":null},{\"step\":18,\"status\":\"ok\",\"value\":2},{\"step\":19,\"status\":\"ok\",\"value\":[\"output\"]},{\"step\":20,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":21,\"status\":\"ok\",\"value\":[\"first\",\"second\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-36\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-37\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":[\"j\",\"x\"]},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":false},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":\"j\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-38\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":[{\"ref\":\"group\"}]},{\"step\":10,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":11,\"status\":\"ok\",\"value\":\"j\"},{\"step\":12,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-39\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"exception\",\"type\":\"AlreadySelectedException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-40\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-41\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":10,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":11,\"status\":\"ok\",\"value\":\"x\"},{\"step\":12,\"status\":\"ok\",\"value\":true},{\"step\":13,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-42\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"exception\",\"type\":\"AlreadySelectedException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-43\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":[\"one\",\"two\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-44\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"other\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"exception\",\"type\":\"AmbiguousOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-45\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":[\"--out=value\",\"-v\"]},{\"step\":8,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-46\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"shortlong\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":\"x\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-47\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":[\"\",\"'a b'\",\"\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-48\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"\\\"a=b c\\\"\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-49\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"-\"},{\"step\":8,\"status\":\"ok\",\"value\":[\"-o\",\"ignored\",\"--verbose\"]},{\"step\":9,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-50\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":[\"--verbose=yes\",\"-o\",\"ignored\"]},{\"step\":8,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-51\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"replacement\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":10,\"status\":\"ok\",\"value\":[\"old\"]},{\"step\":11,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-52\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"replacement\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":[\"old\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-53\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":[]},{\"step\":7,\"status\":\"ok\",\"value\":null},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":9,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":10,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":11,\"status\":\"ok\",\"value\":\"ok\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-54\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"replacement\"}},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":10,\"status\":\"ok\",\"value\":[\"o\"]},{\"step\":11,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-55\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"empty\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"third\"}},{\"step\":10,\"status\":\"ok\",\"value\":\"alpha\"},{\"step\":11,\"status\":\"ok\",\"value\":[\"file\"]},{\"step\":12,\"status\":\"ok\",\"value\":\"beta\"},{\"step\":13,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-56\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":8,\"status\":\"ok\",\"value\":true},{\"step\":9,\"status\":\"ok\",\"value\":[\"file\"]},{\"step\":10,\"status\":\"ok\",\"value\":false}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-57\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"\ud83d\ude80\"},{\"step\":8,\"status\":\"ok\",\"value\":[\"\ud83d\ude80\",\"\",\"\u00e9\"]},{\"step\":9,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-58\"},{\"trace\":[{\"step\":0,\"status\":\"exception\",\"type\":\"IllegalArgumentException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-59\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"late\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-60\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":null},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":10,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-61\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":\"-2.5\"},{\"step\":8,\"status\":\"ok\",\"value\":[\"tail\"]},{\"step\":9,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-62\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"exception\",\"type\":\"UnrecognizedOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-63\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":null},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":null},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":2},{\"step\":13,\"status\":\"ok\",\"value\":null},{\"step\":14,\"status\":\"ok\",\"value\":null},{\"step\":15,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":16,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":17,\"status\":\"ok\",\"value\":\"o\"},{\"step\":18,\"status\":\"ok\",\"value\":\"output\"},{\"step\":19,\"status\":\"ok\",\"value\":true},{\"step\":20,\"status\":\"ok\",\"value\":null},{\"step\":21,\"status\":\"ok\",\"value\":\"\"},{\"step\":22,\"status\":\"ok\",\"value\":\"DEST\"},{\"step\":23,\"status\":\"ok\",\"value\":true},{\"step\":24,\"status\":\"ok\",\"value\":true},{\"step\":25,\"status\":\"ok\",\"value\":null},{\"step\":26,\"status\":\"ok\",\"value\":false},{\"step\":27,\"status\":\"ok\",\"value\":[\"held\"]},{\"step\":28,\"status\":\"ok\",\"value\":[\"output\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-64\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":[\"j\",\"x\"]},{\"step\":11,\"status\":\"ok\",\"value\":[{\"ref\":\"group\"}]},{\"step\":12,\"status\":\"ok\",\"value\":null},{\"step\":13,\"status\":\"ok\",\"value\":null},{\"step\":14,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":15,\"status\":\"ok\",\"value\":\"x\"},{\"step\":16,\"status\":\"ok\",\"value\":true}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-65\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":10,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":[\"file\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-66\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"exception\",\"type\":\"AlreadySelectedException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-67\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"exception\",\"type\":\"MissingOptionException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-68\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":8,\"status\":\"ok\",\"value\":null},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"exception\",\"type\":\"MissingArgumentException\"}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-69\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":8,\"status\":\"ok\",\"value\":[\"alpha\",\"beta\"]},{\"step\":9,\"status\":\"ok\",\"value\":true},{\"step\":10,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-70\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"json\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"xml\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"group\"}},{\"step\":6,\"status\":\"ok\",\"value\":null},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":8,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":9,\"status\":\"ok\",\"value\":null},{\"step\":10,\"status\":\"ok\",\"value\":true},{\"step\":11,\"status\":\"ok\",\"value\":null},{\"step\":12,\"status\":\"ok\",\"value\":false},{\"step\":13,\"status\":\"ok\",\"value\":[\"j\",\"x\"]},{\"step\":14,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}}],\"status\":\"ok\",\"id\":\"cli-v4-visible-legacy-71\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-00\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":null}],\"status\":\"ok\",\"id\":\"cli-v4-visible-01\"},{\"trace\":[{\"step\":0,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":1,\"status\":\"ok\",\"value\":{\"ref\":\"out\"}},{\"step\":2,\"status\":\"ok\",\"value\":{\"ref\":\"verbose\"}},{\"step\":3,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":4,\"status\":\"ok\",\"value\":{\"ref\":\"opts\"}},{\"step\":5,\"status\":\"ok\",\"value\":{\"ref\":\"parser\"}},{\"step\":6,\"status\":\"ok\",\"value\":{\"ref\":\"cmd\"}},{\"step\":7,\"status\":\"ok\",\"value\":{\"ref\":\"second\"}},{\"step\":8,\"status\":\"ok\",\"value\":false},{\"step\":9,\"status\":\"ok\",\"value\":[\"before\"]}],\"status\":\"ok\",\"id\":\"cli-v4-visible-02\"}]\n",
+    "stderr": "",
+    "output_truncated": false
+  }
+}

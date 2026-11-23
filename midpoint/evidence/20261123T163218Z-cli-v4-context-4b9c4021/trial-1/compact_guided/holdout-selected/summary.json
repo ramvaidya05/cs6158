@@ -1,0 +1,51 @@
+{
+  "runtimes": {
+    "cpython": {
+      "passed": 14,
+      "total": 14,
+      "status": "completed",
+      "passed_ids": [
+        "cli-v4-holdout-00",
+        "cli-v4-holdout-01",
+        "cli-v4-holdout-02",
+        "cli-v4-holdout-03",
+        "cli-v4-holdout-04",
+        "cli-v4-holdout-05",
+        "cli-v4-holdout-06",
+        "cli-v4-holdout-07",
+        "cli-v4-holdout-08",
+        "cli-v4-holdout-09",
+        "cli-v4-holdout-10",
+        "cli-v4-holdout-11",
+        "cli-v4-holdout-12",
+        "cli-v4-holdout-13"
+      ],
+      "failures": []
+    },
+    "graal": {
+      "passed": 14,
+      "total": 14,
+      "status": "completed",
+      "passed_ids": [
+        "cli-v4-holdout-00",
+        "cli-v4-holdout-01",
+        "cli-v4-holdout-02",
+        "cli-v4-holdout-03",
+        "cli-v4-holdout-04",
+        "cli-v4-holdout-05",
+        "cli-v4-holdout-06",
+        "cli-v4-holdout-07",
+        "cli-v4-holdout-08",
+        "cli-v4-holdout-09",
+        "cli-v4-holdout-10",
+        "cli-v4-holdout-11",
+        "cli-v4-holdout-12",
+        "cli-v4-holdout-13"
+      ],
+      "failures": []
+    }
+  },
+  "passed": 28,
+  "total": 28,
+  "all_pass": true
+}

@@ -1,0 +1,47 @@
+{
+  "plan": [
+    [
+      0,
+      "full"
+    ],
+    [
+      0,
+      "compact_guided"
+    ],
+    [
+      1,
+      "compact_guided"
+    ],
+    [
+      1,
+      "full"
+    ],
+    [
+      2,
+      "full"
+    ],
+    [
+      2,
+      "compact_guided"
+    ]
+  ],
+  "suite": {
+    "sha256": "7a6e6f5ec0bcc57890873eb510b33f0ef962203a6527061af1308804abf19a6a",
+    "schema": 2,
+    "policy": "Evaluator only; all paired selections freeze before holdout scoring",
+    "profile": "commons-cli-lookup-v4",
+    "counts": {
+      "commons_cli": {
+        "visible": 75,
+        "holdout": 14
+      }
+    }
+  },
+  "model": "gemini-3.8-flash",
+  "thinking": "low",
+  "max_repairs": 0,
+  "max_output_tokens": 32768,
+  "per_call_accounting_cap_usd": 0.38,
+  "total_accounting_cap_usd": 2.28,
+  "policy": "Independent calls in alternating blocks. Score holdout only after all six selections."
+}

@@ -1,0 +1,192 @@
+{
+  "status": "completed",
+  "task": "commons_cli",
+  "provenance": "live_model",
+  "environment_actions": [],
+  "events": [
+    {
+      "phase": "preflight",
+      "elapsed_seconds": 0.08
+    },
+    {
+      "phase": "reference",
+      "elapsed_seconds": 4.554
+    },
+    {
+      "phase": "translate",
+      "elapsed_seconds": 4.918,
+      "attempt": 0
+    },
+    {
+      "phase": "evaluate_visible",
+      "elapsed_seconds": 61.695,
+      "attempt": 0
+    },
+    {
+      "phase": "checkpoint",
+      "elapsed_seconds": 61.731,
+      "attempt": 0,
+      "accepted": true
+    },
+    {
+      "phase": "selection_frozen",
+      "elapsed_seconds": 61.733
+    },
+    {
+      "phase": "evaluate_holdout",
+      "elapsed_seconds": 61.734
+    },
+    {
+      "phase": "completed",
+      "elapsed_seconds": 61.939895417075604
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 0,
+      "sha256": "b28342789256ed67420800e58da8a143c8741c32840197e7a77b743b0108a57d",
+      "accepted": true,
+      "status": "evaluated",
+      "passed": 0,
+      "total": 150
+    }
+  ],
+  "best_attempt": 0,
+  "stop_reason": "attempt_limit",
+  "reserved_output_tokens": 32768,
+  "baseline_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 0,
+        "total": 75,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      },
+      "graal": {
+        "passed": 0,
+        "total": 75,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    "passed": 0,
+    "total": 150,
+    "all_pass": false
+  },
+  "selected_visible": {
+    "runtimes": {
+      "cpython": {
+        "passed": 0,
+        "total": 75,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      },
+      "graal": {
+        "passed": 0,
+        "total": 75,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    "passed": 0,
+    "total": 150,
+    "all_pass": false
+  },
+  "elapsed_seconds": 61.940000000000005,
+  "baseline_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 0,
+        "total": 14,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      },
+      "graal": {
+        "passed": 0,
+        "total": 14,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    "passed": 0,
+    "total": 28,
+    "all_pass": false
+  },
+  "selected_holdout": {
+    "runtimes": {
+      "cpython": {
+        "passed": 0,
+        "total": 14,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      },
+      "graal": {
+        "passed": 0,
+        "total": 14,
+        "status": "syntax_error",
+        "passed_ids": [],
+        "failures": [
+          {
+            "kind": "syntax_error",
+            "detail": "'(' was never closed (candidate.py, line 279)",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    "passed": 0,
+    "total": 28,
+    "all_pass": false
+  },
+  "validated": false,
+  "scoring_seconds": 0.206
+}

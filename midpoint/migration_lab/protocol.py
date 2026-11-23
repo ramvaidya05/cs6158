@@ -48,7 +48,7 @@ def evaluation_cases(task, seed, count=100):
 
 
 def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
-    profiles = {"commons-cli-semantic-v2": "commons_cli", "commons-cli-extended-v3": "commons_cli", "commons-csv-v1": "commons_csv", "commons-csv-v2": "commons_csv"}
+    profiles = {"commons-cli-semantic-v2": "commons_cli", "commons-cli-extended-v3": "commons_cli", "commons-cli-lookup-v4": "commons_cli", "commons-csv-v1": "commons_csv", "commons-csv-v2": "commons_csv"}
     if (profile != "pilot" and (profile not in profiles or tuple(tasks) != (profiles[profile],))) or ("commons_csv" in tasks and profile not in ("commons-csv-v1", "commons-csv-v2")):
         raise ValueError("Unsupported profile/task combination")
     if not tasks or len(set(tasks)) != len(tasks) or any(t not in ALL_TASKS for t in tasks):
@@ -72,7 +72,7 @@ def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
         payload["task_identities"]["commons_csv"] = csv_identity()
     if profile != "pilot":
         payload["profile"] = profile
-        payload["profile_sha256"] = sha256(ROOT / ("migration_lab/csv_v2_cases.py" if profile == "commons-csv-v2" else "migration_lab/csv_cases.py" if profile == "commons-csv-v1" else "migration_lab/cli_extended.py" if profile == "commons-cli-extended-v3" else "migration_lab/cli_semantic.py"))
+        payload["profile_sha256"] = sha256(ROOT / ("migration_lab/cli_lookup.py" if profile == "commons-cli-lookup-v4" else "migration_lab/csv_v2_cases.py" if profile == "commons-csv-v2" else "migration_lab/csv_cases.py" if profile == "commons-csv-v1" else "migration_lab/cli_extended.py" if profile == "commons-cli-extended-v3" else "migration_lab/cli_semantic.py"))
         if profile not in ("commons-csv-v1", "commons-csv-v2"):
             payload["semantic_base_sha256"] = sha256(ROOT / "migration_lab/cli_semantic.py")
     tester = TestsuiteAgent(EnvironmentAgent())
@@ -84,6 +84,8 @@ def freeze(path, seed=None, tasks=TASKS, profile="pilot"):
                 from .csv_v2_cases import cases as semantic_cases
             elif profile == "commons-csv-v1":
                 from .csv_cases import cases as semantic_cases
+            elif profile == "commons-cli-lookup-v4":
+                from .cli_lookup import cases as semantic_cases
             elif profile == "commons-cli-extended-v3":
                 from .cli_extended import cases as semantic_cases
             else:
@@ -118,7 +120,7 @@ class FrozenSuite:
         if payload["schema"] == 2 and payload["generator_sha256"] != sha256(Path(__file__)):
             raise RuntimeError("Suite generator differs from frozen protocol")
         if payload.get("profile", "pilot") != "pilot":
-            profile_file = {"commons-cli-semantic-v2": "cli_semantic.py", "commons-cli-extended-v3": "cli_extended.py", "commons-csv-v1": "csv_cases.py", "commons-csv-v2": "csv_v2_cases.py"}.get(payload["profile"])
+            profile_file = {"commons-cli-semantic-v2": "cli_semantic.py", "commons-cli-extended-v3": "cli_extended.py", "commons-cli-lookup-v4": "cli_lookup.py", "commons-csv-v1": "csv_cases.py", "commons-csv-v2": "csv_v2_cases.py"}.get(payload["profile"])
             if (profile_file is None or payload["profile_sha256"] != sha256(ROOT / "migration_lab" / profile_file)
                     or payload.get("semantic_base_sha256", sha256(ROOT / "migration_lab/cli_semantic.py")) != sha256(ROOT / "migration_lab/cli_semantic.py")):
                 raise RuntimeError("Semantic profile changed")

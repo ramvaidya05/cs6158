@@ -26,7 +26,7 @@ def assert_unchanged(original):
 def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6158,
              timeout=60, model_timeout=120, max_seconds=900, max_output_tokens=8192, output_token_budget=49152,
              directory=None, environment=None, suite=None, environment_repairs=False,
-             defer_holdout=False, feedback_mode="full", retry_memory=False):
+             defer_holdout=False, feedback_mode="full", retry_memory=False, compact_cli=False):
     if feedback_mode not in ("full", "basic", "operation", "pruned"):
         raise ValueError("Unknown feedback mode")
     if not 0 <= max_repairs <= 5:
@@ -43,7 +43,7 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
         raise RuntimeError("Live generated code requires container isolation; local execution refused")
     case_source = suite.cases if suite else cases
     tester = TestsuiteAgent(environment)
-    migration = MigrationAgent(backend)
+    migration = MigrationAgent(backend, compact_cli=compact_cli) if compact_cli else MigrationAgent(backend)
     from .retry_memory import RetryMemory
     memory = RetryMemory(directory) if retry_memory else None
     guard = protected_hashes()
@@ -55,7 +55,7 @@ def run_task(task, backend, *, max_repairs=5, modes=("cpython", "graal"), seed=6
                 "environment": environment.doctor(),
                 "evaluation_suite": suite.identity() if suite else {"kind": "public_demo"},
                 "environment_repairs": environment_repairs, "feedback_mode": feedback_mode,
-                "retry_memory": retry_memory, "dependency_policy": "stdlib-only-v1",
+                "retry_memory": retry_memory, "compact_cli": compact_cli, "dependency_policy": "stdlib-only-v1",
                 "child_locale": {"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "TZ": "UTC"},
                 "holdout_policy": ("Frozen evaluator-only suite; excluded from model context; scored after selection"
                                    if suite else "Public demo cases; excluded from model context; scored after selection only"),
